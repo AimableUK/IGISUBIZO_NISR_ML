@@ -1,0 +1,168 @@
+NISR / RWANDA DATASET LINKS
+=============================
+
+LABOUR, EMPLOYMENT AND SKILLS
+------------------------------
+
+Rwanda Labour Force Survey 2025
+https://microdatabk.statistics.gov.rw/catalog/125
+
+Rwanda Labour Force Survey 2024
+https://microdatabk.statistics.gov.rw/catalog/119
+
+Rwanda Labour Force Survey 2023
+https://microdatabk.statistics.gov.rw/catalog/113
+
+Rwanda Labour Force Survey 2022
+https://microdatabk.statistics.gov.rw/catalog/109
+
+Rwanda Labour Force Survey 2021
+https://microdatabk.statistics.gov.rw/catalog/104
+
+Rwanda Labour Force Survey 2020
+https://microdatabk.statistics.gov.rw/catalog/98
+
+Rwanda Labour Force Survey 2019
+https://microdatabk.statistics.gov.rw/catalog/91
+
+NISR Microdata Catalog
+https://microdatabk.statistics.gov.rw/catalog/
+
+NISR Central Data Catalog
+https://microdata.statistics.gov.rw/index.php/catalog/
+
+
+ESTABLISHMENTS AND BUSINESS
+---------------------------
+
+Rwanda Establishment Census 2023
+https://microdatabk.statistics.gov.rw/catalog/105
+
+Rwanda Establishment Census 2020
+https://microdatabk.statistics.gov.rw/catalog/96
+
+
+HOUSEHOLDS, POVERTY AND SOCIOECONOMIC CONDITIONS
+------------------------------------------------
+
+EICV7 2023/24 - Cross-Sectional Sample
+https://microdatabk.statistics.gov.rw/catalog/118
+
+EICV7 2023/24 - VUP
+https://microdatabk.statistics.gov.rw/catalog/120
+
+
+FINANCIAL INCLUSION
+-------------------
+
+FinScope 2024
+https://microdatabk.statistics.gov.rw/catalog/121
+
+
+AGRICULTURE
+-----------
+
+Seasonal Agricultural Survey 2025
+https://microdatabk.statistics.gov.rw/catalog/124
+
+Seasonal Agricultural Survey 2024
+https://microdatabk.statistics.gov.rw/catalog/116
+
+Seasonal Agricultural Survey 2023
+https://microdatabk.statistics.gov.rw/catalog/111
+
+Seasonal Agricultural Survey 2022
+https://microdatabk.statistics.gov.rw/catalog/107
+
+Seasonal Agricultural Survey 2021
+https://microdatabk.statistics.gov.rw/catalog/101
+
+Seasonal Agricultural Survey 2020
+https://microdatabk.statistics.gov.rw/catalog/94
+
+Seasonal Agricultural Survey 2019
+https://microdatabk.statistics.gov.rw/catalog/90
+
+Agricultural Household Survey 2024
+https://microdatabk.statistics.gov.rw/catalog/122
+
+Agricultural Household Survey 2020
+https://microdatabk.statistics.gov.rw/catalog/93
+
+Agricultural Household Survey 2017
+https://microdatabk.statistics.gov.rw/catalog/81
+
+
+FOOD SECURITY AND VULNERABILITY
+------------------------------
+
+CFSVA 2024
+https://microdatabk.statistics.gov.rw/catalog/
+
+CFSVA 2021
+https://microdatabk.statistics.gov.rw/catalog/102
+
+CFSVA 2018
+https://microdatabk.statistics.gov.rw/catalog/86
+
+CFSVA 2015
+https://microdatabk.statistics.gov.rw/catalog/74
+
+
+HEALTH AND DEMOGRAPHICS
+-----------------------
+
+Rwanda Demographic and Health Survey 2025
+https://www.microdata.statistics.gov.rw/index.php/catalog/126
+
+Rwanda Demographic and Health Survey 2019-2020
+https://microdatabk.statistics.gov.rw/catalog/92
+
+
+POPULATION
+----------
+
+Rwanda Population and Housing Census 2022
+https://microdatabk.statistics.gov.rw/catalog/108
+
+
+RWANDA DATA PORTALS
+-------------------
+
+Rwanda Data Sharing Platform
+https://data.gov.rw/datasets
+
+NISR PxWeb Database
+https://pxweb.statistics.gov.rw/pxweb/en/
+
+
+LABOUR MARKET SYSTEMS
+---------------------
+
+Rwanda Labour Market Information System
+https://lmis.rw/
+
+KORA Job Portal
+https://jobportal.kora.rw/
+
+Professional Internship Portal
+https://internship.rw/
+
+Graduates Tracer Survey
+https://gts.rw/
+
+
+NISR GENERAL DATA / DISCOVERY
+----------------------------
+
+NISR official website
+https://www.statistics.gov.rw/
+
+NISR data sources
+https://www.statistics.gov.rw/data-sources
+
+NISR microdata catalog
+https://microdatabk.statistics.gov.rw/catalog/
+
+Rwanda Data Sharing Platform
+https://data.gov.rw/datasets

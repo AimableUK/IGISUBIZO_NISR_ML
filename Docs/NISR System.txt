@@ -1,0 +1,1 @@
+Our system can be simple for them to even train datasets from the admin dashboard by just uploading the files, so that the system must keep up with the new data, and it must know if that dataset is new on it instead f retraining it on the data that we once did, and then we must have  a place we can see all datasets it have.

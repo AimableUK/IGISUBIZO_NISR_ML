@@ -1,0 +1,313 @@
+skills mismatch:
+It reports a situation involving demand for higher-skilled workers alongside a large supply of lower-skilled workers, and highlights shortages in areas such as telecom, electronics, manufacturing and mining, alongside limited career guidance and reskilling pathways.
+
+Education / skills
+
+↓
+
+Labour-market demand
+
+↓
+
+Job seekers
+
+↓
+
+Mismatch
+
+↓
+
+Underemployment / unemployment
+
+↓
+
+Need for reskilling / job matching
+
+
+Problem A: Labour underutilization
+
+Question:
+
+Where is Rwanda's workforce being underutilized, and what characteristics/sectors are associated with it?
+
+Data:
+
+LFS → underemployment + occupation + industry + education + district + sex + age
+
+Potential output:
+
+Labour Utilization Intelligence Map
+
+Problem B: Skills mismatch
+
+Question:
+
+Are the skills people have aligned with the sectors/occupations where Rwanda is creating demand?
+
+Potential data:
+
+LFS + education/TVET + establishment census + skills-demand data
+
+This one is particularly interesting.
+
+Problem C: Youth employment transition
+
+Question:
+
+What factors and geographic patterns are associated with young people remaining outside employment, education and training?
+
+Data:
+
+LFS + education + demographics + district + possibly EICV
+
+Potential output:
+
+Youth Employment Transition Intelligence
+
+Problem D: Job opportunity matching
+
+NST2 explicitly identifies improving labour-market information systems and matching job seekers to opportunities.
+
+But rather than creating another LinkedIn-like site, we could investigate:
+
+Can national statistics identify which skills/occupations are in demand in which regions/sectors?
+
+Then a matching engine becomes data-driven rather than merely a job listing website.
+
+Problem E: Productive/decent job creation
+
+The government's target is not merely "more jobs."
+
+It explicitly talks about productive and decent jobs, targeting 250,000 annually.
+
+So:
+
+What characteristics distinguish more productive/decent employment from employment that is highly underutilized or precarious?
+
+This could connect:
+
+LFS + establishment census + earnings + hours + employment status + sector
+
+That could be a serious research direction.
+
+
+-------
+
+NISR LFS
+
+"What are workers doing?"
+
+with
+
+Establishment Census
+
+"Where are businesses and jobs?"
+
+with
+
+Education/skills data
+
+"What skills are people acquiring?"
+
+Now we potentially have:
+
+WORKFORCE SUPPLY
+
+↕
+
+BUSINESS DEMAND
+
+↕
+
+SKILLS
+
+↕
+
+GEOGRAPHY
+
+
+------
+
+District: Huye
+
+Sector: ICT
+
+and gets something like:
+
+Workforce supply
+Education/skills profile
+Existing establishments
+Employment trends
+Occupation distribution
+Youth NEET
+Underutilization
+Historical changes
+Relevant sectors growing/declining
+
+Then the system identifies:
+
+Potential workforce-demand gaps
+
+That starts looking like an actual Labour Market Intelligence System.
+
+And that aligns very directly with NST2's stated interest in improving labour-market information systems. (AI)
+and this can be an internal system and our modela can provide the actual data to keep eye on and foxus to help aovid the issue in the brought that (Aimable)
+
+
+
+------
+
+Can we predict employment demand?
+
+For example:
+
+Historical LFS
+
+Establishment Census
+
+GDP by sector
+
+trade/export data
+
+possibly investment data
+
+↓
+
+model sector/occupation trends
+
+↓
+
+"Which occupations/sectors show evidence of growing demand?"
+
+That could potentially help with:
+
+workforce planning
+training programs
+career guidance
+reskilling
+private-sector planning
+
+But this needs serious validation. We should not make unsupported claims like "these are Rwanda's future jobs."
+
+We'd need to determine whether the available time series and variables are sufficient for a defensible forecast.
+
+even maybe including external job market is eg accoridn got new tools, AI taking all jobs, job risk,... (Aimable)
+
+
+
+The strongest employment opportunity isn't necessarily:
+
+"Build an AI job-matching platform."
+
+That's too obvious.
+
+The deeper opportunity appears to be:
+
+Build better intelligence about Rwanda's labour market so governments, training institutions and other actors can understand where workforce supply, skills, business demand and employment outcomes do or don't align.
+
+
+-----
+
+
+MIFOTRA's own National Employment and Skills Strategy 2024-2029 says the existing LMIS still requires upgrading.
+
+
+-----
+
+
+Something that takes the existing data and asks questions that the existing platforms aren't necessarily answering.
+
+For example:
+
+Where is the largest mismatch between workforce supply and economic demand?
+
+Which occupations are expanding or shrinking?
+
+Which skills appear increasingly demanded by employers?
+
+Which districts have high youth NEET rates but growing economic activity?
+
+Which sectors are creating employment but not enough skilled workers?
+
+Where is labour being heavily underutilized?
+
+What training areas appear disconnected from observed labour-market demand?
+
+Those are intelligence questions, not job-board questions.
+
+
+-----
+
+
+
+
+Our system could combine:
+
+NISR LFS
+
+employment
+unemployment
+occupation
+education
+age
+sex
+industry
+underutilization
+
+Establishment Census
+
+businesses
+sector
+location
+employment size
+
+Education/TVET
+
+programs
+graduates
+fields of training
+
+economic data
+
+sector growth
+investment
+exports
+
+And produce something like:
+Labour Market Gap
+
+District X
+
+Observed workforce
+
+Agriculture: high
+Retail: high
+Construction: medium
+ICT: low
+
+Business structure
+
+Construction: growing
+Manufacturing: growing
+ICT services: growing
+
+Training supply
+
+Construction skills: low
+ICT skills: medium
+Agriculture: high
+
+Signal
+
+Potential mismatch between training/workforce supply and expanding sectors.
+
+Then the policymaker can investigate.
+
+---
+
+
+A data-driven labour-market intelligence and workforce-planning layer that complements Rwanda's existing employment infrastructure rather than replacing it.
+
+
+-----
+
