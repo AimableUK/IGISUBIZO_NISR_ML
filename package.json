@@ -1,0 +1,14 @@
+{
+  "name": "isesengura-deploy",
+  "private": true,
+  "packageManager": "pnpm@12.8.2",
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "dev": "docker compose up --build",
+    "dev:down": "docker compose down",
+    "prod": "docker compose -f docker-compose.prod.yml up --build -d",
+    "prod:down": "docker compose -f docker-compose.prod.yml down",
+    "api:dev": "pnpm --dir api run dev",
+    "web:dev": "pnpm --dir web run dev"
+  }
+}

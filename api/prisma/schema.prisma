@@ -1,0 +1,121 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ---- better-auth ----
+model User {
+  id            String     @id
+  name          String
+  email         String     @unique
+  emailVerified Boolean    @default(false)
+  image         String?
+  createdAt     DateTime   @default(now())
+  updatedAt     DateTime   @updatedAt
+  sessions      Session[]
+  accounts      Account[]
+  artifacts     Artifact[]
+  analyses      AnalysisResult[]
+
+  @@map("user")
+}
+
+model Session {
+  id        String   @id
+  expiresAt DateTime
+  token     String   @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  ipAddress String?
+  userAgent String?
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("session")
+}
+
+model Account {
+  id                    String    @id
+  accountId             String
+  providerId            String
+  userId                String
+  user                  User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  accessToken           String?
+  refreshToken          String?
+  idToken               String?
+  accessTokenExpiresAt  DateTime?
+  refreshTokenExpiresAt DateTime?
+  scope                 String?
+  password              String?
+  createdAt             DateTime  @default(now())
+  updatedAt             DateTime  @updatedAt
+
+  @@map("account")
+}
+
+model Verification {
+  id         String    @id
+  identifier String
+  value      String
+  expiresAt  DateTime
+  createdAt  DateTime? @default(now())
+  updatedAt  DateTime? @updatedAt
+
+  @@map("verification")
+}
+
+// ---- analytical artifacts ----
+// The analytical result is immutable. Presentation changes create new ArtifactVersions that point at the same result.
+model AnalysisResult {
+  id              String            @id @default(cuid())
+  userId          String
+  user            User              @relation(fields: [userId], references: [id], onDelete: Cascade)
+  question        String
+  result          Json
+  analysisVersion String
+  createdAt       DateTime          @default(now())
+  versions        ArtifactVersion[]
+}
+
+model Artifact {
+  id             String            @id @default(cuid())
+  userId         String
+  user           User              @relation(fields: [userId], references: [id], onDelete: Cascade)
+  title          String
+  question       String
+  currentVersion Int               @default(1)
+  createdAt      DateTime          @default(now())
+  updatedAt      DateTime          @updatedAt
+  versions       ArtifactVersion[]
+
+  @@index([userId, updatedAt])
+}
+
+model ArtifactVersion {
+  id               String         @id @default(cuid())
+  artifactId       String
+  artifact         Artifact       @relation(fields: [artifactId], references: [id], onDelete: Cascade)
+  version          Int
+  analysisId       String
+  analysis         AnalysisResult @relation(fields: [analysisId], references: [id])
+  presentationSpec Json
+  customizations   Json
+  plannerVersion   String
+  schemaVersion    Int            @default(1)
+  note             String?
+  createdAt        DateTime       @default(now())
+
+  @@unique([artifactId, version])
+}
+
+model ContactMessage {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  message   String
+  createdAt DateTime @default(now())
+}

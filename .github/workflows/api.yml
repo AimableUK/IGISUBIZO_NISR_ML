@@ -1,0 +1,29 @@
+name: API
+on:
+  push:
+    branches: [main]
+    paths: ["api/**", ".github/workflows/api.yml"]
+  pull_request:
+    paths: ["api/**", ".github/workflows/api.yml"]
+  workflow_dispatch:
+concurrency:
+  group: api-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: api
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 12.8.2
+      - run: pnpm install --lockfile=false
+      - run: pnpm run typecheck
+      - run: pnpm run build
+      - run: docker build -t isesengura-api:${{ github.sha }} .

@@ -1,0 +1,75 @@
+# Production: Put a TLS reverse proxy (Caddy, Traefik, nginx) in front.
+# Requires a populated .env (see .env.example). WEB_URL / API_URL / NEXT_PUBLIC_API_URL must be your public https URLs.
+services:
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      {
+        POSTGRES_USER: "${POSTGRES_USER:-isesengura}",
+        POSTGRES_PASSWORD: "${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD}",
+        POSTGRES_DB: "${POSTGRES_DB:-isesengura}",
+      }
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck:
+      {
+        test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-isesengura}"],
+        interval: 10s,
+        timeout: 5s,
+        retries: 10,
+      }
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    command: ["redis-server", "--appendonly", "yes"]
+    volumes: [redisdata:/data]
+    healthcheck:
+      {
+        test: ["CMD", "redis-cli", "ping"],
+        interval: 10s,
+        timeout: 5s,
+        retries: 10,
+      }
+  api:
+    build: { context: ./api, dockerfile: Dockerfile }
+    restart: unless-stopped
+    env_file: [.env]
+    environment:
+      NODE_ENV: production
+      DATABASE_URL: "postgresql://${POSTGRES_USER:-isesengura}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB:-isesengura}"
+      REDIS_URL: redis://redis:6379
+    ports: ["4000:4000"]
+    depends_on:
+      {
+        postgres: { condition: service_healthy },
+        redis: { condition: service_healthy },
+      }
+    healthcheck:
+      {
+        test:
+          [
+            "CMD",
+            "node",
+            "-e",
+            "fetch('http://localhost:4000/api/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))",
+          ],
+        interval: 15s,
+        timeout: 5s,
+        retries: 5,
+        start_period: 30s,
+      }
+  web:
+    build:
+      context: ./web
+      dockerfile: Dockerfile
+      args:
+        {
+          NEXT_PUBLIC_API_URL: "${NEXT_PUBLIC_API_URL:?set NEXT_PUBLIC_API_URL}",
+          NEXT_PUBLIC_CONTACT_EMAIL: "${NEXT_PUBLIC_CONTACT_EMAIL:-team@example.com}",
+        }
+    restart: unless-stopped
+    ports: ["3000:3000"]
+    depends_on: [api]
+volumes:
+  pgdata:
+  redisdata:
