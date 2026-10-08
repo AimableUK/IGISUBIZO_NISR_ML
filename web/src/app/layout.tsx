@@ -8,8 +8,8 @@ const display = Bricolage_Grotesque({ subsets: ["latin"], variable: "--font-disp
 const body = Public_Sans({ subsets: ["latin"], variable: "--font-body", display: "swap" });
 
 export const metadata: Metadata = {
-  title: { default: "Isesengura — Rwanda Analytical Workspace", template: "%s · Isesengura" },
-  description: "Ask a question about Rwanda's public data and get a saved, interactive analytical workspace — not a paragraph.",
+  title: { default: "Isesengura - Rwanda Analytical Workspace", template: "%s · Isesengura" },
+  description: "Ask a question about Rwanda's public data and get a saved, interactive analytical workspace - not a paragraph.",
   icons: { icon: "/favicon.svg" },
 };
 export const viewport: Viewport = { width: "device-width", initialScale: 1, themeColor: [{ media: "(prefers-color-scheme: dark)", color: "#111D15" }, { media: "(prefers-color-scheme: light)", color: "#F6FAF7" }] };

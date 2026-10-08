@@ -1,4 +1,4 @@
-# Isesengura — Rwanda Generative Analytical Workspace
+# Isesengura - Rwanda Generative Analytical Workspace
 
 Canonical repository: <https://github.com/AimableUK/IGISUBIZO_NISR_ML>
 
@@ -92,7 +92,7 @@ Set `ANTHROPIC_API_KEY` (and optionally `PLANNER_MODEL`). The planner receives o
 * Replace sample data and review `privacy`/`terms` pages with a lawyer (they are templates).
 * Set a real `BETTER_AUTH_SECRET`, Brevo sender, ImageKit keys, public https `WEB_URL`/`API_URL`/`NEXT_PUBLIC_API_URL`.
 * Run an accessibility audit with real assistive technology (this repo is built to the spec but not yet user-tested), and test Kinyarwanda speech support.
-* Add i18n (English/Kinyarwanda) — strings are currently inline English.
+* Add i18n (English/Kinyarwanda) - strings are currently inline English.
 * Add API integration tests and Playwright e2e for the ask → workspace → save → reopen flow.
 
 Palette: `#253D2C` forest · `#2E6F40` fern · `#68BA7F` sage · `#CFFFDC` mint.

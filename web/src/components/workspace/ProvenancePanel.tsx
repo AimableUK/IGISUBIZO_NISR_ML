@@ -12,7 +12,7 @@ export default function ProvenancePanel({ p }: { p: ArtifactPayload }) {
           <h3 className="mb-2 text-sm font-semibold">Sources</h3>
           <ul className="space-y-2 text-sm">
             {Object.entries(r.sources).map(([k, s]) => (
-              <li key={k}><span className="font-medium">{s.title}</span> — {s.publisher}, {s.period}{s.isSample && <span className="badge ml-2">Sample</span>}{s.licence && <span className="block text-muted">{s.licence}</span>}</li>
+              <li key={k}><span className="font-medium">{s.title}</span> - {s.publisher}, {s.period}{s.isSample && <span className="badge ml-2">Sample</span>}{s.licence && <span className="block text-muted">{s.licence}</span>}</li>
             ))}
           </ul>
           <h3 className="mb-2 mt-5 text-sm font-semibold">Caveats</h3>

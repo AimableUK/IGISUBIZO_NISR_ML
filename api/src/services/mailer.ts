@@ -26,7 +26,7 @@ export async function sendMail(mail: Mail): Promise<void> {
 }
 
 const shell = (title: string, body: string) =>
-  `<div style="font-family:system-ui,sans-serif;max-width:520px;margin:auto;color:#253D2C"><h2 style="color:#2E6F40">${esc(title)}</h2>${body}<p style="color:#5b6f60;font-size:12px">Isesengura — Rwanda Analytical Workspace</p></div>`;
+  `<div style="font-family:system-ui,sans-serif;max-width:520px;margin:auto;color:#253D2C"><h2 style="color:#2E6F40">${esc(title)}</h2>${body}<p style="color:#5b6f60;font-size:12px">Isesengura - Rwanda Analytical Workspace</p></div>`;
 
 export const templates = {
   verify: (name: string, url: string): Omit<Mail, "to"> => ({

@@ -37,7 +37,7 @@ export default function TileMap(p: Props) {
               className={`flex aspect-square min-h-[44px] flex-col items-center justify-center overflow-hidden rounded-md border border-line px-0.5 text-center leading-tight ${p.mode === "province" ? PROVINCE_FILL[t.province] : dark ? "text-on-primary" : "text-ink"} ${p.mode === "value" && !known ? "border-dashed" : ""}`}
             >
               <span className="w-full truncate text-[10px] font-medium sm:text-[11px]">{name}</span>
-              {p.mode === "value" && <span className="text-xs font-semibold sm:text-sm">{known ? fmtUnit(v, p.unit, 1) : "—"}</span>}
+              {p.mode === "value" && <span className="text-xs font-semibold sm:text-sm">{known ? fmtUnit(v, p.unit, 1) : "-"}</span>}
             </li>
           );
         })}

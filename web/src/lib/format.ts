@@ -8,7 +8,7 @@ export function fmtUnit(v: number, unit = "", decimals = 1) {
   return unit === "%" ? `${n}%` : unit ? `${n} ${unit}` : n;
 }
 export function fmtCell(v: string | number | null | undefined, col?: Column) {
-  if (v === null || v === undefined || v === "") return "—";
+  if (v === null || v === undefined || v === "") return "-";
   if (typeof v === "number") return col?.kind === "time" ? String(v) : fmtUnit(v, col?.unit ?? (col?.kind === "percent" ? "%" : ""));
   return v;
 }
