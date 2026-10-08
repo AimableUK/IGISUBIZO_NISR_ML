@@ -1,6 +1,6 @@
 FROM node:22-alpine AS deps
 WORKDIR /app
-RUN corepack enable pnpm && corepack install -g pnpm@12.8.2
+RUN npm install -g pnpm@12.8.2
 COPY package.json ./
 RUN pnpm install --lockfile=false
 
