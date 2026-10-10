@@ -14,7 +14,9 @@ The ML engine is pure TypeScript — no Python, no external ML libraries. It run
 
 ## Problems solved
 
-| # | Problem | Method | File |
+See [docs/PROBLEM_STATEMENT.md](docs/PROBLEM_STATEMENT.md) for the full problem context, decision-making rationale, and how the three problems connect.
+
+| # | Problem | Method | Doc |
 |---|---|---|---|
 | A | District labour underutilization profiles | KMeans clustering (k=3) | [CLUSTERING.md](docs/CLUSTERING.md) |
 | B | Predict youth NEET rate from district characteristics | OLS regression | [REGRESSION.md](docs/REGRESSION.md) |

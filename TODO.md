@@ -5,104 +5,80 @@
 ### Done ✅
 - [x] `api/src/services/ml-engine.ts` — TypeScript ML engine (clustering, regression, forecasting)
 - [x] `model/data/sample/` — sample CSVs (30 districts × 7 years)
-- [x] `model/docs/` — separate MD for each engine + sample data guide
-- [x] `model/MODEL.md` — overview doc
+- [x] `model/docs/PROBLEM_STATEMENT.md` — full problem statement + decision-making context
+- [x] `model/docs/CLUSTERING.md` — Problem A doc
+- [x] `model/docs/REGRESSION.md` — Problem B doc
+- [x] `model/docs/FORECASTING.md` — Problem C doc
+- [x] `model/docs/SAMPLE_DATA.md` — column reference + real data guide
+- [x] `model/MODEL.md` — engine overview
 - [x] Branch `Rwanda_training_modal_analytics` pushed to GitHub
 
 ### Remaining
 
-#### 1. Wire ml-engine into the analyses route
+#### 1. Wire ml-engine into the analyses route [ NEXT ]
 **File:** `api/src/routes/analyses.ts`
 
-Change line:
+Add import:
 ```ts
-import { runAnalysis } from "../services/engine";
-```
-To:
-```ts
-import { runAnalysis } from "../services/engine";
 import { runMLAnalysis } from "../services/ml-engine";
 ```
-Then in the route handler, decide which engine to call based on question keywords,
-or replace `runAnalysis(question)` with `runMLAnalysis(question)` to use ML engine for all questions.
-
-Simple swap (ML engine handles all questions):
+Replace:
+```ts
+const result: AnalyticalResult = runAnalysis(question);
+```
+With:
 ```ts
 const result: AnalyticalResult = runMLAnalysis(question);
 ```
 
 #### 2. Plug in real NISR data
 - Download LFS microdata: https://microdatabk.statistics.gov.rw/catalog/125
-- Aggregate to district × year summary (same columns as `model/data/sample/district_labour.csv`)
-- Replace `buildDistrict()` and `buildSector()` in `ml-engine.ts` with real data loaders
-- Set `isSample: false` and update `ML_DATASET_VERSIONS`
+- Aggregate to district × year (same columns as `model/data/sample/district_labour.csv`)
+- Replace `buildDistrict()` / `buildSector()` in `ml-engine.ts`
+- Set `isSample: false`, update `ML_DATASET_VERSIONS`
 
-#### 3. Add more indicators to clustering / regression
-Current features cover LFS basics. Can extend with:
-- Establishment Census: `total_establishments`, `pct_formal_business`, `dominant_sector`
-- EICV: poverty rate, household income
-- Population Census: dependency ratio, urbanisation rate
+#### 3. FAQ / methodology page content
+- `/methodology` page — plain-language explanation of each engine for non-technical users
+- `/ai-transparency` page — how the ML engine works, what it can and cannot claim
 
-#### 4. Improve regression model
-- Current: OLS on 30 district observations (latest year only)
-- Next: panel OLS across all years (30 districts × 7 years = 210 obs) for more reliable estimates
-- Consider: add year fixed effects to control for national trends
+#### 4. Panel OLS (regression improvement)
+- Current: 30 obs (latest year only)
+- Next: 210 obs (30 districts × 7 years) with year fixed effects
 
-#### 5. Improve forecasting
-- Current: simple linear trend per sector
-- Next: add confidence intervals around projections
-- Consider: ARIMA or exponential smoothing if time series is long enough with real data
-
-#### 6. FAQ / methodology page content
-- Document what each engine does in plain language for the `/methodology` page
-- Add "how to interpret" notes for clustering profiles, regression coefficients, forecast caveats
+#### 5. Forecast confidence intervals
+- Add upper/lower bounds to sector projections
 
 ---
 
-## How to run the ML engine locally
+## How to run the ML engine
 
-### With Docker (recommended)
+### With Docker
 ```bash
 cp .env.example .env
 # set BETTER_AUTH_SECRET: openssl rand -base64 32
 docker compose up --build
-# API on :4000, web on :3000
+# API :4000  Web :3000
 ```
 
 ### Without Docker
 ```bash
-# Terminal 1 — API
-cd api
-pnpm install --lockfile=false
-pnpm run prisma:generate
-pnpm exec prisma db push
-pnpm run dev
+# Terminal 1
+cd api && pnpm install --lockfile=false && pnpm run prisma:generate && pnpm exec prisma db push && pnpm run dev
 
-# Terminal 2 — Web
-cd web
-pnpm install --lockfile=false
-pnpm run dev
+# Terminal 2
+cd web && pnpm install --lockfile=false && pnpm run dev
 ```
 
-### Test the ML engine directly (no server needed)
+### Test engines directly (no server needed)
 ```bash
 cd api
-npx tsx -e "
-import { runMLAnalysis } from './src/services/ml-engine.ts';
-console.log(JSON.stringify(runMLAnalysis('cluster districts by underutilization'), null, 2));
-"
-```
 
-Or test each engine individually:
-```bash
 # Clustering
-npx tsx -e "import { runClustering } from './src/services/ml-engine.ts'; console.log(runClustering('cluster').status);"
+npx tsx src/services/ml-engine.ts
 
-# Regression
-npx tsx -e "import { runRegression } from './src/services/ml-engine.ts'; console.log(runRegression('what predicts neet rate').metrics.r_squared.value);"
-
-# Forecasting
-npx tsx -e "import { runForecasting } from './src/services/ml-engine.ts'; console.log(runForecasting('employment trend by sector').metrics.growing_sectors.value);"
+# Or import in a test script:
+# import { runMLAnalysis } from "./src/services/ml-engine.ts"
+# console.log(runMLAnalysis("cluster districts by underutilization"))
 ```
 
 ---
