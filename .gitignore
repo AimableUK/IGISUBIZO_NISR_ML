@@ -6,3 +6,10 @@ dist
 !.env.example
 *.tsbuildinfo
 coverage
+
+# Python
+__pycache__
+*.pyc
+*.pyo
+.venv
+venv

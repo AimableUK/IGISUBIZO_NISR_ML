@@ -1,0 +1,1891 @@
+district,province,year,sector,employment_share,growth_rate,avg_wage_rwf
+Gasabo,Kigali City,2019,Agriculture,38.3,5.3,144207
+Gasabo,Kigali City,2019,Manufacturing,34.6,1.6,150424
+Gasabo,Kigali City,2019,Construction,36.2,7.5,20104
+Gasabo,Kigali City,2019,Trade,36.6,2.8,141848
+Gasabo,Kigali City,2019,ICT,9.8,8.8,164809
+Gasabo,Kigali City,2019,Education,28.5,4.3,143903
+Gasabo,Kigali City,2019,Health,31.8,-1.2,195139
+Gasabo,Kigali City,2019,Finance,12.8,2.8,117429
+Gasabo,Kigali City,2019,Other,37.3,6.6,93453
+Gasabo,Kigali City,2020,Agriculture,38.4,6.4,145107
+Gasabo,Kigali City,2020,Manufacturing,35.1,0.7,151322
+Gasabo,Kigali City,2020,Construction,36.3,6.9,21005
+Gasabo,Kigali City,2020,Trade,38.3,2.2,142747
+Gasabo,Kigali City,2020,ICT,9.5,7.6,165710
+Gasabo,Kigali City,2020,Education,28.3,5.3,144803
+Gasabo,Kigali City,2020,Health,32.3,-1.5,196039
+Gasabo,Kigali City,2020,Finance,11.9,3.0,118328
+Gasabo,Kigali City,2020,Other,36.8,5.3,94352
+Gasabo,Kigali City,2021,Agriculture,39.6,5.6,146008
+Gasabo,Kigali City,2021,Manufacturing,33.8,1.8,152223
+Gasabo,Kigali City,2021,Construction,36.3,7.9,21903
+Gasabo,Kigali City,2021,Trade,38.1,2.1,143649
+Gasabo,Kigali City,2021,ICT,11.1,8.3,166609
+Gasabo,Kigali City,2021,Education,28.2,5.8,145703
+Gasabo,Kigali City,2021,Health,32.8,-0.7,196938
+Gasabo,Kigali City,2021,Finance,12.8,3.2,119228
+Gasabo,Kigali City,2021,Other,37.3,5.8,95253
+Gasabo,Kigali City,2022,Agriculture,39.6,5.2,146908
+Gasabo,Kigali City,2022,Manufacturing,34.6,2.0,153123
+Gasabo,Kigali City,2022,Construction,35.5,7.6,22803
+Gasabo,Kigali City,2022,Trade,37.7,1.7,144548
+Gasabo,Kigali City,2022,ICT,9.6,9,167509
+Gasabo,Kigali City,2022,Education,28.7,6.0,146602
+Gasabo,Kigali City,2022,Health,32.7,-0.1,197837
+Gasabo,Kigali City,2022,Finance,12.0,4.1,120127
+Gasabo,Kigali City,2022,Other,36.1,6.6,96152
+Gasabo,Kigali City,2023,Agriculture,39.5,5.8,147808
+Gasabo,Kigali City,2023,Manufacturing,33.9,1.3,154023
+Gasabo,Kigali City,2023,Construction,35.1,7.2,23704
+Gasabo,Kigali City,2023,Trade,37.0,3.5,145449
+Gasabo,Kigali City,2023,ICT,9.9,8.4,168410
+Gasabo,Kigali City,2023,Education,27.8,5.7,147503
+Gasabo,Kigali City,2023,Health,33.0,0.3,198738
+Gasabo,Kigali City,2023,Finance,12.4,4.9,121027
+Gasabo,Kigali City,2023,Other,37.7,6.2,97052
+Gasabo,Kigali City,2024,Agriculture,40,6.6,148707
+Gasabo,Kigali City,2024,Manufacturing,34.0,2.8,154924
+Gasabo,Kigali City,2024,Construction,35.9,8.8,24604
+Gasabo,Kigali City,2024,Trade,38.0,3.2,146348
+Gasabo,Kigali City,2024,ICT,10.7,9,169310
+Gasabo,Kigali City,2024,Education,27.7,6.0,148403
+Gasabo,Kigali City,2024,Health,32.1,0.4,199638
+Gasabo,Kigali City,2024,Finance,13.7,5.1,121928
+Gasabo,Kigali City,2024,Other,37.2,7.4,97952
+Gasabo,Kigali City,2025,Agriculture,39.7,5.6,149607
+Gasabo,Kigali City,2025,Manufacturing,34.5,2.2,155822
+Gasabo,Kigali City,2025,Construction,35.4,7.5,25505
+Gasabo,Kigali City,2025,Trade,37.2,3.2,147248
+Gasabo,Kigali City,2025,ICT,11.1,8.4,170210
+Gasabo,Kigali City,2025,Education,29.2,5.0,149303
+Gasabo,Kigali City,2025,Health,32.7,0.5,200000
+Gasabo,Kigali City,2025,Finance,12.3,3.7,122828
+Gasabo,Kigali City,2025,Other,36.8,7.2,98852
+Kicukiro,Kigali City,2019,Agriculture,31.5,-2.1,164541
+Kicukiro,Kigali City,2019,Manufacturing,14.5,1.0,170682
+Kicukiro,Kigali City,2019,Construction,15.3,1.6,181408
+Kicukiro,Kigali City,2019,Trade,9.9,-2.9,158026
+Kicukiro,Kigali City,2019,ICT,22.1,6.1,131601
+Kicukiro,Kigali City,2019,Education,37.5,2.0,172551
+Kicukiro,Kigali City,2019,Health,11.0,4.9,62941
+Kicukiro,Kigali City,2019,Finance,28.5,8.7,89208
+Kicukiro,Kigali City,2019,Other,33.1,-1.6,121672
+Kicukiro,Kigali City,2020,Agriculture,31.6,-3,165441
+Kicukiro,Kigali City,2020,Manufacturing,13.1,1.1,171581
+Kicukiro,Kigali City,2020,Construction,16.3,2.7,182308
+Kicukiro,Kigali City,2020,Trade,10.6,-2.1,158926
+Kicukiro,Kigali City,2020,ICT,21.1,7.0,132500
+Kicukiro,Kigali City,2020,Education,37.2,1.4,173450
+Kicukiro,Kigali City,2020,Health,12.7,5.5,63841
+Kicukiro,Kigali City,2020,Finance,29.0,8.0,90109
+Kicukiro,Kigali City,2020,Other,34.5,-0.4,122572
+Kicukiro,Kigali City,2021,Agriculture,31.2,-2.7,166340
+Kicukiro,Kigali City,2021,Manufacturing,14.7,0.8,172482
+Kicukiro,Kigali City,2021,Construction,16.5,2.2,183208
+Kicukiro,Kigali City,2021,Trade,11.6,-1.7,159826
+Kicukiro,Kigali City,2021,ICT,21.8,7.0,133401
+Kicukiro,Kigali City,2021,Education,37.2,2.2,174350
+Kicukiro,Kigali City,2021,Health,11.5,5.6,64740
+Kicukiro,Kigali City,2021,Finance,28.0,9.0,91010
+Kicukiro,Kigali City,2021,Other,33.2,-1.6,123472
+Kicukiro,Kigali City,2022,Agriculture,31.7,-1.4,167241
+Kicukiro,Kigali City,2022,Manufacturing,13.4,2.4,173383
+Kicukiro,Kigali City,2022,Construction,16.1,3.4,184107
+Kicukiro,Kigali City,2022,Trade,10.8,-1.6,160726
+Kicukiro,Kigali City,2022,ICT,21.1,6.1,134301
+Kicukiro,Kigali City,2022,Education,37.5,1.1,175250
+Kicukiro,Kigali City,2022,Health,11.3,6.3,65640
+Kicukiro,Kigali City,2022,Finance,29.6,8.2,91908
+Kicukiro,Kigali City,2022,Other,34.8,-0.2,124372
+Kicukiro,Kigali City,2023,Agriculture,31.1,-2.9,168140
+Kicukiro,Kigali City,2023,Manufacturing,14.9,2.6,174281
+Kicukiro,Kigali City,2023,Construction,16.9,2.4,185007
+Kicukiro,Kigali City,2023,Trade,11.7,-1.9,161625
+Kicukiro,Kigali City,2023,ICT,22.6,5.8,135200
+Kicukiro,Kigali City,2023,Education,37.8,2.2,176151
+Kicukiro,Kigali City,2023,Health,11.5,6.5,66541
+Kicukiro,Kigali City,2023,Finance,29.0,9,92809
+Kicukiro,Kigali City,2023,Other,34.9,-0.0,125272
+Kicukiro,Kigali City,2024,Agriculture,30.4,-1.7,169041
+Kicukiro,Kigali City,2024,Manufacturing,14.9,1.4,175182
+Kicukiro,Kigali City,2024,Construction,15.5,3.1,185908
+Kicukiro,Kigali City,2024,Trade,10.7,-2.2,162526
+Kicukiro,Kigali City,2024,ICT,21.7,6.3,136101
+Kicukiro,Kigali City,2024,Education,37.8,2.3,177049
+Kicukiro,Kigali City,2024,Health,12.6,6.1,67440
+Kicukiro,Kigali City,2024,Finance,29.5,9,93708
+Kicukiro,Kigali City,2024,Other,34.5,0.3,126171
+Kicukiro,Kigali City,2025,Agriculture,32.0,-1.2,169940
+Kicukiro,Kigali City,2025,Manufacturing,15.1,1.7,176082
+Kicukiro,Kigali City,2025,Construction,15.5,3.8,186808
+Kicukiro,Kigali City,2025,Trade,10.5,-1.6,163425
+Kicukiro,Kigali City,2025,ICT,21.2,7.7,137000
+Kicukiro,Kigali City,2025,Education,36.7,2.9,177949
+Kicukiro,Kigali City,2025,Health,12.7,6.0,68340
+Kicukiro,Kigali City,2025,Finance,29.6,9,94609
+Kicukiro,Kigali City,2025,Other,34.6,-1.1,127072
+Nyarugenge,Kigali City,2019,Agriculture,39.7,1.5,30467
+Nyarugenge,Kigali City,2019,Manufacturing,6.3,-1.7,164187
+Nyarugenge,Kigali City,2019,Construction,17.1,-1.9,178985
+Nyarugenge,Kigali City,2019,Trade,22.8,8.0,77379
+Nyarugenge,Kigali City,2019,ICT,11.0,8.8,166166
+Nyarugenge,Kigali City,2019,Education,2.7,3.0,31629
+Nyarugenge,Kigali City,2019,Health,13.1,5.7,111834
+Nyarugenge,Kigali City,2019,Finance,28.4,5.6,166225
+Nyarugenge,Kigali City,2019,Other,13.1,8.0,190011
+Nyarugenge,Kigali City,2020,Agriculture,38.9,1.8,31367
+Nyarugenge,Kigali City,2020,Manufacturing,5.7,-3,165087
+Nyarugenge,Kigali City,2020,Construction,16.6,-1.4,179885
+Nyarugenge,Kigali City,2020,Trade,23.1,8.5,78279
+Nyarugenge,Kigali City,2020,ICT,10.6,8.0,167066
+Nyarugenge,Kigali City,2020,Education,2.9,2.7,32528
+Nyarugenge,Kigali City,2020,Health,13.3,6.4,112734
+Nyarugenge,Kigali City,2020,Finance,27.6,6.5,167124
+Nyarugenge,Kigali City,2020,Other,13.8,7.8,190910
+Nyarugenge,Kigali City,2021,Agriculture,40,1.7,32267
+Nyarugenge,Kigali City,2021,Manufacturing,6.9,-1.8,165987
+Nyarugenge,Kigali City,2021,Construction,15.8,-2.4,180785
+Nyarugenge,Kigali City,2021,Trade,23.6,8.0,79180
+Nyarugenge,Kigali City,2021,ICT,10.3,8.5,167966
+Nyarugenge,Kigali City,2021,Education,2.5,2.4,33429
+Nyarugenge,Kigali City,2021,Health,12.7,6.6,113632
+Nyarugenge,Kigali City,2021,Finance,27.3,5.3,168024
+Nyarugenge,Kigali City,2021,Other,14.9,8.4,191810
+Nyarugenge,Kigali City,2022,Agriculture,40,0.6,33167
+Nyarugenge,Kigali City,2022,Manufacturing,5.9,-2.4,166886
+Nyarugenge,Kigali City,2022,Construction,16.1,-2.1,181684
+Nyarugenge,Kigali City,2022,Trade,22.3,8.5,80080
+Nyarugenge,Kigali City,2022,ICT,10.2,8.3,168866
+Nyarugenge,Kigali City,2022,Education,2,2.3,34329
+Nyarugenge,Kigali City,2022,Health,12.2,6.7,114532
+Nyarugenge,Kigali City,2022,Finance,28.5,6.3,168924
+Nyarugenge,Kigali City,2022,Other,14.7,8.1,192710
+Nyarugenge,Kigali City,2023,Agriculture,40,2.3,34068
+Nyarugenge,Kigali City,2023,Manufacturing,5.8,-2.5,167787
+Nyarugenge,Kigali City,2023,Construction,16.7,-2.3,182585
+Nyarugenge,Kigali City,2023,Trade,22.3,8.0,80978
+Nyarugenge,Kigali City,2023,ICT,11.2,9,169766
+Nyarugenge,Kigali City,2023,Education,2,2.3,35228
+Nyarugenge,Kigali City,2023,Health,12.2,5.7,115433
+Nyarugenge,Kigali City,2023,Finance,28.8,5.7,169824
+Nyarugenge,Kigali City,2023,Other,13.5,9,193610
+Nyarugenge,Kigali City,2024,Agriculture,39.3,1.9,34967
+Nyarugenge,Kigali City,2024,Manufacturing,6.0,-2.4,168687
+Nyarugenge,Kigali City,2024,Construction,17.6,-1.6,183485
+Nyarugenge,Kigali City,2024,Trade,22.5,7.6,81880
+Nyarugenge,Kigali City,2024,ICT,11.0,8.8,170667
+Nyarugenge,Kigali City,2024,Education,2,2.5,36129
+Nyarugenge,Kigali City,2024,Health,13.6,7.5,116332
+Nyarugenge,Kigali City,2024,Finance,28.0,6.8,170725
+Nyarugenge,Kigali City,2024,Other,13.7,8.6,194510
+Nyarugenge,Kigali City,2025,Agriculture,39.5,1.1,35868
+Nyarugenge,Kigali City,2025,Manufacturing,6.5,-1.5,169586
+Nyarugenge,Kigali City,2025,Construction,17.6,-1.6,184385
+Nyarugenge,Kigali City,2025,Trade,22.9,7.7,82780
+Nyarugenge,Kigali City,2025,ICT,10.4,8.7,171566
+Nyarugenge,Kigali City,2025,Education,2.5,2.6,37029
+Nyarugenge,Kigali City,2025,Health,13.9,6.9,117234
+Nyarugenge,Kigali City,2025,Finance,27.6,5.9,171624
+Nyarugenge,Kigali City,2025,Other,15.2,9,195410
+Bugesera,Eastern,2019,Agriculture,33.4,5.3,59111
+Bugesera,Eastern,2019,Manufacturing,18.6,7.0,63313
+Bugesera,Eastern,2019,Construction,32.8,2.4,60818
+Bugesera,Eastern,2019,Trade,32.9,6.0,30741
+Bugesera,Eastern,2019,ICT,22.3,7.1,57714
+Bugesera,Eastern,2019,Education,29.2,7.4,77626
+Bugesera,Eastern,2019,Health,24.1,3.6,15288
+Bugesera,Eastern,2019,Finance,26.0,0.8,74064
+Bugesera,Eastern,2019,Other,14.3,6.1,50438
+Bugesera,Eastern,2020,Agriculture,32.5,3.9,60010
+Bugesera,Eastern,2020,Manufacturing,17.3,5.8,64214
+Bugesera,Eastern,2020,Construction,33.0,2.6,61718
+Bugesera,Eastern,2020,Trade,33.1,6.1,31642
+Bugesera,Eastern,2020,ICT,22.2,8.4,58614
+Bugesera,Eastern,2020,Education,30.2,8.1,78527
+Bugesera,Eastern,2020,Health,24.3,3.1,16187
+Bugesera,Eastern,2020,Finance,25.6,-0.4,74965
+Bugesera,Eastern,2020,Other,14.7,7.4,51338
+Bugesera,Eastern,2021,Agriculture,34.0,4.8,60910
+Bugesera,Eastern,2021,Manufacturing,19.0,5.8,65114
+Bugesera,Eastern,2021,Construction,34.4,4.1,62617
+Bugesera,Eastern,2021,Trade,32.6,6.4,32541
+Bugesera,Eastern,2021,ICT,23.0,8.4,59516
+Bugesera,Eastern,2021,Education,30.4,9,79426
+Bugesera,Eastern,2021,Health,24.8,3.7,17088
+Bugesera,Eastern,2021,Finance,26.0,1.2,75864
+Bugesera,Eastern,2021,Other,14.7,8.0,52240
+Bugesera,Eastern,2022,Agriculture,32.5,5.8,61810
+Bugesera,Eastern,2022,Manufacturing,17.5,5.9,66014
+Bugesera,Eastern,2022,Construction,34.1,4.4,63519
+Bugesera,Eastern,2022,Trade,32.6,6.5,33441
+Bugesera,Eastern,2022,ICT,23.3,7.5,60415
+Bugesera,Eastern,2022,Education,29.5,8.9,80000
+Bugesera,Eastern,2022,Health,24.6,3.6,17987
+Bugesera,Eastern,2022,Finance,26.4,1.4,76765
+Bugesera,Eastern,2022,Other,14.9,6.6,53140
+Bugesera,Eastern,2023,Agriculture,34.2,4.4,62711
+Bugesera,Eastern,2023,Manufacturing,17.6,6.3,66913
+Bugesera,Eastern,2023,Construction,34.7,3.1,64419
+Bugesera,Eastern,2023,Trade,32.2,6.6,34341
+Bugesera,Eastern,2023,ICT,23.0,8.0,61316
+Bugesera,Eastern,2023,Education,29.8,9,80000
+Bugesera,Eastern,2023,Health,25.4,4.4,18888
+Bugesera,Eastern,2023,Finance,25.9,0.2,77665
+Bugesera,Eastern,2023,Other,13.4,8.2,54038
+Bugesera,Eastern,2024,Agriculture,33.3,4.9,63610
+Bugesera,Eastern,2024,Manufacturing,18.0,7.7,67814
+Bugesera,Eastern,2024,Construction,33.3,3.9,65319
+Bugesera,Eastern,2024,Trade,32.5,5.7,35240
+Bugesera,Eastern,2024,ICT,21.9,9,62215
+Bugesera,Eastern,2024,Education,30.0,8.1,80000
+Bugesera,Eastern,2024,Health,25.1,3.9,19788
+Bugesera,Eastern,2024,Finance,26.0,0.9,78564
+Bugesera,Eastern,2024,Other,13.5,7.6,54939
+Bugesera,Eastern,2025,Agriculture,33.0,5.5,64511
+Bugesera,Eastern,2025,Manufacturing,18.9,6.4,68713
+Bugesera,Eastern,2025,Construction,34.9,3.3,66218
+Bugesera,Eastern,2025,Trade,33.2,6.5,36141
+Bugesera,Eastern,2025,ICT,22.1,9,63114
+Bugesera,Eastern,2025,Education,30.0,9.0,80000
+Bugesera,Eastern,2025,Health,24.8,5.0,20689
+Bugesera,Eastern,2025,Finance,25.9,1.5,79465
+Bugesera,Eastern,2025,Other,14.0,7.5,55840
+Gatsibo,Eastern,2019,Agriculture,14.2,6.6,42465
+Gatsibo,Eastern,2019,Manufacturing,12.3,3.8,32125
+Gatsibo,Eastern,2019,Construction,29.8,6.3,33475
+Gatsibo,Eastern,2019,Trade,11.3,4.5,60581
+Gatsibo,Eastern,2019,ICT,14.0,-2.4,39065
+Gatsibo,Eastern,2019,Education,15.7,-2.7,79789
+Gatsibo,Eastern,2019,Health,11.3,9.0,45741
+Gatsibo,Eastern,2019,Finance,29.2,2.7,47972
+Gatsibo,Eastern,2019,Other,23.6,-2.6,68010
+Gatsibo,Eastern,2020,Agriculture,12.8,6.3,43367
+Gatsibo,Eastern,2020,Manufacturing,12.9,2.7,33024
+Gatsibo,Eastern,2020,Construction,29.4,5.0,34375
+Gatsibo,Eastern,2020,Trade,10.5,5.9,61480
+Gatsibo,Eastern,2020,ICT,13.7,-1.1,39965
+Gatsibo,Eastern,2020,Education,16.8,-2.5,80000
+Gatsibo,Eastern,2020,Health,12.2,7.7,46640
+Gatsibo,Eastern,2020,Finance,29.6,3.8,48872
+Gatsibo,Eastern,2020,Other,23.7,-2.4,68911
+Gatsibo,Eastern,2021,Agriculture,13.2,6.5,44265
+Gatsibo,Eastern,2021,Manufacturing,11.5,3.3,33924
+Gatsibo,Eastern,2021,Construction,30.4,5.1,35274
+Gatsibo,Eastern,2021,Trade,12.1,4.8,62380
+Gatsibo,Eastern,2021,ICT,14.3,-1.0,40864
+Gatsibo,Eastern,2021,Education,15.7,-1.2,80000
+Gatsibo,Eastern,2021,Health,11.5,9,47540
+Gatsibo,Eastern,2021,Finance,29.5,3.2,49772
+Gatsibo,Eastern,2021,Other,23.7,-0.9,69811
+Gatsibo,Eastern,2022,Agriculture,13.3,7.1,45165
+Gatsibo,Eastern,2022,Manufacturing,11.9,4.3,34826
+Gatsibo,Eastern,2022,Construction,29.7,5.7,36175
+Gatsibo,Eastern,2022,Trade,10.7,6.1,63281
+Gatsibo,Eastern,2022,ICT,13.9,-2.2,41765
+Gatsibo,Eastern,2022,Education,17.3,-2.0,80000
+Gatsibo,Eastern,2022,Health,11.4,9,48440
+Gatsibo,Eastern,2022,Finance,30.9,2.7,50671
+Gatsibo,Eastern,2022,Other,24.6,-1.0,70711
+Gatsibo,Eastern,2023,Agriculture,13.4,5.9,46067
+Gatsibo,Eastern,2023,Manufacturing,12.6,3.1,35725
+Gatsibo,Eastern,2023,Construction,31.1,6.8,37074
+Gatsibo,Eastern,2023,Trade,12.3,5.3,64181
+Gatsibo,Eastern,2023,ICT,14.3,-2.2,42665
+Gatsibo,Eastern,2023,Education,17.0,-0.7,80000
+Gatsibo,Eastern,2023,Health,12.7,8.8,49340
+Gatsibo,Eastern,2023,Finance,30.9,3.9,51572
+Gatsibo,Eastern,2023,Other,25.5,-2.0,71609
+Gatsibo,Eastern,2024,Agriculture,14.7,7.0,46965
+Gatsibo,Eastern,2024,Manufacturing,12.1,3.9,36625
+Gatsibo,Eastern,2024,Construction,30.6,7.0,37975
+Gatsibo,Eastern,2024,Trade,12.1,5.3,65080
+Gatsibo,Eastern,2024,ICT,14.2,-0.7,43565
+Gatsibo,Eastern,2024,Education,17.3,-1.9,80000
+Gatsibo,Eastern,2024,Health,11.9,8.4,50241
+Gatsibo,Eastern,2024,Finance,29.9,3.7,52472
+Gatsibo,Eastern,2024,Other,24.9,-1.8,72509
+Gatsibo,Eastern,2025,Agriculture,13.5,6.3,47865
+Gatsibo,Eastern,2025,Manufacturing,12.9,3.5,37524
+Gatsibo,Eastern,2025,Construction,30.3,6.0,38875
+Gatsibo,Eastern,2025,Trade,11.0,6.8,65980
+Gatsibo,Eastern,2025,ICT,14.5,-1.7,44464
+Gatsibo,Eastern,2025,Education,16.7,-1.7,80000
+Gatsibo,Eastern,2025,Health,12.1,9,51141
+Gatsibo,Eastern,2025,Finance,30.9,3.2,53372
+Gatsibo,Eastern,2025,Other,25.2,-0.3,73409
+Kayonza,Eastern,2019,Agriculture,37.0,3.2,24666
+Kayonza,Eastern,2019,Manufacturing,15.7,6.2,37425
+Kayonza,Eastern,2019,Construction,23.5,2.8,75028
+Kayonza,Eastern,2019,Trade,36.9,2.7,36744
+Kayonza,Eastern,2019,ICT,37.3,8.8,18177
+Kayonza,Eastern,2019,Education,16.6,3.5,23143
+Kayonza,Eastern,2019,Health,5.0,8.1,24857
+Kayonza,Eastern,2019,Finance,21.5,7.4,51794
+Kayonza,Eastern,2019,Other,31.6,6.1,59560
+Kayonza,Eastern,2020,Agriculture,37.9,2.8,25567
+Kayonza,Eastern,2020,Manufacturing,14.3,7.7,38326
+Kayonza,Eastern,2020,Construction,24.2,2.2,75929
+Kayonza,Eastern,2020,Trade,37.0,3.1,37644
+Kayonza,Eastern,2020,ICT,37.8,8.1,19076
+Kayonza,Eastern,2020,Education,16.0,4.0,24042
+Kayonza,Eastern,2020,Health,5.0,8.2,25758
+Kayonza,Eastern,2020,Finance,20.7,7.7,52694
+Kayonza,Eastern,2020,Other,31.1,6.1,60460
+Kayonza,Eastern,2021,Agriculture,38.1,3.3,26466
+Kayonza,Eastern,2021,Manufacturing,15.3,7.6,39227
+Kayonza,Eastern,2021,Construction,24.9,1.8,76828
+Kayonza,Eastern,2021,Trade,36.0,4.1,38545
+Kayonza,Eastern,2021,ICT,37.2,8.3,19977
+Kayonza,Eastern,2021,Education,16.5,5.0,24942
+Kayonza,Eastern,2021,Health,6.3,7.7,26658
+Kayonza,Eastern,2021,Finance,22.4,7.2,53594
+Kayonza,Eastern,2021,Other,31.9,6.1,61360
+Kayonza,Eastern,2022,Agriculture,36.7,4.6,27366
+Kayonza,Eastern,2022,Manufacturing,14.5,6.7,40126
+Kayonza,Eastern,2022,Construction,25.3,1.8,77728
+Kayonza,Eastern,2022,Trade,36.4,3.9,39444
+Kayonza,Eastern,2022,ICT,37.2,8.1,20876
+Kayonza,Eastern,2022,Education,15.8,3.9,25843
+Kayonza,Eastern,2022,Health,6.7,9,27557
+Kayonza,Eastern,2022,Finance,22.4,7.5,54493
+Kayonza,Eastern,2022,Other,30.9,7.7,62260
+Kayonza,Eastern,2023,Agriculture,38.4,4.8,28266
+Kayonza,Eastern,2023,Manufacturing,14.8,7.8,41026
+Kayonza,Eastern,2023,Construction,24.3,2.0,78628
+Kayonza,Eastern,2023,Trade,35.9,2.9,40345
+Kayonza,Eastern,2023,ICT,38.1,9,21776
+Kayonza,Eastern,2023,Education,16.8,4.4,26742
+Kayonza,Eastern,2023,Health,5.4,7.7,28457
+Kayonza,Eastern,2023,Finance,21.1,8.5,55395
+Kayonza,Eastern,2023,Other,31.2,6.7,63159
+Kayonza,Eastern,2024,Agriculture,37.5,3.4,29166
+Kayonza,Eastern,2024,Manufacturing,15.4,7.0,41925
+Kayonza,Eastern,2024,Construction,24.0,3.0,79528
+Kayonza,Eastern,2024,Trade,37.4,3.1,41245
+Kayonza,Eastern,2024,ICT,37.9,8.1,22677
+Kayonza,Eastern,2024,Education,16.3,4.2,27643
+Kayonza,Eastern,2024,Health,6.8,8.0,29357
+Kayonza,Eastern,2024,Finance,22.7,7.8,56294
+Kayonza,Eastern,2024,Other,31.2,8.0,64060
+Kayonza,Eastern,2025,Agriculture,37.0,5.1,30067
+Kayonza,Eastern,2025,Manufacturing,16.2,7.4,42827
+Kayonza,Eastern,2025,Construction,24.5,2.9,80000
+Kayonza,Eastern,2025,Trade,36.1,3.3,42144
+Kayonza,Eastern,2025,ICT,38.9,8.5,23577
+Kayonza,Eastern,2025,Education,17.7,4.4,28543
+Kayonza,Eastern,2025,Health,5.7,8.8,30258
+Kayonza,Eastern,2025,Finance,21.2,9,57194
+Kayonza,Eastern,2025,Other,31.8,7.5,64960
+Kirehe,Eastern,2019,Agriculture,24.8,2.6,31429
+Kirehe,Eastern,2019,Manufacturing,24.4,4.6,73770
+Kirehe,Eastern,2019,Construction,35.1,1.8,28574
+Kirehe,Eastern,2019,Trade,25.6,7.6,31938
+Kirehe,Eastern,2019,ICT,16.2,5.4,64537
+Kirehe,Eastern,2019,Education,25.6,2.4,64154
+Kirehe,Eastern,2019,Health,6.7,6.7,31249
+Kirehe,Eastern,2019,Finance,32.2,-1.2,33384
+Kirehe,Eastern,2019,Other,28.6,5.6,64429
+Kirehe,Eastern,2020,Agriculture,23.5,2.7,32329
+Kirehe,Eastern,2020,Manufacturing,24.4,6.1,74671
+Kirehe,Eastern,2020,Construction,36.6,2.1,29474
+Kirehe,Eastern,2020,Trade,27.3,6.6,32838
+Kirehe,Eastern,2020,ICT,16.4,4.7,65437
+Kirehe,Eastern,2020,Education,26.3,2.9,65055
+Kirehe,Eastern,2020,Health,5.4,5.5,32148
+Kirehe,Eastern,2020,Finance,32.0,-0.8,34283
+Kirehe,Eastern,2020,Other,27.3,6.6,65329
+Kirehe,Eastern,2021,Agriculture,23.9,2.4,33229
+Kirehe,Eastern,2021,Manufacturing,24.1,5.6,75570
+Kirehe,Eastern,2021,Construction,35.2,3.3,30375
+Kirehe,Eastern,2021,Trade,27.1,6.5,33738
+Kirehe,Eastern,2021,ICT,17.2,5.7,66336
+Kirehe,Eastern,2021,Education,26.4,3.3,65954
+Kirehe,Eastern,2021,Health,7.1,6.2,33049
+Kirehe,Eastern,2021,Finance,31.0,-0.9,35183
+Kirehe,Eastern,2021,Other,27.3,6.4,66229
+Kirehe,Eastern,2022,Agriculture,25.3,2.4,34128
+Kirehe,Eastern,2022,Manufacturing,25.3,5.1,76469
+Kirehe,Eastern,2022,Construction,36.7,3.4,31274
+Kirehe,Eastern,2022,Trade,26.1,7.7,34639
+Kirehe,Eastern,2022,ICT,16.6,5.9,67237
+Kirehe,Eastern,2022,Education,25.3,3.2,66855
+Kirehe,Eastern,2022,Health,5.7,5.9,33948
+Kirehe,Eastern,2022,Finance,31.1,-0.8,36083
+Kirehe,Eastern,2022,Other,27.4,6.6,67129
+Kirehe,Eastern,2023,Agriculture,25.4,2.9,35029
+Kirehe,Eastern,2023,Manufacturing,25.7,6.7,77370
+Kirehe,Eastern,2023,Construction,36.5,2.3,32174
+Kirehe,Eastern,2023,Trade,27.2,7.8,35539
+Kirehe,Eastern,2023,ICT,17.0,6.3,68137
+Kirehe,Eastern,2023,Education,26.1,3.1,67755
+Kirehe,Eastern,2023,Health,6.2,7.3,34849
+Kirehe,Eastern,2023,Finance,31.8,0.3,36983
+Kirehe,Eastern,2023,Other,27.5,6.3,68029
+Kirehe,Eastern,2024,Agriculture,24.3,2.8,35930
+Kirehe,Eastern,2024,Manufacturing,25.4,5.7,78269
+Kirehe,Eastern,2024,Construction,37.0,2.5,33075
+Kirehe,Eastern,2024,Trade,26.8,6.8,36439
+Kirehe,Eastern,2024,ICT,17.1,5.4,69038
+Kirehe,Eastern,2024,Education,26.3,2.5,68656
+Kirehe,Eastern,2024,Health,7.4,6.1,35748
+Kirehe,Eastern,2024,Finance,31.3,0.2,37883
+Kirehe,Eastern,2024,Other,27.8,6.8,68929
+Kirehe,Eastern,2025,Agriculture,24.7,2.8,36829
+Kirehe,Eastern,2025,Manufacturing,24.5,5.6,79170
+Kirehe,Eastern,2025,Construction,35.5,2.6,33974
+Kirehe,Eastern,2025,Trade,27.3,8.5,37338
+Kirehe,Eastern,2025,ICT,17.9,5.6,69938
+Kirehe,Eastern,2025,Education,25.9,3.0,69556
+Kirehe,Eastern,2025,Health,5.9,6.5,36649
+Kirehe,Eastern,2025,Finance,31.4,-0.0,38783
+Kirehe,Eastern,2025,Other,27.8,7.9,69828
+Maramagambo,Eastern,2019,Agriculture,9.8,2.0,54815
+Maramagambo,Eastern,2019,Manufacturing,38.0,3.3,38849
+Maramagambo,Eastern,2019,Construction,34.9,4.5,73339
+Maramagambo,Eastern,2019,Trade,6.1,-3,56109
+Maramagambo,Eastern,2019,ICT,2.3,-0.6,39785
+Maramagambo,Eastern,2019,Education,33.1,6.1,64368
+Maramagambo,Eastern,2019,Health,21.2,1.4,14780
+Maramagambo,Eastern,2019,Finance,27.9,5.2,59181
+Maramagambo,Eastern,2019,Other,8.3,5.1,40780
+Maramagambo,Eastern,2020,Agriculture,10.9,0.9,55715
+Maramagambo,Eastern,2020,Manufacturing,38.7,3.3,39748
+Maramagambo,Eastern,2020,Construction,36.5,3.8,74240
+Maramagambo,Eastern,2020,Trade,6.4,-2.5,57010
+Maramagambo,Eastern,2020,ICT,2.2,-0.8,40686
+Maramagambo,Eastern,2020,Education,31.7,6.4,65267
+Maramagambo,Eastern,2020,Health,21.8,0.1,15680
+Maramagambo,Eastern,2020,Finance,28.3,4.8,60081
+Maramagambo,Eastern,2020,Other,8.9,5.6,41679
+Maramagambo,Eastern,2021,Agriculture,9.7,1.1,56614
+Maramagambo,Eastern,2021,Manufacturing,38.3,4.9,40649
+Maramagambo,Eastern,2021,Construction,36.6,4.8,75139
+Maramagambo,Eastern,2021,Trade,6.8,-2.1,57909
+Maramagambo,Eastern,2021,ICT,3.5,0.7,41584
+Maramagambo,Eastern,2021,Education,33.3,6.9,66167
+Maramagambo,Eastern,2021,Health,20.3,0.3,16581
+Maramagambo,Eastern,2021,Finance,27.2,5.9,60981
+Maramagambo,Eastern,2021,Other,7.7,5.4,42580
+Maramagambo,Eastern,2022,Agriculture,10.9,2.8,57514
+Maramagambo,Eastern,2022,Manufacturing,38.2,5.1,41549
+Maramagambo,Eastern,2022,Construction,36.7,5.6,76039
+Maramagambo,Eastern,2022,Trade,6.2,-1.8,58809
+Maramagambo,Eastern,2022,ICT,2.3,0.9,42486
+Maramagambo,Eastern,2022,Education,31.8,5.9,67068
+Maramagambo,Eastern,2022,Health,21.6,0.5,17481
+Maramagambo,Eastern,2022,Finance,27.3,5.4,61882
+Maramagambo,Eastern,2022,Other,8.4,6.6,43481
+Maramagambo,Eastern,2023,Agriculture,10.9,1.4,58414
+Maramagambo,Eastern,2023,Manufacturing,38.5,3.8,42450
+Maramagambo,Eastern,2023,Construction,35.3,5.7,76939
+Maramagambo,Eastern,2023,Trade,7.5,-2.6,59709
+Maramagambo,Eastern,2023,ICT,3.7,-0.1,43385
+Maramagambo,Eastern,2023,Education,33.2,6.4,67968
+Maramagambo,Eastern,2023,Health,20.8,1.5,18381
+Maramagambo,Eastern,2023,Finance,27.4,6.4,62781
+Maramagambo,Eastern,2023,Other,8.8,6.9,44380
+Maramagambo,Eastern,2024,Agriculture,11.2,1.5,59315
+Maramagambo,Eastern,2024,Manufacturing,39.5,5.1,43349
+Maramagambo,Eastern,2024,Construction,35.3,4.4,77840
+Maramagambo,Eastern,2024,Trade,6.3,-1.4,60610
+Maramagambo,Eastern,2024,ICT,2.4,-0.1,44285
+Maramagambo,Eastern,2024,Education,33.5,7.6,68869
+Maramagambo,Eastern,2024,Health,22.0,0.7,19280
+Maramagambo,Eastern,2024,Finance,28.7,5.4,63682
+Maramagambo,Eastern,2024,Other,8.6,6.4,45280
+Maramagambo,Eastern,2025,Agriculture,11.4,2.3,60214
+Maramagambo,Eastern,2025,Manufacturing,38.5,5.4,44249
+Maramagambo,Eastern,2025,Construction,36.8,4.6,78738
+Maramagambo,Eastern,2025,Trade,6.4,-1.2,61509
+Maramagambo,Eastern,2025,ICT,2.6,-0.1,45185
+Maramagambo,Eastern,2025,Education,33.1,6.3,69769
+Maramagambo,Eastern,2025,Health,21.5,1.3,20181
+Maramagambo,Eastern,2025,Finance,28.7,7.0,64582
+Maramagambo,Eastern,2025,Other,8.2,6.6,46180
+Ngoma,Eastern,2019,Agriculture,17.0,4.2,56148
+Ngoma,Eastern,2019,Manufacturing,15.4,0.6,71824
+Ngoma,Eastern,2019,Construction,9.1,8.5,37517
+Ngoma,Eastern,2019,Trade,32.6,2.4,47762
+Ngoma,Eastern,2019,ICT,7.0,7.2,48713
+Ngoma,Eastern,2019,Education,25.0,2.8,15693
+Ngoma,Eastern,2019,Health,20.4,-0.4,36681
+Ngoma,Eastern,2019,Finance,36.1,-0.2,55843
+Ngoma,Eastern,2019,Other,26.3,2.7,71564
+Ngoma,Eastern,2020,Agriculture,17.2,4.7,57048
+Ngoma,Eastern,2020,Manufacturing,16.1,0.3,72724
+Ngoma,Eastern,2020,Construction,9.0,7.4,38416
+Ngoma,Eastern,2020,Trade,32.7,3.1,48663
+Ngoma,Eastern,2020,ICT,6.8,7.7,49613
+Ngoma,Eastern,2020,Education,25.4,2.5,16593
+Ngoma,Eastern,2020,Health,20.1,0.4,37581
+Ngoma,Eastern,2020,Finance,37.2,-0.1,56742
+Ngoma,Eastern,2020,Other,25.7,3.7,72464
+Ngoma,Eastern,2021,Agriculture,16.6,4.7,57948
+Ngoma,Eastern,2021,Manufacturing,15.5,0.7,73624
+Ngoma,Eastern,2021,Construction,9.9,8.3,39317
+Ngoma,Eastern,2021,Trade,31.9,3.5,49561
+Ngoma,Eastern,2021,ICT,7.5,7.5,50513
+Ngoma,Eastern,2021,Education,25.2,2.4,17492
+Ngoma,Eastern,2021,Health,21.0,0.2,38481
+Ngoma,Eastern,2021,Finance,37.7,0.4,57642
+Ngoma,Eastern,2021,Other,25.7,4.0,73363
+Ngoma,Eastern,2022,Agriculture,17.7,5.8,58849
+Ngoma,Eastern,2022,Manufacturing,16.8,-0.3,74524
+Ngoma,Eastern,2022,Construction,8.9,8.0,40217
+Ngoma,Eastern,2022,Trade,31.9,3.7,50462
+Ngoma,Eastern,2022,ICT,6.8,7.5,51413
+Ngoma,Eastern,2022,Education,25.2,2.7,18393
+Ngoma,Eastern,2022,Health,21.5,0.1,39380
+Ngoma,Eastern,2022,Finance,37.5,1.5,58543
+Ngoma,Eastern,2022,Other,27.3,2.8,74265
+Ngoma,Eastern,2023,Agriculture,16.6,6.3,59748
+Ngoma,Eastern,2023,Manufacturing,16.8,-0.1,75423
+Ngoma,Eastern,2023,Construction,8.9,8.8,41116
+Ngoma,Eastern,2023,Trade,31.6,3.5,51362
+Ngoma,Eastern,2023,ICT,7.0,7.6,52313
+Ngoma,Eastern,2023,Education,25.2,2.8,19292
+Ngoma,Eastern,2023,Health,20.6,1.3,40280
+Ngoma,Eastern,2023,Finance,36.4,1.7,59443
+Ngoma,Eastern,2023,Other,26.0,3.5,75163
+Ngoma,Eastern,2024,Agriculture,16.7,5.1,60650
+Ngoma,Eastern,2024,Manufacturing,16.8,0.9,76325
+Ngoma,Eastern,2024,Construction,10.2,9,42016
+Ngoma,Eastern,2024,Trade,32.9,2.8,52262
+Ngoma,Eastern,2024,ICT,8.4,9,53214
+Ngoma,Eastern,2024,Education,26.8,3.0,20192
+Ngoma,Eastern,2024,Health,20.4,0.7,41180
+Ngoma,Eastern,2024,Finance,36.5,0.5,60344
+Ngoma,Eastern,2024,Other,27.4,4.1,76064
+Ngoma,Eastern,2025,Agriculture,18.2,5.3,61549
+Ngoma,Eastern,2025,Manufacturing,16.3,1.0,77224
+Ngoma,Eastern,2025,Construction,9.5,8.7,42917
+Ngoma,Eastern,2025,Trade,32.7,3.2,53162
+Ngoma,Eastern,2025,ICT,7.1,8.5,54114
+Ngoma,Eastern,2025,Education,25.4,3.4,21092
+Ngoma,Eastern,2025,Health,21.7,1.6,42081
+Ngoma,Eastern,2025,Finance,37.9,0.9,61243
+Ngoma,Eastern,2025,Other,26.8,4.2,76964
+Nyagatare,Eastern,2019,Agriculture,11.0,1.7,61725
+Nyagatare,Eastern,2019,Manufacturing,10.7,7.3,28629
+Nyagatare,Eastern,2019,Construction,8.9,3.0,62247
+Nyagatare,Eastern,2019,Trade,40,8.8,62730
+Nyagatare,Eastern,2019,ICT,33.4,-2.5,41874
+Nyagatare,Eastern,2019,Education,24.6,8.3,52833
+Nyagatare,Eastern,2019,Health,13.0,7.1,17219
+Nyagatare,Eastern,2019,Finance,16.4,-1.1,14546
+Nyagatare,Eastern,2019,Other,17.2,7.4,71098
+Nyagatare,Eastern,2020,Agriculture,11.9,2.2,62623
+Nyagatare,Eastern,2020,Manufacturing,12.1,7.4,29529
+Nyagatare,Eastern,2020,Construction,8.3,3.5,63148
+Nyagatare,Eastern,2020,Trade,39.3,9,63630
+Nyagatare,Eastern,2020,ICT,32.3,-2.0,42774
+Nyagatare,Eastern,2020,Education,24.7,8.9,53733
+Nyagatare,Eastern,2020,Health,14.3,7.0,18117
+Nyagatare,Eastern,2020,Finance,16.6,0.4,15446
+Nyagatare,Eastern,2020,Other,16.7,8.3,71999
+Nyagatare,Eastern,2021,Agriculture,12.6,2.0,63523
+Nyagatare,Eastern,2021,Manufacturing,11.4,8.8,30429
+Nyagatare,Eastern,2021,Construction,9.1,3.7,64048
+Nyagatare,Eastern,2021,Trade,40,8.2,64530
+Nyagatare,Eastern,2021,ICT,32.4,-2.2,43674
+Nyagatare,Eastern,2021,Education,25.3,8.2,54633
+Nyagatare,Eastern,2021,Health,13.1,7.9,19017
+Nyagatare,Eastern,2021,Finance,16.6,0.4,16348
+Nyagatare,Eastern,2021,Other,17.7,7.7,72898
+Nyagatare,Eastern,2022,Agriculture,12.5,2.8,64424
+Nyagatare,Eastern,2022,Manufacturing,12.1,7.7,31328
+Nyagatare,Eastern,2022,Construction,9.1,4.1,64947
+Nyagatare,Eastern,2022,Trade,40,9,65431
+Nyagatare,Eastern,2022,ICT,33.8,-3,44573
+Nyagatare,Eastern,2022,Education,25.0,8.7,55533
+Nyagatare,Eastern,2022,Health,13.4,7.2,19917
+Nyagatare,Eastern,2022,Finance,16.7,-0.8,17246
+Nyagatare,Eastern,2022,Other,18.3,9,73797
+Nyagatare,Eastern,2023,Agriculture,12.3,2.6,65323
+Nyagatare,Eastern,2023,Manufacturing,10.8,9,32228
+Nyagatare,Eastern,2023,Construction,9.8,4.6,65849
+Nyagatare,Eastern,2023,Trade,40,9,66330
+Nyagatare,Eastern,2023,ICT,33.9,-2.8,45473
+Nyagatare,Eastern,2023,Education,25.2,9,56432
+Nyagatare,Eastern,2023,Health,13.6,8.9,20818
+Nyagatare,Eastern,2023,Finance,15.5,-0.6,18147
+Nyagatare,Eastern,2023,Other,18.3,9,74698
+Nyagatare,Eastern,2024,Agriculture,12.9,3.1,66225
+Nyagatare,Eastern,2024,Manufacturing,10.9,8.9,33129
+Nyagatare,Eastern,2024,Construction,9.8,4.7,66747
+Nyagatare,Eastern,2024,Trade,40,8.5,67230
+Nyagatare,Eastern,2024,ICT,33.5,-2.5,46373
+Nyagatare,Eastern,2024,Education,26.2,8.8,57332
+Nyagatare,Eastern,2024,Health,13.8,7.4,21718
+Nyagatare,Eastern,2024,Finance,16.5,-0.3,19048
+Nyagatare,Eastern,2024,Other,16.9,8.3,75598
+Nyagatare,Eastern,2025,Agriculture,13.1,3.7,67125
+Nyagatare,Eastern,2025,Manufacturing,12.3,8.6,34029
+Nyagatare,Eastern,2025,Construction,8.9,4.3,67649
+Nyagatare,Eastern,2025,Trade,40,9,68131
+Nyagatare,Eastern,2025,ICT,33.6,-2.1,47274
+Nyagatare,Eastern,2025,Education,25.4,9,58233
+Nyagatare,Eastern,2025,Health,15.0,8.7,22618
+Nyagatare,Eastern,2025,Finance,15.9,0.7,19947
+Nyagatare,Eastern,2025,Other,17.6,9,76498
+Rwamagana,Eastern,2019,Agriculture,39.1,1.6,53010
+Rwamagana,Eastern,2019,Manufacturing,11.6,3.4,19468
+Rwamagana,Eastern,2019,Construction,10.4,-2.8,39450
+Rwamagana,Eastern,2019,Trade,6.3,8.7,70957
+Rwamagana,Eastern,2019,ICT,32.6,1.4,78673
+Rwamagana,Eastern,2019,Education,4.6,5.9,70141
+Rwamagana,Eastern,2019,Health,23.4,5.2,29201
+Rwamagana,Eastern,2019,Finance,22.9,9.0,43744
+Rwamagana,Eastern,2019,Other,9.5,0.1,29893
+Rwamagana,Eastern,2020,Agriculture,38.7,1.5,53911
+Rwamagana,Eastern,2020,Manufacturing,11.3,3.0,20368
+Rwamagana,Eastern,2020,Construction,11.7,-2.0,40350
+Rwamagana,Eastern,2020,Trade,6.3,7.8,71857
+Rwamagana,Eastern,2020,ICT,33.0,2.0,79573
+Rwamagana,Eastern,2020,Education,6.3,6.3,71041
+Rwamagana,Eastern,2020,Health,24.7,5.9,30100
+Rwamagana,Eastern,2020,Finance,22.5,8.6,44645
+Rwamagana,Eastern,2020,Other,10.0,0.3,30793
+Rwamagana,Eastern,2021,Agriculture,39.3,0.7,54812
+Rwamagana,Eastern,2021,Manufacturing,12.7,2.8,21267
+Rwamagana,Eastern,2021,Construction,12.0,-2.9,41249
+Rwamagana,Eastern,2021,Trade,7.3,7.6,72759
+Rwamagana,Eastern,2021,ICT,32.5,1.6,80000
+Rwamagana,Eastern,2021,Education,5.0,4.9,71941
+Rwamagana,Eastern,2021,Health,24.1,4.4,31001
+Rwamagana,Eastern,2021,Finance,23.5,8.1,45545
+Rwamagana,Eastern,2021,Other,9.5,-0.3,31694
+Rwamagana,Eastern,2022,Agriculture,40,2.2,55711
+Rwamagana,Eastern,2022,Manufacturing,12.6,3.2,22168
+Rwamagana,Eastern,2022,Construction,12.1,-2.7,42150
+Rwamagana,Eastern,2022,Trade,6.1,8.8,73657
+Rwamagana,Eastern,2022,ICT,32.9,1.8,80000
+Rwamagana,Eastern,2022,Education,5.0,5.1,72840
+Rwamagana,Eastern,2022,Health,23.7,4.8,31899
+Rwamagana,Eastern,2022,Finance,22.7,9,46445
+Rwamagana,Eastern,2022,Other,9.9,-0.8,32594
+Rwamagana,Eastern,2023,Agriculture,40,1.7,56612
+Rwamagana,Eastern,2023,Manufacturing,11.5,2.8,23067
+Rwamagana,Eastern,2023,Construction,12.2,-1.0,43050
+Rwamagana,Eastern,2023,Trade,6.4,8.2,74558
+Rwamagana,Eastern,2023,ICT,34.1,2.4,80000
+Rwamagana,Eastern,2023,Education,6.1,5.9,73741
+Rwamagana,Eastern,2023,Health,24.5,5.3,32800
+Rwamagana,Eastern,2023,Finance,23.2,8.4,47344
+Rwamagana,Eastern,2023,Other,9.4,0.8,33492
+Rwamagana,Eastern,2024,Agriculture,38.9,2.4,57511
+Rwamagana,Eastern,2024,Manufacturing,12.6,3.4,23968
+Rwamagana,Eastern,2024,Construction,10.7,-1.9,43949
+Rwamagana,Eastern,2024,Trade,7.0,8.8,75458
+Rwamagana,Eastern,2024,ICT,33.2,3.0,80000
+Rwamagana,Eastern,2024,Education,5.6,5.6,74642
+Rwamagana,Eastern,2024,Health,24.8,4.9,33701
+Rwamagana,Eastern,2024,Finance,23.6,8.2,48244
+Rwamagana,Eastern,2024,Other,10.4,0.6,34393
+Rwamagana,Eastern,2025,Agriculture,39.1,2.1,58411
+Rwamagana,Eastern,2025,Manufacturing,11.7,4.3,24867
+Rwamagana,Eastern,2025,Construction,11.9,-2.1,44849
+Rwamagana,Eastern,2025,Trade,6.9,9,76359
+Rwamagana,Eastern,2025,ICT,33.0,3.2,80000
+Rwamagana,Eastern,2025,Education,5.2,6.6,75541
+Rwamagana,Eastern,2025,Health,25.0,5.1,34600
+Rwamagana,Eastern,2025,Finance,24.0,9,49144
+Rwamagana,Eastern,2025,Other,10.1,1.2,35293
+Burera,Northern,2019,Agriculture,29.0,6.2,63876
+Burera,Northern,2019,Manufacturing,15.6,3.6,28334
+Burera,Northern,2019,Construction,25.5,-0.9,14015
+Burera,Northern,2019,Trade,15.3,-2.5,60636
+Burera,Northern,2019,ICT,38.4,1.4,64878
+Burera,Northern,2019,Education,39.8,5.5,24509
+Burera,Northern,2019,Health,28.9,3.3,31169
+Burera,Northern,2019,Finance,5.3,-2.3,59108
+Burera,Northern,2019,Other,10.0,-1.6,71884
+Burera,Northern,2020,Agriculture,28.9,7.2,64775
+Burera,Northern,2020,Manufacturing,16.4,2.6,29233
+Burera,Northern,2020,Construction,24.7,0.0,14915
+Burera,Northern,2020,Trade,15.5,-2.5,61536
+Burera,Northern,2020,ICT,37.9,1.5,65779
+Burera,Northern,2020,Education,38.3,5.6,25409
+Burera,Northern,2020,Health,28.8,4.3,32069
+Burera,Northern,2020,Finance,5.4,-2.5,60008
+Burera,Northern,2020,Other,8.5,-1.8,72783
+Burera,Northern,2021,Agriculture,30.1,7.3,65677
+Burera,Northern,2021,Manufacturing,17.1,3.7,30133
+Burera,Northern,2021,Construction,26.3,0.1,15815
+Burera,Northern,2021,Trade,15.6,-2.3,62436
+Burera,Northern,2021,ICT,37.5,3.1,66679
+Burera,Northern,2021,Education,38.5,4.5,26309
+Burera,Northern,2021,Health,28.2,4.1,32970
+Burera,Northern,2021,Finance,5.1,-1.4,60909
+Burera,Northern,2021,Other,8.7,-1.7,73683
+Burera,Northern,2022,Agriculture,29.1,7.4,66576
+Burera,Northern,2022,Manufacturing,16.8,2.9,31034
+Burera,Northern,2022,Construction,25.4,-0.1,16715
+Burera,Northern,2022,Trade,16.4,-2.0,63337
+Burera,Northern,2022,ICT,38.6,1.8,67578
+Burera,Northern,2022,Education,39.8,5.4,27208
+Burera,Northern,2022,Health,29.3,3.7,33870
+Burera,Northern,2022,Finance,5.6,-1.8,61807
+Burera,Northern,2022,Other,9.2,-1.5,74584
+Burera,Northern,2023,Agriculture,30.7,7.7,67476
+Burera,Northern,2023,Manufacturing,15.8,3.5,31933
+Burera,Northern,2023,Construction,25.3,-0.0,17615
+Burera,Northern,2023,Trade,16.7,-1.4,64236
+Burera,Northern,2023,ICT,39.0,1.9,68478
+Burera,Northern,2023,Education,39.8,6.0,28109
+Burera,Northern,2023,Health,28.7,4.7,34770
+Burera,Northern,2023,Finance,4.6,-1.2,62707
+Burera,Northern,2023,Other,9.2,-0.3,75484
+Burera,Northern,2024,Agriculture,29.3,7.8,68376
+Burera,Northern,2024,Manufacturing,17.3,3.2,32833
+Burera,Northern,2024,Construction,26.3,0.5,18515
+Burera,Northern,2024,Trade,16.6,-0.3,65136
+Burera,Northern,2024,ICT,37.6,3.5,69378
+Burera,Northern,2024,Education,38.7,6.3,29009
+Burera,Northern,2024,Health,29.9,5.2,35669
+Burera,Northern,2024,Finance,4.8,-1.9,63608
+Burera,Northern,2024,Other,9.5,0.2,76384
+Burera,Northern,2025,Agriculture,30.9,7.3,69275
+Burera,Northern,2025,Manufacturing,16.4,4.8,33734
+Burera,Northern,2025,Construction,26.4,-0.7,19414
+Burera,Northern,2025,Trade,16.5,-1.3,66037
+Burera,Northern,2025,ICT,39.1,2.1,70279
+Burera,Northern,2025,Education,39.7,6.4,29907
+Burera,Northern,2025,Health,28.6,4.2,36570
+Burera,Northern,2025,Finance,4.4,-2.3,64507
+Burera,Northern,2025,Other,9.7,-1.1,77283
+Gakenke,Northern,2019,Agriculture,21.7,3.9,76387
+Gakenke,Northern,2019,Manufacturing,40,5.3,15119
+Gakenke,Northern,2019,Construction,6.6,7.4,44101
+Gakenke,Northern,2019,Trade,12.5,4.3,18940
+Gakenke,Northern,2019,ICT,10.9,-0.8,51631
+Gakenke,Northern,2019,Education,9.6,-2.2,67430
+Gakenke,Northern,2019,Health,37.3,0.5,44576
+Gakenke,Northern,2019,Finance,27.4,2.1,65179
+Gakenke,Northern,2019,Other,32.6,5.3,50128
+Gakenke,Northern,2020,Agriculture,23.0,2.9,77288
+Gakenke,Northern,2020,Manufacturing,39.7,5.0,16020
+Gakenke,Northern,2020,Construction,7.0,7.4,45000
+Gakenke,Northern,2020,Trade,12.2,3.5,19840
+Gakenke,Northern,2020,ICT,10.8,-1.3,52532
+Gakenke,Northern,2020,Education,9.9,-1.9,68328
+Gakenke,Northern,2020,Health,37.5,-0.8,45477
+Gakenke,Northern,2020,Finance,27.1,3.5,66078
+Gakenke,Northern,2020,Other,31.9,4.0,51028
+Gakenke,Northern,2021,Agriculture,22.6,3.8,78188
+Gakenke,Northern,2021,Manufacturing,39.2,4.1,16920
+Gakenke,Northern,2021,Construction,8.0,9.0,45901
+Gakenke,Northern,2021,Trade,13.8,5.2,20740
+Gakenke,Northern,2021,ICT,10.2,-0.7,53431
+Gakenke,Northern,2021,Education,11.0,-3,69229
+Gakenke,Northern,2021,Health,37.8,-0.1,46376
+Gakenke,Northern,2021,Finance,27.3,3.8,66978
+Gakenke,Northern,2021,Other,32.6,4.2,51928
+Gakenke,Northern,2022,Agriculture,22.6,3.4,79088
+Gakenke,Northern,2022,Manufacturing,39.3,5.5,17820
+Gakenke,Northern,2022,Construction,8.4,9.0,46802
+Gakenke,Northern,2022,Trade,13.9,5.3,21638
+Gakenke,Northern,2022,ICT,11.6,-0.5,54332
+Gakenke,Northern,2022,Education,10.1,-1.5,70129
+Gakenke,Northern,2022,Health,36.3,-0.5,47276
+Gakenke,Northern,2022,Finance,26.8,3.8,67879
+Gakenke,Northern,2022,Other,31.8,4.2,52827
+Gakenke,Northern,2023,Agriculture,23.5,3.4,79988
+Gakenke,Northern,2023,Manufacturing,40,4.7,18720
+Gakenke,Northern,2023,Construction,7.3,9,47701
+Gakenke,Northern,2023,Trade,13.7,4.7,22539
+Gakenke,Northern,2023,ICT,10.4,-0.4,55232
+Gakenke,Northern,2023,Education,10.5,-1.3,71028
+Gakenke,Northern,2023,Health,36.9,0.7,48176
+Gakenke,Northern,2023,Finance,28.3,4.1,68779
+Gakenke,Northern,2023,Other,33.0,5.6,53728
+Gakenke,Northern,2024,Agriculture,23.3,4.8,80000
+Gakenke,Northern,2024,Manufacturing,40,6.1,19619
+Gakenke,Northern,2024,Construction,7.0,9,48601
+Gakenke,Northern,2024,Trade,12.6,4.4,23438
+Gakenke,Northern,2024,ICT,10.8,-1.0,56133
+Gakenke,Northern,2024,Education,10.1,-1.2,71929
+Gakenke,Northern,2024,Health,36.7,0.2,49076
+Gakenke,Northern,2024,Finance,27.8,3.4,69679
+Gakenke,Northern,2024,Other,32.4,6.1,54628
+Gakenke,Northern,2025,Agriculture,23.5,4.9,80000
+Gakenke,Northern,2025,Manufacturing,40,4.7,20520
+Gakenke,Northern,2025,Construction,7.3,9,49500
+Gakenke,Northern,2025,Trade,14.3,4.2,24338
+Gakenke,Northern,2025,ICT,11.7,-0.9,57033
+Gakenke,Northern,2025,Education,10.3,-1.5,72829
+Gakenke,Northern,2025,Health,38.0,1.3,49976
+Gakenke,Northern,2025,Finance,27.2,3.2,70578
+Gakenke,Northern,2025,Other,31.6,5.9,55528
+Gicumbi,Northern,2019,Agriculture,23.9,9,19404
+Gicumbi,Northern,2019,Manufacturing,30.9,2.7,58500
+Gicumbi,Northern,2019,Construction,33.5,0.5,64448
+Gicumbi,Northern,2019,Trade,34.1,7.7,27319
+Gicumbi,Northern,2019,ICT,24.3,0.1,54172
+Gicumbi,Northern,2019,Education,12.7,4.1,43610
+Gicumbi,Northern,2019,Health,22.7,-1.7,54144
+Gicumbi,Northern,2019,Finance,37.6,7.4,63931
+Gicumbi,Northern,2019,Other,38.1,7.2,45948
+Gicumbi,Northern,2020,Agriculture,23.3,8.2,20303
+Gicumbi,Northern,2020,Manufacturing,29.5,1.2,59400
+Gicumbi,Northern,2020,Construction,33.7,0.3,65348
+Gicumbi,Northern,2020,Trade,33.8,7.7,28218
+Gicumbi,Northern,2020,ICT,25.6,0.1,55073
+Gicumbi,Northern,2020,Education,13.3,2.9,44510
+Gicumbi,Northern,2020,Health,21.9,-2.5,55044
+Gicumbi,Northern,2020,Finance,37.4,6.8,64829
+Gicumbi,Northern,2020,Other,39.3,6.5,46848
+Gicumbi,Northern,2021,Agriculture,23.2,9,21204
+Gicumbi,Northern,2021,Manufacturing,31.1,2.3,60300
+Gicumbi,Northern,2021,Construction,35.0,0.8,66247
+Gicumbi,Northern,2021,Trade,34.6,7.7,29120
+Gicumbi,Northern,2021,ICT,24.8,0.4,55972
+Gicumbi,Northern,2021,Education,14.4,3.9,45409
+Gicumbi,Northern,2021,Health,21.8,-2.2,55943
+Gicumbi,Northern,2021,Finance,37.6,8.4,65730
+Gicumbi,Northern,2021,Other,39.8,7.1,47748
+Gicumbi,Northern,2022,Agriculture,24.0,9,22103
+Gicumbi,Northern,2022,Manufacturing,30.9,3.1,61201
+Gicumbi,Northern,2022,Construction,34.5,0.8,67147
+Gicumbi,Northern,2022,Trade,34.7,8.3,30018
+Gicumbi,Northern,2022,ICT,25.1,-0.6,56872
+Gicumbi,Northern,2022,Education,13.4,4.3,46309
+Gicumbi,Northern,2022,Health,21.8,-1.0,56843
+Gicumbi,Northern,2022,Finance,37.5,8.3,66630
+Gicumbi,Northern,2022,Other,39.6,7.5,48647
+Gicumbi,Northern,2023,Agriculture,23.9,9,23003
+Gicumbi,Northern,2023,Manufacturing,31.2,2.0,62100
+Gicumbi,Northern,2023,Construction,35.5,0.8,68048
+Gicumbi,Northern,2023,Trade,33.8,9,30918
+Gicumbi,Northern,2023,ICT,26.0,0.6,57772
+Gicumbi,Northern,2023,Education,13.3,4.7,47210
+Gicumbi,Northern,2023,Health,22.7,-0.9,57743
+Gicumbi,Northern,2023,Finance,36.6,7.2,67530
+Gicumbi,Northern,2023,Other,38.5,6.7,49548
+Gicumbi,Northern,2024,Agriculture,23.3,8.7,23904
+Gicumbi,Northern,2024,Manufacturing,30.2,2.7,62999
+Gicumbi,Northern,2024,Construction,35.2,2.5,68947
+Gicumbi,Northern,2024,Trade,33.6,8.0,31819
+Gicumbi,Northern,2024,ICT,26.1,1.2,58672
+Gicumbi,Northern,2024,Education,13.2,4.8,48109
+Gicumbi,Northern,2024,Health,22.2,-0.7,58643
+Gicumbi,Northern,2024,Finance,36.6,7.3,68431
+Gicumbi,Northern,2024,Other,39.4,7.9,50447
+Gicumbi,Northern,2025,Agriculture,23.2,8.7,24803
+Gicumbi,Northern,2025,Manufacturing,31.5,2.1,63900
+Gicumbi,Northern,2025,Construction,35.6,2.3,69848
+Gicumbi,Northern,2025,Trade,33.6,8.3,32720
+Gicumbi,Northern,2025,ICT,26.0,0.8,59572
+Gicumbi,Northern,2025,Education,13.7,4.8,49010
+Gicumbi,Northern,2025,Health,22.4,-0.5,59542
+Gicumbi,Northern,2025,Finance,36.7,7.5,69331
+Gicumbi,Northern,2025,Other,39.9,6.7,51349
+Musanze,Northern,2019,Agriculture,12.4,-1.2,38123
+Musanze,Northern,2019,Manufacturing,24.6,4.7,18607
+Musanze,Northern,2019,Construction,22.9,-2.1,53319
+Musanze,Northern,2019,Trade,32.3,2.6,51503
+Musanze,Northern,2019,ICT,3.6,-0.6,37242
+Musanze,Northern,2019,Education,11.1,5.7,30010
+Musanze,Northern,2019,Health,11.6,2.4,25331
+Musanze,Northern,2019,Finance,4.0,6.0,14533
+Musanze,Northern,2019,Other,27.9,3.9,76320
+Musanze,Northern,2020,Agriculture,12.5,-0.3,39022
+Musanze,Northern,2020,Manufacturing,25.7,3.3,19508
+Musanze,Northern,2020,Construction,22.5,-2.2,54219
+Musanze,Northern,2020,Trade,31.9,3.6,52402
+Musanze,Northern,2020,ICT,3.6,-1.2,38141
+Musanze,Northern,2020,Education,11.5,6.0,30910
+Musanze,Northern,2020,Health,10.3,3.4,26230
+Musanze,Northern,2020,Finance,3.6,6.0,15432
+Musanze,Northern,2020,Other,27.7,4.1,77221
+Musanze,Northern,2021,Agriculture,13.0,-0.8,39922
+Musanze,Northern,2021,Manufacturing,26.1,4.7,20409
+Musanze,Northern,2021,Construction,21.8,-0.8,55119
+Musanze,Northern,2021,Trade,32.4,2.7,53303
+Musanze,Northern,2021,ICT,3.3,-1.1,39042
+Musanze,Northern,2021,Education,11.4,5.8,31810
+Musanze,Northern,2021,Health,10.5,3.7,27130
+Musanze,Northern,2021,Finance,3.3,6.8,16332
+Musanze,Northern,2021,Other,29.3,3.9,78121
+Musanze,Northern,2022,Agriculture,14.2,-0.2,40823
+Musanze,Northern,2022,Manufacturing,25.7,4.3,21308
+Musanze,Northern,2022,Construction,21.8,-1.2,56018
+Musanze,Northern,2022,Trade,33.4,3.3,54202
+Musanze,Northern,2022,ICT,2.5,-0.6,39942
+Musanze,Northern,2022,Education,12.3,6.2,32710
+Musanze,Northern,2022,Health,10.5,4.4,28031
+Musanze,Northern,2022,Finance,4.6,6.9,17232
+Musanze,Northern,2022,Other,29.3,3.7,79021
+Musanze,Northern,2023,Agriculture,14.2,-1.1,41722
+Musanze,Northern,2023,Manufacturing,25.3,3.7,22209
+Musanze,Northern,2023,Construction,21.7,-0.4,56918
+Musanze,Northern,2023,Trade,33.0,2.9,55103
+Musanze,Northern,2023,ICT,2.5,0.1,40841
+Musanze,Northern,2023,Education,12.3,6.3,33610
+Musanze,Northern,2023,Health,11.5,3.5,28931
+Musanze,Northern,2023,Finance,4.1,5.6,18133
+Musanze,Northern,2023,Other,29.5,4.4,79922
+Musanze,Northern,2024,Agriculture,13.4,0.1,42622
+Musanze,Northern,2024,Manufacturing,26.2,5.4,23108
+Musanze,Northern,2024,Construction,22.6,-0.5,57818
+Musanze,Northern,2024,Trade,33.9,3.0,56003
+Musanze,Northern,2024,ICT,3.0,0.6,41741
+Musanze,Northern,2024,Education,12.2,7.7,34511
+Musanze,Northern,2024,Health,11.9,4.4,29831
+Musanze,Northern,2024,Finance,3.3,7.3,19032
+Musanze,Northern,2024,Other,29.0,4.6,80000
+Musanze,Northern,2025,Agriculture,14.0,-1.0,43522
+Musanze,Northern,2025,Manufacturing,25.2,5.6,24008
+Musanze,Northern,2025,Construction,22.0,-0.2,58718
+Musanze,Northern,2025,Trade,32.8,3.2,56903
+Musanze,Northern,2025,ICT,3.6,-0.5,42641
+Musanze,Northern,2025,Education,12.3,6.4,35410
+Musanze,Northern,2025,Health,12.3,3.4,30730
+Musanze,Northern,2025,Finance,3.5,6.7,19932
+Musanze,Northern,2025,Other,28.5,4.3,80000
+Rulindo,Northern,2019,Agriculture,9.6,7.6,79212
+Rulindo,Northern,2019,Manufacturing,4.2,0.8,35386
+Rulindo,Northern,2019,Construction,14.3,6.6,25332
+Rulindo,Northern,2019,Trade,36.9,5.5,53647
+Rulindo,Northern,2019,ICT,30.7,5.8,33833
+Rulindo,Northern,2019,Education,27.2,5.2,73560
+Rulindo,Northern,2019,Health,15.0,7.6,20470
+Rulindo,Northern,2019,Finance,39.6,8.4,40372
+Rulindo,Northern,2019,Other,6.6,-1.1,32515
+Rulindo,Northern,2020,Agriculture,9.0,7.7,80000
+Rulindo,Northern,2020,Manufacturing,4.4,1.0,36287
+Rulindo,Northern,2020,Construction,14.0,6.4,26231
+Rulindo,Northern,2020,Trade,37.4,6.1,54547
+Rulindo,Northern,2020,ICT,30.0,7.5,34734
+Rulindo,Northern,2020,Education,26.3,5.9,74461
+Rulindo,Northern,2020,Health,14.9,7.2,21370
+Rulindo,Northern,2020,Finance,38.6,8.3,41274
+Rulindo,Northern,2020,Other,5.7,-2.0,33416
+Rulindo,Northern,2021,Agriculture,10.4,7.1,80000
+Rulindo,Northern,2021,Manufacturing,4.6,2.5,37186
+Rulindo,Northern,2021,Construction,13.8,5.7,27133
+Rulindo,Northern,2021,Trade,37.4,6.4,55446
+Rulindo,Northern,2021,ICT,31.7,7.3,35633
+Rulindo,Northern,2021,Education,26.4,5.8,75362
+Rulindo,Northern,2021,Health,16.0,8.9,22271
+Rulindo,Northern,2021,Finance,39.2,9.0,42174
+Rulindo,Northern,2021,Other,6.7,-2.2,34315
+Rulindo,Northern,2022,Agriculture,10.4,8.0,80000
+Rulindo,Northern,2022,Manufacturing,3.7,1.5,38087
+Rulindo,Northern,2022,Construction,14.6,5.8,28032
+Rulindo,Northern,2022,Trade,38.7,7.2,56346
+Rulindo,Northern,2022,ICT,31.2,6.7,36534
+Rulindo,Northern,2022,Education,26.2,6.1,76262
+Rulindo,Northern,2022,Health,15.4,8.0,23170
+Rulindo,Northern,2022,Finance,39.5,9,43074
+Rulindo,Northern,2022,Other,5.4,-0.8,35215
+Rulindo,Northern,2023,Agriculture,10.8,6.6,80000
+Rulindo,Northern,2023,Manufacturing,3.7,2.8,38986
+Rulindo,Northern,2023,Construction,13.5,6.0,28931
+Rulindo,Northern,2023,Trade,37.6,7.3,57246
+Rulindo,Northern,2023,ICT,31.2,7.8,37433
+Rulindo,Northern,2023,Education,27.2,5.7,77162
+Rulindo,Northern,2023,Health,14.9,7.7,24070
+Rulindo,Northern,2023,Finance,40,9,43974
+Rulindo,Northern,2023,Other,6.5,-0.8,36115
+Rulindo,Northern,2024,Agriculture,10.2,8.3,80000
+Rulindo,Northern,2024,Manufacturing,3.3,3.1,39887
+Rulindo,Northern,2024,Construction,13.4,7.6,29832
+Rulindo,Northern,2024,Trade,37.3,6.9,58146
+Rulindo,Northern,2024,ICT,31.6,6.6,38333
+Rulindo,Northern,2024,Education,27.7,7.4,78061
+Rulindo,Northern,2024,Health,14.9,8.8,24971
+Rulindo,Northern,2024,Finance,39.9,9,44873
+Rulindo,Northern,2024,Other,6.1,-1.0,37014
+Rulindo,Northern,2025,Agriculture,10.6,6.9,80000
+Rulindo,Northern,2025,Manufacturing,4.2,2.0,40787
+Rulindo,Northern,2025,Construction,14.0,6.5,30731
+Rulindo,Northern,2025,Trade,37.5,6.7,59046
+Rulindo,Northern,2025,ICT,31.9,7.5,39233
+Rulindo,Northern,2025,Education,27.3,6.3,78962
+Rulindo,Northern,2025,Health,15.6,9,25870
+Rulindo,Northern,2025,Finance,39.2,9,45773
+Rulindo,Northern,2025,Other,6.6,-1.0,37915
+Gisagara,Southern,2019,Agriculture,37.8,2.6,40465
+Gisagara,Southern,2019,Manufacturing,11.0,0.7,44541
+Gisagara,Southern,2019,Construction,36.3,7.5,43294
+Gisagara,Southern,2019,Trade,28.4,6.6,64537
+Gisagara,Southern,2019,ICT,9.5,5.7,75011
+Gisagara,Southern,2019,Education,39.9,4.1,66973
+Gisagara,Southern,2019,Health,14.0,0.6,24640
+Gisagara,Southern,2019,Finance,6.9,7.3,52781
+Gisagara,Southern,2019,Other,35.1,3.8,59673
+Gisagara,Southern,2020,Agriculture,38.3,2.7,41365
+Gisagara,Southern,2020,Manufacturing,11.9,0.1,45441
+Gisagara,Southern,2020,Construction,36.9,8.7,44193
+Gisagara,Southern,2020,Trade,28.2,6.6,65437
+Gisagara,Southern,2020,ICT,10.7,6.1,75912
+Gisagara,Southern,2020,Education,38.8,5.4,67872
+Gisagara,Southern,2020,Health,15.1,0.7,25539
+Gisagara,Southern,2020,Finance,7.6,7.5,53681
+Gisagara,Southern,2020,Other,36.7,4.2,60573
+Gisagara,Southern,2021,Agriculture,37.0,3.2,42264
+Gisagara,Southern,2021,Manufacturing,11.4,0.5,46340
+Gisagara,Southern,2021,Construction,37.3,9,45094
+Gisagara,Southern,2021,Trade,28.8,8.2,66337
+Gisagara,Southern,2021,ICT,9.6,6.7,76812
+Gisagara,Southern,2021,Education,39.0,5.7,68773
+Gisagara,Southern,2021,Health,13.8,0.3,26441
+Gisagara,Southern,2021,Finance,7.6,7.5,54582
+Gisagara,Southern,2021,Other,36.6,5.7,61473
+Gisagara,Southern,2022,Agriculture,38.1,3.6,43164
+Gisagara,Southern,2022,Manufacturing,12.6,0.5,47240
+Gisagara,Southern,2022,Construction,37.2,8.8,45994
+Gisagara,Southern,2022,Trade,28.4,8.4,67237
+Gisagara,Southern,2022,ICT,9.7,5.3,77713
+Gisagara,Southern,2022,Education,38.9,4.7,69672
+Gisagara,Southern,2022,Health,14.3,0.3,27340
+Gisagara,Southern,2022,Finance,6.3,7.2,55481
+Gisagara,Southern,2022,Other,36.9,5.8,62372
+Gisagara,Southern,2023,Agriculture,38.2,3.8,44065
+Gisagara,Southern,2023,Manufacturing,11.8,1.8,48140
+Gisagara,Southern,2023,Construction,36.0,8.8,46893
+Gisagara,Southern,2023,Trade,29.9,7.3,68137
+Gisagara,Southern,2023,ICT,9.8,6.5,78612
+Gisagara,Southern,2023,Education,40,6.0,70573
+Gisagara,Southern,2023,Health,13.9,0.5,28240
+Gisagara,Southern,2023,Finance,6.8,8.0,56380
+Gisagara,Southern,2023,Other,36.4,4.4,63273
+Gisagara,Southern,2024,Agriculture,37.2,2.7,44964
+Gisagara,Southern,2024,Manufacturing,12.8,1.7,49041
+Gisagara,Southern,2024,Construction,36.0,8.3,47794
+Gisagara,Southern,2024,Trade,30.0,7.2,69038
+Gisagara,Southern,2024,ICT,9.5,6.4,79512
+Gisagara,Southern,2024,Education,39.4,5.7,71473
+Gisagara,Southern,2024,Health,15.5,0.6,29140
+Gisagara,Southern,2024,Finance,7.4,6.7,57280
+Gisagara,Southern,2024,Other,36.7,4.6,64173
+Gisagara,Southern,2025,Agriculture,38.8,3.6,45865
+Gisagara,Southern,2025,Manufacturing,12.9,1.0,49940
+Gisagara,Southern,2025,Construction,37.2,9.0,48693
+Gisagara,Southern,2025,Trade,29.9,7.3,69938
+Gisagara,Southern,2025,ICT,10.2,6.6,80000
+Gisagara,Southern,2025,Education,39.6,4.8,72372
+Gisagara,Southern,2025,Health,14.7,1.0,30041
+Gisagara,Southern,2025,Finance,7.3,7.8,58181
+Gisagara,Southern,2025,Other,36.4,4.8,65073
+Huye,Southern,2019,Agriculture,35.9,-0.8,64558
+Huye,Southern,2019,Manufacturing,18.6,6.8,22544
+Huye,Southern,2019,Construction,3.1,-2.4,24780
+Huye,Southern,2019,Trade,37.8,5.5,64724
+Huye,Southern,2019,ICT,36.7,8.1,42881
+Huye,Southern,2019,Education,2.1,6.2,41192
+Huye,Southern,2019,Health,28.8,-3,60470
+Huye,Southern,2019,Finance,26.8,-0.2,70413
+Huye,Southern,2019,Other,36.7,7.5,77930
+Huye,Southern,2020,Agriculture,36.1,-0.4,65459
+Huye,Southern,2020,Manufacturing,19.0,6.9,23443
+Huye,Southern,2020,Construction,2,-2.2,25679
+Huye,Southern,2020,Trade,38.1,6.5,65623
+Huye,Southern,2020,ICT,35.5,7.0,43783
+Huye,Southern,2020,Education,2.8,4.8,42092
+Huye,Southern,2020,Health,29.2,-1.9,61371
+Huye,Southern,2020,Finance,27.0,1.1,71313
+Huye,Southern,2020,Other,35.5,6.8,78830
+Huye,Southern,2021,Agriculture,35.1,-0.5,66358
+Huye,Southern,2021,Manufacturing,18.8,5.7,24344
+Huye,Southern,2021,Construction,2.7,-2.0,26579
+Huye,Southern,2021,Trade,38.7,6.7,66522
+Huye,Southern,2021,ICT,36.8,7.1,44682
+Huye,Southern,2021,Education,3.2,5.1,42991
+Huye,Southern,2021,Health,29.4,-3,62270
+Huye,Southern,2021,Finance,27.3,0.1,72211
+Huye,Southern,2021,Other,35.6,8.0,79729
+Huye,Southern,2022,Agriculture,36.3,-0.6,67258
+Huye,Southern,2022,Manufacturing,19.0,7.3,25243
+Huye,Southern,2022,Construction,3.2,-1.8,27480
+Huye,Southern,2022,Trade,37.3,5.9,67422
+Huye,Southern,2022,ICT,36.1,8.1,45582
+Huye,Southern,2022,Education,2.5,6.2,43891
+Huye,Southern,2022,Health,28.9,-2.3,63170
+Huye,Southern,2022,Finance,27.9,1.0,73112
+Huye,Southern,2022,Other,36.9,7.6,80000
+Huye,Southern,2023,Agriculture,36.0,-1.4,68158
+Huye,Southern,2023,Manufacturing,19.7,7.3,26143
+Huye,Southern,2023,Construction,3.5,-1.0,28381
+Huye,Southern,2023,Trade,38.9,5.8,68322
+Huye,Southern,2023,ICT,35.7,7.2,46483
+Huye,Southern,2023,Education,3.0,6.9,44792
+Huye,Southern,2023,Health,28.4,-2.6,64070
+Huye,Southern,2023,Finance,27.7,0.7,74013
+Huye,Southern,2023,Other,37.1,7.2,80000
+Huye,Southern,2024,Agriculture,35.5,0.3,69058
+Huye,Southern,2024,Manufacturing,20.4,6.8,27045
+Huye,Southern,2024,Construction,3.4,-1.6,29279
+Huye,Southern,2024,Trade,38.6,7.4,69223
+Huye,Southern,2024,ICT,37.4,7.3,47383
+Huye,Southern,2024,Education,3.9,6.7,45691
+Huye,Southern,2024,Health,28.7,-1.5,64971
+Huye,Southern,2024,Finance,27.9,1.2,74912
+Huye,Southern,2024,Other,37.4,7.4,80000
+Huye,Southern,2025,Agriculture,35.5,-0.7,69960
+Huye,Southern,2025,Manufacturing,19.1,6.8,27945
+Huye,Southern,2025,Construction,2.3,-1.4,30179
+Huye,Southern,2025,Trade,38.8,6.5,70123
+Huye,Southern,2025,ICT,36.3,9,48283
+Huye,Southern,2025,Education,4.1,6.4,46591
+Huye,Southern,2025,Health,30.1,-2.3,65870
+Huye,Southern,2025,Finance,28.0,0.9,75812
+Huye,Southern,2025,Other,37.1,7.7,80000
+Kamonyi,Southern,2019,Agriculture,16.9,3.3,39881
+Kamonyi,Southern,2019,Manufacturing,32.0,7.2,13203
+Kamonyi,Southern,2019,Construction,19.7,3.5,36416
+Kamonyi,Southern,2019,Trade,2.5,8.7,65641
+Kamonyi,Southern,2019,ICT,29.5,4.9,74563
+Kamonyi,Southern,2019,Education,7.7,9,65827
+Kamonyi,Southern,2019,Health,22.8,4.4,48060
+Kamonyi,Southern,2019,Finance,33.5,8.2,27200
+Kamonyi,Southern,2019,Other,11.0,-0.1,14556
+Kamonyi,Southern,2020,Agriculture,18.5,2.4,40779
+Kamonyi,Southern,2020,Manufacturing,31.4,8.6,14103
+Kamonyi,Southern,2020,Construction,21.1,5.2,37316
+Kamonyi,Southern,2020,Trade,3.9,8.6,66543
+Kamonyi,Southern,2020,ICT,28.6,4.6,75464
+Kamonyi,Southern,2020,Education,8.0,8.6,66726
+Kamonyi,Southern,2020,Health,22.4,4.5,48961
+Kamonyi,Southern,2020,Finance,33.6,8.5,28099
+Kamonyi,Southern,2020,Other,12.1,0.1,15458
+Kamonyi,Southern,2021,Agriculture,17.9,2.5,41681
+Kamonyi,Southern,2021,Manufacturing,32.1,7.9,15003
+Kamonyi,Southern,2021,Construction,21.4,4.7,38216
+Kamonyi,Southern,2021,Trade,2.6,8.5,67443
+Kamonyi,Southern,2021,ICT,28.9,4.7,76363
+Kamonyi,Southern,2021,Education,8.1,9,67628
+Kamonyi,Southern,2021,Health,23.9,4.6,49861
+Kamonyi,Southern,2021,Finance,33.7,8.9,29000
+Kamonyi,Southern,2021,Other,11.2,1.5,16358
+Kamonyi,Southern,2022,Agriculture,18.3,3.4,42580
+Kamonyi,Southern,2022,Manufacturing,33.0,8.6,15904
+Kamonyi,Southern,2022,Construction,21.5,5.0,39115
+Kamonyi,Southern,2022,Trade,2.5,8.4,68342
+Kamonyi,Southern,2022,ICT,29.7,4.9,77264
+Kamonyi,Southern,2022,Education,8.1,9,68527
+Kamonyi,Southern,2022,Health,23.0,4.8,50761
+Kamonyi,Southern,2022,Finance,33.4,9,29900
+Kamonyi,Southern,2022,Other,12.9,1.8,17256
+Kamonyi,Southern,2023,Agriculture,18.7,3.7,43481
+Kamonyi,Southern,2023,Manufacturing,32.4,9,16804
+Kamonyi,Southern,2023,Construction,20.4,5.6,40016
+Kamonyi,Southern,2023,Trade,2.8,9,69243
+Kamonyi,Southern,2023,ICT,30.2,5.8,78163
+Kamonyi,Southern,2023,Education,7.3,9,69427
+Kamonyi,Southern,2023,Health,22.5,4.3,51661
+Kamonyi,Southern,2023,Finance,34.4,9,30800
+Kamonyi,Southern,2023,Other,12.9,2.1,18157
+Kamonyi,Southern,2024,Agriculture,17.4,4.4,44381
+Kamonyi,Southern,2024,Manufacturing,33.0,7.7,17704
+Kamonyi,Southern,2024,Construction,21.4,5.5,40916
+Kamonyi,Southern,2024,Trade,3.0,9,70143
+Kamonyi,Southern,2024,ICT,29.1,6.0,79063
+Kamonyi,Southern,2024,Education,7.6,9,70327
+Kamonyi,Southern,2024,Health,24.2,5.2,52562
+Kamonyi,Southern,2024,Finance,34.0,9,31700
+Kamonyi,Southern,2024,Other,11.7,0.7,19057
+Kamonyi,Southern,2025,Agriculture,18.8,4.1,45280
+Kamonyi,Southern,2025,Manufacturing,33.2,8.6,18604
+Kamonyi,Southern,2025,Construction,21.2,4.5,41816
+Kamonyi,Southern,2025,Trade,4.3,8.9,71041
+Kamonyi,Southern,2025,ICT,30.5,6.9,79963
+Kamonyi,Southern,2025,Education,8.5,9,71227
+Kamonyi,Southern,2025,Health,24.3,5.2,53462
+Kamonyi,Southern,2025,Finance,33.7,9,32600
+Kamonyi,Southern,2025,Other,11.7,2.0,19957
+Muhanga,Southern,2019,Agriculture,26.5,-1.9,52418
+Muhanga,Southern,2019,Manufacturing,28.4,-0.2,39630
+Muhanga,Southern,2019,Construction,38.8,0.6,51869
+Muhanga,Southern,2019,Trade,12.1,9,79689
+Muhanga,Southern,2019,ICT,15.2,1.0,55705
+Muhanga,Southern,2019,Education,40,5.9,54270
+Muhanga,Southern,2019,Health,34.0,2.9,14416
+Muhanga,Southern,2019,Finance,37.2,8.2,64488
+Muhanga,Southern,2019,Other,35.7,0.3,39830
+Muhanga,Southern,2020,Agriculture,26.1,-3,53318
+Muhanga,Southern,2020,Manufacturing,29.3,1.4,40530
+Muhanga,Southern,2020,Construction,39.5,1.6,52770
+Muhanga,Southern,2020,Trade,12.8,9,80000
+Muhanga,Southern,2020,ICT,16.2,1.2,56606
+Muhanga,Southern,2020,Education,39.8,5.4,55170
+Muhanga,Southern,2020,Health,33.5,2.3,15314
+Muhanga,Southern,2020,Finance,36.2,9,65389
+Muhanga,Southern,2020,Other,35.9,0.7,40731
+Muhanga,Southern,2021,Agriculture,25.9,-3,54217
+Muhanga,Southern,2021,Manufacturing,29.1,0.1,41430
+Muhanga,Southern,2021,Construction,40,1.6,53669
+Muhanga,Southern,2021,Trade,13.8,7.9,80000
+Muhanga,Southern,2021,ICT,17.0,1.4,57506
+Muhanga,Southern,2021,Education,39.2,7.1,56071
+Muhanga,Southern,2021,Health,34.0,3.3,16216
+Muhanga,Southern,2021,Finance,37.2,8.6,66289
+Muhanga,Southern,2021,Other,37.4,1.0,41631
+Muhanga,Southern,2022,Agriculture,25.2,-1.6,55117
+Muhanga,Southern,2022,Manufacturing,28.7,0.7,42330
+Muhanga,Southern,2022,Construction,39.7,2.3,54571
+Muhanga,Southern,2022,Trade,13.2,9,80000
+Muhanga,Southern,2022,ICT,15.7,1.0,58406
+Muhanga,Southern,2022,Education,39.3,6.9,56972
+Muhanga,Southern,2022,Health,34.5,3.3,17114
+Muhanga,Southern,2022,Finance,36.2,9,67189
+Muhanga,Southern,2022,Other,37.5,-0.1,42530
+Muhanga,Southern,2023,Agriculture,25.3,-2.4,56018
+Muhanga,Southern,2023,Manufacturing,28.8,1.5,43229
+Muhanga,Southern,2023,Construction,40,2.5,55469
+Muhanga,Southern,2023,Trade,14.1,8.3,80000
+Muhanga,Southern,2023,ICT,16.1,0.9,59306
+Muhanga,Southern,2023,Education,40,6.4,57870
+Muhanga,Southern,2023,Health,35.1,3.0,18015
+Muhanga,Southern,2023,Finance,37.0,9,68088
+Muhanga,Southern,2023,Other,37.1,0.8,43431
+Muhanga,Southern,2024,Agriculture,25.7,-1.8,56918
+Muhanga,Southern,2024,Manufacturing,30.2,1.7,44131
+Muhanga,Southern,2024,Construction,39.1,2.6,56369
+Muhanga,Southern,2024,Trade,13.0,8.7,80000
+Muhanga,Southern,2024,ICT,15.8,1.7,60205
+Muhanga,Southern,2024,Education,40,7.4,58770
+Muhanga,Southern,2024,Health,35.4,3.2,18915
+Muhanga,Southern,2024,Finance,37.8,9,68988
+Muhanga,Southern,2024,Other,37.3,0.4,44331
+Muhanga,Southern,2025,Agriculture,27.1,-2.5,57818
+Muhanga,Southern,2025,Manufacturing,29.7,0.7,45031
+Muhanga,Southern,2025,Construction,40,1.7,57269
+Muhanga,Southern,2025,Trade,12.7,9,80000
+Muhanga,Southern,2025,ICT,17.3,1.8,61105
+Muhanga,Southern,2025,Education,40,6.1,59671
+Muhanga,Southern,2025,Health,35.5,3.9,19815
+Muhanga,Southern,2025,Finance,38.0,9,69888
+Muhanga,Southern,2025,Other,36.5,0.0,45230
+Nyamagabe,Southern,2019,Agriculture,25.9,-1.8,52341
+Nyamagabe,Southern,2019,Manufacturing,31.0,8.8,20510
+Nyamagabe,Southern,2019,Construction,2.9,3.9,36057
+Nyamagabe,Southern,2019,Trade,22.0,7.9,69410
+Nyamagabe,Southern,2019,ICT,12.5,5.2,57929
+Nyamagabe,Southern,2019,Education,38.8,-1.3,43390
+Nyamagabe,Southern,2019,Health,19.9,-1.3,72893
+Nyamagabe,Southern,2019,Finance,3.0,-2.9,50513
+Nyamagabe,Southern,2019,Other,11.2,2.0,31336
+Nyamagabe,Southern,2020,Agriculture,25.0,-1.6,53242
+Nyamagabe,Southern,2020,Manufacturing,31.2,7.9,21410
+Nyamagabe,Southern,2020,Construction,2,4.0,36957
+Nyamagabe,Southern,2020,Trade,22.6,7.9,70309
+Nyamagabe,Southern,2020,ICT,13.2,6.4,58829
+Nyamagabe,Southern,2020,Education,38.4,-2.1,44291
+Nyamagabe,Southern,2020,Health,20.1,-0.3,73794
+Nyamagabe,Southern,2020,Finance,3.8,-3,51413
+Nyamagabe,Southern,2020,Other,11.9,3.0,32236
+Nyamagabe,Southern,2021,Agriculture,26.4,-0.3,54141
+Nyamagabe,Southern,2021,Manufacturing,31.5,8.1,22311
+Nyamagabe,Southern,2021,Construction,2,4.8,37856
+Nyamagabe,Southern,2021,Trade,23.3,7.2,71210
+Nyamagabe,Southern,2021,ICT,12.6,6.3,59729
+Nyamagabe,Southern,2021,Education,39.0,-1.9,45191
+Nyamagabe,Southern,2021,Health,20.6,0.5,74693
+Nyamagabe,Southern,2021,Finance,3.8,-2.2,52313
+Nyamagabe,Southern,2021,Other,11.8,2.6,33137
+Nyamagabe,Southern,2022,Agriculture,25.0,-0.3,55042
+Nyamagabe,Southern,2022,Manufacturing,31.6,9,23211
+Nyamagabe,Southern,2022,Construction,2.6,5.0,38756
+Nyamagabe,Southern,2022,Trade,22.1,7.5,72110
+Nyamagabe,Southern,2022,ICT,13.9,6.0,60628
+Nyamagabe,Southern,2022,Education,38.8,-1.5,46091
+Nyamagabe,Southern,2022,Health,21.7,0.4,75593
+Nyamagabe,Southern,2022,Finance,4.7,-3,53213
+Nyamagabe,Southern,2022,Other,11.1,3.7,34036
+Nyamagabe,Southern,2023,Agriculture,25.4,-1.2,55941
+Nyamagabe,Southern,2023,Manufacturing,30.7,9,24111
+Nyamagabe,Southern,2023,Construction,2,6.0,39656
+Nyamagabe,Southern,2023,Trade,23.3,7.6,73010
+Nyamagabe,Southern,2023,ICT,13.5,7.3,61528
+Nyamagabe,Southern,2023,Education,37.7,-0.8,46990
+Nyamagabe,Southern,2023,Health,21.7,0.9,76493
+Nyamagabe,Southern,2023,Finance,3.4,-3,54113
+Nyamagabe,Southern,2023,Other,11.2,2.4,34936
+Nyamagabe,Southern,2024,Agriculture,25.9,-0.3,56841
+Nyamagabe,Southern,2024,Manufacturing,31.9,8.3,25011
+Nyamagabe,Southern,2024,Construction,2.2,6.1,40557
+Nyamagabe,Southern,2024,Trade,22.3,8.0,73909
+Nyamagabe,Southern,2024,ICT,14.3,6.6,62429
+Nyamagabe,Southern,2024,Education,38.7,-0.9,47890
+Nyamagabe,Southern,2024,Health,20.7,1.1,77392
+Nyamagabe,Southern,2024,Finance,4.8,-2.0,55013
+Nyamagabe,Southern,2024,Other,12.7,3.7,35836
+Nyamagabe,Southern,2025,Agriculture,26.1,-0.5,57742
+Nyamagabe,Southern,2025,Manufacturing,30.9,9,25910
+Nyamagabe,Southern,2025,Construction,3.6,5.8,41456
+Nyamagabe,Southern,2025,Trade,22.4,7.9,74810
+Nyamagabe,Southern,2025,ICT,13.8,7.7,63328
+Nyamagabe,Southern,2025,Education,37.8,-1.5,48790
+Nyamagabe,Southern,2025,Health,21.5,-0.4,78294
+Nyamagabe,Southern,2025,Finance,5.0,-1.4,55913
+Nyamagabe,Southern,2025,Other,12.0,4.2,36736
+Nyamasheke,Southern,2019,Agriculture,23.8,0.0,61667
+Nyamasheke,Southern,2019,Manufacturing,16.0,7.7,49154
+Nyamasheke,Southern,2019,Construction,37.2,2.0,23086
+Nyamasheke,Southern,2019,Trade,8.7,3.6,53916
+Nyamasheke,Southern,2019,ICT,21.0,0.8,51058
+Nyamasheke,Southern,2019,Education,8.0,0.9,21260
+Nyamasheke,Southern,2019,Health,32.6,5.6,58738
+Nyamasheke,Southern,2019,Finance,12.7,-0.4,19552
+Nyamasheke,Southern,2019,Other,6.6,2.2,56171
+Nyamasheke,Southern,2020,Agriculture,23.7,0.9,62566
+Nyamasheke,Southern,2020,Manufacturing,17.1,9,50054
+Nyamasheke,Southern,2020,Construction,36.5,0.7,23986
+Nyamasheke,Southern,2020,Trade,7.6,3.9,54815
+Nyamasheke,Southern,2020,ICT,21.8,-0.1,51957
+Nyamasheke,Southern,2020,Education,7.7,-0.3,22159
+Nyamasheke,Southern,2020,Health,32.5,6.9,59639
+Nyamasheke,Southern,2020,Finance,11.8,0.1,20452
+Nyamasheke,Southern,2020,Other,5.6,3.0,57071
+Nyamasheke,Southern,2021,Agriculture,23.3,0.5,63466
+Nyamasheke,Southern,2021,Manufacturing,16.0,8.3,50955
+Nyamasheke,Southern,2021,Construction,37.7,1.0,24887
+Nyamasheke,Southern,2021,Trade,8.6,4.5,55716
+Nyamasheke,Southern,2021,ICT,22.2,-0.3,52858
+Nyamasheke,Southern,2021,Education,8.1,-0.2,23059
+Nyamasheke,Southern,2021,Health,32.3,5.7,60538
+Nyamasheke,Southern,2021,Finance,13.1,-1.0,21352
+Nyamasheke,Southern,2021,Other,7.1,1.8,57971
+Nyamasheke,Southern,2022,Agriculture,23.3,0.8,64365
+Nyamasheke,Southern,2022,Manufacturing,15.7,8.3,51855
+Nyamasheke,Southern,2022,Construction,37.7,0.9,25787
+Nyamasheke,Southern,2022,Trade,8.2,4.4,56616
+Nyamasheke,Southern,2022,ICT,21.6,0.7,53758
+Nyamasheke,Southern,2022,Education,8.1,0.9,23960
+Nyamasheke,Southern,2022,Health,33.9,7.1,61438
+Nyamasheke,Southern,2022,Finance,13.1,-1.1,22253
+Nyamasheke,Southern,2022,Other,7.3,3.3,58871
+Nyamasheke,Southern,2023,Agriculture,24.7,2.2,65266
+Nyamasheke,Southern,2023,Manufacturing,16.0,9,52755
+Nyamasheke,Southern,2023,Construction,38.4,2.3,26686
+Nyamasheke,Southern,2023,Trade,8.1,3.2,57515
+Nyamasheke,Southern,2023,ICT,20.9,0.7,54658
+Nyamasheke,Southern,2023,Education,8.6,1.3,24859
+Nyamasheke,Southern,2023,Health,33.6,7.5,62338
+Nyamasheke,Southern,2023,Finance,13.3,-0.2,23153
+Nyamasheke,Southern,2023,Other,7.1,2.2,59771
+Nyamasheke,Southern,2024,Agriculture,24.5,1.3,66166
+Nyamasheke,Southern,2024,Manufacturing,15.9,8.6,53654
+Nyamasheke,Southern,2024,Construction,38.2,1.9,27586
+Nyamasheke,Southern,2024,Trade,9.0,3.3,58415
+Nyamasheke,Southern,2024,ICT,22.0,1.1,55558
+Nyamasheke,Southern,2024,Education,8.4,1.7,25760
+Nyamasheke,Southern,2024,Health,34.0,7.7,63238
+Nyamasheke,Southern,2024,Finance,12.2,-0.3,24052
+Nyamasheke,Southern,2024,Other,7.5,2.5,60672
+Nyamasheke,Southern,2025,Agriculture,24.9,1.0,67066
+Nyamasheke,Southern,2025,Manufacturing,16.4,9,54554
+Nyamasheke,Southern,2025,Construction,38.6,1.9,28486
+Nyamasheke,Southern,2025,Trade,7.8,4.4,59314
+Nyamasheke,Southern,2025,ICT,22.6,0.1,56458
+Nyamasheke,Southern,2025,Education,8.8,1.6,26660
+Nyamasheke,Southern,2025,Health,34.1,7.1,64138
+Nyamasheke,Southern,2025,Finance,13.3,0.3,24953
+Nyamasheke,Southern,2025,Other,7.1,2.7,61571
+Nyanza,Southern,2019,Agriculture,6.7,3.3,26234
+Nyanza,Southern,2019,Manufacturing,20.4,-1.7,31722
+Nyanza,Southern,2019,Construction,2.0,3.9,16505
+Nyanza,Southern,2019,Trade,36.2,-1.9,21196
+Nyanza,Southern,2019,ICT,26.8,5.2,50315
+Nyanza,Southern,2019,Education,6.3,2.3,22203
+Nyanza,Southern,2019,Health,16.9,-1.3,37074
+Nyanza,Southern,2019,Finance,10.1,7.1,50310
+Nyanza,Southern,2019,Other,5.8,2.1,29427
+Nyanza,Southern,2020,Agriculture,7.7,2.8,27134
+Nyanza,Southern,2020,Manufacturing,20.6,-1.5,32622
+Nyanza,Southern,2020,Construction,2.9,3.7,17404
+Nyanza,Southern,2020,Trade,37.7,-1.2,22094
+Nyanza,Southern,2020,ICT,26.0,4.4,51214
+Nyanza,Southern,2020,Education,6.1,1.4,23102
+Nyanza,Southern,2020,Health,17.7,-1.1,37975
+Nyanza,Southern,2020,Finance,9.5,6.1,51209
+Nyanza,Southern,2020,Other,4.6,1.0,30327
+Nyanza,Southern,2021,Agriculture,8.5,4.1,28035
+Nyanza,Southern,2021,Manufacturing,20.6,-0.4,33521
+Nyanza,Southern,2021,Construction,3.0,4.2,18304
+Nyanza,Southern,2021,Trade,37.3,-1.0,22995
+Nyanza,Southern,2021,ICT,27.1,5.0,52115
+Nyanza,Southern,2021,Education,7.5,2.9,24002
+Nyanza,Southern,2021,Health,16.7,-1.0,38875
+Nyanza,Southern,2021,Finance,9.5,6.7,52110
+Nyanza,Southern,2021,Other,4.4,1.1,31228
+Nyanza,Southern,2022,Agriculture,7.4,3.0,28935
+Nyanza,Southern,2022,Manufacturing,20.8,-0.4,34421
+Nyanza,Southern,2022,Construction,3.5,3.5,19206
+Nyanza,Southern,2022,Trade,37.9,-1.5,23894
+Nyanza,Southern,2022,ICT,26.1,6.2,53014
+Nyanza,Southern,2022,Education,6.8,2.4,24902
+Nyanza,Southern,2022,Health,17.4,0.2,39775
+Nyanza,Southern,2022,Finance,10.0,7.8,53010
+Nyanza,Southern,2022,Other,4.9,1.4,32127
+Nyanza,Southern,2023,Agriculture,7.6,4.5,29834
+Nyanza,Southern,2023,Manufacturing,21.7,-0.6,35322
+Nyanza,Southern,2023,Construction,2.1,3.8,20106
+Nyanza,Southern,2023,Trade,37.1,-1.4,24794
+Nyanza,Southern,2023,ICT,27.7,4.8,53915
+Nyanza,Southern,2023,Education,6.3,1.8,25802
+Nyanza,Southern,2023,Health,16.8,0.7,40675
+Nyanza,Southern,2023,Finance,10.6,7.0,53910
+Nyanza,Southern,2023,Other,4.6,3.0,33028
+Nyanza,Southern,2024,Agriculture,8.1,4.8,30734
+Nyanza,Southern,2024,Manufacturing,20.9,-1.4,36222
+Nyanza,Southern,2024,Construction,2.6,3.7,21005
+Nyanza,Southern,2024,Trade,38.0,-0.6,25695
+Nyanza,Southern,2024,ICT,27.6,6.5,54815
+Nyanza,Southern,2024,Education,6.4,2.0,26702
+Nyanza,Southern,2024,Health,17.1,-0.4,41574
+Nyanza,Southern,2024,Finance,10.5,7.9,54809
+Nyanza,Southern,2024,Other,5.2,1.6,33928
+Nyanza,Southern,2025,Agriculture,8.7,3.9,31635
+Nyanza,Southern,2025,Manufacturing,21.4,-1.3,37121
+Nyanza,Southern,2025,Construction,2.7,4.5,21904
+Nyanza,Southern,2025,Trade,36.7,-2.0,26594
+Nyanza,Southern,2025,ICT,27.6,6.5,55714
+Nyanza,Southern,2025,Education,7.7,2.1,27602
+Nyanza,Southern,2025,Health,17.0,0.3,42474
+Nyanza,Southern,2025,Finance,9.9,8.2,55709
+Nyanza,Southern,2025,Other,5.2,1.9,34827
+Ruhango,Southern,2019,Agriculture,4.0,2.9,38673
+Ruhango,Southern,2019,Manufacturing,25.8,6.6,22813
+Ruhango,Southern,2019,Construction,31.6,8.2,37688
+Ruhango,Southern,2019,Trade,17.7,1.8,67510
+Ruhango,Southern,2019,ICT,38.4,7.8,67623
+Ruhango,Southern,2019,Education,27.1,8.0,72050
+Ruhango,Southern,2019,Health,34.7,0.2,79118
+Ruhango,Southern,2019,Finance,6.7,0.7,27439
+Ruhango,Southern,2019,Other,25.3,5.3,57744
+Ruhango,Southern,2020,Agriculture,4.5,2.9,39572
+Ruhango,Southern,2020,Manufacturing,26.4,6.7,23713
+Ruhango,Southern,2020,Construction,31.6,9,38588
+Ruhango,Southern,2020,Trade,18.7,1.1,68410
+Ruhango,Southern,2020,ICT,38.5,8.9,68523
+Ruhango,Southern,2020,Education,26.6,7.4,72951
+Ruhango,Southern,2020,Health,34.3,0.5,80000
+Ruhango,Southern,2020,Finance,7.4,0.9,28338
+Ruhango,Southern,2020,Other,25.0,3.9,58644
+Ruhango,Southern,2021,Agriculture,4.3,4.3,40472
+Ruhango,Southern,2021,Manufacturing,26.7,7.8,24612
+Ruhango,Southern,2021,Construction,31.6,8.1,39488
+Ruhango,Southern,2021,Trade,18.6,1.9,69310
+Ruhango,Southern,2021,ICT,37.4,8.4,69425
+Ruhango,Southern,2021,Education,26.8,7.6,73850
+Ruhango,Southern,2021,Health,34.7,1.6,80000
+Ruhango,Southern,2021,Finance,6.8,1.0,29238
+Ruhango,Southern,2021,Other,25.4,4.7,59544
+Ruhango,Southern,2022,Agriculture,5.1,4.0,41372
+Ruhango,Southern,2022,Manufacturing,26.0,8.3,25512
+Ruhango,Southern,2022,Construction,31.1,9,40387
+Ruhango,Southern,2022,Trade,18.8,1.9,70210
+Ruhango,Southern,2022,ICT,37.8,8.3,70323
+Ruhango,Southern,2022,Education,27.4,8.3,74750
+Ruhango,Southern,2022,Health,36.0,0.4,80000
+Ruhango,Southern,2022,Finance,7.6,0.7,30139
+Ruhango,Southern,2022,Other,24.2,5.5,60443
+Ruhango,Southern,2023,Agriculture,5.2,4.2,42272
+Ruhango,Southern,2023,Manufacturing,26.7,8.0,26412
+Ruhango,Southern,2023,Construction,31.3,9,41287
+Ruhango,Southern,2023,Trade,17.7,1.5,71111
+Ruhango,Southern,2023,ICT,38.7,8.8,71223
+Ruhango,Southern,2023,Education,27.4,8.0,75650
+Ruhango,Southern,2023,Health,34.6,1.0,80000
+Ruhango,Southern,2023,Finance,7.8,1.1,31039
+Ruhango,Southern,2023,Other,24.3,4.4,61345
+Ruhango,Southern,2024,Agriculture,5.0,4.4,43173
+Ruhango,Southern,2024,Manufacturing,26.1,8.6,27312
+Ruhango,Southern,2024,Construction,31.7,8.2,42188
+Ruhango,Southern,2024,Trade,17.7,1.6,72010
+Ruhango,Southern,2024,ICT,38.5,8.0,72123
+Ruhango,Southern,2024,Education,27.1,7.7,76550
+Ruhango,Southern,2024,Health,36.1,1.0,80000
+Ruhango,Southern,2024,Finance,7.5,2.5,31938
+Ruhango,Southern,2024,Other,24.2,4.6,62244
+Ruhango,Southern,2025,Agriculture,4.5,5.0,44072
+Ruhango,Southern,2025,Manufacturing,26.2,8.8,28213
+Ruhango,Southern,2025,Construction,31.5,9,43088
+Ruhango,Southern,2025,Trade,18.5,2.7,72909
+Ruhango,Southern,2025,ICT,39.2,8.2,73025
+Ruhango,Southern,2025,Education,26.2,9,77451
+Ruhango,Southern,2025,Health,34.7,0.9,80000
+Ruhango,Southern,2025,Finance,6.6,2.6,32839
+Ruhango,Southern,2025,Other,24.9,6.1,63145
+Karongi,Western,2019,Agriculture,25.3,-1.4,20148
+Karongi,Western,2019,Manufacturing,18.7,7.7,65718
+Karongi,Western,2019,Construction,15.6,-2.3,52188
+Karongi,Western,2019,Trade,16.7,3.3,77089
+Karongi,Western,2019,ICT,6.1,-0.6,27922
+Karongi,Western,2019,Education,18.4,1.1,39110
+Karongi,Western,2019,Health,30.6,5.1,43293
+Karongi,Western,2019,Finance,37.8,5.2,58756
+Karongi,Western,2019,Other,6.2,8.6,18343
+Karongi,Western,2020,Agriculture,24.4,-2.8,21048
+Karongi,Western,2020,Manufacturing,18.8,7.6,66620
+Karongi,Western,2020,Construction,16.3,-3,53089
+Karongi,Western,2020,Trade,17.0,3.8,77990
+Karongi,Western,2020,ICT,6.4,-0.8,28823
+Karongi,Western,2020,Education,17.0,1.4,40011
+Karongi,Western,2020,Health,32.2,5.3,44193
+Karongi,Western,2020,Finance,37.7,5.3,59655
+Karongi,Western,2020,Other,7.5,8.9,19243
+Karongi,Western,2021,Agriculture,24.1,-1.5,21948
+Karongi,Western,2021,Manufacturing,17.9,6.6,67519
+Karongi,Western,2021,Construction,15.0,-1.8,53988
+Karongi,Western,2021,Trade,17.0,4.9,78890
+Karongi,Western,2021,ICT,5.5,0.0,29722
+Karongi,Western,2021,Education,17.2,0.3,40910
+Karongi,Western,2021,Health,32.2,3.9,45091
+Karongi,Western,2021,Finance,39.3,4.1,60555
+Karongi,Western,2021,Other,6.5,7.8,20143
+Karongi,Western,2022,Agriculture,25.5,-2.1,22848
+Karongi,Western,2022,Manufacturing,18.6,8.3,68418
+Karongi,Western,2022,Construction,15.4,-3.0,54888
+Karongi,Western,2022,Trade,18.3,3.8,79789
+Karongi,Western,2022,ICT,5.9,0.5,30622
+Karongi,Western,2022,Education,17.3,0.1,41810
+Karongi,Western,2022,Health,30.8,5.6,45991
+Karongi,Western,2022,Finance,38.5,4.4,61456
+Karongi,Western,2022,Other,6.2,8.3,21044
+Karongi,Western,2023,Agriculture,25.3,-2.1,23747
+Karongi,Western,2023,Manufacturing,19.4,8.4,69319
+Karongi,Western,2023,Construction,15.2,-3,55789
+Karongi,Western,2023,Trade,17.5,4.9,80000
+Karongi,Western,2023,ICT,6.9,-0.4,31523
+Karongi,Western,2023,Education,17.3,1.2,42711
+Karongi,Western,2023,Health,31.7,5.8,46892
+Karongi,Western,2023,Finance,38.0,5.9,62355
+Karongi,Western,2023,Other,6.5,9.0,21944
+Karongi,Western,2024,Agriculture,25.9,-2.0,24648
+Karongi,Western,2024,Manufacturing,18.0,7.3,70218
+Karongi,Western,2024,Construction,15.6,-1.5,56688
+Karongi,Western,2024,Trade,17.6,4.2,80000
+Karongi,Western,2024,ICT,5.6,0.1,32423
+Karongi,Western,2024,Education,18.9,2.0,43611
+Karongi,Western,2024,Health,32.3,5.9,47793
+Karongi,Western,2024,Finance,38.3,5.8,63256
+Karongi,Western,2024,Other,7.3,9,22843
+Karongi,Western,2025,Agriculture,26.1,-1.5,25548
+Karongi,Western,2025,Manufacturing,18.3,7.2,71119
+Karongi,Western,2025,Construction,16.9,-2.7,57588
+Karongi,Western,2025,Trade,18.6,4.9,80000
+Karongi,Western,2025,ICT,6.4,0.9,33322
+Karongi,Western,2025,Education,18.7,1.4,44511
+Karongi,Western,2025,Health,32.5,6.1,48692
+Karongi,Western,2025,Finance,39.5,5.1,64156
+Karongi,Western,2025,Other,6.9,8.7,23743
+Ngororero,Western,2019,Agriculture,7.7,4.8,13072
+Ngororero,Western,2019,Manufacturing,24.0,6.0,33630
+Ngororero,Western,2019,Construction,40,8.5,21218
+Ngororero,Western,2019,Trade,2.9,1.5,42443
+Ngororero,Western,2019,ICT,14.0,7.9,68337
+Ngororero,Western,2019,Education,19.7,5.8,71169
+Ngororero,Western,2019,Health,22.1,-1.4,69004
+Ngororero,Western,2019,Finance,30.6,3.8,61554
+Ngororero,Western,2019,Other,26.8,0.9,54285
+Ngororero,Western,2020,Agriculture,7.6,5.2,13972
+Ngororero,Western,2020,Manufacturing,22.7,5.9,34530
+Ngororero,Western,2020,Construction,39.6,8.0,22118
+Ngororero,Western,2020,Trade,2.1,2.0,43343
+Ngororero,Western,2020,ICT,13.7,8.3,69238
+Ngororero,Western,2020,Education,19.8,5.1,72069
+Ngororero,Western,2020,Health,22.7,-2.6,69904
+Ngororero,Western,2020,Finance,32.1,5.1,62453
+Ngororero,Western,2020,Other,26.7,1.8,55184
+Ngororero,Western,2021,Agriculture,8.3,5.0,14873
+Ngororero,Western,2021,Manufacturing,23.6,6.8,35431
+Ngororero,Western,2021,Construction,40,8.0,23018
+Ngororero,Western,2021,Trade,2,2.7,44243
+Ngororero,Western,2021,ICT,13.4,8.2,70137
+Ngororero,Western,2021,Education,18.9,6.5,72968
+Ngororero,Western,2021,Health,23.3,-2.5,70803
+Ngororero,Western,2021,Finance,32.2,5.7,63353
+Ngororero,Western,2021,Other,26.0,1.3,56084
+Ngororero,Western,2022,Agriculture,7.9,5.6,15772
+Ngororero,Western,2022,Manufacturing,22.9,7.4,36331
+Ngororero,Western,2022,Construction,39.8,7.5,23919
+Ngororero,Western,2022,Trade,3.2,3.2,45143
+Ngororero,Western,2022,ICT,15.0,7.0,71037
+Ngororero,Western,2022,Education,18.7,6.2,73869
+Ngororero,Western,2022,Health,22.1,-2.0,71703
+Ngororero,Western,2022,Finance,30.9,5.8,64254
+Ngororero,Western,2022,Other,26.4,0.7,56985
+Ngororero,Western,2023,Agriculture,8.0,5.6,16672
+Ngororero,Western,2023,Manufacturing,23.0,6.3,37230
+Ngororero,Western,2023,Construction,39.5,8.8,24818
+Ngororero,Western,2023,Trade,2.9,1.9,46044
+Ngororero,Western,2023,ICT,14.8,7.9,71939
+Ngororero,Western,2023,Education,19.0,5.9,74768
+Ngororero,Western,2023,Health,23.2,-1.8,72603
+Ngororero,Western,2023,Finance,31.8,5.1,65153
+Ngororero,Western,2023,Other,25.9,2.4,57884
+Ngororero,Western,2024,Agriculture,9.2,6.9,17572
+Ngororero,Western,2024,Manufacturing,24.4,7.5,38131
+Ngororero,Western,2024,Construction,39.5,7.8,25719
+Ngororero,Western,2024,Trade,3.4,2.7,46943
+Ngororero,Western,2024,ICT,14.2,7.4,72838
+Ngororero,Western,2024,Education,20.2,6.7,75668
+Ngororero,Western,2024,Health,22.5,-1.7,73503
+Ngororero,Western,2024,Finance,32.0,5.5,66054
+Ngororero,Western,2024,Other,26.0,1.2,58784
+Ngororero,Western,2025,Agriculture,8.6,6.0,18472
+Ngororero,Western,2025,Manufacturing,24.0,7.0,39030
+Ngororero,Western,2025,Construction,40,9,26619
+Ngororero,Western,2025,Trade,2,3.7,47842
+Ngororero,Western,2025,ICT,14.9,8.5,73738
+Ngororero,Western,2025,Education,20.3,7.0,76569
+Ngororero,Western,2025,Health,22.4,-0.8,74405
+Ngororero,Western,2025,Finance,31.3,5.1,66953
+Ngororero,Western,2025,Other,27.1,2.4,59684
+Nyabihu,Western,2019,Agriculture,33.8,6.4,48420
+Nyabihu,Western,2019,Manufacturing,7.7,7.8,37346
+Nyabihu,Western,2019,Construction,20.5,6.5,74180
+Nyabihu,Western,2019,Trade,32.8,-1.4,38977
+Nyabihu,Western,2019,ICT,18.2,-1.5,18145
+Nyabihu,Western,2019,Education,21.4,0.4,79041
+Nyabihu,Western,2019,Health,34.8,8.0,73963
+Nyabihu,Western,2019,Finance,30.1,-2.7,30193
+Nyabihu,Western,2019,Other,40,8.7,53173
+Nyabihu,Western,2020,Agriculture,33.3,7.1,49321
+Nyabihu,Western,2020,Manufacturing,9.1,6.5,38247
+Nyabihu,Western,2020,Construction,19.9,7.4,75080
+Nyabihu,Western,2020,Trade,33.2,-0.7,39877
+Nyabihu,Western,2020,ICT,18.3,-1.2,19046
+Nyabihu,Western,2020,Education,22.2,1.3,79942
+Nyabihu,Western,2020,Health,35.8,6.8,74863
+Nyabihu,Western,2020,Finance,31.6,-3,31092
+Nyabihu,Western,2020,Other,39.2,7.8,54073
+Nyabihu,Western,2021,Agriculture,33.6,5.8,50221
+Nyabihu,Western,2021,Manufacturing,8.5,7.8,39146
+Nyabihu,Western,2021,Construction,21.2,6.7,75979
+Nyabihu,Western,2021,Trade,32.3,-0.8,40776
+Nyabihu,Western,2021,ICT,18.6,0.2,19946
+Nyabihu,Western,2021,Education,22.4,1.1,80000
+Nyabihu,Western,2021,Health,35.3,7.5,75762
+Nyabihu,Western,2021,Finance,31.1,-1.5,31994
+Nyabihu,Western,2021,Other,38.8,7.6,54973
+Nyabihu,Western,2022,Agriculture,33.9,5.9,51122
+Nyabihu,Western,2022,Manufacturing,8.4,8.2,40047
+Nyabihu,Western,2022,Construction,20.9,8.0,76880
+Nyabihu,Western,2022,Trade,34.0,0.0,41677
+Nyabihu,Western,2022,ICT,20.0,0.4,20845
+Nyabihu,Western,2022,Education,21.1,0.6,80000
+Nyabihu,Western,2022,Health,35.9,7.0,76663
+Nyabihu,Western,2022,Finance,31.2,-2.5,32894
+Nyabihu,Western,2022,Other,39.2,7.8,55873
+Nyabihu,Western,2023,Agriculture,34.6,6.0,52021
+Nyabihu,Western,2023,Manufacturing,8.7,7.8,40946
+Nyabihu,Western,2023,Construction,21.6,7.6,77779
+Nyabihu,Western,2023,Trade,33.7,-0.3,42576
+Nyabihu,Western,2023,ICT,18.7,-0.8,21745
+Nyabihu,Western,2023,Education,21.7,1.7,80000
+Nyabihu,Western,2023,Health,35.1,7.6,77563
+Nyabihu,Western,2023,Finance,31.1,-2.1,33793
+Nyabihu,Western,2023,Other,40,8.6,56771
+Nyabihu,Western,2024,Agriculture,35.2,7.7,52920
+Nyabihu,Western,2024,Manufacturing,8.7,7.0,41847
+Nyabihu,Western,2024,Construction,21.7,8.5,78680
+Nyabihu,Western,2024,Trade,32.6,-0.5,43477
+Nyabihu,Western,2024,ICT,18.9,-0.2,22645
+Nyabihu,Western,2024,Education,21.4,2.2,80000
+Nyabihu,Western,2024,Health,34.8,7.4,78463
+Nyabihu,Western,2024,Finance,31.2,-1.2,34693
+Nyabihu,Western,2024,Other,39.4,9,57673
+Nyabihu,Western,2025,Agriculture,33.8,6.6,53821
+Nyabihu,Western,2025,Manufacturing,8.8,7.3,42747
+Nyabihu,Western,2025,Construction,21.7,7.8,79580
+Nyabihu,Western,2025,Trade,33.4,1.1,44377
+Nyabihu,Western,2025,ICT,20.0,0.5,23545
+Nyabihu,Western,2025,Education,22.6,1.9,80000
+Nyabihu,Western,2025,Health,35.2,8.0,79362
+Nyabihu,Western,2025,Finance,31.5,-1.9,35593
+Nyabihu,Western,2025,Other,39.6,8.9,58572
+Nyamasheke,Western,2019,Agriculture,23.8,0.0,61667
+Nyamasheke,Western,2019,Manufacturing,16.0,7.7,49154
+Nyamasheke,Western,2019,Construction,37.2,2.0,23086
+Nyamasheke,Western,2019,Trade,8.7,3.6,53916
+Nyamasheke,Western,2019,ICT,21.0,0.8,51058
+Nyamasheke,Western,2019,Education,8.0,0.9,21260
+Nyamasheke,Western,2019,Health,32.6,5.6,58738
+Nyamasheke,Western,2019,Finance,12.7,-0.4,19552
+Nyamasheke,Western,2019,Other,6.6,2.2,56171
+Nyamasheke,Western,2020,Agriculture,23.7,0.9,62566
+Nyamasheke,Western,2020,Manufacturing,17.1,9,50054
+Nyamasheke,Western,2020,Construction,36.5,0.7,23986
+Nyamasheke,Western,2020,Trade,7.6,3.9,54815
+Nyamasheke,Western,2020,ICT,21.8,-0.1,51957
+Nyamasheke,Western,2020,Education,7.7,-0.3,22159
+Nyamasheke,Western,2020,Health,32.5,6.9,59639
+Nyamasheke,Western,2020,Finance,11.8,0.1,20452
+Nyamasheke,Western,2020,Other,5.6,3.0,57071
+Nyamasheke,Western,2021,Agriculture,23.3,0.5,63466
+Nyamasheke,Western,2021,Manufacturing,16.0,8.3,50955
+Nyamasheke,Western,2021,Construction,37.7,1.0,24887
+Nyamasheke,Western,2021,Trade,8.6,4.5,55716
+Nyamasheke,Western,2021,ICT,22.2,-0.3,52858
+Nyamasheke,Western,2021,Education,8.1,-0.2,23059
+Nyamasheke,Western,2021,Health,32.3,5.7,60538
+Nyamasheke,Western,2021,Finance,13.1,-1.0,21352
+Nyamasheke,Western,2021,Other,7.1,1.8,57971
+Nyamasheke,Western,2022,Agriculture,23.3,0.8,64365
+Nyamasheke,Western,2022,Manufacturing,15.7,8.3,51855
+Nyamasheke,Western,2022,Construction,37.7,0.9,25787
+Nyamasheke,Western,2022,Trade,8.2,4.4,56616
+Nyamasheke,Western,2022,ICT,21.6,0.7,53758
+Nyamasheke,Western,2022,Education,8.1,0.9,23960
+Nyamasheke,Western,2022,Health,33.9,7.1,61438
+Nyamasheke,Western,2022,Finance,13.1,-1.1,22253
+Nyamasheke,Western,2022,Other,7.3,3.3,58871
+Nyamasheke,Western,2023,Agriculture,24.7,2.2,65266
+Nyamasheke,Western,2023,Manufacturing,16.0,9,52755
+Nyamasheke,Western,2023,Construction,38.4,2.3,26686
+Nyamasheke,Western,2023,Trade,8.1,3.2,57515
+Nyamasheke,Western,2023,ICT,20.9,0.7,54658
+Nyamasheke,Western,2023,Education,8.6,1.3,24859
+Nyamasheke,Western,2023,Health,33.6,7.5,62338
+Nyamasheke,Western,2023,Finance,13.3,-0.2,23153
+Nyamasheke,Western,2023,Other,7.1,2.2,59771
+Nyamasheke,Western,2024,Agriculture,24.5,1.3,66166
+Nyamasheke,Western,2024,Manufacturing,15.9,8.6,53654
+Nyamasheke,Western,2024,Construction,38.2,1.9,27586
+Nyamasheke,Western,2024,Trade,9.0,3.3,58415
+Nyamasheke,Western,2024,ICT,22.0,1.1,55558
+Nyamasheke,Western,2024,Education,8.4,1.7,25760
+Nyamasheke,Western,2024,Health,34.0,7.7,63238
+Nyamasheke,Western,2024,Finance,12.2,-0.3,24052
+Nyamasheke,Western,2024,Other,7.5,2.5,60672
+Nyamasheke,Western,2025,Agriculture,24.9,1.0,67066
+Nyamasheke,Western,2025,Manufacturing,16.4,9,54554
+Nyamasheke,Western,2025,Construction,38.6,1.9,28486
+Nyamasheke,Western,2025,Trade,7.8,4.4,59314
+Nyamasheke,Western,2025,ICT,22.6,0.1,56458
+Nyamasheke,Western,2025,Education,8.8,1.6,26660
+Nyamasheke,Western,2025,Health,34.1,7.1,64138
+Nyamasheke,Western,2025,Finance,13.3,0.3,24953
+Nyamasheke,Western,2025,Other,7.1,2.7,61571
+Rubavu,Western,2019,Agriculture,31.6,-1.9,19114
+Rubavu,Western,2019,Manufacturing,2.5,6.6,62659
+Rubavu,Western,2019,Construction,12.8,7.2,24841
+Rubavu,Western,2019,Trade,30.1,-0.5,51403
+Rubavu,Western,2019,ICT,31.0,2.9,42392
+Rubavu,Western,2019,Education,29.8,7.4,20857
+Rubavu,Western,2019,Health,19.2,5.1,52408
+Rubavu,Western,2019,Finance,27.7,6.1,31133
+Rubavu,Western,2019,Other,22.8,0.2,54824
+Rubavu,Western,2020,Agriculture,31.8,-1.3,20014
+Rubavu,Western,2020,Manufacturing,2.8,6.8,63558
+Rubavu,Western,2020,Construction,13.9,6.9,25741
+Rubavu,Western,2020,Trade,28.7,-1.0,52305
+Rubavu,Western,2020,ICT,31.0,2.5,43290
+Rubavu,Western,2020,Education,30.5,8.0,21756
+Rubavu,Western,2020,Health,19.7,4.5,53307
+Rubavu,Western,2020,Finance,29.1,5.5,32032
+Rubavu,Western,2020,Other,23.3,0.6,55725
+Rubavu,Western,2021,Agriculture,31.7,-1.0,20915
+Rubavu,Western,2021,Manufacturing,2.0,7.8,64457
+Rubavu,Western,2021,Construction,13.4,6.0,26641
+Rubavu,Western,2021,Trade,29.1,0.0,53203
+Rubavu,Western,2021,ICT,32.4,4.0,44192
+Rubavu,Western,2021,Education,31.6,6.8,22656
+Rubavu,Western,2021,Health,19.9,5.9,54208
+Rubavu,Western,2021,Finance,27.7,5.6,32932
+Rubavu,Western,2021,Other,24.2,0.4,56626
+Rubavu,Western,2022,Agriculture,32.2,-1.5,21815
+Rubavu,Western,2022,Manufacturing,2,6.9,65358
+Rubavu,Western,2022,Construction,13.0,6.7,27541
+Rubavu,Western,2022,Trade,30.3,0.2,54103
+Rubavu,Western,2022,ICT,32.5,3.4,45091
+Rubavu,Western,2022,Education,30.5,7.7,23557
+Rubavu,Western,2022,Health,18.7,5.2,55108
+Rubavu,Western,2022,Finance,29.0,5.1,33831
+Rubavu,Western,2022,Other,22.9,0.4,57524
+Rubavu,Western,2023,Agriculture,31.3,-1.0,22715
+Rubavu,Western,2023,Manufacturing,3.4,8.4,66258
+Rubavu,Western,2023,Construction,13.1,6.3,28441
+Rubavu,Western,2023,Trade,29.7,0.5,55004
+Rubavu,Western,2023,ICT,32.7,2.9,45991
+Rubavu,Western,2023,Education,31.4,7.0,24456
+Rubavu,Western,2023,Health,19.2,4.6,56007
+Rubavu,Western,2023,Finance,27.8,5.5,34732
+Rubavu,Western,2023,Other,24.3,2.0,58426
+Rubavu,Western,2024,Agriculture,31.4,-0.8,23614
+Rubavu,Western,2024,Manufacturing,3.2,8.6,67158
+Rubavu,Western,2024,Construction,13.6,6.5,29341
+Rubavu,Western,2024,Trade,30.5,-0.8,55904
+Rubavu,Western,2024,ICT,32.9,4.5,46892
+Rubavu,Western,2024,Education,31.7,8.6,25357
+Rubavu,Western,2024,Health,18.8,5.4,56908
+Rubavu,Western,2024,Finance,29.3,6.8,35631
+Rubavu,Western,2024,Other,24.4,2.1,59325
+Rubavu,Western,2025,Agriculture,31.2,-0.1,24515
+Rubavu,Western,2025,Manufacturing,2.6,7.7,68058
+Rubavu,Western,2025,Construction,13.9,7.6,30240
+Rubavu,Western,2025,Trade,29.3,0.8,56805
+Rubavu,Western,2025,ICT,32.0,3.1,47791
+Rubavu,Western,2025,Education,31.9,7.8,26257
+Rubavu,Western,2025,Health,20.1,6.3,57808
+Rubavu,Western,2025,Finance,29.0,7.0,36532
+Rubavu,Western,2025,Other,24.5,2.2,60225
+Rusizi,Western,2019,Agriculture,7.3,2.7,28043
+Rusizi,Western,2019,Manufacturing,14.3,6.2,30534
+Rusizi,Western,2019,Construction,10.5,5.4,74012
+Rusizi,Western,2019,Trade,5.1,2.7,48213
+Rusizi,Western,2019,ICT,10.1,-0.5,31722
+Rusizi,Western,2019,Education,30.6,5.2,13626
+Rusizi,Western,2019,Health,37.5,8.1,38109
+Rusizi,Western,2019,Finance,28.8,-1.0,64846
+Rusizi,Western,2019,Other,28.8,4.3,19036
+Rusizi,Western,2020,Agriculture,7.7,4.4,28944
+Rusizi,Western,2020,Manufacturing,13.0,5.9,31433
+Rusizi,Western,2020,Construction,9.1,5.2,74911
+Rusizi,Western,2020,Trade,5.2,4.0,49114
+Rusizi,Western,2020,ICT,10.3,-0.2,32623
+Rusizi,Western,2020,Education,30.9,5.1,14525
+Rusizi,Western,2020,Health,36.7,8.7,39007
+Rusizi,Western,2020,Finance,29.1,0.4,65746
+Rusizi,Western,2020,Other,28.4,4.2,19936
+Rusizi,Western,2021,Agriculture,8.8,4.3,29843
+Rusizi,Western,2021,Manufacturing,14.3,6.2,32333
+Rusizi,Western,2021,Construction,10.0,5.7,75812
+Rusizi,Western,2021,Trade,6.5,2.6,50014
+Rusizi,Western,2021,ICT,10.4,-0.2,33522
+Rusizi,Western,2021,Education,31.1,5.2,15425
+Rusizi,Western,2021,Health,38.4,9,39907
+Rusizi,Western,2021,Finance,30.0,-0.7,66645
+Rusizi,Western,2021,Other,29.6,3.0,20835
+Rusizi,Western,2022,Agriculture,8.5,3.5,30743
+Rusizi,Western,2022,Manufacturing,14.1,6.2,33233
+Rusizi,Western,2022,Construction,9.9,4.7,76711
+Rusizi,Western,2022,Trade,5.6,2.7,50914
+Rusizi,Western,2022,ICT,10.3,0.8,34423
+Rusizi,Western,2022,Education,32.0,5.0,16326
+Rusizi,Western,2022,Health,37.2,8.8,40807
+Rusizi,Western,2022,Finance,29.8,0.8,67544
+Rusizi,Western,2022,Other,28.4,4.1,21735
+Rusizi,Western,2023,Agriculture,9.0,4.4,31643
+Rusizi,Western,2023,Manufacturing,14.7,6.6,34134
+Rusizi,Western,2023,Construction,9.4,6.3,77612
+Rusizi,Western,2023,Trade,7.1,4.4,51813
+Rusizi,Western,2023,ICT,10.0,0.6,35323
+Rusizi,Western,2023,Education,31.7,5.8,17226
+Rusizi,Western,2023,Health,37.3,9,41707
+Rusizi,Western,2023,Finance,30.5,-0.4,68445
+Rusizi,Western,2023,Other,29.8,4.6,22635
+Rusizi,Western,2024,Agriculture,8.0,5.0,32543
+Rusizi,Western,2024,Manufacturing,14.4,6.7,35034
+Rusizi,Western,2024,Construction,11.1,5.0,78512
+Rusizi,Western,2024,Trade,5.7,4.1,52713
+Rusizi,Western,2024,ICT,9.8,1.8,36222
+Rusizi,Western,2024,Education,32.3,4.5,18125
+Rusizi,Western,2024,Health,37.9,9,42608
+Rusizi,Western,2024,Finance,30.5,-0.3,69344
+Rusizi,Western,2024,Other,28.5,4.3,23536
+Rusizi,Western,2025,Agriculture,7.9,4.2,33443
+Rusizi,Western,2025,Manufacturing,13.4,6.8,35934
+Rusizi,Western,2025,Construction,9.6,5.8,79412
+Rusizi,Western,2025,Trade,6.2,4.5,53613
+Rusizi,Western,2025,ICT,9.8,0.5,37123
+Rusizi,Western,2025,Education,31.6,4.8,19026
+Rusizi,Western,2025,Health,38.8,9,43508
+Rusizi,Western,2025,Finance,29.3,0.3,70246
+Rusizi,Western,2025,Other,29.9,4.1,24436
