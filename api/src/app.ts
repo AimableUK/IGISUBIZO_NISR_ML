@@ -9,6 +9,7 @@ import { env, isProd } from "./env";
 import { analyses } from "./routes/analyses";
 import { artifacts } from "./routes/artifacts";
 import { misc } from "./routes/misc";
+import { admin } from "./routes/admin";
 
 export function createApp() {
   const app = express();
@@ -24,6 +25,7 @@ export function createApp() {
   app.use("/api", misc);
   app.use("/api/analyses", rateLimit({ windowMs: 15 * 60 * 1000, limit: 40, standardHeaders: true, legacyHeaders: false }), analyses);
   app.use("/api/artifacts", artifacts);
+  app.use("/api/admin", admin);
 
   app.use((_req, res) => res.status(404).json({ error: "not_found", message: "Route not found." }));
   app.use((err: Error, _req: express.Request, res: express.Response, _next: express.NextFunction) => {

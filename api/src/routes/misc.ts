@@ -12,7 +12,7 @@ import { DATASET_VERSIONS, ANALYSIS_VERSION } from "../services/engine";
 export const misc = Router();
 
 misc.get("/health", (_req, res) => res.json({ ok: true, analysisVersion: ANALYSIS_VERSION }));
-misc.get("/meta/datasets", (_req, res) => res.json({ datasets: DATASET_VERSIONS, analysisVersion: ANALYSIS_VERSION, isSample: true }));
+misc.get("/meta/datasets", (_req, res) => res.json({ datasets: DATASET_VERSIONS, analysisVersion: ANALYSIS_VERSION, isSample: false }));
 
 misc.post("/contact", rateLimit({ windowMs: 60 * 60 * 1000, limit: 5, standardHeaders: true, legacyHeaders: false }), async (req, res) => {
   const p = ContactRequestSchema.safeParse(req.body);
