@@ -115,7 +115,7 @@ const empty = (question: string, status: AnalyticalResult["status"], message: st
   AnalyticalResultSchema.parse({
     id: randomUUID(), question, status, message,
     intent: { metric: intent.ind?.id, operation: intent.operation },
-    datasets: {}, metrics: {}, insights: {}, formulas: {}, sources: {}, operations: [], caveats: [],
+    decision: null, datasets: {}, metrics: {}, insights: {}, formulas: {}, sources: {}, operations: [], caveats: [],
     meta: { analysisVersion: ANALYSIS_VERSION, computedAt: new Date().toISOString(), datasetVersions: {}, isSample: false },
   });
 
@@ -156,7 +156,7 @@ export function runAnalysis(question: string): AnalyticalResult {
   const raw = {
     id: randomUUID(), question, status: partial ? "partial" : "ok",
     message: partial ? "Showing the first six districts you named." : undefined,
-    intent: { metric: ind.id, operation: it.operation, geography: it.districts.length ? it.districts.join(", ") : "All districts", periodFrom: it.from, periodTo: it.to },
+    decision: null, intent: { metric: ind.id, operation: it.operation, geography: it.districts.length ? it.districts.join(", ") : "All districts", periodFrom: it.from, periodTo: it.to },
     datasets: {
       by_district_latest: {
         label: `${ind.label}, ${it.to}, by district`,

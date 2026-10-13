@@ -9,6 +9,7 @@
  */
 
 export type EngineIntent =
+  | "decision"              // Problem D — crop/career/sector choice comparison
   | "career_intelligence"   // Problem D — career scoring, path advice
   | "clustering"            // Problem A — district underutilization profiles
   | "regression"            // Problem B — NEET predictors
@@ -91,6 +92,7 @@ const DISTRICT_NAMES = [
 
 // ─── engine routing rules (ordered — first match wins) ───────────────────────
 const ENGINE_RULES: Array<[RegExp, EngineIntent]> = [
+  [/which (crop|plant|grow|farm)|what (should|can) i (plant|grow|farm)|best crop|compare crop|rice vs|maize vs|beans vs|potato vs|which career.*vs|career.*compare|should i (plant|grow|farm)|i want to (plant|grow|farm)|crop choice|decision.*crop|decision.*career/i, "decision"],
   [/career opportunity|career.*rwanda|tvet career|university career|which career|best career|job.*opportunit|future.*work|ai.*era|in.demand|occupation.*demand|what (should|can) i (study|become)|i want to (be|become)|my (dream|goal) is|advise me|guide me|help me choose/i, "career_intelligence"],
   [/neet|predict|factor|associat|regression|what.*(cause|affect|influenc)|why.*youth/i, "regression"],
   [/trend|forecast|sector.*grow|employment.*trend|over time|projection|future.*sector/i, "forecasting"],
@@ -149,6 +151,8 @@ export function parseIntent(rawQuestion: string): ParsedIntent {
 function buildUnderstood(engine: EngineIntent, op: Operation, districts: string[], subjects: string[], q: string): string {
   const distStr = districts.length ? ` in ${districts.join(", ")}` : " across Rwanda";
   switch (engine) {
+    case "decision":
+      return `Understood: decision comparison${distStr}. I will identify your options, load the relevant NISR data, compute indicators per option, and rank them on visible criteria with sources and caveats.`;
     case "career_intelligence":
       return `Understood: career opportunity analysis${distStr}. I will score occupations using sector growth (LFS), graduate employment (HEC/WDA), skill gaps (LMIS), and exam pipeline (NESA).`;
     case "clustering":

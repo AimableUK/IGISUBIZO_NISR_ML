@@ -310,6 +310,7 @@ export function runClustering(question: string): AnalyticalResult {
   return AnalyticalResultSchema.parse({
     id: randomUUID(), question, status: "ok",
     intent: { metric: "underutilization_cluster", operation: "compare", periodFrom: LATEST, periodTo: LATEST },
+    decision: null,
     datasets: {
       cluster_profiles: {
         label: `Underutilization cluster profiles, ${LATEST}`,
@@ -394,6 +395,7 @@ export function runRegression(question: string): AnalyticalResult {
   return AnalyticalResultSchema.parse({
     id: randomUUID(), question, status: "ok",
     intent: { metric: "youth_neet_rate", operation: "summary", periodFrom: LATEST, periodTo: LATEST },
+    decision: null,
     datasets: {
       feature_importance: {
         label: `OLS regression — predictors of youth NEET rate, ${LATEST}`,
@@ -484,6 +486,7 @@ export function runForecasting(question: string): AnalyticalResult {
   return AnalyticalResultSchema.parse({
     id: randomUUID(), question, status: "ok",
     intent: { metric: "employment_share", operation: "trend", periodFrom: YEARS[0], periodTo: LATEST + FORECAST_HORIZON },
+    decision: null,
     datasets: {
       sector_trends: {
         label: `National employment share by sector, ${YEARS[0]}–${LATEST}`,
