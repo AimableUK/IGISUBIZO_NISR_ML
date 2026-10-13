@@ -65,12 +65,56 @@ class Operation(BaseModel):
     description: str
 
 
+# ─── Decision result ──────────────────────────────────────────────────────────
+class OptionIndicator(BaseModel):
+    name: str
+    value: Optional[float] = None
+    unit: str = ""
+    period: str = ""
+    interval: Optional[tuple[float, float]] = None
+    status: Literal["available", "missing", "not_applicable", "unreliable"]
+    sourceId: Optional[str] = None
+
+
+class OptionResult(BaseModel):
+    option: str
+    rank: int
+    score: Optional[float] = None
+    indicators: list[OptionIndicator]
+    strengths: list[str] = []
+    risks: list[str] = []
+
+
+class CriterionWeight(BaseModel):
+    criterion: str
+    weight: float
+    description: Optional[str] = None
+
+
+class ExternalClaim(BaseModel):
+    claim: str
+    source: str
+    uncertain: bool = True
+
+
+class DecisionResult(BaseModel):
+    decisionType: Literal["crop_choice", "career_choice", "sector_choice", "other"]
+    options: list[str]
+    location: str = ""
+    constraints: dict[str, str] = {}
+    assumptions: list[str] = []
+    optionComparison: list[OptionResult]
+    criteriaWeights: list[CriterionWeight]
+    externalClaims: list[ExternalClaim] = []
+
+
 class Intent(BaseModel):
     metric: Optional[str] = None
     operation: Optional[Literal["compare", "trend", "rank", "summary"]] = None
     geography: Optional[str] = None
     periodFrom: Optional[int] = None
     periodTo: Optional[int] = None
+    decisionType: Optional[Literal["crop_choice", "career_choice", "sector_choice", "other"]] = None
 
 
 class Meta(BaseModel):
@@ -86,6 +130,7 @@ class AnalyticalResult(BaseModel):
     status: Literal["ok", "partial", "ambiguous", "unsupported", "no_data"]
     message: Optional[str] = None
     intent: Intent
+    decision: Optional[DecisionResult] = None
     datasets: dict[str, Dataset]
     metrics: dict[str, Metric]
     insights: dict[str, Insight]

@@ -59,6 +59,51 @@ export const OperationSchema = z.object({ id: IdKey, description: z.string().max
 
 export const AnalysisStatus = z.enum(["ok", "partial", "ambiguous", "unsupported", "no_data"]);
 
+// ─── Decision result (crop / career / business choice) ────────────────────────
+export const IndicatorStatus = z.enum(["available", "missing", "not_applicable", "unreliable"]);
+
+export const OptionIndicatorSchema = z.object({
+  name: z.string().max(120),
+  value: z.union([z.number(), z.null()]),
+  unit: z.string().max(40).default(""),
+  period: z.string().max(60).default(""),
+  interval: z.tuple([z.number(), z.number()]).nullable().default(null),
+  status: IndicatorStatus,
+  sourceId: z.string().optional(),
+});
+
+export const OptionResultSchema = z.object({
+  option: z.string().max(120),
+  rank: z.number().int(),
+  score: z.number().nullable(),
+  indicators: z.array(OptionIndicatorSchema),
+  strengths: z.array(z.string().max(300)),
+  risks: z.array(z.string().max(300)),
+});
+
+export const CriterionWeightSchema = z.object({
+  criterion: z.string().max(80),
+  weight: z.number().min(0).max(1),
+  description: z.string().max(200).optional(),
+});
+
+export const ExternalClaimSchema = z.object({
+  claim: z.string().max(400),
+  source: z.string().max(240),
+  uncertain: z.boolean().default(true),
+});
+
+export const DecisionResultSchema = z.object({
+  decisionType: z.enum(["crop_choice", "career_choice", "sector_choice", "other"]),
+  options: z.array(z.string().max(120)),
+  location: z.string().max(120).default(""),
+  constraints: z.record(z.string().max(80), z.string().max(200)).default({}),
+  assumptions: z.array(z.string().max(300)).default([]),
+  optionComparison: z.array(OptionResultSchema),
+  criteriaWeights: z.array(CriterionWeightSchema),
+  externalClaims: z.array(ExternalClaimSchema).default([]),
+}).nullable().default(null);
+
 export const AnalyticalResultSchema = z.object({
   id: z.string(),
   question: z.string().max(1000),
@@ -70,7 +115,9 @@ export const AnalyticalResultSchema = z.object({
     geography: z.string().optional(),
     periodFrom: z.number().int().optional(),
     periodTo: z.number().int().optional(),
+    decisionType: z.enum(["crop_choice", "career_choice", "sector_choice", "other"]).optional(),
   }),
+  decision: DecisionResultSchema,
   datasets: z.record(IdKey, DatasetSchema),
   metrics: z.record(IdKey, MetricSchema),
   insights: z.record(IdKey, InsightSchema),
@@ -91,4 +138,7 @@ export type Dataset = z.infer<typeof DatasetSchema>;
 export type Metric = z.infer<typeof MetricSchema>;
 export type Formula = z.infer<typeof FormulaSchema>;
 export type AnalyticalResult = z.infer<typeof AnalyticalResultSchema>;
+export type DecisionResult = z.infer<typeof DecisionResultSchema>;
+export type OptionResult = z.infer<typeof OptionResultSchema>;
+export type OptionIndicator = z.infer<typeof OptionIndicatorSchema>;
 export type Row = Dataset["rows"][number];
