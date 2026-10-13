@@ -1,0 +1,2161 @@
+district,province,year,trade,level,enrolled_students,female_pct,pass_rate,completion_rate,employed_within_6months,avg_starting_wage_rwf,industry_partnership
+Gasabo,Kigali City,2019,Construction & Building Technology,Level 5,23,48.0,63.0,58.0,56.0,45000,Yes
+Gasabo,Kigali City,2019,Electrical & Electronics,Level 5,87,22,63.0,58.0,56.0,45000,Yes
+Gasabo,Kigali City,2019,Mechanics & Automotive,Level 3,65,48.0,63.0,58.0,56.0,45000,Yes
+Gasabo,Kigali City,2019,ICT & Computer Science,Level 3,47,22,63.0,58.0,56.0,45000,Yes
+Gasabo,Kigali City,2019,Agriculture & Food Processing,Level 3,58,48.0,63.0,58.0,56.0,45000,No
+Gasabo,Kigali City,2019,Hospitality & Tourism,Level 3,39,48.0,63.0,58.0,56.0,45000,No
+Gasabo,Kigali City,2019,Health & Community Services,Level 3,89,48.0,63.0,58.0,56.0,45000,No
+Gasabo,Kigali City,2019,Fashion & Garment Making,Level 2,74,48.0,63.0,58.0,56.0,45000,Yes
+Gasabo,Kigali City,2019,Plumbing & Sanitation,Level 4,62,48.0,63.0,58.0,56.0,45000,No
+Gasabo,Kigali City,2019,Welding & Metal Fabrication,Level 5,32,48.0,63.0,58.0,56.0,45000,Yes
+Gasabo,Kigali City,2019,Business & Entrepreneurship,Level 2,47,48.0,63.0,58.0,56.0,45000,No
+Gasabo,Kigali City,2019,Renewable Energy,Level 5,19,22,63.0,58.0,56.0,45000,Yes
+Gasabo,Kigali City,2020,Construction & Building Technology,Level 3,25,48.3,64.0,59.0,57.0,45000,No
+Gasabo,Kigali City,2020,Electrical & Electronics,Level 5,89,22,64.0,59.0,57.0,45000,Yes
+Gasabo,Kigali City,2020,Mechanics & Automotive,Level 3,67,48.3,64.0,59.0,57.0,45000,No
+Gasabo,Kigali City,2020,ICT & Computer Science,Level 4,49,22,64.0,59.0,57.0,45000,Yes
+Gasabo,Kigali City,2020,Agriculture & Food Processing,Level 5,60,48.3,64.0,59.0,57.0,45000,Yes
+Gasabo,Kigali City,2020,Hospitality & Tourism,Level 3,41,48.3,64.0,59.0,57.0,45000,Yes
+Gasabo,Kigali City,2020,Health & Community Services,Level 3,91,48.3,64.0,59.0,57.0,45000,No
+Gasabo,Kigali City,2020,Fashion & Garment Making,Level 5,76,48.3,64.0,59.0,57.0,45000,No
+Gasabo,Kigali City,2020,Plumbing & Sanitation,Level 3,64,48.3,64.0,59.0,57.0,45000,Yes
+Gasabo,Kigali City,2020,Welding & Metal Fabrication,Level 4,34,48.3,64.0,59.0,57.0,45000,No
+Gasabo,Kigali City,2020,Business & Entrepreneurship,Level 2,49,48.3,64.0,59.0,57.0,45000,Yes
+Gasabo,Kigali City,2020,Renewable Energy,Level 2,21,22,64.0,59.0,57.0,45000,Yes
+Gasabo,Kigali City,2021,Construction & Building Technology,Level 5,27,48.6,65.5,60.5,58.5,45000,No
+Gasabo,Kigali City,2021,Electrical & Electronics,Level 4,91,22,65.5,60.5,58.5,45000,Yes
+Gasabo,Kigali City,2021,Mechanics & Automotive,Level 5,69,48.6,65.5,60.5,58.5,45000,Yes
+Gasabo,Kigali City,2021,ICT & Computer Science,Level 2,51,22,65.5,60.5,58.5,45000,Yes
+Gasabo,Kigali City,2021,Agriculture & Food Processing,Level 4,62,48.6,65.5,60.5,58.5,45000,Yes
+Gasabo,Kigali City,2021,Hospitality & Tourism,Level 2,43,48.6,65.5,60.5,58.5,45000,Yes
+Gasabo,Kigali City,2021,Health & Community Services,Level 5,93,48.6,65.5,60.5,58.5,45000,No
+Gasabo,Kigali City,2021,Fashion & Garment Making,Level 3,78,48.6,65.5,60.5,58.5,45000,Yes
+Gasabo,Kigali City,2021,Plumbing & Sanitation,Level 4,66,48.6,65.5,60.5,58.5,45000,No
+Gasabo,Kigali City,2021,Welding & Metal Fabrication,Level 2,36,48.6,65.5,60.5,58.5,45000,Yes
+Gasabo,Kigali City,2021,Business & Entrepreneurship,Level 5,51,48.6,65.5,60.5,58.5,45000,Yes
+Gasabo,Kigali City,2021,Renewable Energy,Level 3,23,22,65.5,60.5,58.5,45000,Yes
+Gasabo,Kigali City,2022,Construction & Building Technology,Level 5,29,48.9,67.0,62.0,60.0,45000,No
+Gasabo,Kigali City,2022,Electrical & Electronics,Level 2,93,22,67.0,62.0,60.0,45000,Yes
+Gasabo,Kigali City,2022,Mechanics & Automotive,Level 4,71,48.9,67.0,62.0,60.0,45000,No
+Gasabo,Kigali City,2022,ICT & Computer Science,Level 3,53,22,67.0,62.0,60.0,45000,Yes
+Gasabo,Kigali City,2022,Agriculture & Food Processing,Level 3,64,48.9,67.0,62.0,60.0,45000,No
+Gasabo,Kigali City,2022,Hospitality & Tourism,Level 3,45,48.9,67.0,62.0,60.0,45000,No
+Gasabo,Kigali City,2022,Health & Community Services,Level 5,95,48.9,67.0,62.0,60.0,45000,Yes
+Gasabo,Kigali City,2022,Fashion & Garment Making,Level 3,80,48.9,67.0,62.0,60.0,45000,Yes
+Gasabo,Kigali City,2022,Plumbing & Sanitation,Level 3,68,48.9,67.0,62.0,60.0,45000,No
+Gasabo,Kigali City,2022,Welding & Metal Fabrication,Level 2,38,48.9,67.0,62.0,60.0,45000,Yes
+Gasabo,Kigali City,2022,Business & Entrepreneurship,Level 2,53,48.9,67.0,62.0,60.0,45000,No
+Gasabo,Kigali City,2022,Renewable Energy,Level 2,25,22,67.0,62.0,60.0,45000,Yes
+Gasabo,Kigali City,2023,Construction & Building Technology,Level 3,31,49.2,68.5,63.5,61.5,45000,No
+Gasabo,Kigali City,2023,Electrical & Electronics,Level 5,95,22,68.5,63.5,61.5,45000,Yes
+Gasabo,Kigali City,2023,Mechanics & Automotive,Level 5,73,49.2,68.5,63.5,61.5,45000,No
+Gasabo,Kigali City,2023,ICT & Computer Science,Level 2,55,22,68.5,63.5,61.5,45000,Yes
+Gasabo,Kigali City,2023,Agriculture & Food Processing,Level 5,66,49.2,68.5,63.5,61.5,45000,No
+Gasabo,Kigali City,2023,Hospitality & Tourism,Level 2,47,49.2,68.5,63.5,61.5,45000,No
+Gasabo,Kigali City,2023,Health & Community Services,Level 3,97,49.2,68.5,63.5,61.5,45000,No
+Gasabo,Kigali City,2023,Fashion & Garment Making,Level 4,82,49.2,68.5,63.5,61.5,45000,No
+Gasabo,Kigali City,2023,Plumbing & Sanitation,Level 2,70,49.2,68.5,63.5,61.5,45000,Yes
+Gasabo,Kigali City,2023,Welding & Metal Fabrication,Level 5,40,49.2,68.5,63.5,61.5,45000,Yes
+Gasabo,Kigali City,2023,Business & Entrepreneurship,Level 4,55,49.2,68.5,63.5,61.5,45000,No
+Gasabo,Kigali City,2023,Renewable Energy,Level 3,27,22,68.5,63.5,61.5,45000,Yes
+Gasabo,Kigali City,2024,Construction & Building Technology,Level 5,33,49.5,70.0,65.0,63.0,45000,Yes
+Gasabo,Kigali City,2024,Electrical & Electronics,Level 3,97,22,70.0,65.0,63.0,45000,Yes
+Gasabo,Kigali City,2024,Mechanics & Automotive,Level 2,75,49.5,70.0,65.0,63.0,45000,No
+Gasabo,Kigali City,2024,ICT & Computer Science,Level 3,57,22,70.0,65.0,63.0,45000,Yes
+Gasabo,Kigali City,2024,Agriculture & Food Processing,Level 5,68,49.5,70.0,65.0,63.0,45000,No
+Gasabo,Kigali City,2024,Hospitality & Tourism,Level 4,49,49.5,70.0,65.0,63.0,45000,No
+Gasabo,Kigali City,2024,Health & Community Services,Level 5,99,49.5,70.0,65.0,63.0,45000,No
+Gasabo,Kigali City,2024,Fashion & Garment Making,Level 3,84,49.5,70.0,65.0,63.0,45000,No
+Gasabo,Kigali City,2024,Plumbing & Sanitation,Level 4,72,49.5,70.0,65.0,63.0,45000,Yes
+Gasabo,Kigali City,2024,Welding & Metal Fabrication,Level 5,42,49.5,70.0,65.0,63.0,45000,Yes
+Gasabo,Kigali City,2024,Business & Entrepreneurship,Level 2,57,49.5,70.0,65.0,63.0,45000,No
+Gasabo,Kigali City,2024,Renewable Energy,Level 3,29,22,70.0,65.0,63.0,45000,Yes
+Kicukiro,Kigali City,2019,Construction & Building Technology,Level 3,77,48.0,63.0,58.0,56.0,45000,No
+Kicukiro,Kigali City,2019,Electrical & Electronics,Level 5,19,22,63.0,58.0,56.0,45000,Yes
+Kicukiro,Kigali City,2019,Mechanics & Automotive,Level 2,30,48.0,63.0,58.0,56.0,45000,No
+Kicukiro,Kigali City,2019,ICT & Computer Science,Level 2,39,22,63.0,58.0,56.0,45000,Yes
+Kicukiro,Kigali City,2019,Agriculture & Food Processing,Level 2,39,48.0,63.0,58.0,56.0,45000,No
+Kicukiro,Kigali City,2019,Hospitality & Tourism,Level 3,82,48.0,63.0,58.0,56.0,45000,Yes
+Kicukiro,Kigali City,2019,Health & Community Services,Level 4,72,48.0,63.0,58.0,56.0,45000,Yes
+Kicukiro,Kigali City,2019,Fashion & Garment Making,Level 3,65,48.0,63.0,58.0,56.0,45000,No
+Kicukiro,Kigali City,2019,Plumbing & Sanitation,Level 3,42,48.0,63.0,58.0,56.0,45000,No
+Kicukiro,Kigali City,2019,Welding & Metal Fabrication,Level 5,30,48.0,63.0,58.0,56.0,45000,Yes
+Kicukiro,Kigali City,2019,Business & Entrepreneurship,Level 3,49,48.0,63.0,58.0,56.0,45000,No
+Kicukiro,Kigali City,2019,Renewable Energy,Level 3,52,22,63.0,58.0,56.0,45000,Yes
+Kicukiro,Kigali City,2020,Construction & Building Technology,Level 4,79,48.3,64.0,59.0,57.0,45000,No
+Kicukiro,Kigali City,2020,Electrical & Electronics,Level 5,21,22,64.0,59.0,57.0,45000,Yes
+Kicukiro,Kigali City,2020,Mechanics & Automotive,Level 3,32,48.3,64.0,59.0,57.0,45000,No
+Kicukiro,Kigali City,2020,ICT & Computer Science,Level 4,41,22,64.0,59.0,57.0,45000,Yes
+Kicukiro,Kigali City,2020,Agriculture & Food Processing,Level 2,41,48.3,64.0,59.0,57.0,45000,No
+Kicukiro,Kigali City,2020,Hospitality & Tourism,Level 4,84,48.3,64.0,59.0,57.0,45000,No
+Kicukiro,Kigali City,2020,Health & Community Services,Level 3,74,48.3,64.0,59.0,57.0,45000,Yes
+Kicukiro,Kigali City,2020,Fashion & Garment Making,Level 2,67,48.3,64.0,59.0,57.0,45000,No
+Kicukiro,Kigali City,2020,Plumbing & Sanitation,Level 4,44,48.3,64.0,59.0,57.0,45000,Yes
+Kicukiro,Kigali City,2020,Welding & Metal Fabrication,Level 2,32,48.3,64.0,59.0,57.0,45000,Yes
+Kicukiro,Kigali City,2020,Business & Entrepreneurship,Level 2,51,48.3,64.0,59.0,57.0,45000,No
+Kicukiro,Kigali City,2020,Renewable Energy,Level 4,54,22,64.0,59.0,57.0,45000,Yes
+Kicukiro,Kigali City,2021,Construction & Building Technology,Level 3,81,48.6,65.5,60.5,58.5,45000,No
+Kicukiro,Kigali City,2021,Electrical & Electronics,Level 5,23,22,65.5,60.5,58.5,45000,Yes
+Kicukiro,Kigali City,2021,Mechanics & Automotive,Level 5,34,48.6,65.5,60.5,58.5,45000,No
+Kicukiro,Kigali City,2021,ICT & Computer Science,Level 4,43,22,65.5,60.5,58.5,45000,Yes
+Kicukiro,Kigali City,2021,Agriculture & Food Processing,Level 5,43,48.6,65.5,60.5,58.5,45000,Yes
+Kicukiro,Kigali City,2021,Hospitality & Tourism,Level 5,86,48.6,65.5,60.5,58.5,45000,No
+Kicukiro,Kigali City,2021,Health & Community Services,Level 5,76,48.6,65.5,60.5,58.5,45000,No
+Kicukiro,Kigali City,2021,Fashion & Garment Making,Level 4,69,48.6,65.5,60.5,58.5,45000,Yes
+Kicukiro,Kigali City,2021,Plumbing & Sanitation,Level 2,46,48.6,65.5,60.5,58.5,45000,No
+Kicukiro,Kigali City,2021,Welding & Metal Fabrication,Level 3,34,48.6,65.5,60.5,58.5,45000,No
+Kicukiro,Kigali City,2021,Business & Entrepreneurship,Level 2,53,48.6,65.5,60.5,58.5,45000,No
+Kicukiro,Kigali City,2021,Renewable Energy,Level 4,56,22,65.5,60.5,58.5,45000,Yes
+Kicukiro,Kigali City,2022,Construction & Building Technology,Level 5,83,48.9,67.0,62.0,60.0,45000,No
+Kicukiro,Kigali City,2022,Electrical & Electronics,Level 5,25,22,67.0,62.0,60.0,45000,Yes
+Kicukiro,Kigali City,2022,Mechanics & Automotive,Level 3,36,48.9,67.0,62.0,60.0,45000,No
+Kicukiro,Kigali City,2022,ICT & Computer Science,Level 4,45,22,67.0,62.0,60.0,45000,Yes
+Kicukiro,Kigali City,2022,Agriculture & Food Processing,Level 3,45,48.9,67.0,62.0,60.0,45000,No
+Kicukiro,Kigali City,2022,Hospitality & Tourism,Level 4,88,48.9,67.0,62.0,60.0,45000,Yes
+Kicukiro,Kigali City,2022,Health & Community Services,Level 2,78,48.9,67.0,62.0,60.0,45000,No
+Kicukiro,Kigali City,2022,Fashion & Garment Making,Level 4,71,48.9,67.0,62.0,60.0,45000,No
+Kicukiro,Kigali City,2022,Plumbing & Sanitation,Level 3,48,48.9,67.0,62.0,60.0,45000,Yes
+Kicukiro,Kigali City,2022,Welding & Metal Fabrication,Level 3,36,48.9,67.0,62.0,60.0,45000,No
+Kicukiro,Kigali City,2022,Business & Entrepreneurship,Level 5,55,48.9,67.0,62.0,60.0,45000,Yes
+Kicukiro,Kigali City,2022,Renewable Energy,Level 4,58,22,67.0,62.0,60.0,45000,Yes
+Kicukiro,Kigali City,2023,Construction & Building Technology,Level 5,85,49.2,68.5,63.5,61.5,45000,No
+Kicukiro,Kigali City,2023,Electrical & Electronics,Level 2,27,22,68.5,63.5,61.5,45000,Yes
+Kicukiro,Kigali City,2023,Mechanics & Automotive,Level 5,38,49.2,68.5,63.5,61.5,45000,Yes
+Kicukiro,Kigali City,2023,ICT & Computer Science,Level 5,47,22,68.5,63.5,61.5,45000,Yes
+Kicukiro,Kigali City,2023,Agriculture & Food Processing,Level 4,47,49.2,68.5,63.5,61.5,45000,No
+Kicukiro,Kigali City,2023,Hospitality & Tourism,Level 2,90,49.2,68.5,63.5,61.5,45000,No
+Kicukiro,Kigali City,2023,Health & Community Services,Level 4,80,49.2,68.5,63.5,61.5,45000,No
+Kicukiro,Kigali City,2023,Fashion & Garment Making,Level 4,73,49.2,68.5,63.5,61.5,45000,No
+Kicukiro,Kigali City,2023,Plumbing & Sanitation,Level 5,50,49.2,68.5,63.5,61.5,45000,Yes
+Kicukiro,Kigali City,2023,Welding & Metal Fabrication,Level 3,38,49.2,68.5,63.5,61.5,45000,No
+Kicukiro,Kigali City,2023,Business & Entrepreneurship,Level 4,57,49.2,68.5,63.5,61.5,45000,No
+Kicukiro,Kigali City,2023,Renewable Energy,Level 5,60,22,68.5,63.5,61.5,45000,Yes
+Kicukiro,Kigali City,2024,Construction & Building Technology,Level 4,87,49.5,70.0,65.0,63.0,45000,Yes
+Kicukiro,Kigali City,2024,Electrical & Electronics,Level 5,29,22,70.0,65.0,63.0,45000,Yes
+Kicukiro,Kigali City,2024,Mechanics & Automotive,Level 3,40,49.5,70.0,65.0,63.0,45000,No
+Kicukiro,Kigali City,2024,ICT & Computer Science,Level 4,49,22,70.0,65.0,63.0,45000,Yes
+Kicukiro,Kigali City,2024,Agriculture & Food Processing,Level 5,49,49.5,70.0,65.0,63.0,45000,Yes
+Kicukiro,Kigali City,2024,Hospitality & Tourism,Level 5,92,49.5,70.0,65.0,63.0,45000,No
+Kicukiro,Kigali City,2024,Health & Community Services,Level 3,82,49.5,70.0,65.0,63.0,45000,No
+Kicukiro,Kigali City,2024,Fashion & Garment Making,Level 5,75,49.5,70.0,65.0,63.0,45000,No
+Kicukiro,Kigali City,2024,Plumbing & Sanitation,Level 4,52,49.5,70.0,65.0,63.0,45000,Yes
+Kicukiro,Kigali City,2024,Welding & Metal Fabrication,Level 3,40,49.5,70.0,65.0,63.0,45000,No
+Kicukiro,Kigali City,2024,Business & Entrepreneurship,Level 4,59,49.5,70.0,65.0,63.0,45000,Yes
+Kicukiro,Kigali City,2024,Renewable Energy,Level 2,62,22,70.0,65.0,63.0,45000,Yes
+Nyarugenge,Kigali City,2019,Construction & Building Technology,Level 4,42,48.0,63.0,58.0,56.0,45000,No
+Nyarugenge,Kigali City,2019,Electrical & Electronics,Level 4,27,22,63.0,58.0,56.0,45000,Yes
+Nyarugenge,Kigali City,2019,Mechanics & Automotive,Level 3,36,48.0,63.0,58.0,56.0,45000,No
+Nyarugenge,Kigali City,2019,ICT & Computer Science,Level 3,82,22,63.0,58.0,56.0,45000,Yes
+Nyarugenge,Kigali City,2019,Agriculture & Food Processing,Level 4,44,48.0,63.0,58.0,56.0,45000,Yes
+Nyarugenge,Kigali City,2019,Hospitality & Tourism,Level 5,18,48.0,63.0,58.0,56.0,45000,No
+Nyarugenge,Kigali City,2019,Health & Community Services,Level 3,86,48.0,63.0,58.0,56.0,45000,No
+Nyarugenge,Kigali City,2019,Fashion & Garment Making,Level 5,50,48.0,63.0,58.0,56.0,45000,No
+Nyarugenge,Kigali City,2019,Plumbing & Sanitation,Level 4,35,48.0,63.0,58.0,56.0,45000,No
+Nyarugenge,Kigali City,2019,Welding & Metal Fabrication,Level 5,46,48.0,63.0,58.0,56.0,45000,No
+Nyarugenge,Kigali City,2019,Business & Entrepreneurship,Level 2,77,48.0,63.0,58.0,56.0,45000,No
+Nyarugenge,Kigali City,2019,Renewable Energy,Level 2,67,22,63.0,58.0,56.0,45000,Yes
+Nyarugenge,Kigali City,2020,Construction & Building Technology,Level 3,44,48.3,64.0,59.0,57.0,45000,No
+Nyarugenge,Kigali City,2020,Electrical & Electronics,Level 2,29,22,64.0,59.0,57.0,45000,Yes
+Nyarugenge,Kigali City,2020,Mechanics & Automotive,Level 4,38,48.3,64.0,59.0,57.0,45000,No
+Nyarugenge,Kigali City,2020,ICT & Computer Science,Level 3,84,22,64.0,59.0,57.0,45000,Yes
+Nyarugenge,Kigali City,2020,Agriculture & Food Processing,Level 5,46,48.3,64.0,59.0,57.0,45000,No
+Nyarugenge,Kigali City,2020,Hospitality & Tourism,Level 3,20,48.3,64.0,59.0,57.0,45000,Yes
+Nyarugenge,Kigali City,2020,Health & Community Services,Level 4,88,48.3,64.0,59.0,57.0,45000,No
+Nyarugenge,Kigali City,2020,Fashion & Garment Making,Level 5,52,48.3,64.0,59.0,57.0,45000,No
+Nyarugenge,Kigali City,2020,Plumbing & Sanitation,Level 5,37,48.3,64.0,59.0,57.0,45000,No
+Nyarugenge,Kigali City,2020,Welding & Metal Fabrication,Level 4,48,48.3,64.0,59.0,57.0,45000,No
+Nyarugenge,Kigali City,2020,Business & Entrepreneurship,Level 3,79,48.3,64.0,59.0,57.0,45000,No
+Nyarugenge,Kigali City,2020,Renewable Energy,Level 2,69,22,64.0,59.0,57.0,45000,Yes
+Nyarugenge,Kigali City,2021,Construction & Building Technology,Level 2,46,48.6,65.5,60.5,58.5,45000,No
+Nyarugenge,Kigali City,2021,Electrical & Electronics,Level 4,31,22,65.5,60.5,58.5,45000,Yes
+Nyarugenge,Kigali City,2021,Mechanics & Automotive,Level 2,40,48.6,65.5,60.5,58.5,45000,Yes
+Nyarugenge,Kigali City,2021,ICT & Computer Science,Level 2,86,22,65.5,60.5,58.5,45000,Yes
+Nyarugenge,Kigali City,2021,Agriculture & Food Processing,Level 2,48,48.6,65.5,60.5,58.5,45000,Yes
+Nyarugenge,Kigali City,2021,Hospitality & Tourism,Level 5,22,48.6,65.5,60.5,58.5,45000,Yes
+Nyarugenge,Kigali City,2021,Health & Community Services,Level 4,90,48.6,65.5,60.5,58.5,45000,Yes
+Nyarugenge,Kigali City,2021,Fashion & Garment Making,Level 4,54,48.6,65.5,60.5,58.5,45000,Yes
+Nyarugenge,Kigali City,2021,Plumbing & Sanitation,Level 4,39,48.6,65.5,60.5,58.5,45000,Yes
+Nyarugenge,Kigali City,2021,Welding & Metal Fabrication,Level 3,50,48.6,65.5,60.5,58.5,45000,Yes
+Nyarugenge,Kigali City,2021,Business & Entrepreneurship,Level 2,81,48.6,65.5,60.5,58.5,45000,Yes
+Nyarugenge,Kigali City,2021,Renewable Energy,Level 5,71,22,65.5,60.5,58.5,45000,Yes
+Nyarugenge,Kigali City,2022,Construction & Building Technology,Level 5,48,48.9,67.0,62.0,60.0,45000,Yes
+Nyarugenge,Kigali City,2022,Electrical & Electronics,Level 3,33,22,67.0,62.0,60.0,45000,Yes
+Nyarugenge,Kigali City,2022,Mechanics & Automotive,Level 4,42,48.9,67.0,62.0,60.0,45000,Yes
+Nyarugenge,Kigali City,2022,ICT & Computer Science,Level 5,88,22,67.0,62.0,60.0,45000,Yes
+Nyarugenge,Kigali City,2022,Agriculture & Food Processing,Level 4,50,48.9,67.0,62.0,60.0,45000,Yes
+Nyarugenge,Kigali City,2022,Hospitality & Tourism,Level 3,24,48.9,67.0,62.0,60.0,45000,Yes
+Nyarugenge,Kigali City,2022,Health & Community Services,Level 3,92,48.9,67.0,62.0,60.0,45000,No
+Nyarugenge,Kigali City,2022,Fashion & Garment Making,Level 5,56,48.9,67.0,62.0,60.0,45000,Yes
+Nyarugenge,Kigali City,2022,Plumbing & Sanitation,Level 5,41,48.9,67.0,62.0,60.0,45000,No
+Nyarugenge,Kigali City,2022,Welding & Metal Fabrication,Level 5,52,48.9,67.0,62.0,60.0,45000,No
+Nyarugenge,Kigali City,2022,Business & Entrepreneurship,Level 3,83,48.9,67.0,62.0,60.0,45000,No
+Nyarugenge,Kigali City,2022,Renewable Energy,Level 4,73,22,67.0,62.0,60.0,45000,Yes
+Nyarugenge,Kigali City,2023,Construction & Building Technology,Level 4,50,49.2,68.5,63.5,61.5,45000,No
+Nyarugenge,Kigali City,2023,Electrical & Electronics,Level 3,35,22,68.5,63.5,61.5,45000,Yes
+Nyarugenge,Kigali City,2023,Mechanics & Automotive,Level 4,44,49.2,68.5,63.5,61.5,45000,No
+Nyarugenge,Kigali City,2023,ICT & Computer Science,Level 5,90,22,68.5,63.5,61.5,45000,Yes
+Nyarugenge,Kigali City,2023,Agriculture & Food Processing,Level 5,52,49.2,68.5,63.5,61.5,45000,Yes
+Nyarugenge,Kigali City,2023,Hospitality & Tourism,Level 3,26,49.2,68.5,63.5,61.5,45000,Yes
+Nyarugenge,Kigali City,2023,Health & Community Services,Level 5,94,49.2,68.5,63.5,61.5,45000,No
+Nyarugenge,Kigali City,2023,Fashion & Garment Making,Level 5,58,49.2,68.5,63.5,61.5,45000,No
+Nyarugenge,Kigali City,2023,Plumbing & Sanitation,Level 3,43,49.2,68.5,63.5,61.5,45000,Yes
+Nyarugenge,Kigali City,2023,Welding & Metal Fabrication,Level 2,54,49.2,68.5,63.5,61.5,45000,No
+Nyarugenge,Kigali City,2023,Business & Entrepreneurship,Level 3,85,49.2,68.5,63.5,61.5,45000,Yes
+Nyarugenge,Kigali City,2023,Renewable Energy,Level 5,75,22,68.5,63.5,61.5,45000,Yes
+Nyarugenge,Kigali City,2024,Construction & Building Technology,Level 2,52,49.5,70.0,65.0,63.0,45000,No
+Nyarugenge,Kigali City,2024,Electrical & Electronics,Level 2,37,22,70.0,65.0,63.0,45000,Yes
+Nyarugenge,Kigali City,2024,Mechanics & Automotive,Level 4,46,49.5,70.0,65.0,63.0,45000,No
+Nyarugenge,Kigali City,2024,ICT & Computer Science,Level 5,92,22,70.0,65.0,63.0,45000,Yes
+Nyarugenge,Kigali City,2024,Agriculture & Food Processing,Level 2,54,49.5,70.0,65.0,63.0,45000,No
+Nyarugenge,Kigali City,2024,Hospitality & Tourism,Level 4,28,49.5,70.0,65.0,63.0,45000,Yes
+Nyarugenge,Kigali City,2024,Health & Community Services,Level 2,96,49.5,70.0,65.0,63.0,45000,No
+Nyarugenge,Kigali City,2024,Fashion & Garment Making,Level 4,60,49.5,70.0,65.0,63.0,45000,Yes
+Nyarugenge,Kigali City,2024,Plumbing & Sanitation,Level 2,45,49.5,70.0,65.0,63.0,45000,No
+Nyarugenge,Kigali City,2024,Welding & Metal Fabrication,Level 4,56,49.5,70.0,65.0,63.0,45000,No
+Nyarugenge,Kigali City,2024,Business & Entrepreneurship,Level 5,87,49.5,70.0,65.0,63.0,45000,No
+Nyarugenge,Kigali City,2024,Renewable Energy,Level 4,77,22,70.0,65.0,63.0,45000,Yes
+Bugesera,Eastern,2019,Construction & Building Technology,Level 3,24,48.0,58.0,53.0,45.0,25000,Yes
+Bugesera,Eastern,2019,Electrical & Electronics,Level 3,24,22,58.0,53.0,45.0,25000,Yes
+Bugesera,Eastern,2019,Mechanics & Automotive,Level 2,16,48.0,58.0,53.0,45.0,25000,No
+Bugesera,Eastern,2019,ICT & Computer Science,Level 5,14,22,58.0,53.0,45.0,25000,Yes
+Bugesera,Eastern,2019,Agriculture & Food Processing,Level 2,34,48.0,58.0,53.0,45.0,25000,No
+Bugesera,Eastern,2019,Hospitality & Tourism,Level 2,43,48.0,58.0,53.0,45.0,25000,Yes
+Bugesera,Eastern,2019,Health & Community Services,Level 4,40,48.0,58.0,53.0,45.0,25000,No
+Bugesera,Eastern,2019,Fashion & Garment Making,Level 3,45,48.0,58.0,53.0,45.0,25000,Yes
+Bugesera,Eastern,2019,Plumbing & Sanitation,Level 4,37,48.0,58.0,53.0,45.0,25000,No
+Bugesera,Eastern,2019,Welding & Metal Fabrication,Level 3,26,48.0,58.0,53.0,45.0,25000,Yes
+Bugesera,Eastern,2019,Business & Entrepreneurship,Level 5,31,48.0,58.0,53.0,45.0,25000,No
+Bugesera,Eastern,2019,Renewable Energy,Level 2,14,22,58.0,53.0,45.0,25000,Yes
+Bugesera,Eastern,2020,Construction & Building Technology,Level 5,26,48.3,59.0,54.0,46.0,26200,No
+Bugesera,Eastern,2020,Electrical & Electronics,Level 3,26,22,59.0,54.0,46.0,26200,Yes
+Bugesera,Eastern,2020,Mechanics & Automotive,Level 3,18,48.3,59.0,54.0,46.0,26200,Yes
+Bugesera,Eastern,2020,ICT & Computer Science,Level 2,16,22,59.0,54.0,46.0,26200,Yes
+Bugesera,Eastern,2020,Agriculture & Food Processing,Level 5,36,48.3,59.0,54.0,46.0,26200,No
+Bugesera,Eastern,2020,Hospitality & Tourism,Level 3,45,48.3,59.0,54.0,46.0,26200,No
+Bugesera,Eastern,2020,Health & Community Services,Level 4,42,48.3,59.0,54.0,46.0,26200,Yes
+Bugesera,Eastern,2020,Fashion & Garment Making,Level 4,47,48.3,59.0,54.0,46.0,26200,No
+Bugesera,Eastern,2020,Plumbing & Sanitation,Level 4,39,48.3,59.0,54.0,46.0,26200,No
+Bugesera,Eastern,2020,Welding & Metal Fabrication,Level 2,28,48.3,59.0,54.0,46.0,26200,No
+Bugesera,Eastern,2020,Business & Entrepreneurship,Level 3,33,48.3,59.0,54.0,46.0,26200,Yes
+Bugesera,Eastern,2020,Renewable Energy,Level 3,16,22,59.0,54.0,46.0,26200,Yes
+Bugesera,Eastern,2021,Construction & Building Technology,Level 4,28,48.6,60.5,55.5,47.5,27400,Yes
+Bugesera,Eastern,2021,Electrical & Electronics,Level 2,28,22,60.5,55.5,47.5,27400,Yes
+Bugesera,Eastern,2021,Mechanics & Automotive,Level 2,20,48.6,60.5,55.5,47.5,27400,No
+Bugesera,Eastern,2021,ICT & Computer Science,Level 3,18,22,60.5,55.5,47.5,27400,Yes
+Bugesera,Eastern,2021,Agriculture & Food Processing,Level 3,38,48.6,60.5,55.5,47.5,27400,No
+Bugesera,Eastern,2021,Hospitality & Tourism,Level 3,47,48.6,60.5,55.5,47.5,27400,No
+Bugesera,Eastern,2021,Health & Community Services,Level 2,44,48.6,60.5,55.5,47.5,27400,Yes
+Bugesera,Eastern,2021,Fashion & Garment Making,Level 2,49,48.6,60.5,55.5,47.5,27400,Yes
+Bugesera,Eastern,2021,Plumbing & Sanitation,Level 5,41,48.6,60.5,55.5,47.5,27400,No
+Bugesera,Eastern,2021,Welding & Metal Fabrication,Level 3,30,48.6,60.5,55.5,47.5,27400,No
+Bugesera,Eastern,2021,Business & Entrepreneurship,Level 4,35,48.6,60.5,55.5,47.5,27400,No
+Bugesera,Eastern,2021,Renewable Energy,Level 3,18,22,60.5,55.5,47.5,27400,Yes
+Bugesera,Eastern,2022,Construction & Building Technology,Level 3,30,48.9,62.0,57.0,49.0,28600,No
+Bugesera,Eastern,2022,Electrical & Electronics,Level 4,30,22,62.0,57.0,49.0,28600,Yes
+Bugesera,Eastern,2022,Mechanics & Automotive,Level 2,22,48.9,62.0,57.0,49.0,28600,No
+Bugesera,Eastern,2022,ICT & Computer Science,Level 4,20,22,62.0,57.0,49.0,28600,Yes
+Bugesera,Eastern,2022,Agriculture & Food Processing,Level 5,40,48.9,62.0,57.0,49.0,28600,No
+Bugesera,Eastern,2022,Hospitality & Tourism,Level 3,49,48.9,62.0,57.0,49.0,28600,No
+Bugesera,Eastern,2022,Health & Community Services,Level 4,46,48.9,62.0,57.0,49.0,28600,No
+Bugesera,Eastern,2022,Fashion & Garment Making,Level 3,51,48.9,62.0,57.0,49.0,28600,Yes
+Bugesera,Eastern,2022,Plumbing & Sanitation,Level 2,43,48.9,62.0,57.0,49.0,28600,No
+Bugesera,Eastern,2022,Welding & Metal Fabrication,Level 3,32,48.9,62.0,57.0,49.0,28600,Yes
+Bugesera,Eastern,2022,Business & Entrepreneurship,Level 5,37,48.9,62.0,57.0,49.0,28600,No
+Bugesera,Eastern,2022,Renewable Energy,Level 2,20,22,62.0,57.0,49.0,28600,Yes
+Bugesera,Eastern,2023,Construction & Building Technology,Level 3,32,49.2,63.5,58.5,50.5,29800,No
+Bugesera,Eastern,2023,Electrical & Electronics,Level 5,32,22,63.5,58.5,50.5,29800,Yes
+Bugesera,Eastern,2023,Mechanics & Automotive,Level 2,24,49.2,63.5,58.5,50.5,29800,Yes
+Bugesera,Eastern,2023,ICT & Computer Science,Level 3,22,22,63.5,58.5,50.5,29800,Yes
+Bugesera,Eastern,2023,Agriculture & Food Processing,Level 5,42,49.2,63.5,58.5,50.5,29800,Yes
+Bugesera,Eastern,2023,Hospitality & Tourism,Level 2,51,49.2,63.5,58.5,50.5,29800,Yes
+Bugesera,Eastern,2023,Health & Community Services,Level 3,48,49.2,63.5,58.5,50.5,29800,Yes
+Bugesera,Eastern,2023,Fashion & Garment Making,Level 3,53,49.2,63.5,58.5,50.5,29800,No
+Bugesera,Eastern,2023,Plumbing & Sanitation,Level 5,45,49.2,63.5,58.5,50.5,29800,Yes
+Bugesera,Eastern,2023,Welding & Metal Fabrication,Level 4,34,49.2,63.5,58.5,50.5,29800,Yes
+Bugesera,Eastern,2023,Business & Entrepreneurship,Level 4,39,49.2,63.5,58.5,50.5,29800,No
+Bugesera,Eastern,2023,Renewable Energy,Level 4,22,22,63.5,58.5,50.5,29800,Yes
+Bugesera,Eastern,2024,Construction & Building Technology,Level 2,34,49.5,65.0,60.0,52.0,31000,No
+Bugesera,Eastern,2024,Electrical & Electronics,Level 5,34,22,65.0,60.0,52.0,31000,Yes
+Bugesera,Eastern,2024,Mechanics & Automotive,Level 2,26,49.5,65.0,60.0,52.0,31000,Yes
+Bugesera,Eastern,2024,ICT & Computer Science,Level 4,24,22,65.0,60.0,52.0,31000,Yes
+Bugesera,Eastern,2024,Agriculture & Food Processing,Level 3,44,49.5,65.0,60.0,52.0,31000,No
+Bugesera,Eastern,2024,Hospitality & Tourism,Level 3,53,49.5,65.0,60.0,52.0,31000,No
+Bugesera,Eastern,2024,Health & Community Services,Level 2,50,49.5,65.0,60.0,52.0,31000,No
+Bugesera,Eastern,2024,Fashion & Garment Making,Level 4,55,49.5,65.0,60.0,52.0,31000,No
+Bugesera,Eastern,2024,Plumbing & Sanitation,Level 4,47,49.5,65.0,60.0,52.0,31000,Yes
+Bugesera,Eastern,2024,Welding & Metal Fabrication,Level 4,36,49.5,65.0,60.0,52.0,31000,No
+Bugesera,Eastern,2024,Business & Entrepreneurship,Level 2,41,49.5,65.0,60.0,52.0,31000,Yes
+Bugesera,Eastern,2024,Renewable Energy,Level 5,24,22,65.0,60.0,52.0,31000,Yes
+Gatsibo,Eastern,2019,Construction & Building Technology,Level 5,24,48.0,58.0,53.0,45.0,25000,No
+Gatsibo,Eastern,2019,Electrical & Electronics,Level 2,28,22,58.0,53.0,45.0,25000,Yes
+Gatsibo,Eastern,2019,Mechanics & Automotive,Level 2,42,48.0,58.0,53.0,45.0,25000,Yes
+Gatsibo,Eastern,2019,ICT & Computer Science,Level 4,39,22,58.0,53.0,45.0,25000,Yes
+Gatsibo,Eastern,2019,Agriculture & Food Processing,Level 3,26,48.0,58.0,53.0,45.0,25000,Yes
+Gatsibo,Eastern,2019,Hospitality & Tourism,Level 4,18,48.0,58.0,53.0,45.0,25000,No
+Gatsibo,Eastern,2019,Health & Community Services,Level 4,42,48.0,58.0,53.0,45.0,25000,No
+Gatsibo,Eastern,2019,Fashion & Garment Making,Level 4,20,48.0,58.0,53.0,45.0,25000,No
+Gatsibo,Eastern,2019,Plumbing & Sanitation,Level 2,14,48.0,58.0,53.0,45.0,25000,No
+Gatsibo,Eastern,2019,Welding & Metal Fabrication,Level 5,20,48.0,58.0,53.0,45.0,25000,No
+Gatsibo,Eastern,2019,Business & Entrepreneurship,Level 4,40,48.0,58.0,53.0,45.0,25000,No
+Gatsibo,Eastern,2019,Renewable Energy,Level 3,17,22,58.0,53.0,45.0,25000,Yes
+Gatsibo,Eastern,2020,Construction & Building Technology,Level 3,26,48.3,59.0,54.0,46.0,26200,No
+Gatsibo,Eastern,2020,Electrical & Electronics,Level 2,30,22,59.0,54.0,46.0,26200,Yes
+Gatsibo,Eastern,2020,Mechanics & Automotive,Level 4,44,48.3,59.0,54.0,46.0,26200,Yes
+Gatsibo,Eastern,2020,ICT & Computer Science,Level 5,41,22,59.0,54.0,46.0,26200,Yes
+Gatsibo,Eastern,2020,Agriculture & Food Processing,Level 5,28,48.3,59.0,54.0,46.0,26200,Yes
+Gatsibo,Eastern,2020,Hospitality & Tourism,Level 3,20,48.3,59.0,54.0,46.0,26200,No
+Gatsibo,Eastern,2020,Health & Community Services,Level 3,44,48.3,59.0,54.0,46.0,26200,Yes
+Gatsibo,Eastern,2020,Fashion & Garment Making,Level 5,22,48.3,59.0,54.0,46.0,26200,No
+Gatsibo,Eastern,2020,Plumbing & Sanitation,Level 2,16,48.3,59.0,54.0,46.0,26200,No
+Gatsibo,Eastern,2020,Welding & Metal Fabrication,Level 3,22,48.3,59.0,54.0,46.0,26200,Yes
+Gatsibo,Eastern,2020,Business & Entrepreneurship,Level 3,42,48.3,59.0,54.0,46.0,26200,No
+Gatsibo,Eastern,2020,Renewable Energy,Level 4,19,22,59.0,54.0,46.0,26200,Yes
+Gatsibo,Eastern,2021,Construction & Building Technology,Level 3,28,48.6,60.5,55.5,47.5,27400,No
+Gatsibo,Eastern,2021,Electrical & Electronics,Level 2,32,22,60.5,55.5,47.5,27400,Yes
+Gatsibo,Eastern,2021,Mechanics & Automotive,Level 5,46,48.6,60.5,55.5,47.5,27400,No
+Gatsibo,Eastern,2021,ICT & Computer Science,Level 2,43,22,60.5,55.5,47.5,27400,Yes
+Gatsibo,Eastern,2021,Agriculture & Food Processing,Level 2,30,48.6,60.5,55.5,47.5,27400,Yes
+Gatsibo,Eastern,2021,Hospitality & Tourism,Level 3,22,48.6,60.5,55.5,47.5,27400,No
+Gatsibo,Eastern,2021,Health & Community Services,Level 3,46,48.6,60.5,55.5,47.5,27400,Yes
+Gatsibo,Eastern,2021,Fashion & Garment Making,Level 3,24,48.6,60.5,55.5,47.5,27400,Yes
+Gatsibo,Eastern,2021,Plumbing & Sanitation,Level 4,18,48.6,60.5,55.5,47.5,27400,No
+Gatsibo,Eastern,2021,Welding & Metal Fabrication,Level 2,24,48.6,60.5,55.5,47.5,27400,No
+Gatsibo,Eastern,2021,Business & Entrepreneurship,Level 4,44,48.6,60.5,55.5,47.5,27400,No
+Gatsibo,Eastern,2021,Renewable Energy,Level 3,21,22,60.5,55.5,47.5,27400,Yes
+Gatsibo,Eastern,2022,Construction & Building Technology,Level 5,30,48.9,62.0,57.0,49.0,28600,No
+Gatsibo,Eastern,2022,Electrical & Electronics,Level 3,34,22,62.0,57.0,49.0,28600,Yes
+Gatsibo,Eastern,2022,Mechanics & Automotive,Level 2,48,48.9,62.0,57.0,49.0,28600,No
+Gatsibo,Eastern,2022,ICT & Computer Science,Level 2,45,22,62.0,57.0,49.0,28600,Yes
+Gatsibo,Eastern,2022,Agriculture & Food Processing,Level 5,32,48.9,62.0,57.0,49.0,28600,Yes
+Gatsibo,Eastern,2022,Hospitality & Tourism,Level 5,24,48.9,62.0,57.0,49.0,28600,No
+Gatsibo,Eastern,2022,Health & Community Services,Level 2,48,48.9,62.0,57.0,49.0,28600,No
+Gatsibo,Eastern,2022,Fashion & Garment Making,Level 3,26,48.9,62.0,57.0,49.0,28600,Yes
+Gatsibo,Eastern,2022,Plumbing & Sanitation,Level 3,20,48.9,62.0,57.0,49.0,28600,No
+Gatsibo,Eastern,2022,Welding & Metal Fabrication,Level 4,26,48.9,62.0,57.0,49.0,28600,No
+Gatsibo,Eastern,2022,Business & Entrepreneurship,Level 5,46,48.9,62.0,57.0,49.0,28600,No
+Gatsibo,Eastern,2022,Renewable Energy,Level 3,23,22,62.0,57.0,49.0,28600,Yes
+Gatsibo,Eastern,2023,Construction & Building Technology,Level 5,32,49.2,63.5,58.5,50.5,29800,Yes
+Gatsibo,Eastern,2023,Electrical & Electronics,Level 2,36,22,63.5,58.5,50.5,29800,Yes
+Gatsibo,Eastern,2023,Mechanics & Automotive,Level 4,50,49.2,63.5,58.5,50.5,29800,Yes
+Gatsibo,Eastern,2023,ICT & Computer Science,Level 3,47,22,63.5,58.5,50.5,29800,Yes
+Gatsibo,Eastern,2023,Agriculture & Food Processing,Level 3,34,49.2,63.5,58.5,50.5,29800,Yes
+Gatsibo,Eastern,2023,Hospitality & Tourism,Level 5,26,49.2,63.5,58.5,50.5,29800,No
+Gatsibo,Eastern,2023,Health & Community Services,Level 3,50,49.2,63.5,58.5,50.5,29800,Yes
+Gatsibo,Eastern,2023,Fashion & Garment Making,Level 2,28,49.2,63.5,58.5,50.5,29800,No
+Gatsibo,Eastern,2023,Plumbing & Sanitation,Level 5,22,49.2,63.5,58.5,50.5,29800,No
+Gatsibo,Eastern,2023,Welding & Metal Fabrication,Level 3,28,49.2,63.5,58.5,50.5,29800,Yes
+Gatsibo,Eastern,2023,Business & Entrepreneurship,Level 3,48,49.2,63.5,58.5,50.5,29800,No
+Gatsibo,Eastern,2023,Renewable Energy,Level 3,25,22,63.5,58.5,50.5,29800,Yes
+Gatsibo,Eastern,2024,Construction & Building Technology,Level 5,34,49.5,65.0,60.0,52.0,31000,Yes
+Gatsibo,Eastern,2024,Electrical & Electronics,Level 3,38,22,65.0,60.0,52.0,31000,Yes
+Gatsibo,Eastern,2024,Mechanics & Automotive,Level 3,52,49.5,65.0,60.0,52.0,31000,Yes
+Gatsibo,Eastern,2024,ICT & Computer Science,Level 4,49,22,65.0,60.0,52.0,31000,Yes
+Gatsibo,Eastern,2024,Agriculture & Food Processing,Level 3,36,49.5,65.0,60.0,52.0,31000,No
+Gatsibo,Eastern,2024,Hospitality & Tourism,Level 2,28,49.5,65.0,60.0,52.0,31000,Yes
+Gatsibo,Eastern,2024,Health & Community Services,Level 3,52,49.5,65.0,60.0,52.0,31000,No
+Gatsibo,Eastern,2024,Fashion & Garment Making,Level 3,30,49.5,65.0,60.0,52.0,31000,No
+Gatsibo,Eastern,2024,Plumbing & Sanitation,Level 3,24,49.5,65.0,60.0,52.0,31000,Yes
+Gatsibo,Eastern,2024,Welding & Metal Fabrication,Level 5,30,49.5,65.0,60.0,52.0,31000,No
+Gatsibo,Eastern,2024,Business & Entrepreneurship,Level 5,50,49.5,65.0,60.0,52.0,31000,Yes
+Gatsibo,Eastern,2024,Renewable Energy,Level 2,27,22,65.0,60.0,52.0,31000,Yes
+Kayonza,Eastern,2019,Construction & Building Technology,Level 3,30,48.0,58.0,53.0,45.0,25000,No
+Kayonza,Eastern,2019,Electrical & Electronics,Level 4,15,22,58.0,53.0,45.0,25000,Yes
+Kayonza,Eastern,2019,Mechanics & Automotive,Level 4,44,48.0,58.0,53.0,45.0,25000,No
+Kayonza,Eastern,2019,ICT & Computer Science,Level 4,30,22,58.0,53.0,45.0,25000,Yes
+Kayonza,Eastern,2019,Agriculture & Food Processing,Level 5,39,48.0,58.0,53.0,45.0,25000,Yes
+Kayonza,Eastern,2019,Hospitality & Tourism,Level 3,13,48.0,58.0,53.0,45.0,25000,No
+Kayonza,Eastern,2019,Health & Community Services,Level 2,34,48.0,58.0,53.0,45.0,25000,No
+Kayonza,Eastern,2019,Fashion & Garment Making,Level 2,20,48.0,58.0,53.0,45.0,25000,Yes
+Kayonza,Eastern,2019,Plumbing & Sanitation,Level 2,45,48.0,58.0,53.0,45.0,25000,Yes
+Kayonza,Eastern,2019,Welding & Metal Fabrication,Level 5,34,48.0,58.0,53.0,45.0,25000,No
+Kayonza,Eastern,2019,Business & Entrepreneurship,Level 2,46,48.0,58.0,53.0,45.0,25000,No
+Kayonza,Eastern,2019,Renewable Energy,Level 4,30,22,58.0,53.0,45.0,25000,Yes
+Kayonza,Eastern,2020,Construction & Building Technology,Level 3,32,48.3,59.0,54.0,46.0,26200,No
+Kayonza,Eastern,2020,Electrical & Electronics,Level 2,17,22,59.0,54.0,46.0,26200,Yes
+Kayonza,Eastern,2020,Mechanics & Automotive,Level 4,46,48.3,59.0,54.0,46.0,26200,Yes
+Kayonza,Eastern,2020,ICT & Computer Science,Level 3,32,22,59.0,54.0,46.0,26200,Yes
+Kayonza,Eastern,2020,Agriculture & Food Processing,Level 4,41,48.3,59.0,54.0,46.0,26200,Yes
+Kayonza,Eastern,2020,Hospitality & Tourism,Level 4,15,48.3,59.0,54.0,46.0,26200,No
+Kayonza,Eastern,2020,Health & Community Services,Level 2,36,48.3,59.0,54.0,46.0,26200,Yes
+Kayonza,Eastern,2020,Fashion & Garment Making,Level 4,22,48.3,59.0,54.0,46.0,26200,No
+Kayonza,Eastern,2020,Plumbing & Sanitation,Level 3,47,48.3,59.0,54.0,46.0,26200,Yes
+Kayonza,Eastern,2020,Welding & Metal Fabrication,Level 4,36,48.3,59.0,54.0,46.0,26200,No
+Kayonza,Eastern,2020,Business & Entrepreneurship,Level 2,48,48.3,59.0,54.0,46.0,26200,No
+Kayonza,Eastern,2020,Renewable Energy,Level 3,32,22,59.0,54.0,46.0,26200,Yes
+Kayonza,Eastern,2021,Construction & Building Technology,Level 4,34,48.6,60.5,55.5,47.5,27400,No
+Kayonza,Eastern,2021,Electrical & Electronics,Level 5,19,22,60.5,55.5,47.5,27400,Yes
+Kayonza,Eastern,2021,Mechanics & Automotive,Level 3,48,48.6,60.5,55.5,47.5,27400,No
+Kayonza,Eastern,2021,ICT & Computer Science,Level 4,34,22,60.5,55.5,47.5,27400,Yes
+Kayonza,Eastern,2021,Agriculture & Food Processing,Level 4,43,48.6,60.5,55.5,47.5,27400,No
+Kayonza,Eastern,2021,Hospitality & Tourism,Level 3,17,48.6,60.5,55.5,47.5,27400,No
+Kayonza,Eastern,2021,Health & Community Services,Level 5,38,48.6,60.5,55.5,47.5,27400,No
+Kayonza,Eastern,2021,Fashion & Garment Making,Level 2,24,48.6,60.5,55.5,47.5,27400,Yes
+Kayonza,Eastern,2021,Plumbing & Sanitation,Level 2,49,48.6,60.5,55.5,47.5,27400,No
+Kayonza,Eastern,2021,Welding & Metal Fabrication,Level 4,38,48.6,60.5,55.5,47.5,27400,No
+Kayonza,Eastern,2021,Business & Entrepreneurship,Level 3,50,48.6,60.5,55.5,47.5,27400,No
+Kayonza,Eastern,2021,Renewable Energy,Level 3,34,22,60.5,55.5,47.5,27400,Yes
+Kayonza,Eastern,2022,Construction & Building Technology,Level 2,36,48.9,62.0,57.0,49.0,28600,Yes
+Kayonza,Eastern,2022,Electrical & Electronics,Level 5,21,22,62.0,57.0,49.0,28600,Yes
+Kayonza,Eastern,2022,Mechanics & Automotive,Level 2,50,48.9,62.0,57.0,49.0,28600,No
+Kayonza,Eastern,2022,ICT & Computer Science,Level 4,36,22,62.0,57.0,49.0,28600,Yes
+Kayonza,Eastern,2022,Agriculture & Food Processing,Level 4,45,48.9,62.0,57.0,49.0,28600,No
+Kayonza,Eastern,2022,Hospitality & Tourism,Level 5,19,48.9,62.0,57.0,49.0,28600,No
+Kayonza,Eastern,2022,Health & Community Services,Level 3,40,48.9,62.0,57.0,49.0,28600,No
+Kayonza,Eastern,2022,Fashion & Garment Making,Level 3,26,48.9,62.0,57.0,49.0,28600,Yes
+Kayonza,Eastern,2022,Plumbing & Sanitation,Level 2,51,48.9,62.0,57.0,49.0,28600,No
+Kayonza,Eastern,2022,Welding & Metal Fabrication,Level 2,40,48.9,62.0,57.0,49.0,28600,No
+Kayonza,Eastern,2022,Business & Entrepreneurship,Level 2,52,48.9,62.0,57.0,49.0,28600,No
+Kayonza,Eastern,2022,Renewable Energy,Level 3,36,22,62.0,57.0,49.0,28600,Yes
+Kayonza,Eastern,2023,Construction & Building Technology,Level 3,38,49.2,63.5,58.5,50.5,29800,No
+Kayonza,Eastern,2023,Electrical & Electronics,Level 3,23,22,63.5,58.5,50.5,29800,Yes
+Kayonza,Eastern,2023,Mechanics & Automotive,Level 4,52,49.2,63.5,58.5,50.5,29800,Yes
+Kayonza,Eastern,2023,ICT & Computer Science,Level 4,38,22,63.5,58.5,50.5,29800,Yes
+Kayonza,Eastern,2023,Agriculture & Food Processing,Level 2,47,49.2,63.5,58.5,50.5,29800,No
+Kayonza,Eastern,2023,Hospitality & Tourism,Level 2,21,49.2,63.5,58.5,50.5,29800,No
+Kayonza,Eastern,2023,Health & Community Services,Level 5,42,49.2,63.5,58.5,50.5,29800,No
+Kayonza,Eastern,2023,Fashion & Garment Making,Level 2,28,49.2,63.5,58.5,50.5,29800,No
+Kayonza,Eastern,2023,Plumbing & Sanitation,Level 5,53,49.2,63.5,58.5,50.5,29800,No
+Kayonza,Eastern,2023,Welding & Metal Fabrication,Level 2,42,49.2,63.5,58.5,50.5,29800,No
+Kayonza,Eastern,2023,Business & Entrepreneurship,Level 4,54,49.2,63.5,58.5,50.5,29800,No
+Kayonza,Eastern,2023,Renewable Energy,Level 5,38,22,63.5,58.5,50.5,29800,Yes
+Kayonza,Eastern,2024,Construction & Building Technology,Level 5,40,49.5,65.0,60.0,52.0,31000,No
+Kayonza,Eastern,2024,Electrical & Electronics,Level 5,25,22,65.0,60.0,52.0,31000,Yes
+Kayonza,Eastern,2024,Mechanics & Automotive,Level 4,54,49.5,65.0,60.0,52.0,31000,No
+Kayonza,Eastern,2024,ICT & Computer Science,Level 4,40,22,65.0,60.0,52.0,31000,Yes
+Kayonza,Eastern,2024,Agriculture & Food Processing,Level 4,49,49.5,65.0,60.0,52.0,31000,No
+Kayonza,Eastern,2024,Hospitality & Tourism,Level 2,23,49.5,65.0,60.0,52.0,31000,No
+Kayonza,Eastern,2024,Health & Community Services,Level 4,44,49.5,65.0,60.0,52.0,31000,Yes
+Kayonza,Eastern,2024,Fashion & Garment Making,Level 3,30,49.5,65.0,60.0,52.0,31000,No
+Kayonza,Eastern,2024,Plumbing & Sanitation,Level 2,55,49.5,65.0,60.0,52.0,31000,No
+Kayonza,Eastern,2024,Welding & Metal Fabrication,Level 2,44,49.5,65.0,60.0,52.0,31000,No
+Kayonza,Eastern,2024,Business & Entrepreneurship,Level 3,56,49.5,65.0,60.0,52.0,31000,No
+Kayonza,Eastern,2024,Renewable Energy,Level 4,40,22,65.0,60.0,52.0,31000,Yes
+Kirehe,Eastern,2019,Construction & Building Technology,Level 4,21,48.0,58.0,53.0,45.0,25000,Yes
+Kirehe,Eastern,2019,Electrical & Electronics,Level 2,32,22,58.0,53.0,45.0,25000,Yes
+Kirehe,Eastern,2019,Mechanics & Automotive,Level 4,31,48.0,58.0,53.0,45.0,25000,No
+Kirehe,Eastern,2019,ICT & Computer Science,Level 4,42,22,58.0,53.0,45.0,25000,Yes
+Kirehe,Eastern,2019,Agriculture & Food Processing,Level 3,20,48.0,58.0,53.0,45.0,25000,No
+Kirehe,Eastern,2019,Hospitality & Tourism,Level 3,39,48.0,58.0,53.0,45.0,25000,No
+Kirehe,Eastern,2019,Health & Community Services,Level 5,13,48.0,58.0,53.0,45.0,25000,Yes
+Kirehe,Eastern,2019,Fashion & Garment Making,Level 5,41,48.0,58.0,53.0,45.0,25000,Yes
+Kirehe,Eastern,2019,Plumbing & Sanitation,Level 2,16,48.0,58.0,53.0,45.0,25000,Yes
+Kirehe,Eastern,2019,Welding & Metal Fabrication,Level 4,15,48.0,58.0,53.0,45.0,25000,Yes
+Kirehe,Eastern,2019,Business & Entrepreneurship,Level 2,42,48.0,58.0,53.0,45.0,25000,Yes
+Kirehe,Eastern,2019,Renewable Energy,Level 5,25,22,58.0,53.0,45.0,25000,Yes
+Kirehe,Eastern,2020,Construction & Building Technology,Level 2,23,48.3,59.0,54.0,46.0,26200,Yes
+Kirehe,Eastern,2020,Electrical & Electronics,Level 2,34,22,59.0,54.0,46.0,26200,Yes
+Kirehe,Eastern,2020,Mechanics & Automotive,Level 4,33,48.3,59.0,54.0,46.0,26200,Yes
+Kirehe,Eastern,2020,ICT & Computer Science,Level 5,44,22,59.0,54.0,46.0,26200,Yes
+Kirehe,Eastern,2020,Agriculture & Food Processing,Level 5,22,48.3,59.0,54.0,46.0,26200,No
+Kirehe,Eastern,2020,Hospitality & Tourism,Level 5,41,48.3,59.0,54.0,46.0,26200,No
+Kirehe,Eastern,2020,Health & Community Services,Level 4,15,48.3,59.0,54.0,46.0,26200,No
+Kirehe,Eastern,2020,Fashion & Garment Making,Level 3,43,48.3,59.0,54.0,46.0,26200,Yes
+Kirehe,Eastern,2020,Plumbing & Sanitation,Level 2,18,48.3,59.0,54.0,46.0,26200,No
+Kirehe,Eastern,2020,Welding & Metal Fabrication,Level 4,17,48.3,59.0,54.0,46.0,26200,No
+Kirehe,Eastern,2020,Business & Entrepreneurship,Level 5,44,48.3,59.0,54.0,46.0,26200,No
+Kirehe,Eastern,2020,Renewable Energy,Level 3,27,22,59.0,54.0,46.0,26200,Yes
+Kirehe,Eastern,2021,Construction & Building Technology,Level 2,25,48.6,60.5,55.5,47.5,27400,No
+Kirehe,Eastern,2021,Electrical & Electronics,Level 4,36,22,60.5,55.5,47.5,27400,Yes
+Kirehe,Eastern,2021,Mechanics & Automotive,Level 5,35,48.6,60.5,55.5,47.5,27400,Yes
+Kirehe,Eastern,2021,ICT & Computer Science,Level 5,46,22,60.5,55.5,47.5,27400,Yes
+Kirehe,Eastern,2021,Agriculture & Food Processing,Level 4,24,48.6,60.5,55.5,47.5,27400,No
+Kirehe,Eastern,2021,Hospitality & Tourism,Level 2,43,48.6,60.5,55.5,47.5,27400,No
+Kirehe,Eastern,2021,Health & Community Services,Level 2,17,48.6,60.5,55.5,47.5,27400,Yes
+Kirehe,Eastern,2021,Fashion & Garment Making,Level 2,45,48.6,60.5,55.5,47.5,27400,Yes
+Kirehe,Eastern,2021,Plumbing & Sanitation,Level 2,20,48.6,60.5,55.5,47.5,27400,No
+Kirehe,Eastern,2021,Welding & Metal Fabrication,Level 3,19,48.6,60.5,55.5,47.5,27400,No
+Kirehe,Eastern,2021,Business & Entrepreneurship,Level 5,46,48.6,60.5,55.5,47.5,27400,No
+Kirehe,Eastern,2021,Renewable Energy,Level 3,29,22,60.5,55.5,47.5,27400,Yes
+Kirehe,Eastern,2022,Construction & Building Technology,Level 5,27,48.9,62.0,57.0,49.0,28600,No
+Kirehe,Eastern,2022,Electrical & Electronics,Level 2,38,22,62.0,57.0,49.0,28600,Yes
+Kirehe,Eastern,2022,Mechanics & Automotive,Level 2,37,48.9,62.0,57.0,49.0,28600,No
+Kirehe,Eastern,2022,ICT & Computer Science,Level 2,48,22,62.0,57.0,49.0,28600,Yes
+Kirehe,Eastern,2022,Agriculture & Food Processing,Level 4,26,48.9,62.0,57.0,49.0,28600,No
+Kirehe,Eastern,2022,Hospitality & Tourism,Level 3,45,48.9,62.0,57.0,49.0,28600,No
+Kirehe,Eastern,2022,Health & Community Services,Level 3,19,48.9,62.0,57.0,49.0,28600,Yes
+Kirehe,Eastern,2022,Fashion & Garment Making,Level 2,47,48.9,62.0,57.0,49.0,28600,No
+Kirehe,Eastern,2022,Plumbing & Sanitation,Level 2,22,48.9,62.0,57.0,49.0,28600,No
+Kirehe,Eastern,2022,Welding & Metal Fabrication,Level 5,21,48.9,62.0,57.0,49.0,28600,No
+Kirehe,Eastern,2022,Business & Entrepreneurship,Level 4,48,48.9,62.0,57.0,49.0,28600,No
+Kirehe,Eastern,2022,Renewable Energy,Level 3,31,22,62.0,57.0,49.0,28600,Yes
+Kirehe,Eastern,2023,Construction & Building Technology,Level 3,29,49.2,63.5,58.5,50.5,29800,No
+Kirehe,Eastern,2023,Electrical & Electronics,Level 4,40,22,63.5,58.5,50.5,29800,Yes
+Kirehe,Eastern,2023,Mechanics & Automotive,Level 3,39,49.2,63.5,58.5,50.5,29800,Yes
+Kirehe,Eastern,2023,ICT & Computer Science,Level 5,50,22,63.5,58.5,50.5,29800,Yes
+Kirehe,Eastern,2023,Agriculture & Food Processing,Level 2,28,49.2,63.5,58.5,50.5,29800,No
+Kirehe,Eastern,2023,Hospitality & Tourism,Level 4,47,49.2,63.5,58.5,50.5,29800,No
+Kirehe,Eastern,2023,Health & Community Services,Level 3,21,49.2,63.5,58.5,50.5,29800,No
+Kirehe,Eastern,2023,Fashion & Garment Making,Level 5,49,49.2,63.5,58.5,50.5,29800,No
+Kirehe,Eastern,2023,Plumbing & Sanitation,Level 5,24,49.2,63.5,58.5,50.5,29800,Yes
+Kirehe,Eastern,2023,Welding & Metal Fabrication,Level 2,23,49.2,63.5,58.5,50.5,29800,No
+Kirehe,Eastern,2023,Business & Entrepreneurship,Level 2,50,49.2,63.5,58.5,50.5,29800,Yes
+Kirehe,Eastern,2023,Renewable Energy,Level 4,33,22,63.5,58.5,50.5,29800,Yes
+Kirehe,Eastern,2024,Construction & Building Technology,Level 4,31,49.5,65.0,60.0,52.0,31000,Yes
+Kirehe,Eastern,2024,Electrical & Electronics,Level 4,42,22,65.0,60.0,52.0,31000,Yes
+Kirehe,Eastern,2024,Mechanics & Automotive,Level 3,41,49.5,65.0,60.0,52.0,31000,No
+Kirehe,Eastern,2024,ICT & Computer Science,Level 4,52,22,65.0,60.0,52.0,31000,Yes
+Kirehe,Eastern,2024,Agriculture & Food Processing,Level 2,30,49.5,65.0,60.0,52.0,31000,No
+Kirehe,Eastern,2024,Hospitality & Tourism,Level 2,49,49.5,65.0,60.0,52.0,31000,No
+Kirehe,Eastern,2024,Health & Community Services,Level 2,23,49.5,65.0,60.0,52.0,31000,No
+Kirehe,Eastern,2024,Fashion & Garment Making,Level 4,51,49.5,65.0,60.0,52.0,31000,No
+Kirehe,Eastern,2024,Plumbing & Sanitation,Level 5,26,49.5,65.0,60.0,52.0,31000,No
+Kirehe,Eastern,2024,Welding & Metal Fabrication,Level 5,25,49.5,65.0,60.0,52.0,31000,Yes
+Kirehe,Eastern,2024,Business & Entrepreneurship,Level 3,52,49.5,65.0,60.0,52.0,31000,Yes
+Kirehe,Eastern,2024,Renewable Energy,Level 4,35,22,65.0,60.0,52.0,31000,Yes
+Ngoma,Eastern,2019,Construction & Building Technology,Level 5,29,48.0,58.0,53.0,45.0,25000,Yes
+Ngoma,Eastern,2019,Electrical & Electronics,Level 3,42,22,58.0,53.0,45.0,25000,Yes
+Ngoma,Eastern,2019,Mechanics & Automotive,Level 4,45,48.0,58.0,53.0,45.0,25000,No
+Ngoma,Eastern,2019,ICT & Computer Science,Level 5,35,22,58.0,53.0,45.0,25000,Yes
+Ngoma,Eastern,2019,Agriculture & Food Processing,Level 4,21,48.0,58.0,53.0,45.0,25000,No
+Ngoma,Eastern,2019,Hospitality & Tourism,Level 4,35,48.0,58.0,53.0,45.0,25000,Yes
+Ngoma,Eastern,2019,Health & Community Services,Level 3,38,48.0,58.0,53.0,45.0,25000,No
+Ngoma,Eastern,2019,Fashion & Garment Making,Level 5,35,48.0,58.0,53.0,45.0,25000,No
+Ngoma,Eastern,2019,Plumbing & Sanitation,Level 4,27,48.0,58.0,53.0,45.0,25000,No
+Ngoma,Eastern,2019,Welding & Metal Fabrication,Level 3,13,48.0,58.0,53.0,45.0,25000,No
+Ngoma,Eastern,2019,Business & Entrepreneurship,Level 3,38,48.0,58.0,53.0,45.0,25000,No
+Ngoma,Eastern,2019,Renewable Energy,Level 4,33,22,58.0,53.0,45.0,25000,Yes
+Ngoma,Eastern,2020,Construction & Building Technology,Level 3,31,48.3,59.0,54.0,46.0,26200,No
+Ngoma,Eastern,2020,Electrical & Electronics,Level 3,44,22,59.0,54.0,46.0,26200,Yes
+Ngoma,Eastern,2020,Mechanics & Automotive,Level 4,47,48.3,59.0,54.0,46.0,26200,No
+Ngoma,Eastern,2020,ICT & Computer Science,Level 2,37,22,59.0,54.0,46.0,26200,Yes
+Ngoma,Eastern,2020,Agriculture & Food Processing,Level 3,23,48.3,59.0,54.0,46.0,26200,No
+Ngoma,Eastern,2020,Hospitality & Tourism,Level 5,37,48.3,59.0,54.0,46.0,26200,No
+Ngoma,Eastern,2020,Health & Community Services,Level 3,40,48.3,59.0,54.0,46.0,26200,No
+Ngoma,Eastern,2020,Fashion & Garment Making,Level 2,37,48.3,59.0,54.0,46.0,26200,Yes
+Ngoma,Eastern,2020,Plumbing & Sanitation,Level 4,29,48.3,59.0,54.0,46.0,26200,Yes
+Ngoma,Eastern,2020,Welding & Metal Fabrication,Level 5,15,48.3,59.0,54.0,46.0,26200,No
+Ngoma,Eastern,2020,Business & Entrepreneurship,Level 2,40,48.3,59.0,54.0,46.0,26200,Yes
+Ngoma,Eastern,2020,Renewable Energy,Level 2,35,22,59.0,54.0,46.0,26200,Yes
+Ngoma,Eastern,2021,Construction & Building Technology,Level 5,33,48.6,60.5,55.5,47.5,27400,No
+Ngoma,Eastern,2021,Electrical & Electronics,Level 2,46,22,60.5,55.5,47.5,27400,Yes
+Ngoma,Eastern,2021,Mechanics & Automotive,Level 5,49,48.6,60.5,55.5,47.5,27400,No
+Ngoma,Eastern,2021,ICT & Computer Science,Level 5,39,22,60.5,55.5,47.5,27400,Yes
+Ngoma,Eastern,2021,Agriculture & Food Processing,Level 2,25,48.6,60.5,55.5,47.5,27400,No
+Ngoma,Eastern,2021,Hospitality & Tourism,Level 2,39,48.6,60.5,55.5,47.5,27400,No
+Ngoma,Eastern,2021,Health & Community Services,Level 2,42,48.6,60.5,55.5,47.5,27400,No
+Ngoma,Eastern,2021,Fashion & Garment Making,Level 3,39,48.6,60.5,55.5,47.5,27400,Yes
+Ngoma,Eastern,2021,Plumbing & Sanitation,Level 2,31,48.6,60.5,55.5,47.5,27400,No
+Ngoma,Eastern,2021,Welding & Metal Fabrication,Level 3,17,48.6,60.5,55.5,47.5,27400,No
+Ngoma,Eastern,2021,Business & Entrepreneurship,Level 4,42,48.6,60.5,55.5,47.5,27400,No
+Ngoma,Eastern,2021,Renewable Energy,Level 3,37,22,60.5,55.5,47.5,27400,Yes
+Ngoma,Eastern,2022,Construction & Building Technology,Level 2,35,48.9,62.0,57.0,49.0,28600,Yes
+Ngoma,Eastern,2022,Electrical & Electronics,Level 3,48,22,62.0,57.0,49.0,28600,Yes
+Ngoma,Eastern,2022,Mechanics & Automotive,Level 4,51,48.9,62.0,57.0,49.0,28600,No
+Ngoma,Eastern,2022,ICT & Computer Science,Level 4,41,22,62.0,57.0,49.0,28600,Yes
+Ngoma,Eastern,2022,Agriculture & Food Processing,Level 3,27,48.9,62.0,57.0,49.0,28600,No
+Ngoma,Eastern,2022,Hospitality & Tourism,Level 3,41,48.9,62.0,57.0,49.0,28600,No
+Ngoma,Eastern,2022,Health & Community Services,Level 2,44,48.9,62.0,57.0,49.0,28600,Yes
+Ngoma,Eastern,2022,Fashion & Garment Making,Level 2,41,48.9,62.0,57.0,49.0,28600,Yes
+Ngoma,Eastern,2022,Plumbing & Sanitation,Level 4,33,48.9,62.0,57.0,49.0,28600,Yes
+Ngoma,Eastern,2022,Welding & Metal Fabrication,Level 2,19,48.9,62.0,57.0,49.0,28600,Yes
+Ngoma,Eastern,2022,Business & Entrepreneurship,Level 3,44,48.9,62.0,57.0,49.0,28600,No
+Ngoma,Eastern,2022,Renewable Energy,Level 4,39,22,62.0,57.0,49.0,28600,Yes
+Ngoma,Eastern,2023,Construction & Building Technology,Level 5,37,49.2,63.5,58.5,50.5,29800,No
+Ngoma,Eastern,2023,Electrical & Electronics,Level 4,50,22,63.5,58.5,50.5,29800,Yes
+Ngoma,Eastern,2023,Mechanics & Automotive,Level 2,53,49.2,63.5,58.5,50.5,29800,Yes
+Ngoma,Eastern,2023,ICT & Computer Science,Level 5,43,22,63.5,58.5,50.5,29800,Yes
+Ngoma,Eastern,2023,Agriculture & Food Processing,Level 4,29,49.2,63.5,58.5,50.5,29800,Yes
+Ngoma,Eastern,2023,Hospitality & Tourism,Level 5,43,49.2,63.5,58.5,50.5,29800,Yes
+Ngoma,Eastern,2023,Health & Community Services,Level 4,46,49.2,63.5,58.5,50.5,29800,Yes
+Ngoma,Eastern,2023,Fashion & Garment Making,Level 3,43,49.2,63.5,58.5,50.5,29800,Yes
+Ngoma,Eastern,2023,Plumbing & Sanitation,Level 4,35,49.2,63.5,58.5,50.5,29800,Yes
+Ngoma,Eastern,2023,Welding & Metal Fabrication,Level 3,21,49.2,63.5,58.5,50.5,29800,No
+Ngoma,Eastern,2023,Business & Entrepreneurship,Level 2,46,49.2,63.5,58.5,50.5,29800,No
+Ngoma,Eastern,2023,Renewable Energy,Level 4,41,22,63.5,58.5,50.5,29800,Yes
+Ngoma,Eastern,2024,Construction & Building Technology,Level 3,39,49.5,65.0,60.0,52.0,31000,No
+Ngoma,Eastern,2024,Electrical & Electronics,Level 3,52,22,65.0,60.0,52.0,31000,Yes
+Ngoma,Eastern,2024,Mechanics & Automotive,Level 5,55,49.5,65.0,60.0,52.0,31000,Yes
+Ngoma,Eastern,2024,ICT & Computer Science,Level 5,45,22,65.0,60.0,52.0,31000,Yes
+Ngoma,Eastern,2024,Agriculture & Food Processing,Level 3,31,49.5,65.0,60.0,52.0,31000,Yes
+Ngoma,Eastern,2024,Hospitality & Tourism,Level 4,45,49.5,65.0,60.0,52.0,31000,No
+Ngoma,Eastern,2024,Health & Community Services,Level 3,48,49.5,65.0,60.0,52.0,31000,No
+Ngoma,Eastern,2024,Fashion & Garment Making,Level 4,45,49.5,65.0,60.0,52.0,31000,No
+Ngoma,Eastern,2024,Plumbing & Sanitation,Level 2,37,49.5,65.0,60.0,52.0,31000,Yes
+Ngoma,Eastern,2024,Welding & Metal Fabrication,Level 2,23,49.5,65.0,60.0,52.0,31000,Yes
+Ngoma,Eastern,2024,Business & Entrepreneurship,Level 4,48,49.5,65.0,60.0,52.0,31000,No
+Ngoma,Eastern,2024,Renewable Energy,Level 3,43,22,65.0,60.0,52.0,31000,Yes
+Nyagatare,Eastern,2019,Construction & Building Technology,Level 3,13,48.0,58.0,53.0,45.0,25000,No
+Nyagatare,Eastern,2019,Electrical & Electronics,Level 5,26,22,58.0,53.0,45.0,25000,Yes
+Nyagatare,Eastern,2019,Mechanics & Automotive,Level 2,38,48.0,58.0,53.0,45.0,25000,No
+Nyagatare,Eastern,2019,ICT & Computer Science,Level 2,19,22,58.0,53.0,45.0,25000,Yes
+Nyagatare,Eastern,2019,Agriculture & Food Processing,Level 4,40,48.0,58.0,53.0,45.0,25000,No
+Nyagatare,Eastern,2019,Hospitality & Tourism,Level 4,43,48.0,58.0,53.0,45.0,25000,Yes
+Nyagatare,Eastern,2019,Health & Community Services,Level 4,14,48.0,58.0,53.0,45.0,25000,Yes
+Nyagatare,Eastern,2019,Fashion & Garment Making,Level 3,44,48.0,58.0,53.0,45.0,25000,No
+Nyagatare,Eastern,2019,Plumbing & Sanitation,Level 4,36,48.0,58.0,53.0,45.0,25000,No
+Nyagatare,Eastern,2019,Welding & Metal Fabrication,Level 2,43,48.0,58.0,53.0,45.0,25000,No
+Nyagatare,Eastern,2019,Business & Entrepreneurship,Level 4,15,48.0,58.0,53.0,45.0,25000,No
+Nyagatare,Eastern,2019,Renewable Energy,Level 2,14,22,58.0,53.0,45.0,25000,Yes
+Nyagatare,Eastern,2020,Construction & Building Technology,Level 4,15,48.3,59.0,54.0,46.0,26200,Yes
+Nyagatare,Eastern,2020,Electrical & Electronics,Level 5,28,22,59.0,54.0,46.0,26200,Yes
+Nyagatare,Eastern,2020,Mechanics & Automotive,Level 3,40,48.3,59.0,54.0,46.0,26200,No
+Nyagatare,Eastern,2020,ICT & Computer Science,Level 3,21,22,59.0,54.0,46.0,26200,Yes
+Nyagatare,Eastern,2020,Agriculture & Food Processing,Level 2,42,48.3,59.0,54.0,46.0,26200,No
+Nyagatare,Eastern,2020,Hospitality & Tourism,Level 3,45,48.3,59.0,54.0,46.0,26200,No
+Nyagatare,Eastern,2020,Health & Community Services,Level 2,16,48.3,59.0,54.0,46.0,26200,Yes
+Nyagatare,Eastern,2020,Fashion & Garment Making,Level 5,46,48.3,59.0,54.0,46.0,26200,No
+Nyagatare,Eastern,2020,Plumbing & Sanitation,Level 5,38,48.3,59.0,54.0,46.0,26200,No
+Nyagatare,Eastern,2020,Welding & Metal Fabrication,Level 5,45,48.3,59.0,54.0,46.0,26200,Yes
+Nyagatare,Eastern,2020,Business & Entrepreneurship,Level 5,17,48.3,59.0,54.0,46.0,26200,No
+Nyagatare,Eastern,2020,Renewable Energy,Level 4,16,22,59.0,54.0,46.0,26200,Yes
+Nyagatare,Eastern,2021,Construction & Building Technology,Level 5,17,48.6,60.5,55.5,47.5,27400,No
+Nyagatare,Eastern,2021,Electrical & Electronics,Level 4,30,22,60.5,55.5,47.5,27400,Yes
+Nyagatare,Eastern,2021,Mechanics & Automotive,Level 2,42,48.6,60.5,55.5,47.5,27400,No
+Nyagatare,Eastern,2021,ICT & Computer Science,Level 3,23,22,60.5,55.5,47.5,27400,Yes
+Nyagatare,Eastern,2021,Agriculture & Food Processing,Level 4,44,48.6,60.5,55.5,47.5,27400,No
+Nyagatare,Eastern,2021,Hospitality & Tourism,Level 3,47,48.6,60.5,55.5,47.5,27400,Yes
+Nyagatare,Eastern,2021,Health & Community Services,Level 2,18,48.6,60.5,55.5,47.5,27400,No
+Nyagatare,Eastern,2021,Fashion & Garment Making,Level 4,48,48.6,60.5,55.5,47.5,27400,Yes
+Nyagatare,Eastern,2021,Plumbing & Sanitation,Level 2,40,48.6,60.5,55.5,47.5,27400,Yes
+Nyagatare,Eastern,2021,Welding & Metal Fabrication,Level 2,47,48.6,60.5,55.5,47.5,27400,Yes
+Nyagatare,Eastern,2021,Business & Entrepreneurship,Level 4,19,48.6,60.5,55.5,47.5,27400,Yes
+Nyagatare,Eastern,2021,Renewable Energy,Level 5,18,22,60.5,55.5,47.5,27400,Yes
+Nyagatare,Eastern,2022,Construction & Building Technology,Level 4,19,48.9,62.0,57.0,49.0,28600,Yes
+Nyagatare,Eastern,2022,Electrical & Electronics,Level 3,32,22,62.0,57.0,49.0,28600,Yes
+Nyagatare,Eastern,2022,Mechanics & Automotive,Level 2,44,48.9,62.0,57.0,49.0,28600,No
+Nyagatare,Eastern,2022,ICT & Computer Science,Level 4,25,22,62.0,57.0,49.0,28600,Yes
+Nyagatare,Eastern,2022,Agriculture & Food Processing,Level 4,46,48.9,62.0,57.0,49.0,28600,Yes
+Nyagatare,Eastern,2022,Hospitality & Tourism,Level 5,49,48.9,62.0,57.0,49.0,28600,No
+Nyagatare,Eastern,2022,Health & Community Services,Level 3,20,48.9,62.0,57.0,49.0,28600,Yes
+Nyagatare,Eastern,2022,Fashion & Garment Making,Level 3,50,48.9,62.0,57.0,49.0,28600,No
+Nyagatare,Eastern,2022,Plumbing & Sanitation,Level 3,42,48.9,62.0,57.0,49.0,28600,No
+Nyagatare,Eastern,2022,Welding & Metal Fabrication,Level 4,49,48.9,62.0,57.0,49.0,28600,No
+Nyagatare,Eastern,2022,Business & Entrepreneurship,Level 2,21,48.9,62.0,57.0,49.0,28600,No
+Nyagatare,Eastern,2022,Renewable Energy,Level 4,20,22,62.0,57.0,49.0,28600,Yes
+Nyagatare,Eastern,2023,Construction & Building Technology,Level 3,21,49.2,63.5,58.5,50.5,29800,No
+Nyagatare,Eastern,2023,Electrical & Electronics,Level 3,34,22,63.5,58.5,50.5,29800,Yes
+Nyagatare,Eastern,2023,Mechanics & Automotive,Level 5,46,49.2,63.5,58.5,50.5,29800,Yes
+Nyagatare,Eastern,2023,ICT & Computer Science,Level 3,27,22,63.5,58.5,50.5,29800,Yes
+Nyagatare,Eastern,2023,Agriculture & Food Processing,Level 4,48,49.2,63.5,58.5,50.5,29800,Yes
+Nyagatare,Eastern,2023,Hospitality & Tourism,Level 4,51,49.2,63.5,58.5,50.5,29800,No
+Nyagatare,Eastern,2023,Health & Community Services,Level 5,22,49.2,63.5,58.5,50.5,29800,No
+Nyagatare,Eastern,2023,Fashion & Garment Making,Level 5,52,49.2,63.5,58.5,50.5,29800,No
+Nyagatare,Eastern,2023,Plumbing & Sanitation,Level 2,44,49.2,63.5,58.5,50.5,29800,No
+Nyagatare,Eastern,2023,Welding & Metal Fabrication,Level 4,51,49.2,63.5,58.5,50.5,29800,Yes
+Nyagatare,Eastern,2023,Business & Entrepreneurship,Level 2,23,49.2,63.5,58.5,50.5,29800,No
+Nyagatare,Eastern,2023,Renewable Energy,Level 5,22,22,63.5,58.5,50.5,29800,Yes
+Nyagatare,Eastern,2024,Construction & Building Technology,Level 3,23,49.5,65.0,60.0,52.0,31000,No
+Nyagatare,Eastern,2024,Electrical & Electronics,Level 5,36,22,65.0,60.0,52.0,31000,Yes
+Nyagatare,Eastern,2024,Mechanics & Automotive,Level 2,48,49.5,65.0,60.0,52.0,31000,No
+Nyagatare,Eastern,2024,ICT & Computer Science,Level 5,29,22,65.0,60.0,52.0,31000,Yes
+Nyagatare,Eastern,2024,Agriculture & Food Processing,Level 4,50,49.5,65.0,60.0,52.0,31000,No
+Nyagatare,Eastern,2024,Hospitality & Tourism,Level 3,53,49.5,65.0,60.0,52.0,31000,No
+Nyagatare,Eastern,2024,Health & Community Services,Level 2,24,49.5,65.0,60.0,52.0,31000,No
+Nyagatare,Eastern,2024,Fashion & Garment Making,Level 3,54,49.5,65.0,60.0,52.0,31000,No
+Nyagatare,Eastern,2024,Plumbing & Sanitation,Level 5,46,49.5,65.0,60.0,52.0,31000,No
+Nyagatare,Eastern,2024,Welding & Metal Fabrication,Level 2,53,49.5,65.0,60.0,52.0,31000,No
+Nyagatare,Eastern,2024,Business & Entrepreneurship,Level 4,25,49.5,65.0,60.0,52.0,31000,Yes
+Nyagatare,Eastern,2024,Renewable Energy,Level 3,24,22,65.0,60.0,52.0,31000,Yes
+Rwamagana,Eastern,2019,Construction & Building Technology,Level 4,23,48.0,58.0,53.0,45.0,25000,Yes
+Rwamagana,Eastern,2019,Electrical & Electronics,Level 2,40,22,58.0,53.0,45.0,25000,Yes
+Rwamagana,Eastern,2019,Mechanics & Automotive,Level 2,29,48.0,58.0,53.0,45.0,25000,No
+Rwamagana,Eastern,2019,ICT & Computer Science,Level 2,36,22,58.0,53.0,45.0,25000,Yes
+Rwamagana,Eastern,2019,Agriculture & Food Processing,Level 3,20,48.0,58.0,53.0,45.0,25000,Yes
+Rwamagana,Eastern,2019,Hospitality & Tourism,Level 2,30,48.0,58.0,53.0,45.0,25000,Yes
+Rwamagana,Eastern,2019,Health & Community Services,Level 5,21,48.0,58.0,53.0,45.0,25000,Yes
+Rwamagana,Eastern,2019,Fashion & Garment Making,Level 3,46,48.0,58.0,53.0,45.0,25000,No
+Rwamagana,Eastern,2019,Plumbing & Sanitation,Level 5,43,48.0,58.0,53.0,45.0,25000,No
+Rwamagana,Eastern,2019,Welding & Metal Fabrication,Level 5,22,48.0,58.0,53.0,45.0,25000,No
+Rwamagana,Eastern,2019,Business & Entrepreneurship,Level 2,16,48.0,58.0,53.0,45.0,25000,No
+Rwamagana,Eastern,2019,Renewable Energy,Level 3,46,22,58.0,53.0,45.0,25000,Yes
+Rwamagana,Eastern,2020,Construction & Building Technology,Level 2,25,48.3,59.0,54.0,46.0,26200,Yes
+Rwamagana,Eastern,2020,Electrical & Electronics,Level 3,42,22,59.0,54.0,46.0,26200,Yes
+Rwamagana,Eastern,2020,Mechanics & Automotive,Level 3,31,48.3,59.0,54.0,46.0,26200,Yes
+Rwamagana,Eastern,2020,ICT & Computer Science,Level 5,38,22,59.0,54.0,46.0,26200,Yes
+Rwamagana,Eastern,2020,Agriculture & Food Processing,Level 3,22,48.3,59.0,54.0,46.0,26200,Yes
+Rwamagana,Eastern,2020,Hospitality & Tourism,Level 3,32,48.3,59.0,54.0,46.0,26200,No
+Rwamagana,Eastern,2020,Health & Community Services,Level 5,23,48.3,59.0,54.0,46.0,26200,Yes
+Rwamagana,Eastern,2020,Fashion & Garment Making,Level 4,48,48.3,59.0,54.0,46.0,26200,No
+Rwamagana,Eastern,2020,Plumbing & Sanitation,Level 2,45,48.3,59.0,54.0,46.0,26200,No
+Rwamagana,Eastern,2020,Welding & Metal Fabrication,Level 2,24,48.3,59.0,54.0,46.0,26200,No
+Rwamagana,Eastern,2020,Business & Entrepreneurship,Level 4,18,48.3,59.0,54.0,46.0,26200,No
+Rwamagana,Eastern,2020,Renewable Energy,Level 2,48,22,59.0,54.0,46.0,26200,Yes
+Rwamagana,Eastern,2021,Construction & Building Technology,Level 2,27,48.6,60.5,55.5,47.5,27400,No
+Rwamagana,Eastern,2021,Electrical & Electronics,Level 3,44,22,60.5,55.5,47.5,27400,Yes
+Rwamagana,Eastern,2021,Mechanics & Automotive,Level 5,33,48.6,60.5,55.5,47.5,27400,No
+Rwamagana,Eastern,2021,ICT & Computer Science,Level 4,40,22,60.5,55.5,47.5,27400,Yes
+Rwamagana,Eastern,2021,Agriculture & Food Processing,Level 5,24,48.6,60.5,55.5,47.5,27400,No
+Rwamagana,Eastern,2021,Hospitality & Tourism,Level 3,34,48.6,60.5,55.5,47.5,27400,No
+Rwamagana,Eastern,2021,Health & Community Services,Level 4,25,48.6,60.5,55.5,47.5,27400,Yes
+Rwamagana,Eastern,2021,Fashion & Garment Making,Level 4,50,48.6,60.5,55.5,47.5,27400,No
+Rwamagana,Eastern,2021,Plumbing & Sanitation,Level 3,47,48.6,60.5,55.5,47.5,27400,No
+Rwamagana,Eastern,2021,Welding & Metal Fabrication,Level 2,26,48.6,60.5,55.5,47.5,27400,Yes
+Rwamagana,Eastern,2021,Business & Entrepreneurship,Level 4,20,48.6,60.5,55.5,47.5,27400,No
+Rwamagana,Eastern,2021,Renewable Energy,Level 4,50,22,60.5,55.5,47.5,27400,Yes
+Rwamagana,Eastern,2022,Construction & Building Technology,Level 3,29,48.9,62.0,57.0,49.0,28600,No
+Rwamagana,Eastern,2022,Electrical & Electronics,Level 5,46,22,62.0,57.0,49.0,28600,Yes
+Rwamagana,Eastern,2022,Mechanics & Automotive,Level 4,35,48.9,62.0,57.0,49.0,28600,Yes
+Rwamagana,Eastern,2022,ICT & Computer Science,Level 3,42,22,62.0,57.0,49.0,28600,Yes
+Rwamagana,Eastern,2022,Agriculture & Food Processing,Level 4,26,48.9,62.0,57.0,49.0,28600,No
+Rwamagana,Eastern,2022,Hospitality & Tourism,Level 5,36,48.9,62.0,57.0,49.0,28600,No
+Rwamagana,Eastern,2022,Health & Community Services,Level 2,27,48.9,62.0,57.0,49.0,28600,No
+Rwamagana,Eastern,2022,Fashion & Garment Making,Level 5,52,48.9,62.0,57.0,49.0,28600,Yes
+Rwamagana,Eastern,2022,Plumbing & Sanitation,Level 5,49,48.9,62.0,57.0,49.0,28600,No
+Rwamagana,Eastern,2022,Welding & Metal Fabrication,Level 4,28,48.9,62.0,57.0,49.0,28600,Yes
+Rwamagana,Eastern,2022,Business & Entrepreneurship,Level 4,22,48.9,62.0,57.0,49.0,28600,Yes
+Rwamagana,Eastern,2022,Renewable Energy,Level 5,52,22,62.0,57.0,49.0,28600,Yes
+Rwamagana,Eastern,2023,Construction & Building Technology,Level 2,31,49.2,63.5,58.5,50.5,29800,Yes
+Rwamagana,Eastern,2023,Electrical & Electronics,Level 3,48,22,63.5,58.5,50.5,29800,Yes
+Rwamagana,Eastern,2023,Mechanics & Automotive,Level 2,37,49.2,63.5,58.5,50.5,29800,No
+Rwamagana,Eastern,2023,ICT & Computer Science,Level 4,44,22,63.5,58.5,50.5,29800,Yes
+Rwamagana,Eastern,2023,Agriculture & Food Processing,Level 3,28,49.2,63.5,58.5,50.5,29800,No
+Rwamagana,Eastern,2023,Hospitality & Tourism,Level 3,38,49.2,63.5,58.5,50.5,29800,No
+Rwamagana,Eastern,2023,Health & Community Services,Level 2,29,49.2,63.5,58.5,50.5,29800,No
+Rwamagana,Eastern,2023,Fashion & Garment Making,Level 3,54,49.2,63.5,58.5,50.5,29800,Yes
+Rwamagana,Eastern,2023,Plumbing & Sanitation,Level 3,51,49.2,63.5,58.5,50.5,29800,No
+Rwamagana,Eastern,2023,Welding & Metal Fabrication,Level 4,30,49.2,63.5,58.5,50.5,29800,No
+Rwamagana,Eastern,2023,Business & Entrepreneurship,Level 4,24,49.2,63.5,58.5,50.5,29800,No
+Rwamagana,Eastern,2023,Renewable Energy,Level 4,54,22,63.5,58.5,50.5,29800,Yes
+Rwamagana,Eastern,2024,Construction & Building Technology,Level 5,33,49.5,65.0,60.0,52.0,31000,No
+Rwamagana,Eastern,2024,Electrical & Electronics,Level 4,50,22,65.0,60.0,52.0,31000,Yes
+Rwamagana,Eastern,2024,Mechanics & Automotive,Level 5,39,49.5,65.0,60.0,52.0,31000,Yes
+Rwamagana,Eastern,2024,ICT & Computer Science,Level 3,46,22,65.0,60.0,52.0,31000,Yes
+Rwamagana,Eastern,2024,Agriculture & Food Processing,Level 4,30,49.5,65.0,60.0,52.0,31000,No
+Rwamagana,Eastern,2024,Hospitality & Tourism,Level 4,40,49.5,65.0,60.0,52.0,31000,No
+Rwamagana,Eastern,2024,Health & Community Services,Level 3,31,49.5,65.0,60.0,52.0,31000,No
+Rwamagana,Eastern,2024,Fashion & Garment Making,Level 2,56,49.5,65.0,60.0,52.0,31000,No
+Rwamagana,Eastern,2024,Plumbing & Sanitation,Level 3,53,49.5,65.0,60.0,52.0,31000,No
+Rwamagana,Eastern,2024,Welding & Metal Fabrication,Level 5,32,49.5,65.0,60.0,52.0,31000,No
+Rwamagana,Eastern,2024,Business & Entrepreneurship,Level 5,26,49.5,65.0,60.0,52.0,31000,Yes
+Rwamagana,Eastern,2024,Renewable Energy,Level 4,56,22,65.0,60.0,52.0,31000,Yes
+Burera,Northern,2019,Construction & Building Technology,Level 5,17,48.0,58.0,53.0,45.0,25000,No
+Burera,Northern,2019,Electrical & Electronics,Level 4,30,22,58.0,53.0,45.0,25000,Yes
+Burera,Northern,2019,Mechanics & Automotive,Level 3,20,48.0,58.0,53.0,45.0,25000,Yes
+Burera,Northern,2019,ICT & Computer Science,Level 4,20,22,58.0,53.0,45.0,25000,Yes
+Burera,Northern,2019,Agriculture & Food Processing,Level 3,23,48.0,58.0,53.0,45.0,25000,No
+Burera,Northern,2019,Hospitality & Tourism,Level 2,19,48.0,58.0,53.0,45.0,25000,No
+Burera,Northern,2019,Health & Community Services,Level 5,28,48.0,58.0,53.0,45.0,25000,No
+Burera,Northern,2019,Fashion & Garment Making,Level 3,38,48.0,58.0,53.0,45.0,25000,No
+Burera,Northern,2019,Plumbing & Sanitation,Level 5,26,48.0,58.0,53.0,45.0,25000,Yes
+Burera,Northern,2019,Welding & Metal Fabrication,Level 3,24,48.0,58.0,53.0,45.0,25000,Yes
+Burera,Northern,2019,Business & Entrepreneurship,Level 2,33,48.0,58.0,53.0,45.0,25000,No
+Burera,Northern,2019,Renewable Energy,Level 5,44,22,58.0,53.0,45.0,25000,Yes
+Burera,Northern,2020,Construction & Building Technology,Level 4,19,48.3,59.0,54.0,46.0,26200,No
+Burera,Northern,2020,Electrical & Electronics,Level 5,32,22,59.0,54.0,46.0,26200,Yes
+Burera,Northern,2020,Mechanics & Automotive,Level 4,22,48.3,59.0,54.0,46.0,26200,No
+Burera,Northern,2020,ICT & Computer Science,Level 4,22,22,59.0,54.0,46.0,26200,Yes
+Burera,Northern,2020,Agriculture & Food Processing,Level 3,25,48.3,59.0,54.0,46.0,26200,No
+Burera,Northern,2020,Hospitality & Tourism,Level 2,21,48.3,59.0,54.0,46.0,26200,No
+Burera,Northern,2020,Health & Community Services,Level 2,30,48.3,59.0,54.0,46.0,26200,No
+Burera,Northern,2020,Fashion & Garment Making,Level 3,40,48.3,59.0,54.0,46.0,26200,No
+Burera,Northern,2020,Plumbing & Sanitation,Level 3,28,48.3,59.0,54.0,46.0,26200,No
+Burera,Northern,2020,Welding & Metal Fabrication,Level 5,26,48.3,59.0,54.0,46.0,26200,No
+Burera,Northern,2020,Business & Entrepreneurship,Level 3,35,48.3,59.0,54.0,46.0,26200,No
+Burera,Northern,2020,Renewable Energy,Level 3,46,22,59.0,54.0,46.0,26200,Yes
+Burera,Northern,2021,Construction & Building Technology,Level 5,21,48.6,60.5,55.5,47.5,27400,No
+Burera,Northern,2021,Electrical & Electronics,Level 3,34,22,60.5,55.5,47.5,27400,Yes
+Burera,Northern,2021,Mechanics & Automotive,Level 4,24,48.6,60.5,55.5,47.5,27400,No
+Burera,Northern,2021,ICT & Computer Science,Level 2,24,22,60.5,55.5,47.5,27400,Yes
+Burera,Northern,2021,Agriculture & Food Processing,Level 3,27,48.6,60.5,55.5,47.5,27400,No
+Burera,Northern,2021,Hospitality & Tourism,Level 2,23,48.6,60.5,55.5,47.5,27400,Yes
+Burera,Northern,2021,Health & Community Services,Level 2,32,48.6,60.5,55.5,47.5,27400,Yes
+Burera,Northern,2021,Fashion & Garment Making,Level 2,42,48.6,60.5,55.5,47.5,27400,Yes
+Burera,Northern,2021,Plumbing & Sanitation,Level 5,30,48.6,60.5,55.5,47.5,27400,No
+Burera,Northern,2021,Welding & Metal Fabrication,Level 5,28,48.6,60.5,55.5,47.5,27400,No
+Burera,Northern,2021,Business & Entrepreneurship,Level 3,37,48.6,60.5,55.5,47.5,27400,Yes
+Burera,Northern,2021,Renewable Energy,Level 4,48,22,60.5,55.5,47.5,27400,Yes
+Burera,Northern,2022,Construction & Building Technology,Level 5,23,48.9,62.0,57.0,49.0,28600,No
+Burera,Northern,2022,Electrical & Electronics,Level 4,36,22,62.0,57.0,49.0,28600,Yes
+Burera,Northern,2022,Mechanics & Automotive,Level 2,26,48.9,62.0,57.0,49.0,28600,No
+Burera,Northern,2022,ICT & Computer Science,Level 3,26,22,62.0,57.0,49.0,28600,Yes
+Burera,Northern,2022,Agriculture & Food Processing,Level 5,29,48.9,62.0,57.0,49.0,28600,Yes
+Burera,Northern,2022,Hospitality & Tourism,Level 5,25,48.9,62.0,57.0,49.0,28600,No
+Burera,Northern,2022,Health & Community Services,Level 4,34,48.9,62.0,57.0,49.0,28600,No
+Burera,Northern,2022,Fashion & Garment Making,Level 4,44,48.9,62.0,57.0,49.0,28600,Yes
+Burera,Northern,2022,Plumbing & Sanitation,Level 3,32,48.9,62.0,57.0,49.0,28600,No
+Burera,Northern,2022,Welding & Metal Fabrication,Level 3,30,48.9,62.0,57.0,49.0,28600,Yes
+Burera,Northern,2022,Business & Entrepreneurship,Level 5,39,48.9,62.0,57.0,49.0,28600,No
+Burera,Northern,2022,Renewable Energy,Level 4,50,22,62.0,57.0,49.0,28600,Yes
+Burera,Northern,2023,Construction & Building Technology,Level 3,25,49.2,63.5,58.5,50.5,29800,No
+Burera,Northern,2023,Electrical & Electronics,Level 5,38,22,63.5,58.5,50.5,29800,Yes
+Burera,Northern,2023,Mechanics & Automotive,Level 5,28,49.2,63.5,58.5,50.5,29800,No
+Burera,Northern,2023,ICT & Computer Science,Level 5,28,22,63.5,58.5,50.5,29800,Yes
+Burera,Northern,2023,Agriculture & Food Processing,Level 3,31,49.2,63.5,58.5,50.5,29800,No
+Burera,Northern,2023,Hospitality & Tourism,Level 5,27,49.2,63.5,58.5,50.5,29800,No
+Burera,Northern,2023,Health & Community Services,Level 5,36,49.2,63.5,58.5,50.5,29800,No
+Burera,Northern,2023,Fashion & Garment Making,Level 4,46,49.2,63.5,58.5,50.5,29800,Yes
+Burera,Northern,2023,Plumbing & Sanitation,Level 5,34,49.2,63.5,58.5,50.5,29800,No
+Burera,Northern,2023,Welding & Metal Fabrication,Level 5,32,49.2,63.5,58.5,50.5,29800,No
+Burera,Northern,2023,Business & Entrepreneurship,Level 2,41,49.2,63.5,58.5,50.5,29800,No
+Burera,Northern,2023,Renewable Energy,Level 5,52,22,63.5,58.5,50.5,29800,Yes
+Burera,Northern,2024,Construction & Building Technology,Level 2,27,49.5,65.0,60.0,52.0,31000,No
+Burera,Northern,2024,Electrical & Electronics,Level 5,40,22,65.0,60.0,52.0,31000,Yes
+Burera,Northern,2024,Mechanics & Automotive,Level 3,30,49.5,65.0,60.0,52.0,31000,No
+Burera,Northern,2024,ICT & Computer Science,Level 2,30,22,65.0,60.0,52.0,31000,Yes
+Burera,Northern,2024,Agriculture & Food Processing,Level 4,33,49.5,65.0,60.0,52.0,31000,No
+Burera,Northern,2024,Hospitality & Tourism,Level 5,29,49.5,65.0,60.0,52.0,31000,Yes
+Burera,Northern,2024,Health & Community Services,Level 2,38,49.5,65.0,60.0,52.0,31000,No
+Burera,Northern,2024,Fashion & Garment Making,Level 5,48,49.5,65.0,60.0,52.0,31000,Yes
+Burera,Northern,2024,Plumbing & Sanitation,Level 5,36,49.5,65.0,60.0,52.0,31000,Yes
+Burera,Northern,2024,Welding & Metal Fabrication,Level 4,34,49.5,65.0,60.0,52.0,31000,No
+Burera,Northern,2024,Business & Entrepreneurship,Level 2,43,49.5,65.0,60.0,52.0,31000,No
+Burera,Northern,2024,Renewable Energy,Level 3,54,22,65.0,60.0,52.0,31000,Yes
+Gakenke,Northern,2019,Construction & Building Technology,Level 3,33,48.0,58.0,53.0,45.0,25000,No
+Gakenke,Northern,2019,Electrical & Electronics,Level 2,18,22,58.0,53.0,45.0,25000,Yes
+Gakenke,Northern,2019,Mechanics & Automotive,Level 5,23,48.0,58.0,53.0,45.0,25000,No
+Gakenke,Northern,2019,ICT & Computer Science,Level 2,35,22,58.0,53.0,45.0,25000,Yes
+Gakenke,Northern,2019,Agriculture & Food Processing,Level 2,24,48.0,58.0,53.0,45.0,25000,Yes
+Gakenke,Northern,2019,Hospitality & Tourism,Level 3,17,48.0,58.0,53.0,45.0,25000,No
+Gakenke,Northern,2019,Health & Community Services,Level 3,27,48.0,58.0,53.0,45.0,25000,No
+Gakenke,Northern,2019,Fashion & Garment Making,Level 3,45,48.0,58.0,53.0,45.0,25000,No
+Gakenke,Northern,2019,Plumbing & Sanitation,Level 3,22,48.0,58.0,53.0,45.0,25000,No
+Gakenke,Northern,2019,Welding & Metal Fabrication,Level 4,28,48.0,58.0,53.0,45.0,25000,No
+Gakenke,Northern,2019,Business & Entrepreneurship,Level 2,43,48.0,58.0,53.0,45.0,25000,No
+Gakenke,Northern,2019,Renewable Energy,Level 4,45,22,58.0,53.0,45.0,25000,Yes
+Gakenke,Northern,2020,Construction & Building Technology,Level 2,35,48.3,59.0,54.0,46.0,26200,No
+Gakenke,Northern,2020,Electrical & Electronics,Level 2,20,22,59.0,54.0,46.0,26200,Yes
+Gakenke,Northern,2020,Mechanics & Automotive,Level 3,25,48.3,59.0,54.0,46.0,26200,No
+Gakenke,Northern,2020,ICT & Computer Science,Level 2,37,22,59.0,54.0,46.0,26200,Yes
+Gakenke,Northern,2020,Agriculture & Food Processing,Level 3,26,48.3,59.0,54.0,46.0,26200,No
+Gakenke,Northern,2020,Hospitality & Tourism,Level 3,19,48.3,59.0,54.0,46.0,26200,No
+Gakenke,Northern,2020,Health & Community Services,Level 3,29,48.3,59.0,54.0,46.0,26200,Yes
+Gakenke,Northern,2020,Fashion & Garment Making,Level 3,47,48.3,59.0,54.0,46.0,26200,Yes
+Gakenke,Northern,2020,Plumbing & Sanitation,Level 2,24,48.3,59.0,54.0,46.0,26200,Yes
+Gakenke,Northern,2020,Welding & Metal Fabrication,Level 3,30,48.3,59.0,54.0,46.0,26200,No
+Gakenke,Northern,2020,Business & Entrepreneurship,Level 5,45,48.3,59.0,54.0,46.0,26200,No
+Gakenke,Northern,2020,Renewable Energy,Level 4,47,22,59.0,54.0,46.0,26200,Yes
+Gakenke,Northern,2021,Construction & Building Technology,Level 5,37,48.6,60.5,55.5,47.5,27400,No
+Gakenke,Northern,2021,Electrical & Electronics,Level 4,22,22,60.5,55.5,47.5,27400,Yes
+Gakenke,Northern,2021,Mechanics & Automotive,Level 4,27,48.6,60.5,55.5,47.5,27400,No
+Gakenke,Northern,2021,ICT & Computer Science,Level 4,39,22,60.5,55.5,47.5,27400,Yes
+Gakenke,Northern,2021,Agriculture & Food Processing,Level 4,28,48.6,60.5,55.5,47.5,27400,No
+Gakenke,Northern,2021,Hospitality & Tourism,Level 3,21,48.6,60.5,55.5,47.5,27400,No
+Gakenke,Northern,2021,Health & Community Services,Level 4,31,48.6,60.5,55.5,47.5,27400,No
+Gakenke,Northern,2021,Fashion & Garment Making,Level 2,49,48.6,60.5,55.5,47.5,27400,No
+Gakenke,Northern,2021,Plumbing & Sanitation,Level 5,26,48.6,60.5,55.5,47.5,27400,Yes
+Gakenke,Northern,2021,Welding & Metal Fabrication,Level 2,32,48.6,60.5,55.5,47.5,27400,No
+Gakenke,Northern,2021,Business & Entrepreneurship,Level 3,47,48.6,60.5,55.5,47.5,27400,No
+Gakenke,Northern,2021,Renewable Energy,Level 2,49,22,60.5,55.5,47.5,27400,Yes
+Gakenke,Northern,2022,Construction & Building Technology,Level 3,39,48.9,62.0,57.0,49.0,28600,No
+Gakenke,Northern,2022,Electrical & Electronics,Level 5,24,22,62.0,57.0,49.0,28600,Yes
+Gakenke,Northern,2022,Mechanics & Automotive,Level 4,29,48.9,62.0,57.0,49.0,28600,Yes
+Gakenke,Northern,2022,ICT & Computer Science,Level 4,41,22,62.0,57.0,49.0,28600,Yes
+Gakenke,Northern,2022,Agriculture & Food Processing,Level 4,30,48.9,62.0,57.0,49.0,28600,No
+Gakenke,Northern,2022,Hospitality & Tourism,Level 3,23,48.9,62.0,57.0,49.0,28600,No
+Gakenke,Northern,2022,Health & Community Services,Level 5,33,48.9,62.0,57.0,49.0,28600,No
+Gakenke,Northern,2022,Fashion & Garment Making,Level 4,51,48.9,62.0,57.0,49.0,28600,No
+Gakenke,Northern,2022,Plumbing & Sanitation,Level 4,28,48.9,62.0,57.0,49.0,28600,No
+Gakenke,Northern,2022,Welding & Metal Fabrication,Level 5,34,48.9,62.0,57.0,49.0,28600,No
+Gakenke,Northern,2022,Business & Entrepreneurship,Level 5,49,48.9,62.0,57.0,49.0,28600,No
+Gakenke,Northern,2022,Renewable Energy,Level 2,51,22,62.0,57.0,49.0,28600,Yes
+Gakenke,Northern,2023,Construction & Building Technology,Level 5,41,49.2,63.5,58.5,50.5,29800,No
+Gakenke,Northern,2023,Electrical & Electronics,Level 2,26,22,63.5,58.5,50.5,29800,Yes
+Gakenke,Northern,2023,Mechanics & Automotive,Level 4,31,49.2,63.5,58.5,50.5,29800,No
+Gakenke,Northern,2023,ICT & Computer Science,Level 2,43,22,63.5,58.5,50.5,29800,Yes
+Gakenke,Northern,2023,Agriculture & Food Processing,Level 4,32,49.2,63.5,58.5,50.5,29800,No
+Gakenke,Northern,2023,Hospitality & Tourism,Level 2,25,49.2,63.5,58.5,50.5,29800,Yes
+Gakenke,Northern,2023,Health & Community Services,Level 2,35,49.2,63.5,58.5,50.5,29800,No
+Gakenke,Northern,2023,Fashion & Garment Making,Level 5,53,49.2,63.5,58.5,50.5,29800,Yes
+Gakenke,Northern,2023,Plumbing & Sanitation,Level 4,30,49.2,63.5,58.5,50.5,29800,Yes
+Gakenke,Northern,2023,Welding & Metal Fabrication,Level 2,36,49.2,63.5,58.5,50.5,29800,No
+Gakenke,Northern,2023,Business & Entrepreneurship,Level 3,51,49.2,63.5,58.5,50.5,29800,No
+Gakenke,Northern,2023,Renewable Energy,Level 4,53,22,63.5,58.5,50.5,29800,Yes
+Gakenke,Northern,2024,Construction & Building Technology,Level 4,43,49.5,65.0,60.0,52.0,31000,Yes
+Gakenke,Northern,2024,Electrical & Electronics,Level 4,28,22,65.0,60.0,52.0,31000,Yes
+Gakenke,Northern,2024,Mechanics & Automotive,Level 4,33,49.5,65.0,60.0,52.0,31000,No
+Gakenke,Northern,2024,ICT & Computer Science,Level 4,45,22,65.0,60.0,52.0,31000,Yes
+Gakenke,Northern,2024,Agriculture & Food Processing,Level 4,34,49.5,65.0,60.0,52.0,31000,No
+Gakenke,Northern,2024,Hospitality & Tourism,Level 4,27,49.5,65.0,60.0,52.0,31000,Yes
+Gakenke,Northern,2024,Health & Community Services,Level 5,37,49.5,65.0,60.0,52.0,31000,No
+Gakenke,Northern,2024,Fashion & Garment Making,Level 3,55,49.5,65.0,60.0,52.0,31000,Yes
+Gakenke,Northern,2024,Plumbing & Sanitation,Level 3,32,49.5,65.0,60.0,52.0,31000,No
+Gakenke,Northern,2024,Welding & Metal Fabrication,Level 4,38,49.5,65.0,60.0,52.0,31000,No
+Gakenke,Northern,2024,Business & Entrepreneurship,Level 2,53,49.5,65.0,60.0,52.0,31000,No
+Gakenke,Northern,2024,Renewable Energy,Level 2,55,22,65.0,60.0,52.0,31000,Yes
+Gicumbi,Northern,2019,Construction & Building Technology,Level 5,33,48.0,58.0,53.0,45.0,25000,No
+Gicumbi,Northern,2019,Electrical & Electronics,Level 2,45,22,58.0,53.0,45.0,25000,Yes
+Gicumbi,Northern,2019,Mechanics & Automotive,Level 2,30,48.0,58.0,53.0,45.0,25000,No
+Gicumbi,Northern,2019,ICT & Computer Science,Level 3,34,22,58.0,53.0,45.0,25000,Yes
+Gicumbi,Northern,2019,Agriculture & Food Processing,Level 2,35,48.0,58.0,53.0,45.0,25000,No
+Gicumbi,Northern,2019,Hospitality & Tourism,Level 4,38,48.0,58.0,53.0,45.0,25000,No
+Gicumbi,Northern,2019,Health & Community Services,Level 5,19,48.0,58.0,53.0,45.0,25000,No
+Gicumbi,Northern,2019,Fashion & Garment Making,Level 4,19,48.0,58.0,53.0,45.0,25000,No
+Gicumbi,Northern,2019,Plumbing & Sanitation,Level 3,44,48.0,58.0,53.0,45.0,25000,No
+Gicumbi,Northern,2019,Welding & Metal Fabrication,Level 3,15,48.0,58.0,53.0,45.0,25000,No
+Gicumbi,Northern,2019,Business & Entrepreneurship,Level 2,26,48.0,58.0,53.0,45.0,25000,Yes
+Gicumbi,Northern,2019,Renewable Energy,Level 3,27,22,58.0,53.0,45.0,25000,Yes
+Gicumbi,Northern,2020,Construction & Building Technology,Level 4,35,48.3,59.0,54.0,46.0,26200,No
+Gicumbi,Northern,2020,Electrical & Electronics,Level 5,47,22,59.0,54.0,46.0,26200,Yes
+Gicumbi,Northern,2020,Mechanics & Automotive,Level 3,32,48.3,59.0,54.0,46.0,26200,No
+Gicumbi,Northern,2020,ICT & Computer Science,Level 2,36,22,59.0,54.0,46.0,26200,Yes
+Gicumbi,Northern,2020,Agriculture & Food Processing,Level 4,37,48.3,59.0,54.0,46.0,26200,No
+Gicumbi,Northern,2020,Hospitality & Tourism,Level 4,40,48.3,59.0,54.0,46.0,26200,No
+Gicumbi,Northern,2020,Health & Community Services,Level 3,21,48.3,59.0,54.0,46.0,26200,No
+Gicumbi,Northern,2020,Fashion & Garment Making,Level 5,21,48.3,59.0,54.0,46.0,26200,No
+Gicumbi,Northern,2020,Plumbing & Sanitation,Level 4,46,48.3,59.0,54.0,46.0,26200,Yes
+Gicumbi,Northern,2020,Welding & Metal Fabrication,Level 5,17,48.3,59.0,54.0,46.0,26200,Yes
+Gicumbi,Northern,2020,Business & Entrepreneurship,Level 3,28,48.3,59.0,54.0,46.0,26200,Yes
+Gicumbi,Northern,2020,Renewable Energy,Level 3,29,22,59.0,54.0,46.0,26200,Yes
+Gicumbi,Northern,2021,Construction & Building Technology,Level 2,37,48.6,60.5,55.5,47.5,27400,No
+Gicumbi,Northern,2021,Electrical & Electronics,Level 2,49,22,60.5,55.5,47.5,27400,Yes
+Gicumbi,Northern,2021,Mechanics & Automotive,Level 3,34,48.6,60.5,55.5,47.5,27400,No
+Gicumbi,Northern,2021,ICT & Computer Science,Level 2,38,22,60.5,55.5,47.5,27400,Yes
+Gicumbi,Northern,2021,Agriculture & Food Processing,Level 4,39,48.6,60.5,55.5,47.5,27400,Yes
+Gicumbi,Northern,2021,Hospitality & Tourism,Level 4,42,48.6,60.5,55.5,47.5,27400,No
+Gicumbi,Northern,2021,Health & Community Services,Level 5,23,48.6,60.5,55.5,47.5,27400,Yes
+Gicumbi,Northern,2021,Fashion & Garment Making,Level 3,23,48.6,60.5,55.5,47.5,27400,No
+Gicumbi,Northern,2021,Plumbing & Sanitation,Level 2,48,48.6,60.5,55.5,47.5,27400,No
+Gicumbi,Northern,2021,Welding & Metal Fabrication,Level 3,19,48.6,60.5,55.5,47.5,27400,No
+Gicumbi,Northern,2021,Business & Entrepreneurship,Level 4,30,48.6,60.5,55.5,47.5,27400,No
+Gicumbi,Northern,2021,Renewable Energy,Level 4,31,22,60.5,55.5,47.5,27400,Yes
+Gicumbi,Northern,2022,Construction & Building Technology,Level 4,39,48.9,62.0,57.0,49.0,28600,No
+Gicumbi,Northern,2022,Electrical & Electronics,Level 3,51,22,62.0,57.0,49.0,28600,Yes
+Gicumbi,Northern,2022,Mechanics & Automotive,Level 4,36,48.9,62.0,57.0,49.0,28600,Yes
+Gicumbi,Northern,2022,ICT & Computer Science,Level 3,40,22,62.0,57.0,49.0,28600,Yes
+Gicumbi,Northern,2022,Agriculture & Food Processing,Level 2,41,48.9,62.0,57.0,49.0,28600,No
+Gicumbi,Northern,2022,Hospitality & Tourism,Level 3,44,48.9,62.0,57.0,49.0,28600,No
+Gicumbi,Northern,2022,Health & Community Services,Level 4,25,48.9,62.0,57.0,49.0,28600,No
+Gicumbi,Northern,2022,Fashion & Garment Making,Level 5,25,48.9,62.0,57.0,49.0,28600,No
+Gicumbi,Northern,2022,Plumbing & Sanitation,Level 2,50,48.9,62.0,57.0,49.0,28600,No
+Gicumbi,Northern,2022,Welding & Metal Fabrication,Level 2,21,48.9,62.0,57.0,49.0,28600,Yes
+Gicumbi,Northern,2022,Business & Entrepreneurship,Level 3,32,48.9,62.0,57.0,49.0,28600,Yes
+Gicumbi,Northern,2022,Renewable Energy,Level 2,33,22,62.0,57.0,49.0,28600,Yes
+Gicumbi,Northern,2023,Construction & Building Technology,Level 3,41,49.2,63.5,58.5,50.5,29800,No
+Gicumbi,Northern,2023,Electrical & Electronics,Level 4,53,22,63.5,58.5,50.5,29800,Yes
+Gicumbi,Northern,2023,Mechanics & Automotive,Level 5,38,49.2,63.5,58.5,50.5,29800,No
+Gicumbi,Northern,2023,ICT & Computer Science,Level 5,42,22,63.5,58.5,50.5,29800,Yes
+Gicumbi,Northern,2023,Agriculture & Food Processing,Level 4,43,49.2,63.5,58.5,50.5,29800,No
+Gicumbi,Northern,2023,Hospitality & Tourism,Level 3,46,49.2,63.5,58.5,50.5,29800,No
+Gicumbi,Northern,2023,Health & Community Services,Level 3,27,49.2,63.5,58.5,50.5,29800,No
+Gicumbi,Northern,2023,Fashion & Garment Making,Level 3,27,49.2,63.5,58.5,50.5,29800,Yes
+Gicumbi,Northern,2023,Plumbing & Sanitation,Level 5,52,49.2,63.5,58.5,50.5,29800,No
+Gicumbi,Northern,2023,Welding & Metal Fabrication,Level 5,23,49.2,63.5,58.5,50.5,29800,No
+Gicumbi,Northern,2023,Business & Entrepreneurship,Level 4,34,49.2,63.5,58.5,50.5,29800,Yes
+Gicumbi,Northern,2023,Renewable Energy,Level 5,35,22,63.5,58.5,50.5,29800,Yes
+Gicumbi,Northern,2024,Construction & Building Technology,Level 3,43,49.5,65.0,60.0,52.0,31000,No
+Gicumbi,Northern,2024,Electrical & Electronics,Level 5,55,22,65.0,60.0,52.0,31000,Yes
+Gicumbi,Northern,2024,Mechanics & Automotive,Level 3,40,49.5,65.0,60.0,52.0,31000,No
+Gicumbi,Northern,2024,ICT & Computer Science,Level 4,44,22,65.0,60.0,52.0,31000,Yes
+Gicumbi,Northern,2024,Agriculture & Food Processing,Level 2,45,49.5,65.0,60.0,52.0,31000,No
+Gicumbi,Northern,2024,Hospitality & Tourism,Level 3,48,49.5,65.0,60.0,52.0,31000,Yes
+Gicumbi,Northern,2024,Health & Community Services,Level 4,29,49.5,65.0,60.0,52.0,31000,No
+Gicumbi,Northern,2024,Fashion & Garment Making,Level 5,29,49.5,65.0,60.0,52.0,31000,No
+Gicumbi,Northern,2024,Plumbing & Sanitation,Level 3,54,49.5,65.0,60.0,52.0,31000,Yes
+Gicumbi,Northern,2024,Welding & Metal Fabrication,Level 2,25,49.5,65.0,60.0,52.0,31000,No
+Gicumbi,Northern,2024,Business & Entrepreneurship,Level 2,36,49.5,65.0,60.0,52.0,31000,No
+Gicumbi,Northern,2024,Renewable Energy,Level 3,37,22,65.0,60.0,52.0,31000,Yes
+Musanze,Northern,2019,Construction & Building Technology,Level 2,20,48.0,58.0,53.0,45.0,25000,No
+Musanze,Northern,2019,Electrical & Electronics,Level 3,37,22,58.0,53.0,45.0,25000,Yes
+Musanze,Northern,2019,Mechanics & Automotive,Level 4,46,48.0,58.0,53.0,45.0,25000,No
+Musanze,Northern,2019,ICT & Computer Science,Level 5,32,22,58.0,53.0,45.0,25000,Yes
+Musanze,Northern,2019,Agriculture & Food Processing,Level 2,26,48.0,58.0,53.0,45.0,25000,Yes
+Musanze,Northern,2019,Hospitality & Tourism,Level 2,44,48.0,58.0,53.0,45.0,25000,Yes
+Musanze,Northern,2019,Health & Community Services,Level 2,14,48.0,58.0,53.0,45.0,25000,No
+Musanze,Northern,2019,Fashion & Garment Making,Level 3,42,48.0,58.0,53.0,45.0,25000,No
+Musanze,Northern,2019,Plumbing & Sanitation,Level 2,35,48.0,58.0,53.0,45.0,25000,No
+Musanze,Northern,2019,Welding & Metal Fabrication,Level 3,30,48.0,58.0,53.0,45.0,25000,No
+Musanze,Northern,2019,Business & Entrepreneurship,Level 2,28,48.0,58.0,53.0,45.0,25000,Yes
+Musanze,Northern,2019,Renewable Energy,Level 2,43,22,58.0,53.0,45.0,25000,Yes
+Musanze,Northern,2020,Construction & Building Technology,Level 2,22,48.3,59.0,54.0,46.0,26200,No
+Musanze,Northern,2020,Electrical & Electronics,Level 2,39,22,59.0,54.0,46.0,26200,Yes
+Musanze,Northern,2020,Mechanics & Automotive,Level 2,48,48.3,59.0,54.0,46.0,26200,Yes
+Musanze,Northern,2020,ICT & Computer Science,Level 2,34,22,59.0,54.0,46.0,26200,Yes
+Musanze,Northern,2020,Agriculture & Food Processing,Level 4,28,48.3,59.0,54.0,46.0,26200,No
+Musanze,Northern,2020,Hospitality & Tourism,Level 4,46,48.3,59.0,54.0,46.0,26200,No
+Musanze,Northern,2020,Health & Community Services,Level 4,16,48.3,59.0,54.0,46.0,26200,No
+Musanze,Northern,2020,Fashion & Garment Making,Level 3,44,48.3,59.0,54.0,46.0,26200,No
+Musanze,Northern,2020,Plumbing & Sanitation,Level 5,37,48.3,59.0,54.0,46.0,26200,No
+Musanze,Northern,2020,Welding & Metal Fabrication,Level 5,32,48.3,59.0,54.0,46.0,26200,No
+Musanze,Northern,2020,Business & Entrepreneurship,Level 2,30,48.3,59.0,54.0,46.0,26200,Yes
+Musanze,Northern,2020,Renewable Energy,Level 5,45,22,59.0,54.0,46.0,26200,Yes
+Musanze,Northern,2021,Construction & Building Technology,Level 3,24,48.6,60.5,55.5,47.5,27400,Yes
+Musanze,Northern,2021,Electrical & Electronics,Level 5,41,22,60.5,55.5,47.5,27400,Yes
+Musanze,Northern,2021,Mechanics & Automotive,Level 3,50,48.6,60.5,55.5,47.5,27400,No
+Musanze,Northern,2021,ICT & Computer Science,Level 5,36,22,60.5,55.5,47.5,27400,Yes
+Musanze,Northern,2021,Agriculture & Food Processing,Level 4,30,48.6,60.5,55.5,47.5,27400,No
+Musanze,Northern,2021,Hospitality & Tourism,Level 2,48,48.6,60.5,55.5,47.5,27400,No
+Musanze,Northern,2021,Health & Community Services,Level 4,18,48.6,60.5,55.5,47.5,27400,No
+Musanze,Northern,2021,Fashion & Garment Making,Level 3,46,48.6,60.5,55.5,47.5,27400,No
+Musanze,Northern,2021,Plumbing & Sanitation,Level 4,39,48.6,60.5,55.5,47.5,27400,No
+Musanze,Northern,2021,Welding & Metal Fabrication,Level 4,34,48.6,60.5,55.5,47.5,27400,Yes
+Musanze,Northern,2021,Business & Entrepreneurship,Level 2,32,48.6,60.5,55.5,47.5,27400,No
+Musanze,Northern,2021,Renewable Energy,Level 3,47,22,60.5,55.5,47.5,27400,Yes
+Musanze,Northern,2022,Construction & Building Technology,Level 3,26,48.9,62.0,57.0,49.0,28600,No
+Musanze,Northern,2022,Electrical & Electronics,Level 2,43,22,62.0,57.0,49.0,28600,Yes
+Musanze,Northern,2022,Mechanics & Automotive,Level 4,52,48.9,62.0,57.0,49.0,28600,Yes
+Musanze,Northern,2022,ICT & Computer Science,Level 3,38,22,62.0,57.0,49.0,28600,Yes
+Musanze,Northern,2022,Agriculture & Food Processing,Level 5,32,48.9,62.0,57.0,49.0,28600,No
+Musanze,Northern,2022,Hospitality & Tourism,Level 2,50,48.9,62.0,57.0,49.0,28600,No
+Musanze,Northern,2022,Health & Community Services,Level 4,20,48.9,62.0,57.0,49.0,28600,No
+Musanze,Northern,2022,Fashion & Garment Making,Level 5,48,48.9,62.0,57.0,49.0,28600,No
+Musanze,Northern,2022,Plumbing & Sanitation,Level 3,41,48.9,62.0,57.0,49.0,28600,No
+Musanze,Northern,2022,Welding & Metal Fabrication,Level 2,36,48.9,62.0,57.0,49.0,28600,No
+Musanze,Northern,2022,Business & Entrepreneurship,Level 2,34,48.9,62.0,57.0,49.0,28600,Yes
+Musanze,Northern,2022,Renewable Energy,Level 3,49,22,62.0,57.0,49.0,28600,Yes
+Musanze,Northern,2023,Construction & Building Technology,Level 5,28,49.2,63.5,58.5,50.5,29800,No
+Musanze,Northern,2023,Electrical & Electronics,Level 2,45,22,63.5,58.5,50.5,29800,Yes
+Musanze,Northern,2023,Mechanics & Automotive,Level 3,54,49.2,63.5,58.5,50.5,29800,Yes
+Musanze,Northern,2023,ICT & Computer Science,Level 3,40,22,63.5,58.5,50.5,29800,Yes
+Musanze,Northern,2023,Agriculture & Food Processing,Level 3,34,49.2,63.5,58.5,50.5,29800,No
+Musanze,Northern,2023,Hospitality & Tourism,Level 3,52,49.2,63.5,58.5,50.5,29800,No
+Musanze,Northern,2023,Health & Community Services,Level 5,22,49.2,63.5,58.5,50.5,29800,Yes
+Musanze,Northern,2023,Fashion & Garment Making,Level 2,50,49.2,63.5,58.5,50.5,29800,Yes
+Musanze,Northern,2023,Plumbing & Sanitation,Level 4,43,49.2,63.5,58.5,50.5,29800,No
+Musanze,Northern,2023,Welding & Metal Fabrication,Level 2,38,49.2,63.5,58.5,50.5,29800,No
+Musanze,Northern,2023,Business & Entrepreneurship,Level 3,36,49.2,63.5,58.5,50.5,29800,Yes
+Musanze,Northern,2023,Renewable Energy,Level 3,51,22,63.5,58.5,50.5,29800,Yes
+Musanze,Northern,2024,Construction & Building Technology,Level 2,30,49.5,65.0,60.0,52.0,31000,No
+Musanze,Northern,2024,Electrical & Electronics,Level 5,47,22,65.0,60.0,52.0,31000,Yes
+Musanze,Northern,2024,Mechanics & Automotive,Level 5,56,49.5,65.0,60.0,52.0,31000,No
+Musanze,Northern,2024,ICT & Computer Science,Level 4,42,22,65.0,60.0,52.0,31000,Yes
+Musanze,Northern,2024,Agriculture & Food Processing,Level 4,36,49.5,65.0,60.0,52.0,31000,No
+Musanze,Northern,2024,Hospitality & Tourism,Level 5,54,49.5,65.0,60.0,52.0,31000,No
+Musanze,Northern,2024,Health & Community Services,Level 3,24,49.5,65.0,60.0,52.0,31000,Yes
+Musanze,Northern,2024,Fashion & Garment Making,Level 5,52,49.5,65.0,60.0,52.0,31000,No
+Musanze,Northern,2024,Plumbing & Sanitation,Level 4,45,49.5,65.0,60.0,52.0,31000,Yes
+Musanze,Northern,2024,Welding & Metal Fabrication,Level 5,40,49.5,65.0,60.0,52.0,31000,No
+Musanze,Northern,2024,Business & Entrepreneurship,Level 3,38,49.5,65.0,60.0,52.0,31000,Yes
+Musanze,Northern,2024,Renewable Energy,Level 2,53,22,65.0,60.0,52.0,31000,Yes
+Rulindo,Northern,2019,Construction & Building Technology,Level 3,19,48.0,58.0,53.0,45.0,25000,Yes
+Rulindo,Northern,2019,Electrical & Electronics,Level 2,37,22,58.0,53.0,45.0,25000,Yes
+Rulindo,Northern,2019,Mechanics & Automotive,Level 2,45,48.0,58.0,53.0,45.0,25000,No
+Rulindo,Northern,2019,ICT & Computer Science,Level 3,18,22,58.0,53.0,45.0,25000,Yes
+Rulindo,Northern,2019,Agriculture & Food Processing,Level 3,45,48.0,58.0,53.0,45.0,25000,No
+Rulindo,Northern,2019,Hospitality & Tourism,Level 3,43,48.0,58.0,53.0,45.0,25000,No
+Rulindo,Northern,2019,Health & Community Services,Level 5,20,48.0,58.0,53.0,45.0,25000,Yes
+Rulindo,Northern,2019,Fashion & Garment Making,Level 4,29,48.0,58.0,53.0,45.0,25000,Yes
+Rulindo,Northern,2019,Plumbing & Sanitation,Level 2,46,48.0,58.0,53.0,45.0,25000,Yes
+Rulindo,Northern,2019,Welding & Metal Fabrication,Level 4,44,48.0,58.0,53.0,45.0,25000,No
+Rulindo,Northern,2019,Business & Entrepreneurship,Level 5,38,48.0,58.0,53.0,45.0,25000,No
+Rulindo,Northern,2019,Renewable Energy,Level 3,13,22,58.0,53.0,45.0,25000,Yes
+Rulindo,Northern,2020,Construction & Building Technology,Level 4,21,48.3,59.0,54.0,46.0,26200,Yes
+Rulindo,Northern,2020,Electrical & Electronics,Level 2,39,22,59.0,54.0,46.0,26200,Yes
+Rulindo,Northern,2020,Mechanics & Automotive,Level 2,47,48.3,59.0,54.0,46.0,26200,Yes
+Rulindo,Northern,2020,ICT & Computer Science,Level 3,20,22,59.0,54.0,46.0,26200,Yes
+Rulindo,Northern,2020,Agriculture & Food Processing,Level 4,47,48.3,59.0,54.0,46.0,26200,No
+Rulindo,Northern,2020,Hospitality & Tourism,Level 4,45,48.3,59.0,54.0,46.0,26200,No
+Rulindo,Northern,2020,Health & Community Services,Level 3,22,48.3,59.0,54.0,46.0,26200,Yes
+Rulindo,Northern,2020,Fashion & Garment Making,Level 3,31,48.3,59.0,54.0,46.0,26200,Yes
+Rulindo,Northern,2020,Plumbing & Sanitation,Level 5,48,48.3,59.0,54.0,46.0,26200,Yes
+Rulindo,Northern,2020,Welding & Metal Fabrication,Level 4,46,48.3,59.0,54.0,46.0,26200,Yes
+Rulindo,Northern,2020,Business & Entrepreneurship,Level 5,40,48.3,59.0,54.0,46.0,26200,No
+Rulindo,Northern,2020,Renewable Energy,Level 3,15,22,59.0,54.0,46.0,26200,Yes
+Rulindo,Northern,2021,Construction & Building Technology,Level 4,23,48.6,60.5,55.5,47.5,27400,Yes
+Rulindo,Northern,2021,Electrical & Electronics,Level 4,41,22,60.5,55.5,47.5,27400,Yes
+Rulindo,Northern,2021,Mechanics & Automotive,Level 3,49,48.6,60.5,55.5,47.5,27400,No
+Rulindo,Northern,2021,ICT & Computer Science,Level 3,22,22,60.5,55.5,47.5,27400,Yes
+Rulindo,Northern,2021,Agriculture & Food Processing,Level 4,49,48.6,60.5,55.5,47.5,27400,Yes
+Rulindo,Northern,2021,Hospitality & Tourism,Level 4,47,48.6,60.5,55.5,47.5,27400,No
+Rulindo,Northern,2021,Health & Community Services,Level 3,24,48.6,60.5,55.5,47.5,27400,No
+Rulindo,Northern,2021,Fashion & Garment Making,Level 2,33,48.6,60.5,55.5,47.5,27400,Yes
+Rulindo,Northern,2021,Plumbing & Sanitation,Level 5,50,48.6,60.5,55.5,47.5,27400,Yes
+Rulindo,Northern,2021,Welding & Metal Fabrication,Level 3,48,48.6,60.5,55.5,47.5,27400,No
+Rulindo,Northern,2021,Business & Entrepreneurship,Level 5,42,48.6,60.5,55.5,47.5,27400,No
+Rulindo,Northern,2021,Renewable Energy,Level 4,17,22,60.5,55.5,47.5,27400,Yes
+Rulindo,Northern,2022,Construction & Building Technology,Level 4,25,48.9,62.0,57.0,49.0,28600,No
+Rulindo,Northern,2022,Electrical & Electronics,Level 5,43,22,62.0,57.0,49.0,28600,Yes
+Rulindo,Northern,2022,Mechanics & Automotive,Level 3,51,48.9,62.0,57.0,49.0,28600,No
+Rulindo,Northern,2022,ICT & Computer Science,Level 3,24,22,62.0,57.0,49.0,28600,Yes
+Rulindo,Northern,2022,Agriculture & Food Processing,Level 4,51,48.9,62.0,57.0,49.0,28600,No
+Rulindo,Northern,2022,Hospitality & Tourism,Level 2,49,48.9,62.0,57.0,49.0,28600,Yes
+Rulindo,Northern,2022,Health & Community Services,Level 5,26,48.9,62.0,57.0,49.0,28600,No
+Rulindo,Northern,2022,Fashion & Garment Making,Level 4,35,48.9,62.0,57.0,49.0,28600,No
+Rulindo,Northern,2022,Plumbing & Sanitation,Level 2,52,48.9,62.0,57.0,49.0,28600,No
+Rulindo,Northern,2022,Welding & Metal Fabrication,Level 4,50,48.9,62.0,57.0,49.0,28600,No
+Rulindo,Northern,2022,Business & Entrepreneurship,Level 2,44,48.9,62.0,57.0,49.0,28600,No
+Rulindo,Northern,2022,Renewable Energy,Level 5,19,22,62.0,57.0,49.0,28600,Yes
+Rulindo,Northern,2023,Construction & Building Technology,Level 3,27,49.2,63.5,58.5,50.5,29800,No
+Rulindo,Northern,2023,Electrical & Electronics,Level 4,45,22,63.5,58.5,50.5,29800,Yes
+Rulindo,Northern,2023,Mechanics & Automotive,Level 2,53,49.2,63.5,58.5,50.5,29800,No
+Rulindo,Northern,2023,ICT & Computer Science,Level 3,26,22,63.5,58.5,50.5,29800,Yes
+Rulindo,Northern,2023,Agriculture & Food Processing,Level 5,53,49.2,63.5,58.5,50.5,29800,Yes
+Rulindo,Northern,2023,Hospitality & Tourism,Level 3,51,49.2,63.5,58.5,50.5,29800,Yes
+Rulindo,Northern,2023,Health & Community Services,Level 4,28,49.2,63.5,58.5,50.5,29800,No
+Rulindo,Northern,2023,Fashion & Garment Making,Level 3,37,49.2,63.5,58.5,50.5,29800,No
+Rulindo,Northern,2023,Plumbing & Sanitation,Level 3,54,49.2,63.5,58.5,50.5,29800,No
+Rulindo,Northern,2023,Welding & Metal Fabrication,Level 2,52,49.2,63.5,58.5,50.5,29800,No
+Rulindo,Northern,2023,Business & Entrepreneurship,Level 2,46,49.2,63.5,58.5,50.5,29800,No
+Rulindo,Northern,2023,Renewable Energy,Level 5,21,22,63.5,58.5,50.5,29800,Yes
+Rulindo,Northern,2024,Construction & Building Technology,Level 2,29,49.5,65.0,60.0,52.0,31000,Yes
+Rulindo,Northern,2024,Electrical & Electronics,Level 5,47,22,65.0,60.0,52.0,31000,Yes
+Rulindo,Northern,2024,Mechanics & Automotive,Level 4,55,49.5,65.0,60.0,52.0,31000,No
+Rulindo,Northern,2024,ICT & Computer Science,Level 5,28,22,65.0,60.0,52.0,31000,Yes
+Rulindo,Northern,2024,Agriculture & Food Processing,Level 5,55,49.5,65.0,60.0,52.0,31000,No
+Rulindo,Northern,2024,Hospitality & Tourism,Level 2,53,49.5,65.0,60.0,52.0,31000,No
+Rulindo,Northern,2024,Health & Community Services,Level 2,30,49.5,65.0,60.0,52.0,31000,No
+Rulindo,Northern,2024,Fashion & Garment Making,Level 5,39,49.5,65.0,60.0,52.0,31000,No
+Rulindo,Northern,2024,Plumbing & Sanitation,Level 4,56,49.5,65.0,60.0,52.0,31000,No
+Rulindo,Northern,2024,Welding & Metal Fabrication,Level 3,54,49.5,65.0,60.0,52.0,31000,Yes
+Rulindo,Northern,2024,Business & Entrepreneurship,Level 4,48,49.5,65.0,60.0,52.0,31000,No
+Rulindo,Northern,2024,Renewable Energy,Level 4,23,22,65.0,60.0,52.0,31000,Yes
+Gisagara,Southern,2019,Construction & Building Technology,Level 2,39,48.0,58.0,53.0,45.0,25000,Yes
+Gisagara,Southern,2019,Electrical & Electronics,Level 2,46,22,58.0,53.0,45.0,25000,Yes
+Gisagara,Southern,2019,Mechanics & Automotive,Level 2,13,48.0,58.0,53.0,45.0,25000,No
+Gisagara,Southern,2019,ICT & Computer Science,Level 3,27,22,58.0,53.0,45.0,25000,Yes
+Gisagara,Southern,2019,Agriculture & Food Processing,Level 3,26,48.0,58.0,53.0,45.0,25000,No
+Gisagara,Southern,2019,Hospitality & Tourism,Level 4,40,48.0,58.0,53.0,45.0,25000,No
+Gisagara,Southern,2019,Health & Community Services,Level 3,28,48.0,58.0,53.0,45.0,25000,No
+Gisagara,Southern,2019,Fashion & Garment Making,Level 3,16,48.0,58.0,53.0,45.0,25000,No
+Gisagara,Southern,2019,Plumbing & Sanitation,Level 5,31,48.0,58.0,53.0,45.0,25000,Yes
+Gisagara,Southern,2019,Welding & Metal Fabrication,Level 2,32,48.0,58.0,53.0,45.0,25000,No
+Gisagara,Southern,2019,Business & Entrepreneurship,Level 4,27,48.0,58.0,53.0,45.0,25000,No
+Gisagara,Southern,2019,Renewable Energy,Level 3,29,22,58.0,53.0,45.0,25000,Yes
+Gisagara,Southern,2020,Construction & Building Technology,Level 5,41,48.3,59.0,54.0,46.0,26200,Yes
+Gisagara,Southern,2020,Electrical & Electronics,Level 5,48,22,59.0,54.0,46.0,26200,Yes
+Gisagara,Southern,2020,Mechanics & Automotive,Level 4,15,48.3,59.0,54.0,46.0,26200,No
+Gisagara,Southern,2020,ICT & Computer Science,Level 2,29,22,59.0,54.0,46.0,26200,Yes
+Gisagara,Southern,2020,Agriculture & Food Processing,Level 3,28,48.3,59.0,54.0,46.0,26200,No
+Gisagara,Southern,2020,Hospitality & Tourism,Level 3,42,48.3,59.0,54.0,46.0,26200,Yes
+Gisagara,Southern,2020,Health & Community Services,Level 2,30,48.3,59.0,54.0,46.0,26200,No
+Gisagara,Southern,2020,Fashion & Garment Making,Level 2,18,48.3,59.0,54.0,46.0,26200,No
+Gisagara,Southern,2020,Plumbing & Sanitation,Level 5,33,48.3,59.0,54.0,46.0,26200,No
+Gisagara,Southern,2020,Welding & Metal Fabrication,Level 3,34,48.3,59.0,54.0,46.0,26200,No
+Gisagara,Southern,2020,Business & Entrepreneurship,Level 5,29,48.3,59.0,54.0,46.0,26200,Yes
+Gisagara,Southern,2020,Renewable Energy,Level 3,31,22,59.0,54.0,46.0,26200,Yes
+Gisagara,Southern,2021,Construction & Building Technology,Level 3,43,48.6,60.5,55.5,47.5,27400,No
+Gisagara,Southern,2021,Electrical & Electronics,Level 5,50,22,60.5,55.5,47.5,27400,Yes
+Gisagara,Southern,2021,Mechanics & Automotive,Level 4,17,48.6,60.5,55.5,47.5,27400,No
+Gisagara,Southern,2021,ICT & Computer Science,Level 2,31,22,60.5,55.5,47.5,27400,Yes
+Gisagara,Southern,2021,Agriculture & Food Processing,Level 2,30,48.6,60.5,55.5,47.5,27400,No
+Gisagara,Southern,2021,Hospitality & Tourism,Level 2,44,48.6,60.5,55.5,47.5,27400,Yes
+Gisagara,Southern,2021,Health & Community Services,Level 4,32,48.6,60.5,55.5,47.5,27400,Yes
+Gisagara,Southern,2021,Fashion & Garment Making,Level 5,20,48.6,60.5,55.5,47.5,27400,No
+Gisagara,Southern,2021,Plumbing & Sanitation,Level 3,35,48.6,60.5,55.5,47.5,27400,No
+Gisagara,Southern,2021,Welding & Metal Fabrication,Level 3,36,48.6,60.5,55.5,47.5,27400,No
+Gisagara,Southern,2021,Business & Entrepreneurship,Level 2,31,48.6,60.5,55.5,47.5,27400,No
+Gisagara,Southern,2021,Renewable Energy,Level 2,33,22,60.5,55.5,47.5,27400,Yes
+Gisagara,Southern,2022,Construction & Building Technology,Level 5,45,48.9,62.0,57.0,49.0,28600,Yes
+Gisagara,Southern,2022,Electrical & Electronics,Level 3,52,22,62.0,57.0,49.0,28600,Yes
+Gisagara,Southern,2022,Mechanics & Automotive,Level 4,19,48.9,62.0,57.0,49.0,28600,Yes
+Gisagara,Southern,2022,ICT & Computer Science,Level 5,33,22,62.0,57.0,49.0,28600,Yes
+Gisagara,Southern,2022,Agriculture & Food Processing,Level 3,32,48.9,62.0,57.0,49.0,28600,No
+Gisagara,Southern,2022,Hospitality & Tourism,Level 4,46,48.9,62.0,57.0,49.0,28600,Yes
+Gisagara,Southern,2022,Health & Community Services,Level 5,34,48.9,62.0,57.0,49.0,28600,Yes
+Gisagara,Southern,2022,Fashion & Garment Making,Level 4,22,48.9,62.0,57.0,49.0,28600,Yes
+Gisagara,Southern,2022,Plumbing & Sanitation,Level 3,37,48.9,62.0,57.0,49.0,28600,No
+Gisagara,Southern,2022,Welding & Metal Fabrication,Level 5,38,48.9,62.0,57.0,49.0,28600,No
+Gisagara,Southern,2022,Business & Entrepreneurship,Level 3,33,48.9,62.0,57.0,49.0,28600,No
+Gisagara,Southern,2022,Renewable Energy,Level 3,35,22,62.0,57.0,49.0,28600,Yes
+Gisagara,Southern,2023,Construction & Building Technology,Level 3,47,49.2,63.5,58.5,50.5,29800,No
+Gisagara,Southern,2023,Electrical & Electronics,Level 5,54,22,63.5,58.5,50.5,29800,Yes
+Gisagara,Southern,2023,Mechanics & Automotive,Level 5,21,49.2,63.5,58.5,50.5,29800,Yes
+Gisagara,Southern,2023,ICT & Computer Science,Level 5,35,22,63.5,58.5,50.5,29800,Yes
+Gisagara,Southern,2023,Agriculture & Food Processing,Level 4,34,49.2,63.5,58.5,50.5,29800,No
+Gisagara,Southern,2023,Hospitality & Tourism,Level 4,48,49.2,63.5,58.5,50.5,29800,No
+Gisagara,Southern,2023,Health & Community Services,Level 5,36,49.2,63.5,58.5,50.5,29800,No
+Gisagara,Southern,2023,Fashion & Garment Making,Level 4,24,49.2,63.5,58.5,50.5,29800,Yes
+Gisagara,Southern,2023,Plumbing & Sanitation,Level 2,39,49.2,63.5,58.5,50.5,29800,No
+Gisagara,Southern,2023,Welding & Metal Fabrication,Level 2,40,49.2,63.5,58.5,50.5,29800,No
+Gisagara,Southern,2023,Business & Entrepreneurship,Level 3,35,49.2,63.5,58.5,50.5,29800,No
+Gisagara,Southern,2023,Renewable Energy,Level 5,37,22,63.5,58.5,50.5,29800,Yes
+Gisagara,Southern,2024,Construction & Building Technology,Level 2,49,49.5,65.0,60.0,52.0,31000,No
+Gisagara,Southern,2024,Electrical & Electronics,Level 5,56,22,65.0,60.0,52.0,31000,Yes
+Gisagara,Southern,2024,Mechanics & Automotive,Level 5,23,49.5,65.0,60.0,52.0,31000,No
+Gisagara,Southern,2024,ICT & Computer Science,Level 2,37,22,65.0,60.0,52.0,31000,Yes
+Gisagara,Southern,2024,Agriculture & Food Processing,Level 3,36,49.5,65.0,60.0,52.0,31000,No
+Gisagara,Southern,2024,Hospitality & Tourism,Level 2,50,49.5,65.0,60.0,52.0,31000,No
+Gisagara,Southern,2024,Health & Community Services,Level 5,38,49.5,65.0,60.0,52.0,31000,No
+Gisagara,Southern,2024,Fashion & Garment Making,Level 5,26,49.5,65.0,60.0,52.0,31000,No
+Gisagara,Southern,2024,Plumbing & Sanitation,Level 5,41,49.5,65.0,60.0,52.0,31000,No
+Gisagara,Southern,2024,Welding & Metal Fabrication,Level 2,42,49.5,65.0,60.0,52.0,31000,No
+Gisagara,Southern,2024,Business & Entrepreneurship,Level 3,37,49.5,65.0,60.0,52.0,31000,No
+Gisagara,Southern,2024,Renewable Energy,Level 3,39,22,65.0,60.0,52.0,31000,Yes
+Huye,Southern,2019,Construction & Building Technology,Level 2,20,48.0,58.0,53.0,45.0,25000,Yes
+Huye,Southern,2019,Electrical & Electronics,Level 3,23,22,58.0,53.0,45.0,25000,Yes
+Huye,Southern,2019,Mechanics & Automotive,Level 5,43,48.0,58.0,53.0,45.0,25000,Yes
+Huye,Southern,2019,ICT & Computer Science,Level 3,46,22,58.0,53.0,45.0,25000,Yes
+Huye,Southern,2019,Agriculture & Food Processing,Level 3,25,48.0,58.0,53.0,45.0,25000,Yes
+Huye,Southern,2019,Hospitality & Tourism,Level 3,20,48.0,58.0,53.0,45.0,25000,Yes
+Huye,Southern,2019,Health & Community Services,Level 4,29,48.0,58.0,53.0,45.0,25000,No
+Huye,Southern,2019,Fashion & Garment Making,Level 5,41,48.0,58.0,53.0,45.0,25000,Yes
+Huye,Southern,2019,Plumbing & Sanitation,Level 4,16,48.0,58.0,53.0,45.0,25000,No
+Huye,Southern,2019,Welding & Metal Fabrication,Level 2,12,48.0,58.0,53.0,45.0,25000,Yes
+Huye,Southern,2019,Business & Entrepreneurship,Level 5,42,48.0,58.0,53.0,45.0,25000,No
+Huye,Southern,2019,Renewable Energy,Level 2,24,22,58.0,53.0,45.0,25000,Yes
+Huye,Southern,2020,Construction & Building Technology,Level 3,22,48.3,59.0,54.0,46.0,26200,No
+Huye,Southern,2020,Electrical & Electronics,Level 5,25,22,59.0,54.0,46.0,26200,Yes
+Huye,Southern,2020,Mechanics & Automotive,Level 5,45,48.3,59.0,54.0,46.0,26200,No
+Huye,Southern,2020,ICT & Computer Science,Level 3,48,22,59.0,54.0,46.0,26200,Yes
+Huye,Southern,2020,Agriculture & Food Processing,Level 2,27,48.3,59.0,54.0,46.0,26200,No
+Huye,Southern,2020,Hospitality & Tourism,Level 4,22,48.3,59.0,54.0,46.0,26200,No
+Huye,Southern,2020,Health & Community Services,Level 4,31,48.3,59.0,54.0,46.0,26200,Yes
+Huye,Southern,2020,Fashion & Garment Making,Level 3,43,48.3,59.0,54.0,46.0,26200,No
+Huye,Southern,2020,Plumbing & Sanitation,Level 4,18,48.3,59.0,54.0,46.0,26200,Yes
+Huye,Southern,2020,Welding & Metal Fabrication,Level 4,14,48.3,59.0,54.0,46.0,26200,Yes
+Huye,Southern,2020,Business & Entrepreneurship,Level 2,44,48.3,59.0,54.0,46.0,26200,No
+Huye,Southern,2020,Renewable Energy,Level 3,26,22,59.0,54.0,46.0,26200,Yes
+Huye,Southern,2021,Construction & Building Technology,Level 5,24,48.6,60.5,55.5,47.5,27400,No
+Huye,Southern,2021,Electrical & Electronics,Level 4,27,22,60.5,55.5,47.5,27400,Yes
+Huye,Southern,2021,Mechanics & Automotive,Level 5,47,48.6,60.5,55.5,47.5,27400,Yes
+Huye,Southern,2021,ICT & Computer Science,Level 4,50,22,60.5,55.5,47.5,27400,Yes
+Huye,Southern,2021,Agriculture & Food Processing,Level 5,29,48.6,60.5,55.5,47.5,27400,No
+Huye,Southern,2021,Hospitality & Tourism,Level 3,24,48.6,60.5,55.5,47.5,27400,No
+Huye,Southern,2021,Health & Community Services,Level 2,33,48.6,60.5,55.5,47.5,27400,Yes
+Huye,Southern,2021,Fashion & Garment Making,Level 2,45,48.6,60.5,55.5,47.5,27400,No
+Huye,Southern,2021,Plumbing & Sanitation,Level 2,20,48.6,60.5,55.5,47.5,27400,No
+Huye,Southern,2021,Welding & Metal Fabrication,Level 4,16,48.6,60.5,55.5,47.5,27400,No
+Huye,Southern,2021,Business & Entrepreneurship,Level 4,46,48.6,60.5,55.5,47.5,27400,Yes
+Huye,Southern,2021,Renewable Energy,Level 5,28,22,60.5,55.5,47.5,27400,Yes
+Huye,Southern,2022,Construction & Building Technology,Level 2,26,48.9,62.0,57.0,49.0,28600,No
+Huye,Southern,2022,Electrical & Electronics,Level 2,29,22,62.0,57.0,49.0,28600,Yes
+Huye,Southern,2022,Mechanics & Automotive,Level 5,49,48.9,62.0,57.0,49.0,28600,Yes
+Huye,Southern,2022,ICT & Computer Science,Level 3,52,22,62.0,57.0,49.0,28600,Yes
+Huye,Southern,2022,Agriculture & Food Processing,Level 3,31,48.9,62.0,57.0,49.0,28600,No
+Huye,Southern,2022,Hospitality & Tourism,Level 4,26,48.9,62.0,57.0,49.0,28600,Yes
+Huye,Southern,2022,Health & Community Services,Level 5,35,48.9,62.0,57.0,49.0,28600,No
+Huye,Southern,2022,Fashion & Garment Making,Level 4,47,48.9,62.0,57.0,49.0,28600,No
+Huye,Southern,2022,Plumbing & Sanitation,Level 2,22,48.9,62.0,57.0,49.0,28600,Yes
+Huye,Southern,2022,Welding & Metal Fabrication,Level 3,18,48.9,62.0,57.0,49.0,28600,No
+Huye,Southern,2022,Business & Entrepreneurship,Level 4,48,48.9,62.0,57.0,49.0,28600,Yes
+Huye,Southern,2022,Renewable Energy,Level 5,30,22,62.0,57.0,49.0,28600,Yes
+Huye,Southern,2023,Construction & Building Technology,Level 5,28,49.2,63.5,58.5,50.5,29800,No
+Huye,Southern,2023,Electrical & Electronics,Level 2,31,22,63.5,58.5,50.5,29800,Yes
+Huye,Southern,2023,Mechanics & Automotive,Level 3,51,49.2,63.5,58.5,50.5,29800,Yes
+Huye,Southern,2023,ICT & Computer Science,Level 2,54,22,63.5,58.5,50.5,29800,Yes
+Huye,Southern,2023,Agriculture & Food Processing,Level 5,33,49.2,63.5,58.5,50.5,29800,No
+Huye,Southern,2023,Hospitality & Tourism,Level 3,28,49.2,63.5,58.5,50.5,29800,No
+Huye,Southern,2023,Health & Community Services,Level 3,37,49.2,63.5,58.5,50.5,29800,No
+Huye,Southern,2023,Fashion & Garment Making,Level 3,49,49.2,63.5,58.5,50.5,29800,No
+Huye,Southern,2023,Plumbing & Sanitation,Level 5,24,49.2,63.5,58.5,50.5,29800,No
+Huye,Southern,2023,Welding & Metal Fabrication,Level 4,20,49.2,63.5,58.5,50.5,29800,Yes
+Huye,Southern,2023,Business & Entrepreneurship,Level 2,50,49.2,63.5,58.5,50.5,29800,Yes
+Huye,Southern,2023,Renewable Energy,Level 5,32,22,63.5,58.5,50.5,29800,Yes
+Huye,Southern,2024,Construction & Building Technology,Level 2,30,49.5,65.0,60.0,52.0,31000,No
+Huye,Southern,2024,Electrical & Electronics,Level 5,33,22,65.0,60.0,52.0,31000,Yes
+Huye,Southern,2024,Mechanics & Automotive,Level 3,53,49.5,65.0,60.0,52.0,31000,No
+Huye,Southern,2024,ICT & Computer Science,Level 2,56,22,65.0,60.0,52.0,31000,Yes
+Huye,Southern,2024,Agriculture & Food Processing,Level 3,35,49.5,65.0,60.0,52.0,31000,No
+Huye,Southern,2024,Hospitality & Tourism,Level 5,30,49.5,65.0,60.0,52.0,31000,No
+Huye,Southern,2024,Health & Community Services,Level 3,39,49.5,65.0,60.0,52.0,31000,No
+Huye,Southern,2024,Fashion & Garment Making,Level 3,51,49.5,65.0,60.0,52.0,31000,Yes
+Huye,Southern,2024,Plumbing & Sanitation,Level 4,26,49.5,65.0,60.0,52.0,31000,Yes
+Huye,Southern,2024,Welding & Metal Fabrication,Level 3,22,49.5,65.0,60.0,52.0,31000,Yes
+Huye,Southern,2024,Business & Entrepreneurship,Level 3,52,49.5,65.0,60.0,52.0,31000,Yes
+Huye,Southern,2024,Renewable Energy,Level 2,34,22,65.0,60.0,52.0,31000,Yes
+Kamonyi,Southern,2019,Construction & Building Technology,Level 4,40,48.0,58.0,53.0,45.0,25000,No
+Kamonyi,Southern,2019,Electrical & Electronics,Level 4,32,22,58.0,53.0,45.0,25000,Yes
+Kamonyi,Southern,2019,Mechanics & Automotive,Level 4,45,48.0,58.0,53.0,45.0,25000,No
+Kamonyi,Southern,2019,ICT & Computer Science,Level 5,17,22,58.0,53.0,45.0,25000,Yes
+Kamonyi,Southern,2019,Agriculture & Food Processing,Level 3,13,48.0,58.0,53.0,45.0,25000,No
+Kamonyi,Southern,2019,Hospitality & Tourism,Level 5,43,48.0,58.0,53.0,45.0,25000,Yes
+Kamonyi,Southern,2019,Health & Community Services,Level 5,43,48.0,58.0,53.0,45.0,25000,No
+Kamonyi,Southern,2019,Fashion & Garment Making,Level 4,14,48.0,58.0,53.0,45.0,25000,No
+Kamonyi,Southern,2019,Plumbing & Sanitation,Level 2,14,48.0,58.0,53.0,45.0,25000,No
+Kamonyi,Southern,2019,Welding & Metal Fabrication,Level 5,39,48.0,58.0,53.0,45.0,25000,Yes
+Kamonyi,Southern,2019,Business & Entrepreneurship,Level 2,12,48.0,58.0,53.0,45.0,25000,No
+Kamonyi,Southern,2019,Renewable Energy,Level 4,17,22,58.0,53.0,45.0,25000,Yes
+Kamonyi,Southern,2020,Construction & Building Technology,Level 3,42,48.3,59.0,54.0,46.0,26200,No
+Kamonyi,Southern,2020,Electrical & Electronics,Level 3,34,22,59.0,54.0,46.0,26200,Yes
+Kamonyi,Southern,2020,Mechanics & Automotive,Level 4,47,48.3,59.0,54.0,46.0,26200,No
+Kamonyi,Southern,2020,ICT & Computer Science,Level 2,19,22,59.0,54.0,46.0,26200,Yes
+Kamonyi,Southern,2020,Agriculture & Food Processing,Level 2,15,48.3,59.0,54.0,46.0,26200,No
+Kamonyi,Southern,2020,Hospitality & Tourism,Level 3,45,48.3,59.0,54.0,46.0,26200,Yes
+Kamonyi,Southern,2020,Health & Community Services,Level 5,45,48.3,59.0,54.0,46.0,26200,Yes
+Kamonyi,Southern,2020,Fashion & Garment Making,Level 2,16,48.3,59.0,54.0,46.0,26200,No
+Kamonyi,Southern,2020,Plumbing & Sanitation,Level 4,16,48.3,59.0,54.0,46.0,26200,No
+Kamonyi,Southern,2020,Welding & Metal Fabrication,Level 5,41,48.3,59.0,54.0,46.0,26200,No
+Kamonyi,Southern,2020,Business & Entrepreneurship,Level 5,14,48.3,59.0,54.0,46.0,26200,No
+Kamonyi,Southern,2020,Renewable Energy,Level 4,19,22,59.0,54.0,46.0,26200,Yes
+Kamonyi,Southern,2021,Construction & Building Technology,Level 3,44,48.6,60.5,55.5,47.5,27400,No
+Kamonyi,Southern,2021,Electrical & Electronics,Level 2,36,22,60.5,55.5,47.5,27400,Yes
+Kamonyi,Southern,2021,Mechanics & Automotive,Level 4,49,48.6,60.5,55.5,47.5,27400,Yes
+Kamonyi,Southern,2021,ICT & Computer Science,Level 3,21,22,60.5,55.5,47.5,27400,Yes
+Kamonyi,Southern,2021,Agriculture & Food Processing,Level 3,17,48.6,60.5,55.5,47.5,27400,No
+Kamonyi,Southern,2021,Hospitality & Tourism,Level 2,47,48.6,60.5,55.5,47.5,27400,Yes
+Kamonyi,Southern,2021,Health & Community Services,Level 2,47,48.6,60.5,55.5,47.5,27400,No
+Kamonyi,Southern,2021,Fashion & Garment Making,Level 4,18,48.6,60.5,55.5,47.5,27400,No
+Kamonyi,Southern,2021,Plumbing & Sanitation,Level 5,18,48.6,60.5,55.5,47.5,27400,Yes
+Kamonyi,Southern,2021,Welding & Metal Fabrication,Level 2,43,48.6,60.5,55.5,47.5,27400,Yes
+Kamonyi,Southern,2021,Business & Entrepreneurship,Level 4,16,48.6,60.5,55.5,47.5,27400,Yes
+Kamonyi,Southern,2021,Renewable Energy,Level 4,21,22,60.5,55.5,47.5,27400,Yes
+Kamonyi,Southern,2022,Construction & Building Technology,Level 4,46,48.9,62.0,57.0,49.0,28600,No
+Kamonyi,Southern,2022,Electrical & Electronics,Level 3,38,22,62.0,57.0,49.0,28600,Yes
+Kamonyi,Southern,2022,Mechanics & Automotive,Level 2,51,48.9,62.0,57.0,49.0,28600,No
+Kamonyi,Southern,2022,ICT & Computer Science,Level 3,23,22,62.0,57.0,49.0,28600,Yes
+Kamonyi,Southern,2022,Agriculture & Food Processing,Level 2,19,48.9,62.0,57.0,49.0,28600,Yes
+Kamonyi,Southern,2022,Hospitality & Tourism,Level 4,49,48.9,62.0,57.0,49.0,28600,No
+Kamonyi,Southern,2022,Health & Community Services,Level 2,49,48.9,62.0,57.0,49.0,28600,No
+Kamonyi,Southern,2022,Fashion & Garment Making,Level 2,20,48.9,62.0,57.0,49.0,28600,No
+Kamonyi,Southern,2022,Plumbing & Sanitation,Level 5,20,48.9,62.0,57.0,49.0,28600,Yes
+Kamonyi,Southern,2022,Welding & Metal Fabrication,Level 2,45,48.9,62.0,57.0,49.0,28600,No
+Kamonyi,Southern,2022,Business & Entrepreneurship,Level 4,18,48.9,62.0,57.0,49.0,28600,No
+Kamonyi,Southern,2022,Renewable Energy,Level 2,23,22,62.0,57.0,49.0,28600,Yes
+Kamonyi,Southern,2023,Construction & Building Technology,Level 5,48,49.2,63.5,58.5,50.5,29800,No
+Kamonyi,Southern,2023,Electrical & Electronics,Level 3,40,22,63.5,58.5,50.5,29800,Yes
+Kamonyi,Southern,2023,Mechanics & Automotive,Level 3,53,49.2,63.5,58.5,50.5,29800,Yes
+Kamonyi,Southern,2023,ICT & Computer Science,Level 3,25,22,63.5,58.5,50.5,29800,Yes
+Kamonyi,Southern,2023,Agriculture & Food Processing,Level 4,21,49.2,63.5,58.5,50.5,29800,No
+Kamonyi,Southern,2023,Hospitality & Tourism,Level 2,51,49.2,63.5,58.5,50.5,29800,Yes
+Kamonyi,Southern,2023,Health & Community Services,Level 4,51,49.2,63.5,58.5,50.5,29800,No
+Kamonyi,Southern,2023,Fashion & Garment Making,Level 4,22,49.2,63.5,58.5,50.5,29800,No
+Kamonyi,Southern,2023,Plumbing & Sanitation,Level 5,22,49.2,63.5,58.5,50.5,29800,Yes
+Kamonyi,Southern,2023,Welding & Metal Fabrication,Level 2,47,49.2,63.5,58.5,50.5,29800,No
+Kamonyi,Southern,2023,Business & Entrepreneurship,Level 3,20,49.2,63.5,58.5,50.5,29800,No
+Kamonyi,Southern,2023,Renewable Energy,Level 5,25,22,63.5,58.5,50.5,29800,Yes
+Kamonyi,Southern,2024,Construction & Building Technology,Level 3,50,49.5,65.0,60.0,52.0,31000,Yes
+Kamonyi,Southern,2024,Electrical & Electronics,Level 4,42,22,65.0,60.0,52.0,31000,Yes
+Kamonyi,Southern,2024,Mechanics & Automotive,Level 4,55,49.5,65.0,60.0,52.0,31000,Yes
+Kamonyi,Southern,2024,ICT & Computer Science,Level 5,27,22,65.0,60.0,52.0,31000,Yes
+Kamonyi,Southern,2024,Agriculture & Food Processing,Level 2,23,49.5,65.0,60.0,52.0,31000,No
+Kamonyi,Southern,2024,Hospitality & Tourism,Level 2,53,49.5,65.0,60.0,52.0,31000,No
+Kamonyi,Southern,2024,Health & Community Services,Level 3,53,49.5,65.0,60.0,52.0,31000,Yes
+Kamonyi,Southern,2024,Fashion & Garment Making,Level 2,24,49.5,65.0,60.0,52.0,31000,Yes
+Kamonyi,Southern,2024,Plumbing & Sanitation,Level 2,24,49.5,65.0,60.0,52.0,31000,No
+Kamonyi,Southern,2024,Welding & Metal Fabrication,Level 3,49,49.5,65.0,60.0,52.0,31000,No
+Kamonyi,Southern,2024,Business & Entrepreneurship,Level 4,22,49.5,65.0,60.0,52.0,31000,No
+Kamonyi,Southern,2024,Renewable Energy,Level 5,27,22,65.0,60.0,52.0,31000,Yes
+Muhanga,Southern,2019,Construction & Building Technology,Level 3,13,48.0,58.0,53.0,45.0,25000,Yes
+Muhanga,Southern,2019,Electrical & Electronics,Level 5,19,22,58.0,53.0,45.0,25000,Yes
+Muhanga,Southern,2019,Mechanics & Automotive,Level 5,24,48.0,58.0,53.0,45.0,25000,Yes
+Muhanga,Southern,2019,ICT & Computer Science,Level 3,44,22,58.0,53.0,45.0,25000,Yes
+Muhanga,Southern,2019,Agriculture & Food Processing,Level 3,43,48.0,58.0,53.0,45.0,25000,No
+Muhanga,Southern,2019,Hospitality & Tourism,Level 5,12,48.0,58.0,53.0,45.0,25000,Yes
+Muhanga,Southern,2019,Health & Community Services,Level 4,38,48.0,58.0,53.0,45.0,25000,No
+Muhanga,Southern,2019,Fashion & Garment Making,Level 4,29,48.0,58.0,53.0,45.0,25000,No
+Muhanga,Southern,2019,Plumbing & Sanitation,Level 5,46,48.0,58.0,53.0,45.0,25000,No
+Muhanga,Southern,2019,Welding & Metal Fabrication,Level 2,34,48.0,58.0,53.0,45.0,25000,Yes
+Muhanga,Southern,2019,Business & Entrepreneurship,Level 2,46,48.0,58.0,53.0,45.0,25000,Yes
+Muhanga,Southern,2019,Renewable Energy,Level 2,38,22,58.0,53.0,45.0,25000,Yes
+Muhanga,Southern,2020,Construction & Building Technology,Level 4,15,48.3,59.0,54.0,46.0,26200,No
+Muhanga,Southern,2020,Electrical & Electronics,Level 5,21,22,59.0,54.0,46.0,26200,Yes
+Muhanga,Southern,2020,Mechanics & Automotive,Level 4,26,48.3,59.0,54.0,46.0,26200,Yes
+Muhanga,Southern,2020,ICT & Computer Science,Level 3,46,22,59.0,54.0,46.0,26200,Yes
+Muhanga,Southern,2020,Agriculture & Food Processing,Level 4,45,48.3,59.0,54.0,46.0,26200,Yes
+Muhanga,Southern,2020,Hospitality & Tourism,Level 4,14,48.3,59.0,54.0,46.0,26200,No
+Muhanga,Southern,2020,Health & Community Services,Level 2,40,48.3,59.0,54.0,46.0,26200,No
+Muhanga,Southern,2020,Fashion & Garment Making,Level 3,31,48.3,59.0,54.0,46.0,26200,Yes
+Muhanga,Southern,2020,Plumbing & Sanitation,Level 2,48,48.3,59.0,54.0,46.0,26200,No
+Muhanga,Southern,2020,Welding & Metal Fabrication,Level 2,36,48.3,59.0,54.0,46.0,26200,No
+Muhanga,Southern,2020,Business & Entrepreneurship,Level 4,48,48.3,59.0,54.0,46.0,26200,No
+Muhanga,Southern,2020,Renewable Energy,Level 4,40,22,59.0,54.0,46.0,26200,Yes
+Muhanga,Southern,2021,Construction & Building Technology,Level 3,17,48.6,60.5,55.5,47.5,27400,No
+Muhanga,Southern,2021,Electrical & Electronics,Level 3,23,22,60.5,55.5,47.5,27400,Yes
+Muhanga,Southern,2021,Mechanics & Automotive,Level 3,28,48.6,60.5,55.5,47.5,27400,No
+Muhanga,Southern,2021,ICT & Computer Science,Level 5,48,22,60.5,55.5,47.5,27400,Yes
+Muhanga,Southern,2021,Agriculture & Food Processing,Level 3,47,48.6,60.5,55.5,47.5,27400,No
+Muhanga,Southern,2021,Hospitality & Tourism,Level 3,16,48.6,60.5,55.5,47.5,27400,Yes
+Muhanga,Southern,2021,Health & Community Services,Level 2,42,48.6,60.5,55.5,47.5,27400,No
+Muhanga,Southern,2021,Fashion & Garment Making,Level 2,33,48.6,60.5,55.5,47.5,27400,No
+Muhanga,Southern,2021,Plumbing & Sanitation,Level 2,50,48.6,60.5,55.5,47.5,27400,No
+Muhanga,Southern,2021,Welding & Metal Fabrication,Level 4,38,48.6,60.5,55.5,47.5,27400,No
+Muhanga,Southern,2021,Business & Entrepreneurship,Level 2,50,48.6,60.5,55.5,47.5,27400,No
+Muhanga,Southern,2021,Renewable Energy,Level 5,42,22,60.5,55.5,47.5,27400,Yes
+Muhanga,Southern,2022,Construction & Building Technology,Level 5,19,48.9,62.0,57.0,49.0,28600,No
+Muhanga,Southern,2022,Electrical & Electronics,Level 4,25,22,62.0,57.0,49.0,28600,Yes
+Muhanga,Southern,2022,Mechanics & Automotive,Level 4,30,48.9,62.0,57.0,49.0,28600,No
+Muhanga,Southern,2022,ICT & Computer Science,Level 3,50,22,62.0,57.0,49.0,28600,Yes
+Muhanga,Southern,2022,Agriculture & Food Processing,Level 3,49,48.9,62.0,57.0,49.0,28600,No
+Muhanga,Southern,2022,Hospitality & Tourism,Level 5,18,48.9,62.0,57.0,49.0,28600,No
+Muhanga,Southern,2022,Health & Community Services,Level 3,44,48.9,62.0,57.0,49.0,28600,No
+Muhanga,Southern,2022,Fashion & Garment Making,Level 4,35,48.9,62.0,57.0,49.0,28600,No
+Muhanga,Southern,2022,Plumbing & Sanitation,Level 3,52,48.9,62.0,57.0,49.0,28600,Yes
+Muhanga,Southern,2022,Welding & Metal Fabrication,Level 2,40,48.9,62.0,57.0,49.0,28600,No
+Muhanga,Southern,2022,Business & Entrepreneurship,Level 4,52,48.9,62.0,57.0,49.0,28600,No
+Muhanga,Southern,2022,Renewable Energy,Level 2,44,22,62.0,57.0,49.0,28600,Yes
+Muhanga,Southern,2023,Construction & Building Technology,Level 2,21,49.2,63.5,58.5,50.5,29800,No
+Muhanga,Southern,2023,Electrical & Electronics,Level 2,27,22,63.5,58.5,50.5,29800,Yes
+Muhanga,Southern,2023,Mechanics & Automotive,Level 2,32,49.2,63.5,58.5,50.5,29800,Yes
+Muhanga,Southern,2023,ICT & Computer Science,Level 2,52,22,63.5,58.5,50.5,29800,Yes
+Muhanga,Southern,2023,Agriculture & Food Processing,Level 5,51,49.2,63.5,58.5,50.5,29800,No
+Muhanga,Southern,2023,Hospitality & Tourism,Level 3,20,49.2,63.5,58.5,50.5,29800,Yes
+Muhanga,Southern,2023,Health & Community Services,Level 3,46,49.2,63.5,58.5,50.5,29800,No
+Muhanga,Southern,2023,Fashion & Garment Making,Level 2,37,49.2,63.5,58.5,50.5,29800,No
+Muhanga,Southern,2023,Plumbing & Sanitation,Level 3,54,49.2,63.5,58.5,50.5,29800,No
+Muhanga,Southern,2023,Welding & Metal Fabrication,Level 4,42,49.2,63.5,58.5,50.5,29800,Yes
+Muhanga,Southern,2023,Business & Entrepreneurship,Level 5,54,49.2,63.5,58.5,50.5,29800,Yes
+Muhanga,Southern,2023,Renewable Energy,Level 5,46,22,63.5,58.5,50.5,29800,Yes
+Muhanga,Southern,2024,Construction & Building Technology,Level 3,23,49.5,65.0,60.0,52.0,31000,No
+Muhanga,Southern,2024,Electrical & Electronics,Level 4,29,22,65.0,60.0,52.0,31000,Yes
+Muhanga,Southern,2024,Mechanics & Automotive,Level 5,34,49.5,65.0,60.0,52.0,31000,Yes
+Muhanga,Southern,2024,ICT & Computer Science,Level 3,54,22,65.0,60.0,52.0,31000,Yes
+Muhanga,Southern,2024,Agriculture & Food Processing,Level 5,53,49.5,65.0,60.0,52.0,31000,Yes
+Muhanga,Southern,2024,Hospitality & Tourism,Level 4,22,49.5,65.0,60.0,52.0,31000,Yes
+Muhanga,Southern,2024,Health & Community Services,Level 5,48,49.5,65.0,60.0,52.0,31000,No
+Muhanga,Southern,2024,Fashion & Garment Making,Level 5,39,49.5,65.0,60.0,52.0,31000,No
+Muhanga,Southern,2024,Plumbing & Sanitation,Level 4,56,49.5,65.0,60.0,52.0,31000,No
+Muhanga,Southern,2024,Welding & Metal Fabrication,Level 4,44,49.5,65.0,60.0,52.0,31000,No
+Muhanga,Southern,2024,Business & Entrepreneurship,Level 5,56,49.5,65.0,60.0,52.0,31000,Yes
+Muhanga,Southern,2024,Renewable Energy,Level 3,48,22,65.0,60.0,52.0,31000,Yes
+Nyamagabe,Southern,2019,Construction & Building Technology,Level 5,33,48.0,58.0,53.0,45.0,25000,No
+Nyamagabe,Southern,2019,Electrical & Electronics,Level 3,36,22,58.0,53.0,45.0,25000,Yes
+Nyamagabe,Southern,2019,Mechanics & Automotive,Level 4,40,48.0,58.0,53.0,45.0,25000,No
+Nyamagabe,Southern,2019,ICT & Computer Science,Level 3,15,22,58.0,53.0,45.0,25000,Yes
+Nyamagabe,Southern,2019,Agriculture & Food Processing,Level 5,39,48.0,58.0,53.0,45.0,25000,Yes
+Nyamagabe,Southern,2019,Hospitality & Tourism,Level 4,35,48.0,58.0,53.0,45.0,25000,Yes
+Nyamagabe,Southern,2019,Health & Community Services,Level 5,26,48.0,58.0,53.0,45.0,25000,No
+Nyamagabe,Southern,2019,Fashion & Garment Making,Level 4,27,48.0,58.0,53.0,45.0,25000,No
+Nyamagabe,Southern,2019,Plumbing & Sanitation,Level 4,17,48.0,58.0,53.0,45.0,25000,Yes
+Nyamagabe,Southern,2019,Welding & Metal Fabrication,Level 4,21,48.0,58.0,53.0,45.0,25000,No
+Nyamagabe,Southern,2019,Business & Entrepreneurship,Level 4,40,48.0,58.0,53.0,45.0,25000,Yes
+Nyamagabe,Southern,2019,Renewable Energy,Level 3,25,22,58.0,53.0,45.0,25000,Yes
+Nyamagabe,Southern,2020,Construction & Building Technology,Level 4,35,48.3,59.0,54.0,46.0,26200,Yes
+Nyamagabe,Southern,2020,Electrical & Electronics,Level 3,38,22,59.0,54.0,46.0,26200,Yes
+Nyamagabe,Southern,2020,Mechanics & Automotive,Level 4,42,48.3,59.0,54.0,46.0,26200,Yes
+Nyamagabe,Southern,2020,ICT & Computer Science,Level 2,17,22,59.0,54.0,46.0,26200,Yes
+Nyamagabe,Southern,2020,Agriculture & Food Processing,Level 4,41,48.3,59.0,54.0,46.0,26200,No
+Nyamagabe,Southern,2020,Hospitality & Tourism,Level 2,37,48.3,59.0,54.0,46.0,26200,No
+Nyamagabe,Southern,2020,Health & Community Services,Level 4,28,48.3,59.0,54.0,46.0,26200,No
+Nyamagabe,Southern,2020,Fashion & Garment Making,Level 5,29,48.3,59.0,54.0,46.0,26200,No
+Nyamagabe,Southern,2020,Plumbing & Sanitation,Level 3,19,48.3,59.0,54.0,46.0,26200,Yes
+Nyamagabe,Southern,2020,Welding & Metal Fabrication,Level 5,23,48.3,59.0,54.0,46.0,26200,No
+Nyamagabe,Southern,2020,Business & Entrepreneurship,Level 2,42,48.3,59.0,54.0,46.0,26200,No
+Nyamagabe,Southern,2020,Renewable Energy,Level 5,27,22,59.0,54.0,46.0,26200,Yes
+Nyamagabe,Southern,2021,Construction & Building Technology,Level 3,37,48.6,60.5,55.5,47.5,27400,No
+Nyamagabe,Southern,2021,Electrical & Electronics,Level 5,40,22,60.5,55.5,47.5,27400,Yes
+Nyamagabe,Southern,2021,Mechanics & Automotive,Level 2,44,48.6,60.5,55.5,47.5,27400,No
+Nyamagabe,Southern,2021,ICT & Computer Science,Level 5,19,22,60.5,55.5,47.5,27400,Yes
+Nyamagabe,Southern,2021,Agriculture & Food Processing,Level 5,43,48.6,60.5,55.5,47.5,27400,Yes
+Nyamagabe,Southern,2021,Hospitality & Tourism,Level 3,39,48.6,60.5,55.5,47.5,27400,No
+Nyamagabe,Southern,2021,Health & Community Services,Level 2,30,48.6,60.5,55.5,47.5,27400,No
+Nyamagabe,Southern,2021,Fashion & Garment Making,Level 2,31,48.6,60.5,55.5,47.5,27400,No
+Nyamagabe,Southern,2021,Plumbing & Sanitation,Level 5,21,48.6,60.5,55.5,47.5,27400,No
+Nyamagabe,Southern,2021,Welding & Metal Fabrication,Level 3,25,48.6,60.5,55.5,47.5,27400,Yes
+Nyamagabe,Southern,2021,Business & Entrepreneurship,Level 2,44,48.6,60.5,55.5,47.5,27400,Yes
+Nyamagabe,Southern,2021,Renewable Energy,Level 2,29,22,60.5,55.5,47.5,27400,Yes
+Nyamagabe,Southern,2022,Construction & Building Technology,Level 2,39,48.9,62.0,57.0,49.0,28600,No
+Nyamagabe,Southern,2022,Electrical & Electronics,Level 4,42,22,62.0,57.0,49.0,28600,Yes
+Nyamagabe,Southern,2022,Mechanics & Automotive,Level 5,46,48.9,62.0,57.0,49.0,28600,No
+Nyamagabe,Southern,2022,ICT & Computer Science,Level 3,21,22,62.0,57.0,49.0,28600,Yes
+Nyamagabe,Southern,2022,Agriculture & Food Processing,Level 4,45,48.9,62.0,57.0,49.0,28600,Yes
+Nyamagabe,Southern,2022,Hospitality & Tourism,Level 3,41,48.9,62.0,57.0,49.0,28600,Yes
+Nyamagabe,Southern,2022,Health & Community Services,Level 4,32,48.9,62.0,57.0,49.0,28600,No
+Nyamagabe,Southern,2022,Fashion & Garment Making,Level 4,33,48.9,62.0,57.0,49.0,28600,No
+Nyamagabe,Southern,2022,Plumbing & Sanitation,Level 5,23,48.9,62.0,57.0,49.0,28600,Yes
+Nyamagabe,Southern,2022,Welding & Metal Fabrication,Level 2,27,48.9,62.0,57.0,49.0,28600,No
+Nyamagabe,Southern,2022,Business & Entrepreneurship,Level 2,46,48.9,62.0,57.0,49.0,28600,Yes
+Nyamagabe,Southern,2022,Renewable Energy,Level 2,31,22,62.0,57.0,49.0,28600,Yes
+Nyamagabe,Southern,2023,Construction & Building Technology,Level 5,41,49.2,63.5,58.5,50.5,29800,No
+Nyamagabe,Southern,2023,Electrical & Electronics,Level 3,44,22,63.5,58.5,50.5,29800,Yes
+Nyamagabe,Southern,2023,Mechanics & Automotive,Level 3,48,49.2,63.5,58.5,50.5,29800,No
+Nyamagabe,Southern,2023,ICT & Computer Science,Level 3,23,22,63.5,58.5,50.5,29800,Yes
+Nyamagabe,Southern,2023,Agriculture & Food Processing,Level 2,47,49.2,63.5,58.5,50.5,29800,No
+Nyamagabe,Southern,2023,Hospitality & Tourism,Level 3,43,49.2,63.5,58.5,50.5,29800,No
+Nyamagabe,Southern,2023,Health & Community Services,Level 3,34,49.2,63.5,58.5,50.5,29800,Yes
+Nyamagabe,Southern,2023,Fashion & Garment Making,Level 4,35,49.2,63.5,58.5,50.5,29800,No
+Nyamagabe,Southern,2023,Plumbing & Sanitation,Level 3,25,49.2,63.5,58.5,50.5,29800,Yes
+Nyamagabe,Southern,2023,Welding & Metal Fabrication,Level 4,29,49.2,63.5,58.5,50.5,29800,No
+Nyamagabe,Southern,2023,Business & Entrepreneurship,Level 3,48,49.2,63.5,58.5,50.5,29800,Yes
+Nyamagabe,Southern,2023,Renewable Energy,Level 2,33,22,63.5,58.5,50.5,29800,Yes
+Nyamagabe,Southern,2024,Construction & Building Technology,Level 4,43,49.5,65.0,60.0,52.0,31000,No
+Nyamagabe,Southern,2024,Electrical & Electronics,Level 4,46,22,65.0,60.0,52.0,31000,Yes
+Nyamagabe,Southern,2024,Mechanics & Automotive,Level 4,50,49.5,65.0,60.0,52.0,31000,Yes
+Nyamagabe,Southern,2024,ICT & Computer Science,Level 2,25,22,65.0,60.0,52.0,31000,Yes
+Nyamagabe,Southern,2024,Agriculture & Food Processing,Level 2,49,49.5,65.0,60.0,52.0,31000,No
+Nyamagabe,Southern,2024,Hospitality & Tourism,Level 3,45,49.5,65.0,60.0,52.0,31000,No
+Nyamagabe,Southern,2024,Health & Community Services,Level 4,36,49.5,65.0,60.0,52.0,31000,No
+Nyamagabe,Southern,2024,Fashion & Garment Making,Level 4,37,49.5,65.0,60.0,52.0,31000,No
+Nyamagabe,Southern,2024,Plumbing & Sanitation,Level 5,27,49.5,65.0,60.0,52.0,31000,Yes
+Nyamagabe,Southern,2024,Welding & Metal Fabrication,Level 3,31,49.5,65.0,60.0,52.0,31000,Yes
+Nyamagabe,Southern,2024,Business & Entrepreneurship,Level 4,50,49.5,65.0,60.0,52.0,31000,No
+Nyamagabe,Southern,2024,Renewable Energy,Level 4,35,22,65.0,60.0,52.0,31000,Yes
+Nyamasheke,Southern,2019,Construction & Building Technology,Level 5,22,48.0,58.0,53.0,45.0,25000,Yes
+Nyamasheke,Southern,2019,Electrical & Electronics,Level 4,16,22,58.0,53.0,45.0,25000,Yes
+Nyamasheke,Southern,2019,Mechanics & Automotive,Level 2,19,48.0,58.0,53.0,45.0,25000,No
+Nyamasheke,Southern,2019,ICT & Computer Science,Level 5,38,22,58.0,53.0,45.0,25000,Yes
+Nyamasheke,Southern,2019,Agriculture & Food Processing,Level 2,39,48.0,58.0,53.0,45.0,25000,No
+Nyamasheke,Southern,2019,Hospitality & Tourism,Level 4,42,48.0,58.0,53.0,45.0,25000,No
+Nyamasheke,Southern,2019,Health & Community Services,Level 2,26,48.0,58.0,53.0,45.0,25000,No
+Nyamasheke,Southern,2019,Fashion & Garment Making,Level 5,25,48.0,58.0,53.0,45.0,25000,No
+Nyamasheke,Southern,2019,Plumbing & Sanitation,Level 2,18,48.0,58.0,53.0,45.0,25000,Yes
+Nyamasheke,Southern,2019,Welding & Metal Fabrication,Level 4,13,48.0,58.0,53.0,45.0,25000,No
+Nyamasheke,Southern,2019,Business & Entrepreneurship,Level 3,14,48.0,58.0,53.0,45.0,25000,No
+Nyamasheke,Southern,2019,Renewable Energy,Level 3,17,22,58.0,53.0,45.0,25000,Yes
+Nyamasheke,Southern,2020,Construction & Building Technology,Level 5,24,48.3,59.0,54.0,46.0,26200,No
+Nyamasheke,Southern,2020,Electrical & Electronics,Level 5,18,22,59.0,54.0,46.0,26200,Yes
+Nyamasheke,Southern,2020,Mechanics & Automotive,Level 4,21,48.3,59.0,54.0,46.0,26200,Yes
+Nyamasheke,Southern,2020,ICT & Computer Science,Level 2,40,22,59.0,54.0,46.0,26200,Yes
+Nyamasheke,Southern,2020,Agriculture & Food Processing,Level 5,41,48.3,59.0,54.0,46.0,26200,No
+Nyamasheke,Southern,2020,Hospitality & Tourism,Level 3,44,48.3,59.0,54.0,46.0,26200,No
+Nyamasheke,Southern,2020,Health & Community Services,Level 5,28,48.3,59.0,54.0,46.0,26200,No
+Nyamasheke,Southern,2020,Fashion & Garment Making,Level 5,27,48.3,59.0,54.0,46.0,26200,Yes
+Nyamasheke,Southern,2020,Plumbing & Sanitation,Level 5,20,48.3,59.0,54.0,46.0,26200,Yes
+Nyamasheke,Southern,2020,Welding & Metal Fabrication,Level 4,15,48.3,59.0,54.0,46.0,26200,No
+Nyamasheke,Southern,2020,Business & Entrepreneurship,Level 5,16,48.3,59.0,54.0,46.0,26200,No
+Nyamasheke,Southern,2020,Renewable Energy,Level 5,19,22,59.0,54.0,46.0,26200,Yes
+Nyamasheke,Southern,2021,Construction & Building Technology,Level 3,26,48.6,60.5,55.5,47.5,27400,No
+Nyamasheke,Southern,2021,Electrical & Electronics,Level 5,20,22,60.5,55.5,47.5,27400,Yes
+Nyamasheke,Southern,2021,Mechanics & Automotive,Level 4,23,48.6,60.5,55.5,47.5,27400,No
+Nyamasheke,Southern,2021,ICT & Computer Science,Level 2,42,22,60.5,55.5,47.5,27400,Yes
+Nyamasheke,Southern,2021,Agriculture & Food Processing,Level 2,43,48.6,60.5,55.5,47.5,27400,No
+Nyamasheke,Southern,2021,Hospitality & Tourism,Level 3,46,48.6,60.5,55.5,47.5,27400,Yes
+Nyamasheke,Southern,2021,Health & Community Services,Level 5,30,48.6,60.5,55.5,47.5,27400,No
+Nyamasheke,Southern,2021,Fashion & Garment Making,Level 4,29,48.6,60.5,55.5,47.5,27400,No
+Nyamasheke,Southern,2021,Plumbing & Sanitation,Level 3,22,48.6,60.5,55.5,47.5,27400,Yes
+Nyamasheke,Southern,2021,Welding & Metal Fabrication,Level 5,17,48.6,60.5,55.5,47.5,27400,Yes
+Nyamasheke,Southern,2021,Business & Entrepreneurship,Level 5,18,48.6,60.5,55.5,47.5,27400,No
+Nyamasheke,Southern,2021,Renewable Energy,Level 2,21,22,60.5,55.5,47.5,27400,Yes
+Nyamasheke,Southern,2022,Construction & Building Technology,Level 2,28,48.9,62.0,57.0,49.0,28600,No
+Nyamasheke,Southern,2022,Electrical & Electronics,Level 4,22,22,62.0,57.0,49.0,28600,Yes
+Nyamasheke,Southern,2022,Mechanics & Automotive,Level 2,25,48.9,62.0,57.0,49.0,28600,Yes
+Nyamasheke,Southern,2022,ICT & Computer Science,Level 2,44,22,62.0,57.0,49.0,28600,Yes
+Nyamasheke,Southern,2022,Agriculture & Food Processing,Level 2,45,48.9,62.0,57.0,49.0,28600,No
+Nyamasheke,Southern,2022,Hospitality & Tourism,Level 2,48,48.9,62.0,57.0,49.0,28600,No
+Nyamasheke,Southern,2022,Health & Community Services,Level 2,32,48.9,62.0,57.0,49.0,28600,Yes
+Nyamasheke,Southern,2022,Fashion & Garment Making,Level 5,31,48.9,62.0,57.0,49.0,28600,No
+Nyamasheke,Southern,2022,Plumbing & Sanitation,Level 5,24,48.9,62.0,57.0,49.0,28600,No
+Nyamasheke,Southern,2022,Welding & Metal Fabrication,Level 4,19,48.9,62.0,57.0,49.0,28600,Yes
+Nyamasheke,Southern,2022,Business & Entrepreneurship,Level 4,20,48.9,62.0,57.0,49.0,28600,No
+Nyamasheke,Southern,2022,Renewable Energy,Level 5,23,22,62.0,57.0,49.0,28600,Yes
+Nyamasheke,Southern,2023,Construction & Building Technology,Level 2,30,49.2,63.5,58.5,50.5,29800,Yes
+Nyamasheke,Southern,2023,Electrical & Electronics,Level 3,24,22,63.5,58.5,50.5,29800,Yes
+Nyamasheke,Southern,2023,Mechanics & Automotive,Level 5,27,49.2,63.5,58.5,50.5,29800,No
+Nyamasheke,Southern,2023,ICT & Computer Science,Level 2,46,22,63.5,58.5,50.5,29800,Yes
+Nyamasheke,Southern,2023,Agriculture & Food Processing,Level 5,47,49.2,63.5,58.5,50.5,29800,No
+Nyamasheke,Southern,2023,Hospitality & Tourism,Level 5,50,49.2,63.5,58.5,50.5,29800,Yes
+Nyamasheke,Southern,2023,Health & Community Services,Level 3,34,49.2,63.5,58.5,50.5,29800,No
+Nyamasheke,Southern,2023,Fashion & Garment Making,Level 3,33,49.2,63.5,58.5,50.5,29800,No
+Nyamasheke,Southern,2023,Plumbing & Sanitation,Level 2,26,49.2,63.5,58.5,50.5,29800,Yes
+Nyamasheke,Southern,2023,Welding & Metal Fabrication,Level 5,21,49.2,63.5,58.5,50.5,29800,No
+Nyamasheke,Southern,2023,Business & Entrepreneurship,Level 2,22,49.2,63.5,58.5,50.5,29800,No
+Nyamasheke,Southern,2023,Renewable Energy,Level 4,25,22,63.5,58.5,50.5,29800,Yes
+Nyamasheke,Southern,2024,Construction & Building Technology,Level 2,32,49.5,65.0,60.0,52.0,31000,Yes
+Nyamasheke,Southern,2024,Electrical & Electronics,Level 2,26,22,65.0,60.0,52.0,31000,Yes
+Nyamasheke,Southern,2024,Mechanics & Automotive,Level 2,29,49.5,65.0,60.0,52.0,31000,No
+Nyamasheke,Southern,2024,ICT & Computer Science,Level 5,48,22,65.0,60.0,52.0,31000,Yes
+Nyamasheke,Southern,2024,Agriculture & Food Processing,Level 3,49,49.5,65.0,60.0,52.0,31000,No
+Nyamasheke,Southern,2024,Hospitality & Tourism,Level 2,52,49.5,65.0,60.0,52.0,31000,Yes
+Nyamasheke,Southern,2024,Health & Community Services,Level 5,36,49.5,65.0,60.0,52.0,31000,No
+Nyamasheke,Southern,2024,Fashion & Garment Making,Level 2,35,49.5,65.0,60.0,52.0,31000,No
+Nyamasheke,Southern,2024,Plumbing & Sanitation,Level 4,28,49.5,65.0,60.0,52.0,31000,Yes
+Nyamasheke,Southern,2024,Welding & Metal Fabrication,Level 3,23,49.5,65.0,60.0,52.0,31000,No
+Nyamasheke,Southern,2024,Business & Entrepreneurship,Level 3,24,49.5,65.0,60.0,52.0,31000,No
+Nyamasheke,Southern,2024,Renewable Energy,Level 4,27,22,65.0,60.0,52.0,31000,Yes
+Nyanza,Southern,2019,Construction & Building Technology,Level 4,40,48.0,58.0,53.0,45.0,25000,Yes
+Nyanza,Southern,2019,Electrical & Electronics,Level 2,33,22,58.0,53.0,45.0,25000,Yes
+Nyanza,Southern,2019,Mechanics & Automotive,Level 4,32,48.0,58.0,53.0,45.0,25000,Yes
+Nyanza,Southern,2019,ICT & Computer Science,Level 2,39,22,58.0,53.0,45.0,25000,Yes
+Nyanza,Southern,2019,Agriculture & Food Processing,Level 2,38,48.0,58.0,53.0,45.0,25000,No
+Nyanza,Southern,2019,Hospitality & Tourism,Level 4,30,48.0,58.0,53.0,45.0,25000,Yes
+Nyanza,Southern,2019,Health & Community Services,Level 3,14,48.0,58.0,53.0,45.0,25000,Yes
+Nyanza,Southern,2019,Fashion & Garment Making,Level 4,36,48.0,58.0,53.0,45.0,25000,No
+Nyanza,Southern,2019,Plumbing & Sanitation,Level 2,12,48.0,58.0,53.0,45.0,25000,No
+Nyanza,Southern,2019,Welding & Metal Fabrication,Level 5,27,48.0,58.0,53.0,45.0,25000,Yes
+Nyanza,Southern,2019,Business & Entrepreneurship,Level 5,32,48.0,58.0,53.0,45.0,25000,No
+Nyanza,Southern,2019,Renewable Energy,Level 3,22,22,58.0,53.0,45.0,25000,Yes
+Nyanza,Southern,2020,Construction & Building Technology,Level 5,42,48.3,59.0,54.0,46.0,26200,No
+Nyanza,Southern,2020,Electrical & Electronics,Level 2,35,22,59.0,54.0,46.0,26200,Yes
+Nyanza,Southern,2020,Mechanics & Automotive,Level 2,34,48.3,59.0,54.0,46.0,26200,No
+Nyanza,Southern,2020,ICT & Computer Science,Level 2,41,22,59.0,54.0,46.0,26200,Yes
+Nyanza,Southern,2020,Agriculture & Food Processing,Level 5,40,48.3,59.0,54.0,46.0,26200,No
+Nyanza,Southern,2020,Hospitality & Tourism,Level 4,32,48.3,59.0,54.0,46.0,26200,Yes
+Nyanza,Southern,2020,Health & Community Services,Level 3,16,48.3,59.0,54.0,46.0,26200,No
+Nyanza,Southern,2020,Fashion & Garment Making,Level 2,38,48.3,59.0,54.0,46.0,26200,No
+Nyanza,Southern,2020,Plumbing & Sanitation,Level 5,14,48.3,59.0,54.0,46.0,26200,No
+Nyanza,Southern,2020,Welding & Metal Fabrication,Level 5,29,48.3,59.0,54.0,46.0,26200,Yes
+Nyanza,Southern,2020,Business & Entrepreneurship,Level 3,34,48.3,59.0,54.0,46.0,26200,No
+Nyanza,Southern,2020,Renewable Energy,Level 4,24,22,59.0,54.0,46.0,26200,Yes
+Nyanza,Southern,2021,Construction & Building Technology,Level 4,44,48.6,60.5,55.5,47.5,27400,Yes
+Nyanza,Southern,2021,Electrical & Electronics,Level 2,37,22,60.5,55.5,47.5,27400,Yes
+Nyanza,Southern,2021,Mechanics & Automotive,Level 3,36,48.6,60.5,55.5,47.5,27400,Yes
+Nyanza,Southern,2021,ICT & Computer Science,Level 4,43,22,60.5,55.5,47.5,27400,Yes
+Nyanza,Southern,2021,Agriculture & Food Processing,Level 3,42,48.6,60.5,55.5,47.5,27400,No
+Nyanza,Southern,2021,Hospitality & Tourism,Level 5,34,48.6,60.5,55.5,47.5,27400,No
+Nyanza,Southern,2021,Health & Community Services,Level 2,18,48.6,60.5,55.5,47.5,27400,No
+Nyanza,Southern,2021,Fashion & Garment Making,Level 2,40,48.6,60.5,55.5,47.5,27400,Yes
+Nyanza,Southern,2021,Plumbing & Sanitation,Level 2,16,48.6,60.5,55.5,47.5,27400,No
+Nyanza,Southern,2021,Welding & Metal Fabrication,Level 4,31,48.6,60.5,55.5,47.5,27400,Yes
+Nyanza,Southern,2021,Business & Entrepreneurship,Level 2,36,48.6,60.5,55.5,47.5,27400,Yes
+Nyanza,Southern,2021,Renewable Energy,Level 2,26,22,60.5,55.5,47.5,27400,Yes
+Nyanza,Southern,2022,Construction & Building Technology,Level 3,46,48.9,62.0,57.0,49.0,28600,No
+Nyanza,Southern,2022,Electrical & Electronics,Level 4,39,22,62.0,57.0,49.0,28600,Yes
+Nyanza,Southern,2022,Mechanics & Automotive,Level 4,38,48.9,62.0,57.0,49.0,28600,No
+Nyanza,Southern,2022,ICT & Computer Science,Level 4,45,22,62.0,57.0,49.0,28600,Yes
+Nyanza,Southern,2022,Agriculture & Food Processing,Level 3,44,48.9,62.0,57.0,49.0,28600,No
+Nyanza,Southern,2022,Hospitality & Tourism,Level 4,36,48.9,62.0,57.0,49.0,28600,No
+Nyanza,Southern,2022,Health & Community Services,Level 2,20,48.9,62.0,57.0,49.0,28600,No
+Nyanza,Southern,2022,Fashion & Garment Making,Level 2,42,48.9,62.0,57.0,49.0,28600,No
+Nyanza,Southern,2022,Plumbing & Sanitation,Level 3,18,48.9,62.0,57.0,49.0,28600,No
+Nyanza,Southern,2022,Welding & Metal Fabrication,Level 5,33,48.9,62.0,57.0,49.0,28600,No
+Nyanza,Southern,2022,Business & Entrepreneurship,Level 4,38,48.9,62.0,57.0,49.0,28600,No
+Nyanza,Southern,2022,Renewable Energy,Level 3,28,22,62.0,57.0,49.0,28600,Yes
+Nyanza,Southern,2023,Construction & Building Technology,Level 3,48,49.2,63.5,58.5,50.5,29800,No
+Nyanza,Southern,2023,Electrical & Electronics,Level 4,41,22,63.5,58.5,50.5,29800,Yes
+Nyanza,Southern,2023,Mechanics & Automotive,Level 5,40,49.2,63.5,58.5,50.5,29800,No
+Nyanza,Southern,2023,ICT & Computer Science,Level 2,47,22,63.5,58.5,50.5,29800,Yes
+Nyanza,Southern,2023,Agriculture & Food Processing,Level 3,46,49.2,63.5,58.5,50.5,29800,No
+Nyanza,Southern,2023,Hospitality & Tourism,Level 3,38,49.2,63.5,58.5,50.5,29800,No
+Nyanza,Southern,2023,Health & Community Services,Level 5,22,49.2,63.5,58.5,50.5,29800,No
+Nyanza,Southern,2023,Fashion & Garment Making,Level 4,44,49.2,63.5,58.5,50.5,29800,Yes
+Nyanza,Southern,2023,Plumbing & Sanitation,Level 4,20,49.2,63.5,58.5,50.5,29800,Yes
+Nyanza,Southern,2023,Welding & Metal Fabrication,Level 2,35,49.2,63.5,58.5,50.5,29800,Yes
+Nyanza,Southern,2023,Business & Entrepreneurship,Level 5,40,49.2,63.5,58.5,50.5,29800,No
+Nyanza,Southern,2023,Renewable Energy,Level 3,30,22,63.5,58.5,50.5,29800,Yes
+Nyanza,Southern,2024,Construction & Building Technology,Level 5,50,49.5,65.0,60.0,52.0,31000,No
+Nyanza,Southern,2024,Electrical & Electronics,Level 5,43,22,65.0,60.0,52.0,31000,Yes
+Nyanza,Southern,2024,Mechanics & Automotive,Level 5,42,49.5,65.0,60.0,52.0,31000,Yes
+Nyanza,Southern,2024,ICT & Computer Science,Level 3,49,22,65.0,60.0,52.0,31000,Yes
+Nyanza,Southern,2024,Agriculture & Food Processing,Level 2,48,49.5,65.0,60.0,52.0,31000,Yes
+Nyanza,Southern,2024,Hospitality & Tourism,Level 3,40,49.5,65.0,60.0,52.0,31000,Yes
+Nyanza,Southern,2024,Health & Community Services,Level 4,24,49.5,65.0,60.0,52.0,31000,Yes
+Nyanza,Southern,2024,Fashion & Garment Making,Level 5,46,49.5,65.0,60.0,52.0,31000,No
+Nyanza,Southern,2024,Plumbing & Sanitation,Level 5,22,49.5,65.0,60.0,52.0,31000,No
+Nyanza,Southern,2024,Welding & Metal Fabrication,Level 2,37,49.5,65.0,60.0,52.0,31000,Yes
+Nyanza,Southern,2024,Business & Entrepreneurship,Level 3,42,49.5,65.0,60.0,52.0,31000,No
+Nyanza,Southern,2024,Renewable Energy,Level 4,32,22,65.0,60.0,52.0,31000,Yes
+Ruhango,Southern,2019,Construction & Building Technology,Level 5,21,48.0,58.0,53.0,45.0,25000,No
+Ruhango,Southern,2019,Electrical & Electronics,Level 2,40,22,58.0,53.0,45.0,25000,Yes
+Ruhango,Southern,2019,Mechanics & Automotive,Level 2,15,48.0,58.0,53.0,45.0,25000,No
+Ruhango,Southern,2019,ICT & Computer Science,Level 4,38,22,58.0,53.0,45.0,25000,Yes
+Ruhango,Southern,2019,Agriculture & Food Processing,Level 3,31,48.0,58.0,53.0,45.0,25000,Yes
+Ruhango,Southern,2019,Hospitality & Tourism,Level 3,22,48.0,58.0,53.0,45.0,25000,Yes
+Ruhango,Southern,2019,Health & Community Services,Level 5,24,48.0,58.0,53.0,45.0,25000,Yes
+Ruhango,Southern,2019,Fashion & Garment Making,Level 5,24,48.0,58.0,53.0,45.0,25000,Yes
+Ruhango,Southern,2019,Plumbing & Sanitation,Level 5,45,48.0,58.0,53.0,45.0,25000,Yes
+Ruhango,Southern,2019,Welding & Metal Fabrication,Level 2,16,48.0,58.0,53.0,45.0,25000,No
+Ruhango,Southern,2019,Business & Entrepreneurship,Level 4,22,48.0,58.0,53.0,45.0,25000,No
+Ruhango,Southern,2019,Renewable Energy,Level 3,39,22,58.0,53.0,45.0,25000,Yes
+Ruhango,Southern,2020,Construction & Building Technology,Level 2,23,48.3,59.0,54.0,46.0,26200,No
+Ruhango,Southern,2020,Electrical & Electronics,Level 2,42,22,59.0,54.0,46.0,26200,Yes
+Ruhango,Southern,2020,Mechanics & Automotive,Level 3,17,48.3,59.0,54.0,46.0,26200,Yes
+Ruhango,Southern,2020,ICT & Computer Science,Level 2,40,22,59.0,54.0,46.0,26200,Yes
+Ruhango,Southern,2020,Agriculture & Food Processing,Level 4,33,48.3,59.0,54.0,46.0,26200,No
+Ruhango,Southern,2020,Hospitality & Tourism,Level 2,24,48.3,59.0,54.0,46.0,26200,No
+Ruhango,Southern,2020,Health & Community Services,Level 4,26,48.3,59.0,54.0,46.0,26200,No
+Ruhango,Southern,2020,Fashion & Garment Making,Level 3,26,48.3,59.0,54.0,46.0,26200,No
+Ruhango,Southern,2020,Plumbing & Sanitation,Level 4,47,48.3,59.0,54.0,46.0,26200,No
+Ruhango,Southern,2020,Welding & Metal Fabrication,Level 5,18,48.3,59.0,54.0,46.0,26200,No
+Ruhango,Southern,2020,Business & Entrepreneurship,Level 3,24,48.3,59.0,54.0,46.0,26200,Yes
+Ruhango,Southern,2020,Renewable Energy,Level 5,41,22,59.0,54.0,46.0,26200,Yes
+Ruhango,Southern,2021,Construction & Building Technology,Level 3,25,48.6,60.5,55.5,47.5,27400,No
+Ruhango,Southern,2021,Electrical & Electronics,Level 2,44,22,60.5,55.5,47.5,27400,Yes
+Ruhango,Southern,2021,Mechanics & Automotive,Level 3,19,48.6,60.5,55.5,47.5,27400,Yes
+Ruhango,Southern,2021,ICT & Computer Science,Level 5,42,22,60.5,55.5,47.5,27400,Yes
+Ruhango,Southern,2021,Agriculture & Food Processing,Level 2,35,48.6,60.5,55.5,47.5,27400,No
+Ruhango,Southern,2021,Hospitality & Tourism,Level 3,26,48.6,60.5,55.5,47.5,27400,No
+Ruhango,Southern,2021,Health & Community Services,Level 5,28,48.6,60.5,55.5,47.5,27400,Yes
+Ruhango,Southern,2021,Fashion & Garment Making,Level 4,28,48.6,60.5,55.5,47.5,27400,Yes
+Ruhango,Southern,2021,Plumbing & Sanitation,Level 3,49,48.6,60.5,55.5,47.5,27400,No
+Ruhango,Southern,2021,Welding & Metal Fabrication,Level 5,20,48.6,60.5,55.5,47.5,27400,Yes
+Ruhango,Southern,2021,Business & Entrepreneurship,Level 4,26,48.6,60.5,55.5,47.5,27400,No
+Ruhango,Southern,2021,Renewable Energy,Level 5,43,22,60.5,55.5,47.5,27400,Yes
+Ruhango,Southern,2022,Construction & Building Technology,Level 3,27,48.9,62.0,57.0,49.0,28600,No
+Ruhango,Southern,2022,Electrical & Electronics,Level 3,46,22,62.0,57.0,49.0,28600,Yes
+Ruhango,Southern,2022,Mechanics & Automotive,Level 3,21,48.9,62.0,57.0,49.0,28600,No
+Ruhango,Southern,2022,ICT & Computer Science,Level 2,44,22,62.0,57.0,49.0,28600,Yes
+Ruhango,Southern,2022,Agriculture & Food Processing,Level 4,37,48.9,62.0,57.0,49.0,28600,No
+Ruhango,Southern,2022,Hospitality & Tourism,Level 5,28,48.9,62.0,57.0,49.0,28600,No
+Ruhango,Southern,2022,Health & Community Services,Level 4,30,48.9,62.0,57.0,49.0,28600,No
+Ruhango,Southern,2022,Fashion & Garment Making,Level 2,30,48.9,62.0,57.0,49.0,28600,No
+Ruhango,Southern,2022,Plumbing & Sanitation,Level 3,51,48.9,62.0,57.0,49.0,28600,No
+Ruhango,Southern,2022,Welding & Metal Fabrication,Level 4,22,48.9,62.0,57.0,49.0,28600,No
+Ruhango,Southern,2022,Business & Entrepreneurship,Level 2,28,48.9,62.0,57.0,49.0,28600,Yes
+Ruhango,Southern,2022,Renewable Energy,Level 3,45,22,62.0,57.0,49.0,28600,Yes
+Ruhango,Southern,2023,Construction & Building Technology,Level 5,29,49.2,63.5,58.5,50.5,29800,No
+Ruhango,Southern,2023,Electrical & Electronics,Level 3,48,22,63.5,58.5,50.5,29800,Yes
+Ruhango,Southern,2023,Mechanics & Automotive,Level 2,23,49.2,63.5,58.5,50.5,29800,No
+Ruhango,Southern,2023,ICT & Computer Science,Level 5,46,22,63.5,58.5,50.5,29800,Yes
+Ruhango,Southern,2023,Agriculture & Food Processing,Level 3,39,49.2,63.5,58.5,50.5,29800,No
+Ruhango,Southern,2023,Hospitality & Tourism,Level 5,30,49.2,63.5,58.5,50.5,29800,No
+Ruhango,Southern,2023,Health & Community Services,Level 3,32,49.2,63.5,58.5,50.5,29800,No
+Ruhango,Southern,2023,Fashion & Garment Making,Level 2,32,49.2,63.5,58.5,50.5,29800,Yes
+Ruhango,Southern,2023,Plumbing & Sanitation,Level 3,53,49.2,63.5,58.5,50.5,29800,Yes
+Ruhango,Southern,2023,Welding & Metal Fabrication,Level 5,24,49.2,63.5,58.5,50.5,29800,No
+Ruhango,Southern,2023,Business & Entrepreneurship,Level 2,30,49.2,63.5,58.5,50.5,29800,No
+Ruhango,Southern,2023,Renewable Energy,Level 5,47,22,63.5,58.5,50.5,29800,Yes
+Ruhango,Southern,2024,Construction & Building Technology,Level 3,31,49.5,65.0,60.0,52.0,31000,No
+Ruhango,Southern,2024,Electrical & Electronics,Level 4,50,22,65.0,60.0,52.0,31000,Yes
+Ruhango,Southern,2024,Mechanics & Automotive,Level 4,25,49.5,65.0,60.0,52.0,31000,No
+Ruhango,Southern,2024,ICT & Computer Science,Level 5,48,22,65.0,60.0,52.0,31000,Yes
+Ruhango,Southern,2024,Agriculture & Food Processing,Level 2,41,49.5,65.0,60.0,52.0,31000,No
+Ruhango,Southern,2024,Hospitality & Tourism,Level 2,32,49.5,65.0,60.0,52.0,31000,Yes
+Ruhango,Southern,2024,Health & Community Services,Level 3,34,49.5,65.0,60.0,52.0,31000,No
+Ruhango,Southern,2024,Fashion & Garment Making,Level 4,34,49.5,65.0,60.0,52.0,31000,No
+Ruhango,Southern,2024,Plumbing & Sanitation,Level 4,55,49.5,65.0,60.0,52.0,31000,No
+Ruhango,Southern,2024,Welding & Metal Fabrication,Level 2,26,49.5,65.0,60.0,52.0,31000,No
+Ruhango,Southern,2024,Business & Entrepreneurship,Level 5,32,49.5,65.0,60.0,52.0,31000,No
+Ruhango,Southern,2024,Renewable Energy,Level 5,49,22,65.0,60.0,52.0,31000,Yes
+Karongi,Western,2019,Construction & Building Technology,Level 4,45,48.0,58.0,53.0,45.0,25000,No
+Karongi,Western,2019,Electrical & Electronics,Level 3,28,22,58.0,53.0,45.0,25000,Yes
+Karongi,Western,2019,Mechanics & Automotive,Level 5,23,48.0,58.0,53.0,45.0,25000,Yes
+Karongi,Western,2019,ICT & Computer Science,Level 3,22,22,58.0,53.0,45.0,25000,Yes
+Karongi,Western,2019,Agriculture & Food Processing,Level 5,39,48.0,58.0,53.0,45.0,25000,Yes
+Karongi,Western,2019,Hospitality & Tourism,Level 5,33,48.0,58.0,53.0,45.0,25000,No
+Karongi,Western,2019,Health & Community Services,Level 5,35,48.0,58.0,53.0,45.0,25000,No
+Karongi,Western,2019,Fashion & Garment Making,Level 2,36,48.0,58.0,53.0,45.0,25000,Yes
+Karongi,Western,2019,Plumbing & Sanitation,Level 4,45,48.0,58.0,53.0,45.0,25000,Yes
+Karongi,Western,2019,Welding & Metal Fabrication,Level 2,38,48.0,58.0,53.0,45.0,25000,No
+Karongi,Western,2019,Business & Entrepreneurship,Level 3,43,48.0,58.0,53.0,45.0,25000,No
+Karongi,Western,2019,Renewable Energy,Level 2,16,22,58.0,53.0,45.0,25000,Yes
+Karongi,Western,2020,Construction & Building Technology,Level 2,47,48.3,59.0,54.0,46.0,26200,Yes
+Karongi,Western,2020,Electrical & Electronics,Level 3,30,22,59.0,54.0,46.0,26200,Yes
+Karongi,Western,2020,Mechanics & Automotive,Level 4,25,48.3,59.0,54.0,46.0,26200,No
+Karongi,Western,2020,ICT & Computer Science,Level 4,24,22,59.0,54.0,46.0,26200,Yes
+Karongi,Western,2020,Agriculture & Food Processing,Level 4,41,48.3,59.0,54.0,46.0,26200,Yes
+Karongi,Western,2020,Hospitality & Tourism,Level 2,35,48.3,59.0,54.0,46.0,26200,Yes
+Karongi,Western,2020,Health & Community Services,Level 4,37,48.3,59.0,54.0,46.0,26200,Yes
+Karongi,Western,2020,Fashion & Garment Making,Level 2,38,48.3,59.0,54.0,46.0,26200,Yes
+Karongi,Western,2020,Plumbing & Sanitation,Level 3,47,48.3,59.0,54.0,46.0,26200,Yes
+Karongi,Western,2020,Welding & Metal Fabrication,Level 3,40,48.3,59.0,54.0,46.0,26200,No
+Karongi,Western,2020,Business & Entrepreneurship,Level 3,45,48.3,59.0,54.0,46.0,26200,No
+Karongi,Western,2020,Renewable Energy,Level 2,18,22,59.0,54.0,46.0,26200,Yes
+Karongi,Western,2021,Construction & Building Technology,Level 2,49,48.6,60.5,55.5,47.5,27400,No
+Karongi,Western,2021,Electrical & Electronics,Level 4,32,22,60.5,55.5,47.5,27400,Yes
+Karongi,Western,2021,Mechanics & Automotive,Level 5,27,48.6,60.5,55.5,47.5,27400,Yes
+Karongi,Western,2021,ICT & Computer Science,Level 5,26,22,60.5,55.5,47.5,27400,Yes
+Karongi,Western,2021,Agriculture & Food Processing,Level 3,43,48.6,60.5,55.5,47.5,27400,Yes
+Karongi,Western,2021,Hospitality & Tourism,Level 5,37,48.6,60.5,55.5,47.5,27400,No
+Karongi,Western,2021,Health & Community Services,Level 5,39,48.6,60.5,55.5,47.5,27400,No
+Karongi,Western,2021,Fashion & Garment Making,Level 3,40,48.6,60.5,55.5,47.5,27400,No
+Karongi,Western,2021,Plumbing & Sanitation,Level 4,49,48.6,60.5,55.5,47.5,27400,No
+Karongi,Western,2021,Welding & Metal Fabrication,Level 4,42,48.6,60.5,55.5,47.5,27400,Yes
+Karongi,Western,2021,Business & Entrepreneurship,Level 2,47,48.6,60.5,55.5,47.5,27400,No
+Karongi,Western,2021,Renewable Energy,Level 2,20,22,60.5,55.5,47.5,27400,Yes
+Karongi,Western,2022,Construction & Building Technology,Level 2,51,48.9,62.0,57.0,49.0,28600,No
+Karongi,Western,2022,Electrical & Electronics,Level 3,34,22,62.0,57.0,49.0,28600,Yes
+Karongi,Western,2022,Mechanics & Automotive,Level 5,29,48.9,62.0,57.0,49.0,28600,No
+Karongi,Western,2022,ICT & Computer Science,Level 5,28,22,62.0,57.0,49.0,28600,Yes
+Karongi,Western,2022,Agriculture & Food Processing,Level 4,45,48.9,62.0,57.0,49.0,28600,Yes
+Karongi,Western,2022,Hospitality & Tourism,Level 2,39,48.9,62.0,57.0,49.0,28600,Yes
+Karongi,Western,2022,Health & Community Services,Level 5,41,48.9,62.0,57.0,49.0,28600,No
+Karongi,Western,2022,Fashion & Garment Making,Level 5,42,48.9,62.0,57.0,49.0,28600,No
+Karongi,Western,2022,Plumbing & Sanitation,Level 2,51,48.9,62.0,57.0,49.0,28600,No
+Karongi,Western,2022,Welding & Metal Fabrication,Level 4,44,48.9,62.0,57.0,49.0,28600,No
+Karongi,Western,2022,Business & Entrepreneurship,Level 4,49,48.9,62.0,57.0,49.0,28600,Yes
+Karongi,Western,2022,Renewable Energy,Level 2,22,22,62.0,57.0,49.0,28600,Yes
+Karongi,Western,2023,Construction & Building Technology,Level 5,53,49.2,63.5,58.5,50.5,29800,No
+Karongi,Western,2023,Electrical & Electronics,Level 5,36,22,63.5,58.5,50.5,29800,Yes
+Karongi,Western,2023,Mechanics & Automotive,Level 3,31,49.2,63.5,58.5,50.5,29800,No
+Karongi,Western,2023,ICT & Computer Science,Level 4,30,22,63.5,58.5,50.5,29800,Yes
+Karongi,Western,2023,Agriculture & Food Processing,Level 5,47,49.2,63.5,58.5,50.5,29800,Yes
+Karongi,Western,2023,Hospitality & Tourism,Level 4,41,49.2,63.5,58.5,50.5,29800,No
+Karongi,Western,2023,Health & Community Services,Level 2,43,49.2,63.5,58.5,50.5,29800,Yes
+Karongi,Western,2023,Fashion & Garment Making,Level 3,44,49.2,63.5,58.5,50.5,29800,No
+Karongi,Western,2023,Plumbing & Sanitation,Level 4,53,49.2,63.5,58.5,50.5,29800,Yes
+Karongi,Western,2023,Welding & Metal Fabrication,Level 4,46,49.2,63.5,58.5,50.5,29800,No
+Karongi,Western,2023,Business & Entrepreneurship,Level 5,51,49.2,63.5,58.5,50.5,29800,Yes
+Karongi,Western,2023,Renewable Energy,Level 5,24,22,63.5,58.5,50.5,29800,Yes
+Karongi,Western,2024,Construction & Building Technology,Level 3,55,49.5,65.0,60.0,52.0,31000,No
+Karongi,Western,2024,Electrical & Electronics,Level 3,38,22,65.0,60.0,52.0,31000,Yes
+Karongi,Western,2024,Mechanics & Automotive,Level 5,33,49.5,65.0,60.0,52.0,31000,Yes
+Karongi,Western,2024,ICT & Computer Science,Level 5,32,22,65.0,60.0,52.0,31000,Yes
+Karongi,Western,2024,Agriculture & Food Processing,Level 2,49,49.5,65.0,60.0,52.0,31000,No
+Karongi,Western,2024,Hospitality & Tourism,Level 4,43,49.5,65.0,60.0,52.0,31000,No
+Karongi,Western,2024,Health & Community Services,Level 5,45,49.5,65.0,60.0,52.0,31000,No
+Karongi,Western,2024,Fashion & Garment Making,Level 5,46,49.5,65.0,60.0,52.0,31000,No
+Karongi,Western,2024,Plumbing & Sanitation,Level 3,55,49.5,65.0,60.0,52.0,31000,No
+Karongi,Western,2024,Welding & Metal Fabrication,Level 4,48,49.5,65.0,60.0,52.0,31000,Yes
+Karongi,Western,2024,Business & Entrepreneurship,Level 4,53,49.5,65.0,60.0,52.0,31000,No
+Karongi,Western,2024,Renewable Energy,Level 5,26,22,65.0,60.0,52.0,31000,Yes
+Ngororero,Western,2019,Construction & Building Technology,Level 3,26,48.0,58.0,53.0,45.0,25000,No
+Ngororero,Western,2019,Electrical & Electronics,Level 2,20,22,58.0,53.0,45.0,25000,Yes
+Ngororero,Western,2019,Mechanics & Automotive,Level 3,39,48.0,58.0,53.0,45.0,25000,No
+Ngororero,Western,2019,ICT & Computer Science,Level 2,25,22,58.0,53.0,45.0,25000,Yes
+Ngororero,Western,2019,Agriculture & Food Processing,Level 4,13,48.0,58.0,53.0,45.0,25000,Yes
+Ngororero,Western,2019,Hospitality & Tourism,Level 3,28,48.0,58.0,53.0,45.0,25000,Yes
+Ngororero,Western,2019,Health & Community Services,Level 5,42,48.0,58.0,53.0,45.0,25000,Yes
+Ngororero,Western,2019,Fashion & Garment Making,Level 2,26,48.0,58.0,53.0,45.0,25000,No
+Ngororero,Western,2019,Plumbing & Sanitation,Level 4,46,48.0,58.0,53.0,45.0,25000,No
+Ngororero,Western,2019,Welding & Metal Fabrication,Level 2,46,48.0,58.0,53.0,45.0,25000,Yes
+Ngororero,Western,2019,Business & Entrepreneurship,Level 4,21,48.0,58.0,53.0,45.0,25000,No
+Ngororero,Western,2019,Renewable Energy,Level 4,20,22,58.0,53.0,45.0,25000,Yes
+Ngororero,Western,2020,Construction & Building Technology,Level 2,28,48.3,59.0,54.0,46.0,26200,No
+Ngororero,Western,2020,Electrical & Electronics,Level 2,22,22,59.0,54.0,46.0,26200,Yes
+Ngororero,Western,2020,Mechanics & Automotive,Level 4,41,48.3,59.0,54.0,46.0,26200,No
+Ngororero,Western,2020,ICT & Computer Science,Level 3,27,22,59.0,54.0,46.0,26200,Yes
+Ngororero,Western,2020,Agriculture & Food Processing,Level 4,15,48.3,59.0,54.0,46.0,26200,No
+Ngororero,Western,2020,Hospitality & Tourism,Level 4,30,48.3,59.0,54.0,46.0,26200,No
+Ngororero,Western,2020,Health & Community Services,Level 5,44,48.3,59.0,54.0,46.0,26200,No
+Ngororero,Western,2020,Fashion & Garment Making,Level 2,28,48.3,59.0,54.0,46.0,26200,Yes
+Ngororero,Western,2020,Plumbing & Sanitation,Level 5,48,48.3,59.0,54.0,46.0,26200,No
+Ngororero,Western,2020,Welding & Metal Fabrication,Level 4,48,48.3,59.0,54.0,46.0,26200,No
+Ngororero,Western,2020,Business & Entrepreneurship,Level 3,23,48.3,59.0,54.0,46.0,26200,Yes
+Ngororero,Western,2020,Renewable Energy,Level 5,22,22,59.0,54.0,46.0,26200,Yes
+Ngororero,Western,2021,Construction & Building Technology,Level 2,30,48.6,60.5,55.5,47.5,27400,Yes
+Ngororero,Western,2021,Electrical & Electronics,Level 3,24,22,60.5,55.5,47.5,27400,Yes
+Ngororero,Western,2021,Mechanics & Automotive,Level 2,43,48.6,60.5,55.5,47.5,27400,No
+Ngororero,Western,2021,ICT & Computer Science,Level 4,29,22,60.5,55.5,47.5,27400,Yes
+Ngororero,Western,2021,Agriculture & Food Processing,Level 5,17,48.6,60.5,55.5,47.5,27400,Yes
+Ngororero,Western,2021,Hospitality & Tourism,Level 3,32,48.6,60.5,55.5,47.5,27400,No
+Ngororero,Western,2021,Health & Community Services,Level 2,46,48.6,60.5,55.5,47.5,27400,Yes
+Ngororero,Western,2021,Fashion & Garment Making,Level 3,30,48.6,60.5,55.5,47.5,27400,No
+Ngororero,Western,2021,Plumbing & Sanitation,Level 2,50,48.6,60.5,55.5,47.5,27400,No
+Ngororero,Western,2021,Welding & Metal Fabrication,Level 5,50,48.6,60.5,55.5,47.5,27400,No
+Ngororero,Western,2021,Business & Entrepreneurship,Level 2,25,48.6,60.5,55.5,47.5,27400,No
+Ngororero,Western,2021,Renewable Energy,Level 3,24,22,60.5,55.5,47.5,27400,Yes
+Ngororero,Western,2022,Construction & Building Technology,Level 4,32,48.9,62.0,57.0,49.0,28600,No
+Ngororero,Western,2022,Electrical & Electronics,Level 2,26,22,62.0,57.0,49.0,28600,Yes
+Ngororero,Western,2022,Mechanics & Automotive,Level 2,45,48.9,62.0,57.0,49.0,28600,No
+Ngororero,Western,2022,ICT & Computer Science,Level 2,31,22,62.0,57.0,49.0,28600,Yes
+Ngororero,Western,2022,Agriculture & Food Processing,Level 4,19,48.9,62.0,57.0,49.0,28600,Yes
+Ngororero,Western,2022,Hospitality & Tourism,Level 4,34,48.9,62.0,57.0,49.0,28600,No
+Ngororero,Western,2022,Health & Community Services,Level 3,48,48.9,62.0,57.0,49.0,28600,No
+Ngororero,Western,2022,Fashion & Garment Making,Level 3,32,48.9,62.0,57.0,49.0,28600,No
+Ngororero,Western,2022,Plumbing & Sanitation,Level 4,52,48.9,62.0,57.0,49.0,28600,Yes
+Ngororero,Western,2022,Welding & Metal Fabrication,Level 3,52,48.9,62.0,57.0,49.0,28600,Yes
+Ngororero,Western,2022,Business & Entrepreneurship,Level 2,27,48.9,62.0,57.0,49.0,28600,Yes
+Ngororero,Western,2022,Renewable Energy,Level 4,26,22,62.0,57.0,49.0,28600,Yes
+Ngororero,Western,2023,Construction & Building Technology,Level 5,34,49.2,63.5,58.5,50.5,29800,Yes
+Ngororero,Western,2023,Electrical & Electronics,Level 2,28,22,63.5,58.5,50.5,29800,Yes
+Ngororero,Western,2023,Mechanics & Automotive,Level 3,47,49.2,63.5,58.5,50.5,29800,No
+Ngororero,Western,2023,ICT & Computer Science,Level 2,33,22,63.5,58.5,50.5,29800,Yes
+Ngororero,Western,2023,Agriculture & Food Processing,Level 3,21,49.2,63.5,58.5,50.5,29800,No
+Ngororero,Western,2023,Hospitality & Tourism,Level 2,36,49.2,63.5,58.5,50.5,29800,No
+Ngororero,Western,2023,Health & Community Services,Level 4,50,49.2,63.5,58.5,50.5,29800,No
+Ngororero,Western,2023,Fashion & Garment Making,Level 2,34,49.2,63.5,58.5,50.5,29800,No
+Ngororero,Western,2023,Plumbing & Sanitation,Level 3,54,49.2,63.5,58.5,50.5,29800,No
+Ngororero,Western,2023,Welding & Metal Fabrication,Level 2,54,49.2,63.5,58.5,50.5,29800,No
+Ngororero,Western,2023,Business & Entrepreneurship,Level 5,29,49.2,63.5,58.5,50.5,29800,No
+Ngororero,Western,2023,Renewable Energy,Level 2,28,22,63.5,58.5,50.5,29800,Yes
+Ngororero,Western,2024,Construction & Building Technology,Level 2,36,49.5,65.0,60.0,52.0,31000,Yes
+Ngororero,Western,2024,Electrical & Electronics,Level 4,30,22,65.0,60.0,52.0,31000,Yes
+Ngororero,Western,2024,Mechanics & Automotive,Level 5,49,49.5,65.0,60.0,52.0,31000,Yes
+Ngororero,Western,2024,ICT & Computer Science,Level 2,35,22,65.0,60.0,52.0,31000,Yes
+Ngororero,Western,2024,Agriculture & Food Processing,Level 5,23,49.5,65.0,60.0,52.0,31000,Yes
+Ngororero,Western,2024,Hospitality & Tourism,Level 2,38,49.5,65.0,60.0,52.0,31000,Yes
+Ngororero,Western,2024,Health & Community Services,Level 4,52,49.5,65.0,60.0,52.0,31000,Yes
+Ngororero,Western,2024,Fashion & Garment Making,Level 2,36,49.5,65.0,60.0,52.0,31000,Yes
+Ngororero,Western,2024,Plumbing & Sanitation,Level 2,56,49.5,65.0,60.0,52.0,31000,No
+Ngororero,Western,2024,Welding & Metal Fabrication,Level 5,56,49.5,65.0,60.0,52.0,31000,No
+Ngororero,Western,2024,Business & Entrepreneurship,Level 2,31,49.5,65.0,60.0,52.0,31000,No
+Ngororero,Western,2024,Renewable Energy,Level 5,30,22,65.0,60.0,52.0,31000,Yes
+Nyabihu,Western,2019,Construction & Building Technology,Level 3,32,48.0,58.0,53.0,45.0,25000,No
+Nyabihu,Western,2019,Electrical & Electronics,Level 3,40,22,58.0,53.0,45.0,25000,Yes
+Nyabihu,Western,2019,Mechanics & Automotive,Level 4,46,48.0,58.0,53.0,45.0,25000,No
+Nyabihu,Western,2019,ICT & Computer Science,Level 3,29,22,58.0,53.0,45.0,25000,Yes
+Nyabihu,Western,2019,Agriculture & Food Processing,Level 3,30,48.0,58.0,53.0,45.0,25000,Yes
+Nyabihu,Western,2019,Hospitality & Tourism,Level 2,25,48.0,58.0,53.0,45.0,25000,No
+Nyabihu,Western,2019,Health & Community Services,Level 4,40,48.0,58.0,53.0,45.0,25000,No
+Nyabihu,Western,2019,Fashion & Garment Making,Level 3,25,48.0,58.0,53.0,45.0,25000,No
+Nyabihu,Western,2019,Plumbing & Sanitation,Level 3,33,48.0,58.0,53.0,45.0,25000,No
+Nyabihu,Western,2019,Welding & Metal Fabrication,Level 5,43,48.0,58.0,53.0,45.0,25000,No
+Nyabihu,Western,2019,Business & Entrepreneurship,Level 5,38,48.0,58.0,53.0,45.0,25000,Yes
+Nyabihu,Western,2019,Renewable Energy,Level 2,22,22,58.0,53.0,45.0,25000,Yes
+Nyabihu,Western,2020,Construction & Building Technology,Level 2,34,48.3,59.0,54.0,46.0,26200,No
+Nyabihu,Western,2020,Electrical & Electronics,Level 4,42,22,59.0,54.0,46.0,26200,Yes
+Nyabihu,Western,2020,Mechanics & Automotive,Level 3,48,48.3,59.0,54.0,46.0,26200,No
+Nyabihu,Western,2020,ICT & Computer Science,Level 3,31,22,59.0,54.0,46.0,26200,Yes
+Nyabihu,Western,2020,Agriculture & Food Processing,Level 4,32,48.3,59.0,54.0,46.0,26200,No
+Nyabihu,Western,2020,Hospitality & Tourism,Level 5,27,48.3,59.0,54.0,46.0,26200,No
+Nyabihu,Western,2020,Health & Community Services,Level 5,42,48.3,59.0,54.0,46.0,26200,No
+Nyabihu,Western,2020,Fashion & Garment Making,Level 3,27,48.3,59.0,54.0,46.0,26200,Yes
+Nyabihu,Western,2020,Plumbing & Sanitation,Level 2,35,48.3,59.0,54.0,46.0,26200,Yes
+Nyabihu,Western,2020,Welding & Metal Fabrication,Level 2,45,48.3,59.0,54.0,46.0,26200,No
+Nyabihu,Western,2020,Business & Entrepreneurship,Level 4,40,48.3,59.0,54.0,46.0,26200,No
+Nyabihu,Western,2020,Renewable Energy,Level 2,24,22,59.0,54.0,46.0,26200,Yes
+Nyabihu,Western,2021,Construction & Building Technology,Level 4,36,48.6,60.5,55.5,47.5,27400,Yes
+Nyabihu,Western,2021,Electrical & Electronics,Level 3,44,22,60.5,55.5,47.5,27400,Yes
+Nyabihu,Western,2021,Mechanics & Automotive,Level 4,50,48.6,60.5,55.5,47.5,27400,Yes
+Nyabihu,Western,2021,ICT & Computer Science,Level 4,33,22,60.5,55.5,47.5,27400,Yes
+Nyabihu,Western,2021,Agriculture & Food Processing,Level 4,34,48.6,60.5,55.5,47.5,27400,No
+Nyabihu,Western,2021,Hospitality & Tourism,Level 2,29,48.6,60.5,55.5,47.5,27400,No
+Nyabihu,Western,2021,Health & Community Services,Level 3,44,48.6,60.5,55.5,47.5,27400,No
+Nyabihu,Western,2021,Fashion & Garment Making,Level 3,29,48.6,60.5,55.5,47.5,27400,Yes
+Nyabihu,Western,2021,Plumbing & Sanitation,Level 2,37,48.6,60.5,55.5,47.5,27400,Yes
+Nyabihu,Western,2021,Welding & Metal Fabrication,Level 3,47,48.6,60.5,55.5,47.5,27400,Yes
+Nyabihu,Western,2021,Business & Entrepreneurship,Level 4,42,48.6,60.5,55.5,47.5,27400,Yes
+Nyabihu,Western,2021,Renewable Energy,Level 3,26,22,60.5,55.5,47.5,27400,Yes
+Nyabihu,Western,2022,Construction & Building Technology,Level 2,38,48.9,62.0,57.0,49.0,28600,Yes
+Nyabihu,Western,2022,Electrical & Electronics,Level 3,46,22,62.0,57.0,49.0,28600,Yes
+Nyabihu,Western,2022,Mechanics & Automotive,Level 5,52,48.9,62.0,57.0,49.0,28600,No
+Nyabihu,Western,2022,ICT & Computer Science,Level 5,35,22,62.0,57.0,49.0,28600,Yes
+Nyabihu,Western,2022,Agriculture & Food Processing,Level 4,36,48.9,62.0,57.0,49.0,28600,Yes
+Nyabihu,Western,2022,Hospitality & Tourism,Level 4,31,48.9,62.0,57.0,49.0,28600,Yes
+Nyabihu,Western,2022,Health & Community Services,Level 4,46,48.9,62.0,57.0,49.0,28600,No
+Nyabihu,Western,2022,Fashion & Garment Making,Level 5,31,48.9,62.0,57.0,49.0,28600,No
+Nyabihu,Western,2022,Plumbing & Sanitation,Level 4,39,48.9,62.0,57.0,49.0,28600,Yes
+Nyabihu,Western,2022,Welding & Metal Fabrication,Level 5,49,48.9,62.0,57.0,49.0,28600,No
+Nyabihu,Western,2022,Business & Entrepreneurship,Level 5,44,48.9,62.0,57.0,49.0,28600,No
+Nyabihu,Western,2022,Renewable Energy,Level 4,28,22,62.0,57.0,49.0,28600,Yes
+Nyabihu,Western,2023,Construction & Building Technology,Level 4,40,49.2,63.5,58.5,50.5,29800,No
+Nyabihu,Western,2023,Electrical & Electronics,Level 3,48,22,63.5,58.5,50.5,29800,Yes
+Nyabihu,Western,2023,Mechanics & Automotive,Level 3,54,49.2,63.5,58.5,50.5,29800,No
+Nyabihu,Western,2023,ICT & Computer Science,Level 4,37,22,63.5,58.5,50.5,29800,Yes
+Nyabihu,Western,2023,Agriculture & Food Processing,Level 5,38,49.2,63.5,58.5,50.5,29800,No
+Nyabihu,Western,2023,Hospitality & Tourism,Level 2,33,49.2,63.5,58.5,50.5,29800,No
+Nyabihu,Western,2023,Health & Community Services,Level 5,48,49.2,63.5,58.5,50.5,29800,No
+Nyabihu,Western,2023,Fashion & Garment Making,Level 4,33,49.2,63.5,58.5,50.5,29800,Yes
+Nyabihu,Western,2023,Plumbing & Sanitation,Level 5,41,49.2,63.5,58.5,50.5,29800,No
+Nyabihu,Western,2023,Welding & Metal Fabrication,Level 5,51,49.2,63.5,58.5,50.5,29800,No
+Nyabihu,Western,2023,Business & Entrepreneurship,Level 2,46,49.2,63.5,58.5,50.5,29800,No
+Nyabihu,Western,2023,Renewable Energy,Level 3,30,22,63.5,58.5,50.5,29800,Yes
+Nyabihu,Western,2024,Construction & Building Technology,Level 5,42,49.5,65.0,60.0,52.0,31000,No
+Nyabihu,Western,2024,Electrical & Electronics,Level 3,50,22,65.0,60.0,52.0,31000,Yes
+Nyabihu,Western,2024,Mechanics & Automotive,Level 5,56,49.5,65.0,60.0,52.0,31000,Yes
+Nyabihu,Western,2024,ICT & Computer Science,Level 3,39,22,65.0,60.0,52.0,31000,Yes
+Nyabihu,Western,2024,Agriculture & Food Processing,Level 5,40,49.5,65.0,60.0,52.0,31000,No
+Nyabihu,Western,2024,Hospitality & Tourism,Level 4,35,49.5,65.0,60.0,52.0,31000,Yes
+Nyabihu,Western,2024,Health & Community Services,Level 4,50,49.5,65.0,60.0,52.0,31000,No
+Nyabihu,Western,2024,Fashion & Garment Making,Level 5,35,49.5,65.0,60.0,52.0,31000,No
+Nyabihu,Western,2024,Plumbing & Sanitation,Level 5,43,49.5,65.0,60.0,52.0,31000,No
+Nyabihu,Western,2024,Welding & Metal Fabrication,Level 4,53,49.5,65.0,60.0,52.0,31000,No
+Nyabihu,Western,2024,Business & Entrepreneurship,Level 4,48,49.5,65.0,60.0,52.0,31000,No
+Nyabihu,Western,2024,Renewable Energy,Level 3,32,22,65.0,60.0,52.0,31000,Yes
+Rubavu,Western,2019,Construction & Building Technology,Level 3,42,48.0,58.0,53.0,45.0,25000,No
+Rubavu,Western,2019,Electrical & Electronics,Level 3,12,22,58.0,53.0,45.0,25000,Yes
+Rubavu,Western,2019,Mechanics & Automotive,Level 5,30,48.0,58.0,53.0,45.0,25000,No
+Rubavu,Western,2019,ICT & Computer Science,Level 5,30,22,58.0,53.0,45.0,25000,Yes
+Rubavu,Western,2019,Agriculture & Food Processing,Level 3,14,48.0,58.0,53.0,45.0,25000,No
+Rubavu,Western,2019,Hospitality & Tourism,Level 5,28,48.0,58.0,53.0,45.0,25000,No
+Rubavu,Western,2019,Health & Community Services,Level 2,16,48.0,58.0,53.0,45.0,25000,No
+Rubavu,Western,2019,Fashion & Garment Making,Level 3,16,48.0,58.0,53.0,45.0,25000,Yes
+Rubavu,Western,2019,Plumbing & Sanitation,Level 5,35,48.0,58.0,53.0,45.0,25000,No
+Rubavu,Western,2019,Welding & Metal Fabrication,Level 4,20,48.0,58.0,53.0,45.0,25000,No
+Rubavu,Western,2019,Business & Entrepreneurship,Level 2,25,48.0,58.0,53.0,45.0,25000,Yes
+Rubavu,Western,2019,Renewable Energy,Level 2,20,22,58.0,53.0,45.0,25000,Yes
+Rubavu,Western,2020,Construction & Building Technology,Level 5,44,48.3,59.0,54.0,46.0,26200,Yes
+Rubavu,Western,2020,Electrical & Electronics,Level 5,14,22,59.0,54.0,46.0,26200,Yes
+Rubavu,Western,2020,Mechanics & Automotive,Level 5,32,48.3,59.0,54.0,46.0,26200,No
+Rubavu,Western,2020,ICT & Computer Science,Level 5,32,22,59.0,54.0,46.0,26200,Yes
+Rubavu,Western,2020,Agriculture & Food Processing,Level 2,16,48.3,59.0,54.0,46.0,26200,Yes
+Rubavu,Western,2020,Hospitality & Tourism,Level 3,30,48.3,59.0,54.0,46.0,26200,No
+Rubavu,Western,2020,Health & Community Services,Level 4,18,48.3,59.0,54.0,46.0,26200,No
+Rubavu,Western,2020,Fashion & Garment Making,Level 2,18,48.3,59.0,54.0,46.0,26200,No
+Rubavu,Western,2020,Plumbing & Sanitation,Level 3,37,48.3,59.0,54.0,46.0,26200,Yes
+Rubavu,Western,2020,Welding & Metal Fabrication,Level 4,22,48.3,59.0,54.0,46.0,26200,No
+Rubavu,Western,2020,Business & Entrepreneurship,Level 4,27,48.3,59.0,54.0,46.0,26200,No
+Rubavu,Western,2020,Renewable Energy,Level 4,22,22,59.0,54.0,46.0,26200,Yes
+Rubavu,Western,2021,Construction & Building Technology,Level 3,46,48.6,60.5,55.5,47.5,27400,Yes
+Rubavu,Western,2021,Electrical & Electronics,Level 2,16,22,60.5,55.5,47.5,27400,Yes
+Rubavu,Western,2021,Mechanics & Automotive,Level 3,34,48.6,60.5,55.5,47.5,27400,No
+Rubavu,Western,2021,ICT & Computer Science,Level 3,34,22,60.5,55.5,47.5,27400,Yes
+Rubavu,Western,2021,Agriculture & Food Processing,Level 5,18,48.6,60.5,55.5,47.5,27400,Yes
+Rubavu,Western,2021,Hospitality & Tourism,Level 3,32,48.6,60.5,55.5,47.5,27400,Yes
+Rubavu,Western,2021,Health & Community Services,Level 4,20,48.6,60.5,55.5,47.5,27400,No
+Rubavu,Western,2021,Fashion & Garment Making,Level 4,20,48.6,60.5,55.5,47.5,27400,No
+Rubavu,Western,2021,Plumbing & Sanitation,Level 5,39,48.6,60.5,55.5,47.5,27400,Yes
+Rubavu,Western,2021,Welding & Metal Fabrication,Level 3,24,48.6,60.5,55.5,47.5,27400,Yes
+Rubavu,Western,2021,Business & Entrepreneurship,Level 2,29,48.6,60.5,55.5,47.5,27400,No
+Rubavu,Western,2021,Renewable Energy,Level 2,24,22,60.5,55.5,47.5,27400,Yes
+Rubavu,Western,2022,Construction & Building Technology,Level 5,48,48.9,62.0,57.0,49.0,28600,No
+Rubavu,Western,2022,Electrical & Electronics,Level 5,18,22,62.0,57.0,49.0,28600,Yes
+Rubavu,Western,2022,Mechanics & Automotive,Level 4,36,48.9,62.0,57.0,49.0,28600,Yes
+Rubavu,Western,2022,ICT & Computer Science,Level 4,36,22,62.0,57.0,49.0,28600,Yes
+Rubavu,Western,2022,Agriculture & Food Processing,Level 3,20,48.9,62.0,57.0,49.0,28600,Yes
+Rubavu,Western,2022,Hospitality & Tourism,Level 2,34,48.9,62.0,57.0,49.0,28600,Yes
+Rubavu,Western,2022,Health & Community Services,Level 5,22,48.9,62.0,57.0,49.0,28600,No
+Rubavu,Western,2022,Fashion & Garment Making,Level 4,22,48.9,62.0,57.0,49.0,28600,Yes
+Rubavu,Western,2022,Plumbing & Sanitation,Level 3,41,48.9,62.0,57.0,49.0,28600,No
+Rubavu,Western,2022,Welding & Metal Fabrication,Level 2,26,48.9,62.0,57.0,49.0,28600,No
+Rubavu,Western,2022,Business & Entrepreneurship,Level 4,31,48.9,62.0,57.0,49.0,28600,No
+Rubavu,Western,2022,Renewable Energy,Level 4,26,22,62.0,57.0,49.0,28600,Yes
+Rubavu,Western,2023,Construction & Building Technology,Level 3,50,49.2,63.5,58.5,50.5,29800,No
+Rubavu,Western,2023,Electrical & Electronics,Level 2,20,22,63.5,58.5,50.5,29800,Yes
+Rubavu,Western,2023,Mechanics & Automotive,Level 4,38,49.2,63.5,58.5,50.5,29800,Yes
+Rubavu,Western,2023,ICT & Computer Science,Level 3,38,22,63.5,58.5,50.5,29800,Yes
+Rubavu,Western,2023,Agriculture & Food Processing,Level 5,22,49.2,63.5,58.5,50.5,29800,No
+Rubavu,Western,2023,Hospitality & Tourism,Level 4,36,49.2,63.5,58.5,50.5,29800,No
+Rubavu,Western,2023,Health & Community Services,Level 3,24,49.2,63.5,58.5,50.5,29800,No
+Rubavu,Western,2023,Fashion & Garment Making,Level 2,24,49.2,63.5,58.5,50.5,29800,No
+Rubavu,Western,2023,Plumbing & Sanitation,Level 5,43,49.2,63.5,58.5,50.5,29800,No
+Rubavu,Western,2023,Welding & Metal Fabrication,Level 3,28,49.2,63.5,58.5,50.5,29800,Yes
+Rubavu,Western,2023,Business & Entrepreneurship,Level 3,33,49.2,63.5,58.5,50.5,29800,No
+Rubavu,Western,2023,Renewable Energy,Level 2,28,22,63.5,58.5,50.5,29800,Yes
+Rubavu,Western,2024,Construction & Building Technology,Level 5,52,49.5,65.0,60.0,52.0,31000,No
+Rubavu,Western,2024,Electrical & Electronics,Level 5,22,22,65.0,60.0,52.0,31000,Yes
+Rubavu,Western,2024,Mechanics & Automotive,Level 2,40,49.5,65.0,60.0,52.0,31000,No
+Rubavu,Western,2024,ICT & Computer Science,Level 3,40,22,65.0,60.0,52.0,31000,Yes
+Rubavu,Western,2024,Agriculture & Food Processing,Level 2,24,49.5,65.0,60.0,52.0,31000,No
+Rubavu,Western,2024,Hospitality & Tourism,Level 5,38,49.5,65.0,60.0,52.0,31000,No
+Rubavu,Western,2024,Health & Community Services,Level 2,26,49.5,65.0,60.0,52.0,31000,No
+Rubavu,Western,2024,Fashion & Garment Making,Level 3,26,49.5,65.0,60.0,52.0,31000,No
+Rubavu,Western,2024,Plumbing & Sanitation,Level 5,45,49.5,65.0,60.0,52.0,31000,No
+Rubavu,Western,2024,Welding & Metal Fabrication,Level 4,30,49.5,65.0,60.0,52.0,31000,Yes
+Rubavu,Western,2024,Business & Entrepreneurship,Level 4,35,49.5,65.0,60.0,52.0,31000,No
+Rubavu,Western,2024,Renewable Energy,Level 5,30,22,65.0,60.0,52.0,31000,Yes
+Rusizi,Western,2019,Construction & Building Technology,Level 5,16,48.0,58.0,53.0,45.0,25000,Yes
+Rusizi,Western,2019,Electrical & Electronics,Level 4,41,22,58.0,53.0,45.0,25000,Yes
+Rusizi,Western,2019,Mechanics & Automotive,Level 5,33,48.0,58.0,53.0,45.0,25000,No
+Rusizi,Western,2019,ICT & Computer Science,Level 3,38,22,58.0,53.0,45.0,25000,Yes
+Rusizi,Western,2019,Agriculture & Food Processing,Level 2,15,48.0,58.0,53.0,45.0,25000,No
+Rusizi,Western,2019,Hospitality & Tourism,Level 3,44,48.0,58.0,53.0,45.0,25000,No
+Rusizi,Western,2019,Health & Community Services,Level 5,40,48.0,58.0,53.0,45.0,25000,No
+Rusizi,Western,2019,Fashion & Garment Making,Level 2,43,48.0,58.0,53.0,45.0,25000,No
+Rusizi,Western,2019,Plumbing & Sanitation,Level 3,15,48.0,58.0,53.0,45.0,25000,No
+Rusizi,Western,2019,Welding & Metal Fabrication,Level 3,35,48.0,58.0,53.0,45.0,25000,Yes
+Rusizi,Western,2019,Business & Entrepreneurship,Level 4,39,48.0,58.0,53.0,45.0,25000,No
+Rusizi,Western,2019,Renewable Energy,Level 4,28,22,58.0,53.0,45.0,25000,Yes
+Rusizi,Western,2020,Construction & Building Technology,Level 5,18,48.3,59.0,54.0,46.0,26200,No
+Rusizi,Western,2020,Electrical & Electronics,Level 3,43,22,59.0,54.0,46.0,26200,Yes
+Rusizi,Western,2020,Mechanics & Automotive,Level 4,35,48.3,59.0,54.0,46.0,26200,No
+Rusizi,Western,2020,ICT & Computer Science,Level 3,40,22,59.0,54.0,46.0,26200,Yes
+Rusizi,Western,2020,Agriculture & Food Processing,Level 5,17,48.3,59.0,54.0,46.0,26200,Yes
+Rusizi,Western,2020,Hospitality & Tourism,Level 5,46,48.3,59.0,54.0,46.0,26200,No
+Rusizi,Western,2020,Health & Community Services,Level 4,42,48.3,59.0,54.0,46.0,26200,Yes
+Rusizi,Western,2020,Fashion & Garment Making,Level 2,45,48.3,59.0,54.0,46.0,26200,No
+Rusizi,Western,2020,Plumbing & Sanitation,Level 4,17,48.3,59.0,54.0,46.0,26200,No
+Rusizi,Western,2020,Welding & Metal Fabrication,Level 3,37,48.3,59.0,54.0,46.0,26200,No
+Rusizi,Western,2020,Business & Entrepreneurship,Level 2,41,48.3,59.0,54.0,46.0,26200,No
+Rusizi,Western,2020,Renewable Energy,Level 5,30,22,59.0,54.0,46.0,26200,Yes
+Rusizi,Western,2021,Construction & Building Technology,Level 2,20,48.6,60.5,55.5,47.5,27400,No
+Rusizi,Western,2021,Electrical & Electronics,Level 3,45,22,60.5,55.5,47.5,27400,Yes
+Rusizi,Western,2021,Mechanics & Automotive,Level 5,37,48.6,60.5,55.5,47.5,27400,No
+Rusizi,Western,2021,ICT & Computer Science,Level 2,42,22,60.5,55.5,47.5,27400,Yes
+Rusizi,Western,2021,Agriculture & Food Processing,Level 3,19,48.6,60.5,55.5,47.5,27400,No
+Rusizi,Western,2021,Hospitality & Tourism,Level 5,48,48.6,60.5,55.5,47.5,27400,No
+Rusizi,Western,2021,Health & Community Services,Level 5,44,48.6,60.5,55.5,47.5,27400,No
+Rusizi,Western,2021,Fashion & Garment Making,Level 4,47,48.6,60.5,55.5,47.5,27400,No
+Rusizi,Western,2021,Plumbing & Sanitation,Level 2,19,48.6,60.5,55.5,47.5,27400,Yes
+Rusizi,Western,2021,Welding & Metal Fabrication,Level 3,39,48.6,60.5,55.5,47.5,27400,Yes
+Rusizi,Western,2021,Business & Entrepreneurship,Level 5,43,48.6,60.5,55.5,47.5,27400,No
+Rusizi,Western,2021,Renewable Energy,Level 2,32,22,60.5,55.5,47.5,27400,Yes
+Rusizi,Western,2022,Construction & Building Technology,Level 3,22,48.9,62.0,57.0,49.0,28600,Yes
+Rusizi,Western,2022,Electrical & Electronics,Level 3,47,22,62.0,57.0,49.0,28600,Yes
+Rusizi,Western,2022,Mechanics & Automotive,Level 2,39,48.9,62.0,57.0,49.0,28600,No
+Rusizi,Western,2022,ICT & Computer Science,Level 3,44,22,62.0,57.0,49.0,28600,Yes
+Rusizi,Western,2022,Agriculture & Food Processing,Level 3,21,48.9,62.0,57.0,49.0,28600,No
+Rusizi,Western,2022,Hospitality & Tourism,Level 4,50,48.9,62.0,57.0,49.0,28600,No
+Rusizi,Western,2022,Health & Community Services,Level 4,46,48.9,62.0,57.0,49.0,28600,Yes
+Rusizi,Western,2022,Fashion & Garment Making,Level 4,49,48.9,62.0,57.0,49.0,28600,Yes
+Rusizi,Western,2022,Plumbing & Sanitation,Level 2,21,48.9,62.0,57.0,49.0,28600,No
+Rusizi,Western,2022,Welding & Metal Fabrication,Level 5,41,48.9,62.0,57.0,49.0,28600,No
+Rusizi,Western,2022,Business & Entrepreneurship,Level 4,45,48.9,62.0,57.0,49.0,28600,No
+Rusizi,Western,2022,Renewable Energy,Level 4,34,22,62.0,57.0,49.0,28600,Yes
+Rusizi,Western,2023,Construction & Building Technology,Level 5,24,49.2,63.5,58.5,50.5,29800,Yes
+Rusizi,Western,2023,Electrical & Electronics,Level 3,49,22,63.5,58.5,50.5,29800,Yes
+Rusizi,Western,2023,Mechanics & Automotive,Level 5,41,49.2,63.5,58.5,50.5,29800,No
+Rusizi,Western,2023,ICT & Computer Science,Level 3,46,22,63.5,58.5,50.5,29800,Yes
+Rusizi,Western,2023,Agriculture & Food Processing,Level 3,23,49.2,63.5,58.5,50.5,29800,No
+Rusizi,Western,2023,Hospitality & Tourism,Level 4,52,49.2,63.5,58.5,50.5,29800,No
+Rusizi,Western,2023,Health & Community Services,Level 5,48,49.2,63.5,58.5,50.5,29800,No
+Rusizi,Western,2023,Fashion & Garment Making,Level 2,51,49.2,63.5,58.5,50.5,29800,Yes
+Rusizi,Western,2023,Plumbing & Sanitation,Level 5,23,49.2,63.5,58.5,50.5,29800,Yes
+Rusizi,Western,2023,Welding & Metal Fabrication,Level 2,43,49.2,63.5,58.5,50.5,29800,No
+Rusizi,Western,2023,Business & Entrepreneurship,Level 3,47,49.2,63.5,58.5,50.5,29800,No
+Rusizi,Western,2023,Renewable Energy,Level 3,36,22,63.5,58.5,50.5,29800,Yes
+Rusizi,Western,2024,Construction & Building Technology,Level 5,26,49.5,65.0,60.0,52.0,31000,No
+Rusizi,Western,2024,Electrical & Electronics,Level 4,51,22,65.0,60.0,52.0,31000,Yes
+Rusizi,Western,2024,Mechanics & Automotive,Level 4,43,49.5,65.0,60.0,52.0,31000,No
+Rusizi,Western,2024,ICT & Computer Science,Level 3,48,22,65.0,60.0,52.0,31000,Yes
+Rusizi,Western,2024,Agriculture & Food Processing,Level 5,25,49.5,65.0,60.0,52.0,31000,No
+Rusizi,Western,2024,Hospitality & Tourism,Level 2,54,49.5,65.0,60.0,52.0,31000,Yes
+Rusizi,Western,2024,Health & Community Services,Level 5,50,49.5,65.0,60.0,52.0,31000,No
+Rusizi,Western,2024,Fashion & Garment Making,Level 3,53,49.5,65.0,60.0,52.0,31000,Yes
+Rusizi,Western,2024,Plumbing & Sanitation,Level 2,25,49.5,65.0,60.0,52.0,31000,No
+Rusizi,Western,2024,Welding & Metal Fabrication,Level 3,45,49.5,65.0,60.0,52.0,31000,No
+Rusizi,Western,2024,Business & Entrepreneurship,Level 2,49,49.5,65.0,60.0,52.0,31000,No
+Rusizi,Western,2024,Renewable Energy,Level 2,38,22,65.0,60.0,52.0,31000,Yes
+Nyamasheke,Western,2019,Construction & Building Technology,Level 2,22,48.0,58.0,53.0,45.0,25000,Yes
+Nyamasheke,Western,2019,Electrical & Electronics,Level 2,16,22,58.0,53.0,45.0,25000,Yes
+Nyamasheke,Western,2019,Mechanics & Automotive,Level 5,19,48.0,58.0,53.0,45.0,25000,No
+Nyamasheke,Western,2019,ICT & Computer Science,Level 3,38,22,58.0,53.0,45.0,25000,Yes
+Nyamasheke,Western,2019,Agriculture & Food Processing,Level 5,39,48.0,58.0,53.0,45.0,25000,No
+Nyamasheke,Western,2019,Hospitality & Tourism,Level 5,42,48.0,58.0,53.0,45.0,25000,No
+Nyamasheke,Western,2019,Health & Community Services,Level 2,26,48.0,58.0,53.0,45.0,25000,No
+Nyamasheke,Western,2019,Fashion & Garment Making,Level 2,25,48.0,58.0,53.0,45.0,25000,No
+Nyamasheke,Western,2019,Plumbing & Sanitation,Level 2,18,48.0,58.0,53.0,45.0,25000,Yes
+Nyamasheke,Western,2019,Welding & Metal Fabrication,Level 2,13,48.0,58.0,53.0,45.0,25000,No
+Nyamasheke,Western,2019,Business & Entrepreneurship,Level 2,14,48.0,58.0,53.0,45.0,25000,No
+Nyamasheke,Western,2019,Renewable Energy,Level 5,17,22,58.0,53.0,45.0,25000,Yes
+Nyamasheke,Western,2020,Construction & Building Technology,Level 4,24,48.3,59.0,54.0,46.0,26200,No
+Nyamasheke,Western,2020,Electrical & Electronics,Level 4,18,22,59.0,54.0,46.0,26200,Yes
+Nyamasheke,Western,2020,Mechanics & Automotive,Level 5,21,48.3,59.0,54.0,46.0,26200,Yes
+Nyamasheke,Western,2020,ICT & Computer Science,Level 4,40,22,59.0,54.0,46.0,26200,Yes
+Nyamasheke,Western,2020,Agriculture & Food Processing,Level 4,41,48.3,59.0,54.0,46.0,26200,No
+Nyamasheke,Western,2020,Hospitality & Tourism,Level 5,44,48.3,59.0,54.0,46.0,26200,No
+Nyamasheke,Western,2020,Health & Community Services,Level 4,28,48.3,59.0,54.0,46.0,26200,No
+Nyamasheke,Western,2020,Fashion & Garment Making,Level 5,27,48.3,59.0,54.0,46.0,26200,Yes
+Nyamasheke,Western,2020,Plumbing & Sanitation,Level 5,20,48.3,59.0,54.0,46.0,26200,Yes
+Nyamasheke,Western,2020,Welding & Metal Fabrication,Level 4,15,48.3,59.0,54.0,46.0,26200,No
+Nyamasheke,Western,2020,Business & Entrepreneurship,Level 2,16,48.3,59.0,54.0,46.0,26200,No
+Nyamasheke,Western,2020,Renewable Energy,Level 2,19,22,59.0,54.0,46.0,26200,Yes
+Nyamasheke,Western,2021,Construction & Building Technology,Level 2,26,48.6,60.5,55.5,47.5,27400,No
+Nyamasheke,Western,2021,Electrical & Electronics,Level 4,20,22,60.5,55.5,47.5,27400,Yes
+Nyamasheke,Western,2021,Mechanics & Automotive,Level 5,23,48.6,60.5,55.5,47.5,27400,No
+Nyamasheke,Western,2021,ICT & Computer Science,Level 2,42,22,60.5,55.5,47.5,27400,Yes
+Nyamasheke,Western,2021,Agriculture & Food Processing,Level 5,43,48.6,60.5,55.5,47.5,27400,No
+Nyamasheke,Western,2021,Hospitality & Tourism,Level 3,46,48.6,60.5,55.5,47.5,27400,Yes
+Nyamasheke,Western,2021,Health & Community Services,Level 3,30,48.6,60.5,55.5,47.5,27400,No
+Nyamasheke,Western,2021,Fashion & Garment Making,Level 2,29,48.6,60.5,55.5,47.5,27400,No
+Nyamasheke,Western,2021,Plumbing & Sanitation,Level 2,22,48.6,60.5,55.5,47.5,27400,Yes
+Nyamasheke,Western,2021,Welding & Metal Fabrication,Level 3,17,48.6,60.5,55.5,47.5,27400,Yes
+Nyamasheke,Western,2021,Business & Entrepreneurship,Level 5,18,48.6,60.5,55.5,47.5,27400,No
+Nyamasheke,Western,2021,Renewable Energy,Level 2,21,22,60.5,55.5,47.5,27400,Yes
+Nyamasheke,Western,2022,Construction & Building Technology,Level 4,28,48.9,62.0,57.0,49.0,28600,No
+Nyamasheke,Western,2022,Electrical & Electronics,Level 4,22,22,62.0,57.0,49.0,28600,Yes
+Nyamasheke,Western,2022,Mechanics & Automotive,Level 4,25,48.9,62.0,57.0,49.0,28600,Yes
+Nyamasheke,Western,2022,ICT & Computer Science,Level 5,44,22,62.0,57.0,49.0,28600,Yes
+Nyamasheke,Western,2022,Agriculture & Food Processing,Level 2,45,48.9,62.0,57.0,49.0,28600,No
+Nyamasheke,Western,2022,Hospitality & Tourism,Level 3,48,48.9,62.0,57.0,49.0,28600,No
+Nyamasheke,Western,2022,Health & Community Services,Level 2,32,48.9,62.0,57.0,49.0,28600,Yes
+Nyamasheke,Western,2022,Fashion & Garment Making,Level 3,31,48.9,62.0,57.0,49.0,28600,No
+Nyamasheke,Western,2022,Plumbing & Sanitation,Level 2,24,48.9,62.0,57.0,49.0,28600,No
+Nyamasheke,Western,2022,Welding & Metal Fabrication,Level 4,19,48.9,62.0,57.0,49.0,28600,Yes
+Nyamasheke,Western,2022,Business & Entrepreneurship,Level 2,20,48.9,62.0,57.0,49.0,28600,No
+Nyamasheke,Western,2022,Renewable Energy,Level 5,23,22,62.0,57.0,49.0,28600,Yes
+Nyamasheke,Western,2023,Construction & Building Technology,Level 4,30,49.2,63.5,58.5,50.5,29800,Yes
+Nyamasheke,Western,2023,Electrical & Electronics,Level 4,24,22,63.5,58.5,50.5,29800,Yes
+Nyamasheke,Western,2023,Mechanics & Automotive,Level 4,27,49.2,63.5,58.5,50.5,29800,No
+Nyamasheke,Western,2023,ICT & Computer Science,Level 3,46,22,63.5,58.5,50.5,29800,Yes
+Nyamasheke,Western,2023,Agriculture & Food Processing,Level 5,47,49.2,63.5,58.5,50.5,29800,No
+Nyamasheke,Western,2023,Hospitality & Tourism,Level 2,50,49.2,63.5,58.5,50.5,29800,Yes
+Nyamasheke,Western,2023,Health & Community Services,Level 5,34,49.2,63.5,58.5,50.5,29800,No
+Nyamasheke,Western,2023,Fashion & Garment Making,Level 4,33,49.2,63.5,58.5,50.5,29800,No
+Nyamasheke,Western,2023,Plumbing & Sanitation,Level 3,26,49.2,63.5,58.5,50.5,29800,Yes
+Nyamasheke,Western,2023,Welding & Metal Fabrication,Level 2,21,49.2,63.5,58.5,50.5,29800,No
+Nyamasheke,Western,2023,Business & Entrepreneurship,Level 3,22,49.2,63.5,58.5,50.5,29800,No
+Nyamasheke,Western,2023,Renewable Energy,Level 3,25,22,63.5,58.5,50.5,29800,Yes
+Nyamasheke,Western,2024,Construction & Building Technology,Level 2,32,49.5,65.0,60.0,52.0,31000,Yes
+Nyamasheke,Western,2024,Electrical & Electronics,Level 5,26,22,65.0,60.0,52.0,31000,Yes
+Nyamasheke,Western,2024,Mechanics & Automotive,Level 2,29,49.5,65.0,60.0,52.0,31000,No
+Nyamasheke,Western,2024,ICT & Computer Science,Level 2,48,22,65.0,60.0,52.0,31000,Yes
+Nyamasheke,Western,2024,Agriculture & Food Processing,Level 4,49,49.5,65.0,60.0,52.0,31000,No
+Nyamasheke,Western,2024,Hospitality & Tourism,Level 5,52,49.5,65.0,60.0,52.0,31000,Yes
+Nyamasheke,Western,2024,Health & Community Services,Level 5,36,49.5,65.0,60.0,52.0,31000,No
+Nyamasheke,Western,2024,Fashion & Garment Making,Level 2,35,49.5,65.0,60.0,52.0,31000,No
+Nyamasheke,Western,2024,Plumbing & Sanitation,Level 3,28,49.5,65.0,60.0,52.0,31000,Yes
+Nyamasheke,Western,2024,Welding & Metal Fabrication,Level 2,23,49.5,65.0,60.0,52.0,31000,No
+Nyamasheke,Western,2024,Business & Entrepreneurship,Level 2,24,49.5,65.0,60.0,52.0,31000,No
+Nyamasheke,Western,2024,Renewable Energy,Level 5,27,22,65.0,60.0,52.0,31000,Yes
+Rutsiro,Western,2019,Construction & Building Technology,Level 4,34,48.0,58.0,53.0,45.0,25000,No
+Rutsiro,Western,2019,Electrical & Electronics,Level 3,29,22,58.0,53.0,45.0,25000,Yes
+Rutsiro,Western,2019,Mechanics & Automotive,Level 4,34,48.0,58.0,53.0,45.0,25000,Yes
+Rutsiro,Western,2019,ICT & Computer Science,Level 3,31,22,58.0,53.0,45.0,25000,Yes
+Rutsiro,Western,2019,Agriculture & Food Processing,Level 2,20,48.0,58.0,53.0,45.0,25000,No
+Rutsiro,Western,2019,Hospitality & Tourism,Level 4,45,48.0,58.0,53.0,45.0,25000,Yes
+Rutsiro,Western,2019,Health & Community Services,Level 4,34,48.0,58.0,53.0,45.0,25000,No
+Rutsiro,Western,2019,Fashion & Garment Making,Level 4,18,48.0,58.0,53.0,45.0,25000,No
+Rutsiro,Western,2019,Plumbing & Sanitation,Level 3,37,48.0,58.0,53.0,45.0,25000,No
+Rutsiro,Western,2019,Welding & Metal Fabrication,Level 5,23,48.0,58.0,53.0,45.0,25000,No
+Rutsiro,Western,2019,Business & Entrepreneurship,Level 3,30,48.0,58.0,53.0,45.0,25000,Yes
+Rutsiro,Western,2019,Renewable Energy,Level 3,45,22,58.0,53.0,45.0,25000,Yes
+Rutsiro,Western,2020,Construction & Building Technology,Level 5,36,48.3,59.0,54.0,46.0,26200,Yes
+Rutsiro,Western,2020,Electrical & Electronics,Level 2,31,22,59.0,54.0,46.0,26200,Yes
+Rutsiro,Western,2020,Mechanics & Automotive,Level 3,36,48.3,59.0,54.0,46.0,26200,No
+Rutsiro,Western,2020,ICT & Computer Science,Level 5,33,22,59.0,54.0,46.0,26200,Yes
+Rutsiro,Western,2020,Agriculture & Food Processing,Level 2,22,48.3,59.0,54.0,46.0,26200,No
+Rutsiro,Western,2020,Hospitality & Tourism,Level 2,47,48.3,59.0,54.0,46.0,26200,Yes
+Rutsiro,Western,2020,Health & Community Services,Level 4,36,48.3,59.0,54.0,46.0,26200,Yes
+Rutsiro,Western,2020,Fashion & Garment Making,Level 4,20,48.3,59.0,54.0,46.0,26200,No
+Rutsiro,Western,2020,Plumbing & Sanitation,Level 3,39,48.3,59.0,54.0,46.0,26200,No
+Rutsiro,Western,2020,Welding & Metal Fabrication,Level 4,25,48.3,59.0,54.0,46.0,26200,Yes
+Rutsiro,Western,2020,Business & Entrepreneurship,Level 2,32,48.3,59.0,54.0,46.0,26200,Yes
+Rutsiro,Western,2020,Renewable Energy,Level 3,47,22,59.0,54.0,46.0,26200,Yes
+Rutsiro,Western,2021,Construction & Building Technology,Level 2,38,48.6,60.5,55.5,47.5,27400,Yes
+Rutsiro,Western,2021,Electrical & Electronics,Level 5,33,22,60.5,55.5,47.5,27400,Yes
+Rutsiro,Western,2021,Mechanics & Automotive,Level 4,38,48.6,60.5,55.5,47.5,27400,Yes
+Rutsiro,Western,2021,ICT & Computer Science,Level 2,35,22,60.5,55.5,47.5,27400,Yes
+Rutsiro,Western,2021,Agriculture & Food Processing,Level 5,24,48.6,60.5,55.5,47.5,27400,No
+Rutsiro,Western,2021,Hospitality & Tourism,Level 3,49,48.6,60.5,55.5,47.5,27400,No
+Rutsiro,Western,2021,Health & Community Services,Level 2,38,48.6,60.5,55.5,47.5,27400,No
+Rutsiro,Western,2021,Fashion & Garment Making,Level 2,22,48.6,60.5,55.5,47.5,27400,No
+Rutsiro,Western,2021,Plumbing & Sanitation,Level 3,41,48.6,60.5,55.5,47.5,27400,No
+Rutsiro,Western,2021,Welding & Metal Fabrication,Level 2,27,48.6,60.5,55.5,47.5,27400,No
+Rutsiro,Western,2021,Business & Entrepreneurship,Level 5,34,48.6,60.5,55.5,47.5,27400,Yes
+Rutsiro,Western,2021,Renewable Energy,Level 2,49,22,60.5,55.5,47.5,27400,Yes
+Rutsiro,Western,2022,Construction & Building Technology,Level 2,40,48.9,62.0,57.0,49.0,28600,No
+Rutsiro,Western,2022,Electrical & Electronics,Level 2,35,22,62.0,57.0,49.0,28600,Yes
+Rutsiro,Western,2022,Mechanics & Automotive,Level 4,40,48.9,62.0,57.0,49.0,28600,No
+Rutsiro,Western,2022,ICT & Computer Science,Level 2,37,22,62.0,57.0,49.0,28600,Yes
+Rutsiro,Western,2022,Agriculture & Food Processing,Level 5,26,48.9,62.0,57.0,49.0,28600,No
+Rutsiro,Western,2022,Hospitality & Tourism,Level 2,51,48.9,62.0,57.0,49.0,28600,Yes
+Rutsiro,Western,2022,Health & Community Services,Level 5,40,48.9,62.0,57.0,49.0,28600,No
+Rutsiro,Western,2022,Fashion & Garment Making,Level 3,24,48.9,62.0,57.0,49.0,28600,No
+Rutsiro,Western,2022,Plumbing & Sanitation,Level 4,43,48.9,62.0,57.0,49.0,28600,Yes
+Rutsiro,Western,2022,Welding & Metal Fabrication,Level 3,29,48.9,62.0,57.0,49.0,28600,Yes
+Rutsiro,Western,2022,Business & Entrepreneurship,Level 2,36,48.9,62.0,57.0,49.0,28600,No
+Rutsiro,Western,2022,Renewable Energy,Level 2,51,22,62.0,57.0,49.0,28600,Yes
+Rutsiro,Western,2023,Construction & Building Technology,Level 2,42,49.2,63.5,58.5,50.5,29800,No
+Rutsiro,Western,2023,Electrical & Electronics,Level 4,37,22,63.5,58.5,50.5,29800,Yes
+Rutsiro,Western,2023,Mechanics & Automotive,Level 3,42,49.2,63.5,58.5,50.5,29800,Yes
+Rutsiro,Western,2023,ICT & Computer Science,Level 2,39,22,63.5,58.5,50.5,29800,Yes
+Rutsiro,Western,2023,Agriculture & Food Processing,Level 5,28,49.2,63.5,58.5,50.5,29800,No
+Rutsiro,Western,2023,Hospitality & Tourism,Level 5,53,49.2,63.5,58.5,50.5,29800,No
+Rutsiro,Western,2023,Health & Community Services,Level 5,42,49.2,63.5,58.5,50.5,29800,No
+Rutsiro,Western,2023,Fashion & Garment Making,Level 3,26,49.2,63.5,58.5,50.5,29800,No
+Rutsiro,Western,2023,Plumbing & Sanitation,Level 4,45,49.2,63.5,58.5,50.5,29800,No
+Rutsiro,Western,2023,Welding & Metal Fabrication,Level 3,31,49.2,63.5,58.5,50.5,29800,No
+Rutsiro,Western,2023,Business & Entrepreneurship,Level 5,38,49.2,63.5,58.5,50.5,29800,Yes
+Rutsiro,Western,2023,Renewable Energy,Level 3,53,22,63.5,58.5,50.5,29800,Yes
+Rutsiro,Western,2024,Construction & Building Technology,Level 2,44,49.5,65.0,60.0,52.0,31000,Yes
+Rutsiro,Western,2024,Electrical & Electronics,Level 5,39,22,65.0,60.0,52.0,31000,Yes
+Rutsiro,Western,2024,Mechanics & Automotive,Level 2,44,49.5,65.0,60.0,52.0,31000,No
+Rutsiro,Western,2024,ICT & Computer Science,Level 2,41,22,65.0,60.0,52.0,31000,Yes
+Rutsiro,Western,2024,Agriculture & Food Processing,Level 4,30,49.5,65.0,60.0,52.0,31000,Yes
+Rutsiro,Western,2024,Hospitality & Tourism,Level 3,55,49.5,65.0,60.0,52.0,31000,No
+Rutsiro,Western,2024,Health & Community Services,Level 4,44,49.5,65.0,60.0,52.0,31000,Yes
+Rutsiro,Western,2024,Fashion & Garment Making,Level 3,28,49.5,65.0,60.0,52.0,31000,Yes
+Rutsiro,Western,2024,Plumbing & Sanitation,Level 2,47,49.5,65.0,60.0,52.0,31000,No
+Rutsiro,Western,2024,Welding & Metal Fabrication,Level 4,33,49.5,65.0,60.0,52.0,31000,Yes
+Rutsiro,Western,2024,Business & Entrepreneurship,Level 5,40,49.5,65.0,60.0,52.0,31000,No
+Rutsiro,Western,2024,Renewable Energy,Level 3,55,22,65.0,60.0,52.0,31000,Yes

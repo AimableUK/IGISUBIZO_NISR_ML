@@ -1,0 +1,181 @@
+district,province,year,total_establishments,pct_micro,pct_small,pct_medium,pct_large,dominant_sector,establishment_growth_rate
+Gasabo,Kigali City,2019,28196,78.0,17.0,4.0,1.0,Trade,0.0
+Gasabo,Kigali City,2020,30612,77.7,17.2,4.1,1.0,Trade,8.6
+Gasabo,Kigali City,2021,31955,77.4,17.4,4.2,1.0,Trade,4.4
+Gasabo,Kigali City,2022,33835,77.1,17.6,4.2,1.1,Trade,5.9
+Gasabo,Kigali City,2023,36386,76.8,17.8,4.3,1.1,Trade,7.5
+Gasabo,Kigali City,2024,38266,76.5,18.0,4.4,1.1,Trade,5.2
+Kicukiro,Kigali City,2019,27930,78.0,17.0,4.0,1.0,Trade,0.0
+Kicukiro,Kigali City,2020,30324,77.7,17.2,4.1,1.0,Trade,8.6
+Kicukiro,Kigali City,2021,31654,77.4,17.4,4.2,1.0,Trade,4.4
+Kicukiro,Kigali City,2022,33516,77.1,17.6,4.2,1.1,Trade,5.9
+Kicukiro,Kigali City,2023,36043,76.8,17.8,4.3,1.1,Trade,7.5
+Kicukiro,Kigali City,2024,37905,76.5,18.0,4.4,1.1,Trade,5.2
+Nyarugenge,Kigali City,2019,25802,78.0,17.0,4.0,1.0,Trade,0.0
+Nyarugenge,Kigali City,2020,28013,77.7,17.2,4.1,1.0,Trade,8.6
+Nyarugenge,Kigali City,2021,29242,77.4,17.4,4.2,1.0,Trade,4.4
+Nyarugenge,Kigali City,2022,30962,77.1,17.6,4.2,1.1,Trade,5.9
+Nyarugenge,Kigali City,2023,33296,76.8,17.8,4.3,1.1,Trade,7.5
+Nyarugenge,Kigali City,2024,35017,76.5,18.0,4.4,1.1,Trade,5.2
+Bugesera,Eastern,2019,5562,78.0,17.0,4.0,1.0,Agriculture,0.0
+Bugesera,Eastern,2020,6038,77.7,17.2,4.1,1.0,Agriculture,8.6
+Bugesera,Eastern,2021,6303,77.4,17.4,4.2,1.0,Agriculture,4.4
+Bugesera,Eastern,2022,6674,77.1,17.6,4.2,1.1,Agriculture,5.9
+Bugesera,Eastern,2023,7177,76.8,17.8,4.3,1.1,Agriculture,7.5
+Bugesera,Eastern,2024,7548,76.5,18.0,4.4,1.1,Agriculture,5.2
+Gatsibo,Eastern,2019,5292,78.0,17.0,4.0,1.0,Agriculture,0.0
+Gatsibo,Eastern,2020,5745,77.7,17.2,4.1,1.0,Agriculture,8.6
+Gatsibo,Eastern,2021,5997,77.4,17.4,4.2,1.0,Agriculture,4.4
+Gatsibo,Eastern,2022,6350,77.1,17.6,4.2,1.1,Agriculture,5.9
+Gatsibo,Eastern,2023,6829,76.8,17.8,4.3,1.1,Agriculture,7.5
+Gatsibo,Eastern,2024,7182,76.5,18.0,4.4,1.1,Agriculture,5.2
+Kayonza,Eastern,2019,5454,78.0,17.0,4.0,1.0,Agriculture,0.0
+Kayonza,Eastern,2020,5921,77.7,17.2,4.1,1.0,Agriculture,8.6
+Kayonza,Eastern,2021,6181,77.4,17.4,4.2,1.0,Agriculture,4.4
+Kayonza,Eastern,2022,6544,77.1,17.6,4.2,1.1,Agriculture,5.9
+Kayonza,Eastern,2023,7038,76.8,17.8,4.3,1.1,Agriculture,7.5
+Kayonza,Eastern,2024,7401,76.5,18.0,4.4,1.1,Agriculture,5.2
+Kirehe,Eastern,2019,5184,78.0,17.0,4.0,1.0,Agriculture,0.0
+Kirehe,Eastern,2020,5628,77.7,17.2,4.1,1.0,Agriculture,8.6
+Kirehe,Eastern,2021,5875,77.4,17.4,4.2,1.0,Agriculture,4.4
+Kirehe,Eastern,2022,6220,77.1,17.6,4.2,1.1,Agriculture,5.9
+Kirehe,Eastern,2023,6689,76.8,17.8,4.3,1.1,Agriculture,7.5
+Kirehe,Eastern,2024,7035,76.5,18.0,4.4,1.1,Agriculture,5.2
+Ngoma,Eastern,2019,5454,78.0,17.0,4.0,1.0,Agriculture,0.0
+Ngoma,Eastern,2020,5921,77.7,17.2,4.1,1.0,Agriculture,8.6
+Ngoma,Eastern,2021,6181,77.4,17.4,4.2,1.0,Agriculture,4.4
+Ngoma,Eastern,2022,6544,77.1,17.6,4.2,1.1,Agriculture,5.9
+Ngoma,Eastern,2023,7038,76.8,17.8,4.3,1.1,Agriculture,7.5
+Ngoma,Eastern,2024,7401,76.5,18.0,4.4,1.1,Agriculture,5.2
+Nyagatare,Eastern,2019,5616,78.0,17.0,4.0,1.0,Agriculture,0.0
+Nyagatare,Eastern,2020,6097,77.7,17.2,4.1,1.0,Agriculture,8.6
+Nyagatare,Eastern,2021,6364,77.4,17.4,4.2,1.0,Agriculture,4.4
+Nyagatare,Eastern,2022,6739,77.1,17.6,4.2,1.1,Agriculture,5.9
+Nyagatare,Eastern,2023,7247,76.8,17.8,4.3,1.1,Agriculture,7.5
+Nyagatare,Eastern,2024,7621,76.5,18.0,4.4,1.1,Agriculture,5.2
+Rwamagana,Eastern,2019,5562,78.0,17.0,4.0,1.0,Agriculture,0.0
+Rwamagana,Eastern,2020,6038,77.7,17.2,4.1,1.0,Agriculture,8.6
+Rwamagana,Eastern,2021,6303,77.4,17.4,4.2,1.0,Agriculture,4.4
+Rwamagana,Eastern,2022,6674,77.1,17.6,4.2,1.1,Agriculture,5.9
+Rwamagana,Eastern,2023,7177,76.8,17.8,4.3,1.1,Agriculture,7.5
+Rwamagana,Eastern,2024,7548,76.5,18.0,4.4,1.1,Agriculture,5.2
+Burera,Northern,2019,5586,78.0,17.0,4.0,1.0,Agriculture,0.0
+Burera,Northern,2020,6064,77.7,17.2,4.1,1.0,Agriculture,8.6
+Burera,Northern,2021,6330,77.4,17.4,4.2,1.0,Agriculture,4.4
+Burera,Northern,2022,6703,77.1,17.6,4.2,1.1,Agriculture,5.9
+Burera,Northern,2023,7208,76.8,17.8,4.3,1.1,Agriculture,7.5
+Burera,Northern,2024,7581,76.5,18.0,4.4,1.1,Agriculture,5.2
+Gakenke,Northern,2019,5703,78.0,17.0,4.0,1.0,Agriculture,0.0
+Gakenke,Northern,2020,6192,77.7,17.2,4.1,1.0,Agriculture,8.6
+Gakenke,Northern,2021,6464,77.4,17.4,4.2,1.0,Agriculture,4.4
+Gakenke,Northern,2022,6844,77.1,17.6,4.2,1.1,Agriculture,5.9
+Gakenke,Northern,2023,7360,76.8,17.8,4.3,1.1,Agriculture,7.5
+Gakenke,Northern,2024,7740,76.5,18.0,4.4,1.1,Agriculture,5.2
+Gicumbi,Northern,2019,5938,78.0,17.0,4.0,1.0,Agriculture,0.0
+Gicumbi,Northern,2020,6447,77.7,17.2,4.1,1.0,Agriculture,8.6
+Gicumbi,Northern,2021,6730,77.4,17.4,4.2,1.0,Agriculture,4.4
+Gicumbi,Northern,2022,7126,77.1,17.6,4.2,1.1,Agriculture,5.9
+Gicumbi,Northern,2023,7663,76.8,17.8,4.3,1.1,Agriculture,7.5
+Gicumbi,Northern,2024,8059,76.5,18.0,4.4,1.1,Agriculture,5.2
+Musanze,Northern,2019,6232,78.0,17.0,4.0,1.0,Agriculture,0.0
+Musanze,Northern,2020,6767,77.7,17.2,4.1,1.0,Agriculture,8.6
+Musanze,Northern,2021,7063,77.4,17.4,4.2,1.0,Agriculture,4.4
+Musanze,Northern,2022,7479,77.1,17.6,4.2,1.1,Agriculture,5.9
+Musanze,Northern,2023,8043,76.8,17.8,4.3,1.1,Agriculture,7.5
+Musanze,Northern,2024,8458,76.5,18.0,4.4,1.1,Agriculture,5.2
+Rulindo,Northern,2019,5762,78.0,17.0,4.0,1.0,Agriculture,0.0
+Rulindo,Northern,2020,6256,77.7,17.2,4.1,1.0,Agriculture,8.6
+Rulindo,Northern,2021,6530,77.4,17.4,4.2,1.0,Agriculture,4.4
+Rulindo,Northern,2022,6914,77.1,17.6,4.2,1.1,Agriculture,5.9
+Rulindo,Northern,2023,7436,76.8,17.8,4.3,1.1,Agriculture,7.5
+Rulindo,Northern,2024,7820,76.5,18.0,4.4,1.1,Agriculture,5.2
+Gisagara,Southern,2019,4032,78.0,17.0,4.0,1.0,Agriculture,0.0
+Gisagara,Southern,2020,4377,77.7,17.2,4.1,1.0,Agriculture,8.6
+Gisagara,Southern,2021,4569,77.4,17.4,4.2,1.0,Agriculture,4.4
+Gisagara,Southern,2022,4838,77.1,17.6,4.2,1.1,Agriculture,5.9
+Gisagara,Southern,2023,5203,76.8,17.8,4.3,1.1,Agriculture,7.5
+Gisagara,Southern,2024,5472,76.5,18.0,4.4,1.1,Agriculture,5.2
+Huye,Southern,2019,4494,78.0,17.0,4.0,1.0,Agriculture,0.0
+Huye,Southern,2020,4879,77.7,17.2,4.1,1.0,Agriculture,8.6
+Huye,Southern,2021,5093,77.4,17.4,4.2,1.0,Agriculture,4.4
+Huye,Southern,2022,5392,77.1,17.6,4.2,1.1,Agriculture,5.9
+Huye,Southern,2023,5799,76.8,17.8,4.3,1.1,Agriculture,7.5
+Huye,Southern,2024,6099,76.5,18.0,4.4,1.1,Agriculture,5.2
+Kamonyi,Southern,2019,4242,78.0,17.0,4.0,1.0,Agriculture,0.0
+Kamonyi,Southern,2020,4605,77.7,17.2,4.1,1.0,Agriculture,8.6
+Kamonyi,Southern,2021,4807,77.4,17.4,4.2,1.0,Agriculture,4.4
+Kamonyi,Southern,2022,5090,77.1,17.6,4.2,1.1,Agriculture,5.9
+Kamonyi,Southern,2023,5474,76.8,17.8,4.3,1.1,Agriculture,7.5
+Kamonyi,Southern,2024,5757,76.5,18.0,4.4,1.1,Agriculture,5.2
+Muhanga,Southern,2019,4368,78.0,17.0,4.0,1.0,Agriculture,0.0
+Muhanga,Southern,2020,4742,77.7,17.2,4.1,1.0,Agriculture,8.6
+Muhanga,Southern,2021,4950,77.4,17.4,4.2,1.0,Agriculture,4.4
+Muhanga,Southern,2022,5241,77.1,17.6,4.2,1.1,Agriculture,5.9
+Muhanga,Southern,2023,5636,76.8,17.8,4.3,1.1,Agriculture,7.5
+Muhanga,Southern,2024,5928,76.5,18.0,4.4,1.1,Agriculture,5.2
+Nyamagabe,Southern,2019,3990,78.0,17.0,4.0,1.0,Agriculture,0.0
+Nyamagabe,Southern,2020,4332,77.7,17.2,4.1,1.0,Agriculture,8.6
+Nyamagabe,Southern,2021,4522,77.4,17.4,4.2,1.0,Agriculture,4.4
+Nyamagabe,Southern,2022,4788,77.1,17.6,4.2,1.1,Agriculture,5.9
+Nyamagabe,Southern,2023,5149,76.8,17.8,4.3,1.1,Agriculture,7.5
+Nyamagabe,Southern,2024,5415,76.5,18.0,4.4,1.1,Agriculture,5.2
+Nyamasheke,Southern,2019,4074,78.0,17.0,4.0,1.0,Agriculture,0.0
+Nyamasheke,Southern,2020,4423,77.7,17.2,4.1,1.0,Agriculture,8.6
+Nyamasheke,Southern,2021,4617,77.4,17.4,4.2,1.0,Agriculture,4.4
+Nyamasheke,Southern,2022,4888,77.1,17.6,4.2,1.1,Agriculture,5.9
+Nyamasheke,Southern,2023,5257,76.8,17.8,4.3,1.1,Agriculture,7.5
+Nyamasheke,Southern,2024,5529,76.5,18.0,4.4,1.1,Agriculture,5.2
+Nyanza,Southern,2019,4284,78.0,17.0,4.0,1.0,Agriculture,0.0
+Nyanza,Southern,2020,4651,77.7,17.2,4.1,1.0,Agriculture,8.6
+Nyanza,Southern,2021,4855,77.4,17.4,4.2,1.0,Agriculture,4.4
+Nyanza,Southern,2022,5140,77.1,17.6,4.2,1.1,Agriculture,5.9
+Nyanza,Southern,2023,5528,76.8,17.8,4.3,1.1,Agriculture,7.5
+Nyanza,Southern,2024,5814,76.5,18.0,4.4,1.1,Agriculture,5.2
+Ruhango,Southern,2019,4242,78.0,17.0,4.0,1.0,Agriculture,0.0
+Ruhango,Southern,2020,4605,77.7,17.2,4.1,1.0,Agriculture,8.6
+Ruhango,Southern,2021,4807,77.4,17.4,4.2,1.0,Agriculture,4.4
+Ruhango,Southern,2022,5090,77.1,17.6,4.2,1.1,Agriculture,5.9
+Ruhango,Southern,2023,5474,76.8,17.8,4.3,1.1,Agriculture,7.5
+Ruhango,Southern,2024,5757,76.5,18.0,4.4,1.1,Agriculture,5.2
+Karongi,Western,2019,4116,78.0,17.0,4.0,1.0,Agriculture,0.0
+Karongi,Western,2020,4468,77.7,17.2,4.1,1.0,Agriculture,8.6
+Karongi,Western,2021,4664,77.4,17.4,4.2,1.0,Agriculture,4.4
+Karongi,Western,2022,4939,77.1,17.6,4.2,1.1,Agriculture,5.9
+Karongi,Western,2023,5311,76.8,17.8,4.3,1.1,Agriculture,7.5
+Karongi,Western,2024,5586,76.5,18.0,4.4,1.1,Agriculture,5.2
+Ngororero,Western,2019,4032,78.0,17.0,4.0,1.0,Agriculture,0.0
+Ngororero,Western,2020,4377,77.7,17.2,4.1,1.0,Agriculture,8.6
+Ngororero,Western,2021,4569,77.4,17.4,4.2,1.0,Agriculture,4.4
+Ngororero,Western,2022,4838,77.1,17.6,4.2,1.1,Agriculture,5.9
+Ngororero,Western,2023,5203,76.8,17.8,4.3,1.1,Agriculture,7.5
+Ngororero,Western,2024,5472,76.5,18.0,4.4,1.1,Agriculture,5.2
+Nyabihu,Western,2019,4158,78.0,17.0,4.0,1.0,Agriculture,0.0
+Nyabihu,Western,2020,4514,77.7,17.2,4.1,1.0,Agriculture,8.6
+Nyabihu,Western,2021,4712,77.4,17.4,4.2,1.0,Agriculture,4.4
+Nyabihu,Western,2022,4989,77.1,17.6,4.2,1.1,Agriculture,5.9
+Nyabihu,Western,2023,5365,76.8,17.8,4.3,1.1,Agriculture,7.5
+Nyabihu,Western,2024,5643,76.5,18.0,4.4,1.1,Agriculture,5.2
+Rubavu,Western,2019,4494,78.0,17.0,4.0,1.0,Agriculture,0.0
+Rubavu,Western,2020,4879,77.7,17.2,4.1,1.0,Agriculture,8.6
+Rubavu,Western,2021,5093,77.4,17.4,4.2,1.0,Agriculture,4.4
+Rubavu,Western,2022,5392,77.1,17.6,4.2,1.1,Agriculture,5.9
+Rubavu,Western,2023,5799,76.8,17.8,4.3,1.1,Agriculture,7.5
+Rubavu,Western,2024,6099,76.5,18.0,4.4,1.1,Agriculture,5.2
+Rusizi,Western,2019,4368,78.0,17.0,4.0,1.0,Agriculture,0.0
+Rusizi,Western,2020,4742,77.7,17.2,4.1,1.0,Agriculture,8.6
+Rusizi,Western,2021,4950,77.4,17.4,4.2,1.0,Agriculture,4.4
+Rusizi,Western,2022,5241,77.1,17.6,4.2,1.1,Agriculture,5.9
+Rusizi,Western,2023,5636,76.8,17.8,4.3,1.1,Agriculture,7.5
+Rusizi,Western,2024,5928,76.5,18.0,4.4,1.1,Agriculture,5.2
+Nyamasheke,Western,2019,4074,78.0,17.0,4.0,1.0,Agriculture,0.0
+Nyamasheke,Western,2020,4423,77.7,17.2,4.1,1.0,Agriculture,8.6
+Nyamasheke,Western,2021,4617,77.4,17.4,4.2,1.0,Agriculture,4.4
+Nyamasheke,Western,2022,4888,77.1,17.6,4.2,1.1,Agriculture,5.9
+Nyamasheke,Western,2023,5257,76.8,17.8,4.3,1.1,Agriculture,7.5
+Nyamasheke,Western,2024,5529,76.5,18.0,4.4,1.1,Agriculture,5.2
+Rutsiro,Western,2019,3990,78.0,17.0,4.0,1.0,Agriculture,0.0
+Rutsiro,Western,2020,4332,77.7,17.2,4.1,1.0,Agriculture,8.6
+Rutsiro,Western,2021,4522,77.4,17.4,4.2,1.0,Agriculture,4.4
+Rutsiro,Western,2022,4788,77.1,17.6,4.2,1.1,Agriculture,5.9
+Rutsiro,Western,2023,5149,76.8,17.8,4.3,1.1,Agriculture,7.5
+Rutsiro,Western,2024,5415,76.5,18.0,4.4,1.1,Agriculture,5.2

@@ -1,0 +1,961 @@
+institution,province,year,program,field,enrolled_students,female_pct,graduation_rate,employed_within_1year,avg_graduate_wage_rwf,scholarship_pct,international_students_pct
+University of Rwanda,Kigali City,2019,Medicine & Surgery,Health,142,28,67.0,66.0,225722,25,1.7
+University of Rwanda,Kigali City,2019,Nursing,Health,85,28,67.0,66.0,178265,21,2.0
+University of Rwanda,Kigali City,2019,Public Health,Health,343,28,67.0,66.0,177923,19,2.6
+University of Rwanda,Kigali City,2019,Computer Science,ICT,457,28,67.0,66.0,192437,31,2.0
+University of Rwanda,Kigali City,2019,Software Engineering,ICT,238,28,67.0,66.0,248618,27,1.7
+University of Rwanda,Kigali City,2019,Data Science & AI,ICT,52,28,67.0,66.0,128432,21,2.3
+University of Rwanda,Kigali City,2019,Electrical Engineering,Engineering,55,28,67.0,66.0,239435,29,2.6
+University of Rwanda,Kigali City,2019,Civil Engineering,Engineering,464,28,67.0,66.0,137844,19,1.5
+University of Rwanda,Kigali City,2019,Mechanical Engineering,Engineering,512,28,67.0,66.0,263892,31,1.5
+University of Rwanda,Kigali City,2019,Agriculture,Agriculture,414,52.0,62.0,55.0,129394,23,2.5
+University of Rwanda,Kigali City,2019,Agribusiness,Agriculture,329,52.0,62.0,55.0,161109,15,2.4
+University of Rwanda,Kigali City,2019,Business Administration,Business,280,52.0,62.0,55.0,224660,18,2.3
+University of Rwanda,Kigali City,2019,Accounting & Finance,Business,204,52.0,62.0,55.0,174784,28,1.9
+University of Rwanda,Kigali City,2019,Economics,Business,535,52.0,62.0,55.0,170315,25,2.6
+University of Rwanda,Kigali City,2019,Education,Education,249,52.0,62.0,55.0,221029,24,1.6
+University of Rwanda,Kigali City,2019,Law,Law,319,52.0,62.0,55.0,180899,22,2.6
+University of Rwanda,Kigali City,2019,Environmental Science,Environment,569,52.0,62.0,55.0,254349,18,2.4
+University of Rwanda,Kigali City,2019,Architecture,Engineering,532,28,67.0,66.0,144512,31,2.3
+University of Rwanda,Kigali City,2019,Journalism & Media,Arts,246,52.0,62.0,55.0,128026,26,2.5
+University of Rwanda,Kigali City,2019,Social Work,Social Sciences,369,52.0,62.0,55.0,261949,21,1.6
+University of Rwanda,Kigali City,2020,Medicine & Surgery,Health,150,28,67.4,67.0,228722,12,1.7
+University of Rwanda,Kigali City,2020,Nursing,Health,93,28,67.4,67.0,181265,28,2.0
+University of Rwanda,Kigali City,2020,Public Health,Health,351,28,67.4,67.0,180923,26,2.6
+University of Rwanda,Kigali City,2020,Computer Science,ICT,465,28,67.4,67.0,195437,25,2.0
+University of Rwanda,Kigali City,2020,Software Engineering,ICT,246,28,67.4,67.0,251618,24,1.7
+University of Rwanda,Kigali City,2020,Data Science & AI,ICT,60,28,67.4,67.0,131432,28,2.3
+University of Rwanda,Kigali City,2020,Electrical Engineering,Engineering,63,28,67.4,67.0,242435,22,2.6
+University of Rwanda,Kigali City,2020,Civil Engineering,Engineering,472,28,67.4,67.0,140844,15,1.5
+University of Rwanda,Kigali City,2020,Mechanical Engineering,Engineering,520,28,67.4,67.0,266892,28,1.5
+University of Rwanda,Kigali City,2020,Agriculture,Agriculture,422,52.4,62.4,56.0,132394,26,2.5
+University of Rwanda,Kigali City,2020,Agribusiness,Agriculture,337,52.4,62.4,56.0,164109,18,2.4
+University of Rwanda,Kigali City,2020,Business Administration,Business,288,52.4,62.4,56.0,227660,22,2.3
+University of Rwanda,Kigali City,2020,Accounting & Finance,Business,212,52.4,62.4,56.0,177784,25,1.9
+University of Rwanda,Kigali City,2020,Economics,Business,543,52.4,62.4,56.0,173315,29,2.6
+University of Rwanda,Kigali City,2020,Education,Education,257,52.4,62.4,56.0,224029,26,1.6
+University of Rwanda,Kigali City,2020,Law,Law,327,52.4,62.4,56.0,183899,30,2.6
+University of Rwanda,Kigali City,2020,Environmental Science,Environment,577,52.4,62.4,56.0,257349,12,2.4
+University of Rwanda,Kigali City,2020,Architecture,Engineering,540,28,67.4,67.0,147512,28,2.3
+University of Rwanda,Kigali City,2020,Journalism & Media,Arts,254,52.4,62.4,56.0,131026,24,2.5
+University of Rwanda,Kigali City,2020,Social Work,Social Sciences,377,52.4,62.4,56.0,264949,12,1.6
+University of Rwanda,Kigali City,2021,Medicine & Surgery,Health,158,28,67.8,68.5,231722,28,1.7
+University of Rwanda,Kigali City,2021,Nursing,Health,101,28,67.8,68.5,184265,28,2.0
+University of Rwanda,Kigali City,2021,Public Health,Health,359,28,67.8,68.5,183923,19,2.6
+University of Rwanda,Kigali City,2021,Computer Science,ICT,473,28,67.8,68.5,198437,24,2.0
+University of Rwanda,Kigali City,2021,Software Engineering,ICT,254,28,67.8,68.5,254618,22,1.7
+University of Rwanda,Kigali City,2021,Data Science & AI,ICT,68,28,67.8,68.5,134432,18,2.3
+University of Rwanda,Kigali City,2021,Electrical Engineering,Engineering,71,28,67.8,68.5,245435,25,2.6
+University of Rwanda,Kigali City,2021,Civil Engineering,Engineering,480,28,67.8,68.5,143844,20,1.5
+University of Rwanda,Kigali City,2021,Mechanical Engineering,Engineering,528,28,67.8,68.5,269892,31,1.5
+University of Rwanda,Kigali City,2021,Agriculture,Agriculture,430,52.8,62.8,57.5,135394,27,2.5
+University of Rwanda,Kigali City,2021,Agribusiness,Agriculture,345,52.8,62.8,57.5,167109,25,2.4
+University of Rwanda,Kigali City,2021,Business Administration,Business,296,52.8,62.8,57.5,230660,24,2.3
+University of Rwanda,Kigali City,2021,Accounting & Finance,Business,220,52.8,62.8,57.5,180784,27,1.9
+University of Rwanda,Kigali City,2021,Economics,Business,551,52.8,62.8,57.5,176315,21,2.6
+University of Rwanda,Kigali City,2021,Education,Education,265,52.8,62.8,57.5,227029,28,1.6
+University of Rwanda,Kigali City,2021,Law,Law,335,52.8,62.8,57.5,186899,31,2.6
+University of Rwanda,Kigali City,2021,Environmental Science,Environment,585,52.8,62.8,57.5,260349,18,2.4
+University of Rwanda,Kigali City,2021,Architecture,Engineering,548,28,67.8,68.5,150512,24,2.3
+University of Rwanda,Kigali City,2021,Journalism & Media,Arts,262,52.8,62.8,57.5,134026,27,2.5
+University of Rwanda,Kigali City,2021,Social Work,Social Sciences,385,52.8,62.8,57.5,267949,14,1.6
+University of Rwanda,Kigali City,2022,Medicine & Surgery,Health,166,28,68.2,70.0,234722,23,1.7
+University of Rwanda,Kigali City,2022,Nursing,Health,109,28,68.2,70.0,187265,21,2.0
+University of Rwanda,Kigali City,2022,Public Health,Health,367,28,68.2,70.0,186923,12,2.6
+University of Rwanda,Kigali City,2022,Computer Science,ICT,481,28,68.2,70.0,201437,19,2.0
+University of Rwanda,Kigali City,2022,Software Engineering,ICT,262,28,68.2,70.0,257618,24,1.7
+University of Rwanda,Kigali City,2022,Data Science & AI,ICT,76,28,68.2,70.0,137432,14,2.3
+University of Rwanda,Kigali City,2022,Electrical Engineering,Engineering,79,28,68.2,70.0,248435,23,2.6
+University of Rwanda,Kigali City,2022,Civil Engineering,Engineering,488,28,68.2,70.0,146844,23,1.5
+University of Rwanda,Kigali City,2022,Mechanical Engineering,Engineering,536,28,68.2,70.0,272892,20,1.5
+University of Rwanda,Kigali City,2022,Agriculture,Agriculture,438,53.2,63.2,59.0,138394,16,2.5
+University of Rwanda,Kigali City,2022,Agribusiness,Agriculture,353,53.2,63.2,59.0,170109,28,2.4
+University of Rwanda,Kigali City,2022,Business Administration,Business,304,53.2,63.2,59.0,233660,26,2.3
+University of Rwanda,Kigali City,2022,Accounting & Finance,Business,228,53.2,63.2,59.0,183784,21,1.9
+University of Rwanda,Kigali City,2022,Economics,Business,559,53.2,63.2,59.0,179315,28,2.6
+University of Rwanda,Kigali City,2022,Education,Education,273,53.2,63.2,59.0,230029,18,1.6
+University of Rwanda,Kigali City,2022,Law,Law,343,53.2,63.2,59.0,189899,29,2.6
+University of Rwanda,Kigali City,2022,Environmental Science,Environment,593,53.2,63.2,59.0,263349,31,2.4
+University of Rwanda,Kigali City,2022,Architecture,Engineering,556,28,68.2,70.0,153512,25,2.3
+University of Rwanda,Kigali City,2022,Journalism & Media,Arts,270,53.2,63.2,59.0,137026,13,2.5
+University of Rwanda,Kigali City,2022,Social Work,Social Sciences,393,53.2,63.2,59.0,270949,14,1.6
+University of Rwanda,Kigali City,2023,Medicine & Surgery,Health,174,28,68.6,71.5,237722,23,1.7
+University of Rwanda,Kigali City,2023,Nursing,Health,117,28,68.6,71.5,190265,16,2.0
+University of Rwanda,Kigali City,2023,Public Health,Health,375,28,68.6,71.5,189923,31,2.6
+University of Rwanda,Kigali City,2023,Computer Science,ICT,489,28,68.6,71.5,204437,22,2.0
+University of Rwanda,Kigali City,2023,Software Engineering,ICT,270,28,68.6,71.5,260618,15,1.7
+University of Rwanda,Kigali City,2023,Data Science & AI,ICT,84,28,68.6,71.5,140432,29,2.3
+University of Rwanda,Kigali City,2023,Electrical Engineering,Engineering,87,28,68.6,71.5,251435,14,2.6
+University of Rwanda,Kigali City,2023,Civil Engineering,Engineering,496,28,68.6,71.5,149844,20,1.5
+University of Rwanda,Kigali City,2023,Mechanical Engineering,Engineering,544,28,68.6,71.5,275892,16,1.5
+University of Rwanda,Kigali City,2023,Agriculture,Agriculture,446,53.6,63.6,60.5,141394,22,2.5
+University of Rwanda,Kigali City,2023,Agribusiness,Agriculture,361,53.6,63.6,60.5,173109,27,2.4
+University of Rwanda,Kigali City,2023,Business Administration,Business,312,53.6,63.6,60.5,236660,29,2.3
+University of Rwanda,Kigali City,2023,Accounting & Finance,Business,236,53.6,63.6,60.5,186784,25,1.9
+University of Rwanda,Kigali City,2023,Economics,Business,567,53.6,63.6,60.5,182315,22,2.6
+University of Rwanda,Kigali City,2023,Education,Education,281,53.6,63.6,60.5,233029,12,1.6
+University of Rwanda,Kigali City,2023,Law,Law,351,53.6,63.6,60.5,192899,16,2.6
+University of Rwanda,Kigali City,2023,Environmental Science,Environment,601,53.6,63.6,60.5,266349,26,2.4
+University of Rwanda,Kigali City,2023,Architecture,Engineering,564,28,68.6,71.5,156512,29,2.3
+University of Rwanda,Kigali City,2023,Journalism & Media,Arts,278,53.6,63.6,60.5,140026,29,2.5
+University of Rwanda,Kigali City,2023,Social Work,Social Sciences,401,53.6,63.6,60.5,273949,20,1.6
+University of Rwanda,Kigali City,2024,Medicine & Surgery,Health,182,28,69.0,73.0,240722,18,1.7
+University of Rwanda,Kigali City,2024,Nursing,Health,125,28,69.0,73.0,193265,12,2.0
+University of Rwanda,Kigali City,2024,Public Health,Health,383,28,69.0,73.0,192923,15,2.6
+University of Rwanda,Kigali City,2024,Computer Science,ICT,497,28,69.0,73.0,207437,28,2.0
+University of Rwanda,Kigali City,2024,Software Engineering,ICT,278,28,69.0,73.0,263618,31,1.7
+University of Rwanda,Kigali City,2024,Data Science & AI,ICT,92,28,69.0,73.0,143432,12,2.3
+University of Rwanda,Kigali City,2024,Electrical Engineering,Engineering,95,28,69.0,73.0,254435,27,2.6
+University of Rwanda,Kigali City,2024,Civil Engineering,Engineering,504,28,69.0,73.0,152844,28,1.5
+University of Rwanda,Kigali City,2024,Mechanical Engineering,Engineering,552,28,69.0,73.0,278892,19,1.5
+University of Rwanda,Kigali City,2024,Agriculture,Agriculture,454,54.0,64.0,62.0,144394,28,2.5
+University of Rwanda,Kigali City,2024,Agribusiness,Agriculture,369,54.0,64.0,62.0,176109,30,2.4
+University of Rwanda,Kigali City,2024,Business Administration,Business,320,54.0,64.0,62.0,239660,27,2.3
+University of Rwanda,Kigali City,2024,Accounting & Finance,Business,244,54.0,64.0,62.0,189784,30,1.9
+University of Rwanda,Kigali City,2024,Economics,Business,575,54.0,64.0,62.0,185315,30,2.6
+University of Rwanda,Kigali City,2024,Education,Education,289,54.0,64.0,62.0,236029,23,1.6
+University of Rwanda,Kigali City,2024,Law,Law,359,54.0,64.0,62.0,195899,20,2.6
+University of Rwanda,Kigali City,2024,Environmental Science,Environment,609,54.0,64.0,62.0,269349,28,2.4
+University of Rwanda,Kigali City,2024,Architecture,Engineering,572,28,69.0,73.0,159512,15,2.3
+University of Rwanda,Kigali City,2024,Journalism & Media,Arts,286,54.0,64.0,62.0,143026,17,2.5
+University of Rwanda,Kigali City,2024,Social Work,Social Sciences,409,54.0,64.0,62.0,276949,29,1.6
+INES Ruhengeri,Northern,2019,Medicine & Surgery,Health,450,28,67.0,66.0,151030,29,2.5
+INES Ruhengeri,Northern,2019,Nursing,Health,46,28,67.0,66.0,139826,14,1.7
+INES Ruhengeri,Northern,2019,Public Health,Health,39,28,67.0,66.0,156619,14,2.2
+INES Ruhengeri,Northern,2019,Computer Science,ICT,92,28,67.0,66.0,126672,29,1.5
+INES Ruhengeri,Northern,2019,Software Engineering,ICT,140,28,67.0,66.0,181920,17,1.5
+INES Ruhengeri,Northern,2019,Data Science & AI,ICT,221,28,67.0,66.0,222201,27,2.4
+INES Ruhengeri,Northern,2019,Electrical Engineering,Engineering,117,28,67.0,66.0,214897,23,1.6
+INES Ruhengeri,Northern,2019,Civil Engineering,Engineering,246,28,67.0,66.0,166426,26,2.5
+INES Ruhengeri,Northern,2019,Mechanical Engineering,Engineering,103,28,67.0,66.0,223883,16,2.6
+INES Ruhengeri,Northern,2019,Agriculture,Agriculture,234,52.0,62.0,55.0,214414,27,2.5
+INES Ruhengeri,Northern,2019,Agribusiness,Agriculture,341,52.0,62.0,55.0,192921,12,2.4
+INES Ruhengeri,Northern,2019,Business Administration,Business,521,52.0,62.0,55.0,265101,20,2.4
+INES Ruhengeri,Northern,2019,Accounting & Finance,Business,585,52.0,62.0,55.0,217765,13,1.6
+INES Ruhengeri,Northern,2019,Economics,Business,154,52.0,62.0,55.0,174134,25,1.7
+INES Ruhengeri,Northern,2019,Education,Education,591,52.0,62.0,55.0,220171,18,2.2
+INES Ruhengeri,Northern,2019,Law,Law,618,52.0,62.0,55.0,232198,20,2.5
+INES Ruhengeri,Northern,2019,Environmental Science,Environment,260,52.0,62.0,55.0,236040,15,1.5
+INES Ruhengeri,Northern,2019,Architecture,Engineering,227,28,67.0,66.0,152607,20,1.8
+INES Ruhengeri,Northern,2019,Journalism & Media,Arts,388,52.0,62.0,55.0,122168,25,2.3
+INES Ruhengeri,Northern,2019,Social Work,Social Sciences,383,52.0,62.0,55.0,145563,30,1.8
+INES Ruhengeri,Northern,2020,Medicine & Surgery,Health,458,28,67.4,67.0,154030,30,2.5
+INES Ruhengeri,Northern,2020,Nursing,Health,54,28,67.4,67.0,142826,12,1.7
+INES Ruhengeri,Northern,2020,Public Health,Health,47,28,67.4,67.0,159619,28,2.2
+INES Ruhengeri,Northern,2020,Computer Science,ICT,100,28,67.4,67.0,129672,12,1.5
+INES Ruhengeri,Northern,2020,Software Engineering,ICT,148,28,67.4,67.0,184920,21,1.5
+INES Ruhengeri,Northern,2020,Data Science & AI,ICT,229,28,67.4,67.0,225201,29,2.4
+INES Ruhengeri,Northern,2020,Electrical Engineering,Engineering,125,28,67.4,67.0,217897,12,1.6
+INES Ruhengeri,Northern,2020,Civil Engineering,Engineering,254,28,67.4,67.0,169426,26,2.5
+INES Ruhengeri,Northern,2020,Mechanical Engineering,Engineering,111,28,67.4,67.0,226883,21,2.6
+INES Ruhengeri,Northern,2020,Agriculture,Agriculture,242,52.4,62.4,56.0,217414,17,2.5
+INES Ruhengeri,Northern,2020,Agribusiness,Agriculture,349,52.4,62.4,56.0,195921,24,2.4
+INES Ruhengeri,Northern,2020,Business Administration,Business,529,52.4,62.4,56.0,268101,30,2.4
+INES Ruhengeri,Northern,2020,Accounting & Finance,Business,593,52.4,62.4,56.0,220765,20,1.6
+INES Ruhengeri,Northern,2020,Economics,Business,162,52.4,62.4,56.0,177134,27,1.7
+INES Ruhengeri,Northern,2020,Education,Education,599,52.4,62.4,56.0,223171,15,2.2
+INES Ruhengeri,Northern,2020,Law,Law,626,52.4,62.4,56.0,235198,31,2.5
+INES Ruhengeri,Northern,2020,Environmental Science,Environment,268,52.4,62.4,56.0,239040,18,1.5
+INES Ruhengeri,Northern,2020,Architecture,Engineering,235,28,67.4,67.0,155607,22,1.8
+INES Ruhengeri,Northern,2020,Journalism & Media,Arts,396,52.4,62.4,56.0,125168,15,2.3
+INES Ruhengeri,Northern,2020,Social Work,Social Sciences,391,52.4,62.4,56.0,148563,19,1.8
+INES Ruhengeri,Northern,2021,Medicine & Surgery,Health,466,28,67.8,68.5,157030,28,2.5
+INES Ruhengeri,Northern,2021,Nursing,Health,62,28,67.8,68.5,145826,30,1.7
+INES Ruhengeri,Northern,2021,Public Health,Health,55,28,67.8,68.5,162619,26,2.2
+INES Ruhengeri,Northern,2021,Computer Science,ICT,108,28,67.8,68.5,132672,28,1.5
+INES Ruhengeri,Northern,2021,Software Engineering,ICT,156,28,67.8,68.5,187920,15,1.5
+INES Ruhengeri,Northern,2021,Data Science & AI,ICT,237,28,67.8,68.5,228201,20,2.4
+INES Ruhengeri,Northern,2021,Electrical Engineering,Engineering,133,28,67.8,68.5,220897,15,1.6
+INES Ruhengeri,Northern,2021,Civil Engineering,Engineering,262,28,67.8,68.5,172426,30,2.5
+INES Ruhengeri,Northern,2021,Mechanical Engineering,Engineering,119,28,67.8,68.5,229883,26,2.6
+INES Ruhengeri,Northern,2021,Agriculture,Agriculture,250,52.8,62.8,57.5,220414,24,2.5
+INES Ruhengeri,Northern,2021,Agribusiness,Agriculture,357,52.8,62.8,57.5,198921,18,2.4
+INES Ruhengeri,Northern,2021,Business Administration,Business,537,52.8,62.8,57.5,271101,16,2.4
+INES Ruhengeri,Northern,2021,Accounting & Finance,Business,601,52.8,62.8,57.5,223765,28,1.6
+INES Ruhengeri,Northern,2021,Economics,Business,170,52.8,62.8,57.5,180134,31,1.7
+INES Ruhengeri,Northern,2021,Education,Education,607,52.8,62.8,57.5,226171,12,2.2
+INES Ruhengeri,Northern,2021,Law,Law,634,52.8,62.8,57.5,238198,14,2.5
+INES Ruhengeri,Northern,2021,Environmental Science,Environment,276,52.8,62.8,57.5,242040,28,1.5
+INES Ruhengeri,Northern,2021,Architecture,Engineering,243,28,67.8,68.5,158607,27,1.8
+INES Ruhengeri,Northern,2021,Journalism & Media,Arts,404,52.8,62.8,57.5,128168,22,2.3
+INES Ruhengeri,Northern,2021,Social Work,Social Sciences,399,52.8,62.8,57.5,151563,13,1.8
+INES Ruhengeri,Northern,2022,Medicine & Surgery,Health,474,28,68.2,70.0,160030,26,2.5
+INES Ruhengeri,Northern,2022,Nursing,Health,70,28,68.2,70.0,148826,13,1.7
+INES Ruhengeri,Northern,2022,Public Health,Health,63,28,68.2,70.0,165619,18,2.2
+INES Ruhengeri,Northern,2022,Computer Science,ICT,116,28,68.2,70.0,135672,13,1.5
+INES Ruhengeri,Northern,2022,Software Engineering,ICT,164,28,68.2,70.0,190920,22,1.5
+INES Ruhengeri,Northern,2022,Data Science & AI,ICT,245,28,68.2,70.0,231201,30,2.4
+INES Ruhengeri,Northern,2022,Electrical Engineering,Engineering,141,28,68.2,70.0,223897,19,1.6
+INES Ruhengeri,Northern,2022,Civil Engineering,Engineering,270,28,68.2,70.0,175426,12,2.5
+INES Ruhengeri,Northern,2022,Mechanical Engineering,Engineering,127,28,68.2,70.0,232883,18,2.6
+INES Ruhengeri,Northern,2022,Agriculture,Agriculture,258,53.2,63.2,59.0,223414,15,2.5
+INES Ruhengeri,Northern,2022,Agribusiness,Agriculture,365,53.2,63.2,59.0,201921,23,2.4
+INES Ruhengeri,Northern,2022,Business Administration,Business,545,53.2,63.2,59.0,274101,26,2.4
+INES Ruhengeri,Northern,2022,Accounting & Finance,Business,609,53.2,63.2,59.0,226765,26,1.6
+INES Ruhengeri,Northern,2022,Economics,Business,178,53.2,63.2,59.0,183134,15,1.7
+INES Ruhengeri,Northern,2022,Education,Education,615,53.2,63.2,59.0,229171,26,2.2
+INES Ruhengeri,Northern,2022,Law,Law,642,53.2,63.2,59.0,241198,28,2.5
+INES Ruhengeri,Northern,2022,Environmental Science,Environment,284,53.2,63.2,59.0,245040,19,1.5
+INES Ruhengeri,Northern,2022,Architecture,Engineering,251,28,68.2,70.0,161607,24,1.8
+INES Ruhengeri,Northern,2022,Journalism & Media,Arts,412,53.2,63.2,59.0,131168,26,2.3
+INES Ruhengeri,Northern,2022,Social Work,Social Sciences,407,53.2,63.2,59.0,154563,12,1.8
+INES Ruhengeri,Northern,2023,Medicine & Surgery,Health,482,28,68.6,71.5,163030,26,2.5
+INES Ruhengeri,Northern,2023,Nursing,Health,78,28,68.6,71.5,151826,24,1.7
+INES Ruhengeri,Northern,2023,Public Health,Health,71,28,68.6,71.5,168619,12,2.2
+INES Ruhengeri,Northern,2023,Computer Science,ICT,124,28,68.6,71.5,138672,26,1.5
+INES Ruhengeri,Northern,2023,Software Engineering,ICT,172,28,68.6,71.5,193920,14,1.5
+INES Ruhengeri,Northern,2023,Data Science & AI,ICT,253,28,68.6,71.5,234201,27,2.4
+INES Ruhengeri,Northern,2023,Electrical Engineering,Engineering,149,28,68.6,71.5,226897,27,1.6
+INES Ruhengeri,Northern,2023,Civil Engineering,Engineering,278,28,68.6,71.5,178426,20,2.5
+INES Ruhengeri,Northern,2023,Mechanical Engineering,Engineering,135,28,68.6,71.5,235883,27,2.6
+INES Ruhengeri,Northern,2023,Agriculture,Agriculture,266,53.6,63.6,60.5,226414,30,2.5
+INES Ruhengeri,Northern,2023,Agribusiness,Agriculture,373,53.6,63.6,60.5,204921,28,2.4
+INES Ruhengeri,Northern,2023,Business Administration,Business,553,53.6,63.6,60.5,277101,21,2.4
+INES Ruhengeri,Northern,2023,Accounting & Finance,Business,617,53.6,63.6,60.5,229765,25,1.6
+INES Ruhengeri,Northern,2023,Economics,Business,186,53.6,63.6,60.5,186134,18,1.7
+INES Ruhengeri,Northern,2023,Education,Education,623,53.6,63.6,60.5,232171,16,2.2
+INES Ruhengeri,Northern,2023,Law,Law,650,53.6,63.6,60.5,244198,27,2.5
+INES Ruhengeri,Northern,2023,Environmental Science,Environment,292,53.6,63.6,60.5,248040,28,1.5
+INES Ruhengeri,Northern,2023,Architecture,Engineering,259,28,68.6,71.5,164607,12,1.8
+INES Ruhengeri,Northern,2023,Journalism & Media,Arts,420,53.6,63.6,60.5,134168,17,2.3
+INES Ruhengeri,Northern,2023,Social Work,Social Sciences,415,53.6,63.6,60.5,157563,24,1.8
+INES Ruhengeri,Northern,2024,Medicine & Surgery,Health,490,28,69.0,73.0,166030,26,2.5
+INES Ruhengeri,Northern,2024,Nursing,Health,86,28,69.0,73.0,154826,13,1.7
+INES Ruhengeri,Northern,2024,Public Health,Health,79,28,69.0,73.0,171619,28,2.2
+INES Ruhengeri,Northern,2024,Computer Science,ICT,132,28,69.0,73.0,141672,12,1.5
+INES Ruhengeri,Northern,2024,Software Engineering,ICT,180,28,69.0,73.0,196920,30,1.5
+INES Ruhengeri,Northern,2024,Data Science & AI,ICT,261,28,69.0,73.0,237201,21,2.4
+INES Ruhengeri,Northern,2024,Electrical Engineering,Engineering,157,28,69.0,73.0,229897,15,1.6
+INES Ruhengeri,Northern,2024,Civil Engineering,Engineering,286,28,69.0,73.0,181426,29,2.5
+INES Ruhengeri,Northern,2024,Mechanical Engineering,Engineering,143,28,69.0,73.0,238883,27,2.6
+INES Ruhengeri,Northern,2024,Agriculture,Agriculture,274,54.0,64.0,62.0,229414,23,2.5
+INES Ruhengeri,Northern,2024,Agribusiness,Agriculture,381,54.0,64.0,62.0,207921,19,2.4
+INES Ruhengeri,Northern,2024,Business Administration,Business,561,54.0,64.0,62.0,280101,12,2.4
+INES Ruhengeri,Northern,2024,Accounting & Finance,Business,625,54.0,64.0,62.0,232765,24,1.6
+INES Ruhengeri,Northern,2024,Economics,Business,194,54.0,64.0,62.0,189134,21,1.7
+INES Ruhengeri,Northern,2024,Education,Education,631,54.0,64.0,62.0,235171,17,2.2
+INES Ruhengeri,Northern,2024,Law,Law,658,54.0,64.0,62.0,247198,29,2.5
+INES Ruhengeri,Northern,2024,Environmental Science,Environment,300,54.0,64.0,62.0,251040,29,1.5
+INES Ruhengeri,Northern,2024,Architecture,Engineering,267,28,69.0,73.0,167607,25,1.8
+INES Ruhengeri,Northern,2024,Journalism & Media,Arts,428,54.0,64.0,62.0,137168,25,2.3
+INES Ruhengeri,Northern,2024,Social Work,Social Sciences,423,54.0,64.0,62.0,160563,14,1.8
+KIM University,Kigali City,2019,Medicine & Surgery,Health,50,28,67.0,66.0,237030,22,2.1
+KIM University,Kigali City,2019,Nursing,Health,253,28,67.0,66.0,254033,12,2.0
+KIM University,Kigali City,2019,Public Health,Health,532,28,67.0,66.0,259112,26,2.3
+KIM University,Kigali City,2019,Computer Science,ICT,259,28,67.0,66.0,217439,30,2.6
+KIM University,Kigali City,2019,Software Engineering,ICT,283,28,67.0,66.0,231263,13,2.6
+KIM University,Kigali City,2019,Data Science & AI,ICT,493,28,67.0,66.0,249473,15,2.0
+KIM University,Kigali City,2019,Electrical Engineering,Engineering,429,28,67.0,66.0,232609,14,1.6
+KIM University,Kigali City,2019,Civil Engineering,Engineering,442,28,67.0,66.0,165422,15,1.7
+KIM University,Kigali City,2019,Mechanical Engineering,Engineering,43,28,67.0,66.0,258623,22,2.6
+KIM University,Kigali City,2019,Agriculture,Agriculture,188,52.0,62.0,55.0,133368,20,1.5
+KIM University,Kigali City,2019,Agribusiness,Agriculture,103,52.0,62.0,55.0,153683,16,2.6
+KIM University,Kigali City,2019,Business Administration,Business,424,52.0,62.0,55.0,248804,15,2.3
+KIM University,Kigali City,2019,Accounting & Finance,Business,492,52.0,62.0,55.0,212272,12,1.9
+KIM University,Kigali City,2019,Economics,Business,60,52.0,62.0,55.0,164440,18,1.9
+KIM University,Kigali City,2019,Education,Education,207,52.0,62.0,55.0,126187,27,2.2
+KIM University,Kigali City,2019,Law,Law,354,52.0,62.0,55.0,183934,27,2.5
+KIM University,Kigali City,2019,Environmental Science,Environment,547,52.0,62.0,55.0,226727,25,2.6
+KIM University,Kigali City,2019,Architecture,Engineering,337,28,67.0,66.0,131717,27,2.0
+KIM University,Kigali City,2019,Journalism & Media,Arts,354,52.0,62.0,55.0,212134,13,2.5
+KIM University,Kigali City,2019,Social Work,Social Sciences,424,52.0,62.0,55.0,255404,13,2.3
+KIM University,Kigali City,2020,Medicine & Surgery,Health,58,28,67.4,67.0,240030,13,2.1
+KIM University,Kigali City,2020,Nursing,Health,261,28,67.4,67.0,257033,25,2.0
+KIM University,Kigali City,2020,Public Health,Health,540,28,67.4,67.0,262112,21,2.3
+KIM University,Kigali City,2020,Computer Science,ICT,267,28,67.4,67.0,220439,25,2.6
+KIM University,Kigali City,2020,Software Engineering,ICT,291,28,67.4,67.0,234263,20,2.6
+KIM University,Kigali City,2020,Data Science & AI,ICT,501,28,67.4,67.0,252473,27,2.0
+KIM University,Kigali City,2020,Electrical Engineering,Engineering,437,28,67.4,67.0,235609,15,1.6
+KIM University,Kigali City,2020,Civil Engineering,Engineering,450,28,67.4,67.0,168422,27,1.7
+KIM University,Kigali City,2020,Mechanical Engineering,Engineering,51,28,67.4,67.0,261623,28,2.6
+KIM University,Kigali City,2020,Agriculture,Agriculture,196,52.4,62.4,56.0,136368,25,1.5
+KIM University,Kigali City,2020,Agribusiness,Agriculture,111,52.4,62.4,56.0,156683,24,2.6
+KIM University,Kigali City,2020,Business Administration,Business,432,52.4,62.4,56.0,251804,29,2.3
+KIM University,Kigali City,2020,Accounting & Finance,Business,500,52.4,62.4,56.0,215272,20,1.9
+KIM University,Kigali City,2020,Economics,Business,68,52.4,62.4,56.0,167440,21,1.9
+KIM University,Kigali City,2020,Education,Education,215,52.4,62.4,56.0,129187,22,2.2
+KIM University,Kigali City,2020,Law,Law,362,52.4,62.4,56.0,186934,24,2.5
+KIM University,Kigali City,2020,Environmental Science,Environment,555,52.4,62.4,56.0,229727,23,2.6
+KIM University,Kigali City,2020,Architecture,Engineering,345,28,67.4,67.0,134717,15,2.0
+KIM University,Kigali City,2020,Journalism & Media,Arts,362,52.4,62.4,56.0,215134,18,2.5
+KIM University,Kigali City,2020,Social Work,Social Sciences,432,52.4,62.4,56.0,258404,21,2.3
+KIM University,Kigali City,2021,Medicine & Surgery,Health,66,28,67.8,68.5,243030,17,2.1
+KIM University,Kigali City,2021,Nursing,Health,269,28,67.8,68.5,260033,29,2.0
+KIM University,Kigali City,2021,Public Health,Health,548,28,67.8,68.5,265112,18,2.3
+KIM University,Kigali City,2021,Computer Science,ICT,275,28,67.8,68.5,223439,26,2.6
+KIM University,Kigali City,2021,Software Engineering,ICT,299,28,67.8,68.5,237263,16,2.6
+KIM University,Kigali City,2021,Data Science & AI,ICT,509,28,67.8,68.5,255473,29,2.0
+KIM University,Kigali City,2021,Electrical Engineering,Engineering,445,28,67.8,68.5,238609,12,1.6
+KIM University,Kigali City,2021,Civil Engineering,Engineering,458,28,67.8,68.5,171422,17,1.7
+KIM University,Kigali City,2021,Mechanical Engineering,Engineering,59,28,67.8,68.5,264623,28,2.6
+KIM University,Kigali City,2021,Agriculture,Agriculture,204,52.8,62.8,57.5,139368,12,1.5
+KIM University,Kigali City,2021,Agribusiness,Agriculture,119,52.8,62.8,57.5,159683,14,2.6
+KIM University,Kigali City,2021,Business Administration,Business,440,52.8,62.8,57.5,254804,27,2.3
+KIM University,Kigali City,2021,Accounting & Finance,Business,508,52.8,62.8,57.5,218272,30,1.9
+KIM University,Kigali City,2021,Economics,Business,76,52.8,62.8,57.5,170440,22,1.9
+KIM University,Kigali City,2021,Education,Education,223,52.8,62.8,57.5,132187,18,2.2
+KIM University,Kigali City,2021,Law,Law,370,52.8,62.8,57.5,189934,24,2.5
+KIM University,Kigali City,2021,Environmental Science,Environment,563,52.8,62.8,57.5,232727,25,2.6
+KIM University,Kigali City,2021,Architecture,Engineering,353,28,67.8,68.5,137717,21,2.0
+KIM University,Kigali City,2021,Journalism & Media,Arts,370,52.8,62.8,57.5,218134,26,2.5
+KIM University,Kigali City,2021,Social Work,Social Sciences,440,52.8,62.8,57.5,261404,23,2.3
+KIM University,Kigali City,2022,Medicine & Surgery,Health,74,28,68.2,70.0,246030,22,2.1
+KIM University,Kigali City,2022,Nursing,Health,277,28,68.2,70.0,263033,15,2.0
+KIM University,Kigali City,2022,Public Health,Health,556,28,68.2,70.0,268112,17,2.3
+KIM University,Kigali City,2022,Computer Science,ICT,283,28,68.2,70.0,226439,26,2.6
+KIM University,Kigali City,2022,Software Engineering,ICT,307,28,68.2,70.0,240263,13,2.6
+KIM University,Kigali City,2022,Data Science & AI,ICT,517,28,68.2,70.0,258473,14,2.0
+KIM University,Kigali City,2022,Electrical Engineering,Engineering,453,28,68.2,70.0,241609,24,1.6
+KIM University,Kigali City,2022,Civil Engineering,Engineering,466,28,68.2,70.0,174422,15,1.7
+KIM University,Kigali City,2022,Mechanical Engineering,Engineering,67,28,68.2,70.0,267623,26,2.6
+KIM University,Kigali City,2022,Agriculture,Agriculture,212,53.2,63.2,59.0,142368,15,1.5
+KIM University,Kigali City,2022,Agribusiness,Agriculture,127,53.2,63.2,59.0,162683,20,2.6
+KIM University,Kigali City,2022,Business Administration,Business,448,53.2,63.2,59.0,257804,31,2.3
+KIM University,Kigali City,2022,Accounting & Finance,Business,516,53.2,63.2,59.0,221272,27,1.9
+KIM University,Kigali City,2022,Economics,Business,84,53.2,63.2,59.0,173440,16,1.9
+KIM University,Kigali City,2022,Education,Education,231,53.2,63.2,59.0,135187,29,2.2
+KIM University,Kigali City,2022,Law,Law,378,53.2,63.2,59.0,192934,18,2.5
+KIM University,Kigali City,2022,Environmental Science,Environment,571,53.2,63.2,59.0,235727,17,2.6
+KIM University,Kigali City,2022,Architecture,Engineering,361,28,68.2,70.0,140717,15,2.0
+KIM University,Kigali City,2022,Journalism & Media,Arts,378,53.2,63.2,59.0,221134,21,2.5
+KIM University,Kigali City,2022,Social Work,Social Sciences,448,53.2,63.2,59.0,264404,15,2.3
+KIM University,Kigali City,2023,Medicine & Surgery,Health,82,28,68.6,71.5,249030,31,2.1
+KIM University,Kigali City,2023,Nursing,Health,285,28,68.6,71.5,266033,17,2.0
+KIM University,Kigali City,2023,Public Health,Health,564,28,68.6,71.5,271112,13,2.3
+KIM University,Kigali City,2023,Computer Science,ICT,291,28,68.6,71.5,229439,20,2.6
+KIM University,Kigali City,2023,Software Engineering,ICT,315,28,68.6,71.5,243263,29,2.6
+KIM University,Kigali City,2023,Data Science & AI,ICT,525,28,68.6,71.5,261473,28,2.0
+KIM University,Kigali City,2023,Electrical Engineering,Engineering,461,28,68.6,71.5,244609,31,1.6
+KIM University,Kigali City,2023,Civil Engineering,Engineering,474,28,68.6,71.5,177422,23,1.7
+KIM University,Kigali City,2023,Mechanical Engineering,Engineering,75,28,68.6,71.5,270623,23,2.6
+KIM University,Kigali City,2023,Agriculture,Agriculture,220,53.6,63.6,60.5,145368,20,1.5
+KIM University,Kigali City,2023,Agribusiness,Agriculture,135,53.6,63.6,60.5,165683,12,2.6
+KIM University,Kigali City,2023,Business Administration,Business,456,53.6,63.6,60.5,260804,31,2.3
+KIM University,Kigali City,2023,Accounting & Finance,Business,524,53.6,63.6,60.5,224272,13,1.9
+KIM University,Kigali City,2023,Economics,Business,92,53.6,63.6,60.5,176440,23,1.9
+KIM University,Kigali City,2023,Education,Education,239,53.6,63.6,60.5,138187,15,2.2
+KIM University,Kigali City,2023,Law,Law,386,53.6,63.6,60.5,195934,24,2.5
+KIM University,Kigali City,2023,Environmental Science,Environment,579,53.6,63.6,60.5,238727,31,2.6
+KIM University,Kigali City,2023,Architecture,Engineering,369,28,68.6,71.5,143717,27,2.0
+KIM University,Kigali City,2023,Journalism & Media,Arts,386,53.6,63.6,60.5,224134,24,2.5
+KIM University,Kigali City,2023,Social Work,Social Sciences,456,53.6,63.6,60.5,267404,29,2.3
+KIM University,Kigali City,2024,Medicine & Surgery,Health,90,28,69.0,73.0,252030,26,2.1
+KIM University,Kigali City,2024,Nursing,Health,293,28,69.0,73.0,269033,13,2.0
+KIM University,Kigali City,2024,Public Health,Health,572,28,69.0,73.0,274112,19,2.3
+KIM University,Kigali City,2024,Computer Science,ICT,299,28,69.0,73.0,232439,22,2.6
+KIM University,Kigali City,2024,Software Engineering,ICT,323,28,69.0,73.0,246263,25,2.6
+KIM University,Kigali City,2024,Data Science & AI,ICT,533,28,69.0,73.0,264473,15,2.0
+KIM University,Kigali City,2024,Electrical Engineering,Engineering,469,28,69.0,73.0,247609,31,1.6
+KIM University,Kigali City,2024,Civil Engineering,Engineering,482,28,69.0,73.0,180422,19,1.7
+KIM University,Kigali City,2024,Mechanical Engineering,Engineering,83,28,69.0,73.0,273623,29,2.6
+KIM University,Kigali City,2024,Agriculture,Agriculture,228,54.0,64.0,62.0,148368,24,1.5
+KIM University,Kigali City,2024,Agribusiness,Agriculture,143,54.0,64.0,62.0,168683,25,2.6
+KIM University,Kigali City,2024,Business Administration,Business,464,54.0,64.0,62.0,263804,23,2.3
+KIM University,Kigali City,2024,Accounting & Finance,Business,532,54.0,64.0,62.0,227272,30,1.9
+KIM University,Kigali City,2024,Economics,Business,100,54.0,64.0,62.0,179440,24,1.9
+KIM University,Kigali City,2024,Education,Education,247,54.0,64.0,62.0,141187,25,2.2
+KIM University,Kigali City,2024,Law,Law,394,54.0,64.0,62.0,198934,17,2.5
+KIM University,Kigali City,2024,Environmental Science,Environment,587,54.0,64.0,62.0,241727,26,2.6
+KIM University,Kigali City,2024,Architecture,Engineering,377,28,69.0,73.0,146717,16,2.0
+KIM University,Kigali City,2024,Journalism & Media,Arts,394,54.0,64.0,62.0,227134,19,2.5
+KIM University,Kigali City,2024,Social Work,Social Sciences,464,54.0,64.0,62.0,270404,29,2.3
+Mount Kenya University Rwanda,Kigali City,2019,Medicine & Surgery,Health,425,28,67.0,66.0,188205,29,2.4
+Mount Kenya University Rwanda,Kigali City,2019,Nursing,Health,588,28,67.0,66.0,220768,18,1.9
+Mount Kenya University Rwanda,Kigali City,2019,Public Health,Health,573,28,67.0,66.0,208753,23,1.6
+Mount Kenya University Rwanda,Kigali City,2019,Computer Science,ICT,182,28,67.0,66.0,215562,31,2.1
+Mount Kenya University Rwanda,Kigali City,2019,Software Engineering,ICT,536,28,67.0,66.0,238116,30,1.5
+Mount Kenya University Rwanda,Kigali City,2019,Data Science & AI,ICT,377,28,67.0,66.0,163557,18,2.4
+Mount Kenya University Rwanda,Kigali City,2019,Electrical Engineering,Engineering,135,28,67.0,66.0,137515,26,2.2
+Mount Kenya University Rwanda,Kigali City,2019,Civil Engineering,Engineering,372,28,67.0,66.0,250552,30,1.9
+Mount Kenya University Rwanda,Kigali City,2019,Mechanical Engineering,Engineering,146,28,67.0,66.0,150726,29,2.1
+Mount Kenya University Rwanda,Kigali City,2019,Agriculture,Agriculture,534,52.0,62.0,55.0,217714,16,2.5
+Mount Kenya University Rwanda,Kigali City,2019,Agribusiness,Agriculture,21,52.0,62.0,55.0,229801,12,1.6
+Mount Kenya University Rwanda,Kigali City,2019,Business Administration,Business,86,52.0,62.0,55.0,261666,29,2.1
+Mount Kenya University Rwanda,Kigali City,2019,Accounting & Finance,Business,49,52.0,62.0,55.0,261629,14,2.0
+Mount Kenya University Rwanda,Kigali City,2019,Economics,Business,238,52.0,62.0,55.0,226418,27,1.7
+Mount Kenya University Rwanda,Kigali City,2019,Education,Education,356,52.0,62.0,55.0,176136,17,1.5
+Mount Kenya University Rwanda,Kigali City,2019,Law,Law,326,52.0,62.0,55.0,174306,24,2.1
+Mount Kenya University Rwanda,Kigali City,2019,Environmental Science,Environment,528,52.0,62.0,55.0,210508,30,1.9
+Mount Kenya University Rwanda,Kigali City,2019,Architecture,Engineering,563,28,67.0,66.0,155943,13,1.8
+Mount Kenya University Rwanda,Kigali City,2019,Journalism & Media,Arts,158,52.0,62.0,55.0,250938,12,2.1
+Mount Kenya University Rwanda,Kigali City,2019,Social Work,Social Sciences,482,52.0,62.0,55.0,223662,28,2.1
+Mount Kenya University Rwanda,Kigali City,2020,Medicine & Surgery,Health,433,28,67.4,67.0,191205,20,2.4
+Mount Kenya University Rwanda,Kigali City,2020,Nursing,Health,596,28,67.4,67.0,223768,27,1.9
+Mount Kenya University Rwanda,Kigali City,2020,Public Health,Health,581,28,67.4,67.0,211753,28,1.6
+Mount Kenya University Rwanda,Kigali City,2020,Computer Science,ICT,190,28,67.4,67.0,218562,17,2.1
+Mount Kenya University Rwanda,Kigali City,2020,Software Engineering,ICT,544,28,67.4,67.0,241116,16,1.5
+Mount Kenya University Rwanda,Kigali City,2020,Data Science & AI,ICT,385,28,67.4,67.0,166557,24,2.4
+Mount Kenya University Rwanda,Kigali City,2020,Electrical Engineering,Engineering,143,28,67.4,67.0,140515,26,2.2
+Mount Kenya University Rwanda,Kigali City,2020,Civil Engineering,Engineering,380,28,67.4,67.0,253552,26,1.9
+Mount Kenya University Rwanda,Kigali City,2020,Mechanical Engineering,Engineering,154,28,67.4,67.0,153726,31,2.1
+Mount Kenya University Rwanda,Kigali City,2020,Agriculture,Agriculture,542,52.4,62.4,56.0,220714,26,2.5
+Mount Kenya University Rwanda,Kigali City,2020,Agribusiness,Agriculture,29,52.4,62.4,56.0,232801,25,1.6
+Mount Kenya University Rwanda,Kigali City,2020,Business Administration,Business,94,52.4,62.4,56.0,264666,17,2.1
+Mount Kenya University Rwanda,Kigali City,2020,Accounting & Finance,Business,57,52.4,62.4,56.0,264629,17,2.0
+Mount Kenya University Rwanda,Kigali City,2020,Economics,Business,246,52.4,62.4,56.0,229418,28,1.7
+Mount Kenya University Rwanda,Kigali City,2020,Education,Education,364,52.4,62.4,56.0,179136,29,1.5
+Mount Kenya University Rwanda,Kigali City,2020,Law,Law,334,52.4,62.4,56.0,177306,17,2.1
+Mount Kenya University Rwanda,Kigali City,2020,Environmental Science,Environment,536,52.4,62.4,56.0,213508,30,1.9
+Mount Kenya University Rwanda,Kigali City,2020,Architecture,Engineering,571,28,67.4,67.0,158943,31,1.8
+Mount Kenya University Rwanda,Kigali City,2020,Journalism & Media,Arts,166,52.4,62.4,56.0,253938,19,2.1
+Mount Kenya University Rwanda,Kigali City,2020,Social Work,Social Sciences,490,52.4,62.4,56.0,226662,14,2.1
+Mount Kenya University Rwanda,Kigali City,2021,Medicine & Surgery,Health,441,28,67.8,68.5,194205,20,2.4
+Mount Kenya University Rwanda,Kigali City,2021,Nursing,Health,604,28,67.8,68.5,226768,14,1.9
+Mount Kenya University Rwanda,Kigali City,2021,Public Health,Health,589,28,67.8,68.5,214753,23,1.6
+Mount Kenya University Rwanda,Kigali City,2021,Computer Science,ICT,198,28,67.8,68.5,221562,15,2.1
+Mount Kenya University Rwanda,Kigali City,2021,Software Engineering,ICT,552,28,67.8,68.5,244116,14,1.5
+Mount Kenya University Rwanda,Kigali City,2021,Data Science & AI,ICT,393,28,67.8,68.5,169557,25,2.4
+Mount Kenya University Rwanda,Kigali City,2021,Electrical Engineering,Engineering,151,28,67.8,68.5,143515,20,2.2
+Mount Kenya University Rwanda,Kigali City,2021,Civil Engineering,Engineering,388,28,67.8,68.5,256552,20,1.9
+Mount Kenya University Rwanda,Kigali City,2021,Mechanical Engineering,Engineering,162,28,67.8,68.5,156726,18,2.1
+Mount Kenya University Rwanda,Kigali City,2021,Agriculture,Agriculture,550,52.8,62.8,57.5,223714,13,2.5
+Mount Kenya University Rwanda,Kigali City,2021,Agribusiness,Agriculture,37,52.8,62.8,57.5,235801,17,1.6
+Mount Kenya University Rwanda,Kigali City,2021,Business Administration,Business,102,52.8,62.8,57.5,267666,29,2.1
+Mount Kenya University Rwanda,Kigali City,2021,Accounting & Finance,Business,65,52.8,62.8,57.5,267629,26,2.0
+Mount Kenya University Rwanda,Kigali City,2021,Economics,Business,254,52.8,62.8,57.5,232418,17,1.7
+Mount Kenya University Rwanda,Kigali City,2021,Education,Education,372,52.8,62.8,57.5,182136,15,1.5
+Mount Kenya University Rwanda,Kigali City,2021,Law,Law,342,52.8,62.8,57.5,180306,30,2.1
+Mount Kenya University Rwanda,Kigali City,2021,Environmental Science,Environment,544,52.8,62.8,57.5,216508,14,1.9
+Mount Kenya University Rwanda,Kigali City,2021,Architecture,Engineering,579,28,67.8,68.5,161943,28,1.8
+Mount Kenya University Rwanda,Kigali City,2021,Journalism & Media,Arts,174,52.8,62.8,57.5,256938,19,2.1
+Mount Kenya University Rwanda,Kigali City,2021,Social Work,Social Sciences,498,52.8,62.8,57.5,229662,22,2.1
+Mount Kenya University Rwanda,Kigali City,2022,Medicine & Surgery,Health,449,28,68.2,70.0,197205,20,2.4
+Mount Kenya University Rwanda,Kigali City,2022,Nursing,Health,612,28,68.2,70.0,229768,24,1.9
+Mount Kenya University Rwanda,Kigali City,2022,Public Health,Health,597,28,68.2,70.0,217753,13,1.6
+Mount Kenya University Rwanda,Kigali City,2022,Computer Science,ICT,206,28,68.2,70.0,224562,16,2.1
+Mount Kenya University Rwanda,Kigali City,2022,Software Engineering,ICT,560,28,68.2,70.0,247116,29,1.5
+Mount Kenya University Rwanda,Kigali City,2022,Data Science & AI,ICT,401,28,68.2,70.0,172557,13,2.4
+Mount Kenya University Rwanda,Kigali City,2022,Electrical Engineering,Engineering,159,28,68.2,70.0,146515,29,2.2
+Mount Kenya University Rwanda,Kigali City,2022,Civil Engineering,Engineering,396,28,68.2,70.0,259552,22,1.9
+Mount Kenya University Rwanda,Kigali City,2022,Mechanical Engineering,Engineering,170,28,68.2,70.0,159726,22,2.1
+Mount Kenya University Rwanda,Kigali City,2022,Agriculture,Agriculture,558,53.2,63.2,59.0,226714,28,2.5
+Mount Kenya University Rwanda,Kigali City,2022,Agribusiness,Agriculture,45,53.2,63.2,59.0,238801,20,1.6
+Mount Kenya University Rwanda,Kigali City,2022,Business Administration,Business,110,53.2,63.2,59.0,270666,16,2.1
+Mount Kenya University Rwanda,Kigali City,2022,Accounting & Finance,Business,73,53.2,63.2,59.0,270629,22,2.0
+Mount Kenya University Rwanda,Kigali City,2022,Economics,Business,262,53.2,63.2,59.0,235418,30,1.7
+Mount Kenya University Rwanda,Kigali City,2022,Education,Education,380,53.2,63.2,59.0,185136,18,1.5
+Mount Kenya University Rwanda,Kigali City,2022,Law,Law,350,53.2,63.2,59.0,183306,18,2.1
+Mount Kenya University Rwanda,Kigali City,2022,Environmental Science,Environment,552,53.2,63.2,59.0,219508,27,1.9
+Mount Kenya University Rwanda,Kigali City,2022,Architecture,Engineering,587,28,68.2,70.0,164943,30,1.8
+Mount Kenya University Rwanda,Kigali City,2022,Journalism & Media,Arts,182,53.2,63.2,59.0,259938,18,2.1
+Mount Kenya University Rwanda,Kigali City,2022,Social Work,Social Sciences,506,53.2,63.2,59.0,232662,25,2.1
+Mount Kenya University Rwanda,Kigali City,2023,Medicine & Surgery,Health,457,28,68.6,71.5,200205,28,2.4
+Mount Kenya University Rwanda,Kigali City,2023,Nursing,Health,620,28,68.6,71.5,232768,12,1.9
+Mount Kenya University Rwanda,Kigali City,2023,Public Health,Health,605,28,68.6,71.5,220753,14,1.6
+Mount Kenya University Rwanda,Kigali City,2023,Computer Science,ICT,214,28,68.6,71.5,227562,18,2.1
+Mount Kenya University Rwanda,Kigali City,2023,Software Engineering,ICT,568,28,68.6,71.5,250116,31,1.5
+Mount Kenya University Rwanda,Kigali City,2023,Data Science & AI,ICT,409,28,68.6,71.5,175557,18,2.4
+Mount Kenya University Rwanda,Kigali City,2023,Electrical Engineering,Engineering,167,28,68.6,71.5,149515,16,2.2
+Mount Kenya University Rwanda,Kigali City,2023,Civil Engineering,Engineering,404,28,68.6,71.5,262552,27,1.9
+Mount Kenya University Rwanda,Kigali City,2023,Mechanical Engineering,Engineering,178,28,68.6,71.5,162726,16,2.1
+Mount Kenya University Rwanda,Kigali City,2023,Agriculture,Agriculture,566,53.6,63.6,60.5,229714,29,2.5
+Mount Kenya University Rwanda,Kigali City,2023,Agribusiness,Agriculture,53,53.6,63.6,60.5,241801,12,1.6
+Mount Kenya University Rwanda,Kigali City,2023,Business Administration,Business,118,53.6,63.6,60.5,273666,19,2.1
+Mount Kenya University Rwanda,Kigali City,2023,Accounting & Finance,Business,81,53.6,63.6,60.5,273629,18,2.0
+Mount Kenya University Rwanda,Kigali City,2023,Economics,Business,270,53.6,63.6,60.5,238418,31,1.7
+Mount Kenya University Rwanda,Kigali City,2023,Education,Education,388,53.6,63.6,60.5,188136,14,1.5
+Mount Kenya University Rwanda,Kigali City,2023,Law,Law,358,53.6,63.6,60.5,186306,18,2.1
+Mount Kenya University Rwanda,Kigali City,2023,Environmental Science,Environment,560,53.6,63.6,60.5,222508,23,1.9
+Mount Kenya University Rwanda,Kigali City,2023,Architecture,Engineering,595,28,68.6,71.5,167943,24,1.8
+Mount Kenya University Rwanda,Kigali City,2023,Journalism & Media,Arts,190,53.6,63.6,60.5,262938,21,2.1
+Mount Kenya University Rwanda,Kigali City,2023,Social Work,Social Sciences,514,53.6,63.6,60.5,235662,15,2.1
+Mount Kenya University Rwanda,Kigali City,2024,Medicine & Surgery,Health,465,28,69.0,73.0,203205,27,2.4
+Mount Kenya University Rwanda,Kigali City,2024,Nursing,Health,628,28,69.0,73.0,235768,23,1.9
+Mount Kenya University Rwanda,Kigali City,2024,Public Health,Health,613,28,69.0,73.0,223753,12,1.6
+Mount Kenya University Rwanda,Kigali City,2024,Computer Science,ICT,222,28,69.0,73.0,230562,18,2.1
+Mount Kenya University Rwanda,Kigali City,2024,Software Engineering,ICT,576,28,69.0,73.0,253116,12,1.5
+Mount Kenya University Rwanda,Kigali City,2024,Data Science & AI,ICT,417,28,69.0,73.0,178557,18,2.4
+Mount Kenya University Rwanda,Kigali City,2024,Electrical Engineering,Engineering,175,28,69.0,73.0,152515,21,2.2
+Mount Kenya University Rwanda,Kigali City,2024,Civil Engineering,Engineering,412,28,69.0,73.0,265552,24,1.9
+Mount Kenya University Rwanda,Kigali City,2024,Mechanical Engineering,Engineering,186,28,69.0,73.0,165726,19,2.1
+Mount Kenya University Rwanda,Kigali City,2024,Agriculture,Agriculture,574,54.0,64.0,62.0,232714,21,2.5
+Mount Kenya University Rwanda,Kigali City,2024,Agribusiness,Agriculture,61,54.0,64.0,62.0,244801,23,1.6
+Mount Kenya University Rwanda,Kigali City,2024,Business Administration,Business,126,54.0,64.0,62.0,276666,30,2.1
+Mount Kenya University Rwanda,Kigali City,2024,Accounting & Finance,Business,89,54.0,64.0,62.0,276629,18,2.0
+Mount Kenya University Rwanda,Kigali City,2024,Economics,Business,278,54.0,64.0,62.0,241418,20,1.7
+Mount Kenya University Rwanda,Kigali City,2024,Education,Education,396,54.0,64.0,62.0,191136,18,1.5
+Mount Kenya University Rwanda,Kigali City,2024,Law,Law,366,54.0,64.0,62.0,189306,31,2.1
+Mount Kenya University Rwanda,Kigali City,2024,Environmental Science,Environment,568,54.0,64.0,62.0,225508,14,1.9
+Mount Kenya University Rwanda,Kigali City,2024,Architecture,Engineering,603,28,69.0,73.0,170943,27,1.8
+Mount Kenya University Rwanda,Kigali City,2024,Journalism & Media,Arts,198,54.0,64.0,62.0,265938,13,2.1
+Mount Kenya University Rwanda,Kigali City,2024,Social Work,Social Sciences,522,54.0,64.0,62.0,238662,22,2.1
+Adventist University of Central Africa,Eastern,2019,Medicine & Surgery,Health,572,28,67.0,66.0,221352,26,1.5
+Adventist University of Central Africa,Eastern,2019,Nursing,Health,31,28,67.0,66.0,222011,27,2.6
+Adventist University of Central Africa,Eastern,2019,Public Health,Health,538,28,67.0,66.0,157118,30,1.7
+Adventist University of Central Africa,Eastern,2019,Computer Science,ICT,139,28,67.0,66.0,264119,20,2.6
+Adventist University of Central Africa,Eastern,2019,Software Engineering,ICT,417,28,67.0,66.0,194197,29,1.6
+Adventist University of Central Africa,Eastern,2019,Data Science & AI,ICT,42,28,67.0,66.0,174622,30,2.5
+Adventist University of Central Africa,Eastern,2019,Electrical Engineering,Engineering,498,28,67.0,66.0,175078,24,2.5
+Adventist University of Central Africa,Eastern,2019,Civil Engineering,Engineering,608,28,67.0,66.0,164988,19,1.5
+Adventist University of Central Africa,Eastern,2019,Mechanical Engineering,Engineering,286,28,67.0,66.0,196466,28,1.7
+Adventist University of Central Africa,Eastern,2019,Agriculture,Agriculture,484,52.0,62.0,55.0,127064,31,2.3
+Adventist University of Central Africa,Eastern,2019,Agribusiness,Agriculture,488,52.0,62.0,55.0,131268,24,1.5
+Adventist University of Central Africa,Eastern,2019,Business Administration,Business,367,52.0,62.0,55.0,263147,31,2.6
+Adventist University of Central Africa,Eastern,2019,Accounting & Finance,Business,122,52.0,62.0,55.0,211902,20,2.1
+Adventist University of Central Africa,Eastern,2019,Economics,Business,37,52.0,62.0,55.0,153017,18,2.0
+Adventist University of Central Africa,Eastern,2019,Education,Education,143,52.0,62.0,55.0,255723,28,1.8
+Adventist University of Central Africa,Eastern,2019,Law,Law,200,52.0,62.0,55.0,145380,19,1.5
+Adventist University of Central Africa,Eastern,2019,Environmental Science,Environment,39,52.0,62.0,55.0,240019,18,2.2
+Adventist University of Central Africa,Eastern,2019,Architecture,Engineering,334,28,67.0,66.0,236114,29,1.7
+Adventist University of Central Africa,Eastern,2019,Journalism & Media,Arts,409,52.0,62.0,55.0,229589,22,2.0
+Adventist University of Central Africa,Eastern,2019,Social Work,Social Sciences,457,52.0,62.0,55.0,125237,29,2.0
+Adventist University of Central Africa,Eastern,2020,Medicine & Surgery,Health,580,28,67.4,67.0,224352,23,1.5
+Adventist University of Central Africa,Eastern,2020,Nursing,Health,39,28,67.4,67.0,225011,29,2.6
+Adventist University of Central Africa,Eastern,2020,Public Health,Health,546,28,67.4,67.0,160118,16,1.7
+Adventist University of Central Africa,Eastern,2020,Computer Science,ICT,147,28,67.4,67.0,267119,24,2.6
+Adventist University of Central Africa,Eastern,2020,Software Engineering,ICT,425,28,67.4,67.0,197197,28,1.6
+Adventist University of Central Africa,Eastern,2020,Data Science & AI,ICT,50,28,67.4,67.0,177622,28,2.5
+Adventist University of Central Africa,Eastern,2020,Electrical Engineering,Engineering,506,28,67.4,67.0,178078,14,2.5
+Adventist University of Central Africa,Eastern,2020,Civil Engineering,Engineering,616,28,67.4,67.0,167988,17,1.5
+Adventist University of Central Africa,Eastern,2020,Mechanical Engineering,Engineering,294,28,67.4,67.0,199466,16,1.7
+Adventist University of Central Africa,Eastern,2020,Agriculture,Agriculture,492,52.4,62.4,56.0,130064,28,2.3
+Adventist University of Central Africa,Eastern,2020,Agribusiness,Agriculture,496,52.4,62.4,56.0,134268,29,1.5
+Adventist University of Central Africa,Eastern,2020,Business Administration,Business,375,52.4,62.4,56.0,266147,28,2.6
+Adventist University of Central Africa,Eastern,2020,Accounting & Finance,Business,130,52.4,62.4,56.0,214902,28,2.1
+Adventist University of Central Africa,Eastern,2020,Economics,Business,45,52.4,62.4,56.0,156017,16,2.0
+Adventist University of Central Africa,Eastern,2020,Education,Education,151,52.4,62.4,56.0,258723,19,1.8
+Adventist University of Central Africa,Eastern,2020,Law,Law,208,52.4,62.4,56.0,148380,29,1.5
+Adventist University of Central Africa,Eastern,2020,Environmental Science,Environment,47,52.4,62.4,56.0,243019,13,2.2
+Adventist University of Central Africa,Eastern,2020,Architecture,Engineering,342,28,67.4,67.0,239114,31,1.7
+Adventist University of Central Africa,Eastern,2020,Journalism & Media,Arts,417,52.4,62.4,56.0,232589,25,2.0
+Adventist University of Central Africa,Eastern,2020,Social Work,Social Sciences,465,52.4,62.4,56.0,128237,21,2.0
+Adventist University of Central Africa,Eastern,2021,Medicine & Surgery,Health,588,28,67.8,68.5,227352,16,1.5
+Adventist University of Central Africa,Eastern,2021,Nursing,Health,47,28,67.8,68.5,228011,25,2.6
+Adventist University of Central Africa,Eastern,2021,Public Health,Health,554,28,67.8,68.5,163118,18,1.7
+Adventist University of Central Africa,Eastern,2021,Computer Science,ICT,155,28,67.8,68.5,270119,31,2.6
+Adventist University of Central Africa,Eastern,2021,Software Engineering,ICT,433,28,67.8,68.5,200197,19,1.6
+Adventist University of Central Africa,Eastern,2021,Data Science & AI,ICT,58,28,67.8,68.5,180622,26,2.5
+Adventist University of Central Africa,Eastern,2021,Electrical Engineering,Engineering,514,28,67.8,68.5,181078,26,2.5
+Adventist University of Central Africa,Eastern,2021,Civil Engineering,Engineering,624,28,67.8,68.5,170988,20,1.5
+Adventist University of Central Africa,Eastern,2021,Mechanical Engineering,Engineering,302,28,67.8,68.5,202466,16,1.7
+Adventist University of Central Africa,Eastern,2021,Agriculture,Agriculture,500,52.8,62.8,57.5,133064,18,2.3
+Adventist University of Central Africa,Eastern,2021,Agribusiness,Agriculture,504,52.8,62.8,57.5,137268,15,1.5
+Adventist University of Central Africa,Eastern,2021,Business Administration,Business,383,52.8,62.8,57.5,269147,18,2.6
+Adventist University of Central Africa,Eastern,2021,Accounting & Finance,Business,138,52.8,62.8,57.5,217902,17,2.1
+Adventist University of Central Africa,Eastern,2021,Economics,Business,53,52.8,62.8,57.5,159017,29,2.0
+Adventist University of Central Africa,Eastern,2021,Education,Education,159,52.8,62.8,57.5,261723,26,1.8
+Adventist University of Central Africa,Eastern,2021,Law,Law,216,52.8,62.8,57.5,151380,26,1.5
+Adventist University of Central Africa,Eastern,2021,Environmental Science,Environment,55,52.8,62.8,57.5,246019,25,2.2
+Adventist University of Central Africa,Eastern,2021,Architecture,Engineering,350,28,67.8,68.5,242114,24,1.7
+Adventist University of Central Africa,Eastern,2021,Journalism & Media,Arts,425,52.8,62.8,57.5,235589,29,2.0
+Adventist University of Central Africa,Eastern,2021,Social Work,Social Sciences,473,52.8,62.8,57.5,131237,21,2.0
+Adventist University of Central Africa,Eastern,2022,Medicine & Surgery,Health,596,28,68.2,70.0,230352,25,1.5
+Adventist University of Central Africa,Eastern,2022,Nursing,Health,55,28,68.2,70.0,231011,21,2.6
+Adventist University of Central Africa,Eastern,2022,Public Health,Health,562,28,68.2,70.0,166118,14,1.7
+Adventist University of Central Africa,Eastern,2022,Computer Science,ICT,163,28,68.2,70.0,273119,17,2.6
+Adventist University of Central Africa,Eastern,2022,Software Engineering,ICT,441,28,68.2,70.0,203197,16,1.6
+Adventist University of Central Africa,Eastern,2022,Data Science & AI,ICT,66,28,68.2,70.0,183622,27,2.5
+Adventist University of Central Africa,Eastern,2022,Electrical Engineering,Engineering,522,28,68.2,70.0,184078,22,2.5
+Adventist University of Central Africa,Eastern,2022,Civil Engineering,Engineering,632,28,68.2,70.0,173988,15,1.5
+Adventist University of Central Africa,Eastern,2022,Mechanical Engineering,Engineering,310,28,68.2,70.0,205466,30,1.7
+Adventist University of Central Africa,Eastern,2022,Agriculture,Agriculture,508,53.2,63.2,59.0,136064,19,2.3
+Adventist University of Central Africa,Eastern,2022,Agribusiness,Agriculture,512,53.2,63.2,59.0,140268,18,1.5
+Adventist University of Central Africa,Eastern,2022,Business Administration,Business,391,53.2,63.2,59.0,272147,24,2.6
+Adventist University of Central Africa,Eastern,2022,Accounting & Finance,Business,146,53.2,63.2,59.0,220902,21,2.1
+Adventist University of Central Africa,Eastern,2022,Economics,Business,61,53.2,63.2,59.0,162017,31,2.0
+Adventist University of Central Africa,Eastern,2022,Education,Education,167,53.2,63.2,59.0,264723,21,1.8
+Adventist University of Central Africa,Eastern,2022,Law,Law,224,53.2,63.2,59.0,154380,28,1.5
+Adventist University of Central Africa,Eastern,2022,Environmental Science,Environment,63,53.2,63.2,59.0,249019,15,2.2
+Adventist University of Central Africa,Eastern,2022,Architecture,Engineering,358,28,68.2,70.0,245114,17,1.7
+Adventist University of Central Africa,Eastern,2022,Journalism & Media,Arts,433,53.2,63.2,59.0,238589,16,2.0
+Adventist University of Central Africa,Eastern,2022,Social Work,Social Sciences,481,53.2,63.2,59.0,134237,23,2.0
+Adventist University of Central Africa,Eastern,2023,Medicine & Surgery,Health,604,28,68.6,71.5,233352,15,1.5
+Adventist University of Central Africa,Eastern,2023,Nursing,Health,63,28,68.6,71.5,234011,30,2.6
+Adventist University of Central Africa,Eastern,2023,Public Health,Health,570,28,68.6,71.5,169118,16,1.7
+Adventist University of Central Africa,Eastern,2023,Computer Science,ICT,171,28,68.6,71.5,276119,13,2.6
+Adventist University of Central Africa,Eastern,2023,Software Engineering,ICT,449,28,68.6,71.5,206197,27,1.6
+Adventist University of Central Africa,Eastern,2023,Data Science & AI,ICT,74,28,68.6,71.5,186622,12,2.5
+Adventist University of Central Africa,Eastern,2023,Electrical Engineering,Engineering,530,28,68.6,71.5,187078,18,2.5
+Adventist University of Central Africa,Eastern,2023,Civil Engineering,Engineering,640,28,68.6,71.5,176988,17,1.5
+Adventist University of Central Africa,Eastern,2023,Mechanical Engineering,Engineering,318,28,68.6,71.5,208466,15,1.7
+Adventist University of Central Africa,Eastern,2023,Agriculture,Agriculture,516,53.6,63.6,60.5,139064,31,2.3
+Adventist University of Central Africa,Eastern,2023,Agribusiness,Agriculture,520,53.6,63.6,60.5,143268,27,1.5
+Adventist University of Central Africa,Eastern,2023,Business Administration,Business,399,53.6,63.6,60.5,275147,29,2.6
+Adventist University of Central Africa,Eastern,2023,Accounting & Finance,Business,154,53.6,63.6,60.5,223902,31,2.1
+Adventist University of Central Africa,Eastern,2023,Economics,Business,69,53.6,63.6,60.5,165017,17,2.0
+Adventist University of Central Africa,Eastern,2023,Education,Education,175,53.6,63.6,60.5,267723,15,1.8
+Adventist University of Central Africa,Eastern,2023,Law,Law,232,53.6,63.6,60.5,157380,24,1.5
+Adventist University of Central Africa,Eastern,2023,Environmental Science,Environment,71,53.6,63.6,60.5,252019,29,2.2
+Adventist University of Central Africa,Eastern,2023,Architecture,Engineering,366,28,68.6,71.5,248114,15,1.7
+Adventist University of Central Africa,Eastern,2023,Journalism & Media,Arts,441,53.6,63.6,60.5,241589,31,2.0
+Adventist University of Central Africa,Eastern,2023,Social Work,Social Sciences,489,53.6,63.6,60.5,137237,19,2.0
+Adventist University of Central Africa,Eastern,2024,Medicine & Surgery,Health,612,28,69.0,73.0,236352,21,1.5
+Adventist University of Central Africa,Eastern,2024,Nursing,Health,71,28,69.0,73.0,237011,29,2.6
+Adventist University of Central Africa,Eastern,2024,Public Health,Health,578,28,69.0,73.0,172118,23,1.7
+Adventist University of Central Africa,Eastern,2024,Computer Science,ICT,179,28,69.0,73.0,279119,24,2.6
+Adventist University of Central Africa,Eastern,2024,Software Engineering,ICT,457,28,69.0,73.0,209197,22,1.6
+Adventist University of Central Africa,Eastern,2024,Data Science & AI,ICT,82,28,69.0,73.0,189622,28,2.5
+Adventist University of Central Africa,Eastern,2024,Electrical Engineering,Engineering,538,28,69.0,73.0,190078,15,2.5
+Adventist University of Central Africa,Eastern,2024,Civil Engineering,Engineering,648,28,69.0,73.0,179988,17,1.5
+Adventist University of Central Africa,Eastern,2024,Mechanical Engineering,Engineering,326,28,69.0,73.0,211466,29,1.7
+Adventist University of Central Africa,Eastern,2024,Agriculture,Agriculture,524,54.0,64.0,62.0,142064,30,2.3
+Adventist University of Central Africa,Eastern,2024,Agribusiness,Agriculture,528,54.0,64.0,62.0,146268,20,1.5
+Adventist University of Central Africa,Eastern,2024,Business Administration,Business,407,54.0,64.0,62.0,278147,13,2.6
+Adventist University of Central Africa,Eastern,2024,Accounting & Finance,Business,162,54.0,64.0,62.0,226902,28,2.1
+Adventist University of Central Africa,Eastern,2024,Economics,Business,77,54.0,64.0,62.0,168017,28,2.0
+Adventist University of Central Africa,Eastern,2024,Education,Education,183,54.0,64.0,62.0,270723,30,1.8
+Adventist University of Central Africa,Eastern,2024,Law,Law,240,54.0,64.0,62.0,160380,27,1.5
+Adventist University of Central Africa,Eastern,2024,Environmental Science,Environment,79,54.0,64.0,62.0,255019,28,2.2
+Adventist University of Central Africa,Eastern,2024,Architecture,Engineering,374,28,69.0,73.0,251114,25,1.7
+Adventist University of Central Africa,Eastern,2024,Journalism & Media,Arts,449,54.0,64.0,62.0,244589,16,2.0
+Adventist University of Central Africa,Eastern,2024,Social Work,Social Sciences,497,54.0,64.0,62.0,140237,20,2.0
+Rwanda Polytechnic,Kigali City,2019,Medicine & Surgery,Health,287,28,67.0,66.0,227067,29,1.8
+Rwanda Polytechnic,Kigali City,2019,Nursing,Health,594,28,67.0,66.0,226174,16,2.5
+Rwanda Polytechnic,Kigali City,2019,Public Health,Health,612,28,67.0,66.0,198592,30,1.9
+Rwanda Polytechnic,Kigali City,2019,Computer Science,ICT,453,28,67.0,66.0,190033,29,1.6
+Rwanda Polytechnic,Kigali City,2019,Software Engineering,ICT,488,28,67.0,66.0,262668,16,1.5
+Rwanda Polytechnic,Kigali City,2019,Data Science & AI,ICT,124,28,67.0,66.0,177704,30,2.3
+Rwanda Polytechnic,Kigali City,2019,Electrical Engineering,Engineering,227,28,67.0,66.0,138807,31,1.8
+Rwanda Polytechnic,Kigali City,2019,Civil Engineering,Engineering,475,28,67.0,66.0,158255,28,2.6
+Rwanda Polytechnic,Kigali City,2019,Mechanical Engineering,Engineering,152,28,67.0,66.0,172332,17,1.5
+Rwanda Polytechnic,Kigali City,2019,Agriculture,Agriculture,92,52.0,62.0,55.0,154272,24,1.5
+Rwanda Polytechnic,Kigali City,2019,Agribusiness,Agriculture,225,52.0,62.0,55.0,141205,29,1.6
+Rwanda Polytechnic,Kigali City,2019,Business Administration,Business,476,52.0,62.0,55.0,190656,31,1.5
+Rwanda Polytechnic,Kigali City,2019,Accounting & Finance,Business,93,52.0,62.0,55.0,235273,17,1.6
+Rwanda Polytechnic,Kigali City,2019,Economics,Business,252,52.0,62.0,55.0,223432,31,1.9
+Rwanda Polytechnic,Kigali City,2019,Education,Education,336,52.0,62.0,55.0,258316,30,1.9
+Rwanda Polytechnic,Kigali City,2019,Law,Law,417,52.0,62.0,55.0,216397,18,1.6
+Rwanda Polytechnic,Kigali City,2019,Environmental Science,Environment,306,52.0,62.0,55.0,140686,21,2.5
+Rwanda Polytechnic,Kigali City,2019,Architecture,Engineering,522,28,67.0,66.0,250102,24,2.5
+Rwanda Polytechnic,Kigali City,2019,Journalism & Media,Arts,482,52.0,62.0,55.0,153462,18,2.1
+Rwanda Polytechnic,Kigali City,2019,Social Work,Social Sciences,181,52.0,62.0,55.0,184961,16,2.0
+Rwanda Polytechnic,Kigali City,2020,Medicine & Surgery,Health,295,28,67.4,67.0,230067,31,1.8
+Rwanda Polytechnic,Kigali City,2020,Nursing,Health,602,28,67.4,67.0,229174,24,2.5
+Rwanda Polytechnic,Kigali City,2020,Public Health,Health,620,28,67.4,67.0,201592,17,1.9
+Rwanda Polytechnic,Kigali City,2020,Computer Science,ICT,461,28,67.4,67.0,193033,25,1.6
+Rwanda Polytechnic,Kigali City,2020,Software Engineering,ICT,496,28,67.4,67.0,265668,28,1.5
+Rwanda Polytechnic,Kigali City,2020,Data Science & AI,ICT,132,28,67.4,67.0,180704,16,2.3
+Rwanda Polytechnic,Kigali City,2020,Electrical Engineering,Engineering,235,28,67.4,67.0,141807,28,1.8
+Rwanda Polytechnic,Kigali City,2020,Civil Engineering,Engineering,483,28,67.4,67.0,161255,30,2.6
+Rwanda Polytechnic,Kigali City,2020,Mechanical Engineering,Engineering,160,28,67.4,67.0,175332,24,1.5
+Rwanda Polytechnic,Kigali City,2020,Agriculture,Agriculture,100,52.4,62.4,56.0,157272,16,1.5
+Rwanda Polytechnic,Kigali City,2020,Agribusiness,Agriculture,233,52.4,62.4,56.0,144205,22,1.6
+Rwanda Polytechnic,Kigali City,2020,Business Administration,Business,484,52.4,62.4,56.0,193656,27,1.5
+Rwanda Polytechnic,Kigali City,2020,Accounting & Finance,Business,101,52.4,62.4,56.0,238273,25,1.6
+Rwanda Polytechnic,Kigali City,2020,Economics,Business,260,52.4,62.4,56.0,226432,26,1.9
+Rwanda Polytechnic,Kigali City,2020,Education,Education,344,52.4,62.4,56.0,261316,16,1.9
+Rwanda Polytechnic,Kigali City,2020,Law,Law,425,52.4,62.4,56.0,219397,31,1.6
+Rwanda Polytechnic,Kigali City,2020,Environmental Science,Environment,314,52.4,62.4,56.0,143686,15,2.5
+Rwanda Polytechnic,Kigali City,2020,Architecture,Engineering,530,28,67.4,67.0,253102,13,2.5
+Rwanda Polytechnic,Kigali City,2020,Journalism & Media,Arts,490,52.4,62.4,56.0,156462,29,2.1
+Rwanda Polytechnic,Kigali City,2020,Social Work,Social Sciences,189,52.4,62.4,56.0,187961,18,2.0
+Rwanda Polytechnic,Kigali City,2021,Medicine & Surgery,Health,303,28,67.8,68.5,233067,20,1.8
+Rwanda Polytechnic,Kigali City,2021,Nursing,Health,610,28,67.8,68.5,232174,15,2.5
+Rwanda Polytechnic,Kigali City,2021,Public Health,Health,628,28,67.8,68.5,204592,18,1.9
+Rwanda Polytechnic,Kigali City,2021,Computer Science,ICT,469,28,67.8,68.5,196033,13,1.6
+Rwanda Polytechnic,Kigali City,2021,Software Engineering,ICT,504,28,67.8,68.5,268668,14,1.5
+Rwanda Polytechnic,Kigali City,2021,Data Science & AI,ICT,140,28,67.8,68.5,183704,20,2.3
+Rwanda Polytechnic,Kigali City,2021,Electrical Engineering,Engineering,243,28,67.8,68.5,144807,27,1.8
+Rwanda Polytechnic,Kigali City,2021,Civil Engineering,Engineering,491,28,67.8,68.5,164255,25,2.6
+Rwanda Polytechnic,Kigali City,2021,Mechanical Engineering,Engineering,168,28,67.8,68.5,178332,26,1.5
+Rwanda Polytechnic,Kigali City,2021,Agriculture,Agriculture,108,52.8,62.8,57.5,160272,30,1.5
+Rwanda Polytechnic,Kigali City,2021,Agribusiness,Agriculture,241,52.8,62.8,57.5,147205,14,1.6
+Rwanda Polytechnic,Kigali City,2021,Business Administration,Business,492,52.8,62.8,57.5,196656,22,1.5
+Rwanda Polytechnic,Kigali City,2021,Accounting & Finance,Business,109,52.8,62.8,57.5,241273,24,1.6
+Rwanda Polytechnic,Kigali City,2021,Economics,Business,268,52.8,62.8,57.5,229432,28,1.9
+Rwanda Polytechnic,Kigali City,2021,Education,Education,352,52.8,62.8,57.5,264316,28,1.9
+Rwanda Polytechnic,Kigali City,2021,Law,Law,433,52.8,62.8,57.5,222397,19,1.6
+Rwanda Polytechnic,Kigali City,2021,Environmental Science,Environment,322,52.8,62.8,57.5,146686,12,2.5
+Rwanda Polytechnic,Kigali City,2021,Architecture,Engineering,538,28,67.8,68.5,256102,28,2.5
+Rwanda Polytechnic,Kigali City,2021,Journalism & Media,Arts,498,52.8,62.8,57.5,159462,23,2.1
+Rwanda Polytechnic,Kigali City,2021,Social Work,Social Sciences,197,52.8,62.8,57.5,190961,20,2.0
+Rwanda Polytechnic,Kigali City,2022,Medicine & Surgery,Health,311,28,68.2,70.0,236067,24,1.8
+Rwanda Polytechnic,Kigali City,2022,Nursing,Health,618,28,68.2,70.0,235174,28,2.5
+Rwanda Polytechnic,Kigali City,2022,Public Health,Health,636,28,68.2,70.0,207592,15,1.9
+Rwanda Polytechnic,Kigali City,2022,Computer Science,ICT,477,28,68.2,70.0,199033,25,1.6
+Rwanda Polytechnic,Kigali City,2022,Software Engineering,ICT,512,28,68.2,70.0,271668,27,1.5
+Rwanda Polytechnic,Kigali City,2022,Data Science & AI,ICT,148,28,68.2,70.0,186704,16,2.3
+Rwanda Polytechnic,Kigali City,2022,Electrical Engineering,Engineering,251,28,68.2,70.0,147807,27,1.8
+Rwanda Polytechnic,Kigali City,2022,Civil Engineering,Engineering,499,28,68.2,70.0,167255,20,2.6
+Rwanda Polytechnic,Kigali City,2022,Mechanical Engineering,Engineering,176,28,68.2,70.0,181332,30,1.5
+Rwanda Polytechnic,Kigali City,2022,Agriculture,Agriculture,116,53.2,63.2,59.0,163272,30,1.5
+Rwanda Polytechnic,Kigali City,2022,Agribusiness,Agriculture,249,53.2,63.2,59.0,150205,31,1.6
+Rwanda Polytechnic,Kigali City,2022,Business Administration,Business,500,53.2,63.2,59.0,199656,30,1.5
+Rwanda Polytechnic,Kigali City,2022,Accounting & Finance,Business,117,53.2,63.2,59.0,244273,17,1.6
+Rwanda Polytechnic,Kigali City,2022,Economics,Business,276,53.2,63.2,59.0,232432,28,1.9
+Rwanda Polytechnic,Kigali City,2022,Education,Education,360,53.2,63.2,59.0,267316,29,1.9
+Rwanda Polytechnic,Kigali City,2022,Law,Law,441,53.2,63.2,59.0,225397,16,1.6
+Rwanda Polytechnic,Kigali City,2022,Environmental Science,Environment,330,53.2,63.2,59.0,149686,22,2.5
+Rwanda Polytechnic,Kigali City,2022,Architecture,Engineering,546,28,68.2,70.0,259102,21,2.5
+Rwanda Polytechnic,Kigali City,2022,Journalism & Media,Arts,506,53.2,63.2,59.0,162462,25,2.1
+Rwanda Polytechnic,Kigali City,2022,Social Work,Social Sciences,205,53.2,63.2,59.0,193961,23,2.0
+Rwanda Polytechnic,Kigali City,2023,Medicine & Surgery,Health,319,28,68.6,71.5,239067,18,1.8
+Rwanda Polytechnic,Kigali City,2023,Nursing,Health,626,28,68.6,71.5,238174,15,2.5
+Rwanda Polytechnic,Kigali City,2023,Public Health,Health,644,28,68.6,71.5,210592,12,1.9
+Rwanda Polytechnic,Kigali City,2023,Computer Science,ICT,485,28,68.6,71.5,202033,30,1.6
+Rwanda Polytechnic,Kigali City,2023,Software Engineering,ICT,520,28,68.6,71.5,274668,25,1.5
+Rwanda Polytechnic,Kigali City,2023,Data Science & AI,ICT,156,28,68.6,71.5,189704,17,2.3
+Rwanda Polytechnic,Kigali City,2023,Electrical Engineering,Engineering,259,28,68.6,71.5,150807,17,1.8
+Rwanda Polytechnic,Kigali City,2023,Civil Engineering,Engineering,507,28,68.6,71.5,170255,30,2.6
+Rwanda Polytechnic,Kigali City,2023,Mechanical Engineering,Engineering,184,28,68.6,71.5,184332,24,1.5
+Rwanda Polytechnic,Kigali City,2023,Agriculture,Agriculture,124,53.6,63.6,60.5,166272,15,1.5
+Rwanda Polytechnic,Kigali City,2023,Agribusiness,Agriculture,257,53.6,63.6,60.5,153205,25,1.6
+Rwanda Polytechnic,Kigali City,2023,Business Administration,Business,508,53.6,63.6,60.5,202656,20,1.5
+Rwanda Polytechnic,Kigali City,2023,Accounting & Finance,Business,125,53.6,63.6,60.5,247273,29,1.6
+Rwanda Polytechnic,Kigali City,2023,Economics,Business,284,53.6,63.6,60.5,235432,15,1.9
+Rwanda Polytechnic,Kigali City,2023,Education,Education,368,53.6,63.6,60.5,270316,27,1.9
+Rwanda Polytechnic,Kigali City,2023,Law,Law,449,53.6,63.6,60.5,228397,25,1.6
+Rwanda Polytechnic,Kigali City,2023,Environmental Science,Environment,338,53.6,63.6,60.5,152686,18,2.5
+Rwanda Polytechnic,Kigali City,2023,Architecture,Engineering,554,28,68.6,71.5,262102,12,2.5
+Rwanda Polytechnic,Kigali City,2023,Journalism & Media,Arts,514,53.6,63.6,60.5,165462,21,2.1
+Rwanda Polytechnic,Kigali City,2023,Social Work,Social Sciences,213,53.6,63.6,60.5,196961,26,2.0
+Rwanda Polytechnic,Kigali City,2024,Medicine & Surgery,Health,327,28,69.0,73.0,242067,29,1.8
+Rwanda Polytechnic,Kigali City,2024,Nursing,Health,634,28,69.0,73.0,241174,12,2.5
+Rwanda Polytechnic,Kigali City,2024,Public Health,Health,652,28,69.0,73.0,213592,13,1.9
+Rwanda Polytechnic,Kigali City,2024,Computer Science,ICT,493,28,69.0,73.0,205033,22,1.6
+Rwanda Polytechnic,Kigali City,2024,Software Engineering,ICT,528,28,69.0,73.0,277668,31,1.5
+Rwanda Polytechnic,Kigali City,2024,Data Science & AI,ICT,164,28,69.0,73.0,192704,18,2.3
+Rwanda Polytechnic,Kigali City,2024,Electrical Engineering,Engineering,267,28,69.0,73.0,153807,22,1.8
+Rwanda Polytechnic,Kigali City,2024,Civil Engineering,Engineering,515,28,69.0,73.0,173255,26,2.6
+Rwanda Polytechnic,Kigali City,2024,Mechanical Engineering,Engineering,192,28,69.0,73.0,187332,21,1.5
+Rwanda Polytechnic,Kigali City,2024,Agriculture,Agriculture,132,54.0,64.0,62.0,169272,29,1.5
+Rwanda Polytechnic,Kigali City,2024,Agribusiness,Agriculture,265,54.0,64.0,62.0,156205,17,1.6
+Rwanda Polytechnic,Kigali City,2024,Business Administration,Business,516,54.0,64.0,62.0,205656,15,1.5
+Rwanda Polytechnic,Kigali City,2024,Accounting & Finance,Business,133,54.0,64.0,62.0,250273,12,1.6
+Rwanda Polytechnic,Kigali City,2024,Economics,Business,292,54.0,64.0,62.0,238432,17,1.9
+Rwanda Polytechnic,Kigali City,2024,Education,Education,376,54.0,64.0,62.0,273316,18,1.9
+Rwanda Polytechnic,Kigali City,2024,Law,Law,457,54.0,64.0,62.0,231397,13,1.6
+Rwanda Polytechnic,Kigali City,2024,Environmental Science,Environment,346,54.0,64.0,62.0,155686,31,2.5
+Rwanda Polytechnic,Kigali City,2024,Architecture,Engineering,562,28,69.0,73.0,265102,27,2.5
+Rwanda Polytechnic,Kigali City,2024,Journalism & Media,Arts,522,54.0,64.0,62.0,168462,27,2.1
+Rwanda Polytechnic,Kigali City,2024,Social Work,Social Sciences,221,54.0,64.0,62.0,199961,27,2.0
+Carnegie Mellon University Africa,Kigali City,2019,Medicine & Surgery,Health,467,28,67.0,66.0,188847,22,1.8
+Carnegie Mellon University Africa,Kigali City,2019,Nursing,Health,309,28,67.0,66.0,136489,24,1.6
+Carnegie Mellon University Africa,Kigali City,2019,Public Health,Health,563,28,67.0,66.0,148143,20,1.8
+Carnegie Mellon University Africa,Kigali City,2019,Computer Science,ICT,499,28,67.0,66.0,180479,14,2.6
+Carnegie Mellon University Africa,Kigali City,2019,Software Engineering,ICT,608,28,67.0,66.0,211188,12,1.5
+Carnegie Mellon University Africa,Kigali City,2019,Data Science & AI,ICT,423,28,67.0,66.0,148003,18,2.2
+Carnegie Mellon University Africa,Kigali City,2019,Electrical Engineering,Engineering,594,28,67.0,66.0,140374,21,2.5
+Carnegie Mellon University Africa,Kigali City,2019,Civil Engineering,Engineering,427,28,67.0,66.0,184607,29,2.6
+Carnegie Mellon University Africa,Kigali City,2019,Mechanical Engineering,Engineering,430,28,67.0,66.0,173210,12,1.7
+Carnegie Mellon University Africa,Kigali City,2019,Agriculture,Agriculture,248,52.0,62.0,55.0,264828,22,1.5
+Carnegie Mellon University Africa,Kigali City,2019,Agribusiness,Agriculture,229,52.0,62.0,55.0,210809,27,2.0
+Carnegie Mellon University Africa,Kigali City,2019,Business Administration,Business,207,52.0,62.0,55.0,236587,14,2.2
+Carnegie Mellon University Africa,Kigali City,2019,Accounting & Finance,Business,457,52.0,62.0,55.0,251837,23,2.0
+Carnegie Mellon University Africa,Kigali City,2019,Economics,Business,124,52.0,62.0,55.0,171104,29,2.3
+Carnegie Mellon University Africa,Kigali City,2019,Education,Education,325,52.0,62.0,55.0,225905,31,2.0
+Carnegie Mellon University Africa,Kigali City,2019,Law,Law,20,52.0,62.0,55.0,142200,16,1.5
+Carnegie Mellon University Africa,Kigali City,2019,Environmental Science,Environment,600,52.0,62.0,55.0,222580,22,1.9
+Carnegie Mellon University Africa,Kigali City,2019,Architecture,Engineering,123,28,67.0,66.0,213703,23,2.2
+Carnegie Mellon University Africa,Kigali City,2019,Journalism & Media,Arts,543,52.0,62.0,55.0,164323,15,2.2
+Carnegie Mellon University Africa,Kigali City,2019,Social Work,Social Sciences,579,52.0,62.0,55.0,178159,14,2.2
+Carnegie Mellon University Africa,Kigali City,2020,Medicine & Surgery,Health,475,28,67.4,67.0,191847,27,1.8
+Carnegie Mellon University Africa,Kigali City,2020,Nursing,Health,317,28,67.4,67.0,139489,29,1.6
+Carnegie Mellon University Africa,Kigali City,2020,Public Health,Health,571,28,67.4,67.0,151143,29,1.8
+Carnegie Mellon University Africa,Kigali City,2020,Computer Science,ICT,507,28,67.4,67.0,183479,25,2.6
+Carnegie Mellon University Africa,Kigali City,2020,Software Engineering,ICT,616,28,67.4,67.0,214188,13,1.5
+Carnegie Mellon University Africa,Kigali City,2020,Data Science & AI,ICT,431,28,67.4,67.0,151003,20,2.2
+Carnegie Mellon University Africa,Kigali City,2020,Electrical Engineering,Engineering,602,28,67.4,67.0,143374,24,2.5
+Carnegie Mellon University Africa,Kigali City,2020,Civil Engineering,Engineering,435,28,67.4,67.0,187607,18,2.6
+Carnegie Mellon University Africa,Kigali City,2020,Mechanical Engineering,Engineering,438,28,67.4,67.0,176210,20,1.7
+Carnegie Mellon University Africa,Kigali City,2020,Agriculture,Agriculture,256,52.4,62.4,56.0,267828,18,1.5
+Carnegie Mellon University Africa,Kigali City,2020,Agribusiness,Agriculture,237,52.4,62.4,56.0,213809,23,2.0
+Carnegie Mellon University Africa,Kigali City,2020,Business Administration,Business,215,52.4,62.4,56.0,239587,30,2.2
+Carnegie Mellon University Africa,Kigali City,2020,Accounting & Finance,Business,465,52.4,62.4,56.0,254837,13,2.0
+Carnegie Mellon University Africa,Kigali City,2020,Economics,Business,132,52.4,62.4,56.0,174104,29,2.3
+Carnegie Mellon University Africa,Kigali City,2020,Education,Education,333,52.4,62.4,56.0,228905,19,2.0
+Carnegie Mellon University Africa,Kigali City,2020,Law,Law,28,52.4,62.4,56.0,145200,28,1.5
+Carnegie Mellon University Africa,Kigali City,2020,Environmental Science,Environment,608,52.4,62.4,56.0,225580,12,1.9
+Carnegie Mellon University Africa,Kigali City,2020,Architecture,Engineering,131,28,67.4,67.0,216703,29,2.2
+Carnegie Mellon University Africa,Kigali City,2020,Journalism & Media,Arts,551,52.4,62.4,56.0,167323,23,2.2
+Carnegie Mellon University Africa,Kigali City,2020,Social Work,Social Sciences,587,52.4,62.4,56.0,181159,25,2.2
+Carnegie Mellon University Africa,Kigali City,2021,Medicine & Surgery,Health,483,28,67.8,68.5,194847,12,1.8
+Carnegie Mellon University Africa,Kigali City,2021,Nursing,Health,325,28,67.8,68.5,142489,14,1.6
+Carnegie Mellon University Africa,Kigali City,2021,Public Health,Health,579,28,67.8,68.5,154143,12,1.8
+Carnegie Mellon University Africa,Kigali City,2021,Computer Science,ICT,515,28,67.8,68.5,186479,15,2.6
+Carnegie Mellon University Africa,Kigali City,2021,Software Engineering,ICT,624,28,67.8,68.5,217188,25,1.5
+Carnegie Mellon University Africa,Kigali City,2021,Data Science & AI,ICT,439,28,67.8,68.5,154003,25,2.2
+Carnegie Mellon University Africa,Kigali City,2021,Electrical Engineering,Engineering,610,28,67.8,68.5,146374,23,2.5
+Carnegie Mellon University Africa,Kigali City,2021,Civil Engineering,Engineering,443,28,67.8,68.5,190607,26,2.6
+Carnegie Mellon University Africa,Kigali City,2021,Mechanical Engineering,Engineering,446,28,67.8,68.5,179210,24,1.7
+Carnegie Mellon University Africa,Kigali City,2021,Agriculture,Agriculture,264,52.8,62.8,57.5,270828,28,1.5
+Carnegie Mellon University Africa,Kigali City,2021,Agribusiness,Agriculture,245,52.8,62.8,57.5,216809,20,2.0
+Carnegie Mellon University Africa,Kigali City,2021,Business Administration,Business,223,52.8,62.8,57.5,242587,12,2.2
+Carnegie Mellon University Africa,Kigali City,2021,Accounting & Finance,Business,473,52.8,62.8,57.5,257837,28,2.0
+Carnegie Mellon University Africa,Kigali City,2021,Economics,Business,140,52.8,62.8,57.5,177104,14,2.3
+Carnegie Mellon University Africa,Kigali City,2021,Education,Education,341,52.8,62.8,57.5,231905,27,2.0
+Carnegie Mellon University Africa,Kigali City,2021,Law,Law,36,52.8,62.8,57.5,148200,14,1.5
+Carnegie Mellon University Africa,Kigali City,2021,Environmental Science,Environment,616,52.8,62.8,57.5,228580,22,1.9
+Carnegie Mellon University Africa,Kigali City,2021,Architecture,Engineering,139,28,67.8,68.5,219703,16,2.2
+Carnegie Mellon University Africa,Kigali City,2021,Journalism & Media,Arts,559,52.8,62.8,57.5,170323,26,2.2
+Carnegie Mellon University Africa,Kigali City,2021,Social Work,Social Sciences,595,52.8,62.8,57.5,184159,28,2.2
+Carnegie Mellon University Africa,Kigali City,2022,Medicine & Surgery,Health,491,28,68.2,70.0,197847,26,1.8
+Carnegie Mellon University Africa,Kigali City,2022,Nursing,Health,333,28,68.2,70.0,145489,31,1.6
+Carnegie Mellon University Africa,Kigali City,2022,Public Health,Health,587,28,68.2,70.0,157143,29,1.8
+Carnegie Mellon University Africa,Kigali City,2022,Computer Science,ICT,523,28,68.2,70.0,189479,20,2.6
+Carnegie Mellon University Africa,Kigali City,2022,Software Engineering,ICT,632,28,68.2,70.0,220188,17,1.5
+Carnegie Mellon University Africa,Kigali City,2022,Data Science & AI,ICT,447,28,68.2,70.0,157003,31,2.2
+Carnegie Mellon University Africa,Kigali City,2022,Electrical Engineering,Engineering,618,28,68.2,70.0,149374,29,2.5
+Carnegie Mellon University Africa,Kigali City,2022,Civil Engineering,Engineering,451,28,68.2,70.0,193607,16,2.6
+Carnegie Mellon University Africa,Kigali City,2022,Mechanical Engineering,Engineering,454,28,68.2,70.0,182210,13,1.7
+Carnegie Mellon University Africa,Kigali City,2022,Agriculture,Agriculture,272,53.2,63.2,59.0,273828,23,1.5
+Carnegie Mellon University Africa,Kigali City,2022,Agribusiness,Agriculture,253,53.2,63.2,59.0,219809,13,2.0
+Carnegie Mellon University Africa,Kigali City,2022,Business Administration,Business,231,53.2,63.2,59.0,245587,15,2.2
+Carnegie Mellon University Africa,Kigali City,2022,Accounting & Finance,Business,481,53.2,63.2,59.0,260837,17,2.0
+Carnegie Mellon University Africa,Kigali City,2022,Economics,Business,148,53.2,63.2,59.0,180104,18,2.3
+Carnegie Mellon University Africa,Kigali City,2022,Education,Education,349,53.2,63.2,59.0,234905,20,2.0
+Carnegie Mellon University Africa,Kigali City,2022,Law,Law,44,53.2,63.2,59.0,151200,24,1.5
+Carnegie Mellon University Africa,Kigali City,2022,Environmental Science,Environment,624,53.2,63.2,59.0,231580,20,1.9
+Carnegie Mellon University Africa,Kigali City,2022,Architecture,Engineering,147,28,68.2,70.0,222703,15,2.2
+Carnegie Mellon University Africa,Kigali City,2022,Journalism & Media,Arts,567,53.2,63.2,59.0,173323,30,2.2
+Carnegie Mellon University Africa,Kigali City,2022,Social Work,Social Sciences,603,53.2,63.2,59.0,187159,20,2.2
+Carnegie Mellon University Africa,Kigali City,2023,Medicine & Surgery,Health,499,28,68.6,71.5,200847,12,1.8
+Carnegie Mellon University Africa,Kigali City,2023,Nursing,Health,341,28,68.6,71.5,148489,22,1.6
+Carnegie Mellon University Africa,Kigali City,2023,Public Health,Health,595,28,68.6,71.5,160143,12,1.8
+Carnegie Mellon University Africa,Kigali City,2023,Computer Science,ICT,531,28,68.6,71.5,192479,12,2.6
+Carnegie Mellon University Africa,Kigali City,2023,Software Engineering,ICT,640,28,68.6,71.5,223188,25,1.5
+Carnegie Mellon University Africa,Kigali City,2023,Data Science & AI,ICT,455,28,68.6,71.5,160003,13,2.2
+Carnegie Mellon University Africa,Kigali City,2023,Electrical Engineering,Engineering,626,28,68.6,71.5,152374,20,2.5
+Carnegie Mellon University Africa,Kigali City,2023,Civil Engineering,Engineering,459,28,68.6,71.5,196607,27,2.6
+Carnegie Mellon University Africa,Kigali City,2023,Mechanical Engineering,Engineering,462,28,68.6,71.5,185210,13,1.7
+Carnegie Mellon University Africa,Kigali City,2023,Agriculture,Agriculture,280,53.6,63.6,60.5,276828,22,1.5
+Carnegie Mellon University Africa,Kigali City,2023,Agribusiness,Agriculture,261,53.6,63.6,60.5,222809,29,2.0
+Carnegie Mellon University Africa,Kigali City,2023,Business Administration,Business,239,53.6,63.6,60.5,248587,19,2.2
+Carnegie Mellon University Africa,Kigali City,2023,Accounting & Finance,Business,489,53.6,63.6,60.5,263837,27,2.0
+Carnegie Mellon University Africa,Kigali City,2023,Economics,Business,156,53.6,63.6,60.5,183104,27,2.3
+Carnegie Mellon University Africa,Kigali City,2023,Education,Education,357,53.6,63.6,60.5,237905,18,2.0
+Carnegie Mellon University Africa,Kigali City,2023,Law,Law,52,53.6,63.6,60.5,154200,31,1.5
+Carnegie Mellon University Africa,Kigali City,2023,Environmental Science,Environment,632,53.6,63.6,60.5,234580,25,1.9
+Carnegie Mellon University Africa,Kigali City,2023,Architecture,Engineering,155,28,68.6,71.5,225703,26,2.2
+Carnegie Mellon University Africa,Kigali City,2023,Journalism & Media,Arts,575,53.6,63.6,60.5,176323,17,2.2
+Carnegie Mellon University Africa,Kigali City,2023,Social Work,Social Sciences,611,53.6,63.6,60.5,190159,31,2.2
+Carnegie Mellon University Africa,Kigali City,2024,Medicine & Surgery,Health,507,28,69.0,73.0,203847,26,1.8
+Carnegie Mellon University Africa,Kigali City,2024,Nursing,Health,349,28,69.0,73.0,151489,14,1.6
+Carnegie Mellon University Africa,Kigali City,2024,Public Health,Health,603,28,69.0,73.0,163143,22,1.8
+Carnegie Mellon University Africa,Kigali City,2024,Computer Science,ICT,539,28,69.0,73.0,195479,12,2.6
+Carnegie Mellon University Africa,Kigali City,2024,Software Engineering,ICT,648,28,69.0,73.0,226188,15,1.5
+Carnegie Mellon University Africa,Kigali City,2024,Data Science & AI,ICT,463,28,69.0,73.0,163003,29,2.2
+Carnegie Mellon University Africa,Kigali City,2024,Electrical Engineering,Engineering,634,28,69.0,73.0,155374,31,2.5
+Carnegie Mellon University Africa,Kigali City,2024,Civil Engineering,Engineering,467,28,69.0,73.0,199607,19,2.6
+Carnegie Mellon University Africa,Kigali City,2024,Mechanical Engineering,Engineering,470,28,69.0,73.0,188210,18,1.7
+Carnegie Mellon University Africa,Kigali City,2024,Agriculture,Agriculture,288,54.0,64.0,62.0,279828,23,1.5
+Carnegie Mellon University Africa,Kigali City,2024,Agribusiness,Agriculture,269,54.0,64.0,62.0,225809,15,2.0
+Carnegie Mellon University Africa,Kigali City,2024,Business Administration,Business,247,54.0,64.0,62.0,251587,30,2.2
+Carnegie Mellon University Africa,Kigali City,2024,Accounting & Finance,Business,497,54.0,64.0,62.0,266837,24,2.0
+Carnegie Mellon University Africa,Kigali City,2024,Economics,Business,164,54.0,64.0,62.0,186104,23,2.3
+Carnegie Mellon University Africa,Kigali City,2024,Education,Education,365,54.0,64.0,62.0,240905,21,2.0
+Carnegie Mellon University Africa,Kigali City,2024,Law,Law,60,54.0,64.0,62.0,157200,23,1.5
+Carnegie Mellon University Africa,Kigali City,2024,Environmental Science,Environment,640,54.0,64.0,62.0,237580,28,1.9
+Carnegie Mellon University Africa,Kigali City,2024,Architecture,Engineering,163,28,69.0,73.0,228703,31,2.2
+Carnegie Mellon University Africa,Kigali City,2024,Journalism & Media,Arts,583,54.0,64.0,62.0,179323,12,2.2
+Carnegie Mellon University Africa,Kigali City,2024,Social Work,Social Sciences,619,54.0,64.0,62.0,193159,12,2.2
+African Leadership University,Kigali City,2019,Medicine & Surgery,Health,74,28,67.0,66.0,139854,21,2.1
+African Leadership University,Kigali City,2019,Nursing,Health,304,28,67.0,66.0,134084,23,2.3
+African Leadership University,Kigali City,2019,Public Health,Health,22,28,67.0,66.0,247202,31,1.7
+African Leadership University,Kigali City,2019,Computer Science,ICT,156,28,67.0,66.0,257536,24,1.9
+African Leadership University,Kigali City,2019,Software Engineering,ICT,347,28,67.0,66.0,120327,13,1.8
+African Leadership University,Kigali City,2019,Data Science & AI,ICT,414,28,67.0,66.0,122794,21,2.5
+African Leadership University,Kigali City,2019,Electrical Engineering,Engineering,139,28,67.0,66.0,186719,27,2.6
+African Leadership University,Kigali City,2019,Civil Engineering,Engineering,617,28,67.0,66.0,250797,13,2.4
+African Leadership University,Kigali City,2019,Mechanical Engineering,Engineering,361,28,67.0,66.0,252341,25,2.0
+African Leadership University,Kigali City,2019,Agriculture,Agriculture,539,52.0,62.0,55.0,218919,27,1.8
+African Leadership University,Kigali City,2019,Agribusiness,Agriculture,396,52.0,62.0,55.0,174976,16,1.9
+African Leadership University,Kigali City,2019,Business Administration,Business,584,52.0,62.0,55.0,258564,30,1.5
+African Leadership University,Kigali City,2019,Accounting & Finance,Business,131,52.0,62.0,55.0,238311,30,1.8
+African Leadership University,Kigali City,2019,Economics,Business,456,52.0,62.0,55.0,166036,24,1.9
+African Leadership University,Kigali City,2019,Education,Education,75,52.0,62.0,55.0,253255,26,2.2
+African Leadership University,Kigali City,2019,Law,Law,103,52.0,62.0,55.0,147683,27,2.6
+African Leadership University,Kigali City,2019,Environmental Science,Environment,274,52.0,62.0,55.0,171254,27,1.7
+African Leadership University,Kigali City,2019,Architecture,Engineering,438,28,67.0,66.0,215218,22,2.5
+African Leadership University,Kigali City,2019,Journalism & Media,Arts,64,52.0,62.0,55.0,195044,23,2.3
+African Leadership University,Kigali City,2019,Social Work,Social Sciences,431,52.0,62.0,55.0,215811,28,1.8
+African Leadership University,Kigali City,2020,Medicine & Surgery,Health,82,28,67.4,67.0,142854,28,2.1
+African Leadership University,Kigali City,2020,Nursing,Health,312,28,67.4,67.0,137084,30,2.3
+African Leadership University,Kigali City,2020,Public Health,Health,30,28,67.4,67.0,250202,31,1.7
+African Leadership University,Kigali City,2020,Computer Science,ICT,164,28,67.4,67.0,260536,31,1.9
+African Leadership University,Kigali City,2020,Software Engineering,ICT,355,28,67.4,67.0,123327,20,1.8
+African Leadership University,Kigali City,2020,Data Science & AI,ICT,422,28,67.4,67.0,125794,22,2.5
+African Leadership University,Kigali City,2020,Electrical Engineering,Engineering,147,28,67.4,67.0,189719,21,2.6
+African Leadership University,Kigali City,2020,Civil Engineering,Engineering,625,28,67.4,67.0,253797,13,2.4
+African Leadership University,Kigali City,2020,Mechanical Engineering,Engineering,369,28,67.4,67.0,255341,24,2.0
+African Leadership University,Kigali City,2020,Agriculture,Agriculture,547,52.4,62.4,56.0,221919,24,1.8
+African Leadership University,Kigali City,2020,Agribusiness,Agriculture,404,52.4,62.4,56.0,177976,31,1.9
+African Leadership University,Kigali City,2020,Business Administration,Business,592,52.4,62.4,56.0,261564,17,1.5
+African Leadership University,Kigali City,2020,Accounting & Finance,Business,139,52.4,62.4,56.0,241311,19,1.8
+African Leadership University,Kigali City,2020,Economics,Business,464,52.4,62.4,56.0,169036,26,1.9
+African Leadership University,Kigali City,2020,Education,Education,83,52.4,62.4,56.0,256255,16,2.2
+African Leadership University,Kigali City,2020,Law,Law,111,52.4,62.4,56.0,150683,26,2.6
+African Leadership University,Kigali City,2020,Environmental Science,Environment,282,52.4,62.4,56.0,174254,22,1.7
+African Leadership University,Kigali City,2020,Architecture,Engineering,446,28,67.4,67.0,218218,16,2.5
+African Leadership University,Kigali City,2020,Journalism & Media,Arts,72,52.4,62.4,56.0,198044,31,2.3
+African Leadership University,Kigali City,2020,Social Work,Social Sciences,439,52.4,62.4,56.0,218811,22,1.8
+African Leadership University,Kigali City,2021,Medicine & Surgery,Health,90,28,67.8,68.5,145854,21,2.1
+African Leadership University,Kigali City,2021,Nursing,Health,320,28,67.8,68.5,140084,12,2.3
+African Leadership University,Kigali City,2021,Public Health,Health,38,28,67.8,68.5,253202,28,1.7
+African Leadership University,Kigali City,2021,Computer Science,ICT,172,28,67.8,68.5,263536,16,1.9
+African Leadership University,Kigali City,2021,Software Engineering,ICT,363,28,67.8,68.5,126327,26,1.8
+African Leadership University,Kigali City,2021,Data Science & AI,ICT,430,28,67.8,68.5,128794,25,2.5
+African Leadership University,Kigali City,2021,Electrical Engineering,Engineering,155,28,67.8,68.5,192719,12,2.6
+African Leadership University,Kigali City,2021,Civil Engineering,Engineering,633,28,67.8,68.5,256797,29,2.4
+African Leadership University,Kigali City,2021,Mechanical Engineering,Engineering,377,28,67.8,68.5,258341,20,2.0
+African Leadership University,Kigali City,2021,Agriculture,Agriculture,555,52.8,62.8,57.5,224919,27,1.8
+African Leadership University,Kigali City,2021,Agribusiness,Agriculture,412,52.8,62.8,57.5,180976,24,1.9
+African Leadership University,Kigali City,2021,Business Administration,Business,600,52.8,62.8,57.5,264564,19,1.5
+African Leadership University,Kigali City,2021,Accounting & Finance,Business,147,52.8,62.8,57.5,244311,23,1.8
+African Leadership University,Kigali City,2021,Economics,Business,472,52.8,62.8,57.5,172036,31,1.9
+African Leadership University,Kigali City,2021,Education,Education,91,52.8,62.8,57.5,259255,31,2.2
+African Leadership University,Kigali City,2021,Law,Law,119,52.8,62.8,57.5,153683,22,2.6
+African Leadership University,Kigali City,2021,Environmental Science,Environment,290,52.8,62.8,57.5,177254,26,1.7
+African Leadership University,Kigali City,2021,Architecture,Engineering,454,28,67.8,68.5,221218,27,2.5
+African Leadership University,Kigali City,2021,Journalism & Media,Arts,80,52.8,62.8,57.5,201044,21,2.3
+African Leadership University,Kigali City,2021,Social Work,Social Sciences,447,52.8,62.8,57.5,221811,30,1.8
+African Leadership University,Kigali City,2022,Medicine & Surgery,Health,98,28,68.2,70.0,148854,29,2.1
+African Leadership University,Kigali City,2022,Nursing,Health,328,28,68.2,70.0,143084,16,2.3
+African Leadership University,Kigali City,2022,Public Health,Health,46,28,68.2,70.0,256202,15,1.7
+African Leadership University,Kigali City,2022,Computer Science,ICT,180,28,68.2,70.0,266536,16,1.9
+African Leadership University,Kigali City,2022,Software Engineering,ICT,371,28,68.2,70.0,129327,29,1.8
+African Leadership University,Kigali City,2022,Data Science & AI,ICT,438,28,68.2,70.0,131794,16,2.5
+African Leadership University,Kigali City,2022,Electrical Engineering,Engineering,163,28,68.2,70.0,195719,22,2.6
+African Leadership University,Kigali City,2022,Civil Engineering,Engineering,641,28,68.2,70.0,259797,16,2.4
+African Leadership University,Kigali City,2022,Mechanical Engineering,Engineering,385,28,68.2,70.0,261341,31,2.0
+African Leadership University,Kigali City,2022,Agriculture,Agriculture,563,53.2,63.2,59.0,227919,26,1.8
+African Leadership University,Kigali City,2022,Agribusiness,Agriculture,420,53.2,63.2,59.0,183976,13,1.9
+African Leadership University,Kigali City,2022,Business Administration,Business,608,53.2,63.2,59.0,267564,20,1.5
+African Leadership University,Kigali City,2022,Accounting & Finance,Business,155,53.2,63.2,59.0,247311,20,1.8
+African Leadership University,Kigali City,2022,Economics,Business,480,53.2,63.2,59.0,175036,19,1.9
+African Leadership University,Kigali City,2022,Education,Education,99,53.2,63.2,59.0,262255,24,2.2
+African Leadership University,Kigali City,2022,Law,Law,127,53.2,63.2,59.0,156683,22,2.6
+African Leadership University,Kigali City,2022,Environmental Science,Environment,298,53.2,63.2,59.0,180254,14,1.7
+African Leadership University,Kigali City,2022,Architecture,Engineering,462,28,68.2,70.0,224218,26,2.5
+African Leadership University,Kigali City,2022,Journalism & Media,Arts,88,53.2,63.2,59.0,204044,17,2.3
+African Leadership University,Kigali City,2022,Social Work,Social Sciences,455,53.2,63.2,59.0,224811,19,1.8
+African Leadership University,Kigali City,2023,Medicine & Surgery,Health,106,28,68.6,71.5,151854,21,2.1
+African Leadership University,Kigali City,2023,Nursing,Health,336,28,68.6,71.5,146084,27,2.3
+African Leadership University,Kigali City,2023,Public Health,Health,54,28,68.6,71.5,259202,31,1.7
+African Leadership University,Kigali City,2023,Computer Science,ICT,188,28,68.6,71.5,269536,13,1.9
+African Leadership University,Kigali City,2023,Software Engineering,ICT,379,28,68.6,71.5,132327,13,1.8
+African Leadership University,Kigali City,2023,Data Science & AI,ICT,446,28,68.6,71.5,134794,21,2.5
+African Leadership University,Kigali City,2023,Electrical Engineering,Engineering,171,28,68.6,71.5,198719,24,2.6
+African Leadership University,Kigali City,2023,Civil Engineering,Engineering,649,28,68.6,71.5,262797,24,2.4
+African Leadership University,Kigali City,2023,Mechanical Engineering,Engineering,393,28,68.6,71.5,264341,25,2.0
+African Leadership University,Kigali City,2023,Agriculture,Agriculture,571,53.6,63.6,60.5,230919,24,1.8
+African Leadership University,Kigali City,2023,Agribusiness,Agriculture,428,53.6,63.6,60.5,186976,29,1.9
+African Leadership University,Kigali City,2023,Business Administration,Business,616,53.6,63.6,60.5,270564,13,1.5
+African Leadership University,Kigali City,2023,Accounting & Finance,Business,163,53.6,63.6,60.5,250311,17,1.8
+African Leadership University,Kigali City,2023,Economics,Business,488,53.6,63.6,60.5,178036,23,1.9
+African Leadership University,Kigali City,2023,Education,Education,107,53.6,63.6,60.5,265255,29,2.2
+African Leadership University,Kigali City,2023,Law,Law,135,53.6,63.6,60.5,159683,20,2.6
+African Leadership University,Kigali City,2023,Environmental Science,Environment,306,53.6,63.6,60.5,183254,31,1.7
+African Leadership University,Kigali City,2023,Architecture,Engineering,470,28,68.6,71.5,227218,15,2.5
+African Leadership University,Kigali City,2023,Journalism & Media,Arts,96,53.6,63.6,60.5,207044,15,2.3
+African Leadership University,Kigali City,2023,Social Work,Social Sciences,463,53.6,63.6,60.5,227811,28,1.8
+African Leadership University,Kigali City,2024,Medicine & Surgery,Health,114,28,69.0,73.0,154854,27,2.1
+African Leadership University,Kigali City,2024,Nursing,Health,344,28,69.0,73.0,149084,22,2.3
+African Leadership University,Kigali City,2024,Public Health,Health,62,28,69.0,73.0,262202,12,1.7
+African Leadership University,Kigali City,2024,Computer Science,ICT,196,28,69.0,73.0,272536,22,1.9
+African Leadership University,Kigali City,2024,Software Engineering,ICT,387,28,69.0,73.0,135327,22,1.8
+African Leadership University,Kigali City,2024,Data Science & AI,ICT,454,28,69.0,73.0,137794,26,2.5
+African Leadership University,Kigali City,2024,Electrical Engineering,Engineering,179,28,69.0,73.0,201719,24,2.6
+African Leadership University,Kigali City,2024,Civil Engineering,Engineering,657,28,69.0,73.0,265797,28,2.4
+African Leadership University,Kigali City,2024,Mechanical Engineering,Engineering,401,28,69.0,73.0,267341,21,2.0
+African Leadership University,Kigali City,2024,Agriculture,Agriculture,579,54.0,64.0,62.0,233919,19,1.8
+African Leadership University,Kigali City,2024,Agribusiness,Agriculture,436,54.0,64.0,62.0,189976,26,1.9
+African Leadership University,Kigali City,2024,Business Administration,Business,624,54.0,64.0,62.0,273564,13,1.5
+African Leadership University,Kigali City,2024,Accounting & Finance,Business,171,54.0,64.0,62.0,253311,14,1.8
+African Leadership University,Kigali City,2024,Economics,Business,496,54.0,64.0,62.0,181036,25,1.9
+African Leadership University,Kigali City,2024,Education,Education,115,54.0,64.0,62.0,268255,29,2.2
+African Leadership University,Kigali City,2024,Law,Law,143,54.0,64.0,62.0,162683,19,2.6
+African Leadership University,Kigali City,2024,Environmental Science,Environment,314,54.0,64.0,62.0,186254,30,1.7
+African Leadership University,Kigali City,2024,Architecture,Engineering,478,28,69.0,73.0,230218,12,2.5
+African Leadership University,Kigali City,2024,Journalism & Media,Arts,104,54.0,64.0,62.0,210044,16,2.3
+African Leadership University,Kigali City,2024,Social Work,Social Sciences,471,54.0,64.0,62.0,230811,29,1.8
