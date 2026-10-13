@@ -7,7 +7,12 @@ import re
 # ─── synonym expansion ────────────────────────────────────────────────────────
 # Each entry: (pattern, canonical keywords injected into enriched string)
 SYNONYMS = [
-    # career / path advice
+    # crop / career decision choice (must come before generic career)
+    (r"which (crop|plant|grow|farm)|what (should|can) i (plant|grow|farm)"
+     r"|best crop|compare crop|rice vs|maize vs|beans vs|potato vs"
+     r"|which career|compare career|career vs|study.*vs|vs.*study"
+     r"|should i (study|become|plant|grow)|i want to (plant|grow|farm)",
+     "decision choice Rwanda"),
     (r"i want to (be|become|work as)|i (am|'m) interested in|my (dream|goal|passion) is"
      r"|what (should|can) i (study|do|become)|which (course|program|career|field) (should|is best)"
      r"|advise me|guide me|help me choose|career (path|advice|guidance|choice)"
@@ -57,6 +62,10 @@ SYNONYMS = [
 
 # ─── engine routing rules (ordered — first match wins) ───────────────────────
 ENGINE_RULES = [
+    (r"decision choice|which crop|compare crop|rice vs|maize vs|beans vs|potato vs"
+     r"|which career.*vs|career.*compare|should i (plant|grow|farm|study|become)"
+     r"|i want to (plant|grow|farm)|best crop|crop choice",
+     "decision"),
     (r"career opportunity|career.*rwanda|tvet career|university career|which career|best career"
      r"|job.*opportunit|future.*work|ai.*era|in.demand|occupation.*demand"
      r"|what (should|can) i (study|become)|i want to (be|become)|my (dream|goal) is"
@@ -113,6 +122,12 @@ def parse_intent(question: str) -> dict:
 
 
 def _build_understood(engine: str, q: str) -> str:
+    if engine == "decision":
+        return (
+            "Understood: decision comparison. "
+            "I will identify your options, load the relevant NISR data, compute indicators "
+            "per option, and rank them on visible criteria with sources and caveats."
+        )
     if engine == "career":
         return (
             "Understood: career opportunity analysis. "
