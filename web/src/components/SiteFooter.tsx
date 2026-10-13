@@ -18,7 +18,7 @@ export default function SiteFooter() {
           </nav>
         ))}
       </div>
-      <p className="border-t border-line px-4 py-4 text-center text-xs text-muted">Built for the 2026 NISR Big Data Hackathon. This build uses sample data, not official statistics.</p>
+      <p className="border-t border-line px-4 py-4 text-center text-xs text-muted">Built for the 2026 NISR Big Data Hackathon.</p>
     </footer>
   );
 }

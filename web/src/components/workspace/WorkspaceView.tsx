@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
-import { AlertTriangle, FlaskConical, Info, LayoutGrid, Redo2, RotateCcw, Save, SquareCode, Undo2 } from "lucide-react";
+import { AlertTriangle, Info, LayoutGrid, Redo2, RotateCcw, Save, SquareCode, Undo2 } from "lucide-react";
 import { composeView, flattenComponents, PALETTES, type FilterComponent } from "@/shared";
 import { useWorkspace } from "@/store/workspace";
 import { useToasts } from "@/store/toasts";
@@ -50,7 +50,6 @@ export default function WorkspaceView({ versions, onSaved }: { versions: { versi
       <div className="mx-auto max-w-[1400px] px-4 py-8 sm:px-6">
         <div className="mb-6">
           <div className="flex flex-wrap items-center gap-2">
-            {result.meta.isSample && <span className="badge"><FlaskConical className="h-3.5 w-3.5" aria-hidden />Sample data</span>}
             <span className="badge bg-surface">Version {payload.version.version}{s.dirty ? " · unsaved changes" : ""}</span>
           </div>
           <h1 className="mt-3 max-w-[30ch] text-3xl font-semibold leading-tight sm:text-4xl">{spec.title}</h1>

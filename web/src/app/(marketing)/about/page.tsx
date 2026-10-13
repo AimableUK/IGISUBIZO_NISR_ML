@@ -15,7 +15,7 @@ export default function About() {
         <li><strong>Accessible by design.</strong> Keyboard use, screen-reader summaries, data tables, high contrast and optional voice, with typed input always available.</li>
       </ul>
       <h2>Where it stands</h2>
-      <p>This build was created for the 2026 NISR Big Data Hackathon and currently runs on clearly labelled sample data. Read the <Link href="/methodology">methodology</Link> and <Link href="/ai-transparency">AI transparency</Link> pages for details, or <Link href="/contact">get in touch</Link>.</p>
+      <p>This build was created for the 2026 NISR Big Data Hackathon. Read the <Link href="/methodology">methodology</Link> and <Link href="/ai-transparency">AI transparency</Link> pages for details, or <Link href="/contact">get in touch</Link>.</p>
     </Prose>
   );
 }

@@ -60,7 +60,7 @@ export default function Landing() {
             <div key={t as string}><Icon className="h-7 w-7 text-primary" aria-hidden /><h3 className="mt-3 text-xl font-semibold">{t as string}</h3><p className="mt-2 max-w-[44ch] text-muted">{d as string}</p></div>
           ); })}
         </div>
-        <p className="mt-10 text-sm text-muted">This build runs on sample data. <Link href="/methodology" className="font-medium text-primary underline underline-offset-2">Read the methodology</Link>.</p>
+        <p className="mt-10 text-sm text-muted"><Link href="/methodology" className="font-medium text-primary underline underline-offset-2">Read the methodology</Link>.</p>
       </section>
     </>
   );

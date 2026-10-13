@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
-import { BarChart3, FlaskConical, Hash, Loader2, Map, Search, Table2, Trash2, TrendingUp, Type } from "lucide-react";
+import { BarChart3, Hash, Loader2, Map, Search, Table2, Trash2, TrendingUp, Type } from "lucide-react";
 import type { ArtifactSummary } from "@/shared";
 import { api, ApiError } from "@/lib/api";
 import { fmtDate } from "@/lib/format";
@@ -44,7 +44,6 @@ export default function History() {
             <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-muted">
               <ul className="flex flex-wrap gap-1.5" aria-label="Contains">{a.componentTypes.filter((t) => ICON[t]).map((t) => { const I = ICON[t]!; return <li key={t} className="inline-flex items-center gap-1 rounded-md border border-line bg-surface2 px-2 py-1 text-ink"><I className="h-3.5 w-3.5" aria-hidden />{NAME[t]}</li>; })}</ul>
               <span>Updated {fmtDate(a.updatedAt)}</span><span>Version {a.currentVersion} of {a.versionCount}</span>
-              {a.isSample && <span className="badge"><FlaskConical className="h-3 w-3" aria-hidden />Sample data</span>}
             </div>
           </li>
         ))}

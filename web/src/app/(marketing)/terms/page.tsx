@@ -9,7 +9,7 @@ export default function Terms() {
       <h2>Using the service</h2>
       <p>You may use Isesengura to explore public data and to create and keep analytical workspaces. You agree to give accurate account information, keep your password secure, and not misuse the service, for example by attempting to break its security, overload it, or submit unlawful content.</p>
       <h2>Sample data and accuracy</h2>
-      <p>Until stated otherwise, this build uses generated sample data that is <strong>not</strong> official statistics. Do not cite it as such. Even with official data, results depend on the source, the method shown in each workspace and the caveats listed there. Check them before relying on a figure.</p>
+      <p>Results depend on the source, the method shown in each workspace and the caveats listed there. Check them before relying on a figure.</p>
       <h2>AI-assisted presentation</h2>
       <p>An AI system may suggest how a workspace is laid out. It does not compute the numbers shown. You remain responsible for how you interpret and use results. See <Link href="/ai-transparency">AI transparency</Link>.</p>
       <h2>Your content</h2>
