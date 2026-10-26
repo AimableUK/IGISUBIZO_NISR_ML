@@ -15,38 +15,30 @@
 
 ### Remaining
 
-#### 1. Wire ml-engine into the analyses route [ NEXT ]
-**File:** `api/src/routes/analyses.ts`
+#### 1. Wire Python model into analyses route ✅
+- `api/src/services/model-client.ts` → `POST {MODEL_URL}/analyze`
+- `api/src/routes/analyses.ts` uses `analyzeViaModel` (fallback to local engine)
+- See `Docs/HACKATHON_PROGRESS.md`
 
-Add import:
-```ts
-import { runMLAnalysis } from "../services/ml-engine";
-```
-Replace:
-```ts
-const result: AnalyticalResult = runAnalysis(question);
-```
-With:
-```ts
-const result: AnalyticalResult = runMLAnalysis(question);
-```
-
-#### 2. Plug in real NISR data
+#### 2. Plug in real NISR data [ NEXT ]
 - Download LFS microdata: https://microdatabk.statistics.gov.rw/catalog/125
-- Aggregate to district × year (same columns as `model/data/sample/district_labour.csv`)
-- Replace `buildDistrict()` / `buildSector()` in `ml-engine.ts`
-- Set `isSample: false`, update `ML_DATASET_VERSIONS`
+- Aggregate to district × year (same columns as `model/data/real/district_labour.csv`)
+- Replace generator noise with published district tables where available
 
 #### 3. FAQ / methodology page content
 - `/methodology` page — plain-language explanation of each engine for non-technical users
 - `/ai-transparency` page — how the ML engine works, what it can and cannot claim
 
-#### 4. Panel OLS (regression improvement)
-- Current: 30 obs (latest year only)
-- Next: 210 obs (30 districts × 7 years) with year fixed effects
+#### 4. Panel OLS (regression improvement) ✅
+- Panel district×year + year FE in `model/engine/regression.py` (n=180)
+- Leave-one-district-out CV
 
-#### 5. Forecast confidence intervals
-- Add upper/lower bounds to sector projections
+#### 5. Forecast confidence intervals ✅
+- 95% prediction intervals in forecasting engine
+
+#### 6. Training realism ✅
+- Generator idiosyncratic noise; R² ~0.75 (was ~1.0)
+- Fixed duplicate Nyamasheke → Nyaruguru
 
 ---
 

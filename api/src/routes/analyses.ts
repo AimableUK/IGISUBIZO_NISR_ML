@@ -1,9 +1,9 @@
 import { Router } from "express";
 import type { Prisma } from "@prisma/client";
-import { AskRequestSchema, emptyCustomizations, type AnalyticalResult } from "@shared";
+import { AskRequestSchema, emptyCustomizations } from "@shared";
 import { requireAuth } from "../middleware/auth";
 import { prisma } from "../lib/prisma";
-import { runAnalysis } from "../services/engine";
+import { analyzeViaModel } from "../services/model-client";
 import { planPresentation } from "../services/planner";
 import { emitProgress } from "../socket";
 
@@ -21,7 +21,7 @@ analyses.post("/", requireAuth, async (req, res) => {
     step("interpreting");
     step("validating");
     step("computing");
-    const result: AnalyticalResult = runAnalysis(question);
+    const { result } = await analyzeViaModel(question, requestId);
     if (result.status !== "ok" && result.status !== "partial") {
       step("ready");
       return res.json({ result, artifactId: null });

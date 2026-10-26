@@ -263,6 +263,15 @@ def run(question: str) -> dict:
                                 "title": "Rwanda Labour Market Information System (LMIS) / KORA",
                                 "period": f"2019–{LATEST}", "isSample": False}
 
+    option_rows = [
+        {
+            "option": c["option"],
+            "rank": c["rank"],
+            "score": round(float(c["score"] or 0), 3),
+        }
+        for c in comparison
+    ]
+
     return {
         "id": str(uuid.uuid4()),
         "question": question,
@@ -271,10 +280,28 @@ def run(question: str) -> dict:
                    "periodFrom": LATEST, "periodTo": LATEST,
                    "decisionType": decision_type},
         "decision": decision_block,
-        "datasets": {},
+        "datasets": {
+            "option_scores": {
+                "label": f"Ranked options — {decision_type.replace('_', ' ')}",
+                "columns": [
+                    {"key": "option", "label": "Option", "kind": "category"},
+                    {"key": "rank", "label": "Rank", "kind": "number"},
+                    {"key": "score", "label": "Composite score", "kind": "number"},
+                ],
+                "rows": option_rows,
+                "sourceIds": source_ids,
+            },
+        } if option_rows else {},
         "metrics": {
             "options_compared": {"label": "Options compared", "value": len(comparison),
                                  "unit": "", "decimals": 0, "sourceIds": source_ids},
+            "top_score": {
+                "label": "Top option score",
+                "value": round(float(comparison[0]["score"] or 0), 3) if comparison else 0.0,
+                "unit": "",
+                "decimals": 3,
+                "sourceIds": source_ids,
+            },
         },
         "insights": {
             "top_option": {
