@@ -6,7 +6,7 @@ What district characteristics are statistically associated with high youth NEET 
 
 ## Method
 
-Ordinary Least Squares (OLS) regression fitted to district-level data for the latest survey year.
+Panel Ordinary Least Squares (OLS) on district × year observations with **year fixed effects**, ridge stabilization, and leave-one-district-out cross-validation.
 
 ## Target variable
 
@@ -24,25 +24,26 @@ Ordinary Least Squares (OLS) regression fitted to district-level data for the la
 
 ## How it works
 
-1. Load district data for the latest year (30 districts)
-2. Build design matrix X (n=30, p=5) and target vector y
-3. Solve normal equations: β = (XᵀX)⁻¹Xᵀy via Gaussian elimination
-4. Compute predicted values and R²
-5. Compute relative feature importance as |coef| / sum(|coef|)
+1. Load all district × year rows (e.g. 30 × 6 = 180)
+2. Build design matrix with 5 substantive features + year dummies (omit baseline year)
+3. Solve ridge-stabilized normal equations via Gaussian elimination
+4. Report panel R² / adjusted R² and leave-one-district-out Q² / RMSE
+5. Relative importance on substantive |coef| only (year FE excluded from ranking)
+6. Latest-year actual vs predicted table for maps
 
 ## Output
 
 - `feature_importance` dataset — coefficients, relative importance, direction per feature
-- `predictions` dataset — actual vs predicted NEET rate + residual per district
-- Metrics: R², intercept
+- `predictions` dataset — actual vs predicted NEET rate + residual (latest year)
+- Metrics: panel R², adjusted R², leave-district-out RMSE/Q², n_observations, intercept
 - Insights: model fit quality, top predictor
 
 ## Caveats
 
 - OLS assumes linear relationships and homoscedasticity
-- n=30 districts is a small sample; results should be interpreted cautiously
+- Year FE absorb national time shocks; coefficients are within-year associations
 - Coefficients show statistical association, **not causation**
-- No train/test split at this sample size; model is descriptive, not predictive
+- Synthetic real-structure CSVs include idiosyncratic noise so R² is not artificially ~1.0
 
 ## Real data replacement
 

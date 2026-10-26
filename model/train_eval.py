@@ -74,14 +74,17 @@ def evaluate_regression():
     validate_schema(result)
 
     metrics = result["metrics"]
-    print(f"  Target: youth_neet_rate across 30 Rwanda districts (2024)")
-    print(f"  In-Sample R²:           {metrics['r_squared']['value']:.4f}")
+    n_obs = metrics.get("n_observations", {}).get("value", 30)
+    print(f"  Target: youth_neet_rate — panel OLS with year FE (n={int(n_obs)})")
+    print(f"  Panel R²:               {metrics['r_squared']['value']:.4f}")
     print(f"  Adjusted R²:           {metrics['adjusted_r_squared']['value']:.4f}")
-    print(f"  LOOCV Out-of-sample Q²: {metrics['loocv_q2']['value']:.4f}")
+    print(f"  Leave-district-out Q²:  {metrics['loocv_q2']['value']:.4f}")
     print(
-        f"  LOOCV RMSE:            {metrics['loocv_rmse']['value']:.2f} percentage points"
+        f"  Leave-district-out RMSE:{metrics['loocv_rmse']['value']:.2f} percentage points"
     )
     print(f"  Intercept:             {metrics['intercept']['value']:.2f}%\n")
+    if metrics["r_squared"]["value"] >= 0.995:
+        print("  [WARN] R² ≥ 0.995 — data may still be near-deterministic; check generator noise.")
 
     print("  Feature Importance & Direction:")
     features = result["datasets"]["feature_importance"]["rows"]

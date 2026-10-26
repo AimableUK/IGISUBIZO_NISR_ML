@@ -83,14 +83,14 @@ ENGINE_RULES = [
 def parse_intent(question: str) -> dict:
     """
     Returns:
-        engine: 'career' | 'regression' | 'forecasting' | 'clustering' | 'ambiguous'
+        engine: 'decision' | 'career' | 'regression' | 'forecasting' | 'clustering' | 'ambiguous'
         understood: human-readable explanation
         enriched: question + expanded synonyms (for downstream keyword matching)
     """
     q = question.strip()
     words = q.split()
 
-    if len(words) < 3:
+    if len(words) < 2:
         return {
             "engine": "ambiguous",
             "understood": (

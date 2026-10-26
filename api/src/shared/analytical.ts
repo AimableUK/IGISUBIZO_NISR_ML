@@ -11,7 +11,7 @@ export const ColumnSchema = z.object({
   key: IdKey,
   label: z.string().max(120),
   kind: z.enum(["category", "time", "number", "percent", "geo"]),
-  unit: z.string().max(24).optional(),
+  unit: z.string().max(24).nullish(),
 });
 
 export const DatasetSchema = z.object({

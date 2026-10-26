@@ -1,19 +1,48 @@
 """
 Intent router — maps a question to the right engine via the NLU parser.
 """
+import uuid
+from datetime import datetime, timezone
+
 from .nlu import parse_intent
 
+
+def _shell(question: str, status: str, message: str) -> dict:
+    """Minimal AnalyticalResult-shaped payload for non-ok statuses."""
+    return {
+        "id": str(uuid.uuid4()),
+        "question": question,
+        "status": status,
+        "message": message,
+        "intent": {},
+        "decision": None,
+        "datasets": {},
+        "metrics": {},
+        "insights": {},
+        "formulas": {},
+        "sources": {},
+        "operations": [{"id": "route", "description": message[:400]}],
+        "caveats": [],
+        "meta": {
+            "analysisVersion": "router-1.0.0",
+            "computedAt": datetime.now(timezone.utc).isoformat(),
+            "datasetVersions": {},
+            "isSample": False,
+        },
+    }
+
+
 def route(question: str) -> dict:
-    from .decision import run as decision_run
     from .clustering import run as cluster_run
-    from .regression import run as regression_run
+    from .decision import run as decision_run
     from .forecasting import run as forecast_run
+    from .regression import run as regression_run
 
     intent = parse_intent(question)
     engine = intent["engine"]
 
     if engine == "ambiguous":
-        return {"status": "ambiguous", "message": intent["understood"]}
+        return _shell(question, "ambiguous", intent["understood"])
     if engine == "decision":
         return decision_run(question)
     if engine == "regression":
@@ -21,5 +50,5 @@ def route(question: str) -> dict:
     if engine == "forecasting":
         return forecast_run(question)
     if engine == "career":
-        return decision_run(question)   # career choice is a decision
+        return decision_run(question)  # career choice is a decision
     return cluster_run(question)

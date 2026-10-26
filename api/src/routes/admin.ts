@@ -1,6 +1,7 @@
 import { Router } from "express";
 import fs from "node:fs";
 import path from "node:path";
+import { spawn } from "node:child_process";
 import { requireAuth } from "../middleware/auth";
 import { prisma } from "../lib/prisma";
 import { auth } from "../auth";
@@ -9,6 +10,7 @@ import { fromNodeHeaders } from "better-auth/node";
 export const admin = Router();
 
 const REAL_DATA = path.resolve(process.cwd(), "../model/data/real");
+const MODEL_DIR = path.resolve(process.cwd(), "../model");
 
 function readCsv(name: string): Record<string, string>[] {
   const file = path.join(REAL_DATA, name);
@@ -53,6 +55,35 @@ admin.get("/stats", requireAdmin, async (_req, res) => {
       ? Math.round((labour.reduce((s, r) => s + parseFloat(r[key] ?? "0"), 0) / labour.length) * 10) / 10
       : null;
 
+admin.post("/train", requireAdmin, async (req, res) => {
+  const { action } = req.body as { action?: string } ?? {};
+  if (action === "generate") {
+    const py = spawn("python3", ["generate_real.py"], { cwd: MODEL_DIR, env: process.env });
+    let out = "", err = "";
+    py.stdout.on("data", (d) => { out += d.toString(); });
+    py.stderr.on("data", (d) => { err += d.toString(); });
+    const timeout = setTimeout(() => { try { py.kill("SIGKILL"); } catch {} }, 120000);
+    py.on("close", (code) => {
+      clearTimeout(timeout);
+      res.json({ ok: code === 0, action: "generate", code, stdout: out.slice(-2000), stderr: err.slice(-2000) });
+    });
+    return;
+  }
+  if (action === "evaluate" || action === "train_eval") {
+    const py = spawn("python3", ["train_eval.py"], { cwd: MODEL_DIR, env: process.env });
+    let out = "", err = "";
+    py.stdout.on("data", (d) => { out += d.toString(); });
+    py.stderr.on("data", (d) => { err += d.toString(); });
+    const timeout = setTimeout(() => { try { py.kill("SIGKILL"); } catch {} }, 120000);
+    py.on("close", (code) => {
+      clearTimeout(timeout);
+      res.json({ ok: code === 0, action: "train_eval", code, stdout: out.slice(-4000), stderr: err.slice(-4000) });
+    });
+    return;
+  }
+  return res.status(400).json({ error: "invalid_action", message: "Use { action: 'generate' | 'evaluate' }" });
+});
+
   res.json({
     platform: { totalUsers, totalArtifacts, totalAnalyses },
     recentUsers: recentUsers.map((u) => ({ ...u, createdAt: u.createdAt.toISOString() })),
@@ -65,6 +96,36 @@ admin.get("/stats", requireAdmin, async (_req, res) => {
       avgWageRwf: mean("avg_wage_rwf"),
     },
   });
+});
+
+// POST /api/admin/train - trigger data regeneration/evaluation
+admin.post("/train", requireAdmin, async (req, res) => {
+  const { action } = req.body as { action?: string } ?? {};
+  if (action === "generate") {
+    const py = spawn("python3", ["generate_real.py"], { cwd: MODEL_DIR, env: process.env });
+    let out = "", err = "";
+    py.stdout.on("data", (d) => { out += d.toString(); });
+    py.stderr.on("data", (d) => { err += d.toString(); });
+    const timeout = setTimeout(() => { try { py.kill("SIGKILL"); } catch {} }, 120000);
+    py.on("close", (code) => {
+      clearTimeout(timeout);
+      res.json({ ok: code === 0, action: "generate", code, stdout: out.slice(-2000), stderr: err.slice(-2000) });
+    });
+    return;
+  }
+  if (action === "evaluate" || action === "train_eval") {
+    const py = spawn("python3", ["train_eval.py"], { cwd: MODEL_DIR, env: process.env });
+    let out = "", err = "";
+    py.stdout.on("data", (d) => { out += d.toString(); });
+    py.stderr.on("data", (d) => { err += d.toString(); });
+    const timeout = setTimeout(() => { try { py.kill("SIGKILL"); } catch {} }, 120000);
+    py.on("close", (code) => {
+      clearTimeout(timeout);
+      res.json({ ok: code === 0, action: "train_eval", code, stdout: out.slice(-4000), stderr: err.slice(-4000) });
+    });
+    return;
+  }
+  return res.status(400).json({ error: "invalid_action", message: "Use { action: 'generate' | 'evaluate' }" });
 });
 
 // GET /api/admin/career-guide

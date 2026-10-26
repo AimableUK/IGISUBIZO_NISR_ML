@@ -10,6 +10,12 @@ services:
     image: redis:7-alpine
     ports: ["6379:6379"]
     healthcheck: { test: ["CMD", "redis-cli", "ping"], interval: 5s, timeout: 3s, retries: 10 }
+  model:
+    build: { context: ./model, dockerfile: Dockerfile.dev }
+    ports: ["8000:8000"]
+    volumes: ["./model:/app"]
+    environment:
+      API_URL: http://api:4000
   api:
     build: { context: ./api, dockerfile: Dockerfile.dev }
     env_file: [.env]
@@ -18,9 +24,14 @@ services:
       REDIS_URL: redis://redis:6379
       API_URL: http://localhost:4000
       WEB_URL: http://localhost:3000
+      MODEL_URL: http://model:8000
+      MODEL_FALLBACK: "true"
     ports: ["4000:4000"]
     volumes: ["./api:/app", "/app/node_modules"]
-    depends_on: { postgres: { condition: service_healthy }, redis: { condition: service_healthy } }
+    depends_on:
+      postgres: { condition: service_healthy }
+      redis: { condition: service_healthy }
+      model: { condition: service_started }
   web:
     build: { context: ./web, dockerfile: Dockerfile.dev }
     environment: { NEXT_PUBLIC_API_URL: "http://localhost:4000", NEXT_PUBLIC_CONTACT_EMAIL: "team@example.com", WATCHPACK_POLLING: "true" }
