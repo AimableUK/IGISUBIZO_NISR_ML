@@ -8,39 +8,39 @@ import re
 # Each entry: (pattern, canonical keywords injected into enriched string)
 SYNONYMS = [
     # crop / career decision choice (must come before generic career)
-    (r"which (crop|plant|grow|farm)|what (should|can) i (plant|grow|farm)"
-     r"|best crop|compare crop|rice vs|maize vs|beans vs|potato vs"
+    (r"which crop (should|can) i (plant|grow)|what (should|can) i (plant|grow|farm)"
+     r"|best crop to (plant|grow)|compare crops? to (plant|grow)|rice vs|maize vs|beans vs|potato vs"
      r"|which career|compare career|career vs|study.*vs|vs.*study"
      r"|should i (study|become|plant|grow)|i want to (plant|grow|farm)",
      "decision choice Rwanda"),
-    (r"i want to (be|become|work as)|i (am|'m) interested in|my (dream|goal|passion) is"
-     r"|what (should|can) i (study|do|become)|which (course|program|career|field) (should|is best)"
+    (r"i want to (be|become|work as)|my (dream|goal|passion) is"
+     r"|what (should|can) i (study|become)|which (course|program|career|field) (should|is best)"
      r"|advise me|guide me|help me choose|career (path|advice|guidance|choice)"
      r"|best (career|job|field|course)|future (career|job)|job (of the future|in demand)"
      r"|in.demand (career|job|skill)|high.demand (career|job)",
      "career opportunity Rwanda"),
     # TVET
     (r"tvet|vocational|technical (school|training|education)|trade school|artisan|short course|certificate course|level [2-5]",
-     "tvet career demand"),
+     "tvet training"),
     # university
     (r"university|college|degree|bachelor|master|phd|higher education|tertiary|graduate program",
-     "university career graduate employment"),
+     "university higher education"),
     # exams
     (r"national exam|p6|s3|s6|primary leaving|ordinary level|advanced level|o.level|a.level|nesa"
      r"|exam result|pass rate|distinction|mean score|how (many|well) (student|pupil|candidate)s? (pass|score|perform)",
      "national exam pass rate"),
     # sector growth
     (r"which sector (is|are) (growing|expanding|booming|rising|declining)|sector (trend|growth|forecast)"
-     r"|employment (trend|forecast|projection)|job (growth|market trend)|industry (growth|outlook)"
-     r"|over (the )?(next|coming) (year|decade)|in (5|10|20) years?|future (of|for) (work|jobs|employment)",
+     r"|employment (trend|forecast|projection) (by )?sector|sector employment (trend|forecast)"
+     r"|job (growth|market trend)|industry (growth|outlook)|future (of|for) (sector|industry)",
      "employment trend sector forecast"),
     # NEET / youth
     (r"neet|youth (outside|not in) (school|work|training)|young people (unemployed|idle)"
      r"|youth (unemployment|inactivity)|what (keeps|prevent|stop) youth|why (are|do) young people",
      "neet predict factor regression"),
     # clustering
-    (r"district (profile|comparison|cluster|group|segment|rank)|underutili[sz]"
-     r"|labour (profile|map)|which district (has|have|is|are)|compare district",
+    (r"district (profile|cluster|group|segment)|underutili[sz]"
+     r"|labour (profile|map)|district labour cluster",
      "cluster district underutilization profile"),
     # specific occupations → career
     (r"software (developer|engineer)|programmer|coder|data (scientist|analyst|engineer)"
@@ -62,7 +62,13 @@ SYNONYMS = [
 
 # ─── engine routing rules (ordered — first match wins) ───────────────────────
 ENGINE_RULES = [
-    (r"decision choice|which crop|compare crop|rice vs|maize vs|beans vs|potato vs"
+    # Program outcomes are factual dataset questions, not career recommendations.
+    (r"\b(enrol(?:l)?ment|admission|admitted|graduation rate|graduate employment)\b",
+     "data_query"),
+    (r"\bapplied mathematics?\b|\bapplied math\b",
+     "career_pathways"),
+    (r"decision choice|which crop (should|can) i (plant|grow)|what (should|can) i (plant|grow|farm)"
+     r"|best crop to (plant|grow)|compare crops? to (plant|grow)|rice vs|maize vs|beans vs|potato vs"
      r"|which career.*vs|career.*compare|should i (plant|grow|farm|study|become)"
      r"|i want to (plant|grow|farm)|best crop|crop choice",
      "decision"),
@@ -71,9 +77,9 @@ ENGINE_RULES = [
      r"|what (should|can) i (study|become)|i want to (be|become)|my (dream|goal) is"
      r"|advise me|guide me|help me choose",
      "career"),
-    (r"neet|predict|factor|associat|regression|what.*(cause|affect|influenc)|why.*youth",
+    (r"neet|youth (outside|not in) (school|work|training)|predict.*neet|neet.*predict|factor.*neet|regression.*neet|why.*youth",
      "regression"),
-    (r"trend|forecast|sector.*grow|employment.*trend|over time|projection|future.*sector",
+    (r"sector.*(trend|forecast|grow|employment)|employment trend.*sector|forecast.*sector|future.*sector",
      "forecasting"),
     (r"cluster|underutil|district.*profile|group.*district|segment.*district",
      "clustering"),
@@ -83,14 +89,14 @@ ENGINE_RULES = [
 def parse_intent(question: str) -> dict:
     """
     Returns:
-        engine: 'decision' | 'career' | 'regression' | 'forecasting' | 'clustering' | 'ambiguous'
+        engine: specialized analysis, general dataset query, or ambiguous
         understood: human-readable explanation
         enriched: question + expanded synonyms (for downstream keyword matching)
     """
     q = question.strip()
     words = q.split()
 
-    if len(words) < 2:
+    if len(words) < 2 and len(q) < 3:
         return {
             "engine": "ambiguous",
             "understood": (
@@ -111,7 +117,7 @@ def parse_intent(question: str) -> dict:
     eq = enriched.lower()
 
     # Route
-    engine = "clustering"  # default
+    engine = "data_query"
     for pattern, eng in ENGINE_RULES:
         if re.search(pattern, eq, re.I):
             engine = eng
@@ -140,4 +146,16 @@ def _build_understood(engine: str, q: str) -> str:
         return "Understood: employment trend and forecast by sector. I will fit linear trends and project 2 years forward."
     if engine == "clustering":
         return "Understood: district labour underutilization profiling. I will cluster districts by underemployment, NEET, agriculture share, and formal employment."
+    if engine == "career_pathways":
+        return (
+            "Understood: applied-mathematics career exploration. I will map quantitative "
+            "skills to related occupations and show Rwanda sector/location signals from "
+            "the available job dataset, with its source status and limitations."
+        )
+    if engine == "data_query":
+        return (
+            "Understood: dataset question. I will match your metric or topic to the available "
+            "labour, poverty, health, agriculture, education, business, exam, TVET, university, "
+            "sector, or career-demand data and summarize, compare, rank, or show trends."
+        )
     return f'Could not understand: "{q}". Please be more specific.'
