@@ -5,7 +5,8 @@ on:
   #  paths: ["api/**", ".github/workflows/api.yml"]
   #pull_request:
   #  paths: ["api/**", ".github/workflows/api.yml"]
-  # workflow_dispatch:
+  workflow_dispatch:
+    
 concurrency:
   group: api-${{ github.ref }}
   cancel-in-progress: true

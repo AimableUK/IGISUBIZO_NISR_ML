@@ -5,7 +5,8 @@ on:
   #  paths: ["web/**", ".github/workflows/web.yml"]
   # pull_request:
   #  paths: ["web/**", ".github/workflows/web.yml"]
-  # workflow_dispatch:
+  workflow_dispatch:
+    
 concurrency:
   group: web-${{ github.ref }}
   cancel-in-progress: true
