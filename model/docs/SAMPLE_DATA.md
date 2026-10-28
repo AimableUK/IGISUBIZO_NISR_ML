@@ -6,7 +6,7 @@ Deterministically generated district-level labour market data that mirrors the s
 
 All outputs are labelled `isSample: true` everywhere — in the API response, the UI, and every artifact saved to the database.
 
-The current Python model service also reads generated proxy CSVs from `model/data/real/`. Despite that directory name, these are not verified extracts of official NISR tables. They are marked as sample/demo data in results and must not be used as official statistics.
+Most Python model analyses also read generated proxy CSVs from `model/data/real/`. Despite that directory name, these are not verified extracts of official NISR tables. They are marked as sample/demo data in results and must not be used as official statistics. The general query engine additionally reads the public NISR crop-yield table under `model/data/official/`; see its `source.json` for provenance. Its reference year is not provided.
 
 ## Files (Python CSVs — reference only)
 
@@ -49,5 +49,5 @@ The unused alternative (`api/src/services/ml-engine.ts`) generates deterministic
 1. Download NISR LFS microdata from https://microdatabk.statistics.gov.rw/catalog/125
 2. Aggregate to district × year summary tables matching the column names above
 3. Replace the generated CSVs in `model/data/real/` with validated aggregated tables
-4. Update the Python engine metadata and set `IS_SAMPLE_DATA = False` in `model/engine/loader.py` only after provenance is verified
+4. Update the Python engine metadata and mark only the verified dataset as official; do not change the core loader's `IS_SAMPLE_DATA` flag for unrelated proxy datasets
 5. Update dataset versions and source citations to match the actual data

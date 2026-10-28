@@ -5,8 +5,17 @@ import VoiceButton from "./VoiceButton";
 
 export const EXAMPLES = [
   "Compare youth employment across districts over the last five years",
-  "Rank districts by secondary school enrolment",
-  "Show the trend in youth employment in Huye and Musanze",
+  "Which districts have the highest poverty rates?",
+  "Show child vaccination coverage by district",
+  "How has school dropout changed since 2020?",
+  "How has Software Engineering enrollment changed from 2021 to 2025?",
+  "Which sectors hire applied mathematics graduates?",
+  "Compare maize yield across districts",
+  "Which sectors have the highest employment share?",
+  "Show job vacancies by occupation",
+  "Compare TVET pass rates by trade",
+  "Which exam subjects have the highest pass rates?",
+  "Compare household electricity access across districts",
 ];
 
 export default function QuestionBar({ onSubmit, busy, initial = "", showExamples = true }: { onSubmit: (q: string) => void; busy?: boolean; initial?: string; showExamples?: boolean }) {
