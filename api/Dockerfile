@@ -23,4 +23,4 @@ RUN chmod +x ./docker-entrypoint.sh
 USER node
 EXPOSE 4000
 ENTRYPOINT ["/app/docker-entrypoint.sh"]
-CMD ["node", "dist/server.js"]
+CMD ["node", "dist/server.mjs"]
