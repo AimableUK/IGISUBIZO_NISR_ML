@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "nodemon",
     "build": "prisma generate && tsup",
-    "start": "node dist/server.js",
+    "start": "node dist/app.js",
     "typecheck": "tsc --noEmit",
     "prisma:generate": "prisma generate --schema prisma/schema.prisma",
     "prisma:migrate": "prisma migrate dev",
