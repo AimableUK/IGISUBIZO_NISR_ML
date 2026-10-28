@@ -3,6 +3,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends openssl ca-cert
 RUN npm install -g pnpm@12.8.2
 WORKDIR /app
 COPY package.json ./
+COPY pnpm-workspace.yaml ./
 RUN pnpm install --lockfile=false
 
 FROM deps AS builder
@@ -15,6 +16,7 @@ RUN npm install -g pnpm@12.8.2
 ENV NODE_ENV=production
 WORKDIR /app
 COPY package.json ./
+COPY pnpm-workspace.yaml ./
 COPY --from=builder /app/prisma ./prisma
 RUN pnpm install --prod --lockfile=false && pnpm exec prisma generate --schema prisma/schema.prisma
 COPY --from=builder --chown=node:node /app/dist ./dist

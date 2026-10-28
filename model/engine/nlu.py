@@ -125,7 +125,7 @@ def _build_understood(engine: str, q: str) -> str:
     if engine == "decision":
         return (
             "Understood: decision comparison. "
-            "I will identify your options, load the relevant NISR data, compute indicators "
+            "I will identify your options, load the available proxy data, compute indicators "
             "per option, and rank them on visible criteria with sources and caveats."
         )
     if engine == "career":

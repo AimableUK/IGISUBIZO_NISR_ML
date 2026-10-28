@@ -11,7 +11,7 @@ import math
 import uuid
 from datetime import datetime, timezone
 
-from .loader import is_real_available, load_district_labour
+from .loader import IS_SAMPLE_DATA, is_real_available, load_district_labour
 
 ENGINE_VERSION = "regression-2.1.0"
 DATASET_VERSION = "2024.1"
@@ -327,10 +327,10 @@ def run(question: str) -> dict:
         },
         "sources": {
             source_id: {
-                "publisher": "NISR",
-                "title": "Rwanda Labour Force Survey (LFS) — NISR",
+                "publisher": "Isesengura demo data",
+                "title": "LFS-shaped generated district labour proxy data",
                 "period": f"{years_all[0]}–{latest_year}",
-                "isSample": False,
+                "isSample": IS_SAMPLE_DATA,
             },
         },
         "operations": [
@@ -357,6 +357,7 @@ def run(question: str) -> dict:
             },
         ],
         "caveats": [
+            "Demo only: input values are generated proxy data and are not verified NISR observations.",
             f"Panel of {n_obs} observations ({n_districts} districts × {len(years_all)} years).",
             "Year fixed effects absorb national time shocks; coefficients are within-year associations.",
             "OLS assumes linear relationships; results reflect association, not causation.",
@@ -366,6 +367,6 @@ def run(question: str) -> dict:
             "analysisVersion": ENGINE_VERSION,
             "computedAt": datetime.now(timezone.utc).isoformat(),
             "datasetVersions": {source_id: DATASET_VERSION},
-            "isSample": False,
+            "isSample": IS_SAMPLE_DATA,
         },
     }

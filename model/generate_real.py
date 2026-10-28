@@ -1,20 +1,8 @@
-"""
-Generate real-structure CSVs for model/data/real/ using published NISR aggregate figures.
+"""Generate NISR-shaped proxy CSVs for demos and engine development.
 
-Sources used (all publicly available NISR reports):
-  - Rwanda Labour Force Survey 2019–2024 (NISR)
-  - EICV7 2023/24 Integrated Household Living Conditions Survey (NISR)
-  - Rwanda DHS 2019-2020 / 2025 (NISR)
-  - Seasonal Agricultural Survey 2019–2024 (NISR)
-  - Rwanda EMIS / REB education statistics 2019–2024
-  - NESA national exam results 2019–2024
-  - Rwanda Establishment Census 2020 / 2023 (NISR)
-  - Rwanda Polytechnic / WDA TVET statistics
-  - Rwanda HEC higher education statistics
-
-District-level breakdowns are taken from published LFS, EICV and DHS district tables.
-Where only national figures are published, district values are interpolated using the
-published provincial breakdown and the district's population share (PHC 2022).
+The generated files are not verified extracts of official source tables. Do not
+present their values as official statistics. Replace them with validated source
+data before changing the model's sample-data flag.
 
 Run: python model/generate_real.py
 """

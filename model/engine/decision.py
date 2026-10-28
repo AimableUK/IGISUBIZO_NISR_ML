@@ -18,7 +18,7 @@ import uuid, re
 from datetime import datetime, timezone
 from collections import defaultdict
 
-from .loader import load_career_demand, load_sector_employment, load_agriculture, is_real_available
+from .loader import IS_SAMPLE_DATA, load_career_demand, load_sector_employment, load_agriculture, is_real_available
 
 ENGINE_VERSION = "decision-1.0.0"
 DATASET_VERSION = "2024.1"
@@ -256,12 +256,12 @@ def run(question: str) -> dict:
 
     sources = {}
     if "nisr_sas" in source_ids:
-        sources["nisr_sas"] = {"publisher": "NISR", "title": "Seasonal Agricultural Survey (SAS)",
-                               "period": f"2019–{LATEST}", "isSample": False}
+        sources["nisr_sas"] = {"publisher": "Isesengura demo data", "title": "SAS-shaped generated agriculture proxy data",
+                               "period": f"2019–{LATEST}", "isSample": IS_SAMPLE_DATA}
     if "nisr_lmis" in source_ids:
-        sources["nisr_lmis"] = {"publisher": "MIFOTRA / LMIS",
-                                "title": "Rwanda Labour Market Information System (LMIS) / KORA",
-                                "period": f"2019–{LATEST}", "isSample": False}
+        sources["nisr_lmis"] = {"publisher": "Isesengura demo data",
+                                "title": "LMIS-shaped generated career-demand proxy data",
+                                "period": f"2019–{LATEST}", "isSample": IS_SAMPLE_DATA}
 
     option_rows = [
         {
@@ -319,11 +319,12 @@ def run(question: str) -> dict:
         "sources": sources,
         "operations": [
             {"id": "detect_decision", "description": f"Identified decision type: {decision_type}, options: {options}."},
-            {"id": "load_data", "description": f"Loaded real NISR CSVs for {LATEST}."},
+            {"id": "load_data", "description": f"Loaded generated proxy CSVs for {LATEST}."},
             {"id": "compute_indicators", "description": "Computed indicators per option from CSV rows."},
             {"id": "score_rank", "description": "Applied weighted composite score and ranked options."},
         ],
         "caveats": [
+            "Demo only: input values are generated proxy data and are not verified NISR observations.",
             "Scores are composite signals from available data, not predictions.",
             "Criteria weights are defaults — the user can adjust them.",
             "Options with missing indicators are ranked lower but not excluded.",
@@ -333,6 +334,6 @@ def run(question: str) -> dict:
             "analysisVersion": ENGINE_VERSION,
             "computedAt": datetime.now(timezone.utc).isoformat(),
             "datasetVersions": {s: DATASET_VERSION for s in source_ids},
-            "isSample": False,
+            "isSample": IS_SAMPLE_DATA,
         },
     }

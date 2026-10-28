@@ -2,7 +2,7 @@
 
 Canonical repository: <https://github.com/AimableUK/IGISUBIZO_NISR_ML>
 
-Built for the **2026 NISR Big Data Hackathon**. Isesengura (Kinyarwanda for "analysis") is a **decision-support system**: ask a question about a real decision you face in Rwanda — which career to study for, which crop to plant, which sector to move into — and get a ranked, evidence-based comparison of your options, computed from real NISR data, with the uncertainty, the reasons and the sources made visible.
+Built for the **2026 NISR Big Data Hackathon**. Isesengura (Kinyarwanda for "analysis") is a **decision-support system demo**: ask a question about a real decision you face in Rwanda — which career to study for, which crop to plant, which sector to move into — and explore a ranked comparison with visible methods and limitations. Current results use generated proxy data, not verified NISR observations.
 
 It is not a chatbot and not a dashboard viewer. It answers **"what should I consider choosing, and why?"** without ever deciding for the person.
 
@@ -80,7 +80,7 @@ Next.js 15 (App Router) · TypeScript · Tailwind · Recharts · Zustand · Fram
 api/              Express API: auth, analyses, artifacts, queues, cron, socket, engines, planner
 web/              Next.js frontend: renderer, workspace, playground, history, auth, admin
 model/            Python FastAPI model service: NLU, clustering, regression, forecasting, decision
-model/data/real/  Real-structure NISR CSVs (LFS, EICV7, DHS, SAS, EMIS, NESA, EC, WDA, HEC, LMIS)
+model/data/real/  Generated proxy CSVs shaped around NISR categories (not verified extracts)
 api/src/shared/   API-local copy of shared Zod schemas
 web/src/shared/   Frontend-local copy of shared Zod schemas
 ```
@@ -89,7 +89,9 @@ web/src/shared/   Frontend-local copy of shared Zod schemas
 
 ## Data layer
 
-All displayed numbers come from real NISR datasets in `model/data/real/`:
+The checked-in files in `model/data/real/` are generated proxy data, not verified extracts of official NISR tables. The analysis engines operate on these demo values and label results accordingly. Validate and replace them with published source tables before presenting any output as official statistics or using it for real-world decisions.
+
+The proxy files are shaped around these dataset categories:
 
 | File | Source | Years |
 |------|--------|-------|
@@ -129,6 +131,17 @@ pnpm run web:dev
 ```
 
 With no `BREVO_API_KEY`, emails are **printed in the API log** — click the link from there in development.
+
+## Production deployment
+
+The production Compose file runs PostgreSQL, Redis, the Express API, the private Python model service, and the Next.js website. Set production secrets and public HTTPS URLs in `.env`, point a TLS reverse proxy at the web and API ports, then run:
+
+```bash
+docker compose -f docker-compose.prod.yml up --build -d
+docker compose -f docker-compose.prod.yml ps
+```
+
+Production routes analysis requests to `http://model:8000` and disables the in-process fallback. The website and analysis service are deployable, but current analysis outputs are demo-only until the generated proxy data is replaced and validated.
 
 ---
 
@@ -178,12 +191,12 @@ Set `ANTHROPIC_API_KEY` (and optionally `PLANNER_MODEL`). The planner receives o
 
 ## Before launch checklist
 
-- Set a real `BETTER_AUTH_SECRET`, Brevo sender, ImageKit keys, public `WEB_URL`/`API_URL`/`NEXT_PUBLIC_API_URL`
+- Set a real `BETTER_AUTH_SECRET`, `POSTGRES_PASSWORD`, Brevo sender, ImageKit keys, and public `WEB_URL`/`API_URL`/`NEXT_PUBLIC_API_URL`
 - Review `privacy`/`terms` pages with a lawyer (they are templates)
 - Run an accessibility audit with real assistive technology
 - Add i18n (English/Kinyarwanda) — strings are currently inline English
 - Add API integration tests and Playwright e2e for the ask → workspace → save → reopen flow
-- Validate decision engine scores against domain experts before publication
+- Replace generated proxy data with validated source tables and validate decision engine scores against domain experts before presenting results as official
 
 ---
 

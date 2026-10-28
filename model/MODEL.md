@@ -1,16 +1,17 @@
-# ML Engine — Overview
+# Model Service — Overview
 
-The ML engine is the analytical intelligence layer of Isesengura. It receives a plain-English question, runs the appropriate statistical/ML operation, and returns a validated `AnalyticalResult` that the frontend renderer displays as an interactive workspace.
+The model service receives a plain-English question from the Express API, runs a statistical/rule-based analysis, and returns an `AnalyticalResult` for the frontend renderer.
 
 ## Location
 
 ```
-api/src/services/ml-engine.ts   ← active ML engine (TypeScript, in-process)
-api/src/services/engine.ts      ← original sample engine (unchanged, still active)
-model/                          ← Python Docker template + docs + sample CSVs
+model/main.py                    ← active FastAPI /analyze endpoint
+model/engine/                    ← Python routing, clustering, regression, forecasting, decisions
+model/data/real/                  ← generated proxy CSVs; not verified NISR data
+api/src/services/model-client.ts ← API client with a development fallback
 ```
 
-The ML engine is pure TypeScript — no Python, no external ML libraries. It runs inside the existing Express API process.
+The active engine is pure Python with no external ML/statistical libraries. It runs as a FastAPI service. The algorithms are code, not trained neural-network weights or a chatbot.
 
 ## Problems solved
 
@@ -25,13 +26,13 @@ See [docs/PROBLEM_STATEMENT.md](docs/PROBLEM_STATEMENT.md) for the full problem 
 ## How a question becomes a result
 
 ```
-question
-  └─▶ runMLAnalysis()          intent router (keyword matching)
-        ├─▶ runClustering()    Problem A
-        ├─▶ runRegression()    Problem B
-        └─▶ runForecasting()   Problem C
-              └─▶ AnalyticalResult (Zod-validated)
-                    └─▶ planner → PresentationSpec → frontend renderer
+website → Express API → FastAPI /analyze
+                         └─▶ regex/synonym intent router
+                               ├─▶ decision scoring
+                               ├─▶ K-means clustering
+                               ├─▶ panel OLS regression
+                               └─▶ linear trend forecasting
+                                     └─▶ AnalyticalResult → planner → frontend renderer
 ```
 
 ## Intent routing
@@ -42,7 +43,7 @@ question
 | `trend`, `forecast`, `sector`, `over time`, `grow` | Forecasting (C) |
 | anything else | Clustering (A) — most general overview |
 
-## Algorithms (all pure TypeScript)
+## Algorithms (pure Python)
 
 - **KMeans** — iterative centroid update, min-max normalised features, deterministic initialisation
 - **OLS** — normal equations solved via Gaussian elimination, exact
@@ -50,12 +51,10 @@ question
 
 ## Output contract
 
-Every engine returns an `AnalyticalResult` validated by the Zod schema in `api/src/shared/analytical.ts`. The frontend never computes statistics — it only renders what the engine returns.
+Every engine returns an `AnalyticalResult` validated by the API and frontend schemas. The frontend only renders what the engine returns.
 
 ## Data
 
-See [docs/SAMPLE_DATA.md](docs/SAMPLE_DATA.md) for the full column reference and instructions for plugging in real NISR data.
+The checked-in CSVs are generated proxy data shaped around NISR dataset categories, not verified source-table extracts. Results are marked as demo data. Do not treat them as official statistics or use them for real-world decisions. See [README.md](README.md) for details.
 
-## Activating the ML engine
-
-The ML engine is ready to use. To route questions through it, import `runMLAnalysis` from `./ml-engine` in `api/src/routes/analyses.ts` alongside or instead of `runAnalysis` from `./engine`.
+The analyses route already calls `analyzeViaModel()` and sends requests to `MODEL_URL`. Production Compose starts the model service and disables fallback, so an unavailable model fails visibly rather than returning a different in-process result.

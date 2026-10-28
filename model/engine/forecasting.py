@@ -11,7 +11,7 @@ import uuid
 from collections import defaultdict
 from datetime import datetime, timezone
 
-from .loader import is_real_available, load_sector_employment
+from .loader import IS_SAMPLE_DATA, is_real_available, load_sector_employment
 
 ENGINE_VERSION = "forecasting-2.0.0"
 DATASET_VERSION = "2024.1"
@@ -276,10 +276,10 @@ def run(question: str) -> dict:
         },
         "sources": {
             source_id: {
-                "publisher": "NISR",
-                "title": "Rwanda LFS — Sector Employment Shares",
+                "publisher": "Isesengura demo data",
+                "title": "LFS-shaped generated sector employment proxy data",
                 "period": f"{min(years)}–{latest_year}",
-                "isSample": False,
+                "isSample": IS_SAMPLE_DATA,
             },
         },
         "operations": [
@@ -297,7 +297,8 @@ def run(question: str) -> dict:
             },
         ],
         "caveats": [
-            "Based on aggregated LFS/Establishment Census data.",
+            "Demo only: input values are generated proxy data and are not verified NISR observations.",
+            "Based on generated proxy data shaped like LFS/Establishment Census indicators.",
             f"Linear extrapolation {FORECAST_YEARS} years forward. Prediction intervals capture trend variance but not structural economic shocks.",
             "Employment share projections do not account for population growth or total employment volume.",
             "Correlation does not imply causation.",
@@ -306,6 +307,6 @@ def run(question: str) -> dict:
             "analysisVersion": ENGINE_VERSION,
             "computedAt": datetime.now(timezone.utc).isoformat(),
             "datasetVersions": {source_id: DATASET_VERSION},
-            "isSample": False,
+            "isSample": IS_SAMPLE_DATA,
         },
     }
