@@ -30,6 +30,23 @@ services:
         timeout: 5s,
         retries: 10,
       }
+  model:
+    build: { context: ./model, dockerfile: Dockerfile }
+    restart: unless-stopped
+    environment:
+      API_URL: http://api:4000
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "python",
+          "-c",
+          "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=3)",
+        ]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
   api:
     build: { context: ./api, dockerfile: Dockerfile }
     restart: unless-stopped
@@ -38,11 +55,14 @@ services:
       NODE_ENV: production
       DATABASE_URL: "postgresql://${POSTGRES_USER:-isesengura}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB:-isesengura}"
       REDIS_URL: redis://redis:6379
+      MODEL_URL: http://model:8000
+      MODEL_FALLBACK: "false"
     ports: ["4000:4000"]
     depends_on:
       {
         postgres: { condition: service_healthy },
         redis: { condition: service_healthy },
+        model: { condition: service_healthy },
       }
     healthcheck:
       {

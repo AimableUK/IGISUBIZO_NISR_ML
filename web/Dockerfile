@@ -4,7 +4,7 @@ RUN npm install -g pnpm@12.8.2
 COPY package.json ./
 RUN pnpm install --lockfile=false
 
-FROM node:22-alpine AS builder
+FROM deps AS builder
 WORKDIR /app
 ARG NEXT_PUBLIC_API_URL=http://localhost:4000
 ARG NEXT_PUBLIC_CONTACT_EMAIL=team@example.com
