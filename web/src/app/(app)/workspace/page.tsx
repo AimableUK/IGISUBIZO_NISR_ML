@@ -10,7 +10,7 @@ import { getSocket } from "@/lib/socket";
 import { fmtDate } from "@/lib/format";
 
 const LABEL: Record<ProgressStage, string> = {
-  interpreting: "Reading your question", validating: "Checking it against supported analyses", computing: "Computing verified results",
+  interpreting: "Reading your question", validating: "Checking it against supported analyses", computing: "Computing the demo analysis",
   planning: "Designing the workspace", saving: "Saving the analysis", ready: "Opening your workspace",
 };
 type State = { kind: "idle" } | { kind: "running" } | { kind: "blocked"; result: AnalyticalResult } | { kind: "error"; message: string };

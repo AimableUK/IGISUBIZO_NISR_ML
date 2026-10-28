@@ -8,8 +8,8 @@ import TileMap from "@/components/renderer/TileMap";
 import { useSession } from "@/lib/auth-client";
 
 const STEPS = [
-  ["Ask", "Type or speak a question about Rwanda’s public data."],
-  ["Verify", "The analysis engine computes the numbers and records its method and sources."],
+  ["Ask", "Type or speak a question to explore the Rwanda data demo."],
+  ["Analyze", "Statistical code computes demo results and records its method and limitations."],
   ["Describe", "A planner proposes a workspace as a structured specification, never as code."],
   ["Render", "The product validates the specification and draws it with its own components."],
   ["Keep", "The analysis is saved with its layout, so you can reopen and refine it later."],
@@ -27,7 +27,7 @@ export default function Landing() {
       <section className="mx-auto grid max-w-[1400px] items-center gap-12 px-4 pb-16 pt-14 sm:px-6 lg:grid-cols-[1.15fr_1fr] lg:pt-20">
         <div>
           <h1 className="max-w-[16ch] text-5xl font-semibold leading-[1.02] sm:text-6xl">Ask about Rwanda. Get a workspace, not a paragraph.</h1>
-          <p className="mt-5 max-w-[52ch] text-lg text-muted">Charts, tables, maps and the numbers behind them, arranged for your question and saved so you can reopen, edit and cite them.</p>
+          <p className="mt-5 max-w-[52ch] text-lg text-muted">Explore charts, tables and maps generated from proxy data shaped around Rwanda data categories. Current results are for demonstration, not verified NISR statistics.</p>
           <div className="mt-8 max-w-2xl"><QuestionBar onSubmit={go} /></div>
         </div>
         <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="card p-5 sm:p-6">

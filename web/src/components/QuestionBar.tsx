@@ -19,7 +19,7 @@ export default function QuestionBar({ onSubmit, busy, initial = "", showExamples
   return (
     <div>
       <form onSubmit={(e) => { e.preventDefault(); submit(); }} className="rounded-card border-2 border-ink/80 bg-surface p-2 focus-within:border-primary">
-        <label htmlFor={id} className="sr-only">Your question about Rwanda’s public data</label>
+        <label htmlFor={id} className="sr-only">Your question for the Rwanda data analysis demo</label>
         <textarea id={id} rows={2} value={q} onChange={(e) => setQ(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); submit(); } }} maxLength={500}
           placeholder="Ask a question, e.g. Compare youth employment across districts over the last five years" className="w-full resize-none rounded-lg bg-transparent px-3 py-2 text-lg outline-none placeholder:text-muted focus-visible:outline-none" />
         <div className="flex items-center justify-between gap-2 px-1 pb-1">
