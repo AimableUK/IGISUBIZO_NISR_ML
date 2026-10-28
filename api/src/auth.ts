@@ -26,4 +26,5 @@ export const auth = betterAuth({
     },
   },
   session: { expiresIn: 60 * 60 * 24 * 14, updateAge: 60 * 60 * 24 },
+  advanced: { defaultCookieAttributes: { sameSite: "none", secure: true } },
 });
