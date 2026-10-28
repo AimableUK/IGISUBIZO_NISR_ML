@@ -152,7 +152,7 @@ function buildUnderstood(engine: EngineIntent, op: Operation, districts: string[
   const distStr = districts.length ? ` in ${districts.join(", ")}` : " across Rwanda";
   switch (engine) {
     case "decision":
-      return `Understood: decision comparison${distStr}. I will identify your options, load the relevant NISR data, compute indicators per option, and rank them on visible criteria with sources and caveats.`;
+      return `Understood: decision comparison${distStr}. I will identify your options, load the available proxy data, compute indicators per option, and rank them on visible criteria with sources and caveats.`;
     case "career_intelligence":
       return `Understood: career opportunity analysis${distStr}. I will score occupations using sector growth (LFS), graduate employment (HEC/WDA), skill gaps (LMIS), and exam pipeline (NESA).`;
     case "clustering":

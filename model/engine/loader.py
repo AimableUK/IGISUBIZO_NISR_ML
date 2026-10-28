@@ -1,11 +1,13 @@
 """
-Shared data loader. Reads sample CSVs (or real CSVs with the same columns from data/real/).
+Shared data loader for generated demo CSVs with common dataset schemas.
 """
 import pathlib
 import csv
 from typing import Optional
 
 BASE = pathlib.Path(__file__).parent.parent / "data"
+# Files in data/real are generated proxy data, not verified source-table extracts.
+IS_SAMPLE_DATA = True
 
 def _read(name: str, real: bool) -> list[dict]:
     folder = BASE / ("real" if real else "sample")

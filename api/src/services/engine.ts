@@ -8,8 +8,7 @@ import {
 import { parseIntent } from "./nlu";
 
 /**
- * Analytical engine — reads real-structure NISR data from model/data/real/.
- * Replace `valueFor` with direct CSV lookups once the Python model service is wired up.
+ * In-process fallback engine — generates proxy demo values when the Python model service is unavailable.
  */
 export const ANALYSIS_VERSION = "engine-2.0.0";
 export const DATASET_VERSIONS: Record<string, string> = {
@@ -613,12 +612,11 @@ export function runAnalysis(question: string): AnalyticalResult {
     },
     sources: {
       [ind.dataset]: {
-        publisher: "NISR / Rwanda",
-        title: DATASET_SOURCE_TITLES[ind.dataset] ?? ind.label,
+        publisher: "Isesengura demo data",
+        title: `${DATASET_SOURCE_TITLES[ind.dataset] ?? ind.label} (generated proxy)`,
         period: `${it.from}–${it.to}`,
         file: ind.dataset,
-        licence: "Rwanda Open Data Licence",
-        isSample: false,
+        isSample: true,
       },
     },
     operations: [
@@ -637,12 +635,15 @@ export function runAnalysis(question: string): AnalyticalResult {
       },
       { id: "rank", description: "Ranked districts by the latest-year value." },
     ],
-    caveats,
+    caveats: [
+      "Demo only: values are generated proxies, not verified NISR observations.",
+      ...caveats,
+    ],
     meta: {
       analysisVersion: ANALYSIS_VERSION,
       computedAt: new Date().toISOString(),
       datasetVersions: { [ind.dataset]: DATASET_VERSIONS[ind.dataset]! },
-      isSample: false,
+      isSample: true,
     },
   };
   return AnalyticalResultSchema.parse(raw);

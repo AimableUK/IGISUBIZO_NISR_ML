@@ -11,7 +11,7 @@ import random
 import uuid
 from datetime import datetime, timezone
 
-from .loader import is_real_available, load_district_labour
+from .loader import IS_SAMPLE_DATA, is_real_available, load_district_labour
 
 ENGINE_VERSION = "clustering-2.0.0"
 DATASET_VERSION = "2024.1"
@@ -326,10 +326,10 @@ def run(question: str) -> dict:
         "formulas": {},
         "sources": {
             source_id: {
-                "publisher": "NISR",
-                "title": "Rwanda Labour Force Survey (LFS) — NISR",
+                "publisher": "Isesengura demo data",
+                "title": "LFS-shaped generated district labour proxy data",
                 "period": f"2019–{latest_year}",
-                "isSample": False,
+                "isSample": IS_SAMPLE_DATA,
             },
         },
         "operations": [
@@ -351,7 +351,8 @@ def run(question: str) -> dict:
             },
         ],
         "caveats": [
-            "Results are based on aggregated district-level LFS data.",
+            "Demo only: input values are generated proxy data and are not verified NISR observations.",
+            "Results are based on generated district-level proxy data shaped like LFS data.",
             "KMeans cluster profiles are ordered by underemployment severity; profiles show patterns of association, not causation.",
             "Silhouette score measures cluster cohesion and separation on normalized feature space.",
         ],
@@ -359,6 +360,6 @@ def run(question: str) -> dict:
             "analysisVersion": ENGINE_VERSION,
             "computedAt": datetime.now(timezone.utc).isoformat(),
             "datasetVersions": {source_id: DATASET_VERSION},
-            "isSample": False,
+            "isSample": IS_SAMPLE_DATA,
         },
     }
