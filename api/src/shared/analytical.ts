@@ -31,7 +31,7 @@ export const MetricSchema = z.object({
 });
 
 export const InsightSchema = z.object({
-  text: z.string().max(600),
+  text: z.string().max(2000),
   evidence: z.array(z.string().max(100)).default([]),
 });
 
@@ -108,7 +108,7 @@ export const AnalyticalResultSchema = z.object({
   id: z.string(),
   question: z.string().max(1000),
   status: AnalysisStatus,
-  message: z.string().max(600).optional(),
+  message: z.string().max(2000).optional(),
   intent: z.object({
     metric: z.string().optional(),
     operation: z.enum(["compare", "trend", "rank", "summary"]).optional(),
