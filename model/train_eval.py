@@ -233,6 +233,115 @@ def evaluate_decision_and_router():
     print("  [PASS] All engines strictly comply with AnalyticalResult schema.")
 
 
+def evaluate_dataset_queries():
+    print_header("5. GENERAL DATASET QUERY COVERAGE")
+    cases = [
+        ("Compare youth employment across districts over the last five years", "employment_rate", "compare", True),
+        ("What are employment trends across districts?", "employment_rate", "trend", True),
+        ("Which districts have the highest poverty rates?", "poverty_headcount", "rank", True),
+        ("Show child vaccination coverage by district", "child_vaccination_full", "compare", True),
+        ("How has school dropout changed since 2020?", "school_dropout_rate", "trend", True),
+        ("Compare maize crop yield across districts", "yield_kg_per_ha", "compare", False),
+        ("Rank employment share by sector", "employment_share", "rank", True),
+        ("Show job vacancies by occupation", "job_vacancies", "compare", True),
+        ("Compare TVET pass rates by trade", "pass_rate", "compare", True),
+        ("Which exam subjects have the highest pass rates?", "pass_rate", "rank", True),
+        ("Show university graduation rate by program", "graduation_rate", "compare", True),
+        ("Show food insecurity rates by district", "food_insecurity_pct", "compare", True),
+        ("Rank districts by business growth", "establishment_growth_rate", "rank", True),
+    ]
+    for question, metric, operation, is_sample in cases:
+        result = route(question)
+        validate_schema(result)
+        assert result["status"] == "ok", (question, result.get("message"))
+        assert result["intent"].get("metric") == metric, (question, result["intent"])
+        assert result["intent"].get("operation") == operation, (question, result["intent"])
+        assert result["meta"]["isSample"] is is_sample, question
+        assert all(source["isSample"] is is_sample for source in result["sources"].values()), question
+        print(f"  [OK] {question} -> {metric} ({operation})")
+    program_trend = route(
+        "How has Software Engineering enrollment changed from 2021 to 2025?"
+    )
+    validate_schema(program_trend)
+    assert program_trend["status"] == "ok", program_trend.get("message")
+    assert program_trend["intent"]["operation"] == "trend"
+    assert program_trend["meta"]["isSample"] is True
+    program_rows = program_trend["datasets"]["query_results"]["rows"]
+    assert len(program_rows) == 5
+    assert {row["program"] for row in program_rows} == {"Software Engineering"}
+    assert [row["year"] for row in program_rows] == [2021, 2022, 2023, 2024, 2025]
+    assert program_rows[-1]["enrolled_students"] > program_rows[0]["enrolled_students"]
+    print("  [OK] Program enrollment trends filter the requested program and years.")
+    program_comparison = route(
+        "Compare Software Engineering and Finance program enrollment by year from 2021 to 2025"
+    )
+    comparison_rows = program_comparison["datasets"]["query_results"]["rows"]
+    assert len(comparison_rows) == 10
+    assert {row["program"] for row in comparison_rows} == {
+        "Software Engineering", "Accounting & Finance"
+    }
+    print("  [OK] Program comparisons sum enrollment across institutions by year.")
+    student_decision = route("Should I study Software Engineering or Finance?")
+    validate_schema(student_decision)
+    assert student_decision["status"] == "ok"
+    assert student_decision["decision"]["options"] == [
+        "Software Engineering", "Accounting & Finance"
+    ]
+    assert student_decision["meta"]["isSample"] is True
+    print("  [OK] Study-choice comparisons use named programs and disclose proxy data.")
+    applied_math = route("Which sectors hire applied mathematics graduates?")
+    validate_schema(applied_math)
+    pathway_rows = applied_math["datasets"]["applied_math_pathways"]["rows"]
+    assert len(pathway_rows) == 10
+    assert applied_math["meta"]["isSample"] is True
+    assert "fresh graduates" in applied_math["insights"]["summary"]["text"]
+    print("  [OK] Applied-mathematics pathways show 10 sectors and disclose limitations.")
+    crop_result = route("Compare maize crop yield by season in Musanze")
+    validate_schema(crop_result)
+    assert crop_result["status"] == "ok", crop_result.get("message")
+    assert crop_result["meta"]["isSample"] is False
+    crop_rows = crop_result["datasets"]["query_results"]["rows"]
+    assert {row["season"] for row in crop_rows} == {"Season A", "Season B"}
+    crop_filters = crop_result["insights"]["filters"]["text"]
+    assert "district: Musanze" in crop_filters and "crop type: Maize" in crop_filters
+    yields_by_season = {row["season"]: row["yield_kg_per_ha"] for row in crop_rows}
+    assert yields_by_season == {"Season A": 1604.0, "Season B": 1522.97}
+    assert crop_result["sources"]["nisr_agriculture_yield"]["publisher"].startswith("National Institute")
+    print("  [OK] Official crop-yield results filter by crop, season, and district.")
+    natural_questions = [
+        ("How much maize per hectare in Musanze?", {"district": "Musanze", "crop_type": "Maize"}),
+        ("What is the yield of Irish potato in Nyabihu?", {"district": "Nyabihu", "crop_type": "Irish potatoes"}),
+    ]
+    for question, expected in natural_questions:
+        result = route(question)
+        validate_schema(result)
+        assert result["status"] == "ok", (question, result.get("message"))
+        row = result["datasets"]["query_results"]["rows"][0]
+        assert all(row[field] == value for field, value in expected.items()), (question, row)
+        assert result["meta"]["isSample"] is False
+        print(f"  [OK] Natural-language query: {question}")
+    season_comparison = route(
+        "Compare maize yield between Season A and Season B in Musanze"
+    )
+    season_rows = season_comparison["datasets"]["query_results"]["rows"]
+    assert {row["season"] for row in season_rows} == {"Season A", "Season B"}
+    assert all(row["district"] == "Musanze" and row["crop_type"] == "Maize" for row in season_rows)
+    print("  [OK] Season comparisons return both values with their crop and district labels.")
+    ambiguous_yield = route("Compare crop yield across districts")
+    assert ambiguous_yield["status"] == "ambiguous"
+    assert "specify a crop" in ambiguous_yield["message"]
+    print("  [OK] Crop-yield comparisons ask for a crop instead of averaging unlike crops.")
+    compared = route("Compare poverty rates in Huye and Musanze")
+    validate_schema(compared)
+    districts = {row["district"] for row in compared["datasets"]["query_results"]["rows"]}
+    assert districts == {"Huye", "Musanze"}, districts
+    print("  [OK] Named-district comparisons retain all requested locations.")
+    unsupported = route("What is the weather in Kigali?")
+    assert unsupported["status"] == "unsupported"
+    print("  [OK] Out-of-dataset questions are declined with supported-topic guidance.")
+    print("  [PASS] Broad dataset queries route to the requested metric and preserve demo-data labels.")
+
+
 if __name__ == "__main__":
     t_start = time.time()
     print_header("ISESENGURA ML TRAINING & EVALUATION PIPELINE")
@@ -240,7 +349,8 @@ if __name__ == "__main__":
     evaluate_clustering()
     evaluate_forecasting()
     evaluate_decision_and_router()
+    evaluate_dataset_queries()
     total_time = (time.time() - t_start) * 1000
     print("\n" + "=" * 70)
-    print(f"  ALL ENGINES TRAINED, VALIDATED AND OPERATIONAL IN {total_time:.1f}ms")
+    print(f"  ALL ANALYSIS ENGINES VALIDATED AND OPERATIONAL IN {total_time:.1f}ms")
     print("=" * 70 + "\n")

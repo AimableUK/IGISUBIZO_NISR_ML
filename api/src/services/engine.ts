@@ -430,7 +430,7 @@ const empty = (
       analysisVersion: ANALYSIS_VERSION,
       computedAt: new Date().toISOString(),
       datasetVersions: {},
-      isSample: false,
+      isSample: true,
     },
   });
 

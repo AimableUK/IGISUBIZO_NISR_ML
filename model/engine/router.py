@@ -4,6 +4,7 @@ Intent router — maps a question to the right engine via the NLU parser.
 import uuid
 from datetime import datetime, timezone
 
+from .loader import IS_SAMPLE_DATA
 from .nlu import parse_intent
 
 
@@ -27,14 +28,16 @@ def _shell(question: str, status: str, message: str) -> dict:
             "analysisVersion": "router-1.0.0",
             "computedAt": datetime.now(timezone.utc).isoformat(),
             "datasetVersions": {},
-            "isSample": False,
+            "isSample": IS_SAMPLE_DATA,
         },
     }
 
 
 def route(question: str) -> dict:
     from .clustering import run as cluster_run
+    from .career_pathways import run as career_pathways_run
     from .decision import run as decision_run
+    from .data_query import run as data_query_run
     from .forecasting import run as forecast_run
     from .regression import run as regression_run
 
@@ -51,4 +54,10 @@ def route(question: str) -> dict:
         return forecast_run(question)
     if engine == "career":
         return decision_run(question)  # career choice is a decision
-    return cluster_run(question)
+    if engine == "career_pathways":
+        return career_pathways_run(question)
+    if engine == "clustering":
+        return cluster_run(question)
+    if engine == "data_query":
+        return data_query_run(question)
+    return data_query_run(question)

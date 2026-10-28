@@ -7,7 +7,9 @@ The model service receives a plain-English question from the Express API, runs a
 ```
 model/main.py                    ← active FastAPI /analyze endpoint
 model/engine/                    ← Python routing, clustering, regression, forecasting, decisions
+model/engine/career_pathways.py  ← applied-mathematics job-sector exploration
 model/data/real/                  ← generated proxy CSVs; not verified NISR data
+model/data/official/              ← public NISR crop-yield table and provenance
 api/src/services/model-client.ts ← API client with a development fallback
 ```
 
@@ -41,7 +43,11 @@ website → Express API → FastAPI /analyze
 |---|---|
 | `neet`, `predict`, `factor`, `regression` | Regression (B) |
 | `trend`, `forecast`, `sector`, `over time`, `grow` | Forecasting (C) |
-| anything else | Clustering (A) — most general overview |
+| applied mathematics job/sector questions | Applied-math career pathways from proxy job records |
+| program enrollment/admission/outcome questions | General query over program data |
+| recognized metric or topic | General query across all available CSV datasets |
+| district cluster / labour-profile terms | Clustering (A) |
+| unsupported topic | Explain available dataset areas and suggest example questions |
 
 ## Algorithms (pure Python)
 
@@ -55,6 +61,6 @@ Every engine returns an `AnalyticalResult` validated by the API and frontend sch
 
 ## Data
 
-The checked-in CSVs are generated proxy data shaped around NISR dataset categories, not verified source-table extracts. Results are marked as demo data. Do not treat them as official statistics or use them for real-world decisions. See [README.md](README.md) for details.
+Most checked-in CSVs are generated proxy data shaped around NISR dataset categories, not verified source-table extracts; those results are marked as demo data and are not suitable for real-world decisions. General crop-yield queries use the official NISR PxWeb table linked in `data/official/source.json`; it reports Season A/B values without a reference year. See [README.md](README.md) for details.
 
 The analyses route already calls `analyzeViaModel()` and sends requests to `MODEL_URL`. Production Compose starts the model service and disables fallback, so an unavailable model fails visibly rather than returning a different in-process result.

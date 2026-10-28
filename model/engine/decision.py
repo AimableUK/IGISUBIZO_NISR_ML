@@ -14,11 +14,12 @@ Rules (from problem statement):
   - External claims (e.g. "AI will replace X") are listed separately, not scored.
 """
 from __future__ import annotations
+import csv
 import uuid, re
 from datetime import datetime, timezone
 from collections import defaultdict
 
-from .loader import IS_SAMPLE_DATA, load_career_demand, load_sector_employment, load_agriculture, is_real_available
+from .loader import BASE, IS_SAMPLE_DATA, load_career_demand, load_sector_employment, load_agriculture, is_real_available
 
 ENGINE_VERSION = "decision-1.0.0"
 DATASET_VERSION = "2024.1"
@@ -42,6 +43,20 @@ KNOWN_OCCUPATIONS = [
     "Lawyer", "Social Worker", "Logistics Officer", "Customs Officer",
 ]
 
+KNOWN_PROGRAMS = {
+    "Software Engineering": ("software engineering", "software engineering degree"),
+    "Accounting & Finance": ("finance", "accounting and finance", "accounting & finance"),
+    "Computer Science": ("computer science", "computing"),
+    "Data Science & AI": ("data science", "data science and ai", "artificial intelligence"),
+    "Economics": ("economics", "economics degree"),
+    "Business Administration": ("business administration", "business"),
+    "Electrical Engineering": ("electrical engineering",),
+    "Civil Engineering": ("civil engineering",),
+    "Mechanical Engineering": ("mechanical engineering",),
+    "Agriculture": ("agriculture degree",),
+    "Agribusiness": ("agribusiness",),
+}
+
 # ─── helpers ─────────────────────────────────────────────────────────────────
 def _mean(vals: list[float]) -> float | None:
     return round(sum(vals) / len(vals), 2) if vals else None
@@ -58,6 +73,13 @@ def _detect_decision(question: str) -> tuple[str, list[str]]:
     if re.search(crop_triggers, q, re.I):
         found = [c for c in KNOWN_CROPS if c.lower() in q]
         return "crop_choice", found
+    if re.search(r"\b(study|choose|between|degree|program|programme|course)\b", q, re.I):
+        found = []
+        for program, aliases in KNOWN_PROGRAMS.items():
+            if any(re.search(rf"(?<!\w){re.escape(alias)}(?!\w)", q) for alias in aliases):
+                found.append(program)
+        if found:
+            return "career_choice", found
     # career choice
     career_triggers = r"study|career|job|work|occupation|profession|become|field|sector"
     if re.search(career_triggers, q, re.I):
@@ -215,10 +237,94 @@ def _score_careers(options: list[str]) -> tuple[list[dict], list[dict], list[str
     ]
     return comparison, criteria, ["nisr_lmis"]
 
+
+def _score_programs(options: list[str]) -> tuple[list[dict], list[dict], list[str], list[int]]:
+    path = BASE / "real" / "higher_ed_programs.csv"
+    with path.open(newline="", encoding="utf-8") as handle:
+        rows = list(csv.DictReader(handle))
+    years = sorted({int(row["year"]) for row in rows})
+    comparison_years = [year for year in years if year >= years[-1] - 4]
+    latest = comparison_years[-1]
+    baseline = comparison_years[0]
+    raw = []
+    for program in options:
+        program_rows = [row for row in rows if row["program"] == program]
+        latest_rows = [row for row in program_rows if int(row["year"]) == latest]
+        baseline_rows = [row for row in program_rows if int(row["year"]) == baseline]
+        enrollment = sum(int(row["enrolled_students"]) for row in latest_rows) if latest_rows else None
+        initial_enrollment = sum(int(row["enrolled_students"]) for row in baseline_rows) if baseline_rows else None
+        enrollment_change = (
+            round((enrollment - initial_enrollment) / initial_enrollment * 100, 1)
+            if enrollment is not None and initial_enrollment
+            else None
+        )
+        graduation = _mean([float(row["graduation_rate"]) for row in latest_rows])
+        employed = _mean([float(row["employed_within_1year"]) for row in latest_rows])
+        wage = _mean([float(row["avg_graduate_wage_rwf"]) for row in latest_rows])
+        score = round(
+            _norm(graduation or 0, 0, 100) * 0.3
+            + _norm(employed or 0, 0, 100) * 0.4
+            + _norm(wage or 0, 30000, 500000) * 0.3,
+            3,
+        ) if latest_rows else None
+        indicators = [
+            {"name": f"Enrolled students ({latest})", "value": enrollment, "unit": "students",
+             "period": str(latest), "interval": None, "status": "available" if enrollment is not None else "missing",
+             "sourceId": "demo_higher_education"},
+            {"name": f"Enrollment change ({baseline}–{latest})", "value": enrollment_change, "unit": "%",
+             "period": f"{baseline}–{latest}", "interval": None,
+             "status": "available" if enrollment_change is not None else "missing",
+             "sourceId": "demo_higher_education"},
+            {"name": f"Graduation rate ({latest})", "value": graduation, "unit": "%",
+             "period": str(latest), "interval": None, "status": "available" if graduation is not None else "missing",
+             "sourceId": "demo_higher_education"},
+            {"name": f"Employed within one year ({latest})", "value": employed, "unit": "%",
+             "period": str(latest), "interval": None, "status": "available" if employed is not None else "missing",
+             "sourceId": "demo_higher_education"},
+            {"name": f"Average graduate wage ({latest})", "value": wage, "unit": "RWF",
+             "period": str(latest), "interval": None, "status": "available" if wage is not None else "missing",
+             "sourceId": "demo_higher_education"},
+        ]
+        raw.append({
+            "program": program,
+            "score": score,
+            "indicators": indicators,
+            "enrollment_change": enrollment_change,
+            "employed": employed,
+            "graduation": graduation,
+        })
+
+    raw.sort(key=lambda item: item["score"] if item["score"] is not None else -1, reverse=True)
+    comparison = []
+    for rank, item in enumerate(raw, 1):
+        strengths = []
+        if item["enrollment_change"] is not None:
+            direction = "increased" if item["enrollment_change"] >= 0 else "decreased"
+            strengths.append(f"Enrollment {direction} {abs(item['enrollment_change']):g}% from {baseline} to {latest}")
+        comparison.append({
+            "option": item["program"],
+            "rank": rank,
+            "score": item["score"],
+            "indicators": item["indicators"],
+            "strengths": strengths,
+            "risks": ["Enrollment growth is not proof of graduate job demand."],
+        })
+    criteria = [
+        {"criterion": "Graduate employment within one year", "weight": 0.4,
+         "description": f"Generated program-level proxy outcome ({latest})"},
+        {"criterion": "Graduation rate", "weight": 0.3,
+         "description": f"Generated program-level proxy outcome ({latest})"},
+        {"criterion": "Graduate wage", "weight": 0.3,
+         "description": f"Generated program-level proxy outcome ({latest})"},
+    ]
+    return comparison, criteria, ["demo_higher_education"], comparison_years
+
+
 # ─── public entry point ───────────────────────────────────────────────────────
 def run(question: str) -> dict:
     decision_type, options = _detect_decision(question)
     location = _extract_location(question)
+    program_comparison = False
 
     # If no options named, use top options from data
     if not options:
@@ -233,22 +339,45 @@ def run(question: str) -> dict:
     if decision_type == "crop_choice":
         comparison, criteria, source_ids = _score_crops(options, location)
     elif decision_type == "career_choice":
-        comparison, criteria, source_ids = _score_careers(options)
+        if options and all(option in KNOWN_PROGRAMS for option in options):
+            comparison, criteria, source_ids, program_years = _score_programs(options)
+            program_comparison = True
+        else:
+            comparison, criteria, source_ids = _score_careers(options)
     else:
         comparison, criteria, source_ids = [], [], []
 
+    latest_year = max(program_years) if program_comparison else LATEST
     top = comparison[0]["option"] if comparison else "—"
     loc_str = f" in {location}" if location else " across Rwanda"
+    if program_comparison:
+        top_text = (
+            f"Based on generated program proxy data ({min(program_years)}–{max(program_years)})"
+            f"{loc_str}, {top} ranks highest on the displayed composite score. "
+            "This is a comparison signal, not a personal recommendation."
+        )
+    else:
+        top_text = (
+            f"Based on available {latest_year} data{loc_str}, {top} ranks highest "
+            "on the composite score. Weights are shown and can be adjusted. "
+            "This is evidence, not a recommendation."
+        )
+
+    assumptions = [f"Latest available data used: {latest_year}"]
+    if program_comparison:
+        assumptions.extend([
+            "Program enrollment is summed across institutions; outcome percentages are unweighted institution means.",
+            "Scores use generated proxy outcomes and do not include tuition, admission requirements, student preferences, or verified labor demand.",
+        ])
+    elif location:
+        assumptions.append("District mean used where specific crop/occupation data is not district-disaggregated.")
 
     decision_block = {
         "decisionType": decision_type,
         "options": options,
         "location": location,
         "constraints": {},
-        "assumptions": [
-            f"Latest available data used: {LATEST}",
-            "District mean used where specific crop/occupation data is not district-disaggregated",
-        ] if location else [f"Latest available data used: {LATEST}"],
+        "assumptions": assumptions,
         "optionComparison": comparison,
         "criteriaWeights": criteria,
         "externalClaims": [],
@@ -262,6 +391,13 @@ def run(question: str) -> dict:
         sources["nisr_lmis"] = {"publisher": "Isesengura demo data",
                                 "title": "LMIS-shaped generated career-demand proxy data",
                                 "period": f"2019–{LATEST}", "isSample": IS_SAMPLE_DATA}
+    if "demo_higher_education" in source_ids:
+        sources["demo_higher_education"] = {
+            "publisher": "Isesengura demo data",
+            "title": "Generated higher-education program proxy data",
+            "period": f"{min(program_years)}–{max(program_years)}",
+            "isSample": True,
+        }
 
     option_rows = [
         {
@@ -277,7 +413,8 @@ def run(question: str) -> dict:
         "question": question,
         "status": "ok" if comparison else "no_data",
         "intent": {"operation": "compare", "geography": location or "Rwanda",
-                   "periodFrom": LATEST, "periodTo": LATEST,
+                   "periodFrom": min(program_years) if program_comparison else LATEST,
+                   "periodTo": latest_year,
                    "decisionType": decision_type},
         "decision": decision_block,
         "datasets": {
@@ -305,8 +442,7 @@ def run(question: str) -> dict:
         },
         "insights": {
             "top_option": {
-                "text": f"Based on available {LATEST} data{loc_str}, {top} ranks highest on the composite score. "
-                        f"Weights are shown and can be adjusted. This is evidence, not a recommendation.",
+                "text": top_text,
                 "evidence": ["decision.optionComparison"],
             },
             "data_note": {
@@ -319,7 +455,7 @@ def run(question: str) -> dict:
         "sources": sources,
         "operations": [
             {"id": "detect_decision", "description": f"Identified decision type: {decision_type}, options: {options}."},
-            {"id": "load_data", "description": f"Loaded generated proxy CSVs for {LATEST}."},
+            {"id": "load_data", "description": f"Loaded generated proxy CSVs for {latest_year}."},
             {"id": "compute_indicators", "description": "Computed indicators per option from CSV rows."},
             {"id": "score_rank", "description": "Applied weighted composite score and ranked options."},
         ],
@@ -329,7 +465,9 @@ def run(question: str) -> dict:
             "Criteria weights are defaults — the user can adjust them.",
             "Options with missing indicators are ranked lower but not excluded.",
             "Correlation does not imply causation.",
-        ],
+        ] + ([
+            "Program rankings do not establish personal fit or actual employer demand; check current admission criteria, tuition, and graduate outcomes before deciding."
+        ] if program_comparison else []),
         "meta": {
             "analysisVersion": ENGINE_VERSION,
             "computedAt": datetime.now(timezone.utc).isoformat(),

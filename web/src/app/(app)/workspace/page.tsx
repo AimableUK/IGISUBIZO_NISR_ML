@@ -68,7 +68,7 @@ function Runner() {
         <div role="alert" className="card mt-8 border-warn p-5">
           <h2 className="flex items-center gap-2 font-semibold"><AlertCircle className="h-5 w-5 text-warn" aria-hidden />{TITLE[state.result.status as keyof typeof TITLE] ?? "We could not answer that"}</h2>
           <p className="mt-2 text-sm">{state.result.message}</p>
-          <p className="mt-4 text-sm font-medium">Questions that work in this build</p>
+          <p className="mt-4 text-sm font-medium">Try one of these questions</p>
           <ul className="mt-2 flex flex-wrap gap-2">{EXAMPLES.map((e) => <li key={e}><button className="btn-sm h-auto min-h-[36px] whitespace-normal py-1.5 text-left" onClick={() => run(e)}>{e}</button></li>)}</ul>
         </div>
       )}
