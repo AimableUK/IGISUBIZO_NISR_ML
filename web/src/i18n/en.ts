@@ -278,6 +278,16 @@ export const en = {
     emailPlaceholder: "Enter your email address",
   },
 
+  voice: {
+    unsupported:
+      "Voice input is not supported in this browser. Type your question instead.",
+    start: "Ask by voice",
+    stop: "Stop voice input",
+    listening: "Listening… your words appear in the question box.",
+    blocked: "Microphone access was blocked. You can still type your question.",
+    stopped: "Voice input stopped. You can type your question instead.",
+  },
+
   about: {
     metaTitle: "About",
     title: "About Mboni",

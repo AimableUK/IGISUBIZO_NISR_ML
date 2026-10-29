@@ -250,6 +250,16 @@ export const rw: Dict = {
     emailPlaceholder: "Andika imeri yawe",
   },
 
+  voice: {
+    unsupported:
+      "Gukoresha ijwi ntibishoboka muri iyi porogaramu yo gusura. Andika ikibazo cyawe.",
+    start: "Baza ukoresheje ijwi",
+    stop: "Hagarika ijwi",
+    listening: "Ndumva… amagambo yawe agaragara mu kibanza cy’ikibazo.",
+    blocked: "Ntiwemeye ko mikoro ikoreshwa. Ushobora kwandika ikibazo cyawe.",
+    stopped: "Ijwi ryahagaze. Ushobora kwandika ikibazo cyawe.",
+  },
+
   about: {
     metaTitle: "Abo turi bo",
     title: "Ibyerekeye Mboni",

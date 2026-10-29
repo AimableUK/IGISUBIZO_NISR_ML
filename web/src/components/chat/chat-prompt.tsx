@@ -8,8 +8,6 @@ import {
   type KeyboardEvent,
 } from "react";
 import { ArrowUp, Loader2, ChevronDown, ChevronUp } from "lucide-react";
-//import VoiceButton from "./VoiceButton";
-//import { EXAMPLES } from "@/components/renderer/QuestionBar";
 import { useT } from "@/i18n";
 import VoiceButton from "../VoiceButton";
 import { EXAMPLES } from "../QuestionBar";
