@@ -840,6 +840,45 @@ export const en = {
     openMenu: "Open menu",
     closeMenu: "Close menu",
   },
+
+  admin: {
+    title: "Model Training",
+    badge: "Admin",
+    home: "Home",
+    intro:
+      "Regenerate the NISR-structure dataset and run model training and evaluation. Requires admin access (first registered user).",
+    steps: {
+      generate: {
+        step: "Step 1",
+        title: "Regenerate data",
+        desc: "Rebuilds the training dataset following the NISR structure.",
+        cta: "Regenerate Data",
+        busy: "Generating...",
+      },
+      evaluate: {
+        step: "Step 2",
+        title: "Train & evaluate",
+        desc: "Trains the models on the current dataset and reports evaluation metrics.",
+        cta: "Train & Evaluate",
+        busy: "Evaluating...",
+      },
+    },
+    console: "Output",
+    empty: "No output yet. Run a step above to see logs here.",
+    running: "Running...",
+    copy: "Copy",
+    copied: "Copied",
+    clear: "Clear",
+    status: {
+      idle: "Idle",
+      running: "Running",
+      success: "Completed",
+      error: "Failed",
+    },
+    stderr: "STDERR",
+    denied: "Access denied. Sign in with the admin account.",
+    tip: "Tip: run Step 1 first whenever the data structure changes.",
+  },
 };
 
 export type Dict = typeof en;

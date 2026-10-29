@@ -816,4 +816,43 @@ export const rw: Dict = {
     openMenu: "Fungura menu",
     closeMenu: "Funga menu",
   },
+  admin: {
+    title: "Gutoza Modeli",
+    badge: "Umuyobozi",
+    home: "Ahabanza",
+    intro:
+      "Ongera ukore amakuru ahuje n'imiterere ya NISR, hanyuma utoze kandi usuzume modeli. Bisaba uburenganzira bw'umuyobozi (umukoresha wa mbere wiyandikishije).",
+    steps: {
+      generate: {
+        step: "Intambwe ya 1",
+        title: "Ongera ukore amakuru",
+        desc: "Yubaka bundi bushya amakuru yo gutoza akurikije imiterere ya NISR.",
+        cta: "Ongera ukore amakuru",
+        busy: "Birimo gukorwa...",
+      },
+      evaluate: {
+        step: "Intambwe ya 2",
+        title: "Gutoza no gusuzuma",
+        desc: "Itoza modeli ku makuru ariho none, hanyuma ikagaragaza ibipimo by'isuzuma.",
+        cta: "Toza kandi usuzume",
+        busy: "Birimo gusuzumwa...",
+      },
+    },
+    console: "Ibisubizo",
+    empty:
+      "Nta bisubizo biraboneka. Kora intambwe iri hejuru kugira ngo ibisubizo bigaragare hano.",
+    running: "Birimo gukora...",
+    copy: "Koporora",
+    copied: "Byakoporowe",
+    clear: "Siba",
+    status: {
+      idle: "Itegereje",
+      running: "Birakora",
+      success: "Byarangiye",
+      error: "Byanze",
+    },
+    stderr: "AMAKOSA",
+    denied: "Ntiwemerewe. Injira ukoresheje konti y'umuyobozi.",
+    tip: "Inama: banza ukore Intambwe ya 1 igihe cyose imiterere y'amakuru ihindutse.",
+  },
 };

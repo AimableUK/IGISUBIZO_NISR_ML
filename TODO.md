@@ -118,3 +118,8 @@ Light theme uses dark forest greens (for white and pale backgrounds). Dark theme
 - Each SVG uses its own prefixed class names and IDs, so several different states can be on one page.
 - If you edit an SVG, regenerate `react/svgs.generated.ts` so the component stays in sync.
 - `mboni-eye-thinking.svg` is the approved Thinking / blinking asset, renamed.
+
+
+
+
+2026-10-29T10:44:31.016Z WARN [Better Auth]: Rate limiting could not determine a client IP and is falling back to a single shared per-path bucket. Ensure your runtime forwards a trusted client IP header, then set `advanced.ipAddress.ipAddressHeaders` or `advanced.ipAddress.trustedProxies` so the address can be resolved.
