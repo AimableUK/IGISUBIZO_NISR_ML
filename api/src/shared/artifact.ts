@@ -6,6 +6,24 @@ export const AskRequestSchema = z.object({
   question: z.string().trim().min(3, "Ask a question of at least three characters.").max(500),
   requestId: z.string().uuid(),
 });
+export const ConversationMessageSchema = z.object({
+  role: z.enum(["user", "assistant"]),
+  content: z.string().trim().min(1).max(2000),
+});
+export const ConversationRequestSchema = z.object({
+  message: z.string().trim().min(2).max(500),
+  history: z.array(ConversationMessageSchema).max(10).default([]),
+  useAi: z.boolean().default(false),
+});
+export const ConversationResponseSchema = z.object({
+  reply: z.string().min(1).max(6000),
+  mode: z.enum(["ai", "guided"]),
+  sources: z.array(z.object({
+    title: z.string(),
+    period: z.string(),
+    isSample: z.boolean(),
+  })),
+});
 export const SaveVersionRequestSchema = z.object({
   spec: PresentationSpecSchema,
   customizations: CustomizationsSchema,
@@ -56,3 +74,5 @@ export type ArtifactSummary = z.infer<typeof ArtifactSummarySchema>;
 export type ArtifactPayload = z.infer<typeof ArtifactPayloadSchema>;
 export type VersionMeta = z.infer<typeof VersionMetaSchema>;
 export type Drift = z.infer<typeof DriftSchema>;
+export type ConversationMessage = z.infer<typeof ConversationMessageSchema>;
+export type ConversationResponse = z.infer<typeof ConversationResponseSchema>;
