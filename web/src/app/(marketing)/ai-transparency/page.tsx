@@ -6,12 +6,12 @@ export default function AiTransparency() {
     <Prose title="AI transparency" intro="What the analysis code computes, where optional AI is used, and the limits of current demo data.">
       <h2>What the automated system does</h2>
       <p>
-        The Python service uses rule-based question routing and statistical code (K-means, panel OLS, linear trends, and weighted decision rules). It is not a trained neural network or chatbot. The optional AI planner may propose a <em>presentation specification</em>: which components to show and how to arrange them. It does not calculate the statistics.
+        The Python service combines rule-based question routing, a small trainable intent classifier, and analysis code (K-means, panel OLS, linear trends, and weighted decision rules). Admin training changes how questions are routed; it does not train a generative model or teach the system new facts. The study-and-career adviser can use an optional AI model to phrase a conversational reply from analysis evidence, but only when the user explicitly enables AI-assisted replies. The optional workspace planner proposes layouts and does not calculate statistics.
       </p>
 
       <h2>Important data limitation</h2>
       <p>
-        Current analysis inputs are generated proxy data shaped around NISR dataset categories. They are not verified observations from official NISR source tables. Results are marked as demo data and must not be treated as official statistics or used for real-world decisions.
+        Most education, labour-market, and agriculture analysis inputs are generated proxy data shaped around NISR dataset categories, not verified observations from official source tables. One crop-yield query uses a public NISR table, but it does not provide annual trends. Proxy data cannot support reliable career forecasts or real-world decisions.
       </p>
 
       <h2>What the system does not do</h2>
@@ -19,7 +19,8 @@ export default function AiTransparency() {
         <li><strong>The optional planner does not calculate:</strong> Statistical operations run in the Python analysis service; the planner only proposes layouts.</li>
         <li><strong>Not verified NISR data:</strong> Source categories describe the intended data coverage, not verified provenance for the generated proxy values.</li>
         <li><strong>No causation claims:</strong> Models report associations (e.g. NEET predictors). The UI surfaces limitations and does not present correlation as causation.</li>
-        <li><strong>No final decisions:</strong> For crop/career choices, the system ranks options with evidence; it never picks a single "best" option for you.</li>
+        <li><strong>No forecast guarantees:</strong> The adviser may discuss scenarios, but it cannot reliably predict an individual’s future or future job demand from the current proxy datasets.</li>
+        <li><strong>No final decisions:</strong> For crop/career choices, the system presents evidence and trade-offs; it does not choose for you.</li>
         <li><strong>Strictly validated output:</strong> Any AI-generated layout must validate against the <code>PresentationSpec</code> schema and against the actual result. Unsupported references are rejected and replaced by a deterministic rule-based planner.</li>
       </ul>
 
@@ -33,7 +34,7 @@ export default function AiTransparency() {
 
       <h2>Architecture notes</h2>
       <p>
-        The analysis service runs separately (<code>model/</code>, FastAPI). The Express API routes questions to it; production disables its in-process fallback. Demo results and data limitations appear in the workspace provenance panel.
+        The analysis service runs separately (<code>model/</code>, FastAPI). The Express API routes questions to it; production disables its in-process fallback. Adviser chat history is held in the current page session. If AI-assisted replies are enabled, the latest message, recent turns, and a compact analysis-evidence summary are sent to the configured AI provider. Sources and demo/proxy status are shown with replies when available.
       </p>
     </Prose>
   );

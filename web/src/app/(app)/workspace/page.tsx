@@ -49,6 +49,9 @@ function Runner() {
     <div className="mx-auto max-w-3xl px-4 py-12 sm:px-6">
       <h1 className="text-3xl font-semibold sm:text-4xl">What would you like to understand?</h1>
       <p className="mt-2 text-muted">Ask in plain language. You will get a saved workspace you can rearrange and revisit.</p>
+      <Link href="/advisor" className="mt-5 inline-flex btn btn-primary">
+        Talk with the study &amp; career adviser
+      </Link>
       <div className="mt-8"><QuestionBar onSubmit={run} busy={state.kind === "running"} initial={q} /></div>
 
       {state.kind === "running" && (
