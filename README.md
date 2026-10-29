@@ -1,14 +1,14 @@
-# Isesengura
+# Mboni
 
 **An interactive analytical workspace for exploring Rwanda's public data and turning evidence into clearer decisions.**
 
-Isesengura helps people explore statistical data through structured analyses, indicators, charts, tables, and explanatory insights. Instead of returning only a conversational answer, the goal is to make findings easier to inspect, compare, understand, and revisit.
+Mboni helps people explore statistical data through structured analyses, indicators, charts, tables, and explanatory insights. Instead of returning only a conversational answer, the goal is to make findings easier to inspect, compare, understand, and revisit.
 
 > **Hackathon project:** Developed by Team Igisubizo for the 2026 NISR Big Data Hackathon.
 
 ## Overview
 
-Public data is most useful when people can find relevant evidence, understand what it means, and inspect how conclusions were reached. Isesengura is being built to make that process more accessible through an analytical workspace that combines data, visualizations, and explanations.
+Public data is most useful when people can find relevant evidence, understand what it means, and inspect how conclusions were reached. Mboni is being built to make that process more accessible through an analytical workspace that combines data, visualizations, and explanations.
 
 The project focuses on:
 
@@ -20,15 +20,15 @@ The project focuses on:
 
 The availability of any specific analysis depends on the datasets and analytical methods integrated into the current deployment. The project does not claim that every topic, district, or period is already covered.
 
-## Why Isesengura?
+## Why Mboni?
 
-Statistical publications and datasets can be difficult to navigate when a user needs to compare indicators, understand a trend, or find evidence for a decision. Isesengura aims to reduce that friction by bringing the question, evidence, visualization, and explanation into one workspace.
+Statistical publications and datasets can be difficult to navigate when a user needs to compare indicators, understand a trend, or find evidence for a decision. Mboni aims to reduce that friction by bringing the question, evidence, visualization, and explanation into one workspace.
 
 Our goal is not to replace official statistics or expert judgment. It is to make credible data easier to work with while keeping the underlying evidence inspectable.
 
 ## Core experience
 
-Depending on the data and analysis available in the deployed version, Isesengura is designed to support:
+Depending on the data and analysis available in the deployed version, Mboni is designed to support:
 
 - **Question-led analysis:** Start with a question about a supported dataset or indicator.
 - **Visual results:** Present findings using suitable metrics, charts, tables, and other supported visual components.
@@ -42,7 +42,7 @@ These are project goals and supported capabilities should be judged against what
 
 ## Responsible use of data and AI
 
-Isesengura is designed around a clear separation between analytical results and their presentation. A visualization should communicate the result, not silently change it.
+Mboni is designed around a clear separation between analytical results and their presentation. A visualization should communicate the result, not silently change it.
 
 Our principles are:
 
@@ -67,7 +67,7 @@ Useful starting points:
 - [NISR PxWeb database](https://pxweb.statistics.gov.rw/pxweb/en/)
 - [2026 NISR Big Data Hackathon](https://www.statistics.gov.rw/about/hackathon/2026-hackathon-competition)
 
-Dataset availability, geographic detail, time coverage, definitions, and permitted uses differ by source. Isesengura should only make a claim when the integrated data and method support it. A dataset being publicly available does not mean it has already been integrated into the application.
+Dataset availability, geographic detail, time coverage, definitions, and permitted uses differ by source. Mboni should only make a claim when the integrated data and method support it. A dataset being publicly available does not mean it has already been integrated into the application.
 
 ## Technology
 
@@ -101,7 +101,7 @@ Python is also needed if you intend to run model/data preparation commands direc
 
 ```bash
 git clone <YOUR_PUBLIC_GITHUB_REPOSITORY_URL>
-cd isesengura
+cd mboni
 ```
 
 Replace the repository URL with the public GitHub URL for this project.
@@ -175,9 +175,9 @@ Use it only when you need to regenerate the model's CSV inputs. Check the script
 
 ## Testing the submitted application
 
-For hackathon reviewers, the deployed application should be the simplest way to evaluate Isesengura. Add the public deployment URL below before submitting this README:
+For hackathon reviewers, the deployed application should be the simplest way to evaluate Mboni. Add the public deployment URL below before submitting this README:
 
-**Live application:** `https://isesengura.vercel.app`
+**Live application:** `https://mboni.vercel.app`
 
 Suggested review flow:
 
@@ -198,7 +198,7 @@ Suggested review flow:
 
 ## Hackathon relevance
 
-Isesengura is intended to support evidence-informed decisions by making public statistics easier to explore and interpret. Its relevance to the NISR Big Data Hackathon depends on the selected challenge, the datasets actually integrated, and the validity of the methods used.
+Mboni is intended to support evidence-informed decisions by making public statistics easier to explore and interpret. Its relevance to the NISR Big Data Hackathon depends on the selected challenge, the datasets actually integrated, and the validity of the methods used.
 
 The project should be evaluated on:
 
@@ -217,7 +217,7 @@ Built by:
 
 ## Project status
 
-Isesengura is a hackathon project under active development. Available functionality, integrated datasets, and analytical coverage may change as the team validates sources and improves the application.
+Mboni is a hackathon project under active development. Available functionality, integrated datasets, and analytical coverage may change as the team validates sources and improves the application.
 
 ## Acknowledgements
 
@@ -225,4 +225,4 @@ We acknowledge NISR and other public data providers for making statistical resou
 
 ---
 
-**Isesengura | Team Igisubizo | NISR Big Data Hackathon 2026**
+**Mboni | Team Igisubizo | NISR Big Data Hackathon 2026**

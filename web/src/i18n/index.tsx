@@ -10,7 +10,7 @@ export const LOCALES: { code: Locale; short: string; name: string }[] = [
 ];
 
 const dictionaries: Record<Locale, Dict> = { en, rw };
-const STORAGE_KEY = "isesengura.lang";
+const STORAGE_KEY = "mboni.lang";
 
 type Ctx = { locale: Locale; t: Dict; setLocale: (l: Locale) => void };
 const LocaleContext = createContext<Ctx>({ locale: "en", t: en, setLocale: () => {} });
@@ -48,5 +48,5 @@ export const useT = () => useContext(LocaleContext).t;
 
 /** Sets the browser tab title. Marketing pages are client components, so they cannot export `metadata`. */
 export function useDocumentTitle(title: string) {
-  useEffect(() => { document.title = `${title} · Isesengura`; }, [title]);
+  useEffect(() => { document.title = `${title} · Mboni`; }, [title]);
 }

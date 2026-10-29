@@ -16,7 +16,7 @@ const Env = z.object({
   BETTER_AUTH_SECRET: z.string().min(32, "BETTER_AUTH_SECRET must be at least 32 characters"),
   BREVO_API_KEY: z.string().optional(),
   BREVO_SENDER_EMAIL: z.string().email().default("no-reply@example.com"),
-  BREVO_SENDER_NAME: z.string().default("Isesengura"),
+  BREVO_SENDER_NAME: z.string().default("Mboni"),
   CONTACT_INBOX: z.string().email().default("malostechnologies@gmail.com"),
   IMAGEKIT_PUBLIC_KEY: z.string().optional(),
   IMAGEKIT_PRIVATE_KEY: z.string().optional(),

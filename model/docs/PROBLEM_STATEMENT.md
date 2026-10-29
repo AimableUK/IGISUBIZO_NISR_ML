@@ -20,7 +20,7 @@ Without connecting these, policymakers, training institutions, and planners are 
 
 ## What this system does
 
-Isesengura is a **generative analytical workspace** built on NISR public data. A user asks a plain-English question. The system runs verified statistical analysis and returns a persistent, interactive workspace — charts, maps, tables, metrics, sources — not a paragraph of text.
+Mboni is a **generative analytical workspace** built on NISR public data. A user asks a plain-English question. The system runs verified statistical analysis and returns a persistent, interactive workspace — charts, maps, tables, metrics, sources — not a paragraph of text.
 
 The ML engine (`api/src/services/ml-engine.ts`) is the analytical intelligence layer. It answers three specific intelligence questions that existing platforms are not answering.
 

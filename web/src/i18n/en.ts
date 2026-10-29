@@ -39,8 +39,8 @@ export interface Example {
 
 export const en = {
   common: {
-    brand: "Isesengura",
-    brandHome: "Isesengura home",
+    brand: "Mboni",
+    brandHome: "Mboni home",
     language: "Language",
     startChatting: "Start chatting",
     exploreData: "Explore data",
@@ -55,7 +55,7 @@ export const en = {
   footer: {
     tagline:
       "Ask questions about Rwanda’s statistics and get charts, tables and maps you can check.",
-    rights: "© 2026 Isesengura",
+    rights: "© 2026 Mboni",
     groups: [
       {
         title: "Product",
@@ -87,7 +87,7 @@ export const en = {
     metaTitle: "Ask questions about Rwanda’s statistics",
     hero: {
       title: "Ask questions about Rwanda’s statistics",
-      lead: "Choosing a career, starting a business, or looking for lessons in Rwanda’s past? Ask in plain words. Isesengura shows what the statistics say, with sources you can check.",
+      lead: "Choosing a career, starting a business, or looking for lessons in Rwanda’s past? Ask in plain words. Mboni shows what the statistics say, with sources you can check.",
       primary: "Start chatting",
       secondary: "Explore data",
       sceneLabel:
@@ -196,7 +196,7 @@ export const en = {
     },
     data: {
       title: "Explore the data behind the answers",
-      lead: "Isesengura is organised around the main areas of Rwanda’s development statistics.",
+      lead: "Mboni is organised around the main areas of Rwanda’s development statistics.",
       topics: [
         {
           t: "Labour and jobs",
@@ -278,14 +278,14 @@ export const en = {
 
   about: {
     metaTitle: "About",
-    title: "About Isesengura",
+    title: "About Mboni",
     intro:
-      "Isesengura (Kinyarwanda for “analysis”) helps people understand Rwanda’s public statistics and use them in real decisions about careers, business, farming and community planning.",
+      "Mboni (Kinyarwanda for “analysis”) helps people understand Rwanda’s public statistics and use them in real decisions about careers, business, farming and community planning.",
     sections: [
       {
         h: "Why we built it",
         p: [
-          "Official statistics are most useful when people can explore them without writing queries or waiting for a report. A chatbot answers with a paragraph. A static dashboard answers one question. Isesengura builds an interactive workspace for the question you actually asked, then saves it.",
+          "Official statistics are most useful when people can explore them without writing queries or waiting for a report. A chatbot answers with a paragraph. A static dashboard answers one question. Mboni builds an interactive workspace for the question you actually asked, then saves it.",
           "The goal is not to decide for you. It is to show what the available evidence says, compare options, explain the trade-offs and point to the questions that deserve a closer look.",
         ],
       },
@@ -325,7 +325,7 @@ export const en = {
         h: "Where it stands",
         p: [
           "This build was created for the 2026 NISR Big Data Hackathon, using NISR data and other public datasets. It is an independent project and not an official NISR service.",
-          "The benefits described on this site are intended benefits, not measured impact. Any claim that Isesengura improved employment, raised yields or changed policy would need a proper evaluation.",
+          "The benefits described on this site are intended benefits, not measured impact. Any claim that Mboni improved employment, raised yields or changed policy would need a proper evaluation.",
           "Read the [documentation](/docs), the [methodology](/methodology) and [AI transparency](/ai-transparency), or [get in touch](/contact).",
         ],
       },
@@ -336,7 +336,7 @@ export const en = {
     metaTitle: "Documentation",
     title: "Documentation",
     intro:
-      "How to ask questions, read a workspace, and use Isesengura for career guidance, starting a business and learning from Rwanda’s data.",
+      "How to ask questions, read a workspace, and use Mboni for career guidance, starting a business and learning from Rwanda’s data.",
     updated: "October 2026",
     ctaTitle: "Ready to try it?",
     ctaBody: "Ask your first question and open the workspace.",
@@ -345,7 +345,7 @@ export const en = {
         id: "start",
         h: "Getting started",
         p: [
-          "Isesengura lets you ask questions about Rwanda’s statistics in plain words. It answers with a workspace: charts, tables, maps and a short explanation, with the sources beside them.",
+          "Mboni lets you ask questions about Rwanda’s statistics in plain words. It answers with a workspace: charts, tables, maps and a short explanation, with the sources beside them.",
           "It is most useful for three kinds of question: choosing a career or course of study, starting or growing a business, and learning from what Rwanda’s data shows about the past.",
         ],
         ol: [
@@ -358,7 +358,7 @@ export const en = {
         id: "questions",
         h: "Asking good questions",
         p: [
-          "Isesengura works best with specific questions that name a topic, a place or a period. Simple words are fine.",
+          "Mboni works best with specific questions that name a topic, a place or a period. Simple words are fine.",
         ],
         ul: [
           "**Too broad:** “Tell me about jobs.” **Better:** “How has employment changed by sector over the years?”",
@@ -377,7 +377,7 @@ export const en = {
         id: "career",
         h: "Career and study guidance",
         p: [
-          "Use Isesengura to look beyond a single headline number. It can compare study programmes using enrolment, graduation, graduate-employment and wage indicators, and map skills such as applied mathematics to sectors, occupations and places.",
+          "Use Mboni to look beyond a single headline number. It can compare study programmes using enrolment, graduation, graduate-employment and wage indicators, and map skills such as applied mathematics to sectors, occupations and places.",
           "You can also explore employment and underemployment by age, sex, district and sector, and young people not in education, employment or training, where the data supports it.",
           "**What it will not do:** promise that a career leads to a job, treat advertised vacancies as the whole labour market, or tell you which option is best for you. Rankings show how options compare on the chosen measures. The decision stays yours.",
         ],
@@ -386,7 +386,7 @@ export const en = {
         id: "business",
         h: "Starting or growing a business",
         p: [
-          "Before you plan a business it helps to understand the local economy. Isesengura can show how many establishments operate by sector and district, how that has changed, and what population, poverty and service-access indicators look like nearby.",
+          "Before you plan a business it helps to understand the local economy. Mboni can show how many establishments operate by sector and district, how that has changed, and what population, poverty and service-access indicators look like nearby.",
           "**What it will not do:** business counts and population alone cannot show that a place is commercially viable. You still need current information on demand, competition, rent, costs, regulation and customers.",
         ],
       },
@@ -403,7 +403,7 @@ export const en = {
         h: "Learning from Rwanda’s past",
         p: [
           "Many questions are really about change. Ask for an indicator over time to see its trend, compare districts side by side, or see how several indicators move together.",
-          "Two indicators that rise together are reported as an association. Isesengura does not say that one caused the other. Sector employment forecasts use a linear trend with 95% prediction intervals, tested on years held back from the model.",
+          "Two indicators that rise together are reported as an association. Mboni does not say that one caused the other. Sector employment forecasts use a linear trend with 95% prediction intervals, tested on years held back from the model.",
         ],
       },
       {
@@ -439,14 +439,14 @@ export const en = {
         id: "data",
         h: "Data coverage and status",
         p: [
-          "Isesengura is built on datasets from NISR and other public sources. Useful starting points: [NISR website](https://www.statistics.gov.rw/), [NISR Microdata Catalog](https://microdatabk.statistics.gov.rw/catalog/), [Rwanda Data Sharing Platform](https://data.gov.rw/datasets), [NISR PxWeb database](https://pxweb.statistics.gov.rw/pxweb/en/) and the [2026 NISR Big Data Hackathon](https://www.statistics.gov.rw/about/hackathon/2026-hackathon-competition).",
+          "Mboni is built on datasets from NISR and other public sources. Useful starting points: [NISR website](https://www.statistics.gov.rw/), [NISR Microdata Catalog](https://microdatabk.statistics.gov.rw/catalog/), [Rwanda Data Sharing Platform](https://data.gov.rw/datasets), [NISR PxWeb database](https://pxweb.statistics.gov.rw/pxweb/en/) and the [2026 NISR Big Data Hackathon](https://www.statistics.gov.rw/about/hackathon/2026-hackathon-competition).",
           "Every result names the dataset it used, with its reporting period, units and definitions where known. Check the definitions before comparing two datasets.",
           "Rwanda has 30 districts in five provinces, but not every dataset covers all of them. Coverage varies by source, year and indicator.",
         ],
       },
       {
         id: "limits",
-        h: "What Isesengura does not do",
+        h: "What Mboni does not do",
         ul: [
           "It does not replace professional advice, official statistics or field research.",
           "It does not infer one person’s income, eligibility or circumstances from group statistics.",
@@ -461,7 +461,7 @@ export const en = {
         qa: [
           [
             "Is this an official NISR service?",
-            "No. Isesengura is an independent project built for the 2026 NISR Big Data Hackathon using NISR data and other public datasets. It is not run by NISR.",
+            "No. Mboni is an independent project built for the 2026 NISR Big Data Hackathon using NISR data and other public datasets. It is not run by NISR.",
           ],
           [
             "Are the numbers real?",
@@ -492,7 +492,7 @@ export const en = {
     metaTitle: "Methodology",
     title: "Methodology and data sources",
     intro:
-      "How Isesengura routes questions through statistical analysis code and reports which dataset each result comes from.",
+      "How Mboni routes questions through statistical analysis code and reports which dataset each result comes from.",
     sections: [
       {
         h: "From question to result",
@@ -550,14 +550,14 @@ export const en = {
       {
         h: "Where the data comes from",
         p: [
-          "Analysis inputs come from NISR and other public datasets. Isesengura computes results from them and shows each source, so you can check a figure against the original. Results are Isesengura’s own calculations and are not official NISR publications.",
+          "Analysis inputs come from NISR and other public datasets. Mboni computes results from them and shows each source, so you can check a figure against the original. Results are Mboni’s own calculations and are not official NISR publications.",
         ],
       },
       {
         h: "What the system does not do",
         ul: [
           "**The optional planner does not calculate.** Statistical operations run in the Python analysis service. The planner only proposes layouts.",
-          "**Not an official NISR product.** Results are calculated by Isesengura from public data and are not published by NISR.",
+          "**Not an official NISR product.** Results are calculated by Mboni from public data and are not published by NISR.",
           "**No causation claims.** Models report associations, for example NEET predictors. The interface shows limitations and does not present correlation as causation.",
           "**No final decisions.** For crop and career choices, the system ranks options with evidence and never picks a single “best” option for you.",
           "**Strictly validated output.** Any AI-proposed layout must validate against the `PresentationSpec` schema and against the actual result. Unsupported references are rejected and replaced by a deterministic rule-based planner.",
@@ -585,7 +585,7 @@ export const en = {
     metaTitle: "Accessibility",
     title: "Accessibility statement",
     intro:
-      "Isesengura is designed so that people with different abilities can use every part of it.",
+      "Mboni is designed so that people with different abilities can use every part of it.",
     updated: "October 2026",
     sections: [
       {
@@ -618,7 +618,7 @@ export const en = {
   privacy: {
     metaTitle: "Privacy policy",
     title: "Privacy policy",
-    intro: "What Isesengura collects, why, and the choices you have.",
+    intro: "What Mboni collects, why, and the choices you have.",
     updated: "October 2026",
     notice:
       "Template notice for operators: have this text reviewed against Rwanda’s Law No. 058/2021 on the protection of personal data and privacy, and any other law that applies to you, before launch.",
@@ -641,7 +641,7 @@ export const en = {
       {
         h: "Voice input",
         p: [
-          "Voice input is optional. Speech recognition is performed by your browser’s speech service, which may send audio to that browser vendor. Isesengura receives only the text transcript that appears in the question box. You can always type instead.",
+          "Voice input is optional. Speech recognition is performed by your browser’s speech service, which may send audio to that browser vendor. Mboni receives only the text transcript that appears in the question box. You can always type instead.",
         ],
       },
       {
@@ -680,7 +680,7 @@ export const en = {
   terms: {
     metaTitle: "Terms of service",
     title: "Terms of service",
-    intro: "The rules for using Isesengura.",
+    intro: "The rules for using Mboni.",
     updated: "October 2026",
     notice:
       "Template notice for operators: have a lawyer review and complete these terms (operator name, governing law, jurisdiction) before launch.",
@@ -688,7 +688,7 @@ export const en = {
       {
         h: "Using the service",
         p: [
-          "You may use Isesengura to explore public data and to create and keep analytical workspaces. You agree to give accurate account information, keep your password secure, and not misuse the service, for example by attempting to break its security, overload it, or submit unlawful content.",
+          "You may use Mboni to explore public data and to create and keep analytical workspaces. You agree to give accurate account information, keep your password secure, and not misuse the service, for example by attempting to break its security, overload it, or submit unlawful content.",
         ],
       },
       {

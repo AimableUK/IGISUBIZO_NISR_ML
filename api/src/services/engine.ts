@@ -612,7 +612,7 @@ export function runAnalysis(question: string): AnalyticalResult {
     },
     sources: {
       [ind.dataset]: {
-        publisher: "Isesengura demo data",
+        publisher: "Mboni demo data",
         title: `${DATASET_SOURCE_TITLES[ind.dataset] ?? ind.label} (generated proxy)`,
         period: `${it.from}–${it.to}`,
         file: ind.dataset,

@@ -2,7 +2,7 @@
 
 Thank you for your interest in contributing to this project.
 
-Isesengura was initially developed for the NISR Big Data Hackathon and may
+Mboni was initially developed for the NISR Big Data Hackathon and may
 continue to evolve beyond the hackathon as the project, team, and its
 stakeholders grow.
 

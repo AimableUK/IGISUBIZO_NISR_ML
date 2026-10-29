@@ -9,7 +9,7 @@ import os
 from schema import AnalyzeRequest, AnalyticalResult
 from engine.router import route
 
-app = FastAPI(title="Isesengura Model Service", version="1.0.0")
+app = FastAPI(title="Mboni Model Service", version="1.0.0")
 
 app.add_middleware(
     CORSMiddleware,

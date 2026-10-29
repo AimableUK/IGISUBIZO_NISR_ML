@@ -385,15 +385,15 @@ def run(question: str) -> dict:
 
     sources = {}
     if "nisr_sas" in source_ids:
-        sources["nisr_sas"] = {"publisher": "Isesengura demo data", "title": "SAS-shaped generated agriculture proxy data",
+        sources["nisr_sas"] = {"publisher": "Mboni demo data", "title": "SAS-shaped generated agriculture proxy data",
                                "period": f"2019–{LATEST}", "isSample": IS_SAMPLE_DATA}
     if "nisr_lmis" in source_ids:
-        sources["nisr_lmis"] = {"publisher": "Isesengura demo data",
+        sources["nisr_lmis"] = {"publisher": "Mboni demo data",
                                 "title": "LMIS-shaped generated career-demand proxy data",
                                 "period": f"2019–{LATEST}", "isSample": IS_SAMPLE_DATA}
     if "demo_higher_education" in source_ids:
         sources["demo_higher_education"] = {
-            "publisher": "Isesengura demo data",
+            "publisher": "Mboni demo data",
             "title": "Generated higher-education program proxy data",
             "period": f"{min(program_years)}–{max(program_years)}",
             "isSample": True,

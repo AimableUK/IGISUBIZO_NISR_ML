@@ -1,5 +1,5 @@
 """
-Isesengura Model Training, Validation & Evaluation Suite.
+Mboni Model Training, Validation & Evaluation Suite.
 
 Runs cross-validation, statistical checks, and schema validation across all engines:
   1. Regression (OLS + Ridge + LOOCV): In-sample R², Adj-R², Out-of-sample Q², LOOCV RMSE
@@ -344,7 +344,7 @@ def evaluate_dataset_queries():
 
 if __name__ == "__main__":
     t_start = time.time()
-    print_header("ISESENGURA ML TRAINING & EVALUATION PIPELINE")
+    print_header("MBONI ML TRAINING & EVALUATION PIPELINE")
     evaluate_regression()
     evaluate_clustering()
     evaluate_forecasting()

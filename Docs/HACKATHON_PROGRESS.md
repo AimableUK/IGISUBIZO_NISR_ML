@@ -1,4 +1,4 @@
-# Isesengura — Hackathon progress notes
+# Mboni — Hackathon progress notes
 
 **Hackathon:** 2026 NISR Big Data Hackathon  
 **Repo:** IGISUBIZO_NISR_ML  

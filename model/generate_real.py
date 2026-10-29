@@ -134,7 +134,7 @@ def r1(v): return round(v, 1)
 def _noise(dist, yr, key, scale=1.0):
     """Deterministic idiosyncratic shock in [-scale, scale]. Breaks perfect collinearity
     so regression R² is realistic rather than ~1.0 on synthetic structure."""
-    h = hash((dist, int(yr), key, "isesengura-noise-v2"))
+    h = hash((dist, int(yr), key, "mboni-noise-v2"))
     u = ((abs(h) % 100000) / 100000.0) * 2.0 - 1.0
     return u * scale
 

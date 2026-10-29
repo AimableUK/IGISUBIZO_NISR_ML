@@ -27,4 +27,4 @@ jobs:
       - run: pnpm install --lockfile=false
       - run: pnpm run typecheck
       - run: pnpm run build
-      - run: docker build -t isesengura-api:${{ github.sha }} .
+      - run: docker build -t mboni-api:${{ github.sha }} .

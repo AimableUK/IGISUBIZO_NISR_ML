@@ -583,7 +583,7 @@ def run(question: str) -> dict:
     elif spec.get("period") and "reference year not stated" in spec["period"]:
         caveats.append("The NISR table does not state a reference year; season values are reported as published.")
     source = {
-        "publisher": spec.get("publisher", "Isesengura demo data"),
+        "publisher": spec.get("publisher", "Mboni demo data"),
         "title": spec["title"],
         "period": spec.get("period") or (f"{min(row['year'] for row in rows)}–{max(row['year'] for row in rows)}" if rows and isinstance(rows[0].get("year"), (int, float)) else "Available records"),
         "file": spec["file"],

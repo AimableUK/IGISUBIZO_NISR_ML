@@ -276,7 +276,7 @@ def run(question: str) -> dict:
         },
         "sources": {
             source_id: {
-                "publisher": "Isesengura demo data",
+                "publisher": "Mboni demo data",
                 "title": "LFS-shaped generated sector employment proxy data",
                 "period": f"{min(years)}–{latest_year}",
                 "isSample": IS_SAMPLE_DATA,

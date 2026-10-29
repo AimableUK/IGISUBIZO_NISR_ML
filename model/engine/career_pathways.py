@@ -109,7 +109,7 @@ def run(question: str) -> dict:
         "formulas": {},
         "sources": {
             SOURCE_ID: {
-                "publisher": "Isesengura demo data",
+                "publisher": "Mboni demo data",
                 "title": "Generated Rwanda-shaped occupation and vacancy proxy data",
                 "period": str(latest),
                 "file": "career_demand.csv",

@@ -23,7 +23,7 @@ TABLE_URL = (
 
 
 def _get(url: str, body: bytes | None = None) -> tuple[bytes, str | None]:
-    headers = {"User-Agent": "Isesengura public-data importer"}
+    headers = {"User-Agent": "Mboni public-data importer"}
     if body is not None:
         headers["Content-Type"] = "application/json"
     request = Request(url, data=body, headers=headers)

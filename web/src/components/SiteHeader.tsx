@@ -10,9 +10,9 @@ import { useT } from "@/i18n";
 
 export function Logo() {
   return (
-    <Link href="/" className="flex items-center gap-2.5 font-display text-xl font-semibold" aria-label="Isesengura home">
+    <Link href="/" className="flex items-center gap-2.5 font-display text-xl font-semibold" aria-label="Mboni home">
       <svg viewBox="0 0 32 32" className="h-8 w-8" aria-hidden><rect width="32" height="32" rx="7" fill="#253D2C" /><rect x="6" y="6" width="9" height="9" rx="2" fill="#68BA7F" /><rect x="17" y="6" width="9" height="9" rx="2" fill="#CFFFDC" /><rect x="6" y="17" width="9" height="9" rx="2" fill="#2E6F40" /><rect x="17" y="17" width="9" height="9" rx="2" fill="#68BA7F" /></svg>
-      Isesengura
+      Mboni
     </Link>
   );
 }

@@ -22,7 +22,7 @@ contract exist.
 Examples:
 
 API → PostgreSQL
-postgresql://isesengura:isesengura@postgres:5432/isesengura
+postgresql://mboni:mboni@postgres:5432/mboni
 
 API → Redis
 redis://redis:6379
@@ -50,7 +50,7 @@ The configuration must distinguish between container-side and browser-side URLs.
 
 For services running inside Docker:
 
-DATABASE_URL=postgresql://isesengura:isesengura@postgres:5432/isesengura
+DATABASE_URL=postgresql://mboni:mboni@postgres:5432/mboni
 REDIS_URL=redis://redis:6379
 
 For browser-side Next.js communication:
@@ -77,7 +77,7 @@ Browser → Backend
 http://localhost:4000
 
 API → PostgreSQL
-postgresql://isesengura:isesengura@postgres:5432/isesengura
+postgresql://mboni:mboni@postgres:5432/mboni
 
 API → Redis
 redis://redis:6379

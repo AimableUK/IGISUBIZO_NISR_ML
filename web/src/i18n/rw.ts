@@ -10,8 +10,8 @@ import type { Dict, DocPage, DocsPage, Example } from "./en";
 
 export const rw: Dict = {
   common: {
-    brand: "Isesengura",
-    brandHome: "Ahabanza ha Isesengura",
+    brand: "Mboni",
+    brandHome: "Ahabanza ha Mboni",
     language: "Ururimi",
     startChatting: "Tangira kuganira",
     exploreData: "Reba amakuru",
@@ -26,7 +26,7 @@ export const rw: Dict = {
   footer: {
     tagline:
       "Baza ibibazo ku ibarurishamibare ry’u Rwanda ubone ibishushanyo, imbonerahamwe n’amakarita ushobora kugenzura.",
-    rights: "© 2026 Isesengura",
+    rights: "© 2026 Mboni",
     groups: [
       {
         title: "Igikoresho",
@@ -58,14 +58,14 @@ export const rw: Dict = {
     metaTitle: "Baza ibibazo ku ibarurishamibare ry’u Rwanda",
     hero: {
       title: "Baza ibibazo ku ibarurishamibare ry’u Rwanda",
-      lead: "Urashaka guhitamo umwuga, gutangiza ubucuruzi, cyangwa kwigira ku byahise by’u Rwanda? Baza mu magambo yoroshye. Isesengura rikwereka ibyo imibare ivuga, hamwe n’aho amakuru yavuye ushobora kugenzura.",
+      lead: "Urashaka guhitamo umwuga, gutangiza ubucuruzi, cyangwa kwigira ku byahise by’u Rwanda? Baza mu magambo yoroshye. Mboni rikwereka ibyo imibare ivuga, hamwe n’aho amakuru yavuye ushobora kugenzura.",
       primary: "Tangira kuganira",
       secondary: "Reba amakuru",
       sceneLabel:
         "Igishushanyo cy’imisozi y’icyatsi y’u Rwanda, ibirunga n’imigano mu rukerera",
     },
     paths: {
-      title: "Icyo wakoresha Isesengura",
+      title: "Icyo wakoresha Mboni",
       lead: "Hitamo uko ubayeho kurusha ibindi. Buri cyose gifungura umwanya urimo ibishushanyo, imbonerahamwe n’amakarita.",
       tryLabel: "Gerageza iki kibazo",
       items: [
@@ -145,7 +145,7 @@ export const rw: Dict = {
       button: "Baza",
     },
     how: {
-      title: "Uko ikibazo gihinduka umwanya w’isesengura",
+      title: "Uko ikibazo gihinduka umwanya w’mboni",
       lead: "Nta mabwiriza yo kwandika, nta mbonerahamwe ugomba gukora. Intambwe enye.",
       steps: [
         {
@@ -162,13 +162,13 @@ export const rw: Dict = {
         },
         {
           t: "Genzura ubike",
-          d: "Fungura aho amakuru yavuye n’imbogamizi zayo, uhindure imiterere, ubundi ubike isesengura kugira ngo uzarifungure ukundi.",
+          d: "Fungura aho amakuru yavuye n’imbogamizi zayo, uhindure imiterere, ubundi ubike mboni kugira ngo uzarifungure ukundi.",
         },
       ],
     },
     data: {
       title: "Sura amakuru ashingiyeho ibisubizo",
-      lead: "Isesengura rishingiye ku nzego z’ingenzi z’ibarurishamibare ry’iterambere ry’u Rwanda.",
+      lead: "Mboni rishingiye ku nzego z’ingenzi z’ibarurishamibare ry’iterambere ry’u Rwanda.",
       topics: [
         {
           t: "Umurimo n’akazi",
@@ -213,7 +213,7 @@ export const rw: Dict = {
       items: [
         {
           t: "Buri mubare ufite aho wavuye",
-          d: "Imibare iva gusa mu bisubizo by’isesengura. Aho amakuru yavuye, uburyo yabazwemo n’imbogamizi biba iruhande rw’umwanya wose.",
+          d: "Imibare iva gusa mu bisubizo by’mboni. Aho amakuru yavuye, uburyo yabazwemo n’imbogamizi biba iruhande rw’umwanya wose.",
         },
         {
           t: "Ubishyira uko ubishaka",
@@ -250,14 +250,14 @@ export const rw: Dict = {
 
   about: {
     metaTitle: "Abo turi bo",
-    title: "Ibyerekeye Isesengura",
+    title: "Ibyerekeye Mboni",
     intro:
-      "Isesengura ni igikoresho gifasha abantu gusobanukirwa ibarurishamibare rusange ry’u Rwanda no kurikoresha mu byemezo bifatika ku mwuga, ubucuruzi, ubuhinzi no gutegura iterambere ry’abaturage.",
+      "Mboni ni igikoresho gifasha abantu gusobanukirwa ibarurishamibare rusange ry’u Rwanda no kurikoresha mu byemezo bifatika ku mwuga, ubucuruzi, ubuhinzi no gutegura iterambere ry’abaturage.",
     sections: [
       {
         h: "Impamvu twaryubatse",
         p: [
-          "Ibarurishamibare ryemewe rigirira akamaro iyo abantu bashobora kurisura batiriwe bandika amabwiriza cyangwa bategereje raporo. Chatbot isubiza mu gika kimwe. Ikibaho kidahinduka gisubiza ikibazo kimwe. Isesengura ryubaka umwanya wo gukoreramo ubibaza, kijyanye n’ikibazo wabajije, hanyuma rikakibika.",
+          "Ibarurishamibare ryemewe rigirira akamaro iyo abantu bashobora kurisura batiriwe bandika amabwiriza cyangwa bategereje raporo. Chatbot isubiza mu gika kimwe. Ikibaho kidahinduka gisubiza ikibazo kimwe. Mboni ryubaka umwanya wo gukoreramo ubibaza, kijyanye n’ikibazo wabajije, hanyuma rikakibika.",
           "Intego si ugufata icyemezo mu mwanya wawe. Ni ukwerekana icyo ibimenyetso bihari bivuga, gereranya amahitamo, gusobanura icyo wunguka n’icyo utakaza, no kwerekana ibibazo bikwiye gusuzumwa neza.",
         ],
       },
@@ -276,7 +276,7 @@ export const rw: Dict = {
       {
         h: "Icyatuma ritandukana",
         ul: [
-          "**Ibisubizo n’uburyo bigaragazwa biratandukanye.** Moteri y’isesengura ni yo ibara ibisubizo. Igikoresho gitegura gusa kivuga uko bigaragazwa. Guhindura ubwoko bw’igishushanyo cyangwa imiterere ntibihindura umubare.",
+          "**Ibisubizo n’uburyo bigaragazwa biratandukanye.** Moteri y’mboni ni yo ibara ibisubizo. Igikoresho gitegura gusa kivuga uko bigaragazwa. Guhindura ubwoko bw’igishushanyo cyangwa imiterere ntibihindura umubare.",
           "**Nta kode yakozwe na AI ikoreshwa.** AI itanga ibisobanuro bifite imiterere ihamye. Igikoresho kirabigenzura hanyuma kikabishushanya n’ibikoresho byacyo.",
           "**Akazi karabikwa.** Buri sesengura ribikwa n’imiterere yaryo, aho amakuru yavuye n’amateka y’impinduka.",
           "**Cyakozwe ngo abantu bose bagikoreshe.** Gukoresha ikibaho, incamake zisomwa n’ibyuma, imbonerahamwe z’amakuru, ibara ryerekana neza n’ijwi riri ku bushake; kwandika buri gihe birashoboka.",
@@ -297,7 +297,7 @@ export const rw: Dict = {
         h: "Aho bigeze",
         p: [
           "Iri sesengura ryakozwe ku bw’irushanwa rya NISR Big Data Hackathon 2026, rikoresha amakuru ya NISR n’andi makuru rusange. Ni umushinga wigenga, si serivisi ya NISR yemewe.",
-          "Inyungu zivugwa kuri uru rubuga ni izo twifuza, ntabwo ari ingaruka zapimwe. Ntawavuga ko Isesengura ryongereye akazi, ryazamuye umusaruro cyangwa ryahinduye politiki hatabayeho isuzuma rikwiye.",
+          "Inyungu zivugwa kuri uru rubuga ni izo twifuza, ntabwo ari ingaruka zapimwe. Ntawavuga ko Mboni ryongereye akazi, ryazamuye umusaruro cyangwa ryahinduye politiki hatabayeho isuzuma rikwiye.",
           "Soma [imfashanyigisho](/docs), [uburyo dukoresha](/methodology) na [ubusobanuro kuri AI](/ai-transparency), cyangwa [utwandikire](/contact).",
         ],
       },
@@ -308,29 +308,29 @@ export const rw: Dict = {
     metaTitle: "Imfashanyigisho",
     title: "Imfashanyigisho",
     intro:
-      "Uko ubaza ibibazo, usoma umwanya w’isesengura, no gukoresha Isesengura mu kugira inama ku mwuga, gutangiza ubucuruzi no kwigira ku makuru y’u Rwanda.",
+      "Uko ubaza ibibazo, usoma umwanya w’mboni, no gukoresha Mboni mu kugira inama ku mwuga, gutangiza ubucuruzi no kwigira ku makuru y’u Rwanda.",
     updated: "Ukwakira 2026",
     ctaTitle: "Witeguye kugerageza?",
-    ctaBody: "Baza ikibazo cya mbere ufungure umwanya w’isesengura.",
+    ctaBody: "Baza ikibazo cya mbere ufungure umwanya w’mboni.",
     sections: [
       {
         id: "start",
         h: "Gutangira",
         p: [
-          "Isesengura rigufasha kubaza ibibazo ku ibarurishamibare ry’u Rwanda mu magambo yoroshye. Risubiza rikuzanira umwanya w’isesengura urimo ibishushanyo, imbonerahamwe, amakarita n’ibisobanuro bigufi, hamwe n’aho amakuru yavuye iruhande.",
+          "Mboni rigufasha kubaza ibibazo ku ibarurishamibare ry’u Rwanda mu magambo yoroshye. Risubiza rikuzanira umwanya w’mboni urimo ibishushanyo, imbonerahamwe, amakarita n’ibisobanuro bigufi, hamwe n’aho amakuru yavuye iruhande.",
           "Rifasha cyane ku bwoko butatu bw’ibibazo: guhitamo umwuga cyangwa amasomo, gutangiza cyangwa kwagura ubucuruzi, no kwigira ku byo amakuru y’u Rwanda yerekana ku byahise.",
         ],
         ol: [
           "Kanda [Tangira kuganira](/workspace) winjire cyangwa ufungure konti.",
           "Andika ikibazo, cyangwa uhitemo kimwe mu bibazo by’ingero biri ku rupapuro rwa mbere.",
-          "Soma umwanya w’isesengura, ufungure aho amakuru yavuye n’imbogamizi zayo, ubundi ubike niba ushaka kuzagaruka.",
+          "Soma umwanya w’mboni, ufungure aho amakuru yavuye n’imbogamizi zayo, ubundi ubike niba ushaka kuzagaruka.",
         ],
       },
       {
         id: "questions",
         h: "Kubaza neza",
         p: [
-          "Isesengura rikora neza iyo ubajije ikibazo cyihariye kivuga ingingo, ahantu cyangwa igihe. Amagambo yoroshye arahagije.",
+          "Mboni rikora neza iyo ubajije ikibazo cyihariye kivuga ingingo, ahantu cyangwa igihe. Amagambo yoroshye arahagije.",
         ],
         ul: [
           "**Kiragutse cyane:** “Mbwira ku kazi.” **Ni byiza kuvuga:** “Imirimo yahindutse ite mu nzego zitandukanye uko imyaka yagiye ihita?”",
@@ -342,14 +342,14 @@ export const rw: Dict = {
         id: "unclear",
         h: "Iyo ikibazo kitumvikanye",
         p: [
-          "Ibibazo bicyurwa hakurikijwe amategeko, ntibikekwa. Iyo ikibazo kidasobanutse, umwanya w’isesengura uvuga icyo wumvise cyangwa ukakusaba kugabanya. Gerageza ikibazo kigufi kivuga ingingo imwe kandi, niba ubishoboye, ahantu cyangwa igihe kimwe.",
+          "Ibibazo bicyurwa hakurikijwe amategeko, ntibikekwa. Iyo ikibazo kidasobanutse, umwanya w’mboni uvuga icyo wumvise cyangwa ukakusaba kugabanya. Gerageza ikibazo kigufi kivuga ingingo imwe kandi, niba ubishoboye, ahantu cyangwa igihe kimwe.",
         ],
       },
       {
         id: "career",
         h: "Inama ku mwuga n’amasomo",
         p: [
-          "Koresha Isesengura urenze umubare umwe w’ingenzi. Rishobora kugereranya amasomo ukoresheje imibare y’abiyandikisha, abarangiza, abakorera akazi n’imishahara, no guhuza ubumenyi nk’imibare ikoreshwa n’inzego, imirimo n’ahantu.",
+          "Koresha Mboni urenze umubare umwe w’ingenzi. Rishobora kugereranya amasomo ukoresheje imibare y’abiyandikisha, abarangiza, abakorera akazi n’imishahara, no guhuza ubumenyi nk’imibare ikoreshwa n’inzego, imirimo n’ahantu.",
           "Ushobora no gusura imibare y’akazi n’akazi kadahagije ukurikije imyaka, igitsina, akarere n’urwego, n’urubyiruko rudakora, ruticaye mu ishuri cyangwa mu mahugurwa, aho amakuru abishobora.",
           "**Ibyo ritazakora:** kwizeza ko umwuga uzakuzanira akazi, gufata imyanya y’akazi yamamajwe nk’isoko ry’umurimo ryose, cyangwa kukubwira amahitamo akubereye kurusha ayandi. Urutonde rwerekana uko amahitamo agereranywa ku bipimo watoranyije. Icyemezo ni icyawe.",
         ],
@@ -358,7 +358,7 @@ export const rw: Dict = {
         id: "business",
         h: "Gutangiza cyangwa kwagura ubucuruzi",
         p: [
-          "Mbere yo gutegura ubucuruzi, bifasha gusobanukirwa ubukungu bwo mu gace. Isesengura rishobora kwerekana umubare w’ibigo by’ubucuruzi ukurikije urwego n’akarere, uko wahindutse, n’uko ibipimo by’abaturage, ubukene no kugerwaho na serivisi bimeze hafi yaho.",
+          "Mbere yo gutegura ubucuruzi, bifasha gusobanukirwa ubukungu bwo mu gace. Mboni rishobora kwerekana umubare w’ibigo by’ubucuruzi ukurikije urwego n’akarere, uko wahindutse, n’uko ibipimo by’abaturage, ubukene no kugerwaho na serivisi bimeze hafi yaho.",
           "**Ibyo ritazakora:** umubare w’ubucuruzi n’abaturage gusa ntibyerekana ko ahantu hakwiye ubucuruzi. Ugikeneye amakuru agezweho ku bakiriya, abo mupiganwa, ubukode, ibiciro, amabwiriza n’abaguzi.",
         ],
       },
@@ -375,7 +375,7 @@ export const rw: Dict = {
         h: "Kwigira ku mateka y’u Rwanda",
         p: [
           "Ibibazo byinshi mu by’ukuri bivuga ku mpinduka. Saba ikimenyetso uko imyaka ihita urebe icyerekezo cyacyo, gereranya uturere, cyangwa urebe uko ibimenyetso byinshi bigendana.",
-          "Ibimenyetso bibiri byiyongera icyarimwe bivugwa nk’isano gusa. Isesengura ntirivuga ko kimwe cyateye ikindi. Iteganyagihe ry’akazi mu nzego rikoresha icyerekezo kigororotse n’ibipimo by’iteganyagihe bya 95%, byageragerejwe ku myaka itakoreshejwe mu kwiga.",
+          "Ibimenyetso bibiri byiyongera icyarimwe bivugwa nk’isano gusa. Mboni ntirivuga ko kimwe cyateye ikindi. Iteganyagihe ry’akazi mu nzego rikoresha icyerekezo kigororotse n’ibipimo by’iteganyagihe bya 95%, byageragerejwe ku myaka itakoreshejwe mu kwiga.",
         ],
       },
       {
@@ -411,14 +411,14 @@ export const rw: Dict = {
         id: "data",
         h: "Amakuru dufite n’aho ageze",
         p: [
-          "Isesengura rishingiye ku makuru ya NISR n’andi masoko rusange. Aho gutangirira: [urubuga rwa NISR](https://www.statistics.gov.rw/), [NISR Microdata Catalog](https://microdatabk.statistics.gov.rw/catalog/), [Rwanda Data Sharing Platform](https://data.gov.rw/datasets), [NISR PxWeb](https://pxweb.statistics.gov.rw/pxweb/en/) na [NISR Big Data Hackathon 2026](https://www.statistics.gov.rw/about/hackathon/2026-hackathon-competition).",
+          "Mboni rishingiye ku makuru ya NISR n’andi masoko rusange. Aho gutangirira: [urubuga rwa NISR](https://www.statistics.gov.rw/), [NISR Microdata Catalog](https://microdatabk.statistics.gov.rw/catalog/), [Rwanda Data Sharing Platform](https://data.gov.rw/datasets), [NISR PxWeb](https://pxweb.statistics.gov.rw/pxweb/en/) na [NISR Big Data Hackathon 2026](https://www.statistics.gov.rw/about/hackathon/2026-hackathon-competition).",
           "Buri gisubizo kivuga ikusanyamakuru cyakoresheje, hamwe n’igihe, ibipimo n’ibisobanuro aho bizwi. Mbere yo kugereranya amakusanyamakuru abiri, banza urebe ibisobanuro byayo.",
           "U Rwanda rufite uturere 30 mu ntara eshanu, ariko si buri kusanyamakuru ririmo utwo turere twose. Ibyo ririmo bitandukana ukurikije isoko, umwaka n’ikimenyetso.",
         ],
       },
       {
         id: "limits",
-        h: "Ibyo Isesengura ritazakora",
+        h: "Ibyo Mboni ritazakora",
         ul: [
           "Ntirisimbura inama z’inzobere, ibarurishamibare ryemewe cyangwa ubushakashatsi bwo mu kibaya.",
           "Ntiriteganya amafaranga, uburenganzira cyangwa imibereho y’umuntu umwe rishingiye ku mibare y’itsinda.",
@@ -433,7 +433,7 @@ export const rw: Dict = {
         qa: [
           [
             "Iyi ni serivisi ya NISR yemewe?",
-            "Oya. Isesengura ni umushinga wigenga wakozwe ku bw’irushanwa rya NISR Big Data Hackathon 2026, ukoresha amakuru ya NISR n’andi makuru rusange. Ntiriyoborwa na NISR.",
+            "Oya. Mboni ni umushinga wigenga wakozwe ku bw’irushanwa rya NISR Big Data Hackathon 2026, ukoresha amakuru ya NISR n’andi makuru rusange. Ntiriyoborwa na NISR.",
           ],
           [
             "Imibare ni iy’ukuri?",
@@ -453,7 +453,7 @@ export const rw: Dict = {
           ],
           [
             "Nasiba amakuru yanjye nte?",
-            "Siba isesengura iryo ari ryo ryose uri mu Mateka. Kugira ngo konti yawe isibwe, saba unyuze ku [rupapuro rwo kutwandikira](/contact).",
+            "Siba mboni iryo ari ryo ryose uri mu Mateka. Kugira ngo konti yawe isibwe, saba unyuze ku [rupapuro rwo kutwandikira](/contact).",
           ],
         ],
       },
@@ -464,13 +464,13 @@ export const rw: Dict = {
     metaTitle: "Uburyo dukoresha",
     title: "Uburyo dukoresha n’aho amakuru aturuka",
     intro:
-      "Uko Isesengura ryohereza ibibazo muri porogaramu y’isesengura ry’ibarurishamibare, no kuvuga ikusanyamakuru buri gisubizo gikomokaho.",
+      "Uko Mboni ryohereza ibibazo muri porogaramu y’mboni ry’ibarurishamibare, no kuvuga ikusanyamakuru buri gisubizo gikomokaho.",
     sections: [
       {
         h: "Kuva ku kibazo ukagera ku gisubizo",
         ol: [
           "Ikibazo cyanditse mu rurimi rusanzwe cyoherezwa kuri moteri ikwiye (icyemezo n’umwuga, guteranya mu matsinda, regression, cyangwa iteganyagihe).",
-          "Serivisi y’isesengura yo muri Python ifata amakusanyamakuru yateguwe ashingiye kuri NISR n’andi masoko rusange.",
+          "Serivisi y’mboni yo muri Python ifata amakusanyamakuru yateguwe ashingiye kuri NISR n’andi masoko rusange.",
           "Porogaramu y’ibarurishamibare n’amategeko y’ibyemezo ibara igisubizo. Buri gisubizo kivuga isoko yacyo.",
           "Igikoresho gitegura gishingiye ku mategeko gihindura igisubizo `PresentationSpec` (ibishushanyo, imbonerahamwe, amakarita, imibare y’ingenzi, ibisobanuro). Imiterere ntihindura imibare.",
           "Byose bibikwa nka artifact (ikibazo, igisubizo, aho amakuru yavuye, spec, impinduka) kandi bishobora gufungurwa bitahindutse.",
@@ -500,7 +500,7 @@ export const rw: Dict = {
           "**Amakuru yabuze:** ibitabonetse biva mu mibare aho kubifata nka zeru. Imbonerahamwe ya NISR y’umusaruro w’ibihingwa ntivuga umwaka ishingiyeho.",
           "**Gukorera mu mucyo:** buri gisubizo kivuga amasoko, ibyakozwe, imbogamizi n’impinduka.",
           "**Gutandukanya ibikorwa:** moteri zibara imibare. Moteri y’ururimi, iyo ikoreshejwe, itegura imiterere kandi igasobanura gusa. Ntabwo ihimba ibarurishamibare.",
-          "**Gusubiramo ibisubizo:** ibisubizo by’isesengura ntibihinduka. Impinduka mu mibereho y’igaragazwa zibikwa ukwazo.",
+          "**Gusubiramo ibisubizo:** ibisubizo by’mboni ntibihinduka. Impinduka mu mibereho y’igaragazwa zibikwa ukwazo.",
           "**Ibikubiyemo:** ibyo amakuru akubiyemo biratandukana ukurikije isoko, umwaka n’ikimenyetso, bityo igisubizo gishobora kutarimo uturere twose.",
         ],
       },
@@ -511,7 +511,7 @@ export const rw: Dict = {
     metaTitle: "Ubusobanuro kuri AI",
     title: "Ubusobanuro kuri AI",
     intro:
-      "Icyo porogaramu y’isesengura ibara, aho AI iri ku bushake ikoreshwa, n’aho amakuru aturuka.",
+      "Icyo porogaramu y’mboni ibara, aho AI iri ku bushake ikoreshwa, n’aho amakuru aturuka.",
     sections: [
       {
         h: "Icyo sisitemu ikora yonyine",
@@ -522,14 +522,14 @@ export const rw: Dict = {
       {
         h: "Aho amakuru aturuka",
         p: [
-          "Amakuru ashingirwaho mu isesengura ni aya NISR n’andi makuru rusange. Isesengura ribara ibisubizo ribishingiye kuri yo kandi rikagaragaza buri soko, kugira ngo ugereranye umubare n’umwimerere. Ibisubizo ni imibare Isesengura ryabaze, si ibitangazwa na NISR.",
+          "Amakuru ashingirwaho mu mboni ni aya NISR n’andi makuru rusange. Mboni ribara ibisubizo ribishingiye kuri yo kandi rikagaragaza buri soko, kugira ngo ugereranye umubare n’umwimerere. Ibisubizo ni imibare Mboni ryabaze, si ibitangazwa na NISR.",
         ],
       },
       {
         h: "Ibyo sisitemu itakora",
         ul: [
-          "**Igikoresho gitegura kiri ku bushake ntikibara.** Imikorere y’ibarurishamibare ikorerwa muri serivisi y’isesengura ya Python. Igikoresho gitegura gitanga gusa ibyifuzo by’imiterere.",
-          "**Si igicuruzwa cya NISR cyemewe.** Ibisubizo bibarwa na Isesengura bishingiye ku makuru rusange, ntibitangazwa na NISR.",
+          "**Igikoresho gitegura kiri ku bushake ntikibara.** Imikorere y’ibarurishamibare ikorerwa muri serivisi y’mboni ya Python. Igikoresho gitegura gitanga gusa ibyifuzo by’imiterere.",
+          "**Si igicuruzwa cya NISR cyemewe.** Ibisubizo bibarwa na Mboni bishingiye ku makuru rusange, ntibitangazwa na NISR.",
           "**Nta kuvuga icyateye ikindi.** Moteri zivuga isano, urugero ibiteganya NEET. Imbuga yerekana aho bigarukira kandi ntifata isano nk’icyateye ikindi.",
           "**Nta byemezo bya nyuma.** Ku guhitamo igihingwa n’umwuga, sisitemu ishyira amahitamo ku rutonde ifite ibimenyetso, kandi ntikwerekana ihitamo rimwe “ryiza cyane”.",
           "**Ibisohoka bigenzurwa cyane.** Imiterere iyo ari yo yose AI itanze igomba kuba ihuye na schema ya `PresentationSpec` n’igisubizo nyakuri. Ibitemewe birahakanwa bigasimbuzwa igikoresho gitegura gishingiye ku mategeko.",
@@ -538,16 +538,16 @@ export const rw: Dict = {
       {
         h: "Uko wabigenzura",
         ul: [
-          "**Aho amakuru yavuye n’imbogamizi:** buri mwanya w’isesengura uvuga amasoko y’amakuru, ibyakozwe, aho bigarukira, n’ibyiciro by’isesengura n’iby’igikoresho gitegura.",
-          "**Gukurikiranwa:** igisubizo cy’isesengura ntigihinduka. Impinduka mu igaragazwa zibikwa ukwazo.",
-          "**Gusuzumwa:** ibishushanyo bifite imbonerahamwe z’amakuru. Ushobora gutunganya imiterere mu mwanya w’isesengura.",
+          "**Aho amakuru yavuye n’imbogamizi:** buri mwanya w’mboni uvuga amasoko y’amakuru, ibyakozwe, aho bigarukira, n’ibyiciro by’mboni n’iby’igikoresho gitegura.",
+          "**Gukurikiranwa:** igisubizo cy’mboni ntigihinduka. Impinduka mu igaragazwa zibikwa ukwazo.",
+          "**Gusuzumwa:** ibishushanyo bifite imbonerahamwe z’amakuru. Ushobora gutunganya imiterere mu mwanya w’mboni.",
           "**Kohereza bisobanutse:** sisitemu ivuga icyo yumvise. Ibyifuzo bidasobanutse bihakanwa aho gukekwa.",
         ],
       },
       {
         h: "Inyandiko ku miterere ya sisitemu",
         p: [
-          "Serivisi y’isesengura ikora ukwayo (`model/`, FastAPI). API ya Express yohereza ibibazo kuri yo, kandi muri production uburyo bwo gukorera mu gihe itaboneka burahagarikwa. Aho amakuru yavuye n’aho agarukira bigaragara mu gice cy’aho amakuru yavuye mu mwanya w’isesengura.",
+          "Serivisi y’mboni ikora ukwayo (`model/`, FastAPI). API ya Express yohereza ibibazo kuri yo, kandi muri production uburyo bwo gukorera mu gihe itaboneka burahagarikwa. Aho amakuru yavuye n’aho agarukira bigaragara mu gice cy’aho amakuru yavuye mu mwanya w’mboni.",
         ],
       },
     ],
@@ -557,7 +557,7 @@ export const rw: Dict = {
     metaTitle: "Kugerwaho n’abantu bose",
     title: "Itangazo ryo kugerwaho n’abantu bose",
     intro:
-      "Isesengura ryateguwe kugira ngo abantu bafite ubushobozi butandukanye bashobore gukoresha buri gice cyaryo.",
+      "Mboni ryateguwe kugira ngo abantu bafite ubushobozi butandukanye bashobore gukoresha buri gice cyaryo.",
     updated: "Ukwakira 2026",
     sections: [
       {
@@ -590,7 +590,7 @@ export const rw: Dict = {
   privacy: {
     metaTitle: "Politiki y’ubuzima bwite",
     title: "Politiki y’ubuzima bwite",
-    intro: "Amakuru Isesengura ikusanya, impamvu, n’amahitamo ufite.",
+    intro: "Amakuru Mboni ikusanya, impamvu, n’amahitamo ufite.",
     updated: "Ukwakira 2026",
     notice:
       "Icyitonderwa ku bayobozi: uyu mwandiko ni icyitegererezo. Ugomba gusuzumwa hakurikijwe Itegeko N° 058/2021 ryerekeye kurinda amakuru y’umuntu ku giti cye n’ubuzima bwite, n’andi mategeko abigenga, mbere yo gutangira.",
@@ -599,7 +599,7 @@ export const rw: Dict = {
         h: "Ibyo dukusanya",
         ul: [
           "**Amakuru ya konti:** izina ryawe, aderesi ya imeri n’ijambobanga ribitse mu buryo bwizewe (hashed). Niba uyongeyeho, ifoto y’umwirondoro.",
-          "**Ibikorwa byawe:** ibibazo ubaza, ibisubizo by’isesengura, imiterere y’imyanya y’isesengura n’impinduka ubika.",
+          "**Ibikorwa byawe:** ibibazo ubaza, ibisubizo by’mboni, imiterere y’imyanya y’mboni n’impinduka ubika.",
           "**Ubutumwa bwo kutwandikira:** ibyo wohereza unyuze mu ifishi yo kutwandikira.",
           "**Amakuru ya tekiniki:** cookie y’igihe ukoresha (session), aderesi ya IP n’ubwoko bwa porogaramu usuramo, bikoreshwa kugira ngo ukomeze kuba winjiye no kurinda serivisi.",
         ],
@@ -613,13 +613,13 @@ export const rw: Dict = {
       {
         h: "Ijwi",
         p: [
-          "Ijwi riri ku bushake. Kumva ijwi bikorwa na serivisi ya porogaramu yawe yo gusura, ishobora kohereza amajwi ku muntu wayikoze. Isesengura ryakira gusa inyandiko igaragara mu kibazo. Ushobora kwandika buri gihe.",
+          "Ijwi riri ku bushake. Kumva ijwi bikorwa na serivisi ya porogaramu yawe yo gusura, ishobora kohereza amajwi ku muntu wayikoze. Mboni ryakira gusa inyandiko igaragara mu kibazo. Ushobora kwandika buri gihe.",
         ],
       },
       {
         h: "Ibikorwa bya AI",
         p: [
-          "Niba igikoresho cya AI gitegura kiri ku bushake gikoreshwa, cyakira gusa imiterere y’igisubizo cy’isesengura (amazina y’amakusanyamakuru n’inkingi, ibice bihari), kandi ntikigera cyakira amakuru ya konti yawe. Reba [ubusobanuro kuri AI](/ai-transparency).",
+          "Niba igikoresho cya AI gitegura kiri ku bushake gikoreshwa, cyakira gusa imiterere y’igisubizo cy’mboni (amazina y’amakusanyamakuru n’inkingi, ibice bihari), kandi ntikigera cyakira amakuru ya konti yawe. Reba [ubusobanuro kuri AI](/ai-transparency).",
         ],
       },
       {
@@ -637,7 +637,7 @@ export const rw: Dict = {
       {
         h: "Igihe tubika n’uburenganzira bwawe",
         p: [
-          "Ushobora gusiba isesengura iryo ari ryo ryose ribitswe uri mu Mateka. Ushobora kudusaba kukwereka, gukosora, kohereza cyangwa gusiba amakuru yawe bwite, cyangwa gufunga konti yawe, unyuze ku [rupapuro rwo kutwandikira](/contact). Igihe cyarangiye n’ibimenyetso byo kwemeza bisibwa buri munsi mu buryo bwikora.",
+          "Ushobora gusiba mboni iryo ari ryo ryose ribitswe uri mu Mateka. Ushobora kudusaba kukwereka, gukosora, kohereza cyangwa gusiba amakuru yawe bwite, cyangwa gufunga konti yawe, unyuze ku [rupapuro rwo kutwandikira](/contact). Igihe cyarangiye n’ibimenyetso byo kwemeza bisibwa buri munsi mu buryo bwikora.",
         ],
       },
       {
@@ -652,7 +652,7 @@ export const rw: Dict = {
   terms: {
     metaTitle: "Amabwiriza yo gukoresha",
     title: "Amabwiriza yo gukoresha",
-    intro: "Amategeko agenga imikoreshereze y’Isesengura.",
+    intro: "Amategeko agenga imikoreshereze y’Mboni.",
     updated: "Ukwakira 2026",
     notice:
       "Icyitonderwa ku bayobozi: uyu mwandiko ni icyitegererezo. Umunyamategeko agomba kuwusuzuma no kuwuzuza (izina ry’ukora, amategeko agenga, urukiko) mbere yo gutangira.",
@@ -660,7 +660,7 @@ export const rw: Dict = {
       {
         h: "Gukoresha serivisi",
         p: [
-          "Ushobora gukoresha Isesengura mu gusura amakuru rusange no gukora no kubika imyanya y’isesengura. Wemera gutanga amakuru nyayo ya konti, kurinda ijambobanga ryawe, kandi ntukoreshe serivisi nabi, urugero ugerageza kuyihungabanya, kuyirenza urugero, cyangwa kohereza ibinyuranyije n’amategeko.",
+          "Ushobora gukoresha Mboni mu gusura amakuru rusange no gukora no kubika imyanya y’mboni. Wemera gutanga amakuru nyayo ya konti, kurinda ijambobanga ryawe, kandi ntukoreshe serivisi nabi, urugero ugerageza kuyihungabanya, kuyirenza urugero, cyangwa kohereza ibinyuranyije n’amategeko.",
         ],
       },
       {
