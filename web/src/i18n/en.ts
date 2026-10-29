@@ -55,10 +55,6 @@ export const en = {
   footer: {
     tagline:
       "Ask questions about Rwanda’s statistics and get charts, tables and maps you can check.",
-    demoNote:
-      "Results are computed from NISR and other public datasets. Each result lists its source, period and coverage.",
-    unofficial:
-      "Isesengura was built for the 2026 NISR Big Data Hackathon. It is not an official NISR service.",
     rights: "© 2026 Isesengura",
     groups: [
       {
@@ -94,8 +90,6 @@ export const en = {
       lead: "Choosing a career, starting a business, or looking for lessons in Rwanda’s past? Ask in plain words. Isesengura shows what the statistics say, with sources you can check.",
       primary: "Start chatting",
       secondary: "Explore data",
-      demoNote:
-        "Built on NISR and other public datasets. Every result shows its source.",
       sceneLabel:
         "Illustration of Rwanda’s green hills, volcanoes and bamboo at sunrise",
     },
@@ -203,9 +197,6 @@ export const en = {
     data: {
       title: "Explore the data behind the answers",
       lead: "Isesengura is organised around the main areas of Rwanda’s development statistics.",
-      statusTitle: "Where the data comes from",
-      statusBody:
-        "Answers are computed from datasets published by NISR and other public sources, including the NISR Microdata Catalog, the PxWeb database and the Rwanda Data Sharing Platform. Every result lists its source, period and coverage, and coverage differs between datasets.",
       topics: [
         {
           t: "Labour and jobs",

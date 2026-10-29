@@ -17,7 +17,14 @@ export default function MarketingFooter() {
             <p className="text-sm font-semibold">{g.title}</p>
             <ul className="mt-3 space-y-2 text-sm">
               {g.links.map((l) => (
-                <li key={l.href}><Link href={l.href} className="text-muted underline-offset-2 hover:text-ink hover:underline">{l.label}</Link></li>
+                <li key={l.href}>
+                  <Link
+                    href={l.href}
+                    className="text-muted underline-offset-2 hover:text-ink hover:underline"
+                  >
+                    {l.label}
+                  </Link>
+                </li>
               ))}
             </ul>
           </nav>
@@ -25,8 +32,6 @@ export default function MarketingFooter() {
       </div>
       <div className="border-t border-line">
         <div className="mx-auto flex max-w-[1400px] flex-col gap-1 px-4 py-5 text-xs text-muted sm:px-6">
-          <p>{f.demoNote}</p>
-          <p>{f.unofficial}</p>
           <p>{f.rights}</p>
         </div>
       </div>

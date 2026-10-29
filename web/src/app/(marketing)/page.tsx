@@ -51,9 +51,6 @@ export default function Landing() {
               <Link href={href()} className={CTA_PRIMARY}>{h.hero.primary}</Link>
               <a href="#data" className={CTA_SECONDARY}>{h.hero.secondary}</a>
             </motion.div>
-            <motion.p variants={item} className="mt-6 inline-flex max-w-[52ch] items-start gap-2 rounded-lg bg-[#253D2C]/75 px-3 py-2 text-sm text-[#CFFFDC] backdrop-blur">
-              <Info className="mt-0.5 h-4 w-4 shrink-0" aria-hidden />{h.hero.demoNote}
-            </motion.p>
           </motion.div>
         </div>
 
@@ -128,14 +125,6 @@ export default function Landing() {
         <div>
           <h2 id="data-h" className="max-w-[22ch] text-3xl font-semibold sm:text-4xl">{h.data.title}</h2>
           <p className="mt-3 max-w-[60ch] text-lg text-muted">{h.data.lead}</p>
-
-          <div role="note" className="mt-6 flex max-w-[64ch] items-start gap-3 rounded-card border border-warn/60 bg-surface p-4">
-            <Info className="mt-0.5 h-5 w-5 shrink-0 text-warn" aria-hidden />
-            <div>
-              <p className="font-semibold">{h.data.statusTitle}</p>
-              <p className="mt-1 text-sm text-muted">{h.data.statusBody}</p>
-            </div>
-          </div>
 
           <dl className="mt-8 grid gap-x-8 gap-y-5 sm:grid-cols-2">
             {h.data.topics.map((x) => (

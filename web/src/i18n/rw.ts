@@ -26,10 +26,6 @@ export const rw: Dict = {
   footer: {
     tagline:
       "Baza ibibazo ku ibarurishamibare ry’u Rwanda ubone ibishushanyo, imbonerahamwe n’amakarita ushobora kugenzura.",
-    demoNote:
-      "Ibisubizo bibarwa hakoreshejwe amakuru ya NISR n’andi makuru rusange. Buri gisubizo kivuga aho amakuru yavuye, igihe n’ibyo kirimo.",
-    unofficial:
-      "Isesengura ryakozwe ku bw’irushanwa rya NISR Big Data Hackathon 2026. Si serivisi ya NISR yemewe.",
     rights: "© 2026 Isesengura",
     groups: [
       {
@@ -65,8 +61,6 @@ export const rw: Dict = {
       lead: "Urashaka guhitamo umwuga, gutangiza ubucuruzi, cyangwa kwigira ku byahise by’u Rwanda? Baza mu magambo yoroshye. Isesengura rikwereka ibyo imibare ivuga, hamwe n’aho amakuru yavuye ushobora kugenzura.",
       primary: "Tangira kuganira",
       secondary: "Reba amakuru",
-      demoNote:
-        "Rishingiye ku makuru ya NISR n’andi makuru rusange. Buri gisubizo kigaragaza aho amakuru yavuye.",
       sceneLabel:
         "Igishushanyo cy’imisozi y’icyatsi y’u Rwanda, ibirunga n’imigano mu rukerera",
     },
@@ -175,9 +169,6 @@ export const rw: Dict = {
     data: {
       title: "Sura amakuru ashingiyeho ibisubizo",
       lead: "Isesengura rishingiye ku nzego z’ingenzi z’ibarurishamibare ry’iterambere ry’u Rwanda.",
-      statusTitle: "Aho amakuru aturuka",
-      statusBody:
-        "Ibisubizo bibarwa hakoreshejwe amakuru yatangajwe na NISR n’andi masoko rusange, harimo NISR Microdata Catalog, PxWeb n’urubuga rusange rw’amakuru y’u Rwanda (Rwanda Data Sharing Platform). Buri gisubizo kivuga aho amakuru yavuye, igihe n’ibyo kirimo, kandi amakuru ntareshya hagati y’amasoko.",
       topics: [
         {
           t: "Umurimo n’akazi",
