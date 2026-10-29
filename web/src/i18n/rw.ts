@@ -246,7 +246,6 @@ export const rw: Dict = {
     metaTitle: "Twandikire",
     title: "Twandikire",
     lead: "Ibibazo, ibyo gukosora, ibyifuzo by’amakuru cyangwa ibibazo byo kugerwaho. Dusoma byose.",
-    orWrite: "Cyangwa wandikire",
     name: "Izina",
     email: "Imeri",
     message: "Ubutumwa",

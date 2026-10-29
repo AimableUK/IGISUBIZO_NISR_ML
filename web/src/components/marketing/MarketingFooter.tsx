@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import { useT } from "@/i18n";
-import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function MarketingFooter() {
   const t = useT();
@@ -12,7 +11,6 @@ export default function MarketingFooter() {
         <div>
           <p className="font-display text-xl font-semibold">{t.common.brand}</p>
           <p className="mt-2 max-w-[38ch] text-sm text-muted">{f.tagline}</p>
-          <div className="mt-4"><LanguageSwitcher /></div>
         </div>
         {f.groups.map((g) => (
           <nav key={g.title} aria-label={g.title}>

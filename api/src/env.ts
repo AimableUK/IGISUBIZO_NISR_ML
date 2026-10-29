@@ -17,7 +17,7 @@ const Env = z.object({
   BREVO_API_KEY: z.string().optional(),
   BREVO_SENDER_EMAIL: z.string().email().default("no-reply@example.com"),
   BREVO_SENDER_NAME: z.string().default("Isesengura"),
-  CONTACT_INBOX: z.string().email().default("team@example.com"),
+  CONTACT_INBOX: z.string().email().default("malostechnologies@gmail.com"),
   IMAGEKIT_PUBLIC_KEY: z.string().optional(),
   IMAGEKIT_PRIVATE_KEY: z.string().optional(),
   IMAGEKIT_URL_ENDPOINT: z.string().optional(),

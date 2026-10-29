@@ -274,7 +274,6 @@ export const en = {
     metaTitle: "Contact",
     title: "Contact us",
     lead: "Questions, corrections, data requests or accessibility problems. We read everything.",
-    orWrite: "Or write to",
     name: "Name",
     email: "Email",
     message: "Message",

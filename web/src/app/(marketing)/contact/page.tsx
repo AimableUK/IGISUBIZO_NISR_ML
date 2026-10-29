@@ -12,7 +12,6 @@ export default function Contact() {
   useDocumentTitle(c.metaTitle);
   const [msg, setMsg] = useState("");
   const [state, setState] = useState<"idle" | "busy" | "done" | { error: string }>("idle");
-  const email = process.env.NEXT_PUBLIC_CONTACT_EMAIL;
 
   async function submit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -30,7 +29,6 @@ export default function Contact() {
   return (
     <PageShell title={c.title} intro={c.lead}>
       <div className="max-w-2xl">
-        {email && <p className="text-sm text-muted">{c.orWrite} <a className="font-medium text-primary underline underline-offset-2" href={`mailto:${email}`}>{email}</a>.</p>}
         {state === "done" ? (
           <div role="status" className="card mt-6 p-6">
             <CheckCircle2 className="h-6 w-6 text-primary" aria-hidden />

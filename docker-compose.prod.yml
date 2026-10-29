@@ -85,7 +85,7 @@ services:
       args:
         {
           NEXT_PUBLIC_API_URL: "${NEXT_PUBLIC_API_URL:?set NEXT_PUBLIC_API_URL}",
-          NEXT_PUBLIC_CONTACT_EMAIL: "${NEXT_PUBLIC_CONTACT_EMAIL:-team@example.com}",
+          NEXT_PUBLIC_CONTACT_EMAIL: "${NEXT_PUBLIC_CONTACT_EMAIL:-malostechnologies@gmail.com}",
         }
     restart: unless-stopped
     ports: ["3000:3000"]

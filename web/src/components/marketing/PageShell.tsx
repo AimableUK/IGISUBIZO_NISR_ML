@@ -5,7 +5,6 @@ import { Info } from "lucide-react";
 import { useDocumentTitle, useT } from "@/i18n";
 import type { Block, DocPage } from "@/i18n/en";
 import { BambooGrove } from "./Bamboo";
-import LanguageSwitcher from "./LanguageSwitcher";
 import RichText from "./RichText";
 
 type TocItem = { id: string; h: string };
@@ -23,7 +22,6 @@ export function PageShell({
         <div className="mx-auto max-w-[1100px] px-4 pb-20 pt-6 sm:px-6">
           <div className="flex items-center justify-between gap-4">
             <Link href="/" className="font-display text-lg font-semibold text-[#CFFFDC] underline-offset-4 hover:underline">{t.common.brand}</Link>
-            <LanguageSwitcher tone="onDark" />
           </div>
           <h1 className="mt-10 max-w-[22ch] text-4xl font-semibold leading-tight sm:text-5xl">{title}</h1>
           {intro && <p className="mt-4 max-w-[60ch] text-lg text-[#CFFFDC]/90">{intro}</p>}

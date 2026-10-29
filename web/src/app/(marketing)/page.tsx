@@ -6,8 +6,6 @@ import { BadgeCheck, GraduationCap, Info, Layers, PersonStanding, Search, Sprout
 import TileMap from "@/components/renderer/TileMap";
 import { BambooGrove } from "@/components/marketing/Bamboo";
 import HeroScene from "@/components/marketing/HeroScene";
-import LanguageSwitcher from "@/components/marketing/LanguageSwitcher";
-import NisrBadge from "@/components/marketing/NisrBadge";
 import RichText from "@/components/marketing/RichText";
 import { useStart } from "@/components/marketing/useStart";
 import { useDocumentTitle, useT } from "@/i18n";
@@ -41,11 +39,6 @@ export default function Landing() {
         <BambooGrove className="pointer-events-none absolute bottom-0 left-0 -z-10 hidden h-[36%] w-auto lg:block" />
 
         <div className="mx-auto flex min-h-[680px] max-w-[1400px] flex-col px-4 pb-28 pt-6 sm:px-6 lg:min-h-[800px]">
-          <div className="flex flex-wrap items-center justify-between gap-3">
-            <NisrBadge />
-            <LanguageSwitcher tone="onDark" />
-          </div>
-
           <motion.div
             variants={container}
             initial={reduce ? false : "hidden"}
