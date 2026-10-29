@@ -12,7 +12,7 @@ import {
 import { ArrowUp, Loader2, ChevronDown, ChevronUp } from "lucide-react";
 import { useT } from "@/i18n";
 import VoiceButton from "../VoiceButton";
-import { EXAMPLES } from "../QuestionBar";
+import { EXAMPLES } from "./QuestionBar";
 
 type MboniPromptProps = {
   onSubmit: (question: string) => void | Promise<void>;

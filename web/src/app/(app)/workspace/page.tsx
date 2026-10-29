@@ -4,7 +4,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { AlertCircle, Check, Circle, Loader2 } from "lucide-react";
 import { ProgressStages, type AnalyticalResult, type ArtifactSummary, type ProgressStage } from "@/shared";
-import QuestionBar, { EXAMPLES } from "@/components/QuestionBar";
+import QuestionBar, { EXAMPLES } from "@/components/chat/QuestionBar";
 import { api, ApiError } from "@/lib/api";
 import { getSocket } from "@/lib/socket";
 import { fmtDate } from "@/lib/format";
