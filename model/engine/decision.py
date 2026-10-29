@@ -25,14 +25,14 @@ ENGINE_VERSION = "decision-1.0.0"
 DATASET_VERSION = "2024.1"
 LATEST = 2024
 
-# ─── known crops in the SAS data ─────────────────────────────────────────────
+# --- known crops in the SAS data ---------------------------------------------
 KNOWN_CROPS = [
     "Maize", "Beans", "Sorghum", "Sweet potato", "Cassava",
     "Irish potato", "Rice", "Wheat", "Banana", "Soybean",
     "Groundnut", "Sunflower", "Vegetables",
 ]
 
-# ─── known occupations in career_demand.csv ──────────────────────────────────
+# --- known occupations in career_demand.csv ----------------------------------
 KNOWN_OCCUPATIONS = [
     "Software Developer", "Data Analyst", "Network Engineer",
     "Civil Engineer", "Electrical Engineer", "Medical Doctor",
@@ -57,7 +57,7 @@ KNOWN_PROGRAMS = {
     "Agribusiness": ("agribusiness",),
 }
 
-# ─── helpers ─────────────────────────────────────────────────────────────────
+# --- helpers -----------------------------------------------------------------
 def _mean(vals: list[float]) -> float | None:
     return round(sum(vals) / len(vals), 2) if vals else None
 
@@ -101,7 +101,7 @@ def _extract_location(question: str) -> str:
             return name
     return ""
 
-# ─── crop decision ────────────────────────────────────────────────────────────
+# --- crop decision ------------------------------------------------------------
 def _score_crops(options: list[str], location: str) -> tuple[list[dict], list[dict], list[str]]:
     """Returns (option_comparison, criteria_weights, source_ids)."""
     rows = load_agriculture(real=True)
@@ -181,7 +181,7 @@ def _score_crops(options: list[str], location: str) -> tuple[list[dict], list[di
     ]
     return comparison, criteria, ["nisr_sas"]
 
-# ─── career decision ──────────────────────────────────────────────────────────
+# --- career decision ----------------------------------------------------------
 def _score_careers(options: list[str]) -> tuple[list[dict], list[dict], list[str]]:
     careers = load_career_demand(real=True)
     latest  = [r for r in careers if int(r["year"]) == LATEST]
@@ -320,7 +320,7 @@ def _score_programs(options: list[str]) -> tuple[list[dict], list[dict], list[st
     return comparison, criteria, ["demo_higher_education"], comparison_years
 
 
-# ─── public entry point ───────────────────────────────────────────────────────
+# --- public entry point -------------------------------------------------------
 def run(question: str) -> dict:
     decision_type, options = _detect_decision(question)
     location = _extract_location(question)

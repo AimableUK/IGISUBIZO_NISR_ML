@@ -18,11 +18,11 @@ Ask a real Rwanda decision (crop, career, sector) → ranked evidence from NISR-
 
 ```
 web (:3000) → api (:4000) → MODEL_URL /analyze (:8000 Python FastAPI)
-                              ├─ NLU router
-                              ├─ decision (crop / career)
-                              ├─ clustering (district underutilization)
-                              ├─ regression (youth NEET, panel OLS)
-                              └─ forecasting (sector trends + intervals)
+                              ├- NLU router
+                              ├- decision (crop / career)
+                              ├- clustering (district underutilization)
+                              ├- regression (youth NEET, panel OLS)
+                              └- forecasting (sector trends + intervals)
 ```
 
 Data: generated proxy files in `model/data/real/*.csv` (regenerate with `python3 model/generate_real.py`); not verified extracts of official NISR tables.

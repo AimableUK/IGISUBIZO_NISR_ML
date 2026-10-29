@@ -65,7 +65,7 @@ class Operation(BaseModel):
     description: str
 
 
-# ─── Decision result ──────────────────────────────────────────────────────────
+# --- Decision result ----------------------------------------------------------
 class OptionIndicator(BaseModel):
     name: str
     value: Optional[float] = None

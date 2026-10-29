@@ -29,12 +29,12 @@ See [docs/PROBLEM_STATEMENT.md](docs/PROBLEM_STATEMENT.md) for the full problem 
 
 ```
 website → Express API → FastAPI /analyze
-                         └─▶ regex/synonym intent router
-                               ├─▶ decision scoring
-                               ├─▶ K-means clustering
-                               ├─▶ panel OLS regression
-                               └─▶ linear trend forecasting
-                                     └─▶ AnalyticalResult → planner → frontend renderer
+                         └-▶ regex/synonym intent router
+                               ├-▶ decision scoring
+                               ├-▶ K-means clustering
+                               ├-▶ panel OLS regression
+                               └-▶ linear trend forecasting
+                                     └-▶ AnalyticalResult → planner → frontend renderer
 ```
 
 ## Intent routing

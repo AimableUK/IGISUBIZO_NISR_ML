@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="mboni mboni-static" viewBox="0 0 240 88" width="240" height="88" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="mboni-s-title" data-theme="auto">
+  <title id="mboni-s-title">Mboni</title>
+  <style>
+    .mboni-static{--mb-lid:var(--mboni-lid,#0B5D3B);--mb-iris:var(--mboni-iris,#0F8A5F);--mb-pupil:var(--mboni-pupil,#052E1F);--mb-arc:var(--mboni-arc,#A7F3D0);--mb-hl:var(--mboni-hl,#F0FFF7);}
+    @media (prefers-color-scheme:dark){.mboni-static{--mb-lid:var(--mboni-lid,#34D399);--mb-iris:var(--mboni-iris,#10B981);--mb-pupil:var(--mboni-pupil,#022C22);--mb-arc:var(--mboni-arc,#D9F99D);--mb-hl:var(--mboni-hl,#ECFDF5);}}
+    .mboni-static[data-theme="light"]{--mb-lid:var(--mboni-lid,#0B5D3B);--mb-iris:var(--mboni-iris,#0F8A5F);--mb-pupil:var(--mboni-pupil,#052E1F);--mb-arc:var(--mboni-arc,#A7F3D0);--mb-hl:var(--mboni-hl,#F0FFF7);}
+    .mboni-static[data-theme="dark"]{--mb-lid:var(--mboni-lid,#34D399);--mb-iris:var(--mboni-iris,#10B981);--mb-pupil:var(--mboni-pupil,#022C22);--mb-arc:var(--mboni-arc,#D9F99D);--mb-hl:var(--mboni-hl,#ECFDF5);}
+    .mbs-lid{fill:var(--mb-lid)}.mbs-iris{fill:var(--mb-iris)}.mbs-pupil{fill:var(--mb-pupil)}.mbs-hl{fill:var(--mb-hl)}
+    .mbs-arc{fill:none;stroke:var(--mb-arc);stroke-width:2.4;stroke-linecap:round;stroke-dasharray:100 100;stroke-dashoffset:0}
+    .mbs-blink,.mbs-squash,.mbs-lid-top,.mbs-lid-bot{transform-box:view-box;transform-origin:120px 50px}
+    .mbs-zoom,.mbs-pupil-g{transform-box:view-box;transform-origin:120px 46px}
+    .mbs-hl1{transform-box:view-box;transform-origin:111px 38px}
+    .mbs-hl2{transform-box:view-box;transform-origin:127px 55px}
+  </style>
+  <defs>
+    <!-- Canonical eye opening (identical in every Mboni asset) -->
+    <clipPath id="mboni-s-open"><path d="M10 54 C54 7 182 2 230 46 C184 86 58 82 10 54 Z"/></clipPath>
+  </defs>
+  <g class="mbs-blink">
+    <g clip-path="url(#mboni-s-open)">
+      <g class="mbs-squash"><g class="mbs-gaze"><g class="mbs-zoom">
+        <!-- iris -->
+        <path class="mbs-iris" d="M94 46 a26 26 0 1 0 52 0 a26 26 0 1 0 -52 0 Z"/>
+        <!-- limbal light arc -->
+        <path class="mbs-arc" pathLength="100" d="M140.28 51.43 A21 21 0 0 1 114.57 66.28"/>
+        <!-- pupil -->
+        <g class="mbs-pupil-g"><path class="mbs-pupil" d="M109 46 a11 11 0 1 0 22 0 a11 11 0 1 0 -22 0 Z"/></g>
+        <!-- highlights -->
+        <g class="mbs-hlg">
+          <g class="mbs-hl1"><path class="mbs-hl" d="M106.8 38 a4.2 4.2 0 1 0 8.4 0 a4.2 4.2 0 1 0 -8.4 0 Z"/></g>
+          <g class="mbs-hl2"><path class="mbs-hl" d="M125.3 55 a1.7 1.7 0 1 0 3.4 0 a1.7 1.7 0 1 0 -3.4 0 Z"/></g>
+        </g>
+      </g></g></g>
+    </g>
+    <!-- upper lid -->
+    <path class="mbs-lid mbs-lid-top" d="M10 54 C54 -4 182 -8 230 46 C182 2 54 7 10 54 Z"/>
+    <!-- lower lid -->
+    <path class="mbs-lid mbs-lid-bot" d="M10 54 C58 88 184 92 230 46 C184 86 58 82 10 54 Z"/>
+  </g>
+</svg>

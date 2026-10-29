@@ -34,7 +34,7 @@ export interface ParsedIntent {
   understood: string;
 }
 
-// ─── synonym tables ───────────────────────────────────────────────────────────
+// --- synonym tables -----------------------------------------------------------
 
 /** Maps any natural phrase → canonical engine keyword injected into the question */
 const SYNONYMS: Array<[RegExp, string]> = [
@@ -82,7 +82,7 @@ const OP_PATTERNS: Array<[RegExp, Operation]> = [
   [/\b(compare|versus|vs\.?|between|across|difference|gap|relative)\b/i, "compare"],
 ];
 
-// ─── district name list (matches geo.ts) ─────────────────────────────────────
+// --- district name list (matches geo.ts) -------------------------------------
 const DISTRICT_NAMES = [
   "Gasabo","Kicukiro","Nyarugenge","Bugesera","Gatsibo","Kayonza","Kirehe",
   "Ngoma","Nyagatare","Rwamagana","Burera","Gakenke","Gicumbi","Musanze",
@@ -90,7 +90,7 @@ const DISTRICT_NAMES = [
   "Nyanza","Ruhango","Karongi","Ngororero","Nyabihu","Rubavu","Rusizi","Maramagambo",
 ];
 
-// ─── engine routing rules (ordered — first match wins) ───────────────────────
+// --- engine routing rules (ordered — first match wins) -----------------------
 const ENGINE_RULES: Array<[RegExp, EngineIntent]> = [
   [/which (crop|plant|grow|farm)|what (should|can) i (plant|grow|farm)|best crop|compare crop|rice vs|maize vs|beans vs|potato vs|which career.*vs|career.*compare|should i (plant|grow|farm)|i want to (plant|grow|farm)|crop choice|decision.*crop|decision.*career/i, "decision"],
   [/career opportunity|career.*rwanda|tvet career|university career|which career|best career|job.*opportunit|future.*work|ai.*era|in.demand|occupation.*demand|what (should|can) i (study|become)|i want to (be|become)|my (dream|goal) is|advise me|guide me|help me choose/i, "career_intelligence"],
@@ -99,7 +99,7 @@ const ENGINE_RULES: Array<[RegExp, EngineIntent]> = [
   [/cluster|underutil|district.*profile|group.*district|segment.*district/i, "clustering"],
 ];
 
-// ─── main export ──────────────────────────────────────────────────────────────
+// --- main export --------------------------------------------------------------
 export function parseIntent(rawQuestion: string): ParsedIntent {
   const q = rawQuestion.trim();
   const words = q.split(/\s+/);

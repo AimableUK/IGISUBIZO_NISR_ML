@@ -9,9 +9,9 @@ The data exists. NISR publishes the Labour Force Survey annually, the Establishm
 The gap looks like this:
 
 ```
-Workforce supply (LFS)        ←── not connected ──→   Business demand (Establishment Census)
+Workforce supply (LFS)        ←-- not connected --→   Business demand (Establishment Census)
        ↕                                                          ↕
-Skills being acquired (TVET/Education)   ←── not connected ──→  Sectors growing or shrinking
+Skills being acquired (TVET/Education)   ←-- not connected --→  Sectors growing or shrinking
 ```
 
 Without connecting these, policymakers, training institutions, and planners are working blind.

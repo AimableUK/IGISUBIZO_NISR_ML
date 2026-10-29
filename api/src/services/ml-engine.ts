@@ -21,7 +21,7 @@ export const ML_DATASET_VERSIONS: Record<string, string> = {
   nisr_census:  "2022.1",  // Rwanda Population & Housing Census 2022
 };
 
-// ─── constants ────────────────────────────────────────────────────────────────
+// --- constants ----------------------------------------------------------------
 const YEARS = [2019, 2020, 2021, 2022, 2023, 2024];
 const LATEST = 2024;
 const SECTORS = ["Agriculture", "Manufacturing", "Construction", "Trade", "ICT", "Education", "Health", "Finance", "Other"];
@@ -80,7 +80,7 @@ const OCCUPATIONS: Array<{ occupation: string; sector: string; requiresDegree: b
   { occupation: "Environmental Officer", sector: "Environment",  requiresDegree: true },
 ];
 
-// ─── deterministic sample data ────────────────────────────────────────────────
+// --- deterministic sample data ------------------------------------------------
 const fnv = (s: string) => { let h = 2166136261; for (const c of s) { h ^= c.charCodeAt(0); h = Math.imul(h, 16777619); } return h >>> 0; };
 const r01 = (s: string) => (fnv(s) % 10000) / 10000;
 const r1 = (n: number) => Math.round(n * 10) / 10;
@@ -215,7 +215,7 @@ function buildCareer(): OCR[] {
   );
 }
 
-// ─── math ─────────────────────────────────────────────────────────────────────
+// --- math ---------------------------------------------------------------------
 const avg = (a: number[]) => a.reduce((s, v) => s + v, 0) / a.length;
 
 function ols(X: number[][], y: number[]): number[] {
@@ -256,7 +256,7 @@ function trend(xs: number[], ys: number[]) {
   return { slope: r1(slope), intercept: r1(intercept), r2: r2(ys, yp) };
 }
 
-// ─── Problem A: KMeans clustering ─────────────────────────────────────────────
+// --- Problem A: KMeans clustering ---------------------------------------------
 const CLUSTER_FEATURES = ["underemployment_rate", "unemployment_rate", "youth_neet_rate", "pct_agriculture", "pct_formal", "pct_secondary_plus"] as const;
 const CLUSTER_LABELS: Record<number, string> = {
   0: "High underutilization / rural",
@@ -365,7 +365,7 @@ export function runClustering(question: string): AnalyticalResult {
   });
 }
 
-// ─── Problem B: OLS regression — youth NEET predictors ───────────────────────
+// --- Problem B: OLS regression — youth NEET predictors -----------------------
 const REG_FEATURES = ["pct_agriculture", "pct_formal", "pct_secondary_plus", "pct_tvet", "unemployment_rate"] as const;
 const REG_LABELS: Record<string, string> = {
   pct_agriculture: "Agriculture share", pct_formal: "Formal employment",
@@ -456,7 +456,7 @@ export function runRegression(question: string): AnalyticalResult {
   });
 }
 
-// ─── Problem C: Linear trend forecasting by sector ────────────────────────────
+// --- Problem C: Linear trend forecasting by sector ----------------------------
 export function runForecasting(question: string): AnalyticalResult {
   const data = buildSector();
   const forecastYrs = Array.from({ length: FORECAST_HORIZON }, (_, i) => LATEST + i + 1);
@@ -556,7 +556,7 @@ export function runForecasting(question: string): AnalyticalResult {
   });
 }
 
-// ─── Problem D: Career Intelligence — cross-join supply + pipeline + demand ───
+// --- Problem D: Career Intelligence — cross-join supply + pipeline + demand ---
 /**
  * Scores every occupation by combining 4 signals:
  *   1. Sector growth trend (LFS sector employment share slope)        → demand direction
@@ -773,7 +773,7 @@ export function runCareerIntelligence(question: string): AnalyticalResult {
   });
 }
 
-// ─── public entry point ───────────────────────────────────────────────────────
+// --- public entry point -------------------------------------------------------
 export function runMLAnalysis(question: string): AnalyticalResult {
   const intent = parseIntent(question);
 

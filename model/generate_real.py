@@ -46,7 +46,7 @@ DISTRICTS = [
 
 YEARS = list(range(2017, 2026))  # Extended series 2017–2025
 
-# ─── Published national LFS figures (NISR LFS reports) ───────────────────────
+# --- Published national LFS figures (NISR LFS reports) -----------------------
 # Source: NISR Rwanda Labour Force Survey annual reports 2019–2024
 # unemployment_rate: ILO definition (% of labour force)
 # labour_force_participation: % of working-age population (15+)
@@ -177,7 +177,7 @@ def dist_lfs_row(dist, prov, yr):
     return [dist, prov, yr, emp, unemp, underemp, neet, lfp,
             agri, ind, svc, formal, hours, wage, sec_plus, tvet_pct, pop]
 
-# ── 1. district_labour.csv ────────────────────────────────────────────────────
+# -- 1. district_labour.csv ----------------------------------------------------
 with open(out / "district_labour.csv", "w", newline="") as f:
     w = csv.writer(f)
     w.writerow(["district","province","year",
@@ -190,7 +190,7 @@ with open(out / "district_labour.csv", "w", newline="") as f:
         for yr in YEARS:
             w.writerow(dist_lfs_row(dist, prov, yr))
 
-# ── 2. district_establishments.csv ───────────────────────────────────────────
+# -- 2. district_establishments.csv -------------------------------------------
 # Source: Rwanda Establishment Census 2020 (NISR) & 2023 (NISR)
 # National totals: 2020 → 228,000 establishments; 2023 → 271,000
 # Kigali City share: ~38% of all establishments (EC 2023 Table 2.1)
@@ -224,7 +224,7 @@ with open(out / "district_establishments.csv", "w", newline="") as f:
             large = clamp(r1(1  + (yr-2019)*0.02), 0.8, 1.5)
             w.writerow([dist, prov, yr, dist_est, micro, small, med, large, dom, gr])
 
-# ── 3. sector_employment.csv ──────────────────────────────────────────────────
+# -- 3. sector_employment.csv --------------------------------------------------
 # Source: NISR LFS 2019–2024 Table 4 — employment by industry
 # National employment shares by sector (% of total employed)
 NATIONAL_SECTOR_SHARE = {
@@ -265,7 +265,7 @@ with open(out / "sector_employment.csv", "w", newline="") as f:
                 wage = int(SECTOR_WAGE_NATIONAL[sec] * PROV_WAGE_MULT[prov] * (1 + (yr-2019)*0.04))
                 w.writerow([dist, prov, yr, sec, share, gr, wage])
 
-# ── 4. district_health.csv ────────────────────────────────────────────────────
+# -- 4. district_health.csv ----------------------------------------------------
 # Source: Rwanda DHS 2019-2020 (NISR) — district tables; DHS 2025 for 2024 values
 # National figures: skilled birth attendance 94% (DHS 2020), 96% (DHS 2025)
 # Stunting: 33% (DHS 2020), 28% (DHS 2025 preliminary)
@@ -317,7 +317,7 @@ with open(out / "district_health.csv", "w", newline="") as f:
             odf   = clamp(r1(n[9] + o[0]*0.5 + d*0.3), 25, 99)
             w.writerow([dist, prov, yr, sba, anc4, vacc, stunt, u5m, mmr, hfa, hiv, cpr, odf])
 
-# ── 5. district_poverty.csv ───────────────────────────────────────────────────
+# -- 5. district_poverty.csv ---------------------------------------------------
 # Source: EICV5 2016/17, EICV6 2019/20, EICV7 2023/24 (NISR)
 # National poverty headcount: 38.2% (EICV6 2019/20), 27.4% (EICV7 2023/24)
 # Electricity access: 34% (2019) → 72% (2024) — RURA/REG annual reports
@@ -367,7 +367,7 @@ with open(out / "district_poverty.csv", "w", newline="") as f:
             w.writerow([dist, prov, yr, pov, extpov, cons, gini, foodins,
                         elec, water, sanit, momo, socprot])
 
-# ── 6. district_agriculture.csv ───────────────────────────────────────────────
+# -- 6. district_agriculture.csv -----------------------------------------------
 # Source: NISR Seasonal Agricultural Survey 2019–2024
 # National crop production: ~5.5M MT (SAS 2019) → ~6.2M MT (SAS 2024)
 # Fertilizer use: 38% (SAS 2019) → 52% (SAS 2024)
@@ -420,7 +420,7 @@ with open(out / "district_agriculture.csv", "w", newline="") as f:
             surp = clamp(r1(35 if is_kigali else 42 + (yr-2019)*0.3), 10, 75)
             w.writerow([dist, prov, yr, prod, area, yield_kgha, seed, fert, irrig, lvstk, loss, inc, surp])
 
-# ── 7. district_education.csv ─────────────────────────────────────────────────
+# -- 7. district_education.csv -------------------------------------------------
 # Source: Rwanda EMIS / REB Education Statistics 2019–2024
 # Primary NER: 97.3% (2019) → 98.5% (2024)
 # Secondary NER: 38.5% (2019) → 48.2% (2024)
@@ -475,7 +475,7 @@ with open(out / "district_education.csv", "w", newline="") as f:
             w.writerow([dist, prov, yr, pne, sne, tvet, higher, pcomp, scomp,
                         lit, gpi_p, gpi_s, ptr, drop, elec])
 
-# ── 8. tvet_courses.csv ───────────────────────────────────────────────────────
+# -- 8. tvet_courses.csv -------------------------------------------------------
 # Source: Rwanda Polytechnic / WDA TVET Statistics 2019–2024
 # National TVET enrolment: ~65,000 (2019) → ~105,000 (2024)
 # Graduate employment within 6 months: 52% (WDA 2022 tracer study)
@@ -519,7 +519,7 @@ with open(out / "tvet_courses.csv", "w", newline="") as f:
                 part  = "Yes" if is_tech else ("Yes" if abs(hash(dist+trade+str(yr)))%3==0 else "No")
                 w.writerow([dist, prov, yr, trade, level, enr, fem, pass_, comp, emp6m, wage, part])
 
-# ── 9. higher_ed_programs.csv ─────────────────────────────────────────────────
+# -- 9. higher_ed_programs.csv -------------------------------------------------
 # Source: Rwanda HEC Higher Education Statistics 2019–2024
 # Total HE enrolment: ~95,000 (2019) → ~130,000 (2024)
 # Graduate employment within 1 year: 62% (HEC 2022 tracer study)
@@ -564,7 +564,7 @@ with open(out / "higher_ed_programs.csv", "w", newline="") as f:
                 intl = clamp(r1(1.5 + abs(hash(inst+prog))%12 * 0.1), 0.2, 20)
                 w.writerow([inst, prov, yr, prog, field, enr, fem, grad, emp1y, wage, schol, intl])
 
-# ── 10. national_exams.csv ────────────────────────────────────────────────────
+# -- 10. national_exams.csv ----------------------------------------------------
 # Source: NESA National Examination Results 2019–2024
 # National P6 pass rate: 72% (2019) → 78% (2024)
 # National S6 pass rate: 68% (2019) → 74% (2024)
@@ -604,7 +604,7 @@ with open(out / "national_exams.csv", "w", newline="") as f:
                     cands = clamp(int(300 if is_kigali else 120 + abs(hash(dist+lvl+subj))%400), 50, 3000)
                     w.writerow([dist, prov, yr, lvl, subj, cands, pass_, dist_, fpass, mpass, mean])
 
-# ── 11. career_demand.csv ─────────────────────────────────────────────────────
+# -- 11. career_demand.csv -----------------------------------------------------
 # Source: Rwanda LMIS / KORA job portal data 2019–2024
 # ICT vacancies growing ~18%/yr; health growing ~12%/yr (LMIS 2023 report)
 OCCUPATIONS = [

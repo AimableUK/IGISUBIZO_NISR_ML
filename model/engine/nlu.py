@@ -4,7 +4,7 @@ Mirrors the logic in api/src/services/nlu.ts so both engines understand the same
 """
 import re
 
-# ─── synonym expansion ────────────────────────────────────────────────────────
+# --- synonym expansion --------------------------------------------------------
 # Each entry: (pattern, canonical keywords injected into enriched string)
 SYNONYMS = [
     # crop / career decision choice (must come before generic career)
@@ -60,7 +60,7 @@ SYNONYMS = [
      "tvet career demand construction"),
 ]
 
-# ─── engine routing rules (ordered — first match wins) ───────────────────────
+# --- engine routing rules (ordered — first match wins) -----------------------
 ENGINE_RULES = [
     # Program outcomes are factual dataset questions, not career recommendations.
     (r"\b(enrol(?:l)?ment|admission|admitted|graduation rate|graduate employment)\b",

@@ -246,6 +246,8 @@ export const rw: Dict = {
     sentTitle: "Ubutumwa bwoherejwe",
     sentBody: "Murakoze. Tuzagusubiza kuri aderesi watanze.",
     failed: "Ubutumwa bwawe ntibwashoboye koherezwa.",
+    namePlaceholder: "Andika izina ryawe ryuzuye",
+    emailPlaceholder: "Andika imeri yawe",
   },
 
   about: {
@@ -701,4 +703,90 @@ export const rw: Dict = {
       },
     ],
   } as DocPage,
+
+  mboniPrompt: {
+    ariaLabel: "Baza Mboni",
+    title: "Mboni yagufasha iki?",
+    placeholder: "Baza ikibazo ku mibare y'u Rwanda...",
+    inputLabel: "Ikibazo cyawe kuri Mboni",
+    send: "Ohereza ikibazo",
+    moreExamples: "Ibindi",
+    fewerExamples: "Gabanya",
+  },
+
+  // ── paste inside `export const rw: Dict = { ... }` in rw.ts ──
+  auth: {
+    panel: {
+      title: "Baza ibibazo ku ibarurishamibare ry’u Rwanda",
+      body: "Injira ubike amasesengura yawe, uyafungure igihe cyose, kandi urebe aho buri mubare waturutse.",
+      points: [
+        "Hitamo umwuga cyangwa amasomo",
+        "Tangiza cyangwa ongera ubucuruzi",
+        "Wigire ku mateka y’u Rwanda",
+      ],
+      sceneLabel:
+        "Igishushanyo cy’imisozi y’icyatsi y’u Rwanda, ibirunga n’imigano mu rukerera",
+    },
+    modes: {
+      login: {
+        h: "Injira",
+        cta: "Injira",
+        sub: "Murakaza neza. Komereza aho wari ugeze.",
+      },
+      signup: {
+        h: "Fungura konti",
+        cta: "Fungura konti",
+        sub: "Bika ibibazo n’amasesengura byawe kugira ngo uzabigarukeho.",
+      },
+      forgot: {
+        h: "Subiza ijambobanga",
+        cta: "Ohereza ihuza ryo gusubiza",
+        sub: "Andika imeri yawe tukwoherereze ihuza ryo guhitamo ijambobanga rishya.",
+      },
+      reset: {
+        h: "Hitamo ijambobanga rishya",
+        cta: "Bika ijambobanga rishya",
+        sub: "Hitamo ijambobanga rishya rifite nibura inyuguti 10.",
+      },
+    },
+
+    fields: {
+      name: "Izina",
+      email: "Imeri",
+      password: "Ijambobanga",
+      newPassword: "Ijambobanga rishya",
+      pwHint: "Nibura inyuguti 10.",
+      show: "Erekana ijambobanga",
+      hide: "Hisha ijambobanga",
+      phName: "Andika izina ryawe ryuzuye",
+      phEmail: "Andika imeri yawe",
+      phPassword: "Andika ijambobanga ryawe",
+      phNewPassword: "Hitamo ijambobanga",
+    },
+    links: {
+      forgot: "Wibagiwe ijambobanga?",
+      newHere: "Uri mushya hano?",
+      create: "Fungura konti",
+      already: "Usanzwe ufite konti?",
+      signIn: "Injira",
+      back: "Subira ku kwinjira",
+      home: "Subira ahabanza",
+    },
+    done: { title: "Reba imeri yawe", back: "Subira ku kwinjira" },
+    messages: {
+      confirmEmailFirst:
+        "Banza wemeze imeri yawe. Twakoherereje ihuza igihe wafunguraga konti.",
+      badCredentials: "Imeri n’ijambobanga ntibihuye.",
+      createFailed: "Ntitwashoboye gufungura konti yawe.",
+      signupDone:
+        "Konti yafunguwe. Reba muri imeri yawe ihuza ryo kwemeza imeri, hanyuma winjire.",
+      forgotDone:
+        "Niba iyo aderesi ifite konti, ihuza ryo gusubiza ririmo kuza.",
+      missingToken:
+        "Iri huza ryo gusubiza nta kimenyetso rifite. Saba irindi rishya.",
+      resetExpired: "Iri huza ryo gusubiza ryararangiye. Saba irindi rishya.",
+      network:
+        "Ntitwashoboye kugera kuri seriveri. Reba umuyoboro wawe ukongera ugerageze.",
+    },
+  },
 };

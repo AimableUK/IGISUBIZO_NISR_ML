@@ -59,7 +59,7 @@ export const OperationSchema = z.object({ id: IdKey, description: z.string().max
 
 export const AnalysisStatus = z.enum(["ok", "partial", "ambiguous", "unsupported", "no_data"]);
 
-// ─── Decision result (crop / career / business choice) ────────────────────────
+// --- Decision result (crop / career / business choice) ------------------------
 export const IndicatorStatus = z.enum(["available", "missing", "not_applicable", "unreliable"]);
 
 export const OptionIndicatorSchema = z.object({

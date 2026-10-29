@@ -274,6 +274,8 @@ export const en = {
     sentTitle: "Message sent",
     sentBody: "Thank you. We will reply to the address you gave.",
     failed: "Your message could not be sent.",
+    namePlaceholder: "Enter your full name",
+    emailPlaceholder: "Enter your email address",
   },
 
   about: {
@@ -729,6 +731,88 @@ export const en = {
       },
     ],
   } as DocPage,
+
+  mboniPrompt: {
+    ariaLabel: "Ask Mboni",
+    title: "What can Mboni help with?",
+    placeholder: "Ask a question about Rwanda's statistics...",
+    inputLabel: "Your question for Mboni",
+    send: "Send question",
+    moreExamples: "More",
+    fewerExamples: "Show less",
+  },
+
+  auth: {
+    panel: {
+      title: "Ask questions about Rwanda’s statistics",
+      body: "Sign in to keep your analyses, reopen them any time, and check the source behind every number.",
+      points: [
+        "Choose a career or course of study",
+        "Start or grow a business",
+        "Learn from Rwanda’s past",
+      ],
+      sceneLabel:
+        "Illustration of Rwanda’s green hills, volcanoes and bamboo at sunrise",
+    },
+    modes: {
+      login: {
+        h: "Sign in",
+        cta: "Sign in",
+        sub: "Welcome back. Pick up where you left off.",
+      },
+      signup: {
+        h: "Create your account",
+        cta: "Create account",
+        sub: "Save your questions and analyses so you can come back to them.",
+      },
+      forgot: {
+        h: "Reset your password",
+        cta: "Send reset link",
+        sub: "Enter your email and we will send you a link to choose a new password.",
+      },
+      reset: {
+        h: "Choose a new password",
+        cta: "Save new password",
+        sub: "Pick a new password of at least 10 characters.",
+      },
+    },
+    fields: {
+      name: "Name",
+      email: "Email",
+      password: "Password",
+      newPassword: "New password",
+      pwHint: "At least 10 characters.",
+      show: "Show password",
+      hide: "Hide password",
+      phName: "Enter your full name",
+      phEmail: "Enter your email address",
+      phPassword: "Enter your password",
+      phNewPassword: "Choose a password",
+    },
+    links: {
+      forgot: "Forgot your password?",
+      newHere: "New here?",
+      create: "Create an account",
+      already: "Already registered?",
+      signIn: "Sign in",
+      back: "Back to sign in",
+      home: "Back to home",
+    },
+    done: { title: "Check your email", back: "Back to sign in" },
+    messages: {
+      confirmEmailFirst:
+        "Confirm your email first. We sent you a link when you signed up.",
+      badCredentials: "That email and password do not match.",
+      createFailed: "We could not create your account.",
+      signupDone:
+        "Account created. Check your inbox for a link to confirm your email, then sign in.",
+      forgotDone: "If that address has an account, a reset link is on its way.",
+      missingToken: "This reset link is missing its token. Request a new one.",
+      resetExpired: "This reset link has expired. Request a new one.",
+      network:
+        "We could not reach the server. Check your connection and try again.",
+    },
+  },
 };
 
 export type Dict = typeof en;

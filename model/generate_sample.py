@@ -33,7 +33,7 @@ def _val(district: str, key: str, year: int, lo: float, hi: float, trend: float 
 out = pathlib.Path(__file__).parent / "data" / "sample"
 out.mkdir(parents=True, exist_ok=True)
 
-# ── 1. district_labour.csv  (one row per district per year) ──────────────────
+# -- 1. district_labour.csv  (one row per district per year) ------------------
 with open(out / "district_labour.csv", "w", newline="") as f:
     w = csv.writer(f)
     w.writerow(["district","province","year",
@@ -63,7 +63,7 @@ with open(out / "district_labour.csv", "w", newline="") as f:
                 int(_val(dist,"pop",yr, 80000 if is_kigali else 40000, 350000 if is_kigali else 180000, 800)),
             ])
 
-# ── 2. district_establishments.csv  (one row per district per year) ──────────
+# -- 2. district_establishments.csv  (one row per district per year) ----------
 with open(out / "district_establishments.csv", "w", newline="") as f:
     w = csv.writer(f)
     w.writerow(["district","province","year","total_establishments",
@@ -83,7 +83,7 @@ with open(out / "district_establishments.csv", "w", newline="") as f:
                 _val(dist,"estgr",yr, -2, 8, 0.1),
             ])
 
-# ── 3. sector_employment.csv  (district × sector × year) ─────────────────────
+# -- 3. sector_employment.csv  (district × sector × year) ---------------------
 with open(out / "sector_employment.csv", "w", newline="") as f:
     w = csv.writer(f)
     w.writerow(["district","province","year","sector","employment_share","growth_rate","avg_wage_rwf"])
@@ -98,7 +98,7 @@ with open(out / "sector_employment.csv", "w", newline="") as f:
                     int(_val(dist+sec,"swage",yr, 20000 if is_kigali else 12000, 200000 if is_kigali else 80000, 900)),
                 ])
 
-# ── 4. district_health.csv  (DHS-aligned; one row per district per year) ─────
+# -- 4. district_health.csv  (DHS-aligned; one row per district per year) -----
 with open(out / "district_health.csv", "w", newline="") as f:
     w = csv.writer(f)
     w.writerow(["district","province","year",
@@ -124,7 +124,7 @@ with open(out / "district_health.csv", "w", newline="") as f:
                 _val(dist,"odf",yr, 60 if is_kigali else 30, 99, 1.2),
             ])
 
-# ── 5. district_poverty.csv  (EICV-aligned; one row per district per year) ───
+# -- 5. district_poverty.csv  (EICV-aligned; one row per district per year) ---
 with open(out / "district_poverty.csv", "w", newline="") as f:
     w = csv.writer(f)
     w.writerow(["district","province","year",
@@ -150,7 +150,7 @@ with open(out / "district_poverty.csv", "w", newline="") as f:
                 _val(dist,"socprot",yr, 15 if is_kigali else 25, 45 if is_kigali else 65, 0.5),
             ])
 
-# ── 6. district_agriculture.csv  (SAS-aligned; one row per district per year) 
+# -- 6. district_agriculture.csv  (SAS-aligned; one row per district per year) 
 with open(out / "district_agriculture.csv", "w", newline="") as f:
     w = csv.writer(f)
     w.writerow(["district","province","year",
@@ -176,7 +176,7 @@ with open(out / "district_agriculture.csv", "w", newline="") as f:
                 _val(dist,"surplus",yr, 15 if is_kigali else 25, 55 if is_kigali else 70, 0.4),
             ])
 
-# ── 7. district_education.csv  (one row per district per year) ───────────────
+# -- 7. district_education.csv  (one row per district per year) ---------------
 with open(out / "district_education.csv", "w", newline="") as f:
     w = csv.writer(f)
     w.writerow(["district","province","year",
@@ -207,7 +207,7 @@ with open(out / "district_education.csv", "w", newline="") as f:
 
 print("Sample data written to", out)
 
-# ── 8. tvet_courses.csv  (district × trade × year) ───────────────────────────
+# -- 8. tvet_courses.csv  (district × trade × year) ---------------------------
 TVET_TRADES = [
     "Construction & Building Technology",
     "Electrical & Electronics",
@@ -247,7 +247,7 @@ with open(out / "tvet_courses.csv", "w", newline="") as f:
                     rng.choice(["Yes","No","Partial"]),
                 ])
 
-# ── 9. higher_ed_programs.csv  (institution × program × year) ────────────────
+# -- 9. higher_ed_programs.csv  (institution × program × year) ----------------
 INSTITUTIONS = [
     ("University of Rwanda","Kigali City"),
     ("INES Ruhengeri","Northern"),
@@ -303,7 +303,7 @@ with open(out / "higher_ed_programs.csv", "w", newline="") as f:
                     _val(inst+prog,"intl",yr, 0.5, 18, 0.1),
                 ])
 
-# ── 10. national_exams.csv  (district × exam level × subject × year) ─────────
+# -- 10. national_exams.csv  (district × exam level × subject × year) ---------
 EXAM_LEVELS = ["P6","S3","S6"]
 SUBJECTS = {
     "P6": ["Mathematics","English","Kinyarwanda","Science","Social Studies"],
@@ -333,7 +333,7 @@ with open(out / "national_exams.csv", "w", newline="") as f:
                         _val(dist+lvl+subj,"mean",yr, 42, 78, 0.4),
                     ])
 
-# ── 11. career_demand.csv  (district × occupation × year) ────────────────────
+# -- 11. career_demand.csv  (district × occupation × year) --------------------
 OCCUPATIONS = [
     ("Software Developer","ICT"),
     ("Data Analyst","ICT"),
