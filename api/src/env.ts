@@ -22,7 +22,7 @@ const Env = z.object({
   IMAGEKIT_PRIVATE_KEY: z.string().optional(),
   IMAGEKIT_URL_ENDPOINT: z.string().optional(),
   ANTHROPIC_API_KEY: z.string().optional(),
-  PLANNER_MODEL: z.string().default("claude-sonnet-5-5"),
+  PLANNER_MODEL: z.string(),
   /** Python FastAPI model service base URL (no trailing path). */
   MODEL_URL: z.string().url().default("http://127.0.0.1:8000"),
   /** If true, fall back to in-process sample engine when model is down. */
