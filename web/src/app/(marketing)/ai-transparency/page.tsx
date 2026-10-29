@@ -6,7 +6,7 @@ export default function AiTransparency() {
     <Prose title="AI transparency" intro="What the analysis code computes, where optional AI is used, and the limits of current demo data.">
       <h2>What the automated system does</h2>
       <p>
-        The Python service combines rule-based question routing, a small trainable intent classifier, and analysis code (K-means, panel OLS, linear trends, and weighted decision rules). Admin training changes how questions are routed; it does not train a generative model or teach the system new facts. The study-and-career adviser can use an optional AI model to phrase a conversational reply from analysis evidence, but only when the user explicitly enables AI-assisted replies. The optional workspace planner proposes layouts and does not calculate statistics.
+        The Python service combines rule-based question routing, a small trainable intent classifier, and analysis code (K-means, panel OLS, linear trends, and weighted decision rules). Admin training changes how questions are routed; it does not train a generative model or teach the system new facts. The study-and-career adviser can use an optional AI model to interpret a question and phrase a conversational reply from analysis evidence, but only when the user explicitly enables AI-assisted replies. Weather questions use Open-Meteo for Rwanda location forecasts. Unsupported topics are identified as unsupported rather than answered with unrelated career data. The optional workspace planner proposes layouts and does not calculate statistics.
       </p>
 
       <h2>Important data limitation</h2>

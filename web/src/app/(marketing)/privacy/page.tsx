@@ -18,9 +18,9 @@ export default function Privacy() {
       <h2>Voice input</h2>
       <p>Voice input is optional. Speech recognition is performed by your browser’s speech service, which may send audio to that browser vendor. Isesengura receives only the text transcript that appears in the question box. You can always type instead.</p>
       <h2>AI processing</h2>
-      <p>The optional workspace planner receives analysis structure to suggest a layout. In the study-and-career adviser, messages and recent conversation are sent to Anthropic only if you turn on “AI-assisted replies”; otherwise the app uses guided rules. Adviser conversation history stays in the page session and is not saved as an analysis. Do not enter sensitive personal information. See <Link href="/ai-transparency">AI transparency</Link>.</p>
+      <p>The optional workspace planner receives analysis structure to suggest a layout. In the study-and-career adviser, messages and recent conversation are sent to Anthropic only if you turn on “AI-assisted replies”; otherwise the app uses guided rules. For weather requests, the requested place is sent to Open-Meteo to find a forecast, whether or not AI replies are enabled. Adviser conversation history stays in the page session and is not saved as an analysis. Do not enter sensitive personal information. See <Link href="/ai-transparency">AI transparency</Link>.</p>
       <h2>Service providers</h2>
-      <p>We use providers for email delivery (Brevo), image hosting for profile photos (ImageKit), hosting, and—when you opt in to AI-assisted adviser replies—AI processing (Anthropic). They process data to provide those services.</p>
+      <p>We use providers for email delivery (Brevo), image hosting for profile photos (ImageKit), hosting, weather forecasts (Open-Meteo), and—when you opt in to AI-assisted adviser replies—AI processing (Anthropic). They process data to provide those services.</p>
       <h2>Cookies</h2>
       <p>We use one essential session cookie and store your display preferences (theme, text size, contrast, motion) in your browser. We do not use advertising or cross-site tracking cookies.</p>
       <h2>Retention and your rights</h2>

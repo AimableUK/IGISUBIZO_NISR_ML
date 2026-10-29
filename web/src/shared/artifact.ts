@@ -48,6 +48,7 @@ export const ConversationResponseSchema = z.object({
     title: z.string(),
     period: z.string(),
     isSample: z.boolean(),
+    url: z.string().url().optional(),
   })),
 });
 export const VersionMetaSchema = z.object({

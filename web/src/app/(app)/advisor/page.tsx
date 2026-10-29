@@ -8,7 +8,7 @@ import { api, ApiError } from "@/lib/api";
 
 type Turn = ConversationMessage & {
   mode?: "ai" | "guided";
-  sources?: { title: string; period: string; isSample: boolean }[];
+  sources?: { title: string; period: string; isSample: boolean; url?: string }[];
 };
 
 const WELCOME: Turn = {
@@ -21,6 +21,7 @@ const STARTERS = [
   "I enjoy maths and working with people. What paths could fit me?",
   "What if I chose hotel management? What are the pros and cons?",
   "I finished secondary school and need help choosing what to study.",
+  "What is the weather forecast for Kigali?",
 ];
 
 export default function AdvisorPage() {
@@ -97,7 +98,9 @@ export default function AdvisorPage() {
               <ul className="mt-2 space-y-1 text-xs text-muted">
                 {turn.sources.map((source) => (
                   <li key={`${source.title}-${source.period}`}>
-                    Source: {source.title} ({source.period}){source.isSample ? " — demo/proxy" : ""}
+                    Source: {source.url ? (
+                      <a href={source.url} target="_blank" rel="noreferrer" className="underline">{source.title}</a>
+                    ) : source.title} ({source.period}){source.isSample ? " — demo/proxy" : ""}
                   </li>
                 ))}
               </ul>
