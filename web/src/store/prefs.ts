@@ -7,5 +7,5 @@ interface Prefs {
   set: (p: Partial<Omit<Prefs, "set">>) => void;
 }
 export const usePrefs = create<Prefs>()(
-  persist((set) => ({ theme: "system", contrast: false, motion: "system", textScale: 1, set: (p) => set(p) }), { name: "raw-prefs" }),
+  persist((set) => ({ theme: "light", contrast: false, motion: "system", textScale: 1, set: (p) => set(p) }), { name: "raw-prefs" }),
 );
