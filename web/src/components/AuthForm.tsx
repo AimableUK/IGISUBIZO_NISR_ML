@@ -53,7 +53,7 @@ function BrandPanel() {
         <p className="mt-3 text-[#CFFFDC]/90">{p.body}</p>
         <ul className="mt-6 space-y-3">
           {p.points.map((x, i) => {
-            const Icon = POINT_ICONS[i];
+            const Icon = POINT_ICONS[i] ?? Sprout;
             return (
               <li key={x} className="flex items-center gap-3 text-sm">
                 <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#CFFFDC]/15 text-[#CFFFDC]">

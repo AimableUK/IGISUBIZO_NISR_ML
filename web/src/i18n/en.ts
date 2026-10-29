@@ -823,6 +823,23 @@ export const en = {
         "We could not reach the server. Check your connection and try again.",
     },
   },
+  header: {
+    homeLabel: "Mboni home",
+    logoAlt: "Mboni logo",
+    navMain: "Main",
+    navMobile: "Mobile",
+    newAnalysis: "New analysis",
+    history: "History",
+    settings: "Settings",
+    about: "About",
+    methodology: "Methodology",
+    contact: "Contact",
+    signOut: "Sign out",
+    signIn: "Sign in",
+    createAccount: "Create account",
+    openMenu: "Open menu",
+    closeMenu: "Close menu",
+  },
 };
 
 export type Dict = typeof en;

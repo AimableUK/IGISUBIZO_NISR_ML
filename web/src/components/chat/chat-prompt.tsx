@@ -3,6 +3,8 @@
 import {
   useEffect,
   useId,
+  useLayoutEffect,
+  useRef,
   useState,
   type FormEvent,
   type KeyboardEvent,
@@ -20,6 +22,13 @@ type MboniPromptProps = {
   className?: string;
 };
 
+// Runs before paint in the browser so the box never flashes at the wrong height.
+const useIsoLayoutEffect =
+  typeof window !== "undefined" ? useLayoutEffect : useEffect;
+
+// The box starts as one row and grows with the text up to this height, then scrolls.
+const MAX_INPUT_HEIGHT = 168;
+
 export default function MboniPrompt({
   onSubmit,
   initial = "",
@@ -30,6 +39,7 @@ export default function MboniPrompt({
   const id = useId();
   const t = useT();
   const labels = t.mboniPrompt;
+  const inputRef = useRef<HTMLTextAreaElement>(null);
 
   const [question, setQuestion] = useState(initial);
   const [voiceMessage, setVoiceMessage] = useState("");
@@ -39,6 +49,14 @@ export default function MboniPrompt({
   useEffect(() => {
     setQuestion(initial);
   }, [initial]);
+
+  // Auto-grow: measure the content, then set the height. Shrinks again when text is cleared.
+  useIsoLayoutEffect(() => {
+    const el = inputRef.current;
+    if (!el) return;
+    el.style.height = "auto";
+    el.style.height = `${Math.min(el.scrollHeight, MAX_INPUT_HEIGHT)}px`;
+  }, [question]);
 
   const isBusy = busy || submitting;
   const canSubmit = question.trim().length >= 3 && !isBusy;
@@ -80,42 +98,42 @@ export default function MboniPrompt({
       </h2>
 
       <form onSubmit={submit} className="w-full">
-        <div className="relative rounded-[24px] border border-line bg-surface p-3 shadow-lg transition-colors focus-within:border-primary sm:p-4">
+        {/* One row: mic, input, send. items-end keeps the buttons at the bottom as the input grows. */}
+        <div className="flex items-end gap-2 rounded-3xl border border-line bg-surface p-2 shadow-lg transition-colors focus-within:border-primary sm:gap-3 sm:p-2.5">
+          <VoiceButton
+            onTranscript={(transcript) => setQuestion(transcript)}
+            onMessage={setVoiceMessage}
+          />
+
           <label htmlFor={id} className="sr-only">
             {labels.inputLabel}
           </label>
 
           <textarea
+            ref={inputRef}
             id={id}
-            rows={2}
+            rows={1}
             value={question}
             onChange={(event) => setQuestion(event.target.value)}
             onKeyDown={handleKeyDown}
             maxLength={500}
             disabled={isBusy}
             placeholder={labels.placeholder}
-            className="w-full resize-none rounded-lg bg-transparent px-3 py-2 text-lg outline-none ring-0 focus:outline-none focus:ring-0 focus-visible:outline-none focus-visible:ring-0 placeholder:text-muted"
+            className="min-h-[44px] flex-1 resize-none overflow-y-auto bg-transparent px-2 py-[10px] text-base leading-6 outline-none ring-0 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden placeholder:text-muted focus:outline-none focus:ring-0 focus-visible:outline-none focus-visible:ring-0 sm:text-lg sm:leading-6"
           />
 
-          <div className="mt-2 flex items-center justify-between gap-3">
-            <VoiceButton
-              onTranscript={(transcript) => setQuestion(transcript)}
-              onMessage={setVoiceMessage}
-            />
-
-            <button
-              type="submit"
-              disabled={!canSubmit}
-              aria-label={labels.send}
-              className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary text-on-primary transition-opacity hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-40"
-            >
-              {isBusy ? (
-                <Loader2 className="h-5 w-5 animate-spin" aria-hidden />
-              ) : (
-                <ArrowUp className="h-5 w-5" aria-hidden />
-              )}
-            </button>
-          </div>
+          <button
+            type="submit"
+            disabled={!canSubmit}
+            aria-label={labels.send}
+            className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-primary text-on-primary transition-opacity hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-40"
+          >
+            {isBusy ? (
+              <Loader2 className="h-5 w-5 animate-spin" aria-hidden />
+            ) : (
+              <ArrowUp className="h-5 w-5" aria-hidden />
+            )}
+          </button>
         </div>
       </form>
 

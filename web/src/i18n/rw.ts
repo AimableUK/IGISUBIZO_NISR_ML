@@ -724,7 +724,6 @@ export const rw: Dict = {
     fewerExamples: "Gabanya",
   },
 
-  // ── paste inside `export const rw: Dict = { ... }` in rw.ts ──
   auth: {
     panel: {
       title: "Baza ibibazo ku ibarurishamibare ry’u Rwanda",
@@ -798,5 +797,23 @@ export const rw: Dict = {
       network:
         "Ntitwashoboye kugera kuri seriveri. Reba umuyoboro wawe ukongera ugerageze.",
     },
+  },
+
+  header: {
+    homeLabel: "Ahabanza ha Mboni",
+    logoAlt: "Ikirango cya Mboni",
+    navMain: "Ibikuru",
+    navMobile: "Kuri telefone",
+    newAnalysis: "Isesengura rishya",
+    history: "Amateka",
+    settings: "Igenamiterere",
+    about: "Abo turi bo",
+    methodology: "Uburyo dukoresha",
+    contact: "Twandikire",
+    signOut: "Sohoka",
+    signIn: "Injira",
+    createAccount: "Fungura konti",
+    openMenu: "Fungura menu",
+    closeMenu: "Funga menu",
   },
 };

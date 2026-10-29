@@ -75,29 +75,32 @@ export default function Landing() {
     <>
       {/* ------------- Hero ------------- */}
       <section className="relative isolate overflow-hidden bg-[#253D2C] text-white">
+        {/* Landscape: sky, volcanoes, sun, terraced hills */}
         <div className="absolute inset-0 -z-20">
           <HeroScene label={h.hero.sceneLabel} />
         </div>
-
+      
+        {/* Your original scrim */}
         <div
           aria-hidden
           className="absolute inset-0 -z-10 bg-gradient-to-b from-[#253D2C]/80 via-[#253D2C]/30 to-transparent lg:bg-gradient-to-r lg:from-[#253D2C]/85 lg:via-[#253D2C]/40 lg:to-transparent"
         />
-
+      
+        {/* Bamboo: big grove on the right, small one on the left */}
         <BambooGrove
           mirror
           className="pointer-events-none absolute bottom-0 right-0 -z-10 h-[62%] w-auto opacity-50 sm:h-[88%] sm:opacity-100"
         />
-
         <BambooGrove className="pointer-events-none absolute bottom-0 left-0 -z-10 hidden h-[36%] w-auto lg:block" />
-
-        <div className="mx-auto flex min-h-[760px] max-w-[1400px] flex-col px-4 pb-28 pt-6 sm:px-6 lg:min-h-[850px] lg:pb-32">
-          {/* Hero heading and CTA */}
+      
+        {/* Content */}
+        <div className="mx-auto flex min-h-[780px] max-w-[1400px] flex-col px-4 pb-24 pt-10 sm:px-6 lg:min-h-[900px] lg:pb-28">
+          {/* Headline: takes the free space and centers itself in it */}
           <motion.div
             variants={container}
             initial={reduce ? false : "hidden"}
             animate="show"
-            className="my-auto max-w-[44rem] py-12"
+            className="mx-auto flex max-w-[46rem] flex-1 flex-col items-center justify-center py-16 text-center"
           >
             <motion.h1
               variants={item}
@@ -105,40 +108,27 @@ export default function Landing() {
             >
               {h.hero.title}
             </motion.h1>
-
+      
             <motion.p
               variants={item}
-              className="mt-6 max-w-[54ch] text-lg text-white/90 sm:text-xl"
+              className="mx-auto mt-5 max-w-[48ch] text-lg text-white/90 sm:text-xl"
             >
               {h.hero.lead}
             </motion.p>
-
-            <motion.div variants={item} className="mt-8 flex flex-wrap gap-3">
-              <Link href={href()} className={CTA_PRIMARY}>
-                {h.hero.primary}
-              </Link>
-
-              <a href="#data" className={CTA_SECONDARY}>
-                {h.hero.secondary}
-              </a>
-            </motion.div>
           </motion.div>
-
-          {/* Mboni prompt */}
+      
+          {/* Prompt: pinned to the bottom */}
           <motion.div
             initial={reduce ? false : { opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{
-              duration: reduce ? 0 : 0.5,
-              delay: reduce ? 0 : 0.25,
-            }}
-            className="mx-auto mb-8 w-full max-w-[850px] sm:mb-10"
+            transition={{ duration: reduce ? 0 : 0.5, delay: reduce ? 0 : 0.25 }}
+            className="mx-auto w-full max-w-[850px] pt-10 text-center"
           >
             <MboniPrompt
               onSubmit={go}
               showExamples
               className={[
-                "[&_h2]:text-white",
+                "[&_h2]:sr-only",
                 "[&_textarea]:text-white",
                 "[&_textarea]:placeholder:text-white/60",
                 "[&_form>div]:border-white/20",
@@ -148,12 +138,20 @@ export default function Landing() {
                 "[&_button]:border-white/25",
                 "[&_button:hover]:border-white/50",
                 "[&_button:hover]:bg-white/10",
+                "[&_button[aria-expanded]]:text-white", // "Show more / Show less" and its arrow
               ].join(" ")}
             />
+      
+            <a
+              href="#data"
+              className="mt-3 inline-flex min-h-[44px] items-center text-sm text-[#CFFFDC] underline underline-offset-4 hover:text-white"
+            >
+              {h.hero.secondary}
+            </a>
           </motion.div>
         </div>
-
-        {/* Bottom transition */}
+      
+        {/* Bottom transition into the page */}
         <svg
           viewBox="0 0 1440 120"
           preserveAspectRatio="none"

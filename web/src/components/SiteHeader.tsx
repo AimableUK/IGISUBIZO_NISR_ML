@@ -16,21 +16,28 @@ import Image from "next/image";
 import AccessibilityMenu from "./AccessibilityMenu";
 import LanguageSwitcher from "./marketing/LanguageSwitcher";
 import { signOut, useSession } from "@/lib/auth-client";
+import { useT } from "@/i18n";
 
 export function Logo() {
+  const h = useT().header;
   return (
     <Link
       href="/"
       className="flex items-center gap-2.5 font-display text-xl font-semibold"
-      aria-label="Mboni home"
+      aria-label={h.homeLabel}
     >
-      <Image src="/logo.png" alt="Mboni Logo" width={60} height={60} />
+      <Image src="/logo.png" alt={h.logoAlt} width={60} height={60} />
       Mboni
     </Link>
   );
 }
 
+// Same look for every row in the mobile menu: plain row, background on hover and press.
+const MOBILE_ROW =
+  "flex min-h-[44px] w-full items-center gap-2 rounded-lg px-3 text-left font-medium hover:bg-surface2 active:bg-tint active:text-on-tint";
+
 export default function SiteHeader() {
+  const h = useT().header;
   const { data: session } = useSession();
   const path = usePathname();
   const router = useRouter();
@@ -42,18 +49,14 @@ export default function SiteHeader() {
 
   const links = session
     ? [
-        {
-          href: "/workspace",
-          label: "New analysis",
-          Icon: LayoutDashboard,
-        },
-        { href: "/history", label: "History", Icon: History },
-        { href: "/settings", label: "Settings", Icon: Settings },
+        { href: "/workspace", label: h.newAnalysis, Icon: LayoutDashboard },
+        { href: "/history", label: h.history, Icon: History },
+        { href: "/settings", label: h.settings, Icon: Settings },
       ]
     : [
-        { href: "/about", label: "About" },
-        { href: "/methodology", label: "Methodology" },
-        { href: "/contact", label: "Contact" },
+        { href: "/about", label: h.about },
+        { href: "/methodology", label: h.methodology },
+        { href: "/contact", label: h.contact },
       ];
 
   const cur = (href: string) =>
@@ -111,7 +114,10 @@ export default function SiteHeader() {
       <div className="mx-auto flex h-16 max-w-[1400px] items-center justify-between gap-4 px-4 sm:px-6">
         <Logo />
 
-        <nav aria-label="Main" className="hidden items-center gap-1 md:flex">
+        <nav
+          aria-label={h.navMain}
+          className="hidden items-center gap-1 md:flex"
+        >
           {links.map((link) => (
             <Link
               key={link.href}
@@ -130,7 +136,7 @@ export default function SiteHeader() {
         <div className="flex items-center gap-1">
           <AccessibilityMenu />
 
-          {/* Language selector is visible here on desktop only. */}
+          {/* Below md the language switcher, sign in and create account all live in the menu. */}
           <div className="hidden md:block">
             <LanguageSwitcher />
           </div>
@@ -141,18 +147,18 @@ export default function SiteHeader() {
               onClick={handleSignOut}
             >
               <LogOut className="h-4 w-4" aria-hidden />
-              Sign out
+              {h.signOut}
             </button>
           ) : (
             <>
-              <Link href="/login" className="btn hidden sm:inline-flex">
-                Sign in
+              <Link href="/login" className="btn hidden md:inline-flex">
+                {h.signIn}
               </Link>
               <Link
                 href="/signup"
-                className="btn btn-primary hidden sm:inline-flex"
+                className="btn btn-primary hidden md:inline-flex"
               >
-                Create account
+                {h.createAccount}
               </Link>
             </>
           )}
@@ -161,7 +167,7 @@ export default function SiteHeader() {
             className="btn-icon md:hidden"
             aria-expanded={open}
             aria-controls="mobile-nav"
-            aria-label={open ? "Close menu" : "Open menu"}
+            aria-label={open ? h.closeMenu : h.openMenu}
             onClick={() => setOpen((previous) => !previous)}
           >
             {open ? (
@@ -176,7 +182,7 @@ export default function SiteHeader() {
       {open && (
         <nav
           id="mobile-nav"
-          aria-label="Mobile"
+          aria-label={h.navMobile}
           className="border-t border-line bg-bg px-4 py-3 md:hidden"
         >
           <ul className="space-y-1">
@@ -186,7 +192,7 @@ export default function SiteHeader() {
                   href={link.href}
                   onClick={closeMenu}
                   aria-current={cur(link.href)}
-                  className="flex min-h-[44px] items-center gap-2 rounded-lg px-3 font-medium hover:bg-surface2 aria-[current=page]:bg-tint aria-[current=page]:text-on-tint"
+                  className={`${MOBILE_ROW} aria-[current=page]:bg-tint aria-[current=page]:text-on-tint`}
                 >
                   {"Icon" in link && link.Icon && (
                     <link.Icon className="h-4 w-4" aria-hidden />
@@ -196,19 +202,15 @@ export default function SiteHeader() {
               </li>
             ))}
 
-            {/* Language selector appears inside the mobile menu. */}
             <li className="px-3 py-2">
               <LanguageSwitcher />
             </li>
 
             {session ? (
               <li>
-                <button
-                  className="flex min-h-[44px] w-full items-center gap-2 rounded-lg px-3 font-medium hover:bg-surface2"
-                  onClick={handleSignOut}
-                >
+                <button className={MOBILE_ROW} onClick={handleSignOut}>
                   <LogOut className="h-4 w-4" aria-hidden />
-                  Sign out
+                  {h.signOut}
                 </button>
               </li>
             ) : (
@@ -217,18 +219,18 @@ export default function SiteHeader() {
                   <Link
                     href="/login"
                     onClick={closeMenu}
-                    className="flex min-h-[44px] items-center rounded-lg px-3 font-medium hover:bg-surface2"
+                    className={MOBILE_ROW}
                   >
-                    Sign in
+                    {h.signIn}
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="/signup"
                     onClick={closeMenu}
-                    className="flex min-h-[44px] items-center rounded-lg px-3 font-medium hover:bg-surface2"
+                    className={MOBILE_ROW}
                   >
-                    Create account
+                    {h.createAccount}
                   </Link>
                 </li>
               </>
