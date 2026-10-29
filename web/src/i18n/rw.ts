@@ -16,7 +16,7 @@ export const rw: Dict = {
     startChatting: "Tangira kuganira",
     exploreData: "Reba amakuru",
     readDocs: "Soma imfashanyigisho",
-    demoBadge: "Amakuru y’icyitegererezo",
+    demoBadge: "Amakuru ya NISR",
     onThisPage: "Kuri uru rupapuro",
     lastUpdated: "Ivugururwa rya nyuma",
     nisrBuilt: "Ryakozwe ku bw’irushanwa rya NISR Big Data Hackathon 2026",
@@ -24,25 +24,37 @@ export const rw: Dict = {
   },
 
   footer: {
-    tagline: "Baza ibibazo ku ibarurishamibare ry’u Rwanda ubone ibishushanyo, imbonerahamwe n’amakarita ushobora kugenzura.",
-    demoNote: "Ibisubizo by’ubu bikoresha amakuru y’icyitegererezo akurikije ibyiciro bya NISR. Si imibare y’ibarurishamibare yemewe.",
-    unofficial: "Isesengura ryakozwe ku bw’irushanwa rya NISR Big Data Hackathon 2026. Si serivisi ya NISR yemewe.",
+    tagline:
+      "Baza ibibazo ku ibarurishamibare ry’u Rwanda ubone ibishushanyo, imbonerahamwe n’amakarita ushobora kugenzura.",
+    demoNote:
+      "Ibisubizo bibarwa hakoreshejwe amakuru ya NISR n’andi makuru rusange. Buri gisubizo kivuga aho amakuru yavuye, igihe n’ibyo kirimo.",
+    unofficial:
+      "Isesengura ryakozwe ku bw’irushanwa rya NISR Big Data Hackathon 2026. Si serivisi ya NISR yemewe.",
     rights: "© 2026 Isesengura",
     groups: [
-      { title: "Igikoresho", links: [
-        { href: "/docs", label: "Imfashanyigisho" },
-        { href: "/methodology", label: "Uburyo dukoresha" },
-        { href: "/ai-transparency", label: "Ubusobanuro kuri AI" },
-      ] },
-      { title: "Ibyerekeye twe", links: [
-        { href: "/about", label: "Abo turi bo" },
-        { href: "/contact", label: "Twandikire" },
-      ] },
-      { title: "Amategeko", links: [
-        { href: "/privacy", label: "Politiki y’ubuzima bwite" },
-        { href: "/terms", label: "Amabwiriza yo gukoresha" },
-        { href: "/accessibility", label: "Kugerwaho n’abantu bose" },
-      ] },
+      {
+        title: "Igikoresho",
+        links: [
+          { href: "/docs", label: "Imfashanyigisho" },
+          { href: "/methodology", label: "Uburyo dukoresha" },
+          { href: "/ai-transparency", label: "Ubusobanuro kuri AI" },
+        ],
+      },
+      {
+        title: "Ibyerekeye twe",
+        links: [
+          { href: "/about", label: "Abo turi bo" },
+          { href: "/contact", label: "Twandikire" },
+        ],
+      },
+      {
+        title: "Amategeko",
+        links: [
+          { href: "/privacy", label: "Politiki y’ubuzima bwite" },
+          { href: "/terms", label: "Amabwiriza yo gukoresha" },
+          { href: "/accessibility", label: "Kugerwaho n’abantu bose" },
+        ],
+      },
     ],
   },
 
@@ -53,8 +65,10 @@ export const rw: Dict = {
       lead: "Urashaka guhitamo umwuga, gutangiza ubucuruzi, cyangwa kwigira ku byahise by’u Rwanda? Baza mu magambo yoroshye. Isesengura rikwereka ibyo imibare ivuga, hamwe n’aho amakuru yavuye ushobora kugenzura.",
       primary: "Tangira kuganira",
       secondary: "Reba amakuru",
-      demoNote: "Ubu hakoreshwa amakuru y’icyitegererezo akurikije ibyiciro bya NISR. Si imibare yemewe.",
-      sceneLabel: "Igishushanyo cy’imisozi y’icyatsi y’u Rwanda, ibirunga n’imigano mu rukerera",
+      demoNote:
+        "Rishingiye ku makuru ya NISR n’andi makuru rusange. Buri gisubizo kigaragaza aho amakuru yavuye.",
+      sceneLabel:
+        "Igishushanyo cy’imisozi y’icyatsi y’u Rwanda, ibirunga n’imigano mu rukerera",
     },
     paths: {
       title: "Icyo wakoresha Isesengura",
@@ -67,9 +81,20 @@ export const rw: Dict = {
           body: "Gereranya amasomo ukoresheje imibare y’abiyandikisha, abarangiza, abakorera akazi n’imishahara, ubundi urebe ubumenyi bujyanye n’ubwoko bw’imirimo.",
           hint: "Rikwereka ibimenyetso n’ibyo wunguka cyangwa ukwiye kwitondera. Ntirikwizeza akazi kandi ntirifata icyemezo mu mwanya wawe.",
           examples: [
-            { label: "Ni ayahe masomo atuma abarangije imibare ikoreshwa babona akazi?", q: "Which study programme is best for an applied mathematics graduate?" },
-            { label: "Imirimo yahindutse ite mu nzego zitandukanye uko imyaka yagiye ihita?", q: "Show employment trends by sector" },
-            { label: "Ni he ubushomeri bw’urubyiruko buri hejuru cyane?", q: "Which districts have the highest youth NEET rate?" },
+            {
+              label:
+                "Ni ayahe masomo atuma abarangije imibare ikoreshwa babona akazi?",
+              q: "Which study programme is best for an applied mathematics graduate?",
+            },
+            {
+              label:
+                "Imirimo yahindutse ite mu nzego zitandukanye uko imyaka yagiye ihita?",
+              q: "Show employment trends by sector",
+            },
+            {
+              label: "Ni he ubushomeri bw’urubyiruko buri hejuru cyane?",
+              q: "Which districts have the highest youth NEET rate?",
+            },
           ] as Example[],
         },
         {
@@ -78,8 +103,14 @@ export const rw: Dict = {
           body: "Reba umubare w’ibigo by’ubucuruzi mu nzego no mu turere, uko ubukungu bwo mu gace buhinduka, n’uko abaturage n’ingo bimeze.",
           hint: "Umubare w’ubucuruzi gusa ntiwemeza ko ahantu hazagenda neza. Reba n’abakiriya n’ibiciro.",
           examples: [
-            { label: "Erekana ibigo by’ubucuruzi ukurikije urwego n’akarere", q: "Show establishments by sector and district" },
-            { label: "Ni utuhe turere dufite ubukene buri hejuru?", q: "Which districts have the highest poverty rate?" },
+            {
+              label: "Erekana ibigo by’ubucuruzi ukurikije urwego n’akarere",
+              q: "Show establishments by sector and district",
+            },
+            {
+              label: "Ni utuhe turere dufite ubukene buri hejuru?",
+              q: "Which districts have the highest poverty rate?",
+            },
           ] as Example[],
         },
         {
@@ -88,7 +119,10 @@ export const rw: Dict = {
           body: "Gereranya umusaruro w’ibihingwa mu turere no mu bihembwe, ubirebane n’ibipimo by’ibiribwa.",
           hint: "Umusaruro w’ahahise werekana uko byagenze, ntuvuga ibizaba mu murima wawe.",
           examples: [
-            { label: "Ni ibihe bihingwa byeze cyane mu turere?", q: "Which crops have the highest yield by district?" },
+            {
+              label: "Ni ibihe bihingwa byeze cyane mu turere?",
+              q: "Which crops have the highest yield by district?",
+            },
           ] as Example[],
         },
         {
@@ -97,8 +131,14 @@ export const rw: Dict = {
           body: "Kurikirana ikimenyetso icyo ari cyo cyose uko imyaka ihita, gereranya uturere, kandi urebe aho amakuru adahagije.",
           hint: "Ibintu bibiri byiyongera icyarimwe ntibyemeza ko kimwe cyateye ikindi.",
           examples: [
-            { label: "Erekana uko abaturage biyongereye uko imyaka ihita", q: "Show population trend over the years" },
-            { label: "Gereranya uturere ku bijyanye n’akazi kadahagije", q: "Compare districts on underemployment" },
+            {
+              label: "Erekana uko abaturage biyongereye uko imyaka ihita",
+              q: "Show population trend over the years",
+            },
+            {
+              label: "Gereranya uturere ku bijyanye n’akazi kadahagije",
+              q: "Compare districts on underemployment",
+            },
           ] as Example[],
         },
       ],
@@ -106,46 +146,95 @@ export const rw: Dict = {
     ask: {
       title: "Cyangwa baza ikibazo cyawe",
       label: "Ikibazo cyawe",
-      placeholder: "Urugero: Ni utuhe turere dufite ubushomeri bw’urubyiruko buri hejuru?",
+      placeholder:
+        "Urugero: Ni utuhe turere dufite ubushomeri bw’urubyiruko buri hejuru?",
       button: "Baza",
     },
     how: {
       title: "Uko ikibazo gihinduka umwanya w’isesengura",
       lead: "Nta mabwiriza yo kwandika, nta mbonerahamwe ugomba gukora. Intambwe enye.",
       steps: [
-        { t: "Baza", d: "Andika ikibazo cyawe mu magambo yoroshye, cyangwa ukoreshe ijwi niba ubishaka." },
-        { t: "Kubara", d: "Porogaramu y’ibarurishamibare ibara imibare. AI ntihimba imibare." },
-        { t: "Reba", d: "Ubona ibishushanyo, imbonerahamwe, amakarita n’ibisobanuro bigufi ku rupapuro rumwe." },
-        { t: "Genzura ubike", d: "Fungura aho amakuru yavuye n’imbogamizi zayo, uhindure imiterere, ubundi ubike isesengura kugira ngo uzarifungure ukundi." },
+        {
+          t: "Baza",
+          d: "Andika ikibazo cyawe mu magambo yoroshye, cyangwa ukoreshe ijwi niba ubishaka.",
+        },
+        {
+          t: "Kubara",
+          d: "Porogaramu y’ibarurishamibare ibara imibare. AI ntihimba imibare.",
+        },
+        {
+          t: "Reba",
+          d: "Ubona ibishushanyo, imbonerahamwe, amakarita n’ibisobanuro bigufi ku rupapuro rumwe.",
+        },
+        {
+          t: "Genzura ubike",
+          d: "Fungura aho amakuru yavuye n’imbogamizi zayo, uhindure imiterere, ubundi ubike isesengura kugira ngo uzarifungure ukundi.",
+        },
       ],
     },
     data: {
       title: "Sura amakuru ashingiyeho ibisubizo",
       lead: "Isesengura rishingiye ku nzego z’ingenzi z’ibarurishamibare ry’iterambere ry’u Rwanda.",
-      statusTitle: "Amakuru y’icyitegererezo",
-      statusBody: "Ibisubizo byinshi by’ubu bikoresha amakuru yakozwe agendeye ku byiciro bya NISR, kugira ngo igikoresho gishobore kugeragezwa. Ibibazo ku musaruro w’ibihingwa bikoresha imbonerahamwe NISR yatangaje. Buri gisubizo kivuga ubwoko bw’amakuru gikoresha. Ntukoreshe ibisubizo by’icyitegererezo mu byemezo nyabyo.",
+      statusTitle: "Aho amakuru aturuka",
+      statusBody:
+        "Ibisubizo bibarwa hakoreshejwe amakuru yatangajwe na NISR n’andi masoko rusange, harimo NISR Microdata Catalog, PxWeb n’urubuga rusange rw’amakuru y’u Rwanda (Rwanda Data Sharing Platform). Buri gisubizo kivuga aho amakuru yavuye, igihe n’ibyo kirimo, kandi amakuru ntareshya hagati y’amasoko.",
       topics: [
-        { t: "Umurimo n’akazi", d: "Abafite akazi, abashomeri n’abafite akazi kadahagije, ukurikije imyaka, igitsina n’akarere." },
-        { t: "Uburezi n’ubumenyi", d: "Abiga, abarangiza, ibizamini n’amahugurwa y’imyuga." },
-        { t: "Ubuhinzi n’ibiribwa", d: "Umusaruro w’ibihingwa, ifumbire n’ibindi bikoresho, n’ubwizigame bw’ibiribwa." },
-        { t: "Ubukene n’ingo", d: "Imibereho y’ingo n’uko abantu babayeho mu duce dutandukanye." },
-        { t: "Serivisi z’imari", d: "Uko abantu bagerwaho na serivisi z’imari n’uko bazikoresha." },
-        { t: "Ubuzima n’abaturage", d: "Imiterere y’abaturage n’ibipimo by’ubuzima by’abaturage muri rusange." },
-        { t: "Ibikorwa by’ubucuruzi", d: "Ibigo by’ubucuruzi ukurikije urwego n’aho biherereye, n’uko bihinduka." },
-        { t: "Kugerwaho na serivisi", d: "Amashanyarazi, amazi, isuku n’itumanaho, aho byapimwe." },
+        {
+          t: "Umurimo n’akazi",
+          d: "Abafite akazi, abashomeri n’abafite akazi kadahagije, ukurikije imyaka, igitsina n’akarere.",
+        },
+        {
+          t: "Uburezi n’ubumenyi",
+          d: "Abiga, abarangiza, ibizamini n’amahugurwa y’imyuga.",
+        },
+        {
+          t: "Ubuhinzi n’ibiribwa",
+          d: "Umusaruro w’ibihingwa, ifumbire n’ibindi bikoresho, n’ubwizigame bw’ibiribwa.",
+        },
+        {
+          t: "Ubukene n’ingo",
+          d: "Imibereho y’ingo n’uko abantu babayeho mu duce dutandukanye.",
+        },
+        {
+          t: "Serivisi z’imari",
+          d: "Uko abantu bagerwaho na serivisi z’imari n’uko bazikoresha.",
+        },
+        {
+          t: "Ubuzima n’abaturage",
+          d: "Imiterere y’abaturage n’ibipimo by’ubuzima by’abaturage muri rusange.",
+        },
+        {
+          t: "Ibikorwa by’ubucuruzi",
+          d: "Ibigo by’ubucuruzi ukurikije urwego n’aho biherereye, n’uko bihinduka.",
+        },
+        {
+          t: "Kugerwaho na serivisi",
+          d: "Amashanyarazi, amazi, isuku n’itumanaho, aho byapimwe.",
+        },
       ],
       mapTitle: "Uturere 30, ikarita imwe",
-      mapLead: "Buri kibazo gishingiye ku gace kigaragazwa kuri uru rubuga rw’uturere, rugabanyije mu ntara. Amakuru ntareshya mu turere twose, bityo hari uturere dushobora kuba tutagaragara mu gisubizo.",
+      mapLead:
+        "Buri kibazo gishingiye ku gace kigaragazwa kuri uru rubuga rw’uturere, rugabanyije mu ntara. Amakuru ntareshya mu turere twose, bityo hari uturere dushobora kuba tutagaragara mu gisubizo.",
       mapLabel: "Uturere tw’u Rwanda dushyizwe mu ntara",
     },
     trust: {
       title: "Imibare ushobora kugenzura",
       items: [
-        { t: "Buri mubare ufite aho wavuye", d: "Imibare iva gusa mu bisubizo by’isesengura. Aho amakuru yavuye, uburyo yabazwemo n’imbogamizi biba iruhande rw’umwanya wose." },
-        { t: "Ubishyira uko ubishaka", d: "Hindura ingano, uko bikurikirana n’ubwoko bw’igishushanyo, ubike impinduka. Igisubizo nyirizina ntigihinduka." },
-        { t: "Cyakozwe ku bw’abantu bose", d: "Gukoresha ikibaho gusa, incamake zisomwa n’ibyuma bisoma, imbonerahamwe kuri buri gishushanyo, ibara ryerekana neza, n’ijwi riri ku bushake." },
+        {
+          t: "Buri mubare ufite aho wavuye",
+          d: "Imibare iva gusa mu bisubizo by’isesengura. Aho amakuru yavuye, uburyo yabazwemo n’imbogamizi biba iruhande rw’umwanya wose.",
+        },
+        {
+          t: "Ubishyira uko ubishaka",
+          d: "Hindura ingano, uko bikurikirana n’ubwoko bw’igishushanyo, ubike impinduka. Igisubizo nyirizina ntigihinduka.",
+        },
+        {
+          t: "Cyakozwe ku bw’abantu bose",
+          d: "Gukoresha ikibaho gusa, incamake zisomwa n’ibyuma bisoma, imbonerahamwe kuri buri gishushanyo, ibara ryerekana neza, n’ijwi riri ku bushake.",
+        },
       ],
-      links: "Soma [imfashanyigisho](/docs) cyangwa [uburyo dukoresha](/methodology).",
+      links:
+        "Soma [imfashanyigisho](/docs) cyangwa [uburyo dukoresha](/methodology).",
     },
     cta: {
       title: "Tangira n’ikibazo kimwe",
@@ -172,211 +261,339 @@ export const rw: Dict = {
   about: {
     metaTitle: "Abo turi bo",
     title: "Ibyerekeye Isesengura",
-    intro: "Isesengura ni igikoresho gifasha abantu gusobanukirwa ibarurishamibare rusange ry’u Rwanda no kurikoresha mu byemezo bifatika ku mwuga, ubucuruzi, ubuhinzi no gutegura iterambere ry’abaturage.",
+    intro:
+      "Isesengura ni igikoresho gifasha abantu gusobanukirwa ibarurishamibare rusange ry’u Rwanda no kurikoresha mu byemezo bifatika ku mwuga, ubucuruzi, ubuhinzi no gutegura iterambere ry’abaturage.",
     sections: [
-      { h: "Impamvu twaryubatse", p: [
-        "Ibarurishamibare ryemewe rigirira akamaro iyo abantu bashobora kurisura batiriwe bandika amabwiriza cyangwa bategereje raporo. Chatbot isubiza mu gika kimwe. Ikibaho kidahinduka gisubiza ikibazo kimwe. Isesengura ryubaka umwanya wo gukoreramo ubibaza, kijyanye n’ikibazo wabajije, hanyuma rikakibika.",
-        "Intego si ugufata icyemezo mu mwanya wawe. Ni ukwerekana icyo ibimenyetso bihari bivuga, gereranya amahitamo, gusobanura icyo wunguka n’icyo utakaza, no kwerekana ibibazo bikwiye gusuzumwa neza.",
-      ] },
-      { h: "Ababifashamo", ul: [
-        "**Abanyeshuri n’abarangije amashuri** bashaka kumenya inzira z’amasomo n’imyuga.",
-        "**Abashaka akazi n’abahindura umwuga** bareba uko akazi kameze n’ubumenyi bukenewe.",
-        "**Abashoramari n’abafite ubucuruzi buto** basuzuma ibikorwa by’ubukungu byo mu gace mbere yo gutegura.",
-        "**Abahinzi n’amakoperative** bagereranya uko umusaruro uhagaze n’ingaruka zishoboka.",
-        "**Ingo n’imiryango ikorera mu baturage** ishaka gusobanukirwa ubukene no kugerwaho na serivisi.",
-        "**Abashakashatsi, abarimu n’abanyamakuru** basura amakuru rusange kandi bakayasobanura neza.",
-        "**Abafatanyabikorwa mu iterambere n’inzego za Leta** bagereranya uko uturere tumeze n’ibikenewe mu igenamigambi.",
-      ] },
-      { h: "Icyatuma ritandukana", ul: [
-        "**Ibisubizo n’uburyo bigaragazwa biratandukanye.** Moteri y’isesengura ni yo ibara ibisubizo. Igikoresho gitegura gusa kivuga uko bigaragazwa. Guhindura ubwoko bw’igishushanyo cyangwa imiterere ntibihindura umubare.",
-        "**Nta kode yakozwe na AI ikoreshwa.** AI itanga ibisobanuro bifite imiterere ihamye. Igikoresho kirabigenzura hanyuma kikabishushanya n’ibikoresho byacyo.",
-        "**Akazi karabikwa.** Buri sesengura ribikwa n’imiterere yaryo, aho amakuru yavuye n’amateka y’impinduka.",
-        "**Cyakozwe ngo abantu bose bagikoreshe.** Gukoresha ikibaho, incamake zisomwa n’ibyuma, imbonerahamwe z’amakuru, ibara ryerekana neza n’ijwi riri ku bushake; kwandika buri gihe birashoboka.",
-      ] },
-      { h: "Amahame twiyemeje", ul: [
-        "Ntituzahimba amakuru, imibare, aho yavuye cyangwa urugero rw’icyizere.",
-        "Tugaragaza isoko, igihe, aho amakuru ageze, ibipimo n’ibisobanuro igihe bizwi.",
-        "Tuvuga neza igihe amakuru abura, ashaje, ari make cyane cyangwa adashobora kugereranywa.",
-        "Dutandukanya imibare yabonetse, iyabazwe n’iteganyagihe.",
-        "Tuvuga isano hagati y’ibintu, ntabwo tuvuga icyabiteye keretse igenzura rihagije ribyemeje.",
-        "Turinda ubuzima bwite: ntituzafasha kumenya abantu bashingiye ku makuru arambuye.",
-      ] },
-      { h: "Aho bigeze", p: [
-        "Iri sesengura ryakozwe ku bw’irushanwa rya NISR Big Data Hackathon 2026. Si serivisi ya NISR yemewe, kandi ibisubizo byinshi by’ubu bikoresha amakuru y’icyitegererezo.",
-        "Inyungu zivugwa kuri uru rubuga ni izo twifuza, ntabwo ari ingaruka zapimwe. Ntawavuga ko Isesengura ryongereye akazi, ryazamuye umusaruro cyangwa ryahinduye politiki hatabayeho isuzuma rikwiye.",
-        "Soma [imfashanyigisho](/docs), [uburyo dukoresha](/methodology) na [ubusobanuro kuri AI](/ai-transparency), cyangwa [utwandikire](/contact).",
-      ] },
+      {
+        h: "Impamvu twaryubatse",
+        p: [
+          "Ibarurishamibare ryemewe rigirira akamaro iyo abantu bashobora kurisura batiriwe bandika amabwiriza cyangwa bategereje raporo. Chatbot isubiza mu gika kimwe. Ikibaho kidahinduka gisubiza ikibazo kimwe. Isesengura ryubaka umwanya wo gukoreramo ubibaza, kijyanye n’ikibazo wabajije, hanyuma rikakibika.",
+          "Intego si ugufata icyemezo mu mwanya wawe. Ni ukwerekana icyo ibimenyetso bihari bivuga, gereranya amahitamo, gusobanura icyo wunguka n’icyo utakaza, no kwerekana ibibazo bikwiye gusuzumwa neza.",
+        ],
+      },
+      {
+        h: "Ababifashamo",
+        ul: [
+          "**Abanyeshuri n’abarangije amashuri** bashaka kumenya inzira z’amasomo n’imyuga.",
+          "**Abashaka akazi n’abahindura umwuga** bareba uko akazi kameze n’ubumenyi bukenewe.",
+          "**Abashoramari n’abafite ubucuruzi buto** basuzuma ibikorwa by’ubukungu byo mu gace mbere yo gutegura.",
+          "**Abahinzi n’amakoperative** bagereranya uko umusaruro uhagaze n’ingaruka zishoboka.",
+          "**Ingo n’imiryango ikorera mu baturage** ishaka gusobanukirwa ubukene no kugerwaho na serivisi.",
+          "**Abashakashatsi, abarimu n’abanyamakuru** basura amakuru rusange kandi bakayasobanura neza.",
+          "**Abafatanyabikorwa mu iterambere n’inzego za Leta** bagereranya uko uturere tumeze n’ibikenewe mu igenamigambi.",
+        ],
+      },
+      {
+        h: "Icyatuma ritandukana",
+        ul: [
+          "**Ibisubizo n’uburyo bigaragazwa biratandukanye.** Moteri y’isesengura ni yo ibara ibisubizo. Igikoresho gitegura gusa kivuga uko bigaragazwa. Guhindura ubwoko bw’igishushanyo cyangwa imiterere ntibihindura umubare.",
+          "**Nta kode yakozwe na AI ikoreshwa.** AI itanga ibisobanuro bifite imiterere ihamye. Igikoresho kirabigenzura hanyuma kikabishushanya n’ibikoresho byacyo.",
+          "**Akazi karabikwa.** Buri sesengura ribikwa n’imiterere yaryo, aho amakuru yavuye n’amateka y’impinduka.",
+          "**Cyakozwe ngo abantu bose bagikoreshe.** Gukoresha ikibaho, incamake zisomwa n’ibyuma, imbonerahamwe z’amakuru, ibara ryerekana neza n’ijwi riri ku bushake; kwandika buri gihe birashoboka.",
+        ],
+      },
+      {
+        h: "Amahame twiyemeje",
+        ul: [
+          "Ntituzahimba amakuru, imibare, aho yavuye cyangwa urugero rw’icyizere.",
+          "Tugaragaza isoko, igihe, aho amakuru ageze, ibipimo n’ibisobanuro igihe bizwi.",
+          "Tuvuga neza igihe amakuru abura, ashaje, ari make cyane cyangwa adashobora kugereranywa.",
+          "Dutandukanya imibare yabonetse, iyabazwe n’iteganyagihe.",
+          "Tuvuga isano hagati y’ibintu, ntabwo tuvuga icyabiteye keretse igenzura rihagije ribyemeje.",
+          "Turinda ubuzima bwite: ntituzafasha kumenya abantu bashingiye ku makuru arambuye.",
+        ],
+      },
+      {
+        h: "Aho bigeze",
+        p: [
+          "Iri sesengura ryakozwe ku bw’irushanwa rya NISR Big Data Hackathon 2026, rikoresha amakuru ya NISR n’andi makuru rusange. Ni umushinga wigenga, si serivisi ya NISR yemewe.",
+          "Inyungu zivugwa kuri uru rubuga ni izo twifuza, ntabwo ari ingaruka zapimwe. Ntawavuga ko Isesengura ryongereye akazi, ryazamuye umusaruro cyangwa ryahinduye politiki hatabayeho isuzuma rikwiye.",
+          "Soma [imfashanyigisho](/docs), [uburyo dukoresha](/methodology) na [ubusobanuro kuri AI](/ai-transparency), cyangwa [utwandikire](/contact).",
+        ],
+      },
     ],
   } as DocPage,
 
   docs: {
     metaTitle: "Imfashanyigisho",
     title: "Imfashanyigisho",
-    intro: "Uko ubaza ibibazo, usoma umwanya w’isesengura, no gukoresha Isesengura mu kugira inama ku mwuga, gutangiza ubucuruzi no kwigira ku makuru y’u Rwanda.",
+    intro:
+      "Uko ubaza ibibazo, usoma umwanya w’isesengura, no gukoresha Isesengura mu kugira inama ku mwuga, gutangiza ubucuruzi no kwigira ku makuru y’u Rwanda.",
     updated: "Ukwakira 2026",
     ctaTitle: "Witeguye kugerageza?",
     ctaBody: "Baza ikibazo cya mbere ufungure umwanya w’isesengura.",
     sections: [
-      { id: "start", h: "Gutangira", p: [
-        "Isesengura rigufasha kubaza ibibazo ku ibarurishamibare ry’u Rwanda mu magambo yoroshye. Risubiza rikuzanira umwanya w’isesengura urimo ibishushanyo, imbonerahamwe, amakarita n’ibisobanuro bigufi, hamwe n’aho amakuru yavuye iruhande.",
-        "Rifasha cyane ku bwoko butatu bw’ibibazo: guhitamo umwuga cyangwa amasomo, gutangiza cyangwa kwagura ubucuruzi, no kwigira ku byo amakuru y’u Rwanda yerekana ku byahise.",
-      ], ol: [
-        "Kanda [Tangira kuganira](/workspace) winjire cyangwa ufungure konti.",
-        "Andika ikibazo, cyangwa uhitemo kimwe mu bibazo by’ingero biri ku rupapuro rwa mbere.",
-        "Soma umwanya w’isesengura, ufungure aho amakuru yavuye n’imbogamizi zayo, ubundi ubike niba ushaka kuzagaruka.",
-      ] },
-      { id: "questions", h: "Kubaza neza", p: [
-        "Isesengura rikora neza iyo ubajije ikibazo cyihariye kivuga ingingo, ahantu cyangwa igihe. Amagambo yoroshye arahagije.",
-      ], ul: [
-        "**Kiragutse cyane:** “Mbwira ku kazi.” **Ni byiza kuvuga:** “Imirimo yahindutse ite mu nzego zitandukanye uko imyaka yagiye ihita?”",
-        "**Kiragutse cyane:** “Ubuhinzi ni bwiza?” **Ni byiza kuvuga:** “Ni ibihe bihingwa byeze cyane mu turere?”",
-        "**Kiragutse cyane:** “Nafungura iduka he?” **Ni byiza kuvuga:** “Erekana ibigo by’ubucuruzi ukurikije urwego n’akarere.”",
-      ] },
-      { id: "unclear", h: "Iyo ikibazo kitumvikanye", p: [
-        "Ibibazo bicyurwa hakurikijwe amategeko, ntibikekwa. Iyo ikibazo kidasobanutse, umwanya w’isesengura uvuga icyo wumvise cyangwa ukakusaba kugabanya. Gerageza ikibazo kigufi kivuga ingingo imwe kandi, niba ubishoboye, ahantu cyangwa igihe kimwe.",
-      ] },
-      { id: "career", h: "Inama ku mwuga n’amasomo", p: [
-        "Koresha Isesengura urenze umubare umwe w’ingenzi. Rishobora kugereranya amasomo ukoresheje imibare y’abiyandikisha, abarangiza, abakorera akazi n’imishahara, no guhuza ubumenyi nk’imibare ikoreshwa n’inzego, imirimo n’ahantu.",
-        "Ushobora no gusura imibare y’akazi n’akazi kadahagije ukurikije imyaka, igitsina, akarere n’urwego, n’urubyiruko rudakora, ruticaye mu ishuri cyangwa mu mahugurwa, aho amakuru abishobora.",
-        "**Ibyo ritazakora:** kwizeza ko umwuga uzakuzanira akazi, gufata imyanya y’akazi yamamajwe nk’isoko ry’umurimo ryose, cyangwa kukubwira amahitamo akubereye kurusha ayandi. Urutonde rwerekana uko amahitamo agereranywa ku bipimo watoranyije. Icyemezo ni icyawe.",
-      ] },
-      { id: "business", h: "Gutangiza cyangwa kwagura ubucuruzi", p: [
-        "Mbere yo gutegura ubucuruzi, bifasha gusobanukirwa ubukungu bwo mu gace. Isesengura rishobora kwerekana umubare w’ibigo by’ubucuruzi ukurikije urwego n’akarere, uko wahindutse, n’uko ibipimo by’abaturage, ubukene no kugerwaho na serivisi bimeze hafi yaho.",
-        "**Ibyo ritazakora:** umubare w’ubucuruzi n’abaturage gusa ntibyerekana ko ahantu hakwiye ubucuruzi. Ugikeneye amakuru agezweho ku bakiriya, abo mupiganwa, ubukode, ibiciro, amabwiriza n’abaguzi.",
-      ] },
-      { id: "agriculture", h: "Ubuhinzi n’ubwizigame bw’ibiribwa", p: [
-        "Gereranya umusaruro w’ibihingwa mu turere no mu bihembwe, ubirebane n’ibipimo by’ubwizigame bw’ibiribwa.",
-        "**Ibyo ritazakora:** ibyahise ntibishobora kukubwira igihingwa ugomba guhinga. Ikirere, ubutaka, amazi, ibiciro, ibikoresho, amasoko n’uburambe bwawe byose bifite uruhare. Iteganyagihe ryose rivugwa nk’ikigereranyo, ntabwo ari isezerano.",
-      ] },
-      { id: "past", h: "Kwigira ku mateka y’u Rwanda", p: [
-        "Ibibazo byinshi mu by’ukuri bivuga ku mpinduka. Saba ikimenyetso uko imyaka ihita urebe icyerekezo cyacyo, gereranya uturere, cyangwa urebe uko ibimenyetso byinshi bigendana.",
-        "Ibimenyetso bibiri byiyongera icyarimwe bivugwa nk’isano gusa. Isesengura ntirivuga ko kimwe cyateye ikindi. Iteganyagihe ry’akazi mu nzego rikoresha icyerekezo kigororotse n’ibipimo by’iteganyagihe bya 95%, byageragerejwe ku myaka itakoreshejwe mu kwiga.",
-      ] },
-      { id: "results", h: "Gusoma igisubizo", ul: [
-        "**Imibare y’ingenzi** itanga imibare nyamukuru y’ikibazo cyawe.",
-        "**Ibishushanyo** byerekana ibyerekezo, uko ibintu bigabanyijwe cyangwa ibigereranyo. Buri gishushanyo gifite incamake y’inyandiko n’imbonerahamwe y’imibare nyayo.",
-        "**Amakarita** ashushanya uturere ku ikarita y’uduce tungana, kugira ngo buri karere kagaragare neza.",
-        "**Ibisobanuro** bivuga uko ibintu bimeze nyamukuru mu mvugo yoroshye.",
-        "**Aho amakuru yavuye n’imbogamizi** bivuga aho amakuru yavuye, ibyabazwe, n’aho bigarukira ugomba kwibuka.",
-        "**Ubwoko bw’amakuru** bukubwira niba igisubizo gikoresha amakuru y’icyitegererezo cyangwa imbonerahamwe NISR yatangaje.",
-      ] },
-      { id: "workspace", h: "Guhindura no kubika", ul: [
-        "Hindura ingano n’uko ibice bikurikirana, ukoresheje utubuto aho kurura.",
-        "Hindura ubwoko bw’igishushanyo. Imibare ntihinduka.",
-        "Buri sesengura ribikwa n’imiterere yaryo n’amateka y’impinduka. Rifungure uri mu Mateka, cyangwa urisibe aho.",
-      ] },
-      { id: "access", h: "Ururimi, ijwi no kugerwaho", p: [
-        "Hinduranya hagati y’Icyongereza n’Ikinyarwanda ukoresheje akabuto k’ururimi. Menu y’imiterere ifite ibara ry’umunsi cyangwa ry’ijoro, ingano y’inyandiko, ibara ryerekana neza no kugabanya ibigenda.",
-        "Ijwi riri ku bushake. Ikoranabuhanga ryumva ijwi ryo muri porogaramu yo gusura rishobora kutumva Ikinyarwanda, bityo kwandika birashoboka buri gihe. Reba [ibyerekeye kugerwaho](/accessibility).",
-      ] },
-      { id: "data", h: "Amakuru dufite n’aho ageze", p: [
-        "Isesengura rishingiye ku byiciro by’ubushakashatsi bwa NISR n’andi masoko rusange: Ubushakashatsi ku Murimo (Labour Force Survey), EICV7, DHS, Ubushakashatsi bw’Ubuhinzi bw’Igihembwe, EMIS/REB, NESA, Ibarura ry’Ibigo by’Ubucuruzi, WDA/HEC na LMIS/KORA.",
-        "Ikusanyamakuru rivugwa nk’iryahujwe ari uko isoko nyayo ryabonetse, rigenzurwa kandi rigahuzwa. None, ibisubizo bikoresha amakuru y’icyitegererezo yakozwe, uretse ibibazo ku musaruro w’ibihingwa bikoresha imbonerahamwe yatangajwe na NISR.",
-        "U Rwanda rufite uturere 30 mu ntara eshanu, ariko si buri kusanyamakuru ririmo utwo turere twose. Ibyo ririmo bitandukana ukurikije isoko, umwaka n’ikimenyetso.",
-      ] },
-      { id: "limits", h: "Ibyo Isesengura ritazakora", ul: [
-        "Ntirisimbura inama z’inzobere, ibarurishamibare ryemewe cyangwa ubushakashatsi bwo mu kibaya.",
-        "Ntiriteganya amafaranga, uburenganzira cyangwa imibereho y’umuntu umwe rishingiye ku mibare y’itsinda.",
-        "Ntirishyira abaturage ku rutonde rw’agaciro cyangwa ngo rifate icyemezo cy’aho inkunga ijya.",
-        "Si serivisi y’ubuvuzi kandi ntiritanga inama z’ubuzima z’umuntu ku giti cye.",
-        "Ntirivuga ko porogaramu yateye umusaruro runaka keretse igenzura rihagije ribyemeje.",
-      ] },
-      { id: "faq", h: "Ibibazo bikunze kubazwa", qa: [
-        ["Iyi ni serivisi ya NISR yemewe?", "Oya. Isesengura ryakozwe ku bw’irushanwa rya NISR Big Data Hackathon 2026. Rishingiye ku byiciro by’amakuru bya NISR ariko ntiriyoborwa cyangwa ngo rishyigikirwe na NISR."],
-        ["Imibare ni iy’ukuri?", "Ibisubizo byinshi by’ubu bikoresha amakuru y’icyitegererezo yakozwe, kandi biba byanditseho ko ari ko biri. Ibibazo ku musaruro w’ibihingwa bikoresha imbonerahamwe NISR yatangaje. Soma [uburyo dukoresha](/methodology) ubone ibisobanuro."],
-        ["Nakwishingikiriza ku gisubizo mu cyemezo nyacyo?", "Si ku makuru y’icyitegererezo. Ku cyemezo icyo ari cyo cyose, koresha ibisubizo nk’inyongera y’ubushakashatsi, kandi urebe amakuru agezweho yo mu gace kawe."],
-        ["AI ihimba imibare?", "Oya. Porogaramu y’ibarurishamibare ni yo ibara imibare yose. AI iri ku bushake itanga gusa icyifuzo cy’uko umwanya utegurwa, hanyuma icyo cyifuzo kikagenzurwa ugereranyije n’igisubizo nyakuri. Reba [ubusobanuro kuri AI](/ai-transparency)."],
-        ["Nshobora kuyikoresha mu Kinyarwanda?", "Imbuga yose iboneka mu Kinyarwanda. Ibibazo bicyurwa hakurikijwe amategeko, bityo amagambo magufi kandi yihariye ni yo akora neza, kandi ubwirwa niba ikibazo kitumvikanye."],
-        ["Nasiba amakuru yanjye nte?", "Siba isesengura iryo ari ryo ryose uri mu Mateka. Kugira ngo konti yawe isibwe, saba unyuze ku [rupapuro rwo kutwandikira](/contact)."],
-      ] },
+      {
+        id: "start",
+        h: "Gutangira",
+        p: [
+          "Isesengura rigufasha kubaza ibibazo ku ibarurishamibare ry’u Rwanda mu magambo yoroshye. Risubiza rikuzanira umwanya w’isesengura urimo ibishushanyo, imbonerahamwe, amakarita n’ibisobanuro bigufi, hamwe n’aho amakuru yavuye iruhande.",
+          "Rifasha cyane ku bwoko butatu bw’ibibazo: guhitamo umwuga cyangwa amasomo, gutangiza cyangwa kwagura ubucuruzi, no kwigira ku byo amakuru y’u Rwanda yerekana ku byahise.",
+        ],
+        ol: [
+          "Kanda [Tangira kuganira](/workspace) winjire cyangwa ufungure konti.",
+          "Andika ikibazo, cyangwa uhitemo kimwe mu bibazo by’ingero biri ku rupapuro rwa mbere.",
+          "Soma umwanya w’isesengura, ufungure aho amakuru yavuye n’imbogamizi zayo, ubundi ubike niba ushaka kuzagaruka.",
+        ],
+      },
+      {
+        id: "questions",
+        h: "Kubaza neza",
+        p: [
+          "Isesengura rikora neza iyo ubajije ikibazo cyihariye kivuga ingingo, ahantu cyangwa igihe. Amagambo yoroshye arahagije.",
+        ],
+        ul: [
+          "**Kiragutse cyane:** “Mbwira ku kazi.” **Ni byiza kuvuga:** “Imirimo yahindutse ite mu nzego zitandukanye uko imyaka yagiye ihita?”",
+          "**Kiragutse cyane:** “Ubuhinzi ni bwiza?” **Ni byiza kuvuga:** “Ni ibihe bihingwa byeze cyane mu turere?”",
+          "**Kiragutse cyane:** “Nafungura iduka he?” **Ni byiza kuvuga:** “Erekana ibigo by’ubucuruzi ukurikije urwego n’akarere.”",
+        ],
+      },
+      {
+        id: "unclear",
+        h: "Iyo ikibazo kitumvikanye",
+        p: [
+          "Ibibazo bicyurwa hakurikijwe amategeko, ntibikekwa. Iyo ikibazo kidasobanutse, umwanya w’isesengura uvuga icyo wumvise cyangwa ukakusaba kugabanya. Gerageza ikibazo kigufi kivuga ingingo imwe kandi, niba ubishoboye, ahantu cyangwa igihe kimwe.",
+        ],
+      },
+      {
+        id: "career",
+        h: "Inama ku mwuga n’amasomo",
+        p: [
+          "Koresha Isesengura urenze umubare umwe w’ingenzi. Rishobora kugereranya amasomo ukoresheje imibare y’abiyandikisha, abarangiza, abakorera akazi n’imishahara, no guhuza ubumenyi nk’imibare ikoreshwa n’inzego, imirimo n’ahantu.",
+          "Ushobora no gusura imibare y’akazi n’akazi kadahagije ukurikije imyaka, igitsina, akarere n’urwego, n’urubyiruko rudakora, ruticaye mu ishuri cyangwa mu mahugurwa, aho amakuru abishobora.",
+          "**Ibyo ritazakora:** kwizeza ko umwuga uzakuzanira akazi, gufata imyanya y’akazi yamamajwe nk’isoko ry’umurimo ryose, cyangwa kukubwira amahitamo akubereye kurusha ayandi. Urutonde rwerekana uko amahitamo agereranywa ku bipimo watoranyije. Icyemezo ni icyawe.",
+        ],
+      },
+      {
+        id: "business",
+        h: "Gutangiza cyangwa kwagura ubucuruzi",
+        p: [
+          "Mbere yo gutegura ubucuruzi, bifasha gusobanukirwa ubukungu bwo mu gace. Isesengura rishobora kwerekana umubare w’ibigo by’ubucuruzi ukurikije urwego n’akarere, uko wahindutse, n’uko ibipimo by’abaturage, ubukene no kugerwaho na serivisi bimeze hafi yaho.",
+          "**Ibyo ritazakora:** umubare w’ubucuruzi n’abaturage gusa ntibyerekana ko ahantu hakwiye ubucuruzi. Ugikeneye amakuru agezweho ku bakiriya, abo mupiganwa, ubukode, ibiciro, amabwiriza n’abaguzi.",
+        ],
+      },
+      {
+        id: "agriculture",
+        h: "Ubuhinzi n’ubwizigame bw’ibiribwa",
+        p: [
+          "Gereranya umusaruro w’ibihingwa mu turere no mu bihembwe, ubirebane n’ibipimo by’ubwizigame bw’ibiribwa.",
+          "**Ibyo ritazakora:** ibyahise ntibishobora kukubwira igihingwa ugomba guhinga. Ikirere, ubutaka, amazi, ibiciro, ibikoresho, amasoko n’uburambe bwawe byose bifite uruhare. Iteganyagihe ryose rivugwa nk’ikigereranyo, ntabwo ari isezerano.",
+        ],
+      },
+      {
+        id: "past",
+        h: "Kwigira ku mateka y’u Rwanda",
+        p: [
+          "Ibibazo byinshi mu by’ukuri bivuga ku mpinduka. Saba ikimenyetso uko imyaka ihita urebe icyerekezo cyacyo, gereranya uturere, cyangwa urebe uko ibimenyetso byinshi bigendana.",
+          "Ibimenyetso bibiri byiyongera icyarimwe bivugwa nk’isano gusa. Isesengura ntirivuga ko kimwe cyateye ikindi. Iteganyagihe ry’akazi mu nzego rikoresha icyerekezo kigororotse n’ibipimo by’iteganyagihe bya 95%, byageragerejwe ku myaka itakoreshejwe mu kwiga.",
+        ],
+      },
+      {
+        id: "results",
+        h: "Gusoma igisubizo",
+        ul: [
+          "**Imibare y’ingenzi** itanga imibare nyamukuru y’ikibazo cyawe.",
+          "**Ibishushanyo** byerekana ibyerekezo, uko ibintu bigabanyijwe cyangwa ibigereranyo. Buri gishushanyo gifite incamake y’inyandiko n’imbonerahamwe y’imibare nyayo.",
+          "**Amakarita** ashushanya uturere ku ikarita y’uduce tungana, kugira ngo buri karere kagaragare neza.",
+          "**Ibisobanuro** bivuga uko ibintu bimeze nyamukuru mu mvugo yoroshye.",
+          "**Aho amakuru yavuye n’imbogamizi** bivuga aho amakuru yavuye, ibyabazwe, n’aho bigarukira ugomba kwibuka.",
+          "**Isoko ry’amakuru** rivuga ikusanyamakuru ryakoreshejwe, igihe ryerekeyeho n’ibyo rikubiyemo.",
+        ],
+      },
+      {
+        id: "workspace",
+        h: "Guhindura no kubika",
+        ul: [
+          "Hindura ingano n’uko ibice bikurikirana, ukoresheje utubuto aho kurura.",
+          "Hindura ubwoko bw’igishushanyo. Imibare ntihinduka.",
+          "Buri sesengura ribikwa n’imiterere yaryo n’amateka y’impinduka. Rifungure uri mu Mateka, cyangwa urisibe aho.",
+        ],
+      },
+      {
+        id: "access",
+        h: "Ururimi, ijwi no kugerwaho",
+        p: [
+          "Hinduranya hagati y’Icyongereza n’Ikinyarwanda ukoresheje akabuto k’ururimi. Menu y’imiterere ifite ibara ry’umunsi cyangwa ry’ijoro, ingano y’inyandiko, ibara ryerekana neza no kugabanya ibigenda.",
+          "Ijwi riri ku bushake. Ikoranabuhanga ryumva ijwi ryo muri porogaramu yo gusura rishobora kutumva Ikinyarwanda, bityo kwandika birashoboka buri gihe. Reba [ibyerekeye kugerwaho](/accessibility).",
+        ],
+      },
+      {
+        id: "data",
+        h: "Amakuru dufite n’aho ageze",
+        p: [
+          "Isesengura rishingiye ku makuru ya NISR n’andi masoko rusange. Aho gutangirira: [urubuga rwa NISR](https://www.statistics.gov.rw/), [NISR Microdata Catalog](https://microdatabk.statistics.gov.rw/catalog/), [Rwanda Data Sharing Platform](https://data.gov.rw/datasets), [NISR PxWeb](https://pxweb.statistics.gov.rw/pxweb/en/) na [NISR Big Data Hackathon 2026](https://www.statistics.gov.rw/about/hackathon/2026-hackathon-competition).",
+          "Buri gisubizo kivuga ikusanyamakuru cyakoresheje, hamwe n’igihe, ibipimo n’ibisobanuro aho bizwi. Mbere yo kugereranya amakusanyamakuru abiri, banza urebe ibisobanuro byayo.",
+          "U Rwanda rufite uturere 30 mu ntara eshanu, ariko si buri kusanyamakuru ririmo utwo turere twose. Ibyo ririmo bitandukana ukurikije isoko, umwaka n’ikimenyetso.",
+        ],
+      },
+      {
+        id: "limits",
+        h: "Ibyo Isesengura ritazakora",
+        ul: [
+          "Ntirisimbura inama z’inzobere, ibarurishamibare ryemewe cyangwa ubushakashatsi bwo mu kibaya.",
+          "Ntiriteganya amafaranga, uburenganzira cyangwa imibereho y’umuntu umwe rishingiye ku mibare y’itsinda.",
+          "Ntirishyira abaturage ku rutonde rw’agaciro cyangwa ngo rifate icyemezo cy’aho inkunga ijya.",
+          "Si serivisi y’ubuvuzi kandi ntiritanga inama z’ubuzima z’umuntu ku giti cye.",
+          "Ntirivuga ko porogaramu yateye umusaruro runaka keretse igenzura rihagije ribyemeje.",
+        ],
+      },
+      {
+        id: "faq",
+        h: "Ibibazo bikunze kubazwa",
+        qa: [
+          [
+            "Iyi ni serivisi ya NISR yemewe?",
+            "Oya. Isesengura ni umushinga wigenga wakozwe ku bw’irushanwa rya NISR Big Data Hackathon 2026, ukoresha amakuru ya NISR n’andi makuru rusange. Ntiriyoborwa na NISR.",
+          ],
+          [
+            "Imibare ni iy’ukuri?",
+            "Yego. Bibarwa hakoreshejwe amakuru ya NISR n’andi makuru rusange, ntabwo bihimbwa. Buri gisubizo kivuga aho amakuru yavuye, igihe n’ibyo kirimo kugira ngo ubigereranye n’umwimerere. Soma [uburyo dukoresha](/methodology).",
+          ],
+          [
+            "Nakwishingikiriza ku gisubizo mu cyemezo nyacyo?",
+            "Koresha ibisubizo nk’ibimenyetso n’inyongera, si cyo cyonyine ushingiraho. Genzura aho amakuru yavuye, igihe n’imbogamizi, wongereho amakuru agezweho yo mu gace kawe mbere yo gufata icyemezo.",
+          ],
+          [
+            "AI ihimba imibare?",
+            "Oya. Porogaramu y’ibarurishamibare ni yo ibara imibare yose. AI iri ku bushake itanga gusa icyifuzo cy’uko umwanya utegurwa, hanyuma icyo cyifuzo kikagenzurwa ugereranyije n’igisubizo nyakuri. Reba [ubusobanuro kuri AI](/ai-transparency).",
+          ],
+          [
+            "Nshobora kuyikoresha mu Kinyarwanda?",
+            "Imbuga yose iboneka mu Kinyarwanda. Ibibazo bicyurwa hakurikijwe amategeko, bityo amagambo magufi kandi yihariye ni yo akora neza, kandi ubwirwa niba ikibazo kitumvikanye.",
+          ],
+          [
+            "Nasiba amakuru yanjye nte?",
+            "Siba isesengura iryo ari ryo ryose uri mu Mateka. Kugira ngo konti yawe isibwe, saba unyuze ku [rupapuro rwo kutwandikira](/contact).",
+          ],
+        ],
+      },
     ],
   } as DocsPage,
 
   methodology: {
     metaTitle: "Uburyo dukoresha",
     title: "Uburyo dukoresha n’aho amakuru aturuka",
-    intro: "Uko Isesengura ryohereza ibibazo muri porogaramu y’isesengura ry’ibarurishamibare, no kuvuga niba buri gisubizo gikoresha amakuru y’icyitegererezo yakozwe cyangwa imbonerahamwe NISR yatangaje.",
+    intro:
+      "Uko Isesengura ryohereza ibibazo muri porogaramu y’isesengura ry’ibarurishamibare, no kuvuga ikusanyamakuru buri gisubizo gikomokaho.",
     sections: [
-      { h: "Kuva ku kibazo ukagera ku gisubizo", ol: [
-        "Ikibazo cyanditse mu rurimi rusanzwe cyoherezwa kuri moteri ikwiye (icyemezo n’umwuga, guteranya mu matsinda, regression, cyangwa iteganyagihe).",
-        "Serivisi y’isesengura yo muri Python ifata CSV z’icyitegererezo zakozwe (`model/data/real/`) n’imbonerahamwe rusange ya NISR y’umusaruro w’ibihingwa (`model/data/official/`).",
-        "Porogaramu y’ibarurishamibare n’amategeko y’ibyemezo ibara igisubizo. Buri gisubizo kivuga isoko yacyo n’iyo amakuru yacyo ari ay’icyitegererezo.",
-        "Igikoresho gitegura gishingiye ku mategeko gihindura igisubizo `PresentationSpec` (ibishushanyo, imbonerahamwe, amakarita, imibare y’ingenzi, ibisobanuro). Imiterere ntihindura imibare.",
-        "Byose bibikwa nka artifact (ikibazo, igisubizo, aho amakuru yavuye, spec, impinduka) kandi bishobora gufungurwa bitahindutse.",
-      ] },
-      { h: "Moteri", ul: [
-        "**Ibyemezo ku mwuga n’amasomo.** Igereranya amasomo yitwa n’imibare y’abiyandikisha, abarangiza, abakorera akazi n’imishahara, ihuza ubumenyi bw’imibare ikoreshwa n’inzego, imirimo n’ahantu bishoboka. Imibare y’uburezi n’iy’ibikenewe ku isoko ry’umurimo ni iy’icyitegererezo yakozwe, ntabwo ari ibimenyetso byemejwe by’ibyo abakoresha bakeneye cyangwa by’abinjira mu kazi bwa mbere.",
-        "**Ibibazo rusange ku makusanyamakuru.** Ihuza ibipimo bishyigikiwe mu makusanyamakuru 12 ya CSV, ishobora gukora incamake y’ingingo, kugereranya cyangwa gushyira ku rutonde uturere n’ibyiciro, gutoranya ahantu hitwa, no kwerekana ibyerekezo by’amateka iyo imyaka isabwe ihari. Ibibazo ku musaruro w’ibihingwa bikoresha imbonerahamwe NISR yatangaje.",
-        "**Ikibazo A: akazi kadahagije mu turere (guteranya mu matsinda).** K-means (k=3) ku bipimo byahujwe: akazi kadahagije, ubushomeri, urubyiruko rudakora kandi ruticaye mu ishuri (NEET), umugabane w’ubuhinzi, umugabane w’akazi gahamye n’umugabane w’abize ayisumbuye no hejuru. Itanga amatsinda y’uturere n’ibiranga buri tsinda.",
-        "**Ikibazo B: ibiteganya NEET mu rubyiruko (regression).** Panel OLS ku bipimo by’akarere ku mwaka hamwe na year fixed effects, ridge n’igenzura rya leave-one-district-out. Itanga coefficients, R² na R² ihinduye, Q² na RMSE, n’uburemere bw’ibiranga. Coefficients zerekana isano, ntizerekana icyabiteye, kandi n ni nto.",
-        "**Ikibazo C: ibyerekezo by’akazi mu nzego n’iteganyagihe.** Icyerekezo kigororotse kuri buri rwego n’ibipimo by’iteganyagihe bya 95%, byageragerejwe ku myaka itakoreshejwe.",
-        "**Icyemezo n’umwuga.** Yerekana ibigereranyo bifite uburemere hakoreshejwe ibimenyetso by’icyitegererezo byakozwe. Sisitemu ishyira amahitamo ku rutonde kandi ntifata icyemezo cya nyuma. Ntukoreshe inzego z’icyitegererezo mu byemezo nyabyo.",
-      ] },
-      { h: "Aho amakuru aturuka", p: [
-        "Amakusanyamakuru y’icyitegererezo akoresha ibyiciro bishingiye kuri NISR Labour Force Survey, EICV7, DHS, Seasonal Agricultural Survey, EMIS/REB, NESA, Establishment Census, WDA/HEC na LMIS/KORA. Yakozwe n’inyandiko zo muri repository kandi ntiyigeze agenzurwa ugereranyije n’imbonerahamwe zemewe z’aho yavuye.",
-        "Ibisubizo ku musaruro w’ibihingwa ahubwo bikoresha [imbonerahamwe rusange ya NISR y’umusaruro ukurikije akarere n’igihingwa](https://pxweb.statistics.gov.rw/pxweb/en/NISR%20Statistical%20Databases/Agriculture/Crop%20area,%20production%20and%20yield%20for%20major%20crops/yield.px). Irimo ibyabonetse mu gihembwe A na B ariko ntivuga umwaka ishingiyeho. Reba `model/README.md` ubone ibisobanuro.",
-      ] },
-      { h: "Aho bigarukira n’amahame", ul: [
-        "**Amakuru y’icyitegererezo n’ayabuze:** ibimenyetso by’icyitegererezo byakozwe si imibare yemewe. Imbonerahamwe ya NISR y’umusaruro w’ibihingwa ivugwa ukwayo, ibitabonetse biva mu mibare aho kubifata nka zeru, kandi umwaka ishingiyeho ntivugwa.",
-        "**Gukorera mu mucyo:** buri gisubizo kivuga amasoko, ibyakozwe, imbogamizi n’impinduka.",
-        "**Gutandukanya ibikorwa:** moteri zibara imibare. Moteri y’ururimi, iyo ikoreshejwe, itegura imiterere kandi igasobanura gusa. Ntabwo ihimba ibarurishamibare.",
-        "**Gusubiramo ibisubizo:** ibisubizo by’isesengura ntibihinduka. Impinduka mu mibereho y’igaragazwa zibikwa ukwazo.",
-        "**Ibikubiyemo:** icyiciro cy’amakuru ni isoko ishoboka, ntabwo ari ubwemeza ko cyahujwe kuri buri rwego rw’akarere cyangwa rw’abaturage.",
-      ] },
+      {
+        h: "Kuva ku kibazo ukagera ku gisubizo",
+        ol: [
+          "Ikibazo cyanditse mu rurimi rusanzwe cyoherezwa kuri moteri ikwiye (icyemezo n’umwuga, guteranya mu matsinda, regression, cyangwa iteganyagihe).",
+          "Serivisi y’isesengura yo muri Python ifata amakusanyamakuru yateguwe ashingiye kuri NISR n’andi masoko rusange.",
+          "Porogaramu y’ibarurishamibare n’amategeko y’ibyemezo ibara igisubizo. Buri gisubizo kivuga isoko yacyo.",
+          "Igikoresho gitegura gishingiye ku mategeko gihindura igisubizo `PresentationSpec` (ibishushanyo, imbonerahamwe, amakarita, imibare y’ingenzi, ibisobanuro). Imiterere ntihindura imibare.",
+          "Byose bibikwa nka artifact (ikibazo, igisubizo, aho amakuru yavuye, spec, impinduka) kandi bishobora gufungurwa bitahindutse.",
+        ],
+      },
+      {
+        h: "Moteri",
+        ul: [
+          "**Ibyemezo ku mwuga n’amasomo.** Igereranya amasomo yitwa n’imibare y’abiyandikisha, abarangiza, abakorera akazi n’imishahara, ihuza ubumenyi nk’imibare ikoreshwa n’inzego, imirimo n’ahantu bishoboka. Ibisubizo byerekana uko amahitamo agereranywa ku bipimo bihari. Si ibimenyetso by’ibyo umukoresha runaka akeneye.",
+          "**Ibibazo rusange ku makusanyamakuru.** Ihuza ibipimo bishyigikiwe mu makusanyamakuru 12 ya CSV, ishobora gukora incamake y’ingingo, kugereranya cyangwa gushyira ku rutonde uturere n’ibyiciro, gutoranya ahantu hitwa, no kwerekana ibyerekezo by’amateka iyo imyaka isabwe ihari. Ibibazo ku musaruro w’ibihingwa bikoresha imbonerahamwe NISR yatangaje.",
+          "**Ikibazo A: akazi kadahagije mu turere (guteranya mu matsinda).** K-means (k=3) ku bipimo byahujwe: akazi kadahagije, ubushomeri, urubyiruko rudakora kandi ruticaye mu ishuri (NEET), umugabane w’ubuhinzi, umugabane w’akazi gahamye n’umugabane w’abize ayisumbuye no hejuru. Itanga amatsinda y’uturere n’ibiranga buri tsinda.",
+          "**Ikibazo B: ibiteganya NEET mu rubyiruko (regression).** Panel OLS ku bipimo by’akarere ku mwaka hamwe na year fixed effects, ridge n’igenzura rya leave-one-district-out. Itanga coefficients, R² na R² ihinduye, Q² na RMSE, n’uburemere bw’ibiranga. Coefficients zerekana isano, ntizerekana icyabiteye, kandi n ni nto.",
+          "**Ikibazo C: ibyerekezo by’akazi mu nzego n’iteganyagihe.** Icyerekezo kigororotse kuri buri rwego n’ibipimo by’iteganyagihe bya 95%, byageragerejwe ku myaka itakoreshejwe.",
+          "**Icyemezo n’umwuga.** Ikora ibigereranyo bifite uburemere ku bipimo bihari. Sisitemu ishyira amahitamo ku rutonde kandi ntifata icyemezo cya nyuma.",
+        ],
+      },
+      {
+        h: "Aho amakuru aturuka",
+        p: [
+          "Amakusanyamakuru ava kuri izi mbuga: [urubuga rwa NISR](https://www.statistics.gov.rw/), [NISR Microdata Catalog](https://microdatabk.statistics.gov.rw/catalog/), [Rwanda Data Sharing Platform](https://data.gov.rw/datasets) na [NISR PxWeb](https://pxweb.statistics.gov.rw/pxweb/en/). Buri gisubizo kivuga ikusanyamakuru nyirizina cyakoresheje.",
+          "Ibisubizo ku musaruro w’ibihingwa bikoresha [imbonerahamwe rusange ya NISR y’umusaruro ukurikije akarere n’igihingwa](https://pxweb.statistics.gov.rw/pxweb/en/NISR%20Statistical%20Databases/Agriculture/Crop%20area,%20production%20and%20yield%20for%20major%20crops/yield.px). Irimo ibyabonetse mu gihembwe A na B ariko ntivuga umwaka ishingiyeho. Reba `model/README.md` ubone ibisobanuro.",
+        ],
+      },
+      {
+        h: "Aho bigarukira n’amahame",
+        ul: [
+          "**Amakuru yabuze:** ibitabonetse biva mu mibare aho kubifata nka zeru. Imbonerahamwe ya NISR y’umusaruro w’ibihingwa ntivuga umwaka ishingiyeho.",
+          "**Gukorera mu mucyo:** buri gisubizo kivuga amasoko, ibyakozwe, imbogamizi n’impinduka.",
+          "**Gutandukanya ibikorwa:** moteri zibara imibare. Moteri y’ururimi, iyo ikoreshejwe, itegura imiterere kandi igasobanura gusa. Ntabwo ihimba ibarurishamibare.",
+          "**Gusubiramo ibisubizo:** ibisubizo by’isesengura ntibihinduka. Impinduka mu mibereho y’igaragazwa zibikwa ukwazo.",
+          "**Ibikubiyemo:** ibyo amakuru akubiyemo biratandukana ukurikije isoko, umwaka n’ikimenyetso, bityo igisubizo gishobora kutarimo uturere twose.",
+        ],
+      },
     ],
   } as DocPage,
 
   ai: {
     metaTitle: "Ubusobanuro kuri AI",
     title: "Ubusobanuro kuri AI",
-    intro: "Icyo porogaramu y’isesengura ibara, aho AI iri ku bushake ikoreshwa, n’aho amakuru y’icyitegererezo y’ubu agarukira.",
+    intro:
+      "Icyo porogaramu y’isesengura ibara, aho AI iri ku bushake ikoreshwa, n’aho amakuru aturuka.",
     sections: [
-      { h: "Icyo sisitemu ikora yonyine", p: [
-        "Serivisi ya Python ikoresha kohereza ibibazo hakurikijwe amategeko na porogaramu y’ibarurishamibare: K-means, panel OLS, ibyerekezo bigororotse n’amategeko y’ibyemezo afite uburemere. Si neural network yatojwe cyangwa chatbot. Igikoresho cya AI gitegura kiri ku bushake gishobora gutanga *icyifuzo cy’uko bigaragazwa*: ibice byo kwerekana n’uko bitegurwa. Ntikibara ibarurishamibare.",
-      ] },
-      { h: "Aho amakuru agarukira ni ingenzi", p: [
-        "Amakuru ashingirwaho mu isesengura ry’ubu ni amakuru y’icyitegererezo yakozwe agendeye ku byiciro by’amakusanyamakuru ya NISR. Si ibyabonetse byemejwe biva mu mbonerahamwe zemewe za NISR. Ibisubizo biranditseho ko ari amakuru y’icyitegererezo kandi ntibigomba gufatwa nk’ibarurishamibare ryemewe cyangwa gukoreshwa mu byemezo nyabyo.",
-      ] },
-      { h: "Ibyo sisitemu itakora", ul: [
-        "**Igikoresho gitegura kiri ku bushake ntikibara.** Imikorere y’ibarurishamibare ikorerwa muri serivisi y’isesengura ya Python. Igikoresho gitegura gitanga gusa ibyifuzo by’imiterere.",
-        "**Si amakuru ya NISR yemejwe.** Ibyiciro by’amasoko bisobanura ibyo twifuza, ntabwo bigaragaza aho imibare yakozwe yaturutse.",
-        "**Nta kuvuga icyateye ikindi.** Moteri zivuga isano, urugero ibiteganya NEET. Imbuga yerekana aho bigarukira kandi ntifata isano nk’icyateye ikindi.",
-        "**Nta byemezo bya nyuma.** Ku guhitamo igihingwa n’umwuga, sisitemu ishyira amahitamo ku rutonde ifite ibimenyetso, kandi ntikwerekana ihitamo rimwe “ryiza cyane”.",
-        "**Ibisohoka bigenzurwa cyane.** Imiterere iyo ari yo yose AI itanze igomba kuba ihuye na schema ya `PresentationSpec` n’igisubizo nyakuri. Ibitemewe birahakanwa bigasimbuzwa igikoresho gitegura gishingiye ku mategeko.",
-      ] },
-      { h: "Uko wabigenzura", ul: [
-        "**Aho amakuru yavuye n’imbogamizi:** buri mwanya w’isesengura uvuga amasoko y’amakuru, ibyakozwe, aho bigarukira, n’ibyiciro by’isesengura n’iby’igikoresho gitegura.",
-        "**Gukurikiranwa:** igisubizo cy’isesengura ntigihinduka. Impinduka mu igaragazwa zibikwa ukwazo.",
-        "**Gusuzumwa:** ibishushanyo bifite imbonerahamwe z’amakuru. Ushobora gutunganya imiterere mu mwanya w’isesengura.",
-        "**Kohereza bisobanutse:** sisitemu ivuga icyo yumvise. Ibyifuzo bidasobanutse bihakanwa aho gukekwa.",
-      ] },
-      { h: "Inyandiko ku miterere ya sisitemu", p: [
-        "Serivisi y’isesengura ikora ukwayo (`model/`, FastAPI). API ya Express yohereza ibibazo kuri yo, kandi muri production uburyo bwo gukorera mu gihe itaboneka burahagarikwa. Ibisubizo by’icyitegererezo n’aho amakuru agarukira bigaragara mu gice cy’aho amakuru yavuye mu mwanya w’isesengura.",
-      ] },
+      {
+        h: "Icyo sisitemu ikora yonyine",
+        p: [
+          "Serivisi ya Python ikoresha kohereza ibibazo hakurikijwe amategeko na porogaramu y’ibarurishamibare: K-means, panel OLS, ibyerekezo bigororotse n’amategeko y’ibyemezo afite uburemere. Si neural network yatojwe cyangwa chatbot. Igikoresho cya AI gitegura kiri ku bushake gishobora gutanga *icyifuzo cy’uko bigaragazwa*: ibice byo kwerekana n’uko bitegurwa. Ntikibara ibarurishamibare.",
+        ],
+      },
+      {
+        h: "Aho amakuru aturuka",
+        p: [
+          "Amakuru ashingirwaho mu isesengura ni aya NISR n’andi makuru rusange. Isesengura ribara ibisubizo ribishingiye kuri yo kandi rikagaragaza buri soko, kugira ngo ugereranye umubare n’umwimerere. Ibisubizo ni imibare Isesengura ryabaze, si ibitangazwa na NISR.",
+        ],
+      },
+      {
+        h: "Ibyo sisitemu itakora",
+        ul: [
+          "**Igikoresho gitegura kiri ku bushake ntikibara.** Imikorere y’ibarurishamibare ikorerwa muri serivisi y’isesengura ya Python. Igikoresho gitegura gitanga gusa ibyifuzo by’imiterere.",
+          "**Si igicuruzwa cya NISR cyemewe.** Ibisubizo bibarwa na Isesengura bishingiye ku makuru rusange, ntibitangazwa na NISR.",
+          "**Nta kuvuga icyateye ikindi.** Moteri zivuga isano, urugero ibiteganya NEET. Imbuga yerekana aho bigarukira kandi ntifata isano nk’icyateye ikindi.",
+          "**Nta byemezo bya nyuma.** Ku guhitamo igihingwa n’umwuga, sisitemu ishyira amahitamo ku rutonde ifite ibimenyetso, kandi ntikwerekana ihitamo rimwe “ryiza cyane”.",
+          "**Ibisohoka bigenzurwa cyane.** Imiterere iyo ari yo yose AI itanze igomba kuba ihuye na schema ya `PresentationSpec` n’igisubizo nyakuri. Ibitemewe birahakanwa bigasimbuzwa igikoresho gitegura gishingiye ku mategeko.",
+        ],
+      },
+      {
+        h: "Uko wabigenzura",
+        ul: [
+          "**Aho amakuru yavuye n’imbogamizi:** buri mwanya w’isesengura uvuga amasoko y’amakuru, ibyakozwe, aho bigarukira, n’ibyiciro by’isesengura n’iby’igikoresho gitegura.",
+          "**Gukurikiranwa:** igisubizo cy’isesengura ntigihinduka. Impinduka mu igaragazwa zibikwa ukwazo.",
+          "**Gusuzumwa:** ibishushanyo bifite imbonerahamwe z’amakuru. Ushobora gutunganya imiterere mu mwanya w’isesengura.",
+          "**Kohereza bisobanutse:** sisitemu ivuga icyo yumvise. Ibyifuzo bidasobanutse bihakanwa aho gukekwa.",
+        ],
+      },
+      {
+        h: "Inyandiko ku miterere ya sisitemu",
+        p: [
+          "Serivisi y’isesengura ikora ukwayo (`model/`, FastAPI). API ya Express yohereza ibibazo kuri yo, kandi muri production uburyo bwo gukorera mu gihe itaboneka burahagarikwa. Aho amakuru yavuye n’aho agarukira bigaragara mu gice cy’aho amakuru yavuye mu mwanya w’isesengura.",
+        ],
+      },
     ],
   } as DocPage,
 
   accessibility: {
     metaTitle: "Kugerwaho n’abantu bose",
     title: "Itangazo ryo kugerwaho n’abantu bose",
-    intro: "Isesengura ryateguwe kugira ngo abantu bafite ubushobozi butandukanye bashobore gukoresha buri gice cyaryo.",
+    intro:
+      "Isesengura ryateguwe kugira ngo abantu bafite ubushobozi butandukanye bashobore gukoresha buri gice cyaryo.",
     updated: "Ukwakira 2026",
     sections: [
-      { h: "Ibyo twashyizemo", ul: [
-        "**Ikibaho:** byose bikora nta mbeba, hari akarango kerekana aho uri n’ihuza ryo gusimbuka. Guhindura ingano no gukurikirana bifite utubuto aho kurura.",
-        "**Ibyuma bisoma ecran:** imitwe n’uduce bifite ubusobanuro, ibigenzura bifite amazina, incamake y’inyandiko kuri buri gishushanyo n’imbonerahamwe y’amakuru inyuma ya buri gishushanyo n’ikarita.",
-        "**Kureba:** amabara y’umunsi n’ijoro, uburyo bw’ibara ryerekana neza, ingano y’inyandiko igera kuri 130%, n’ibishushanyo bitishingikiriza ku ibara gusa.",
-        "**Kumva:** nta kintu gisaba ijwi. Inyandiko z’ijwi ziragaragara, kandi gusoma mu ijwi bigaragaza inyandiko imwe kuri ecran. Ubutumwa bw’amakuru ni ubwo kureba.",
-        "**Ibigenda:** uburyo ibintu bigenda bukurikiza igenamiterere rya sisitemu yawe, kandi hari akabuto ko kugabanya ibigenda muri menu y’imiterere.",
-        "**Ijwi riri ku bushake:** kwandika birashoboka buri gihe.",
-        "**Ururimi:** imbuga iboneka mu Cyongereza no mu Kinyarwanda.",
-      ] },
-      { h: "Aho bigarukira", p: [
-        "Ikarita y’uturere ni ikarita y’uduce tungana, si iy’ahantu nyakuri, kugira ngo buri karere kagaragare kandi gakoreshwe neza. Ikoranabuhanga ryumva ijwi ryo muri porogaramu yo gusura ntiribonekamo muri buri porogaramu kandi rishobora kutumva Ikinyarwanda.",
-      ] },
-      { h: "Tubwire inzitizi", p: [
-        "Niba hari ikitagukorera, [twandikire](/contact) utubwire icyo wageragezaga gukora n’ikoranabuhanga ryunganira ukoresha. Ibibazo byo kugerwaho tubifata nk’amakosa agomba gukosorwa.",
-      ] },
+      {
+        h: "Ibyo twashyizemo",
+        ul: [
+          "**Ikibaho:** byose bikora nta mbeba, hari akarango kerekana aho uri n’ihuza ryo gusimbuka. Guhindura ingano no gukurikirana bifite utubuto aho kurura.",
+          "**Ibyuma bisoma ecran:** imitwe n’uduce bifite ubusobanuro, ibigenzura bifite amazina, incamake y’inyandiko kuri buri gishushanyo n’imbonerahamwe y’amakuru inyuma ya buri gishushanyo n’ikarita.",
+          "**Kureba:** amabara y’umunsi n’ijoro, uburyo bw’ibara ryerekana neza, ingano y’inyandiko igera kuri 130%, n’ibishushanyo bitishingikiriza ku ibara gusa.",
+          "**Kumva:** nta kintu gisaba ijwi. Inyandiko z’ijwi ziragaragara, kandi gusoma mu ijwi bigaragaza inyandiko imwe kuri ecran. Ubutumwa bw’amakuru ni ubwo kureba.",
+          "**Ibigenda:** uburyo ibintu bigenda bukurikiza igenamiterere rya sisitemu yawe, kandi hari akabuto ko kugabanya ibigenda muri menu y’imiterere.",
+          "**Ijwi riri ku bushake:** kwandika birashoboka buri gihe.",
+          "**Ururimi:** imbuga iboneka mu Cyongereza no mu Kinyarwanda.",
+        ],
+      },
+      {
+        h: "Aho bigarukira",
+        p: [
+          "Ikarita y’uturere ni ikarita y’uduce tungana, si iy’ahantu nyakuri, kugira ngo buri karere kagaragare kandi gakoreshwe neza. Ikoranabuhanga ryumva ijwi ryo muri porogaramu yo gusura ntiribonekamo muri buri porogaramu kandi rishobora kutumva Ikinyarwanda.",
+        ],
+      },
+      {
+        h: "Tubwire inzitizi",
+        p: [
+          "Niba hari ikitagukorera, [twandikire](/contact) utubwire icyo wageragezaga gukora n’ikoranabuhanga ryunganira ukoresha. Ibibazo byo kugerwaho tubifata nk’amakosa agomba gukosorwa.",
+        ],
+      },
     ],
   } as DocPage,
 
@@ -385,35 +602,60 @@ export const rw: Dict = {
     title: "Politiki y’ubuzima bwite",
     intro: "Amakuru Isesengura ikusanya, impamvu, n’amahitamo ufite.",
     updated: "Ukwakira 2026",
-    notice: "Icyitonderwa ku bayobozi: uyu mwandiko ni icyitegererezo. Ugomba gusuzumwa hakurikijwe Itegeko N° 058/2021 ryerekeye kurinda amakuru y’umuntu ku giti cye n’ubuzima bwite, n’andi mategeko abigenga, mbere yo gutangira.",
+    notice:
+      "Icyitonderwa ku bayobozi: uyu mwandiko ni icyitegererezo. Ugomba gusuzumwa hakurikijwe Itegeko N° 058/2021 ryerekeye kurinda amakuru y’umuntu ku giti cye n’ubuzima bwite, n’andi mategeko abigenga, mbere yo gutangira.",
     sections: [
-      { h: "Ibyo dukusanya", ul: [
-        "**Amakuru ya konti:** izina ryawe, aderesi ya imeri n’ijambobanga ribitse mu buryo bwizewe (hashed). Niba uyongeyeho, ifoto y’umwirondoro.",
-        "**Ibikorwa byawe:** ibibazo ubaza, ibisubizo by’isesengura, imiterere y’imyanya y’isesengura n’impinduka ubika.",
-        "**Ubutumwa bwo kutwandikira:** ibyo wohereza unyuze mu ifishi yo kutwandikira.",
-        "**Amakuru ya tekiniki:** cookie y’igihe ukoresha (session), aderesi ya IP n’ubwoko bwa porogaramu usuramo, bikoreshwa kugira ngo ukomeze kuba winjiye no kurinda serivisi.",
-      ] },
-      { h: "Uko tuyakoresha", p: [
-        "Gukora konti yawe, gukora no kubika amasesengura yawe, kohereza imeri z’ingenzi (kwemeza no guhindura ijambobanga), gusubiza ubutumwa bwawe, no kurinda serivisi. Ntitugurisha amakuru y’umuntu ku giti cye kandi ntitwerekana ibyamamazwa.",
-      ] },
-      { h: "Ijwi", p: [
-        "Ijwi riri ku bushake. Kumva ijwi bikorwa na serivisi ya porogaramu yawe yo gusura, ishobora kohereza amajwi ku muntu wayikoze. Isesengura ryakira gusa inyandiko igaragara mu kibazo. Ushobora kwandika buri gihe.",
-      ] },
-      { h: "Ibikorwa bya AI", p: [
-        "Niba igikoresho cya AI gitegura kiri ku bushake gikoreshwa, cyakira gusa imiterere y’igisubizo cy’isesengura (amazina y’amakusanyamakuru n’inkingi, ibice bihari), kandi ntikigera cyakira amakuru ya konti yawe. Reba [ubusobanuro kuri AI](/ai-transparency).",
-      ] },
-      { h: "Abatanga serivisi", p: [
-        "Dukoresha abatanga serivisi mu kohereza imeri (Brevo), kubika amafoto y’umwirondoro (ImageKit) no kwakira urubuga. Bakoresha amakuru gusa kugira ngo batange izo serivisi.",
-      ] },
-      { h: "Cookies n’amahitamo", p: [
-        "Dukoresha cookie imwe y’ingenzi y’igihe ukoresha. Amahitamo yawe y’imiterere (ibara, ingano y’inyandiko, ibara ryerekana neza, ibigenda) n’ururimi wahisemo bibikwa muri porogaramu yawe yo gusura. Ntidukoresha cookies z’ibyamamazwa cyangwa zikurikirana ku mbuga nyinshi.",
-      ] },
-      { h: "Igihe tubika n’uburenganzira bwawe", p: [
-        "Ushobora gusiba isesengura iryo ari ryo ryose ribitswe uri mu Mateka. Ushobora kudusaba kukwereka, gukosora, kohereza cyangwa gusiba amakuru yawe bwite, cyangwa gufunga konti yawe, unyuze ku [rupapuro rwo kutwandikira](/contact). Igihe cyarangiye n’ibimenyetso byo kwemeza bisibwa buri munsi mu buryo bwikora.",
-      ] },
-      { h: "Impinduka", p: [
-        "Nitugira icyo duhindura muri iyi politiki gifite icyo gisobanuye, tuzabivuga kuri uru rupapuro kandi duhindure itariki iri hejuru.",
-      ] },
+      {
+        h: "Ibyo dukusanya",
+        ul: [
+          "**Amakuru ya konti:** izina ryawe, aderesi ya imeri n’ijambobanga ribitse mu buryo bwizewe (hashed). Niba uyongeyeho, ifoto y’umwirondoro.",
+          "**Ibikorwa byawe:** ibibazo ubaza, ibisubizo by’isesengura, imiterere y’imyanya y’isesengura n’impinduka ubika.",
+          "**Ubutumwa bwo kutwandikira:** ibyo wohereza unyuze mu ifishi yo kutwandikira.",
+          "**Amakuru ya tekiniki:** cookie y’igihe ukoresha (session), aderesi ya IP n’ubwoko bwa porogaramu usuramo, bikoreshwa kugira ngo ukomeze kuba winjiye no kurinda serivisi.",
+        ],
+      },
+      {
+        h: "Uko tuyakoresha",
+        p: [
+          "Gukora konti yawe, gukora no kubika amasesengura yawe, kohereza imeri z’ingenzi (kwemeza no guhindura ijambobanga), gusubiza ubutumwa bwawe, no kurinda serivisi. Ntitugurisha amakuru y’umuntu ku giti cye kandi ntitwerekana ibyamamazwa.",
+        ],
+      },
+      {
+        h: "Ijwi",
+        p: [
+          "Ijwi riri ku bushake. Kumva ijwi bikorwa na serivisi ya porogaramu yawe yo gusura, ishobora kohereza amajwi ku muntu wayikoze. Isesengura ryakira gusa inyandiko igaragara mu kibazo. Ushobora kwandika buri gihe.",
+        ],
+      },
+      {
+        h: "Ibikorwa bya AI",
+        p: [
+          "Niba igikoresho cya AI gitegura kiri ku bushake gikoreshwa, cyakira gusa imiterere y’igisubizo cy’isesengura (amazina y’amakusanyamakuru n’inkingi, ibice bihari), kandi ntikigera cyakira amakuru ya konti yawe. Reba [ubusobanuro kuri AI](/ai-transparency).",
+        ],
+      },
+      {
+        h: "Abatanga serivisi",
+        p: [
+          "Dukoresha abatanga serivisi mu kohereza imeri (Brevo), kubika amafoto y’umwirondoro (ImageKit) no kwakira urubuga. Bakoresha amakuru gusa kugira ngo batange izo serivisi.",
+        ],
+      },
+      {
+        h: "Cookies n’amahitamo",
+        p: [
+          "Dukoresha cookie imwe y’ingenzi y’igihe ukoresha. Amahitamo yawe y’imiterere (ibara, ingano y’inyandiko, ibara ryerekana neza, ibigenda) n’ururimi wahisemo bibikwa muri porogaramu yawe yo gusura. Ntidukoresha cookies z’ibyamamazwa cyangwa zikurikirana ku mbuga nyinshi.",
+        ],
+      },
+      {
+        h: "Igihe tubika n’uburenganzira bwawe",
+        p: [
+          "Ushobora gusiba isesengura iryo ari ryo ryose ribitswe uri mu Mateka. Ushobora kudusaba kukwereka, gukosora, kohereza cyangwa gusiba amakuru yawe bwite, cyangwa gufunga konti yawe, unyuze ku [rupapuro rwo kutwandikira](/contact). Igihe cyarangiye n’ibimenyetso byo kwemeza bisibwa buri munsi mu buryo bwikora.",
+        ],
+      },
+      {
+        h: "Impinduka",
+        p: [
+          "Nitugira icyo duhindura muri iyi politiki gifite icyo gisobanuye, tuzabivuga kuri uru rupapuro kandi duhindure itariki iri hejuru.",
+        ],
+      },
     ],
   } as DocPage,
 
@@ -422,29 +664,51 @@ export const rw: Dict = {
     title: "Amabwiriza yo gukoresha",
     intro: "Amategeko agenga imikoreshereze y’Isesengura.",
     updated: "Ukwakira 2026",
-    notice: "Icyitonderwa ku bayobozi: uyu mwandiko ni icyitegererezo. Umunyamategeko agomba kuwusuzuma no kuwuzuza (izina ry’ukora, amategeko agenga, urukiko) mbere yo gutangira.",
+    notice:
+      "Icyitonderwa ku bayobozi: uyu mwandiko ni icyitegererezo. Umunyamategeko agomba kuwusuzuma no kuwuzuza (izina ry’ukora, amategeko agenga, urukiko) mbere yo gutangira.",
     sections: [
-      { h: "Gukoresha serivisi", p: [
-        "Ushobora gukoresha Isesengura mu gusura amakuru rusange no gukora no kubika imyanya y’isesengura. Wemera gutanga amakuru nyayo ya konti, kurinda ijambobanga ryawe, kandi ntukoreshe serivisi nabi, urugero ugerageza kuyihungabanya, kuyirenza urugero, cyangwa kohereza ibinyuranyije n’amategeko.",
-      ] },
-      { h: "Amakuru y’icyitegererezo n’ukuri", p: [
-        "Keretse umwanya w’isesengura uvuze ukundi, ibisubizo by’ubu bikoresha amakuru y’icyitegererezo yakozwe. Si ibarurishamibare ryemewe. Ibisubizo bishingira ku isoko, uburyo bugaragara muri buri mwanya n’imbogamizi zihandikwa. Zigenzure mbere yo kwishingikiriza ku mubare.",
-      ] },
-      { h: "Igaragazwa rifashijwe na AI", p: [
-        "Sisitemu ya AI ishobora gutanga icyifuzo cy’uko umwanya utegurwa. Ntibara imibare igaragara. Ni wowe ukomeza kubazwa uko usobanura kandi ugakoresha ibisubizo. Reba [ubusobanuro kuri AI](/ai-transparency).",
-      ] },
-      { h: "Ibyo ushyiraho", p: [
-        "Ukomeza kuba nyir’ibibazo ubaza n’impinduka ukora. Uduha uburenganzira bwo kubibika no kubikwereka kugira ngo dutange serivisi. Amakusanyamakuru y’ibanze akomeza kugengwa n’impushya z’abayatangaje, zigaragazwa kuri buri soko.",
-      ] },
-      { h: "Kuboneka kwa serivisi", p: [
-        "Twihatira ko serivisi iboneka ariko ntitwizeza ko itazahagarara. Dushobora guhindura cyangwa gukuraho ibikorwa, kandi tuzagerageza kubibamenyesha iyo impinduka igira ingaruka ku byabitswe.",
-      ] },
-      { h: "Inshingano", p: [
-        "Mu rugero amategeko yemera, abayobora serivisi ntibazaryozwa ibihombo biturutse ku byemezo byafashwe hakoreshejwe serivisi. Nta kintu kiri hano kigabanya inshingano zitagabanywa n’amategeko.",
-      ] },
-      { h: "Gusiba konti yawe", p: [
-        "Ushobora guhagarika gukoresha serivisi igihe cyose ukadusaba gusiba konti yawe unyuze ku [rupapuro rwo kutwandikira](/contact). Dushobora guhagarika konti zica aya mabwiriza.",
-      ] },
+      {
+        h: "Gukoresha serivisi",
+        p: [
+          "Ushobora gukoresha Isesengura mu gusura amakuru rusange no gukora no kubika imyanya y’isesengura. Wemera gutanga amakuru nyayo ya konti, kurinda ijambobanga ryawe, kandi ntukoreshe serivisi nabi, urugero ugerageza kuyihungabanya, kuyirenza urugero, cyangwa kohereza ibinyuranyije n’amategeko.",
+        ],
+      },
+      {
+        h: "Amakuru n’ukuri",
+        p: [
+          "Ibisubizo bibarwa hakoreshejwe amakuru ya NISR n’andi makuru rusange kandi si ibarurishamibare ryemewe rya NISR. Bishingira ku isoko, uburyo bugaragara muri buri mwanya n’imbogamizi zihandikwa. Zigenzure mbere yo kwishingikiriza ku mubare.",
+        ],
+      },
+      {
+        h: "Igaragazwa rifashijwe na AI",
+        p: [
+          "Sisitemu ya AI ishobora gutanga icyifuzo cy’uko umwanya utegurwa. Ntibara imibare igaragara. Ni wowe ukomeza kubazwa uko usobanura kandi ugakoresha ibisubizo. Reba [ubusobanuro kuri AI](/ai-transparency).",
+        ],
+      },
+      {
+        h: "Ibyo ushyiraho",
+        p: [
+          "Ukomeza kuba nyir’ibibazo ubaza n’impinduka ukora. Uduha uburenganzira bwo kubibika no kubikwereka kugira ngo dutange serivisi. Amakusanyamakuru y’ibanze akomeza kugengwa n’impushya z’abayatangaje, zigaragazwa kuri buri soko.",
+        ],
+      },
+      {
+        h: "Kuboneka kwa serivisi",
+        p: [
+          "Twihatira ko serivisi iboneka ariko ntitwizeza ko itazahagarara. Dushobora guhindura cyangwa gukuraho ibikorwa, kandi tuzagerageza kubibamenyesha iyo impinduka igira ingaruka ku byabitswe.",
+        ],
+      },
+      {
+        h: "Inshingano",
+        p: [
+          "Mu rugero amategeko yemera, abayobora serivisi ntibazaryozwa ibihombo biturutse ku byemezo byafashwe hakoreshejwe serivisi. Nta kintu kiri hano kigabanya inshingano zitagabanywa n’amategeko.",
+        ],
+      },
+      {
+        h: "Gusiba konti yawe",
+        p: [
+          "Ushobora guhagarika gukoresha serivisi igihe cyose ukadusaba gusiba konti yawe unyuze ku [rupapuro rwo kutwandikira](/contact). Dushobora guhagarika konti zica aya mabwiriza.",
+        ],
+      },
     ],
   } as DocPage,
 };
