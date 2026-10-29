@@ -1,0 +1,83 @@
+{"text":"Hi","label":"greeting"}
+{"text":"Hello there","label":"greeting"}
+{"text":"Good morning","label":"greeting"}
+{"text":"Hey, how are you?","label":"greeting"}
+{"text":"Hey there","label":"greeting"}
+{"text":"Hello, can you help me?","label":"greeting"}
+{"text":"Good afternoon","label":"greeting"}
+{"text":"Hi, I have a question","label":"greeting"}
+{"text":"I am a student","label":"student_intro"}
+{"text":"I just finished secondary school","label":"student_intro"}
+{"text":"I need help choosing what to study","label":"student_intro"}
+{"text":"I have completed secondary school and need guidance","label":"student_intro"}
+{"text":"I am in secondary school and thinking about university","label":"student_intro"}
+{"text":"I recently graduated from high school","label":"student_intro"}
+{"text":"I'm a student looking for guidance","label":"student_intro"}
+{"text":"I finished my secondary education","label":"student_intro"}
+{"text":"How has Software Engineering enrollment changed from 2021 to 2025?","label":"program_query"}
+{"text":"Compare enrollment in Software Engineering and Finance by year","label":"program_query"}
+{"text":"What is the graduation rate for Computer Science?","label":"program_query"}
+{"text":"Which university programs have the most students?","label":"program_query"}
+{"text":"Show student numbers for Software Engineering from 2021 to 2025","label":"program_query"}
+{"text":"How many students study finance at university?","label":"program_query"}
+{"text":"Compare enrollment in marketing and accounting programs","label":"program_query"}
+{"text":"Which degree programs have the best graduate employment rates?","label":"program_query"}
+{"text":"What is the student intake for the Economics course?","label":"program_query"}
+{"text":"I enjoy mathematics, what careers could fit me?","label":"career_pathways"}
+{"text":"Which sectors hire applied mathematics graduates?","label":"career_pathways"}
+{"text":"I am good at statistics and want to find a job","label":"career_pathways"}
+{"text":"What jobs can I get with a degree in applied math?","label":"career_pathways"}
+{"text":"Where can a data analyst find work in Rwanda?","label":"career_pathways"}
+{"text":"I like computers and biology, suggest career paths","label":"career_pathways"}
+{"text":"I like maths and want to know what jobs I could do","label":"career_pathways"}
+{"text":"I enjoy mathematics, what sectors could use those skills?","label":"career_pathways"}
+{"text":"Where can a data analyst find work in Rwanda?","label":"career_pathways"}
+{"text":"I am interested in numbers and finance careers","label":"career_pathways"}
+{"text":"What jobs use statistics and data skills?","label":"career_pathways"}
+{"text":"What sectors hire people with quantitative skills?","label":"career_pathways"}
+{"text":"Should I study Software Engineering or Finance?","label":"career_decision"}
+{"text":"Help me choose between accounting and economics","label":"career_decision"}
+{"text":"Which career should I pursue?","label":"career_decision"}
+{"text":"Compare a degree in computer science with business","label":"career_decision"}
+{"text":"What should I study if I like mathematics?","label":"career_decision"}
+{"text":"Should I become a software developer or data analyst?","label":"career_decision"}
+{"text":"I like math, should I study economics or accounting?","label":"career_decision"}
+{"text":"Help me decide between finance and marketing","label":"career_decision"}
+{"text":"Which program would suit me better, data science or software engineering?","label":"career_decision"}
+{"text":"I want to choose a degree program","label":"career_decision"}
+{"text":"Which districts have the highest poverty rates?","label":"data_query"}
+{"text":"Compare employment across districts","label":"data_query"}
+{"text":"What is maize yield in Musanze?","label":"data_query"}
+{"text":"Show rainfall and crop statistics by district","label":"data_query"}
+{"text":"How many job vacancies are listed by sector?","label":"data_query"}
+{"text":"What is the child vaccination coverage?","label":"data_query"}
+{"text":"Show university enrollment by program","label":"data_query"}
+{"text":"How has school dropout changed since 2020?","label":"data_query"}
+{"text":"Compare maize yield between Season A and Season B in Musanze","label":"data_query"}
+{"text":"Rank districts by employment rate","label":"data_query"}
+{"text":"How many vacancies are available by sector?","label":"data_query"}
+{"text":"Show poverty rates for Huye and Musanze","label":"data_query"}
+{"text":"What is the literacy rate by district?","label":"data_query"}
+{"text":"Which provinces have the most job vacancies?","label":"data_query"}
+{"text":"How has health facility access changed over time?","label":"data_query"}
+{"text":"What is the yield of Irish potato in Nyabihu?","label":"data_query"}
+{"text":"How much maize per hectare in Musanze?","label":"data_query"}
+{"text":"Show crop production by district and season","label":"data_query"}
+{"text":"Compare agriculture yields over the last few years","label":"data_query"}
+{"text":"What is the latest employment rate in Rwanda?","label":"data_query"}
+{"text":"What is the weather tomorrow?","label":"other"}
+{"text":"Tell me a joke","label":"other"}
+{"text":"Who won the football match?","label":"other"}
+{"text":"Can you write a poem about the ocean?","label":"other"}
+{"text":"What is the capital of France?","label":"other"}
+{"text":"Tell me about a movie actor","label":"other"}
+{"text":"Give me a pasta recipe","label":"other"}
+{"text":"What is the latest football score?","label":"other"}
+{"text":"Translate this sentence into French","label":"other"}
+{"text":"Can you help me book a flight?","label":"other"}
+{"text":"What is two plus two?","label":"other"}
+{"text":"What is the weather like in Kigali?","label":"other"}
+{"text":"Show me the weather forecast","label":"other"}
+{"text":"Will it rain tomorrow in Rwanda?","label":"other"}
+{"text":"Tell me the temperature in Kigali","label":"other"}
+{"text":"What is the forecast for Kigali weather?","label":"other"}
