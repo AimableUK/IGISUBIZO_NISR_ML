@@ -3,7 +3,17 @@ import { randomUUID } from "node:crypto";
 import { ConversationRequestSchema } from "@shared";
 import { requireAuth } from "../middleware/auth";
 import { analyzeViaModel } from "../services/model-client";
-import { analysisQuestion, replyToConversation } from "../services/conversation";
+import {
+  analysisQuestion,
+  extractLocation,
+  fetchWeatherForecast,
+  replyToClarification,
+  replyToConversation,
+  replyToUnsupported,
+  replyToWeather,
+  selectConversationTool,
+  weatherContext,
+} from "../services/conversation";
 import { env } from "../env";
 
 export const conversation = Router();
@@ -25,7 +35,31 @@ conversation.post("/", requireAuth, async (req, res) => {
         message: "AI-assisted replies are not configured. Turn off AI-assisted replies to use guided mode.",
       });
     }
-    const question = analysisQuestion(message, history);
+    const choice = await selectConversationTool(message, history, useAi);
+    if (choice.tool === "clarify") {
+      return res.json(await replyToClarification(message, history, useAi));
+    }
+    if (choice.tool === "unsupported") {
+      return res.json(await replyToUnsupported(message, history, useAi));
+    }
+    if (choice.tool === "weather") {
+      let forecast;
+      try {
+        forecast = await fetchWeatherForecast(
+          extractLocation(choice.question)
+          ?? extractLocation(message)
+          ?? extractLocation(weatherContext(history) ?? ""),
+        );
+      } catch (error) {
+        console.error("[conversation] weather source failed", error);
+        return res.status(503).json({
+          error: "weather_source_unavailable",
+          message: "I couldn’t reach the weather forecast service right now. Please try again shortly.",
+        });
+      }
+      return res.json(await replyToWeather(message, history, forecast, useAi));
+    }
+    const question = analysisQuestion(choice.question || message, history);
     const { result } = await analyzeViaModel(question, randomUUID());
     const reply = await replyToConversation(message, history, result, useAi);
     return res.json(reply);
