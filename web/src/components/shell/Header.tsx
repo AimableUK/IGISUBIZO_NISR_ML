@@ -1,9 +1,10 @@
 "use client";
 import Link from "next/link";
-import { BarChart3, Menu, Plus } from "lucide-react";
+import { Menu, Plus } from "lucide-react";
 import { useI18n } from "@/i18n";
 import LanguageSwitch from "./LanguageSwitch";
 import AccessibilityMenu from "../AccessibilityMenu";
+import Logo from "../Logo";
 
 const ICON_BTN = "inline-flex h-11 w-11 items-center justify-center rounded-lg text-ink hover:bg-surface2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary";
 
@@ -23,12 +24,7 @@ export default function Header({ isMobile, showBrand, onOpenMenu }: Props) {
           <Menu className="h-5 w-5" aria-hidden />
         </button>
       )}
-      {showBrand && (
-        <Link href="/workspace" className="flex items-center gap-2 rounded-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary">
-          <span aria-hidden className="flex h-8 w-8 items-center justify-center rounded-lg bg-tint text-on-tint"><BarChart3 className="h-4 w-4" /></span>
-          <span className="text-lg font-semibold tracking-tight">{t("brand")}</span>
-        </Link>
-      )}
+      {showBrand && <Logo href="/workspace" size="app" />}
       <div className="ml-auto flex items-center gap-1">
         <AccessibilityMenu />
         <LanguageSwitch />

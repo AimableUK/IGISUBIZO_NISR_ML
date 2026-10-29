@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Logo } from "./SiteHeader";
+import Logo from "./Logo";
 
 const cols = [
   { h: "Product", l: [["/workspace", "New analysis"], ["/history", "History"], ["/methodology", "Methodology"], ["/ai-transparency", "AI transparency"]] },

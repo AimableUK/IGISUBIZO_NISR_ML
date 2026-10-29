@@ -6,9 +6,10 @@ import { ChevronsUpDown, LogOut, Settings } from "lucide-react";
 import { signOut, useSession } from "@/lib/auth-client";
 import { useI18n } from "@/i18n";
 import Avatar from "./Avatar";
+import Tooltip from "./Tooltip";
 import { cx } from "./cx";
 
-const ITEM = "flex h-10 w-full items-center gap-3 rounded-lg px-3 text-left text-sm hover:bg-surface2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary";
+const ITEM = "flex h-10 w-full cursor-pointer items-center gap-3 rounded-lg px-3 text-left text-sm hover:bg-surface2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary";
 
 export default function UserMenu({ expanded, onNavigate }: { expanded: boolean; onNavigate: () => void }) {
   const { data } = useSession();
@@ -35,37 +36,39 @@ export default function UserMenu({ expanded, onNavigate }: { expanded: boolean; 
 
   return (
     <div ref={root} className="relative">
-      <button
-        ref={trigger}
-        type="button"
-        aria-haspopup="true"
-        aria-expanded={open}
-        aria-controls={open ? panelId : undefined}
-        aria-label={expanded ? undefined : `${t("user.menu")}: ${name}`}
-        title={expanded ? undefined : name}
-        onClick={() => setOpen((o) => !o)}
-        className={cx(
-          "flex w-full items-center rounded-lg text-left hover:bg-surface2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary",
-          expanded ? "gap-3 px-2 py-2" : "justify-center py-2",
-        )}
-      >
-        <Avatar name={name} image={image} />
-        {expanded && (
-          <>
-            <span className="min-w-0 flex-1">
-              <span className="block truncate text-sm font-medium">{name}</span>
-              <span className="block truncate text-xs text-muted">{email}</span>
-            </span>
-            <ChevronsUpDown className="h-4 w-4 shrink-0 text-muted" aria-hidden />
-          </>
-        )}
-      </button>
+      <Tooltip label={name} disabled={expanded || open}>
+        <button
+          ref={trigger}
+          type="button"
+          aria-haspopup="true"
+          aria-expanded={open}
+          aria-controls={open ? panelId : undefined}
+          aria-label={expanded ? undefined : `${t("user.menu")}: ${name}`}
+          onClick={() => setOpen((o) => !o)}
+          className={cx(
+            "flex w-full cursor-pointer items-center rounded-lg text-left hover:bg-surface2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary",
+            expanded ? "gap-3 px-2 py-2" : "justify-center py-2",
+          )}
+        >
+          <Avatar name={name} image={image} />
+          {expanded && (
+            <>
+              <span className="min-w-0 flex-1">
+                <span className="block truncate text-sm font-medium">{name}</span>
+                <span className="block truncate text-xs text-muted">{email}</span>
+              </span>
+              <ChevronsUpDown className="h-4 w-4 shrink-0 text-muted" aria-hidden />
+            </>
+          )}
+        </button>
+      </Tooltip>
 
       {open && (
         <div
           id={panelId}
+          data-no-expand
           className={cx(
-            "absolute z-50 w-64 rounded-card border border-line bg-surface p-1.5 shadow-lg",
+            "absolute z-50 w-64 cursor-default rounded-card border border-line bg-surface p-1.5 shadow-lg",
             expanded ? "bottom-full left-0 mb-2" : "bottom-0 left-full ml-2",
           )}
         >

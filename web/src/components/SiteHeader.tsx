@@ -9,20 +9,7 @@ import AccessibilityMenu from "./AccessibilityMenu";
 import LanguageSwitcher from "./marketing/LanguageSwitcher";
 import { useSession } from "@/lib/auth-client";
 import { useT } from "@/i18n";
-
-export function Logo() {
-  const h = useT().header;
-  return (
-    <Link
-      href="/"
-      className="flex items-center gap-2.5 font-display text-xl font-semibold"
-      aria-label={h.homeLabel}
-    >
-      <Image src="/logo.png" alt={h.logoAlt} width={60} height={60} />
-      Mboni
-    </Link>
-  );
-}
+import Logo from "./Logo";
 
 // Same look for every row in the mobile menu: plain row, background on hover and press.
 const MOBILE_ROW =

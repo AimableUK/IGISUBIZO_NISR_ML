@@ -9,6 +9,8 @@ import { useMboniEye, type MboniEvent } from "@/components/mboni/useMboniEye";
 import { api } from "@/lib/api";
 import { getSocket } from "@/lib/socket";
 import { useI18n, type Key } from "@/i18n";
+import { useAppTheme } from "@/components/mboni/useAppTheme";
+
 
 type State = { kind: "idle" } | { kind: "running" } | { kind: "blocked"; result: AnalyticalResult } | { kind: "error" };
 const BLOCKED_TITLE: Record<string, Key> = { ambiguous: "ws.blocked.ambiguous", unsupported: "ws.blocked.unsupported", no_data: "ws.blocked.no_data" };
@@ -32,6 +34,8 @@ function Runner() {
   const [q, setQ] = useState(sp.get("q") ?? "");
   const started = useRef(false);
   const { state: eye, send } = useMboniEye();
+  const appTheme = useAppTheme();
+
 
   // The eye follows the analysis; when nothing is running (or it failed / was blocked) it rests.
   useEffect(() => { send(state.kind === "running" ? EYE_EVENT[stage] : "idle"); }, [state.kind, stage, send]);
@@ -66,7 +70,7 @@ function Runner() {
           <div className="flex flex-col items-center text-center">
             {/* Decorative: the stage list below carries the meaning for screen readers. */}
             <div aria-hidden>
-              <MboniEye state={eye} width={120} theme="light" />
+              <MboniEye state={eye} width={120} theme={appTheme} />
             </div>
             <h2 className="mt-2 font-semibold">{t("ws.building")}</h2>
           </div>

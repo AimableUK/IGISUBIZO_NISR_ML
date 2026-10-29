@@ -1,11 +1,13 @@
 "use client";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState, type MouseEvent } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { BarChart3, History as HistoryIcon, PanelLeftClose, PanelLeftOpen, Plus, Search, X } from "lucide-react";
+import { History as HistoryIcon, PanelLeftClose, PanelLeftOpen, Plus, Search, X } from "lucide-react";
 import type { ArtifactSummary } from "@/shared";
+import Logo, { LogoMark } from "@/components/Logo";
 import { useI18n, type Key } from "@/i18n";
 import { useHistory } from "./HistoryProvider";
+import Tooltip from "./Tooltip";
 import UserMenu from "./UserMenu";
 import { cx } from "./cx";
 
@@ -17,8 +19,9 @@ function groupOf(updatedAt: string, startOfToday: number): GroupId {
   return days <= 0 ? "today" : days === 1 ? "yesterday" : days < 7 ? "week" : "older";
 }
 
-const ROW = "flex h-10 items-center rounded-lg text-sm hover:bg-surface2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary";
-const ICON_BTN = "inline-flex h-10 w-10 items-center justify-center rounded-lg text-muted hover:bg-surface2 hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary";
+const FOCUS = "focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary";
+const ROW = `flex h-10 cursor-pointer items-center rounded-lg text-sm hover:bg-surface2 ${FOCUS}`;
+const ICON_BTN = `inline-flex h-10 w-10 items-center justify-center rounded-lg text-muted hover:bg-surface2 hover:text-ink ${FOCUS}`;
 
 type Props = {
   expanded: boolean;
@@ -54,35 +57,71 @@ export default function Sidebar({ expanded, isDrawer, onToggle, onNavigate }: Pr
   }, [filtered]);
 
   const closeSearch = () => { setSearching(false); setQ(""); };
-  const ToggleIcon = isDrawer ? X : expanded ? PanelLeftClose : PanelLeftOpen;
-  const toggleLabel = isDrawer ? t("nav.closeMenu") : expanded ? t("nav.collapse") : t("nav.expand");
+  const ToggleIcon = isDrawer ? X : PanelLeftClose;
+  const toggleLabel = isDrawer ? t("nav.closeMenu") : t("nav.collapse");
+
+  // Collapsed rail: a click on any empty spot opens the sidebar. Buttons, links and open menus keep their own behaviour.
+  // (Keyboard users open it with the toggle button, which becomes visible on focus.)
+  const onRailClick = (e: MouseEvent<HTMLDivElement>) => {
+    if (expanded) return;
+    if ((e.target as HTMLElement).closest("a, button, input, select, textarea, [data-no-expand]")) return;
+    onToggle();
+  };
 
   return (
-    <div className="flex h-full min-h-0 flex-col">
-      {/* Brand + toggle */}
-      <div className={cx("flex h-14 shrink-0 items-center", expanded ? "justify-between pl-4 pr-2" : "justify-center")}>
-        {expanded && (
-          <Link href="/workspace" onClick={onNavigate} className="flex items-center gap-2 rounded-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary">
-            <span aria-hidden className="flex h-8 w-8 items-center justify-center rounded-lg bg-tint text-on-tint"><BarChart3 className="h-4 w-4" /></span>
-            <span className="text-lg font-semibold tracking-tight">{t("brand")}</span>
-          </Link>
-        )}
-        <button type="button" className={ICON_BTN} onClick={onToggle} aria-label={toggleLabel} title={toggleLabel}>
-          <ToggleIcon className="h-5 w-5" aria-hidden />
-        </button>
-      </div>
+    <div
+      onClick={onRailClick}
+      className={cx("group/rail flex h-full min-h-0 flex-col", !expanded && "cursor-e-resize")}
+    >
+      {/* Top: logo + collapse (expanded)  |  logo that turns into the expand button on hover (rail) */}
+      {expanded ? (
+        <div className="flex h-14 shrink-0 items-center justify-between pl-4 pr-2">
+          <Logo href="/workspace" size="app" onClick={onNavigate} />
+          <button
+            type="button"
+            className={cx(ICON_BTN, isDrawer ? "cursor-pointer" : "cursor-w-resize")}
+            onClick={onToggle}
+            aria-label={toggleLabel}
+            title={toggleLabel}
+          >
+            <ToggleIcon className="h-5 w-5" aria-hidden />
+          </button>
+        </div>
+      ) : (
+        <div className="flex h-14 shrink-0 items-center justify-center">
+          <Tooltip label={t("nav.expand")}>
+            <div className="relative h-10 w-10">
+              <button
+                type="button"
+                onClick={onToggle}
+                aria-label={t("nav.expand")}
+                className={cx(ICON_BTN, "peer absolute inset-0 cursor-e-resize opacity-0 transition-opacity focus-visible:opacity-100 group-hover/rail:opacity-100 motion-reduce:transition-none")}
+              >
+                <PanelLeftOpen className="h-5 w-5" aria-hidden />
+              </button>
+              <span
+                aria-hidden
+                className="pointer-events-none absolute inset-0 flex items-center justify-center transition-opacity peer-focus-visible:opacity-0 group-hover/rail:opacity-0 motion-reduce:transition-none"
+              >
+                <LogoMark />
+              </span>
+            </div>
+          </Tooltip>
+        </div>
+      )}
 
       {/* Primary actions */}
       <div className={cx("space-y-1 px-2", !expanded && "flex flex-col items-center")}>
-        <Link
-          href="/workspace"
-          onClick={onNavigate}
-          aria-label={expanded ? undefined : t("nav.new")}
-          title={expanded ? undefined : t("nav.new")}
-          className={cx(ROW, expanded ? "w-full gap-3 px-3 font-medium" : "w-10 justify-center", pathname === "/workspace" && "bg-surface2")}
-        >
-          <Plus className="h-5 w-5 shrink-0" aria-hidden />{expanded && t("nav.new")}
-        </Link>
+        <Tooltip label={t("nav.new")} disabled={expanded}>
+          <Link
+            href="/workspace"
+            onClick={onNavigate}
+            aria-label={expanded ? undefined : t("nav.new")}
+            className={cx(ROW, expanded ? "w-full gap-3 px-3 font-medium" : "w-10 justify-center", pathname === "/workspace" && "bg-surface2")}
+          >
+            <Plus className="h-5 w-5 shrink-0" aria-hidden />{expanded && t("nav.new")}
+          </Link>
+        </Tooltip>
 
         {expanded && searching ? (
           <div className="relative">
@@ -100,15 +139,16 @@ export default function Sidebar({ expanded, isDrawer, onToggle, onNavigate }: Pr
             />
           </div>
         ) : (
-          <button
-            type="button"
-            onClick={() => { setSearching(true); if (!expanded) onToggle(); }}
-            aria-label={expanded ? undefined : t("nav.search")}
-            title={expanded ? undefined : t("nav.search")}
-            className={cx(ROW, expanded ? "w-full gap-3 px-3" : "w-10 justify-center")}
-          >
-            <Search className="h-5 w-5 shrink-0" aria-hidden />{expanded && t("nav.search")}
-          </button>
+          <Tooltip label={t("nav.search")} disabled={expanded}>
+            <button
+              type="button"
+              onClick={() => { setSearching(true); if (!expanded) onToggle(); }}
+              aria-label={expanded ? undefined : t("nav.search")}
+              className={cx(ROW, expanded ? "w-full gap-3 px-3" : "w-10 justify-center")}
+            >
+              <Search className="h-5 w-5 shrink-0" aria-hidden />{expanded && t("nav.search")}
+            </button>
+          </Tooltip>
         )}
       </div>
 
@@ -124,7 +164,7 @@ export default function Sidebar({ expanded, isDrawer, onToggle, onNavigate }: Pr
             {error && (
               <div role="alert" className="px-3 py-2 text-sm">
                 <p className="text-muted">{t("nav.loadError")}</p>
-                <button type="button" onClick={refresh} className="mt-1 font-medium text-primary underline underline-offset-2">{t("nav.retry")}</button>
+                <button type="button" onClick={refresh} className="mt-1 cursor-pointer font-medium text-primary underline underline-offset-2">{t("nav.retry")}</button>
               </div>
             )}
             {items && items.length === 0 && <p className="px-3 py-2 text-sm text-muted">{t("nav.empty")}</p>}
@@ -158,15 +198,16 @@ export default function Sidebar({ expanded, isDrawer, onToggle, onNavigate }: Pr
 
       {/* Footer */}
       <div className={cx("shrink-0 space-y-1 border-t border-line p-2", !expanded && "flex flex-col items-center")}>
-        <Link
-          href="/history"
-          onClick={onNavigate}
-          aria-label={expanded ? undefined : t("nav.all")}
-          title={expanded ? undefined : t("nav.all")}
-          className={cx(ROW, expanded ? "w-full gap-3 px-3 text-muted" : "w-10 justify-center text-muted", pathname === "/history" && "bg-surface2")}
-        >
-          <HistoryIcon className="h-5 w-5 shrink-0" aria-hidden />{expanded && t("nav.all")}
-        </Link>
+        <Tooltip label={t("nav.all")} disabled={expanded}>
+          <Link
+            href="/history"
+            onClick={onNavigate}
+            aria-label={expanded ? undefined : t("nav.all")}
+            className={cx(ROW, expanded ? "w-full gap-3 px-3 text-muted" : "w-10 justify-center text-muted", pathname === "/history" && "bg-surface2")}
+          >
+            <HistoryIcon className="h-5 w-5 shrink-0" aria-hidden />{expanded && t("nav.all")}
+          </Link>
+        </Tooltip>
         <div className={expanded ? "w-full" : "w-10"}><UserMenu expanded={expanded} onNavigate={onNavigate} /></div>
       </div>
     </div>
