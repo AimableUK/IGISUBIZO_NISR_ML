@@ -307,6 +307,14 @@ def evaluate_dataset_queries():
     ]
     assert student_decision["meta"]["isSample"] is True
     print("  [OK] Study-choice comparisons use named programs and disclose proxy data.")
+    hotel_choice = route(
+        "What if I took hotel management? Hotel Manager career in Rwanda"
+    )
+    validate_schema(hotel_choice)
+    assert hotel_choice["status"] == "ok", hotel_choice.get("message")
+    assert hotel_choice["decision"]["options"] == ["Hotel Manager"]
+    assert hotel_choice["sources"]["nisr_lmis"]["isSample"] is True
+    print("  [OK] Hotel-management questions return career evidence with proxy-data labeling.")
     applied_math = route("Which sectors hire applied mathematics graduates?")
     validate_schema(applied_math)
     pathway_rows = applied_math["datasets"]["applied_math_pathways"]["rows"]

@@ -45,6 +45,9 @@
 {"text":"Help me decide between finance and marketing","label":"career_decision"}
 {"text":"Which program would suit me better, data science or software engineering?","label":"career_decision"}
 {"text":"I want to choose a degree program","label":"career_decision"}
+{"text":"What if I took hotel management? What are the pros and cons?","label":"career_decision"}
+{"text":"Would hospitality management suit me as a career?","label":"career_decision"}
+{"text":"What are the good and bad sides of becoming a hotel manager?","label":"career_decision"}
 {"text":"Which districts have the highest poverty rates?","label":"data_query"}
 {"text":"Compare employment across districts","label":"data_query"}
 {"text":"What is maize yield in Musanze?","label":"data_query"}
