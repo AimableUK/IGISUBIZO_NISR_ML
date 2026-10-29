@@ -4,12 +4,24 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { AlertCircle, Check, Circle, Loader2 } from "lucide-react";
 import { ProgressStages, type AnalyticalResult, type ProgressStage } from "@/shared";
 import QuestionBar from "@/components/chat/QuestionBar";
+import MboniEye from "@/components/mboni/MboniEye";
+import { useMboniEye, type MboniEvent } from "@/components/mboni/useMboniEye";
 import { api } from "@/lib/api";
 import { getSocket } from "@/lib/socket";
 import { useI18n, type Key } from "@/i18n";
 
 type State = { kind: "idle" } | { kind: "running" } | { kind: "blocked"; result: AnalyticalResult } | { kind: "error" };
 const BLOCKED_TITLE: Record<string, Key> = { ambiguous: "ws.blocked.ambiguous", unsupported: "ws.blocked.unsupported", no_data: "ws.blocked.no_data" };
+
+// Which eye animation plays for each analysis stage.
+const EYE_EVENT: Record<ProgressStage, MboniEvent> = {
+  interpreting: "ask",
+  validating: "search",
+  computing: "work",
+  planning: "work",
+  saving: "work",
+  ready: "answer",
+};
 
 function Runner() {
   const sp = useSearchParams();
@@ -19,6 +31,10 @@ function Runner() {
   const [stage, setStage] = useState<ProgressStage>("interpreting");
   const [q, setQ] = useState(sp.get("q") ?? "");
   const started = useRef(false);
+  const { state: eye, send } = useMboniEye();
+
+  // The eye follows the analysis; when nothing is running (or it failed / was blocked) it rests.
+  useEffect(() => { send(state.kind === "running" ? EYE_EVENT[stage] : "idle"); }, [state.kind, stage, send]);
 
   const run = useCallback(async (question: string) => {
     const requestId = crypto.randomUUID();
@@ -47,8 +63,14 @@ function Runner() {
 
       {state.kind === "running" && (
         <div role="status" aria-live="polite" className="card mt-8 p-5">
-          <h2 className="font-semibold">{t("ws.building")}</h2>
-          <ol className="mt-3 space-y-2 text-sm">
+          <div className="flex flex-col items-center text-center">
+            {/* Decorative: the stage list below carries the meaning for screen readers. */}
+            <div aria-hidden>
+              <MboniEye state={eye} width={120} theme="light" />
+            </div>
+            <h2 className="mt-2 font-semibold">{t("ws.building")}</h2>
+          </div>
+          <ol className="mx-auto mt-4 max-w-sm space-y-2 text-sm">
             {ProgressStages.map((s, i) => (
               <li key={s} className={`flex items-center gap-2 ${i > idx ? "text-muted" : ""}`}>
                 {i < idx ? <Check className="h-4 w-4 text-primary" aria-hidden /> : i === idx ? <Loader2 className="h-4 w-4 animate-spin text-primary" aria-hidden /> : <Circle className="h-4 w-4" aria-hidden />}
