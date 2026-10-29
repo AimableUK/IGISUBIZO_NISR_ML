@@ -828,17 +828,14 @@ export const en = {
     logoAlt: "Mboni logo",
     navMain: "Main",
     navMobile: "Mobile",
-    newAnalysis: "New analysis",
-    history: "History",
-    settings: "Settings",
     about: "About",
     methodology: "Methodology",
     contact: "Contact",
-    signOut: "Sign out",
     signIn: "Sign in",
     createAccount: "Create account",
     openMenu: "Open menu",
     closeMenu: "Close menu",
+    goToWorkspace: "Go to workspace",
   },
 
   admin: {
@@ -1085,6 +1082,16 @@ export const en = {
         q: "Compare household electricity access across districts",
       },
     ] as Example[],
+  },
+  a11y: {
+    label: "Display and accessibility settings",
+    theme: "Theme",
+    day: "Day",
+    night: "Night",
+    system: "System",
+    textSize: "Text size",
+    contrast: "High contrast",
+    motion: "Reduce motion",
   },
 };
 

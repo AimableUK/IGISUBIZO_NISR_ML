@@ -3,6 +3,7 @@ import Link from "next/link";
 import { BarChart3, Menu, Plus } from "lucide-react";
 import { useI18n } from "@/i18n";
 import LanguageSwitch from "./LanguageSwitch";
+import AccessibilityMenu from "../AccessibilityMenu";
 
 const ICON_BTN = "inline-flex h-11 w-11 items-center justify-center rounded-lg text-ink hover:bg-surface2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary";
 
@@ -29,6 +30,7 @@ export default function Header({ isMobile, showBrand, onOpenMenu }: Props) {
         </Link>
       )}
       <div className="ml-auto flex items-center gap-1">
+        <AccessibilityMenu />
         <LanguageSwitch />
         {isMobile && (
           <Link href="/workspace" className={ICON_BTN} aria-label={t("nav.new")} title={t("nav.new")}>
