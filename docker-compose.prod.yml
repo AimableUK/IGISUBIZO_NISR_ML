@@ -33,6 +33,7 @@ services:
   model:
     build: { context: ./model, dockerfile: Dockerfile }
     restart: unless-stopped
+    volumes: [modeltraining:/app/data/training]
     environment:
       API_URL: http://api:4000
     healthcheck:
@@ -93,3 +94,4 @@ services:
 volumes:
   pgdata:
   redisdata:
+  modeltraining:
