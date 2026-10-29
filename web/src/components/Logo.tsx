@@ -2,25 +2,34 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useT } from "@/i18n";
+import LiveEye from "@/components/mboni/LiveEye";
 
 // "site" = marketing header, "app" = sidebar and app header (a bit smaller).
-// Below the sm breakpoint (640px) both shrink so they fit small phones.
+// Below the sm breakpoint (640px) the png versions shrink so they fit small phones.
 const SIZES = {
   site: {
     box: "h-10 w-10 sm:h-[50px] sm:w-[50px]",
     text: "text-lg sm:text-xl",
     gap: "gap-2 sm:gap-2.5",
+    eye: 64,
   },
-  app: { box: "h-8 w-8 sm:h-9 sm:w-9", text: "text-lg", gap: "gap-2" },
+  app: { box: "h-8 w-8 sm:h-9 sm:w-9", text: "text-lg", gap: "gap-2", eye: 44 },
 } as const;
 
 type Props = {
   href?: string;
   size?: keyof typeof SIZES;
   onClick?: () => void;
+  /** Use the live, fidgeting eye instead of the png. */
+  animated?: boolean;
 };
 
-export default function Logo({ href = "/", size = "site", onClick }: Props) {
+export default function Logo({
+  href = "/",
+  size = "site",
+  onClick,
+  animated = false,
+}: Props) {
   const h = useT().header;
   const s = SIZES[size];
   const inApp = size === "app";
@@ -31,20 +40,39 @@ export default function Logo({ href = "/", size = "site", onClick }: Props) {
       aria-label={inApp ? undefined : h.homeLabel}
       className={`flex items-center rounded-lg font-display font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary ${s.gap} ${s.text}`}
     >
-      {/* In the app the visible "Mboni" text already names the link, so the image is decorative. */}
-      <Image
-        src="/logo.png"
-        alt={inApp ? "" : h.logoAlt}
-        width={100}
-        height={100}
-        className={`${s.box} shrink-0 object-contain`}
-      />
+      {animated ? (
+        // Decorative: the visible "Mboni" text already names the link.
+        <span aria-hidden className="inline-flex shrink-0">
+          <LiveEye width={s.eye} />
+        </span>
+      ) : (
+        <Image
+          src="/logo.png"
+          alt={inApp ? "" : h.logoAlt}
+          width={100}
+          height={100}
+          className={`${s.box} shrink-0 object-contain`}
+        />
+      )}
       Mboni
     </Link>
   );
 }
 
-export function LogoMark({ className = "" }: { className?: string }) {
+/** Icon only, no text and no link. */
+export function LogoMark({
+  className = "",
+  animated = false,
+}: {
+  className?: string;
+  animated?: boolean;
+}) {
+  if (animated)
+    return (
+      <span aria-hidden className={`inline-flex shrink-0 ${className}`}>
+        <LiveEye width={38} />
+      </span>
+    );
   return (
     <Image
       src="/logo.png"

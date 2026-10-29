@@ -76,7 +76,7 @@ export default function Sidebar({ expanded, isDrawer, onToggle, onNavigate }: Pr
       {/* Top: logo + collapse (expanded)  |  logo that turns into the expand button on hover (rail) */}
       {expanded ? (
         <div className="flex h-14 shrink-0 items-center justify-between pl-4 pr-2">
-          <Logo href="/workspace" size="app" onClick={onNavigate} />
+          <Logo href="/workspace" size="app" onClick={onNavigate} animated />
           <button
             type="button"
             className={cx(ICON_BTN, isDrawer ? "cursor-pointer" : "cursor-w-resize")}
@@ -103,7 +103,7 @@ export default function Sidebar({ expanded, isDrawer, onToggle, onNavigate }: Pr
                 aria-hidden
                 className="pointer-events-none absolute inset-0 flex items-center justify-center transition-opacity peer-focus-visible:opacity-0 group-hover/rail:opacity-0 motion-reduce:transition-none"
               >
-                <LogoMark />
+                <LogoMark animated />
               </span>
             </div>
           </Tooltip>

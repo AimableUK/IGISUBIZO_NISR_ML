@@ -24,7 +24,7 @@ export default function Header({ isMobile, showBrand, onOpenMenu }: Props) {
           <Menu className="h-5 w-5" aria-hidden />
         </button>
       )}
-      {showBrand && <Logo href="/workspace" size="app" />}
+      {showBrand && <Logo href="/workspace" size="app" animated />}
       <div className="ml-auto flex items-center gap-1">
         <AccessibilityMenu />
         <LanguageSwitch />

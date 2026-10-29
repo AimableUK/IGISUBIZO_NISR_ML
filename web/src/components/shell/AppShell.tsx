@@ -90,7 +90,7 @@ export default function AppShell({ children }: { children: ReactNode }) {
       {showBackdrop && <div aria-hidden onClick={dismiss} className="fixed inset-0 z-30 bg-black/40" />}
 
       <div className="flex min-w-0 flex-1 flex-col">
-        <Header isMobile={isMobile} showBrand={bp !== "desktop" || !expanded} onOpenMenu={toggle} />
+        <Header isMobile={isMobile} showBrand={isMobile} onOpenMenu={toggle} />
         <main id="main" tabIndex={-1} className="min-h-0 flex-1 overflow-y-auto focus:outline-none">{children}</main>
       </div>
     </div>
