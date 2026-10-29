@@ -21,7 +21,7 @@ export default function Settings() {
     try {
       const a = await api.imagekitAuth();
       const fd = new FormData();
-      fd.append("file", f); fd.append("fileName", `avatar-${data?.user.id}`); fd.append("folder", "/avatars"); fd.append("useUniqueFileName", "true");
+      fd.append("file", f); fd.append("fileName", `avatar-${data?.user.id}`);       fd.append("folder", `/mboni/${data?.user.id}/avatars`); fd.append("useUniqueFileName", "true");
       fd.append("publicKey", a.publicKey); fd.append("token", a.token); fd.append("expire", String(a.expire)); fd.append("signature", a.signature);
       const { data: up } = await axios.post<{ url: string }>("https://upload.imagekit.io/api/v1/files/upload", fd);
       await authClient.updateUser({ image: up.url });
