@@ -2,16 +2,17 @@
 
 The Python FastAPI service is the analysis backend used by the Express API. It exposes `GET /health` and `POST /analyze`; the API connects to it with `MODEL_URL`.
 
-The "brain" is ordinary Python code, not a trained neural network:
+The model service combines a small **trainable intent classifier** with ordinary Python analysis code; it is not a generative LLM:
 
-- regex/synonym rules route questions to an engine;
+- a Multinomial Naive Bayes classifier learns to route greetings, student introductions, program questions, career-path questions, decisions, data questions, and out-of-scope requests from labeled examples;
+- regex/synonym rules and domain-specific engines still compute the answers;
 - a dataset query engine answers metric, comparison, ranking, and trend questions across 12 CSV datasets (11 generated proxies and one official NISR table);
 - K-means clusters district profiles;
 - panel OLS estimates associations;
 - linear regression extrapolates sector trends;
 - decision rules calculate weighted crop/career comparisons.
 
-The optional Anthropic integration is a separate presentation planner; it does not calculate the analysis.
+The optional Anthropic integration is a separate presentation planner; it does not calculate the analysis. The intent classifier is trained from `engine/intent_seed.jsonl` and admin-added examples. Admins can add labeled examples and train/save the classifier from `/admin`; production persists its artifact and examples in the `modeltraining` volume. Its hold-out score measures intent routing only, not whether career or statistical advice is accurate. Use varied, reviewed examples and verified data; do not add personal student information.
 
 Career decision support now includes named study-program comparisons using enrollment, graduation, graduate employment, and wage indicators; questions such as “How has Software Engineering enrollment changed from 2021 to 2025?” return a yearly series, and “Should I study Software Engineering or Finance?” compares the programs. Applied-mathematics questions return ten potential sectors, related occupations, and Rwanda locations represented in the job-demand file. These education and job-demand files are generated proxy data: the pathway list is illustrative, and the source does not verify employer eligibility or entry-level hiring. Do not treat the current rankings or vacancy counts as real labor-market advice.
 
