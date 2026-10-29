@@ -1,6 +1,6 @@
 "use client";
-import { createContext, useCallback, useContext, useEffect, useState, type ReactNode } from "react";
-import { en, type Dict } from "./en";
+import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
+import { en, type Dict, type Example } from "./en";
 import { rw } from "./rw";
 
 export type Locale = "en" | "rw";
@@ -49,4 +49,40 @@ export const useT = () => useContext(LocaleContext).t;
 /** Sets the browser tab title. Marketing pages are client components, so they cannot export `metadata`. */
 export function useDocumentTitle(title: string) {
   useEffect(() => { document.title = `${title} · Mboni`; }, [title]);
+}
+
+/* ------------------------------------------------------------------ */
+/* Adapter used by the app shell and the (app) pages                   */
+/* ------------------------------------------------------------------ */
+
+export type Key = string;
+type Vars = Record<string, string | number>;
+
+const lookup = (obj: unknown, path: string): unknown =>
+  path.split(".").reduce<any>((o, k) => o?.[k], obj); // eslint-disable-line @typescript-eslint/no-explicit-any
+
+/**
+ * t("ws.title"), t("hist.version", { n: 2, total: 5 }).
+ * Keys are looked up in dict.app first, then dict.common (so t("brand") returns common.brand).
+ */
+export function useI18n() {
+  const { locale, t: dict, setLocale } = useLocale();
+  return useMemo(() => {
+    let fmt: Intl.DateTimeFormat;
+    try { fmt = new Intl.DateTimeFormat(locale, { dateStyle: "medium" }); }
+    catch { fmt = new Intl.DateTimeFormat("en", { dateStyle: "medium" }); }
+    return {
+      locale,
+      setLocale,
+      t: (key: Key, vars?: Vars): string => {
+        const raw = String(lookup(dict.app, key) ?? lookup(dict.common, key) ?? key);
+        return raw.replace(/\{(\w+)\}/g, (_, k: string) => (vars && k in vars ? String(vars[k]) : `{${k}}`));
+      },
+      examples: dict.app.examples as Example[],
+      formatDate: (v: string | number | Date) => {
+        const d = new Date(v);
+        return Number.isNaN(d.getTime()) ? "" : fmt.format(d);
+      },
+    };
+  }, [locale, setLocale, dict]);
 }
