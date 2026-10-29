@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Bricolage_Grotesque, Public_Sans } from "next/font/google";
 import "./globals.css";
+import { LocaleProvider } from "@/i18n";
 import Providers from "@/components/Providers";
 import SiteHeader from "@/components/SiteHeader";
 
@@ -24,8 +25,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:left-3 focus:top-3 focus:z-50 focus:rounded-lg focus:bg-primary focus:px-4 focus:py-2 focus:text-on-primary">Skip to main content</a>
         <Providers>
-          <SiteHeader />
-          <main id="main" tabIndex={-1} className="outline-none">{children}</main>
+          <LocaleProvider>
+            <SiteHeader />
+            <main id="main" tabIndex={-1} className="outline-none">{children}</main>
+          </LocaleProvider>
         </Providers>
       </body>
     </html>

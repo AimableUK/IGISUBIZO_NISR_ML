@@ -1,203 +1,228 @@
-# Isesengura — Rwanda Choice Engine
+# Isesengura
 
-Canonical repository: <https://github.com/AimableUK/IGISUBIZO_NISR_ML>
+**An interactive analytical workspace for exploring Rwanda's public data and turning evidence into clearer decisions.**
 
-Built for the **2026 NISR Big Data Hackathon**. Isesengura (Kinyarwanda for "analysis") is a **decision-support system demo**: ask a question about a real decision you face in Rwanda — which career to study for, which crop to plant, which sector to move into — and explore a ranked comparison with visible methods and limitations. Current results use generated proxy data, not verified NISR observations.
+Isesengura helps people explore statistical data through structured analyses, indicators, charts, tables, and explanatory insights. Instead of returning only a conversational answer, the goal is to make findings easier to inspect, compare, understand, and revisit.
 
-It is not a chatbot and not a dashboard viewer. It answers **"what should I consider choosing, and why?"** without ever deciding for the person.
+> **Hackathon project:** Developed by Team Igisubizo for the 2026 NISR Big Data Hackathon.
 
----
+## Overview
 
-## Problem statement
+Public data is most useful when people can find relevant evidence, understand what it means, and inspect how conclusions were reached. Isesengura is being built to make that process more accessible through an analytical workspace that combines data, visualizations, and explanations.
 
-> There is no accessible tool that lets a person in Rwanda describe a decision they face, in plain language, and receive a ranked, evidence-based comparison of their realistic options, computed from real data, with the uncertainty, the reasons and the sources made visible.
+The project focuses on:
 
-People in Rwanda make large life decisions with little reliable evidence: which career to study for, which crop to plant, which business to start. Public statistics exist but sit in CSV and Excel files that ordinary people cannot read, combine or interpret. The result is poor choices that cost years of study, a season of work or savings.
+- Making statistical information easier to explore.
+- Presenting results through suitable charts, tables, indicators, and summaries.
+- Supporting comparisons across available locations, periods, and categories.
+- Keeping data sources and analytical limitations visible.
+- Helping users move from a question to an inspectable result, rather than relying on an unsupported answer.
 
-### Who it is for
+The availability of any specific analysis depends on the datasets and analytical methods integrated into the current deployment. The project does not claim that every topic, district, or period is already covered.
 
-| User | Example decision |
-|------|-----------------|
-| Student or school leaver | Which field to study, given jobs, pay and growth |
-| Job seeker or career changer | Which sector or occupation to move into |
-| Farmer or cooperative | Which crop to plant this season in this district |
-| Small business owner | Which business or product to start, and where |
-| Policymaker / NGO (secondary) | Where to focus training, extension or investment |
+## Why Isesengura?
 
-### What the system must never do
+Statistical publications and datasets can be difficult to navigate when a user needs to compare indicators, understand a trend, or find evidence for a decision. Isesengura aims to reduce that friction by bringing the question, evidence, visualization, and explanation into one workspace.
 
-- Invent data, statistics, sources, model results or confidence values
-- Treat missing data as zero, or unavailable data as available
-- Claim causation from correlation or model output
-- Declare a choice "dead" or "guaranteed" — it shows evidence, direction and uncertainty
-- Make the final decision for the user
+Our goal is not to replace official statistics or expert judgment. It is to make credible data easier to work with while keeping the underlying evidence inspectable.
 
----
+## Core experience
 
-## Decision pipeline
+Depending on the data and analysis available in the deployed version, Isesengura is designed to support:
 
-```
-User question
-  -> 1. Decision framing      (type, options, location, constraints)
-  -> 2. Data discovery        (which datasets and variables exist and are usable)
-  -> 3. Indicator computation (real queries on CSV data, weighted where needed)
-  -> 4. Modelling             (trend, forecast, risk, clustering where justified)
-  -> 5. Option scoring        (transparent criteria, adjustable weights)
-  -> 6. Verification          (checks, provenance, limitations)
-  -> AnalyticalResult JSON (immutable)
-  -> PresentationSpec -> renderer -> saved artifact
-```
+- **Question-led analysis:** Start with a question about a supported dataset or indicator.
+- **Visual results:** Present findings using suitable metrics, charts, tables, and other supported visual components.
+- **Comparison and exploration:** Inspect differences across available groups, locations, or time periods.
+- **Explanatory insights:** Read concise interpretations alongside the results.
+- **Source-aware results:** Connect outputs to the available data sources and disclose relevant limitations.
+- **Reusable workspace:** Make analyses easier to review and revisit where history is enabled.
+- **Accessible presentation:** Aim to make findings understandable through more than visual charts alone, including readable values and text explanations.
 
-The data and models produce every number. The language model (optional) plans and explains. It does not generate figures.
+These are project goals and supported capabilities should be judged against what is actually enabled in the submitted deployment.
 
----
+## Responsible use of data and AI
 
-## Architecture
+Isesengura is designed around a clear separation between analytical results and their presentation. A visualization should communicate the result, not silently change it.
 
-```
-question ─▶ NLU (intent + decision type)
-              ├─▶ decision engine  ─▶ DecisionResult (ranked options, indicators, scores)  ┐
-              ├─▶ career engine    ─▶ AnalyticalResult (career demand scoring)              ├─▶ AnalyticalResult (immutable)
-              ├─▶ clustering       ─▶ AnalyticalResult (district underutilization)          │
-              ├─▶ regression       ─▶ AnalyticalResult (NEET predictors)                   │
-              └─▶ forecasting      ─▶ AnalyticalResult (sector employment trends)          ┘
-                                                    │
-                                             planner ─▶ PresentationSpec (validated, versioned)
-                                                    + user Customizations (order, size, type, filters)
-```
+Our principles are:
 
-- **AnalyticalResult** and **PresentationSpec** are separate Zod schemas. Changing a chart type never changes a number.
-- The planner outputs **data, not markup**. The spec is validated structurally and against the result.
-- An **artifact** = question + result + sources + spec + customizations + engine/planner/dataset versions + timestamps. Reopening restores everything.
+1. **Evidence before claims.** Findings should be grounded in available data and documented analytical methods.
+2. **Traceability.** Source information and relevant limitations should accompany results where available.
+3. **Validation.** Generated dashboard specifications must be checked against the result data and the supported component schema.
+4. **No invented official statistics.** Example or synthetic data must not be presented as verified NISR data.
+5. **Careful interpretation.** Correlation, prediction, or a model score should not be described as proof of causation.
+6. **Human responsibility.** AI tools may assist development, but the team is responsible for the implementation, sources, methods, and reported findings.
 
----
+The presence of a chart or model output does not, by itself, establish that a conclusion is statistically valid. Users should consider the source, coverage, period, definitions, and limitations of each result.
 
-## Stack
+## Data
 
-Next.js 15 (App Router) · TypeScript · Tailwind · Recharts · Zustand · Framer Motion · Tiptap · Lucide · Axios · Zod · better-auth · Express 5 · Prisma/PostgreSQL · Socket.IO · BullMQ/Redis · node-cron · Brevo · ImageKit · morgan · nodemon · Docker · GitHub Actions · Python 3.12 (FastAPI model service).
+The project is intended to use credible public datasets, prioritizing the National Institute of Statistics of Rwanda (NISR) and relevant official or reputable public sources.
 
-```
-api/              Express API: auth, analyses, artifacts, queues, cron, socket, engines, planner
-web/              Next.js frontend: renderer, workspace, playground, history, auth, admin
-model/            Python FastAPI model service: NLU, clustering, regression, forecasting, decision
-model/data/real/  Generated proxy CSVs shaped around NISR categories (not verified extracts)
-api/src/shared/   API-local copy of shared Zod schemas
-web/src/shared/   Frontend-local copy of shared Zod schemas
-```
+Useful starting points:
 
----
+- [NISR official website](https://www.statistics.gov.rw/)
+- [NISR Microdata Catalog](https://microdatabk.statistics.gov.rw/catalog/)
+- [Rwanda Data Sharing Platform](https://data.gov.rw/datasets)
+- [NISR PxWeb database](https://pxweb.statistics.gov.rw/pxweb/en/)
+- [2026 NISR Big Data Hackathon](https://www.statistics.gov.rw/about/hackathon/2026-hackathon-competition)
 
-## Data layer
+Dataset availability, geographic detail, time coverage, definitions, and permitted uses differ by source. Isesengura should only make a claim when the integrated data and method support it. A dataset being publicly available does not mean it has already been integrated into the application.
 
-The checked-in files in `model/data/real/` are generated proxy data, not verified extracts of official NISR tables. The analysis engines operate on these demo values and label results accordingly. Validate and replace them with published source tables before presenting any output as official statistics or using it for real-world decisions.
+## Technology
 
-The proxy files are shaped around these dataset categories:
+The current development stack is organized into separate services:
 
-| File | Source | Years |
-|------|--------|-------|
-| `district_labour.csv` | NISR Labour Force Survey | 2019–2024 |
-| `district_poverty.csv` | EICV7 Household Survey | 2019–2024 |
-| `district_health.csv` | Rwanda DHS | 2019–2024 |
-| `district_agriculture.csv` | Seasonal Agricultural Survey | 2019–2024 |
-| `district_education.csv` | EMIS / REB | 2019–2024 |
-| `district_establishments.csv` | Establishment Census 2020/2023 | 2019–2024 |
-| `sector_employment.csv` | LFS sector shares | 2019–2024 |
-| `tvet_courses.csv` | WDA / Rwanda Polytechnic | 2019–2024 |
-| `higher_ed_programs.csv` | Rwanda HEC | 2019–2024 |
-| `national_exams.csv` | NESA P6/S3/S6 | 2019–2024 |
-| `career_demand.csv` | LMIS / KORA | 2019–2024 |
+| Layer                    | Technology              |
+| ------------------------ | ----------------------- |
+| Web application          | Next.js and TypeScript  |
+| API                      | Node.js and TypeScript  |
+| Analytical/model service | Python                  |
+| Database                 | PostgreSQL              |
+| Cache / queue service    | Redis                   |
+| Local development        | Docker Compose and pnpm |
 
-Regenerate with `python3 model/generate_real.py`.
+The repository is organized around `web/`, `api/`, and `model/`, with shared infrastructure services managed through Docker Compose.
 
----
+## Run locally
 
-## Quick start
+### Prerequisites
+
+Install the following before starting the project:
+
+- [Git](https://git-scm.com/)
+- [Docker](https://www.docker.com/) with Docker Compose
+- [Node.js](https://nodejs.org/) compatible with the project dependencies
+- [pnpm](https://pnpm.io/)
+
+Python is also needed if you intend to run model/data preparation commands directly on your machine. The standard development path runs the services in Docker.
+
+### 1. Clone the repository
 
 ```bash
-cp .env.example .env            # set BETTER_AUTH_SECRET (openssl rand -base64 32)
-pnpm run dev                    # postgres, redis, api :4000, web :3000
+git clone <YOUR_PUBLIC_GITHUB_REPOSITORY_URL>
+cd isesengura
 ```
 
-Without Docker (needs Postgres + Redis running):
+Replace the repository URL with the public GitHub URL for this project.
+
+### 2. Configure environment variables
+
+The development Compose file loads environment variables from a root `.env` file for the API service. Create that file before starting the stack:
 
 ```bash
-cd api && pnpm install --lockfile=false
-pnpm run prisma:generate
-pnpm exec prisma db push
-cd ../web && pnpm install --lockfile=false
-# In separate terminals:
-pnpm run api:dev
-pnpm run web:dev
+touch .env
 ```
 
-With no `BREVO_API_KEY`, emails are **printed in the API log** — click the link from there in development.
+Populate it with the required API environment variables. Check the API environment schema/configuration in the repository for the exact names and required values. Do not commit real secrets or production credentials.
 
-## Production deployment
-
-The production Compose file runs PostgreSQL, Redis, the Express API, the private Python model service, and the Next.js website. Set production secrets and public HTTPS URLs in `.env`, point a TLS reverse proxy at the web and API ports, then run:
+If the repository includes an `.env.example`, prefer copying it:
 
 ```bash
-docker compose -f docker-compose.prod.yml up --build -d
-docker compose -f docker-compose.prod.yml ps
+cp .env.example .env
 ```
 
-Production routes analysis requests to `http://model:8000` and disables the in-process fallback. The website and analysis service are deployable, but current analysis outputs are demo-only until the generated proxy data is replaced and validated.
+The local Compose configuration sets the development database and Redis connection strings for the API. The web service is configured to call the API at `http://localhost:4000`.
+
+### 3. Start the development stack
+
+Build the images and start the services:
+
+```bash
+pnpm run dev:build
+```
+
+Alternatively, start without explicitly forcing a rebuild:
+
+```bash
+pnpm run dev
+```
+
+Once the services are ready, open:
+
+- **Web application:** http://localhost:3000
+- **API:** http://localhost:4000
+- **Analytical/model service:** http://localhost:8000
+
+The API depends on PostgreSQL, Redis, and the model service. Initial startup may take longer while Docker builds the images and installs dependencies.
+
+### 4. Useful development commands
+
+| Command              | Purpose                                    |
+| -------------------- | ------------------------------------------ |
+| `pnpm run dev`       | Start the development Docker Compose stack |
+| `pnpm run dev:build` | Build images and start the stack           |
+| `pnpm run dev:logs`  | Follow logs from the Compose services      |
+| `pnpm run dev:down`  | Stop the development stack                 |
+
+To stop the stack, run:
+
+```bash
+pnpm run dev:down
+```
+
+The Compose configuration uses a persistent Docker volume for PostgreSQL data. Stopping the stack does not normally remove that volume.
+
+### Optional data preparation
+
+If you are working on the data/model service and its dependencies are installed, the repository may provide this script:
+
+```bash
+python3 model/generate_real.py
+```
+
+Use it only when you need to regenerate the model's CSV inputs. Check the script and model documentation for required datasets, dependencies, and output paths before running it.
+
+## Testing the submitted application
+
+For hackathon reviewers, the deployed application should be the simplest way to evaluate Isesengura. Add the public deployment URL below before submitting this README:
+
+**Live application:** `https://isesengura.vercel.app`
+
+Suggested review flow:
+
+1. Open the application and try a question that matches a dataset currently integrated into the deployment.
+2. Inspect the displayed indicators, visualizations, tables, and written interpretation.
+3. Check the source information, period, geographic coverage, and caveats shown for the result.
+4. Try a supported comparison or filter, if available.
+5. Confirm that the visualization represents the underlying result rather than changing the values.
+6. If a feature or dataset is not available, treat it as outside the current implementation rather than assuming it is supported.
+
+### Local troubleshooting
+
+- **Compose reports that `.env` is missing:** Create the root `.env` file and add the required API variables.
+- **A port is already in use:** Stop the other process using port `3000`, `4000`, `5432`, `6379`, or `8000`, or update the relevant Compose port mapping.
+- **A code or dependency change is not reflected:** Rebuild the relevant service, or run `pnpm run dev:build`.
+- **The web page loads but an analysis fails:** Inspect logs with `pnpm run dev:logs`, especially the API and model service logs.
+- **The model service is unavailable:** Check its container health/logs and whether the API's configured fallback behavior is enabled.
+
+## Hackathon relevance
+
+Isesengura is intended to support evidence-informed decisions by making public statistics easier to explore and interpret. Its relevance to the NISR Big Data Hackathon depends on the selected challenge, the datasets actually integrated, and the validity of the methods used.
+
+The project should be evaluated on:
+
+- How clearly it addresses the selected problem.
+- Whether the data sources and methods are appropriate and traceable.
+- Whether the analytical results are validated and interpreted responsibly.
+- Whether the interface helps users understand the evidence.
+- Whether the outputs can inform a real decision without overstating what the data proves.
+
+## Team Igisubizo
+
+Built by:
+
+- **[Aimable Ukobizaba](https://github.com/AimableUK)**
+- **[Humureenock](https://github.com/EnockHumure)**
+
+## Project status
+
+Isesengura is a hackathon project under active development. Available functionality, integrated datasets, and analytical coverage may change as the team validates sources and improves the application.
+
+## Acknowledgements
+
+We acknowledge NISR and other public data providers for making statistical resources available for analysis. Dataset owners remain the authoritative sources for their published statistics.
 
 ---
 
-## Scripts
-
-| Command | What it does |
-|---------|-------------|
-| `pnpm run dev` | Full stack with Docker Compose (Dockerfile.dev) |
-| `pnpm run api:dev` / `pnpm run web:dev` | Run one app locally |
-| `cd api && pnpm run typecheck && pnpm run build` | Typecheck and build API |
-| `cd web && pnpm run typecheck && pnpm run build` | Typecheck and build frontend |
-| `pnpm run prod` | Production Compose stack |
-| `python3 model/generate_real.py` | Regenerate real-structure CSVs |
-
----
-
-## Engines
-
-| Engine | Problem | Input | Output |
-|--------|---------|-------|--------|
-| **decision** | Crop or career choice | Question + real CSVs | Ranked options with indicators, scores, trade-offs |
-| **career** | Career intelligence | Question + career_demand + tvet + higher_ed + exams | Occupations scored by demand, pipeline, skill gap |
-| **clustering** | District underutilization | district_labour | KMeans cluster profiles |
-| **regression** | Youth NEET predictors | district_labour | OLS coefficients + R² |
-| **forecasting** | Sector employment trends | sector_employment | Linear trend + 2-year projection |
-
----
-
-## Features
-
-- **Workspace:** metric, bar, line, area, scatter, table, map, text, formula, filter, section. Resize, reorder, expand, collapse, filters, sortable tables, visualization switching, colour palettes, undo/redo.
-- **Decision workspace:** ranked option comparison table, indicator breakdown per option, adjustable criteria weights, trade-off summary, data-gap disclosure.
-- **Admin dashboard:** platform stats (users, artifacts, analyses) + 2024 national labour summary + career guide ranked by demand score.
-- **Playground:** JSON spec editor, live preview, validation errors, component inspector.
-- **History:** saved analyses with title, question, preview chips, date, version count.
-- **Realtime:** Socket.IO streams pipeline stages (interpreting → computing → planning → ready).
-- **Accessibility:** skip link, landmarks, visible focus, 44px targets, text scaling, day/night/high-contrast themes, reduced motion, chart text summaries, data tables behind every chart.
-- **Security:** Zod validation at every boundary, helmet, CORS allow-list, rate limits, better-auth sessions.
-
----
-
-## Optional AI planner
-
-Set `ANTHROPIC_API_KEY` (and optionally `PLANNER_MODEL`). The planner receives only the structure of the result, returns a spec, accepted only if it validates against the schema and the result. Otherwise the rule planner is used.
-
----
-
-## Before launch checklist
-
-- Set a real `BETTER_AUTH_SECRET`, `POSTGRES_PASSWORD`, Brevo sender, ImageKit keys, and public `WEB_URL`/`API_URL`/`NEXT_PUBLIC_API_URL`
-- Review `privacy`/`terms` pages with a lawyer (they are templates)
-- Run an accessibility audit with real assistive technology
-- Add i18n (English/Kinyarwanda) — strings are currently inline English
-- Add API integration tests and Playwright e2e for the ask → workspace → save → reopen flow
-- Replace generated proxy data with validated source tables and validate decision engine scores against domain experts before presenting results as official
-
----
-
-Palette: `#253D2C` forest · `#2E6F40` fern · `#68BA7F` sage · `#CFFFDC` mint.
+**Isesengura | Team Igisubizo | NISR Big Data Hackathon 2026**

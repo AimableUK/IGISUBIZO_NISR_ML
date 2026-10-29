@@ -5,6 +5,8 @@ import { useState } from "react";
 import { History, LayoutDashboard, LogOut, Menu, Settings, X } from "lucide-react";
 import AccessibilityMenu from "./AccessibilityMenu";
 import { signOut, useSession } from "@/lib/auth-client";
+import LanguageSwitcher from "./marketing/LanguageSwitcher";
+import { useT } from "@/i18n";
 
 export function Logo() {
   return (
@@ -16,6 +18,7 @@ export function Logo() {
 }
 
 export default function SiteHeader() {
+  const t = useT();
   const { data: session } = useSession();
   const path = usePathname();
   const router = useRouter();
@@ -38,6 +41,7 @@ export default function SiteHeader() {
         </nav>
         <div className="flex items-center gap-1">
           <AccessibilityMenu />
+          <LanguageSwitcher />
           {session ? (
             <button className="btn hidden md:inline-flex" onClick={async () => { await signOut(); router.push("/"); }}><LogOut className="h-4 w-4" aria-hidden />Sign out</button>
           ) : (
