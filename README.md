@@ -108,11 +108,11 @@ The same workspace is designed to accommodate questions across development domai
 
 Mboni is intended to support the use of evidence in areas relevant to Rwanda's long-term [Vision 2050](https://www.minecofin.gov.rw/fileadmin/user_upload/Minecofin/Publications/REPORTS/National_Development_Planning_and_Research/Vision_2050/English-Vision_2050_full_version_WEB_Final.pdf) and the [National Strategy for Transformation 2 (NST2, 2024–2029)](https://www.minecofin.gov.rw/fileadmin/user_upload/Minecofin/Publications/STRATEGIES/NST_2/NST2_2024-2029_Abridged.pdf). These national frameworks establish long-term and medium-term development priorities; Mboni contributes a practical way to explore statistics relevant to those priorities.
 
-| Development area | How Mboni can contribute | Current demonstration |
-| ---------------- | ----------------------- | --------------------- |
-| Agricultural productivity and livelihoods | Make reported crop outcomes easier to compare across crops, districts, and seasons. | A retrieved NISR crop-yield table is integrated. It has no reference year, so it cannot support year-over-year claims or a crop recommendation. |
-| Productive work and skills | Help users explore labour, education, training, and sector indicators together where sources and definitions allow. | These areas are currently demonstrated mainly with generated proxy data; they are not verified labour-market findings. |
-| Poverty reduction and financial inclusion | Make relevant household, financial-access, and geographic indicators easier to inspect when suitable official data is integrated. | Poverty proxies demonstrate analysis workflows; no verified financial-inclusion dataset is integrated, and no impact has been measured. |
+| Development area                          | How Mboni can contribute                                                                                                          | Current demonstration                                                                                                                           |
+| ----------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| Agricultural productivity and livelihoods | Make reported crop outcomes easier to compare across crops, districts, and seasons.                                               | A retrieved NISR crop-yield table is integrated. It has no reference year, so it cannot support year-over-year claims or a crop recommendation. |
+| Productive work and skills                | Help users explore labour, education, training, and sector indicators together where sources and definitions allow.               | These areas are currently demonstrated mainly with generated proxy data; they are not verified labour-market findings.                          |
+| Poverty reduction and financial inclusion | Make relevant household, financial-access, and geographic indicators easier to inspect when suitable official data is integrated. | Poverty proxies demonstrate analysis workflows; no verified financial-inclusion dataset is integrated, and no impact has been measured.         |
 
 This is an alignment of purpose, not a claim that Mboni has achieved national targets or caused development outcomes. Any policy or personal decision should be based on verified, appropriately interpreted evidence and additional context.
 
@@ -171,14 +171,14 @@ Researchers can explore indicators, compare values, inspect trends, and identify
 
 ## What users can explore
 
-| Area | Example questions | Current evidence status |
-| ---- | ----------------- | ------------------------ |
-| Agriculture | How does the reported yield for a crop differ between districts or seasons? | Official NISR crop-yield table is integrated; the source does not provide a reference year. |
-| Employment and labour | How have employment indicators changed over time? | Generated proxy data in the current demo; not verified NISR observations. |
-| Education and training | How do education or training indicators differ across groups or years? | Generated proxy data in the current demo; not verified source extracts. |
-| Poverty, health, and household welfare | How do selected indicators compare across areas? | Generated proxy data in the current demo; not verified official findings. |
-| Business and economic activity | What patterns appear across sectors or districts? | Generated proxy data in the current demo; not verified official findings. |
-| Financial inclusion | How does access to financial services vary across groups or areas? | No verified financial-inclusion dataset is currently integrated. |
+| Area                                   | Example questions                                                           | Current evidence status                                                                     |
+| -------------------------------------- | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| Agriculture                            | How does the reported yield for a crop differ between districts or seasons? | Official NISR crop-yield table is integrated; the source does not provide a reference year. |
+| Employment and labour                  | How have employment indicators changed over time?                           | Generated proxy data in the current demo; not verified NISR observations.                   |
+| Education and training                 | How do education or training indicators differ across groups or years?      | Generated proxy data in the current demo; not verified source extracts.                     |
+| Poverty, health, and household welfare | How do selected indicators compare across areas?                            | Generated proxy data in the current demo; not verified official findings.                   |
+| Business and economic activity         | What patterns appear across sectors or districts?                           | Generated proxy data in the current demo; not verified official findings.                   |
+| Financial inclusion                    | How does access to financial services vary across groups or areas?          | No verified financial-inclusion dataset is currently integrated.                            |
 
 These are areas the application can route or demonstrate, not a promise that every question can be answered from official data. Users should check the source, period, geographic coverage, and definitions shown for each result.
 
@@ -195,14 +195,7 @@ These are areas the application can route or demonstrate, not a promise that eve
 
 ## Try the app
 
-Open https://mboni-app.vercel.app and sign in with the demo account below, or create your own account.
-
-| Field    | Value                |
-| -------- | -------------------- |
-| Email    | `ukobizaba81@gmail.com`       |
-| Password | `Ukobizaba123`    |
-
-The demo account is for evaluation only. Please do not change its password or save personal information in it.
+Open https://mboni-app.vercel.app and create your own account. Evaluators who need a shared demo account should request access credentials directly from the team; passwords are not published in this repository.
 
 ## Screenshots
 
@@ -248,27 +241,27 @@ The [NISR Microdata Catalog](https://microdata.statistics.gov.rw/index.php/catal
 
 ### Official data integrated
 
-| Dataset | What it contains | Source and local files |
-| ------- | ---------------- | ---------------------- |
+| Dataset                                                  | What it contains                                                                                                | Source and local files                                                                                                                                                                                                                                                                                                                                                   |
+| -------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Average yield (kg/ha) by season, district, and crop type | Reported crop yield for the listed districts, crops, and Season A/B. The table does not state a reference year. | [NISR PxWeb table](https://pxweb.statistics.gov.rw/pxweb/en/NISR%20Statistical%20Databases/Agriculture/Crop%20area,%20production%20and%20yield%20for%20major%20crops/yield.px); [raw export](model/data/official/nisr_agriculture_yield_raw.csv); [normalized data](model/data/official/district_crop_yield.csv); [provenance metadata](model/data/official/source.json) |
 
 ### Generated proxy data used for demonstrations
 
 The following files are generated examples. Their names and columns are shaped around subject areas, but their values are **not verified extracts of NISR or other official datasets**.
 
-| Topic | Local file |
-| ----- | ---------- |
-| Labour | [district_labour.csv](model/data/real/district_labour.csv) |
-| Poverty and household welfare | [district_poverty.csv](model/data/real/district_poverty.csv) |
-| Health | [district_health.csv](model/data/real/district_health.csv) |
-| Agriculture (demo proxy) | [district_agriculture.csv](model/data/real/district_agriculture.csv) |
-| Education | [district_education.csv](model/data/real/district_education.csv) |
-| Business establishments | [district_establishments.csv](model/data/real/district_establishments.csv) |
-| Sector employment | [sector_employment.csv](model/data/real/sector_employment.csv) |
-| TVET | [tvet_courses.csv](model/data/real/tvet_courses.csv) |
-| Higher education | [higher_ed_programs.csv](model/data/real/higher_ed_programs.csv) |
-| National exams | [national_exams.csv](model/data/real/national_exams.csv) |
-| Career demand | [career_demand.csv](model/data/real/career_demand.csv) |
+| Topic                         | Local file                                                                 |
+| ----------------------------- | -------------------------------------------------------------------------- |
+| Labour                        | [district_labour.csv](model/data/real/district_labour.csv)                 |
+| Poverty and household welfare | [district_poverty.csv](model/data/real/district_poverty.csv)               |
+| Health                        | [district_health.csv](model/data/real/district_health.csv)                 |
+| Agriculture (demo proxy)      | [district_agriculture.csv](model/data/real/district_agriculture.csv)       |
+| Education                     | [district_education.csv](model/data/real/district_education.csv)           |
+| Business establishments       | [district_establishments.csv](model/data/real/district_establishments.csv) |
+| Sector employment             | [sector_employment.csv](model/data/real/sector_employment.csv)             |
+| TVET                          | [tvet_courses.csv](model/data/real/tvet_courses.csv)                       |
+| Higher education              | [higher_ed_programs.csv](model/data/real/higher_ed_programs.csv)           |
+| National exams                | [national_exams.csv](model/data/real/national_exams.csv)                   |
+| Career demand                 | [career_demand.csv](model/data/real/career_demand.csv)                     |
 
 The `model/data/real/` directory name is historical and does not mean these files contain real official observations. Regenerate the proxies with `python3 model/generate_real.py`. Replace them with source data only after obtaining, checking, documenting, and integrating the actual files.
 
@@ -276,14 +269,14 @@ The `model/data/real/` directory name is historical and does not mean these file
 
 The [NISR submission webinar](<docs/2026 NISR Hackathon Webinar 2.pdf>) asks teams to provide a README explaining the data used, what the application communicates, and how users interact with it. This README documents those points above. The webinar also asks for working project code, the data or a link to it, a demonstration video of no more than three minutes, and documents confirming team eligibility.
 
-| Submission item | Repository status |
-| --------------- | ----------------- |
-| README describing data, purpose, and user interaction | Included |
-| Application and analysis source code | Included |
-| Data and source links | Official crop-yield files and provenance are included; proxy data is labelled separately above. |
-| Short demonstration video (maximum three minutes) | Not included in the repository yet. |
-| Working sample login for evaluators | The current README has placeholders; replace them with a tested demo account before submission. |
-| Eligibility documents | Not included in the repository. The webinar lists these as a submission item; confirm the accepted handling with the organizers before placing personal documents in a public repository. |
+| Submission item                                       | Repository status                                                                                                                                                                         |
+| ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| README describing data, purpose, and user interaction | Included                                                                                                                                                                                  |
+| Application and analysis source code                  | Included                                                                                                                                                                                  |
+| Data and source links                                 | Official crop-yield files and provenance are included; proxy data is labelled separately above.                                                                                           |
+| Short demonstration video (maximum three minutes)     | Not included in the repository yet.                                                                                                                                                       |
+| Working sample login for evaluators                   | Request shared demo access from the team; credentials are not published in the repository. |
+| Eligibility documents                                 | Not included in the repository. The webinar lists these as a submission item; confirm the accepted handling with the organizers before placing personal documents in a public repository. |
 
 ## Analytical methodology
 
@@ -502,10 +495,10 @@ The [dataset inventory](#dataset-inventory) separates the official NISR crop-yie
 
 **Team name:** Igisubizo
 
-| Team member       | Contribution                                              | GitHub                                         |
-| ----------------- | --------------------------------------------------------- | ---------------------------------------------- |
+| Team member       | Contribution                                                               | GitHub                                         |
+| ----------------- | -------------------------------------------------------------------------- | ---------------------------------------------- |
 | Aimable Ukobizaba | Full-stack application development and system integration/Analytical/model | [@AimableUK](https://github.com/AimableUK)     |
-| EnockHumure       | Full-stack application development and system integration/Analytical/model    | [@EnockHumure](https://github.com/EnockHumure) |
+| EnockHumure       | Full-stack application development and system integration/Analytical/model | [@EnockHumure](https://github.com/EnockHumure) |
 
 ### AI assistance disclosure
 
