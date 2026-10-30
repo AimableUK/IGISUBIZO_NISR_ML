@@ -35,6 +35,7 @@ function Runner() {
   const [stage, setStage] = useState<ProgressStage | null>(null);
   const started = useRef(false);
   const skipConversationLoad = useRef<string | null>(null);
+  const lastUrlConversation = useRef(sp.get("conversation"));
   const endRef = useRef<HTMLDivElement>(null);
   const { state: eye, send: sendEye } = useMboniEye();
   const theme = useAppTheme();
@@ -89,6 +90,28 @@ function Runner() {
   }, [busy, conversationId, loadingConversation, router, t, turns]);
 
   useEffect(() => {
+    if (sp.get("new") === "1") {
+      lastUrlConversation.current = null;
+      setConversationId(null);
+      setTurns([]);
+      setDraft("");
+      setError("");
+      router.replace("/workspace", { scroll: false });
+      return;
+    }
+
+    const urlConversation = sp.get("conversation");
+    if (urlConversation === lastUrlConversation.current) return;
+    lastUrlConversation.current = urlConversation;
+    setConversationId(urlConversation);
+    setError("");
+    if (!urlConversation) {
+      setTurns([]);
+      setDraft("");
+    }
+  }, [router, sp]);
+
+  useEffect(() => {
     if (!conversationId) {
       setTurns([]);
       setLoadingConversation(false);
@@ -133,6 +156,7 @@ function Runner() {
   }, [busy, turns]);
 
   function newConversation() {
+    lastUrlConversation.current = null;
     setConversationId(null);
     router.replace("/workspace", { scroll: false });
     setTurns([]);
@@ -155,10 +179,14 @@ function Runner() {
 
   return (
     <main className="mx-auto flex h-[calc(100dvh-4rem)] min-h-0 w-full max-w-3xl flex-col px-4 py-8 sm:px-6">
-      <header className="mb-6 flex shrink-0 items-start justify-between gap-4">
+      <header className={`mb-6 flex shrink-0 items-start justify-between gap-4 ${hasStarted ? "justify-end" : ""}`}>
         <div>
-          <h1 className="text-3xl font-semibold sm:text-4xl">{t("ws.title")}</h1>
-          <p className="mt-2 text-sm text-muted">{t("ws.subtitle")}</p>
+          {!hasStarted && (
+            <>
+              <h1 className="text-3xl font-semibold sm:text-4xl">{t("ws.title")}</h1>
+              <p className="mt-2 text-sm text-muted">{t("ws.subtitle")}</p>
+            </>
+          )}
         </div>
         {turns.length > 0 && (
           <button

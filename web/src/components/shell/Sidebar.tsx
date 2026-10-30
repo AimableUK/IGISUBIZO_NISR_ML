@@ -114,7 +114,7 @@ export default function Sidebar({ expanded, isDrawer, onToggle, onNavigate }: Pr
       <div className={cx("space-y-1 px-2", !expanded && "flex flex-col items-center")}>
         <Tooltip label={t("nav.new")} disabled={expanded}>
           <Link
-            href="/workspace"
+            href="/workspace?new=1"
             onClick={onNavigate}
             aria-label={expanded ? undefined : t("nav.new")}
             className={cx(ROW, expanded ? "w-full gap-3 px-3 font-medium" : "w-10 justify-center", pathname === "/workspace" && "bg-surface2")}
