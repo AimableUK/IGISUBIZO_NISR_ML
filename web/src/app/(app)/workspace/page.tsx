@@ -26,6 +26,7 @@ function Runner() {
   const [error, setError] = useState("");
   const [useAi, setUseAi] = useState(false);
   const started = useRef(false);
+  const endRef = useRef<HTMLDivElement>(null);
 
   const send = useCallback(async (value: string) => {
     const message = value.trim();
@@ -67,6 +68,12 @@ function Runner() {
       void send(initial);
     }
   }, [send, sp]);
+
+  useEffect(() => {
+    if (turns.length > 1 || busy) {
+      endRef.current?.scrollIntoView({ behavior: "smooth", block: "end" });
+    }
+  }, [busy, turns]);
 
   function newConversation() {
     setTurns([{ role: "assistant", content: t("ws.chatWelcome"), mode: "guided", sources: [] }]);
@@ -134,6 +141,7 @@ function Runner() {
             {t("ws.chatThinking")}
           </p>
         )}
+        <div ref={endRef} />
       </section>
 
       {turns.length === 1 && (
