@@ -3,10 +3,10 @@ import { AnalyticalResultSchema, type AnalyticalResult } from "@shared";
 import { env } from "../env";
 import { runAnalysis } from "./engine";
 
-/** Drop nulls that mean "absent" for Zod .optional(), keep intentional nulls (scores, intervals, decision). */
+/** Drop nulls that mean "absent" for Zod .optional(), keep intentional nullable values. */
 function stripNullOptionals(value: unknown, key?: string): unknown {
   if (value === null) {
-    if (key === "decision" || key === "score" || key === "value" || key === "interval" || key === "delta") {
+    if (key === "decision" || key === "score" || key === "value" || key === "interval") {
       return null;
     }
     return undefined;
@@ -63,8 +63,10 @@ export async function analyzeViaModel(
     const normalized = stripNullOptionals(data);
     const parsed = AnalyticalResultSchema.safeParse(normalized);
     if (!parsed.success) {
+      const issue = parsed.error.issues[0];
+      const field = issue?.path.length ? issue.path.join(".") : "<root>";
       throw new ModelServiceError(
-        `Model response failed schema validation: ${parsed.error.issues[0]?.message ?? "invalid"}`,
+        `Model response failed schema validation at ${field}: ${issue?.message ?? "invalid"}`,
       );
     }
     return { result: parsed.data, source: "model" };
