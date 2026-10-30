@@ -44,6 +44,7 @@ export const ConversationRequestSchema = z.object({
 export const ConversationResponseSchema = z.object({
   reply: z.string().min(1).max(6000),
   mode: z.enum(["ai", "guided"]),
+  artifactId: z.string().nullable().default(null),
   sources: z.array(z.object({
     title: z.string(),
     period: z.string(),

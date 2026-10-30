@@ -1,105 +1,192 @@
 "use client";
+
 import { Suspense, useCallback, useEffect, useRef, useState } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 import Link from "next/link";
-import { AlertCircle, Check, Circle, Loader2 } from "lucide-react";
-import { ProgressStages, type AnalyticalResult, type ProgressStage } from "@/shared";
-import QuestionBar from "@/components/chat/QuestionBar";
-import MboniEye from "@/components/mboni/MboniEye";
-import { useMboniEye, type MboniEvent } from "@/components/mboni/useMboniEye";
-import { api } from "@/lib/api";
-import { getSocket } from "@/lib/socket";
-import { useI18n, type Key } from "@/i18n";
-import { useAppTheme } from "@/components/mboni/useAppTheme";
+import { RotateCcw } from "lucide-react";
+import type { ConversationMessage } from "@/shared";
+import PromptInput from "@/components/chat/Promptinput";
+import { ApiError, api } from "@/lib/api";
+import { useI18n } from "@/i18n";
 
-
-type State = { kind: "idle" } | { kind: "running" } | { kind: "blocked"; result: AnalyticalResult } | { kind: "error" };
-const BLOCKED_TITLE: Record<string, Key> = { ambiguous: "ws.blocked.ambiguous", unsupported: "ws.blocked.unsupported", no_data: "ws.blocked.no_data" };
-
-// Which eye animation plays for each analysis stage.
-const EYE_EVENT: Record<ProgressStage, MboniEvent> = {
-  interpreting: "ask",
-  validating: "search",
-  computing: "work",
-  planning: "work",
-  saving: "work",
-  ready: "answer",
+type Turn = ConversationMessage & {
+  mode?: "ai" | "guided";
+  sources?: { title: string; period: string; isSample: boolean; url?: string }[];
+  artifactId?: string | null;
 };
 
 function Runner() {
   const sp = useSearchParams();
-  const router = useRouter();
   const { t, examples } = useI18n();
-  const [state, setState] = useState<State>({ kind: "idle" });
-  const [stage, setStage] = useState<ProgressStage>("interpreting");
-  const [q, setQ] = useState(sp.get("q") ?? "");
+  const [turns, setTurns] = useState<Turn[]>([
+    { role: "assistant", content: t("ws.chatWelcome"), mode: "guided", sources: [] },
+  ]);
+  const [draft, setDraft] = useState(sp.get("q") ?? "");
+  const [busy, setBusy] = useState(false);
+  const [error, setError] = useState("");
+  const [useAi, setUseAi] = useState(false);
   const started = useRef(false);
-  const { state: eye, send } = useMboniEye();
-  const appTheme = useAppTheme();
 
+  const send = useCallback(async (value: string) => {
+    const message = value.trim();
+    if (message.length < 2 || busy) return;
 
-  // The eye follows the analysis; when nothing is running (or it failed / was blocked) it rests.
-  useEffect(() => { send(state.kind === "running" ? EYE_EVENT[stage] : "idle"); }, [state.kind, stage, send]);
-
-  const run = useCallback(async (question: string) => {
-    const requestId = crypto.randomUUID();
-    setQ(question); setState({ kind: "running" }); setStage("interpreting");
-    const sock = getSocket();
-    const onProgress = (m: { requestId: string; stage: ProgressStage }) => { if (m.requestId === requestId) setStage(m.stage); };
-    sock.on("analysis:progress", onProgress);
+    setBusy(true);
+    setError("");
+    setTurns((current) => [...current, { role: "user", content: message }]);
     try {
-      const { result, artifactId } = await api.ask(question, requestId);
-      if (artifactId) router.push(`/workspace/${artifactId}`);
-      else setState({ kind: "blocked", result });
-    } catch {
-      setState({ kind: "error" });
-    } finally { sock.off("analysis:progress", onProgress); }
-  }, [router]);
+      const history = turns.slice(-10).map(({ role, content }) => ({
+        role,
+        content: content.slice(0, 2000),
+      }));
+      const response = await api.converse(message, history, useAi);
+      setTurns((current) => [
+        ...current,
+        {
+          role: "assistant",
+          content: response.reply,
+          mode: response.mode,
+          sources: response.sources,
+          artifactId: response.artifactId,
+        },
+      ]);
+      setDraft("");
+    } catch (reason) {
+      setTurns((current) => current.slice(0, -1));
+      setDraft(message);
+      setError(reason instanceof ApiError ? reason.message : t("ws.errorBody"));
+    } finally {
+      setBusy(false);
+    }
+  }, [busy, t, turns, useAi]);
 
-  useEffect(() => { const initial = sp.get("q"); if (initial && sp.get("run") && !started.current) { started.current = true; void run(initial); } }, [sp, run]);
+  useEffect(() => {
+    const initial = sp.get("q");
+    if (initial && sp.get("run") && !started.current) {
+      started.current = true;
+      void send(initial);
+    }
+  }, [send, sp]);
 
-  const idx = ProgressStages.indexOf(stage);
+  function newConversation() {
+    setTurns([{ role: "assistant", content: t("ws.chatWelcome"), mode: "guided", sources: [] }]);
+    setDraft("");
+    setError("");
+  }
+
   return (
-    // Centered in the middle of the page, both ways. The bottom padding nudges it slightly above true centre.
-    <div className="mx-auto flex min-h-full w-full max-w-3xl flex-col justify-center px-4 pb-16 pt-6 sm:px-6">
-      <h1 className="text-3xl font-semibold sm:text-4xl">{t("ws.title")}</h1>
-      <p className="mt-2 text-muted">{t("ws.subtitle")}</p>
-      <Link href="/advisor" className="mt-5 inline-flex btn btn-primary">
-        {t("ws.advisorLink" as Key)}
-      </Link>
-      <div className="mt-8"><QuestionBar onSubmit={run} busy={state.kind === "running"} initial={q} /></div>
+    <main className="mx-auto flex min-h-[calc(100vh-4rem)] max-w-3xl flex-col px-4 py-8 sm:px-6">
+      <header className="mb-6 flex items-start justify-between gap-4">
+        <div>
+          <h1 className="text-3xl font-semibold sm:text-4xl">{t("ws.title")}</h1>
+          <p className="mt-2 text-sm text-muted">{t("ws.subtitle")}</p>
+        </div>
+        <button
+          type="button"
+          className="btn-sm shrink-0"
+          onClick={newConversation}
+          disabled={busy}
+          aria-label={t("ws.newConversation")}
+        >
+          <RotateCcw className="mr-1 inline h-4 w-4" aria-hidden />
+          {t("ws.newConversation")}
+        </button>
+      </header>
 
-      {state.kind === "running" && (
-        <div role="status" aria-live="polite" className="card mt-8 p-5">
-          <div className="flex flex-col items-center text-center">
-            {/* Decorative: the stage list below carries the meaning for screen readers. */}
-            <div aria-hidden>
-              <MboniEye state={eye} width={120} theme={appTheme} />
-            </div>
-            <h2 className="mt-2 font-semibold">{t("ws.building")}</h2>
-          </div>
-          <ol className="mx-auto mt-4 max-w-sm space-y-2 text-sm">
-            {ProgressStages.map((s, i) => (
-              <li key={s} className={`flex items-center gap-2 ${i > idx ? "text-muted" : ""}`}>
-                {i < idx ? <Check className="h-4 w-4 text-primary" aria-hidden /> : i === idx ? <Loader2 className="h-4 w-4 animate-spin text-primary" aria-hidden /> : <Circle className="h-4 w-4" aria-hidden />}
-                <span>{t(`ws.stage.${s}` as Key)}</span>{i < idx && <span className="sr-only"> {t("ws.done")}</span>}{i === idx && <span className="sr-only"> {t("ws.inProgress")}</span>}
+      <section aria-label={t("ws.conversationLabel")} aria-live="polite" className="flex-1 space-y-4">
+        {turns.map((turn, index) => (
+          <article
+            key={`${index}-${turn.role}`}
+            className={`max-w-[92%] rounded-card border p-4 ${
+              turn.role === "user"
+                ? "ml-auto border-primary bg-primary/5"
+                : "mr-auto border-line bg-surface"
+            }`}
+          >
+            <p className="whitespace-pre-wrap text-sm leading-6">{turn.content}</p>
+            {turn.role === "assistant" && index > 0 && (
+              <p className="mt-3 text-xs text-muted">
+                {turn.mode === "ai" ? t("ws.aiAnswer") : t("ws.guidedAnswer")}
+                {turn.sources?.some((source) => source.isSample) && ` · ${t("ws.demoDataNote")}`}
+              </p>
+            )}
+            {turn.sources && turn.sources.length > 0 && (
+              <ul className="mt-2 space-y-1 text-xs text-muted">
+                {turn.sources.map((source) => (
+                  <li key={`${source.title}-${source.period}`}>
+                    {t("ws.source")}: {source.url ? (
+                      <a href={source.url} target="_blank" rel="noreferrer" className="underline">{source.title}</a>
+                    ) : source.title} ({source.period}){source.isSample ? ` — ${t("ws.demoDataNote")}` : ""}
+                  </li>
+                ))}
+              </ul>
+            )}
+            {turn.artifactId && (
+              <Link href={`/workspace/${turn.artifactId}`} className="btn btn-primary mt-3">
+                {t("ws.openAnalysis")}
+              </Link>
+            )}
+          </article>
+        ))}
+        {busy && (
+          <p role="status" className="flex items-center gap-2 text-sm text-muted">
+            <span className="h-4 w-4 animate-spin rounded-full border-2 border-primary/30 border-t-primary" aria-hidden />
+            {t("ws.chatThinking")}
+          </p>
+        )}
+      </section>
+
+      {turns.length === 1 && (
+        <div className="mb-4">
+          <p className="mb-2 text-sm text-muted">{t("ws.tryOne")}</p>
+          <ul className="flex flex-wrap gap-2">
+            {examples.slice(0, 6).map((example) => (
+              <li key={example.q}>
+                <button
+                  type="button"
+                  className="btn-sm h-auto whitespace-normal text-left"
+                  onClick={() => void send(example.q)}
+                  disabled={busy}
+                >
+                  {example.label}
+                </button>
               </li>
             ))}
-          </ol>
+          </ul>
         </div>
       )}
-      {state.kind === "blocked" && (
-        <div role="alert" className="card mt-8 border-warn p-5">
-          <h2 className="flex items-center gap-2 font-semibold"><AlertCircle className="h-5 w-5 text-warn" aria-hidden />{t(BLOCKED_TITLE[state.result.status as string] ?? "ws.blocked.fallback")}</h2>
-          <p className="mt-2 text-sm">{state.result.message}</p>
-          <p className="mt-4 text-sm font-medium">{t("ws.tryOne")}</p>
-          <ul className="mt-2 flex flex-wrap gap-2">{examples.slice(0, 6).map((e) => <li key={e.q}><button className="btn-sm h-auto min-h-[36px] whitespace-normal py-1.5 text-left" onClick={() => run(e.q)}>{e.label}</button></li>)}</ul>
-        </div>
+
+      {error && (
+        <p role="alert" className="mb-3 rounded-card border border-danger p-3 text-sm text-danger">
+          {error}
+        </p>
       )}
-      {state.kind === "error" && (
-        <div role="alert" className="card mt-8 border-danger p-5"><h2 className="flex items-center gap-2 font-semibold text-danger"><AlertCircle className="h-5 w-5" aria-hidden />{t("ws.errorTitle")}</h2><p className="mt-2 text-sm">{t("ws.errorBody")}</p><button className="btn mt-4" onClick={() => run(q)}>{t("ws.tryAgain")}</button></div>
-      )}
-    </div>
+      <PromptInput
+        value={draft}
+        onChange={setDraft}
+        onSubmit={send}
+        busy={busy}
+        placeholder={t("q.placeholder")}
+        label={t("q.placeholder")}
+        sendLabel={t("q.send")}
+        minLength={2}
+      />
+      <label className="mt-3 flex items-start gap-2 text-xs text-muted">
+        <input type="checkbox" checked={useAi} onChange={(event) => setUseAi(event.target.checked)} disabled={busy} />
+        <span>
+          <span className="font-medium">{t("ws.useAi")}</span>{" "}
+          {t("ws.aiPrivacy")}
+        </span>
+      </label>
+      <p className="mt-2 text-xs text-muted">{t("ws.chatDisclaimer")}</p>
+    </main>
   );
 }
-export default function Page() { return <Suspense fallback={null}><Runner /></Suspense>; }
+
+export default function Page() {
+  return (
+    <Suspense fallback={null}>
+      <Runner />
+    </Suspense>
+  );
+}

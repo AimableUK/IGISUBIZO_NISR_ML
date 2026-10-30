@@ -3,6 +3,7 @@ import { randomUUID } from "node:crypto";
 import { ConversationRequestSchema } from "@shared";
 import { requireAuth } from "../middleware/auth";
 import { analyzeViaModel } from "../services/model-client";
+import { saveAnalysisArtifact } from "../services/analysis-artifact";
 import {
   analysisQuestion,
   extractLocation,
@@ -37,10 +38,10 @@ conversation.post("/", requireAuth, async (req, res) => {
     }
     const choice = await selectConversationTool(message, history, useAi);
     if (choice.tool === "clarify") {
-      return res.json(await replyToClarification(message, history, useAi));
+      return res.json({ ...(await replyToClarification(message, history, useAi)), artifactId: null });
     }
     if (choice.tool === "unsupported") {
-      return res.json(await replyToUnsupported(message, history, useAi));
+      return res.json({ ...(await replyToUnsupported(message, history, useAi)), artifactId: null });
     }
     if (choice.tool === "weather") {
       let forecast;
@@ -57,12 +58,13 @@ conversation.post("/", requireAuth, async (req, res) => {
           message: "I couldn’t reach the weather forecast service right now. Please try again shortly.",
         });
       }
-      return res.json(await replyToWeather(message, history, forecast, useAi));
+      return res.json({ ...(await replyToWeather(message, history, forecast, useAi)), artifactId: null });
     }
     const question = analysisQuestion(choice.question || message, history);
     const { result } = await analyzeViaModel(question, randomUUID());
     const reply = await replyToConversation(message, history, result, useAi);
-    return res.json(reply);
+    const artifactId = await saveAnalysisArtifact(req.userId!, question, result);
+    return res.json({ ...reply, artifactId });
   } catch (error) {
     console.error("[conversation] failed", error);
     return res.status(503).json({

@@ -312,6 +312,7 @@ function sourcesFor(result: AnalyticalResult): Source[] {
     title: source.title,
     period: source.period,
     isSample: source.isSample,
+    ...(source.url ? { url: source.url } : {}),
   }));
 }
 

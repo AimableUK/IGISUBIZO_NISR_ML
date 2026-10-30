@@ -1071,8 +1071,22 @@ export const rw: Dict = {
     ws: {
       title: "Wifuza gusobanukirwa iki?",
       subtitle:
-        "Baza mu rurimi woroheje. Uzabona umwanya w'akazi ubitswe ushobora gutunganya no kugarukaho igihe cyose.",
-      advisorLink: "Ganira n’umujyanama w’amasomo n’imyuga",
+        "Baza ku makuru y’u Rwanda, amasomo cyangwa imyuga. Sobanukirwa igisubizo hano, kandi ufungure isesengura rirambuye igihe amakuru ahari.",
+      chatWelcome:
+        "Muraho! Nagufasha gusuzuma amasomo n’imyuga mu Rwanda, kubaza ku makuru ahari, cyangwa kureba iteganyagihe ry’ahantu ho mu Rwanda. Ni iki wifuza kuganiraho?",
+      conversationLabel: "Ikiganiro cyo gusuzuma",
+      newConversation: "Tangira ikiganiro gishya",
+      chatThinking: "Turimo gutekereza ku kibazo cyawe…",
+      guidedAnswer: "Igisubizo kiyobowe",
+      aiAnswer: "Igisubizo gifashijwe na AI",
+      demoDataNote: "Harimo amakuru y’igerageza yakozwe",
+      source: "Isoko",
+      openAnalysis: "Fungura isesengura rirambuye",
+      useAi: "Koresha ibisubizo bifashijwe na AI.",
+      aiPrivacy:
+        "Nibihitwamo, ubutumwa bwawe n’ikiganiro giheruka byoherezwa ku mutanga serivisi wa AI. Irinde gutanga amakuru y’ibanga.",
+      chatDisclaimer:
+        "Amateka y’ikiganiro aguma muri iyi paji gusa. Amasesengura ashingiye ku makuru abikwa mu Mateka; amakuru y’igerageza agaragazwa mu gisubizo no mu sesengura.",
       stage: {
         interpreting: "Turimo gusoma ikibazo cyawe",
         validating: "Turimo kugenzura niba isesengura ryawe rishoboka",
