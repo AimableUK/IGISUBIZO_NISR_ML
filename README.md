@@ -2,11 +2,13 @@
 
 **Explore Rwanda's data. Understand what is changing. Make better-informed decisions.**
 
-Mboni is an interactive analytical workspace designed to make Rwanda's public statistics easier to explore, interpret, compare, and use. It helps people move from a question to structured evidence through analytical results, indicators, visualizations, tables, and explanations.
+Mboni is a question-led analytical workspace for exploring Rwanda's public statistics. It turns supported questions into inspectable results—indicators, comparisons, visualizations, tables, and explanations—so people can better understand evidence relevant to decisions in agriculture, work, education, and other development areas.
 
 Built by **Team Igisubizo** for the **2026 National Institute of Statistics of Rwanda (NISR) Big Data Hackathon**.
 
 > **Live application:** https://mboni-app.vercel.app
+>
+> **Data status:** The current demo directly uses one official NISR crop-yield table. Most other topic areas run on generated proxy data and are demonstrations of the analysis workflow, not verified official findings.
 
 ---
 
@@ -15,11 +17,13 @@ Built by **Team Igisubizo** for the **2026 National Institute of Statistics of R
 - [Project at a glance](#project-at-a-glance)
 - [The problem](#the-problem)
 - [Our approach](#our-approach)
+- [Innovation and national development alignment](#innovation-and-national-development-alignment)
 - [Who Mboni is designed to help](#who-mboni-is-designed-to-help)
 - [What users can explore](#what-users-can-explore)
 - [How to use Mboni](#how-to-use-mboni)
 - [Screenshots](#screenshots)
 - [Dataset inventory](#dataset-inventory)
+- [Hackathon submission checklist](#hackathon-submission-checklist)
 - [Analytical methodology](#analytical-methodology)
 - [Responsible use of AI and statistics](#responsible-use-of-ai-and-statistics)
 - [Architecture](#architecture)
@@ -63,13 +67,13 @@ A user starts with a question. Where the question is supported by the data and a
 
 ## The problem
 
-Rwanda produces and publishes statistics that can support decisions in government, business, education, research, civil society, and everyday life. However, finding and using statistical evidence can be difficult for people who are not familiar with statistical portals, data formats, analytical software, or the terminology used in official publications.
+Rwanda publishes a wide range of statistics that can inform national development and everyday decisions. The [NISR Microdata Catalog](https://microdata.statistics.gov.rw/index.php/catalog), for example, lists studies covering agriculture, labour, health, households, and other subjects. But published datasets are not automatically easy to use: they may be in separate files and formats, cover different years and populations, and require statistical knowledge to prepare, compare, and interpret.
 
-A person considering a career may want to understand how employment patterns have changed. An entrepreneur may want to investigate regional or sector-level conditions before exploring a business idea. A researcher may need to compare indicators across years. A policymaker or development practitioner may need to understand where a trend is improving, where a gap remains, and what evidence supports that interpretation.
+A farmer or cooperative may want to compare reported crop yields by district and season. A student may want to understand employment patterns. A planner or researcher may need to compare indicators, locate gaps, and explain what the evidence can support.
 
-These questions share a common need: **relevant data must be discoverable, understandable, and presented with enough context to be assessed.**
+The challenge is the gap between available data and usable evidence: **people need relevant statistics to be discoverable, understandable, comparable, and presented with enough context to assess.**
 
-Mboni addresses this usability challenge by bringing question-led exploration, analytical outputs, visual communication, and explanations into one workspace.
+Mboni addresses this usability challenge by bringing question-led exploration, analysis, visual communication, and source-aware explanations into one workspace. It does not replace NISR, domain experts, or field research, and it does not make decisions on a user's behalf.
 
 ### The problem we are addressing
 
@@ -86,6 +90,31 @@ Mboni is a decision-support tool, not an official statistics producer. It aims t
 Mboni combines a conversational entry point with a structured analytical workspace.
 
 Instead of treating a response as only a block of generated text, the application presents analytical findings as inspectable outputs. Users can see the result, understand how it is being communicated, and examine available values and source context.
+
+## Innovation and national development alignment
+
+### What is innovative about Mboni
+
+Mboni's innovation is the way it connects a plain-language question to an inspectable analytical result. Rather than offering only a static dashboard or a free-form chatbot answer, it aims to help users move through a data-to-evidence workflow:
+
+- **Ask a practical question:** Start with a question about a supported topic, place, category, or period.
+- **Analyze available evidence:** Route the question to the relevant data and analytical method supported by the application.
+- **Inspect the result:** Explore indicators, comparisons, charts, tables, and explanations in a persistent workspace.
+- **Check the basis:** Review source information and limitations, and distinguish observed data from calculations, estimates, or generated demo data.
+
+The same workspace is designed to accommodate questions across development domains, including agriculture, employment, education, household welfare, and business activity. That breadth describes the product direction—not a claim that every domain is already connected to verified official data.
+
+### Relevance to Rwanda's development priorities
+
+Mboni is intended to support the use of evidence in areas relevant to Rwanda's long-term [Vision 2050](https://www.minecofin.gov.rw/fileadmin/user_upload/Minecofin/Publications/REPORTS/National_Development_Planning_and_Research/Vision_2050/English-Vision_2050_full_version_WEB_Final.pdf) and the [National Strategy for Transformation 2 (NST2, 2024–2029)](https://www.minecofin.gov.rw/fileadmin/user_upload/Minecofin/Publications/STRATEGIES/NST_2/NST2_2024-2029_Abridged.pdf). These national frameworks establish long-term and medium-term development priorities; Mboni contributes a practical way to explore statistics relevant to those priorities.
+
+| Development area | How Mboni can contribute | Current demonstration |
+| ---------------- | ----------------------- | --------------------- |
+| Agricultural productivity and livelihoods | Make reported crop outcomes easier to compare across crops, districts, and seasons. | A retrieved NISR crop-yield table is integrated. It has no reference year, so it cannot support year-over-year claims or a crop recommendation. |
+| Productive work and skills | Help users explore labour, education, training, and sector indicators together where sources and definitions allow. | These areas are currently demonstrated mainly with generated proxy data; they are not verified labour-market findings. |
+| Poverty reduction and financial inclusion | Make relevant household, financial-access, and geographic indicators easier to inspect when suitable official data is integrated. | Poverty proxies demonstrate analysis workflows; no verified financial-inclusion dataset is integrated, and no impact has been measured. |
+
+This is an alignment of purpose, not a claim that Mboni has achieved national targets or caused development outcomes. Any policy or personal decision should be based on verified, appropriately interpreted evidence and additional context.
 
 ### From question to evidence
 
@@ -119,6 +148,10 @@ Example questions:
 
 These analyses help users ask better questions and identify areas for further research. Historical trends do **not** guarantee future job demand, individual employment outcomes, or the suitability of a particular career.
 
+### Farmers and agricultural cooperatives
+
+Users can explore the integrated NISR crop-yield table by crop, district, and season. Because the table does not provide a reference year, it cannot show year-over-year change. Yield comparisons alone are not planting recommendations: decisions also depend on current weather, soils, inputs, prices, market access, and local expertise.
+
 ### Entrepreneurs and business researchers
 
 People considering a business idea can use public indicators to understand the context in which they plan to operate.
@@ -138,17 +171,16 @@ Researchers can explore indicators, compare values, inspect trends, and identify
 
 ## What users can explore
 
-| Area                           | Example questions                                                        | Relevant evidence                                                    |
-| ------------------------------ | ------------------------------------------------------------------------ | -------------------------------------------------------------------- |
-| Employment and labour          | How have employment indicators changed over time?                        | Labour-force and employment statistics                               |
-| Education                      | How do education indicators vary across years or locations?              | Education participation, attainment, and related indicators          |
-| Population and demographics    | How do population characteristics differ across locations?               | Census and population estimates                                      |
-| Poverty and living conditions  | How have selected welfare indicators changed?                            | Household surveys and poverty statistics                             |
-| Agriculture                    | How do agricultural indicators vary across seasons, years, or locations? | Agricultural surveys and related official data                       |
-| Business and economic activity | What changes are visible in relevant economic indicators?                | Business, industry, national accounts, and other economic statistics |
-| Financial inclusion            | What patterns are visible in access to financial services?               | Household and financial inclusion statistics                         |
+| Area | Example questions | Current evidence status |
+| ---- | ----------------- | ------------------------ |
+| Agriculture | How does the reported yield for a crop differ between districts or seasons? | Official NISR crop-yield table is integrated; the source does not provide a reference year. |
+| Employment and labour | How have employment indicators changed over time? | Generated proxy data in the current demo; not verified NISR observations. |
+| Education and training | How do education or training indicators differ across groups or years? | Generated proxy data in the current demo; not verified source extracts. |
+| Poverty, health, and household welfare | How do selected indicators compare across areas? | Generated proxy data in the current demo; not verified official findings. |
+| Business and economic activity | What patterns appear across sectors or districts? | Generated proxy data in the current demo; not verified official findings. |
+| Financial inclusion | How does access to financial services vary across groups or areas? | No verified financial-inclusion dataset is currently integrated. |
 
-Users should rely on the sources, periods, geographic coverage, and definitions shown for each analysis.
+These are areas the application can route or demonstrate, not a promise that every question can be answered from official data. Users should check the source, period, geographic coverage, and definitions shown for each result.
 
 ## How to use Mboni
 
@@ -167,58 +199,91 @@ Open https://mboni-app.vercel.app and sign in with the demo account below, or cr
 
 | Field    | Value                |
 | -------- | -------------------- |
-| Email    | `<demo email>`       |
-| Password | `<demo password>`    |
+| Email    | `ukobizaba81@gmail.com`       |
+| Password | `Ukobizaba123`    |
 
 The demo account is for evaluation only. Please do not change its password or save personal information in it.
 
 ## Screenshots
 
-### 1. Main workspace
+### 1. Create an account
+
+![Mboni create account page](docs/screenshots/create-account.png)
+
+### 2. Sign in
+
+![Mboni sign-in page](docs/screenshots/sign-in.png)
+
+### 3. Main workspace
 
 ![Mboni main workspace](docs/screenshots/01-home.png)
 
-### 2. Question and conversation
+### 4. Question and conversation
 
 ![Question and analytical response](docs/screenshots/02-question.png)
 
-### 3. Analytical dashboard
+### 5. Analytical dashboard
 
 ![Charts, indicators, and insights](docs/screenshots/03-analysis.png)
 
-### 4. Inspecting data
+### 6. Inspecting data
 
 ![Data tables and comparisons](docs/screenshots/04-data-inspection.png)
 
-### 5. Geographic analysis
+### 7. Geographic analysis
 
 ![Geographic analysis](docs/screenshots/05-geographic-analysis.png)
 
-### 6. Final Conclusion analysis
+### 8. Final conclusion
 
-![Geographic analysis](docs/screenshots/06-final-conclusion.png)
+![Final conclusion analysis](docs/screenshots/06-final-conclusion.png)
 
-### 7. Analysis history
+### 9. Analysis history
 
 ![Saved analyses and history](docs/screenshots/07-history.png)
 
 ## Dataset inventory
 
-The datasets used by Mboni, with their providers, coverage, and sources.
+The [NISR Microdata Catalog](https://microdata.statistics.gov.rw/index.php/catalog) contains many studies that may support future analyses. A catalog listing is not the same as a dataset being downloaded, validated, or integrated into Mboni. The current repository contains one integrated official NISR table and generated proxy CSVs for developing and demonstrating other analysis paths.
 
-| Dataset name              | Data provider                                                    | Reference year / period | Geographic coverage | Variables or indicators used                                                     | Source link                                                                    | Local file / location                                                                      |
-| ------------------------- | ---------------------------------------------------------------- | ----------------------- | ------------------- | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
-| Career demand             | Rwanda Labour Market Information System (LMIS) / KORA Job Portal | 2025                    | National            | Occupation, job postings, skills demanded                                        | [LMIS](https://lmis.rw/) ; [KORA](https://jobportal.kora.rw/)                  | [model/data/real/career_demand.csv](model/data/real/career_demand.csv)                     |
-| District agriculture      | NISR (Seasonal Agricultural Survey)                              | 2019-2025               | District            | Crop area, production, yield, agricultural households                            | [SAS 2025](https://microdatabk.statistics.gov.rw/catalog/124)                  | [model/data/real/district_agriculture.csv](model/data/real/district_agriculture.csv)       |
-| District education        | NISR (Population and Housing Census)                             | 2022                    | District            | School attendance, literacy, education level attained                            | [PHC 2022](https://microdatabk.statistics.gov.rw/catalog/108)                  | [model/data/real/district_education.csv](model/data/real/district_education.csv)           |
-| District establishments   | NISR (Establishment Census)                                      | 2020, 2023              | District            | Number of establishments, sector, size, employment                               | [Establishment Census 2023](https://microdatabk.statistics.gov.rw/catalog/105) | [model/data/real/district_establishments.csv](model/data/real/district_establishments.csv) |
-| District health           | NISR (Demographic and Health Survey)                             | 2019-2020, 2025         | District / Province | Health access, child and maternal health, nutrition indicators                   | [DHS 2025](https://www.microdata.statistics.gov.rw/index.php/catalog/126)      | [model/data/real/district_health.csv](model/data/real/district_health.csv)                 |
-| District labour           | NISR (Labour Force Survey)                                       | 2019-2025               | District            | Employment rate, unemployment rate, labour force participation, youth employment | [LFS 2025](https://microdatabk.statistics.gov.rw/catalog/125)                  | [model/data/real/district_labour.csv](model/data/real/district_labour.csv)                 |
-| District poverty          | NISR (EICV7)                                                     | 2023/24                 | District            | Poverty rate, extreme poverty rate, household consumption                        | [EICV7](https://microdatabk.statistics.gov.rw/catalog/118)                     | [model/data/real/district_poverty.csv](model/data/real/district_poverty.csv)               |
-| Higher education programs | Rwanda Data Sharing Platform (HEC / MINEDUC listings)            | 2025                    | National            | Institution, program name, field of study, level                                 | [data.gov.rw](https://data.gov.rw/datasets)                                    | [model/data/real/higher_ed_programs.csv](model/data/real/higher_ed_programs.csv)           |
-| National exams            | Rwanda Data Sharing Platform (NESA results)                      | 2025                    | National / District | Pass rates, candidates, subject combinations, performance                        | [data.gov.rw](https://data.gov.rw/datasets)                                    | [model/data/real/national_exams.csv](model/data/real/national_exams.csv)                   |
-| Sector employment         | NISR (Labour Force Survey)                                       | 2019-2025               | Sector / National   | Employment by industry sector, occupation, share of workforce                    | [LFS 2025](https://microdatabk.statistics.gov.rw/catalog/125)                  | [model/data/real/sector_employment.csv](model/data/real/sector_employment.csv)             |
-| TVET courses              | Rwanda Data Sharing Platform (RTB / WDA listings)                | 2025                    | National            | Trade, course name, level, institution                                           | [data.gov.rw](https://data.gov.rw/datasets)                                    | [model/data/real/tvet_courses.csv](model/data/real/tvet_courses.csv)                       |
+### Official data integrated
+
+| Dataset | What it contains | Source and local files |
+| ------- | ---------------- | ---------------------- |
+| Average yield (kg/ha) by season, district, and crop type | Reported crop yield for the listed districts, crops, and Season A/B. The table does not state a reference year. | [NISR PxWeb table](https://pxweb.statistics.gov.rw/pxweb/en/NISR%20Statistical%20Databases/Agriculture/Crop%20area,%20production%20and%20yield%20for%20major%20crops/yield.px); [raw export](model/data/official/nisr_agriculture_yield_raw.csv); [normalized data](model/data/official/district_crop_yield.csv); [provenance metadata](model/data/official/source.json) |
+
+### Generated proxy data used for demonstrations
+
+The following files are generated examples. Their names and columns are shaped around subject areas, but their values are **not verified extracts of NISR or other official datasets**.
+
+| Topic | Local file |
+| ----- | ---------- |
+| Labour | [district_labour.csv](model/data/real/district_labour.csv) |
+| Poverty and household welfare | [district_poverty.csv](model/data/real/district_poverty.csv) |
+| Health | [district_health.csv](model/data/real/district_health.csv) |
+| Agriculture (demo proxy) | [district_agriculture.csv](model/data/real/district_agriculture.csv) |
+| Education | [district_education.csv](model/data/real/district_education.csv) |
+| Business establishments | [district_establishments.csv](model/data/real/district_establishments.csv) |
+| Sector employment | [sector_employment.csv](model/data/real/sector_employment.csv) |
+| TVET | [tvet_courses.csv](model/data/real/tvet_courses.csv) |
+| Higher education | [higher_ed_programs.csv](model/data/real/higher_ed_programs.csv) |
+| National exams | [national_exams.csv](model/data/real/national_exams.csv) |
+| Career demand | [career_demand.csv](model/data/real/career_demand.csv) |
+
+The `model/data/real/` directory name is historical and does not mean these files contain real official observations. Regenerate the proxies with `python3 model/generate_real.py`. Replace them with source data only after obtaining, checking, documenting, and integrating the actual files.
+
+## Hackathon submission checklist
+
+The [NISR submission webinar](<docs/2026 NISR Hackathon Webinar 2.pdf>) asks teams to provide a README explaining the data used, what the application communicates, and how users interact with it. This README documents those points above. The webinar also asks for working project code, the data or a link to it, a demonstration video of no more than three minutes, and documents confirming team eligibility.
+
+| Submission item | Repository status |
+| --------------- | ----------------- |
+| README describing data, purpose, and user interaction | Included |
+| Application and analysis source code | Included |
+| Data and source links | Official crop-yield files and provenance are included; proxy data is labelled separately above. |
+| Short demonstration video (maximum three minutes) | Not included in the repository yet. |
+| Working sample login for evaluators | The current README has placeholders; replace them with a tested demo account before submission. |
+| Eligibility documents | Not included in the repository. The webinar lists these as a submission item; confirm the accepted handling with the organizers before placing personal documents in a public repository. |
 
 ## Analytical methodology
 
@@ -418,8 +483,8 @@ IGISUBIZO_NISR_ML/
 ├── api/                    # Node.js / TypeScript API
 ├── model/                  # Python analytical/model service
 │   └── data/
-│       ├── official/       # Official source files
-│       └── real/           # Datasets used by the model
+│       ├── official/       # NISR crop-yield export, normalized data, provenance
+│       └── real/           # Generated proxy CSVs (legacy directory name)
 ├── docs/
 │   └── screenshots/        # README screenshots
 ├── docker-compose.yml      # Local development services
@@ -431,7 +496,7 @@ IGISUBIZO_NISR_ML/
 
 ## Reproducibility and data files
 
-The datasets used by Mboni are stored in [`model/data/real/`](model/data/real/) and listed in the [dataset inventory](#dataset-inventory) with their providers and source links. Any dataset too large to include in the repository is linked from its source in the inventory and must be downloaded from there into the same folder.
+The [dataset inventory](#dataset-inventory) separates the official NISR crop-yield table from generated proxy CSVs. The official raw export, normalized file, and provenance metadata are checked in under [`model/data/official/`](model/data/official/). The generated examples are under [`model/data/real/`](model/data/real/) despite that directory's legacy name; they are not official observations. For additional NISR datasets, consult the [NISR Microdata Catalog](https://microdata.statistics.gov.rw/index.php/catalog), then record each dataset's exact source, access conditions, definitions, period, and processing steps before describing it as integrated.
 
 ## Team and contributions
 
@@ -439,8 +504,8 @@ The datasets used by Mboni are stored in [`model/data/real/`](model/data/real/) 
 
 | Team member       | Contribution                                              | GitHub                                         |
 | ----------------- | --------------------------------------------------------- | ---------------------------------------------- |
-| Aimable Ukobizaba | Full-stack application development and system integration | [@AimableUK](https://github.com/AimableUK)     |
-| EnockHumure       | Analytical/model development and related project work     | [@EnockHumure](https://github.com/EnockHumure) |
+| Aimable Ukobizaba | Full-stack application development and system integration/Analytical/model | [@AimableUK](https://github.com/AimableUK)     |
+| EnockHumure       | Full-stack application development and system integration/Analytical/model    | [@EnockHumure](https://github.com/EnockHumure) |
 
 ### AI assistance disclosure
 
