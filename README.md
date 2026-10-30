@@ -7,8 +7,8 @@ Mboni is a question-led analytical workspace for exploring Rwanda's public stati
 Built by **Team Igisubizo** for the **2026 National Institute of Statistics of Rwanda (NISR) Big Data Hackathon**.
 
 > **Live application:** https://mboni-app.vercel.app
-> **Demo Video:** ![Demo video](demo/Mboni_AI_Explained.mp4)
-> **Alternative link:** https://www.veed.io/view/554952cc-28d9-4b68-9c36-be32b0e3f75f?source=Dashboard&panel=share
+**Demo Video:** ![Demo video](demo/Mboni_AI_Explained.mp4)
+**Alternative link:** https://www.veed.io/view/554952cc-28d9-4b68-9c36-be32b0e3f75f?source=Dashboard&panel=share
 ---
 
 ## Contents
