@@ -154,7 +154,7 @@ function Runner() {
   );
 
   return (
-    <main className="mx-auto flex h-[calc(100dvh-4rem)] min-h-0 max-w-3xl flex-col px-4 py-8 sm:px-6">
+    <main className="mx-auto flex h-[calc(100dvh-4rem)] min-h-0 w-full max-w-3xl flex-col px-4 py-8 sm:px-6">
       <header className="mb-6 flex shrink-0 items-start justify-between gap-4">
         <div>
           <h1 className="text-3xl font-semibold sm:text-4xl">{t("ws.title")}</h1>
@@ -176,7 +176,11 @@ function Runner() {
 
       {hasStarted ? (
         <>
-      <section aria-label={t("ws.conversationLabel")} aria-live="polite" className="min-h-0 flex-1 space-y-4 overflow-y-auto">
+      <section
+        aria-label={t("ws.conversationLabel")}
+        aria-live="polite"
+        className="min-h-0 flex-1 space-y-4 overflow-y-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+      >
         {loadingConversation && (
           <p role="status" className="flex items-center gap-2 text-sm text-muted">
             <Loader2 className="h-4 w-4 animate-spin" aria-hidden />
@@ -254,7 +258,7 @@ function Runner() {
       )}
       <div className="shrink-0 bg-background pt-3">
         {prompt}
-        {turns.length > 0 && <p className="mt-3 text-xs text-muted">{t("ws.chatDisclaimer")}</p>}
+        {turns.length > 0 && <p className="mt-1 text-xs text-muted">{t("ws.chatDisclaimer")}</p>}
       </div>
         </>
       ) : (

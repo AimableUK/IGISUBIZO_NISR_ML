@@ -67,13 +67,13 @@ export default function WorkspaceView({ versions, onSaved }: { versions: { versi
           <p className="mt-3 max-w-[70ch] text-sm text-muted"><span className="font-medium text-ink">Question:</span> {payload.artifact.question}</p>
         </div>
 
-        {payload.drift.changed && (
+        {/*{payload.drift.changed && (
           <div role="alert" className="mb-4 flex gap-3 rounded-card border border-warn bg-surface p-4 text-sm">
             <AlertTriangle className="mt-0.5 h-5 w-5 shrink-0 text-warn" aria-hidden />
             <div><p className="font-semibold">Sources or the analysis engine have changed since this was computed.</p>
               <p className="text-muted">You are viewing the saved result from {fmtDate(result.meta.computedAt)}; it has not been rewritten. {payload.drift.items.map((d) => `${d.id}: saved ${d.saved}, now ${d.current}`).join("; ")}.</p></div>
           </div>
-        )}
+        )}*/}
         {result.status === "partial" && result.message && (
           <div role="status" className="mb-4 flex gap-3 rounded-card border border-line bg-tint p-4 text-sm text-on-tint"><Info className="mt-0.5 h-5 w-5 shrink-0" aria-hidden /><p><span className="font-semibold">Partial result. </span>{result.message}</p></div>
         )}
