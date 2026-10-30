@@ -54,7 +54,7 @@ export const en = {
 
   footer: {
     tagline:
-      "Ask questions about Rwanda’s statistics and get charts, tables and maps you can check.",
+      "Ask questions about Rwanda and get charts, tables and maps you can check.",
     rights: "© 2026 Mboni",
     groups: [
       {
@@ -84,9 +84,9 @@ export const en = {
   },
 
   home: {
-    metaTitle: "Ask questions about Rwanda’s statistics",
+    metaTitle: "What do you want to know about Rwanda?",
     hero: {
-      title: "Ask questions about Rwanda’s statistics",
+      title: "What do you want to know about Rwanda?",
       lead: "Choosing a career, starting a business, or looking for lessons in Rwanda’s past? Ask in plain words. Mboni shows what the statistics say, with sources you can check.",
       primary: "Start chatting",
       secondary: "Explore data",
@@ -401,7 +401,7 @@ export const en = {
         id: "start",
         h: "Getting started",
         p: [
-          "Mboni lets you ask questions about Rwanda’s statistics in plain words. It answers with a workspace: charts, tables, maps and a short explanation, with the sources beside them.",
+          "Mboni lets you ask questions about Rwanda. It answers with a workspace: charts, tables, maps and a short explanation, with the sources beside them.",
           "It is most useful for three kinds of question: choosing a career or course of study, starting or growing a business, and learning from what Rwanda’s data shows about the past.",
         ],
         ol: [
@@ -924,7 +924,7 @@ export const en = {
   mboniPrompt: {
     ariaLabel: "Ask Mboni",
     title: "What can Mboni help with?",
-    placeholder: "Ask a question about Rwanda's statistics...",
+    placeholder: "Ask any question...",
     inputLabel: "Your question for Mboni",
     send: "Send question",
     moreExamples: "More",
@@ -933,7 +933,7 @@ export const en = {
 
   auth: {
     panel: {
-      title: "Ask questions about Rwanda’s statistics",
+      title: "What do you want to know about Rwanda?",
       body: "Sign in to keep your analyses, reopen them any time, and check the source behind every number.",
       points: [
         "Choose a career or course of study",
@@ -1082,7 +1082,7 @@ export const en = {
     user: { menu: "Account menu", settings: "Settings", signOut: "Sign out" },
     lang: { change: "Change language", en: "English", rw: "Kinyarwanda" },
     q: {
-      placeholder: "Ask a question about Rwanda's statistics...",
+      placeholder: "Ask any question...",
       voice: "Ask by voice",
       voiceStop: "Stop listening",
       send: "Send question",

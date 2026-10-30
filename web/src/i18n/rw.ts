@@ -55,9 +55,9 @@ export const rw: Dict = {
   },
 
   home: {
-    metaTitle: "Baza ibibazo ku ibarurishamibare ry’u Rwanda",
+    metaTitle: "Ushaka kumenya iki ku Rwanda?",
     hero: {
-      title: "Baza ibibazo ku ibarurishamibare ry’u Rwanda",
+      title: "Ushaka kumenya iki ku Rwanda?",
       lead: "Urashaka guhitamo umwuga, gutangiza ubucuruzi, cyangwa kwigira ku byahise by’u Rwanda? Baza mu magambo yoroshye. Mboni rikwereka ibyo imibare ivuga, hamwe n’aho amakuru yavuye ushobora kugenzura.",
       primary: "Tangira kuganira",
       secondary: "Reba amakuru",
@@ -373,7 +373,7 @@ export const rw: Dict = {
         id: "start",
         h: "Gutangira",
         p: [
-          "Mboni rigufasha kubaza ibibazo ku ibarurishamibare ry’u Rwanda mu magambo yoroshye. Risubiza rikuzanira umwanya w’mboni urimo ibishushanyo, imbonerahamwe, amakarita n’ibisobanuro bigufi, hamwe n’aho amakuru yavuye iruhande.",
+          "Mboni rigufasha kubaza ibibazo ku Rwanda mu magambo yoroshye. Risubiza rikuzanira umwanya w’mboni urimo ibishushanyo, imbonerahamwe, amakarita n’ibisobanuro bigufi, hamwe n’aho amakuru yavuye iruhande.",
           "Rifasha cyane ku bwoko butatu bw’ibibazo: guhitamo umwuga cyangwa amasomo, gutangiza cyangwa kwagura ubucuruzi, no kwigira ku byo amakuru y’u Rwanda yerekana ku byahise.",
         ],
         ol: [
@@ -896,7 +896,7 @@ export const rw: Dict = {
   mboniPrompt: {
     ariaLabel: "Baza Mboni",
     title: "Mboni yagufasha iki?",
-    placeholder: "Baza ikibazo ku mibare y'u Rwanda...",
+    placeholder: "Baza ikibazo ushaka...",
     inputLabel: "Ikibazo cyawe kuri Mboni",
     send: "Ohereza ikibazo",
     moreExamples: "Ibindi",
@@ -905,7 +905,7 @@ export const rw: Dict = {
 
   auth: {
     panel: {
-      title: "Baza ibibazo ku ibarurishamibare ry’u Rwanda",
+      title: "Ushaka kumenya iki ku Rwanda?",
       body: "Injira ubike amasesengura yawe, uyafungure igihe cyose, kandi urebe aho buri mubare waturutse.",
       points: [
         "Hitamo umwuga cyangwa amasomo",
@@ -1062,7 +1062,7 @@ export const rw: Dict = {
     },
     lang: { change: "Hindura ururimi", en: "English", rw: "Ikinyarwanda" },
     q: {
-      placeholder: "Baza ikibazo ku mibare y'u Rwanda...",
+      placeholder: "Baza ikibazo ushaka...",
       voice: "Baza ukoresheje ijwi",
       voiceStop: "Hagarika kumva",
       send: "Ohereza ikibazo",
