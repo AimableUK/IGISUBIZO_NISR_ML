@@ -13,3 +13,6 @@ __pycache__
 *.pyo
 .venv
 venv
+
+/api/Dockerfile*
+skills
