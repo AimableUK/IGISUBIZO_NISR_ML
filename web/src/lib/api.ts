@@ -2,7 +2,7 @@ import axios, { AxiosError } from "axios";
 import { z } from "zod";
 import {
   ArtifactPayloadSchema, ArtifactSummarySchema, AskResponseSchema, VersionMetaSchema,
-  ConversationResponseSchema, type ArtifactPayload, type ArtifactSummary, type Customizations,
+  ConversationPayloadSchema, ConversationResponseSchema, type ArtifactPayload, type ArtifactSummary, type Customizations,
   type ConversationMessage, type PresentationSpec,
 } from "@/shared";
 
@@ -10,13 +10,13 @@ export const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:4000
 export const http = axios.create({ baseURL: `${API_URL}/api`, withCredentials: true, timeout: 45_000 });
 
 export class ApiError extends Error {
-  constructor(message: string, public status: number, public code?: string, public issues?: { path: string; message: string }[]) { super(message); }
+  constructor(message: string, public status: number, public code?: string, public issues?: { path: string; message: string }[], public conversationId?: string) { super(message); }
 }
 function toApiError(e: unknown): ApiError {
   if (e instanceof AxiosError) {
     if (!e.response) return new ApiError("We could not reach the server. Check your connection and try again.", 0, "network");
-    const d = e.response.data as { message?: string; error?: string; issues?: { path: string; message: string }[] } | undefined;
-    return new ApiError(d?.message ?? "Something went wrong.", e.response.status, d?.error, d?.issues);
+    const d = e.response.data as { message?: string; error?: string; issues?: { path: string; message: string }[]; conversationId?: string } | undefined;
+    return new ApiError(d?.message ?? "Something went wrong.", e.response.status, d?.error, d?.issues, d?.conversationId);
   }
   return e instanceof ApiError ? e : new ApiError("Unexpected error.", 0);
 }
@@ -31,10 +31,11 @@ async function call<T>(p: Promise<{ data: unknown }>, schema: z.ZodType<T, z.Zod
 
 export const api = {
   ask: (question: string, requestId: string) => call(http.post("/analyses", { question, requestId }), AskResponseSchema),
-  converse: (message: string, history: ConversationMessage[], useAi: boolean) => call(
-    http.post("/conversation", { message, history, useAi }),
+  converse: (message: string, history: ConversationMessage[], useAi: boolean, requestId: string, conversationId?: string) => call(
+    http.post("/conversation", { message, history, useAi, requestId, conversationId }),
     ConversationResponseSchema,
   ),
+  getConversation: (id: string) => call(http.get(`/conversation/${id}`), ConversationPayloadSchema),
   list: (): Promise<ArtifactSummary[]> => call(http.get("/artifacts"), z.array(ArtifactSummarySchema)),
   get: (id: string, version?: number): Promise<ArtifactPayload> => call(http.get(`/artifacts/${id}`, { params: version ? { version } : undefined }), ArtifactPayloadSchema),
   versions: (id: string) => call(http.get(`/artifacts/${id}/versions`), z.array(VersionMetaSchema.pick({ version: true, note: true, createdAt: true, plannerVersion: true }))),

@@ -23,7 +23,7 @@ type WeatherForecast = {
 };
 
 const WeatherIntent = /\b(weather|forecast|temperature|rain|rainfall|rainy|sunny|climate)\b/i;
-const RwandaGuidanceIntent = /\b(study|studies|student|school|university|college|degree|program|programme|course|career|job|occupation|work|employment|salary|wage|skill|agriculture|crop|farm|harvest|maize|business|poverty|health|education|tvet|exam|rwanda|district|sector|vacanc(?:y|ies))\b/i;
+const RwandaGuidanceIntent = /\b(study|studies|student|school|university|college|degree|program|programme|course|career|job|occupation|work|employment|salary|wage|skill|agriculture|crop|farm|harvest|maize|business|poverty|health|education|tvet|exam|rwanda|district|sectors?|graduates?|hiring?|vacanc(?:y|ies)|enrol(?:ment|lment)|pass rates?)\b/i;
 const LocationAfterPreposition = /\b(?:in|for|at|around|near)\s+([a-z][a-z '-]{0,60}?)(?=\s+(?:weather|forecast|temperature|rain|rainfall|today|tomorrow|tonight|this|next|on)\b|[?.!,]|$)/i;
 const WEATHER_SOURCE = "Open-Meteo forecast";
 

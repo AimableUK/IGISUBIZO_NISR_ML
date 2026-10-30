@@ -1077,6 +1077,7 @@ export const rw: Dict = {
       conversationLabel: "Ikiganiro cyo gusuzuma",
       newConversation: "Tangira ikiganiro gishya",
       chatThinking: "Turimo gutekereza ku kibazo cyawe…",
+      loadingConversation: "Turimo gufungura ikiganiro cyawe cyabitswe…",
       guidedAnswer: "Igisubizo kiyobowe",
       aiAnswer: "Igisubizo gifashijwe na AI",
       demoDataNote: "Harimo amakuru y’igerageza yakozwe",
@@ -1086,11 +1087,11 @@ export const rw: Dict = {
       aiPrivacy:
         "Nibihitwamo, ubutumwa bwawe n’ikiganiro giheruka byoherezwa ku mutanga serivisi wa AI. Irinde gutanga amakuru y’ibanga.",
       chatDisclaimer:
-        "Amateka y’ikiganiro aguma muri iyi paji gusa. Amasesengura ashingiye ku makuru abikwa mu Mateka; amakuru y’igerageza agaragazwa mu gisubizo no mu sesengura.",
+        "Ikiganiro cyawe kirabikwa kugira ngo uzongere ukigarukemo. Amasesengura ashingiye ku makuru ahuzwa n’ikiganiro kandi akabikwa mu Mateka; amakuru y’igerageza aragaragazwa.",
       stage: {
         interpreting: "Turimo gusoma ikibazo cyawe",
         validating: "Turimo kugenzura niba isesengura ryawe rishoboka",
-        computing: "Turimo gukora isesengura ry'igerageza",
+        computing: "Turimo kubara isesengura ryawe",
         planning: "Turimo gutegura umwanya w'akazi",
         saving: "Turimo kubika isesengura",
         ready: "Turimo gufungura umwanya wawe w'akazi",
@@ -1159,6 +1160,7 @@ export const rw: Dict = {
       signOut: "Sohoka",
     },
     an: {
+      backToConversation: "Subira mu kiganiro",
       notFound: "Ntitwabonye iri sesengura",
       loadFail: "Iri sesengura ntiryashoboye gufungurwa",
       notFoundBody: "Birashoboka ko ryasibwe, cyangwa ko link atari yo.",

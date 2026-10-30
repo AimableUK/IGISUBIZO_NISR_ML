@@ -9,17 +9,18 @@ datasource db {
 
 // ---- better-auth ----
 model User {
-  id            String     @id
+  id            String           @id
   name          String
-  email         String     @unique
-  emailVerified Boolean    @default(false)
+  email         String           @unique
+  emailVerified Boolean          @default(false)
   image         String?
-  createdAt     DateTime   @default(now())
-  updatedAt     DateTime   @updatedAt
+  createdAt     DateTime         @default(now())
+  updatedAt     DateTime         @updatedAt
   sessions      Session[]
   accounts      Account[]
   artifacts     Artifact[]
   analyses      AnalysisResult[]
+  conversations Conversation[]
 
   @@map("user")
 }
@@ -85,12 +86,28 @@ model Artifact {
   id             String            @id @default(cuid())
   userId         String
   user           User              @relation(fields: [userId], references: [id], onDelete: Cascade)
+  conversationId String?
+  conversation   Conversation?     @relation(fields: [conversationId], references: [id], onDelete: SetNull)
   title          String
   question       String
   currentVersion Int               @default(1)
   createdAt      DateTime          @default(now())
   updatedAt      DateTime          @updatedAt
   versions       ArtifactVersion[]
+
+  @@index([userId, updatedAt])
+  @@index([conversationId])
+}
+
+model Conversation {
+  id        String     @id @default(cuid())
+  userId    String
+  user      User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  title     String
+  messages  Json       @default("[]")
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+  artifacts Artifact[]
 
   @@index([userId, updatedAt])
 }

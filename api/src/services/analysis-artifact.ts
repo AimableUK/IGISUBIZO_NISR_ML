@@ -1,11 +1,17 @@
 import type { Prisma } from "@prisma/client";
-import { emptyCustomizations, type AnalyticalResult } from "@shared";
+import { ConversationTurnSchema, emptyCustomizations, type AnalyticalResult, type ConversationTurn } from "@shared";
 import { prisma } from "../lib/prisma";
 import { planPresentation } from "./planner";
 
 const json = (value: unknown) => value as Prisma.InputJsonValue;
 
-export async function saveAnalysisArtifact(userId: string, question: string, result: AnalyticalResult) {
+export async function saveAnalysisArtifact(
+  userId: string,
+  question: string,
+  result: AnalyticalResult,
+  conversationId?: string,
+  assistantTurn?: ConversationTurn,
+) {
   if (result.status !== "ok" && result.status !== "partial") return null;
 
   const { spec, plannerVersion } = await planPresentation(result);
@@ -18,9 +24,10 @@ export async function saveAnalysisArtifact(userId: string, question: string, res
         analysisVersion: result.meta.analysisVersion,
       },
     });
-    return tx.artifact.create({
+    const createdArtifact = await tx.artifact.create({
       data: {
         userId,
+        conversationId,
         question,
         title: spec.title,
         versions: {
@@ -36,6 +43,18 @@ export async function saveAnalysisArtifact(userId: string, question: string, res
         },
       },
     });
+    if (conversationId && assistantTurn) {
+      const conversation = await tx.conversation.findFirst({
+        where: { id: conversationId, userId },
+      });
+      if (!conversation) throw new Error("Conversation was not found while saving its analysis.");
+      const messages = ConversationTurnSchema.array().parse(conversation.messages);
+      await tx.conversation.update({
+        where: { id: conversationId },
+        data: { messages: [...messages, { ...assistantTurn, artifactId: createdArtifact.id }] },
+      });
+    }
+    return createdArtifact;
   });
   return artifact.id;
 }

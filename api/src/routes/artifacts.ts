@@ -23,7 +23,7 @@ artifacts.get("/", async (req, res) => {
     const spec = PresentationSpecSchema.safeParse(v.presentationSpec);
     const result = AnalyticalResultSchema.safeParse(v.analysis.result);
     return {
-      id: a.id, title: a.title, question: a.question, currentVersion: a.currentVersion, versionCount: a._count.versions,
+      id: a.id, conversationId: a.conversationId, title: a.title, question: a.question, currentVersion: a.currentVersion, versionCount: a._count.versions,
       createdAt: a.createdAt.toISOString(), updatedAt: a.updatedAt.toISOString(),
       isSample: result.success ? result.data.meta.isSample : true,
       componentTypes: spec.success ? [...new Set(flattenComponents(spec.data).map((c) => c.type))] : [],
@@ -46,7 +46,7 @@ async function payload(userId: string, id: string, version?: number): Promise<Ar
   if (result.meta.analysisVersion !== ANALYSIS_VERSION) drift.items.push({ kind: "engine", id: "analysis", saved: result.meta.analysisVersion, current: ANALYSIS_VERSION });
   drift.changed = drift.items.length > 0;
   return {
-    artifact: { id: a.id, title: a.title, question: a.question, currentVersion: a.currentVersion, versionCount: a._count.versions, createdAt: a.createdAt.toISOString(), updatedAt: a.updatedAt.toISOString(), isSample: result.meta.isSample, componentTypes: [] },
+    artifact: { id: a.id, conversationId: a.conversationId, title: a.title, question: a.question, currentVersion: a.currentVersion, versionCount: a._count.versions, createdAt: a.createdAt.toISOString(), updatedAt: a.updatedAt.toISOString(), isSample: result.meta.isSample, componentTypes: [] },
     version: { version: v.version, note: v.note, createdAt: v.createdAt.toISOString(), plannerVersion: v.plannerVersion, schemaVersion: v.schemaVersion, analysisId: v.analysisId },
     result, spec: PresentationSpecSchema.parse(v.presentationSpec), customizations: CustomizationsSchema.parse(v.customizations), drift,
   };

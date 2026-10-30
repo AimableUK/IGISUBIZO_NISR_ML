@@ -5,6 +5,7 @@ import { AlertTriangle, Info, LayoutGrid, Redo2, RotateCcw, Save, SquareCode, Un
 import { composeView, flattenComponents, PALETTES, type FilterComponent } from "@/shared";
 import { useWorkspace } from "@/store/workspace";
 import { useToasts } from "@/store/toasts";
+import { useI18n } from "@/i18n";
 import { api, ApiError } from "@/lib/api";
 import { fmtDate } from "@/lib/format";
 import { RenderContext } from "@/components/renderer/context";
@@ -14,6 +15,7 @@ import ReadAloud from "./ReadAloud";
 import SaveVersionDialog from "./SaveVersionDialog";
 
 export default function WorkspaceView({ versions, onSaved }: { versions: { version: number; note: string | null; createdAt: string }[]; onSaved: (v: number) => void }) {
+  const { t } = useI18n();
   const s = useWorkspace();
   const push = useToasts((t) => t.push);
   const [arrange, setArrange] = useState(false);
@@ -49,6 +51,14 @@ export default function WorkspaceView({ versions, onSaved }: { versions: { versi
     <RenderContext.Provider value={{ result, filters, cz, arrange, setFilter: s.setFilter, setSpan: s.setSpan, move: s.move, moveTo: s.moveTo, toggleCollapse: s.toggleCollapse, switchType: s.switchType, gridRef }}>
       <div className="mx-auto max-w-[1400px] px-4 py-8 sm:px-6">
         <div className="mb-6">
+          {payload.artifact.conversationId && (
+            <Link
+              href={`/workspace?conversation=${encodeURIComponent(payload.artifact.conversationId)}`}
+              className="mb-4 inline-flex btn"
+            >
+              ← {t("an.backToConversation")}
+            </Link>
+          )}
           <div className="flex flex-wrap items-center gap-2">
             <span className="badge bg-surface">Version {payload.version.version}{s.dirty ? " · unsaved changes" : ""}</span>
           </div>

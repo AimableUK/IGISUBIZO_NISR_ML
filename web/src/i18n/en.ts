@@ -1097,6 +1097,7 @@ export const en = {
       conversationLabel: "Workspace conversation",
       newConversation: "New conversation",
       chatThinking: "Thinking through your question…",
+      loadingConversation: "Loading your saved conversation…",
       guidedAnswer: "Guided answer",
       aiAnswer: "AI-assisted answer",
       demoDataNote: "Includes generated demo data",
@@ -1106,11 +1107,11 @@ export const en = {
       aiPrivacy:
         "If enabled, your message and recent conversation are sent to our configured AI provider. Avoid sharing sensitive personal information.",
       chatDisclaimer:
-        "Conversation history stays in this page session. Data-based analyses are saved to History; generated demo data is identified in the answer and analysis.",
+        "Your conversation is saved so you can return to it. Data-based analyses are linked to the conversation and saved to History; generated demo data is identified.",
       stage: {
         interpreting: "Reading your question",
         validating: "Checking it against supported analyses",
-        computing: "Computing the demo analysis",
+        computing: "Computing your analysis",
         planning: "Designing the workspace",
         saving: "Saving the analysis",
         ready: "Opening your workspace",
@@ -1178,6 +1179,7 @@ export const en = {
       signOut: "Sign out",
     },
     an: {
+      backToConversation: "Back to conversation",
       notFound: "We could not find this analysis",
       loadFail: "This analysis could not be loaded",
       notFoundBody: "It may have been deleted, or the link is not correct.",
