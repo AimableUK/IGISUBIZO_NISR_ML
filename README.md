@@ -67,23 +67,21 @@ A user starts with a question. Where the question is supported by the data and a
 
 ## The problem
 
-Rwanda publishes a wide range of statistics that can inform national development and everyday decisions. The [NISR Microdata Catalog](https://microdata.statistics.gov.rw/index.php/catalog), for example, lists studies covering agriculture, labour, health, households, and other subjects. But published datasets are not automatically easy to use: they may be in separate files and formats, cover different years and populations, and require statistical knowledge to prepare, compare, and interpret.
+Choices about education, work, and livelihoods can shape a person's opportunities for years. A student choosing a course may want to understand the kinds of work connected to it. A farmer may want to compare reported crop yields across districts or seasons. Families, teachers, counsellors, and extension officers often help people think through these choices, but useful advice also depends on having relevant, current, and understandable evidence.
 
-A farmer or cooperative may want to compare reported crop yields by district and season. A student may want to understand employment patterns. A planner or researcher may need to compare indicators, locate gaps, and explain what the evidence can support.
+Rwanda publishes data that can help answer development questions. The [NISR Microdata Catalog](https://microdata.statistics.gov.rw/index.php/catalog) brings together studies on agriculture, labour, health, households, and other subjects. Yet having data available does not automatically make it easy to use. Information may sit in separate datasets and reports, use different definitions or reference periods, and require preparation and statistical skills before people can compare or interpret it.
 
-The challenge is the gap between available data and usable evidence: **people need relevant statistics to be discoverable, understandable, comparable, and presented with enough context to assess.**
+The resulting gap is between **published statistics and usable evidence**. People may have a practical question but struggle to find the right dataset, work out what its measures mean, compare relevant values, and understand what the evidence can—and cannot—support. This can leave decisions dependent on general advice or partial information, even when useful statistics exist.
 
-Mboni addresses this usability challenge by bringing question-led exploration, analysis, visual communication, and source-aware explanations into one workspace. It does not replace NISR, domain experts, or field research, and it does not make decisions on a user's behalf.
+### Why we chose this problem
 
-### The problem we are addressing
+We chose this challenge because making data useful should involve more than publishing tables or displaying charts. People need a way to start with a question and explore the evidence in a form they can inspect. This is especially important when choices relate to livelihoods, such as what to study or what agricultural outcomes have been reported in a location.
 
-1. **Discoverability:** Relevant information can be spread across datasets, portals, reports, and publications.
-2. **Interpretability:** Raw tables and statistical files can be difficult to interpret without analytical experience.
-3. **Comparison:** Understanding change over time or differences between groups often requires additional data preparation.
-4. **Decision context:** A statistic is more useful when users can understand its definition, period, coverage, and limitations.
-5. **Accessibility:** Statistical information should be communicated in forms that are easier for different users to inspect and understand.
+Mboni is our attempt to help bridge that gap: it connects a user's question to an analysis the system supports, then presents the result as indicators, comparisons, charts, and tables with source context and limitations. The goal is to support better-informed discussion—not to replace human advisers, official statistics, or local expertise, and not to promise that an option will succeed.
 
-Mboni is a decision-support tool, not an official statistics producer. It aims to improve access to evidence, not replace the institutions responsible for producing official statistics or the experts responsible for interpreting them.
+### Current scope and evidence
+
+The broader ambition is to make reliable public evidence easier to explore across Rwanda's development priorities. The current implementation is narrower: it directly uses an official NISR crop-yield table, while most other topic areas use generated proxy data to demonstrate the analysis workflow. Those proxy-based career and labour examples do **not** establish actual graduate outcomes, current job demand, salaries, or future labour-market conditions. Integrating and validating additional official datasets is necessary before making those claims.
 
 ## Our approach
 
