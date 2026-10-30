@@ -69,13 +69,13 @@ def print_header(title: str):
 
 
 def evaluate_regression():
-    print_header("1. REGRESSION ENGINE — OLS & LOOCV EVALUATION")
+    print_header("1. REGRESSION ENGINE - OLS & LOOCV EVALUATION")
     result = run_regression("what factors predict youth NEET rate?")
     validate_schema(result)
 
     metrics = result["metrics"]
     n_obs = metrics.get("n_observations", {}).get("value", 30)
-    print(f"  Target: youth_neet_rate — panel OLS with year FE (n={int(n_obs)})")
+    print(f"  Target: youth_neet_rate - panel OLS with year FE (n={int(n_obs)})")
     print(f"  Panel R²:               {metrics['r_squared']['value']:.4f}")
     print(f"  Adjusted R²:           {metrics['adjusted_r_squared']['value']:.4f}")
     print(f"  Leave-district-out Q²:  {metrics['loocv_q2']['value']:.4f}")
@@ -84,7 +84,7 @@ def evaluate_regression():
     )
     print(f"  Intercept:             {metrics['intercept']['value']:.2f}%\n")
     if metrics["r_squared"]["value"] >= 0.995:
-        print("  [WARN] R² ≥ 0.995 — data may still be near-deterministic; check generator noise.")
+        print("  [WARN] R² ≥ 0.995 - data may still be near-deterministic; check generator noise.")
 
     print("  Feature Importance & Direction:")
     features = result["datasets"]["feature_importance"]["rows"]
@@ -96,7 +96,7 @@ def evaluate_regression():
 
 
 def evaluate_clustering():
-    print_header("2. CLUSTERING ENGINE — K-MEANS++ & SILHOUETTE VALIDATION")
+    print_header("2. CLUSTERING ENGINE - K-MEANS++ & SILHOUETTE VALIDATION")
     result = run_clustering("which districts have highest labour underutilization?")
     validate_schema(result)
 
@@ -140,7 +140,7 @@ def evaluate_clustering():
 
 
 def evaluate_forecasting():
-    print_header("3. FORECASTING ENGINE — SECTOR TRENDS & BACKTESTING")
+    print_header("3. FORECASTING ENGINE - SECTOR TRENDS & BACKTESTING")
     result = run_forecasting("what are the employment share trends by sector?")
     validate_schema(result)
 

@@ -1,4 +1,4 @@
-# Problem C — Employment Trend Forecasting by Sector
+# Problem C - Employment Trend Forecasting by Sector
 
 ## Problem statement
 
@@ -24,15 +24,15 @@ Linear OLS trend fitted per sector on national district-mean employment share (2
 
 ## Output
 
-- `sector_trends` dataset — actual + fitted trend per sector per year (2019–2025)
-- `sector_forecast` dataset — projected share per sector for 2026–2027
-- `sector_ranking` dataset — sectors ranked by trend slope
+- `sector_trends` dataset - actual + fitted trend per sector per year (2019–2025)
+- `sector_forecast` dataset - projected share per sector for 2026–2027
+- `sector_ranking` dataset - sectors ranked by trend slope
 - Metrics: count of growing sectors, fastest growing sector slope
 - Insights: growth leaders, forecast caveat
 
 ## Caveats
 
-- Linear extrapolation only — structural breaks, policy changes, and external shocks are not modelled
+- Linear extrapolation only - structural breaks, policy changes, and external shocks are not modelled
 - Employment share projections do not account for population growth or total employment volume
 - Short time series (7 years) limits trend reliability
 - Projections are directional signals, **not predictions**
@@ -42,5 +42,5 @@ Linear OLS trend fitted per sector on national district-mean employment share (2
 Replace `buildSector()` in `ml-engine.ts` with real LFS/Establishment Census sector aggregates using the same column names.
 
 **Sources:**
-- Rwanda Labour Force Survey (NISR) — https://microdatabk.statistics.gov.rw/catalog/125
-- Rwanda Establishment Census 2023 (NISR) — https://microdatabk.statistics.gov.rw/catalog/105
+- Rwanda Labour Force Survey (NISR) - https://microdatabk.statistics.gov.rw/catalog/125
+- Rwanda Establishment Census 2023 (NISR) - https://microdatabk.statistics.gov.rw/catalog/105

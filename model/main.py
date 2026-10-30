@@ -1,5 +1,5 @@
 """
-FastAPI model service — single POST /analyze endpoint.
+FastAPI model service - single POST /analyze endpoint.
 Receives an AnalyzeRequest, routes to the correct ML engine, returns AnalyticalResult.
 """
 from fastapi import FastAPI, HTTPException

@@ -1,5 +1,5 @@
 /**
- * Natural Language Understanding — intent parser.
+ * Natural Language Understanding - intent parser.
  *
  * Converts free-form English questions into a structured ParsedIntent so the
  * downstream engines (ml-engine, engine) always receive a well-understood signal
@@ -9,12 +9,12 @@
  */
 
 export type EngineIntent =
-  | "decision"              // Problem D — crop/career/sector choice comparison
-  | "career_intelligence"   // Problem D — career scoring, path advice
-  | "clustering"            // Problem A — district underutilization profiles
-  | "regression"            // Problem B — NEET predictors
-  | "forecasting"           // Problem C — sector employment trends
-  | "indicator_query"       // engine.ts — single indicator compare/trend/rank
+  | "decision"              // Problem D - crop/career/sector choice comparison
+  | "career_intelligence"   // Problem D - career scoring, path advice
+  | "clustering"            // Problem A - district underutilization profiles
+  | "regression"            // Problem B - NEET predictors
+  | "forecasting"           // Problem C - sector employment trends
+  | "indicator_query"       // engine.ts - single indicator compare/trend/rank
   | "ambiguous";            // too short or unclear
 
 export type Operation = "compare" | "trend" | "rank" | "summary";
@@ -90,7 +90,7 @@ const DISTRICT_NAMES = [
   "Nyanza","Ruhango","Karongi","Ngororero","Nyabihu","Rubavu","Rusizi","Maramagambo",
 ];
 
-// --- engine routing rules (ordered — first match wins) -----------------------
+// --- engine routing rules (ordered - first match wins) -----------------------
 const ENGINE_RULES: Array<[RegExp, EngineIntent]> = [
   [/which (crop|plant|grow|farm)|what (should|can) i (plant|grow|farm)|best crop|compare crop|rice vs|maize vs|beans vs|potato vs|which career.*vs|career.*compare|should i (plant|grow|farm)|i want to (plant|grow|farm)|crop choice|decision.*crop|decision.*career/i, "decision"],
   [/career opportunity|career.*rwanda|tvet career|university career|which career|best career|job.*opportunit|future.*work|ai.*era|in.demand|occupation.*demand|what (should|can) i (study|become)|i want to (be|become)|my (dream|goal) is|advise me|guide me|help me choose/i, "career_intelligence"],
@@ -104,16 +104,16 @@ export function parseIntent(rawQuestion: string): ParsedIntent {
   const q = rawQuestion.trim();
   const words = q.split(/\s+/);
 
-  // Too short — ask for clarification
+  // Too short - ask for clarification
   if (words.length < 3) {
     return {
       engine: "ambiguous", operation: "summary", question: q,
       subjects: [], districts: [], confidence: 0,
-      understood: "Your question is too short. Please describe what you want to know — for example: \"Which careers are in demand in Rwanda?\", \"What should I study to become a software developer?\", or \"Show me the employment trend by sector.\"",
+      understood: "Your question is too short. Please describe what you want to know - for example: \"Which careers are in demand in Rwanda?\", \"What should I study to become a software developer?\", or \"Show me the employment trend by sector.\"",
     };
   }
 
-  // Expand synonyms — build an enriched string for routing
+  // Expand synonyms - build an enriched string for routing
   let enriched = q;
   for (const [pattern, replacement] of SYNONYMS) {
     if (pattern.test(q)) enriched += " " + replacement;
@@ -158,11 +158,11 @@ function buildUnderstood(engine: EngineIntent, op: Operation, districts: string[
     case "clustering":
       return `Understood: district labour underutilization profiling${distStr}. I will cluster districts by underemployment, NEET, agriculture share, and formal employment.`;
     case "regression":
-      return `Understood: regression analysis — what district characteristics predict youth NEET rate${distStr}.`;
+      return `Understood: regression analysis - what district characteristics predict youth NEET rate${distStr}.`;
     case "forecasting":
       return `Understood: employment trend and forecast by sector${distStr}. I will fit linear trends and project 2 years forward.`;
     case "indicator_query":
-      return `Understood: indicator query — ${op} of ${subjects.slice(0, 3).join(", ")}${distStr}.`;
+      return `Understood: indicator query - ${op} of ${subjects.slice(0, 3).join(", ")}${distStr}.`;
     case "ambiguous":
       return `Could not understand: "${q}". Please be more specific.`;
   }

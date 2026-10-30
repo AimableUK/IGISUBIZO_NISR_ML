@@ -1,4 +1,4 @@
-# Problem B — Youth NEET Rate Regression
+# Problem B - Youth NEET Rate Regression
 
 ## Problem statement
 
@@ -10,7 +10,7 @@ Panel Ordinary Least Squares (OLS) on district × year observations with **year 
 
 ## Target variable
 
-`youth_neet_rate` — percentage of youth (15–30) not in employment, education or training.
+`youth_neet_rate` - percentage of youth (15–30) not in employment, education or training.
 
 ## Features
 
@@ -33,8 +33,8 @@ Panel Ordinary Least Squares (OLS) on district × year observations with **year 
 
 ## Output
 
-- `feature_importance` dataset — coefficients, relative importance, direction per feature
-- `predictions` dataset — actual vs predicted NEET rate + residual (latest year)
+- `feature_importance` dataset - coefficients, relative importance, direction per feature
+- `predictions` dataset - actual vs predicted NEET rate + residual (latest year)
 - Metrics: panel R², adjusted R², leave-district-out RMSE/Q², n_observations, intercept
 - Insights: model fit quality, top predictor
 
@@ -49,4 +49,4 @@ Panel Ordinary Least Squares (OLS) on district × year observations with **year 
 
 Replace `buildDistrict()` in `ml-engine.ts` with real LFS district aggregates. The OLS logic is unchanged.
 
-**Source:** Rwanda Labour Force Survey (NISR) — https://microdatabk.statistics.gov.rw/catalog/125
+**Source:** Rwanda Labour Force Survey (NISR) - https://microdatabk.statistics.gov.rw/catalog/125

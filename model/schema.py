@@ -1,6 +1,6 @@
 """
 Pydantic schemas matching the AnalyticalResult Zod contract in api/src/shared/analytical.ts
-The API expects this exact shape — do not rename top-level keys.
+The API expects this exact shape - do not rename top-level keys.
 """
 from __future__ import annotations
 from typing import Any, Literal, Optional

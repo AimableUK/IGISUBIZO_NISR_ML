@@ -1,4 +1,4 @@
-# Problem A — Labour Underutilization Clustering
+# Problem A - Labour Underutilization Clustering
 
 ## Problem statement
 
@@ -29,8 +29,8 @@ KMeans clustering (k=3) applied to latest-year district-level features from the 
 
 ## Output
 
-- `cluster_profiles` dataset — 3 rows, one per cluster, with mean feature values
-- `district_clusters` dataset — 30 rows, one per district, with cluster assignment
+- `cluster_profiles` dataset - 3 rows, one per cluster, with mean feature values
+- `district_clusters` dataset - 30 rows, one per district, with cluster assignment
 - Metrics: number of clusters, count of districts in highest underutilization cluster
 - Insight: which districts fall in the highest underutilization cluster
 
@@ -44,4 +44,4 @@ KMeans clustering (k=3) applied to latest-year district-level features from the 
 
 Replace `buildDistrict()` in `ml-engine.ts` with real LFS district aggregates using the same column names. The clustering logic is unchanged.
 
-**Source:** Rwanda Labour Force Survey (NISR) — https://microdatabk.statistics.gov.rw/catalog/125
+**Source:** Rwanda Labour Force Survey (NISR) - https://microdatabk.statistics.gov.rw/catalog/125

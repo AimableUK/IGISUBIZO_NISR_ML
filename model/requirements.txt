@@ -4,7 +4,7 @@ uvicorn[standard]>=0.32.0
 pydantic>=2.9.2
 python-dotenv>=1.0.1
 
-# Optional scientific stack — not imported by engines today (pure Python OLS/KMeans).
+# Optional scientific stack - not imported by engines today (pure Python OLS/KMeans).
 # Pin only on Python 3.12 images / Docker:
 # pandas==2.2.3
 # numpy==2.1.3

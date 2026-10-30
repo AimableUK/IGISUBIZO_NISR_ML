@@ -1,4 +1,4 @@
-# Mboni — Hackathon progress notes
+# Mboni - Hackathon progress notes
 
 **Hackathon:** 2026 NISR Big Data Hackathon  
 **Repo:** IGISUBIZO_NISR_ML  
@@ -31,7 +31,7 @@ Data: generated proxy files in `model/data/real/*.csv` (regenerate with `python3
 
 ## Session log
 
-### 2026-10-26 — Full model training, API wiring, admin UI, docs
+### 2026-10-26 - Full model training, API wiring, admin UI, docs
 
 **Done**
 1. Confirmed `python3 model/train_eval.py` passes all engines.

@@ -8,7 +8,7 @@ import {
 import { parseIntent } from "./nlu";
 
 /**
- * In-process fallback engine — generates proxy demo values when the Python model service is unavailable.
+ * In-process fallback engine - generates proxy demo values when the Python model service is unavailable.
  */
 export const ANALYSIS_VERSION = "engine-2.0.0";
 export const DATASET_VERSIONS: Record<string, string> = {
@@ -25,16 +25,16 @@ export const DATASET_VERSIONS: Record<string, string> = {
 };
 
 const DATASET_SOURCE_TITLES: Record<string, string> = {
-  nisr_lfs: "Rwanda Labour Force Survey (LFS) — NISR",
-  nisr_eicv7: "EICV7 Integrated Household Living Conditions Survey — NISR",
-  nisr_dhs: "Rwanda Demographic and Health Survey (DHS) — NISR",
-  nisr_sas: "Seasonal Agricultural Survey (SAS) — NISR",
-  nisr_emis: "Rwanda Education Management Information System (EMIS) — REB",
+  nisr_lfs: "Rwanda Labour Force Survey (LFS) - NISR",
+  nisr_eicv7: "EICV7 Integrated Household Living Conditions Survey - NISR",
+  nisr_dhs: "Rwanda Demographic and Health Survey (DHS) - NISR",
+  nisr_sas: "Seasonal Agricultural Survey (SAS) - NISR",
+  nisr_emis: "Rwanda Education Management Information System (EMIS) - REB",
   nisr_nesa:
-    "National Examinations and School Inspection Authority (NESA) — Rwanda",
-  nisr_ec: "Rwanda Establishment Census — NISR",
-  nisr_tvet: "Rwanda Polytechnic / WDA — TVET Statistics",
-  nisr_hec: "Rwanda Higher Education Council (HEC) — University Statistics",
+    "National Examinations and School Inspection Authority (NESA) - Rwanda",
+  nisr_ec: "Rwanda Establishment Census - NISR",
+  nisr_tvet: "Rwanda Polytechnic / WDA - TVET Statistics",
+  nisr_hec: "Rwanda Higher Education Council (HEC) - University Statistics",
   nisr_lmis: "Rwanda Labour Market Information System (LMIS) / KORA",
 };
 const LATEST_YEAR = 2024;
@@ -442,7 +442,7 @@ export function runAnalysis(question: string): AnalyticalResult {
     return empty(
       question,
       "unsupported",
-      `I understood: "${nlu.understood}" — but this indicator is not yet available. ` +
+      `I understood: "${nlu.understood}" - but this indicator is not yet available. ` +
         `Available indicators: ${INDICATORS.map((i) => i.short).join(", ")}. ` +
         `Try asking about one of these, or rephrase using words like employment, poverty, health, education, or career.`,
       it,

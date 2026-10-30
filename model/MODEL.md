@@ -1,4 +1,4 @@
-# Model Service — Overview
+# Model Service - Overview
 
 The model service receives a plain-English question from the Express API, runs a statistical/rule-based analysis, and returns an `AnalyticalResult` for the frontend renderer.
 
@@ -51,9 +51,9 @@ website → Express API → FastAPI /analyze
 
 ## Algorithms (pure Python)
 
-- **KMeans** — iterative centroid update, min-max normalised features, deterministic initialisation
-- **OLS** — normal equations solved via Gaussian elimination, exact
-- **Linear trend** — simple OLS on time index per series
+- **KMeans** - iterative centroid update, min-max normalised features, deterministic initialisation
+- **OLS** - normal equations solved via Gaussian elimination, exact
+- **Linear trend** - simple OLS on time index per series
 
 ## Output contract
 

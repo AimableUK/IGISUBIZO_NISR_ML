@@ -1,5 +1,5 @@
 """
-Natural Language Understanding — intent parser for the Python model engine.
+Natural Language Understanding - intent parser for the Python model engine.
 Mirrors the logic in api/src/services/nlu.ts so both engines understand the same English.
 """
 import re
@@ -60,7 +60,7 @@ SYNONYMS = [
      "tvet career demand construction"),
 ]
 
-# --- engine routing rules (ordered — first match wins) -----------------------
+# --- engine routing rules (ordered - first match wins) -----------------------
 ENGINE_RULES = [
     # Program outcomes are factual dataset questions, not career recommendations.
     (r"\b(enrol(?:l)?ment|admission|admitted|graduation rate|graduate employment)\b",
@@ -100,7 +100,7 @@ def parse_intent(question: str) -> dict:
         return {
             "engine": "ambiguous",
             "understood": (
-                "Your question is too short. Please describe what you want to know — "
+                "Your question is too short. Please describe what you want to know - "
                 "for example: \"Which careers are in demand in Rwanda?\", "
                 "\"What should I study to become a software developer?\", "
                 "or \"Show me the employment trend by sector.\""
@@ -141,7 +141,7 @@ def _build_understood(engine: str, q: str) -> str:
             "skill gaps (LMIS), and exam pipeline (NESA)."
         )
     if engine == "regression":
-        return "Understood: regression analysis — what district characteristics predict youth NEET rate."
+        return "Understood: regression analysis - what district characteristics predict youth NEET rate."
     if engine == "forecasting":
         return "Understood: employment trend and forecast by sector. I will fit linear trends and project 2 years forward."
     if engine == "clustering":

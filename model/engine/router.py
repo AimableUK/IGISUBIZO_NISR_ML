@@ -1,5 +1,5 @@
 """
-Intent router — maps a question to the right engine via the NLU parser.
+Intent router - maps a question to the right engine via the NLU parser.
 """
 import uuid
 from datetime import datetime, timezone

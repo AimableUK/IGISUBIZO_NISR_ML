@@ -3,7 +3,7 @@ import { AnalyticalResultSchema, DISTRICT_TILES, DISTRICTS, type AnalyticalResul
 import { parseIntent } from "./nlu";
 
 /**
- * ML analytical engine — Problem A (clustering), B (regression), C (forecasting).
+ * ML analytical engine - Problem A (clustering), B (regression), C (forecasting).
  * Runs entirely in-process, pure TypeScript, no external ML dependencies.
  * Called by runAnalysis() as an alternative to the sample engine.
  * To activate: import { runMLAnalysis } from "./ml-engine" and call it from analyses route.
@@ -351,7 +351,7 @@ export function runClustering(question: string): AnalyticalResult {
       },
     },
     formulas: {},
-    sources: { nisr_lfs: { publisher: "NISR / Rwanda", title: "Rwanda Labour Force Survey (LFS) — NISR", period: `2019–${LATEST}`, isSample: false } },
+    sources: { nisr_lfs: { publisher: "NISR / Rwanda", title: "Rwanda Labour Force Survey (LFS) - NISR", period: `2019–${LATEST}`, isSample: false } },
     operations: [
       { id: "build_data", description: `Loaded district labour data for ${LATEST} (${DISTRICTS.length} districts).` },
       { id: "normalise", description: `Min-max normalised ${CLUSTER_FEATURES.length} features.` },
@@ -365,7 +365,7 @@ export function runClustering(question: string): AnalyticalResult {
   });
 }
 
-// --- Problem B: OLS regression — youth NEET predictors -----------------------
+// --- Problem B: OLS regression - youth NEET predictors -----------------------
 const REG_FEATURES = ["pct_agriculture", "pct_formal", "pct_secondary_plus", "pct_tvet", "unemployment_rate"] as const;
 const REG_LABELS: Record<string, string> = {
   pct_agriculture: "Agriculture share", pct_formal: "Formal employment",
@@ -398,7 +398,7 @@ export function runRegression(question: string): AnalyticalResult {
     decision: null,
     datasets: {
       feature_importance: {
-        label: `OLS regression — predictors of youth NEET rate, ${LATEST}`,
+        label: `OLS regression - predictors of youth NEET rate, ${LATEST}`,
         columns: [
           { key: "feature", label: "Feature", kind: "category" },
           { key: "coefficient", label: "Coefficient", kind: "number" },
@@ -442,7 +442,7 @@ export function runRegression(question: string): AnalyticalResult {
         value: score, unit: "R²", decimals: 3,
       },
     },
-    sources: { nisr_lfs: { publisher: "NISR / Rwanda", title: "Rwanda Labour Force Survey (LFS) — NISR", period: `2019–${LATEST}`, isSample: false } },
+    sources: { nisr_lfs: { publisher: "NISR / Rwanda", title: "Rwanda Labour Force Survey (LFS) - NISR", period: `2019–${LATEST}`, isSample: false } },
     operations: [
       { id: "build_data", description: `Loaded ${data.length} district observations for ${LATEST}.` },
       { id: "ols_fit", description: `Fitted OLS regression: target=youth_neet_rate, features=${REG_FEATURES.join(", ")}.` },
@@ -542,7 +542,7 @@ export function runForecasting(question: string): AnalyticalResult {
         value: FORECAST_HORIZON, unit: "years", decimals: 0,
       },
     },
-    sources: { nisr_sector: { publisher: "NISR / Rwanda", title: "Rwanda LFS — Sector Employment Shares", period: `${YEARS[0]}–${LATEST}`, isSample: false } },
+    sources: { nisr_sector: { publisher: "NISR / Rwanda", title: "Rwanda LFS - Sector Employment Shares", period: `${YEARS[0]}–${LATEST}`, isSample: false } },
     operations: [
       { id: "aggregate", description: "Aggregated district sector shares to national means." },
       { id: "trend_fit", description: `Fitted linear OLS trend per sector over ${YEARS.length} years.` },
@@ -556,7 +556,7 @@ export function runForecasting(question: string): AnalyticalResult {
   });
 }
 
-// --- Problem D: Career Intelligence — cross-join supply + pipeline + demand ---
+// --- Problem D: Career Intelligence - cross-join supply + pipeline + demand ---
 /**
  * Scores every occupation by combining 4 signals:
  *   1. Sector growth trend (LFS sector employment share slope)        → demand direction
@@ -618,7 +618,7 @@ export function runCareerIntelligence(question: string): AnalyticalResult {
     return tvetByTrade[tradeMap[occ.sector] ?? "Business & Entrepreneurship"] ?? 50;
   };
 
-  // 3. Skill gap — national mean per occupation
+  // 3. Skill gap - national mean per occupation
   const careerData = buildCareer().filter((r) => r.year === LATEST);
   const gapByOcc: Record<string, number> = {};
   for (const { occupation } of OCCUPATIONS) {
@@ -626,7 +626,7 @@ export function runCareerIntelligence(question: string): AnalyticalResult {
     gapByOcc[occupation] = rows.length ? avg(rows.map((r) => r.skill_gap)) : 5;
   }
 
-  // 4. Exam pipeline — S6 pass rate in relevant subjects
+  // 4. Exam pipeline - S6 pass rate in relevant subjects
   const examData = buildExams().filter((r) => r.year === LATEST && r.exam_level === "S6");
   const stemSubjects = ["Mathematics", "Physics", "Chemistry", "Computer Science"];
   const stemPassRate = avg(examData.filter((r) => stemSubjects.includes(r.subject)).map((r) => r.pass_rate));
@@ -725,7 +725,7 @@ export function runCareerIntelligence(question: string): AnalyticalResult {
         evidence: ["datasets.career_ranking"],
       },
       ai_era: {
-        text: `AI-era careers (ICT & Engineering): ${aiEra.map((r) => r.occupation).join(", ")} rank highest within their sectors. Rwanda's NST2 targets ICT-led job creation — these occupations align with that direction.`,
+        text: `AI-era careers (ICT & Engineering): ${aiEra.map((r) => r.occupation).join(", ")} rank highest within their sectors. Rwanda's NST2 targets ICT-led job creation - these occupations align with that direction.`,
         evidence: ["datasets.career_ranking"],
       },
       district_signal: {
@@ -743,11 +743,11 @@ export function runCareerIntelligence(question: string): AnalyticalResult {
       },
     },
     sources: {
-      nisr_lfs:   { publisher: "NISR", title: "Rwanda Labour Force Survey 2019–2024 — sector employment shares", period: "2019–2024", url: "https://microdatabk.statistics.gov.rw/catalog/125", isSample: false },
+      nisr_lfs:   { publisher: "NISR", title: "Rwanda Labour Force Survey 2019–2024 - sector employment shares", period: "2019–2024", url: "https://microdatabk.statistics.gov.rw/catalog/125", isSample: false },
       nisr_hec:   { publisher: "Rwanda HEC", title: "University program graduate employment outcomes", period: "2019–2024", url: "https://www.hec.gov.rw", isSample: false },
       nisr_tvet:  { publisher: "WDA / Rwanda Polytechnic", title: "TVET course enrolment and graduate employment", period: "2019–2024", url: "https://www.wda.gov.rw", isSample: false },
-      nisr_lmis:  { publisher: "MIFOTRA / LMIS", title: "Rwanda Labour Market Information System — occupation vacancies and skill gaps", period: "2019–2024", url: "https://lmis.rw", isSample: false },
-      nisr_nesa:  { publisher: "NESA", title: "National Examinations — P6/S3/S6 pass rates by district and subject", period: "2019–2024", url: "https://www.nesa.rw", isSample: false },
+      nisr_lmis:  { publisher: "MIFOTRA / LMIS", title: "Rwanda Labour Market Information System - occupation vacancies and skill gaps", period: "2019–2024", url: "https://lmis.rw", isSample: false },
+      nisr_nesa:  { publisher: "NESA", title: "National Examinations - P6/S3/S6 pass rates by district and subject", period: "2019–2024", url: "https://www.nesa.rw", isSample: false },
     },
     operations: [
       { id: "sector_growth",      description: "Computed linear trend slope per sector from LFS district employment shares (2019–2024)." },
@@ -791,6 +791,6 @@ export function runMLAnalysis(question: string): AnalyticalResult {
   if (intent.engine === "forecasting")         return runForecasting(question);
   if (intent.engine === "clustering")          return runClustering(question);
 
-  // indicator_query — fall through to engine.ts (caller decides); default to clustering
+  // indicator_query - fall through to engine.ts (caller decides); default to clustering
   return runClustering(question);
 }

@@ -1,5 +1,5 @@
 """
-Decision engine — Problem D: crop choice and career choice.
+Decision engine - Problem D: crop choice and career choice.
 
 Given a question, extracts the decision type and candidate options, then:
   1. Loads the relevant real CSVs
@@ -111,7 +111,7 @@ def _score_crops(options: list[str], location: str) -> tuple[list[dict], list[di
         if subset:
             latest = subset
 
-    # aggregate by crop (district_agriculture has no crop column — use sector_employment proxy)
+    # aggregate by crop (district_agriculture has no crop column - use sector_employment proxy)
     # Since SAS CSV is district-level (not crop-level), we use yield and production as proxies
     # and map each named crop to the district's overall agri indicators with a crop-specific offset
     # from published SAS crop rankings (maize > beans > potato by area nationally)
@@ -171,7 +171,7 @@ def _score_crops(options: list[str], location: str) -> tuple[list[dict], list[di
             "option": r["crop"], "rank": rank, "score": r["score"],
             "indicators": r["indicators"],
             "strengths": [f"Yield index {CROP_YIELD_INDEX.get(r['crop'],1.0):.2f}× district mean"] if r["yield"] else [],
-            "risks": [f"Price volatility index {r['vol']:.2f} — higher means less stable income"] if r["vol"] > 0.6 else [],
+            "risks": [f"Price volatility index {r['vol']:.2f} - higher means less stable income"] if r["vol"] > 0.6 else [],
         })
 
     criteria = [
@@ -227,7 +227,7 @@ def _score_careers(options: list[str]) -> tuple[list[dict], list[dict], list[str
             "option": r["occ"], "rank": rank, "score": r["score"],
             "indicators": r["indicators"],
             "strengths": [f"Demand trend: {r['trend']}"] if r["trend"] not in ("Unknown", "Declining") else [],
-            "risks": ["Demand trend: Declining — fewer vacancies over time"] if r["trend"] == "Declining" else [],
+            "risks": ["Demand trend: Declining - fewer vacancies over time"] if r["trend"] == "Declining" else [],
         })
 
     criteria = [
@@ -348,7 +348,7 @@ def run(question: str) -> dict:
         comparison, criteria, source_ids = [], [], []
 
     latest_year = max(program_years) if program_comparison else LATEST
-    top = comparison[0]["option"] if comparison else "—"
+    top = comparison[0]["option"] if comparison else "-"
     loc_str = f" in {location}" if location else " across Rwanda"
     if program_comparison:
         top_text = (
@@ -419,7 +419,7 @@ def run(question: str) -> dict:
         "decision": decision_block,
         "datasets": {
             "option_scores": {
-                "label": f"Ranked options — {decision_type.replace('_', ' ')}",
+                "label": f"Ranked options - {decision_type.replace('_', ' ')}",
                 "columns": [
                     {"key": "option", "label": "Option", "kind": "category"},
                     {"key": "rank", "label": "Rank", "kind": "number"},
@@ -462,7 +462,7 @@ def run(question: str) -> dict:
         "caveats": [
             "Demo only: input values are generated proxy data and are not verified NISR observations.",
             "Scores are composite signals from available data, not predictions.",
-            "Criteria weights are defaults — the user can adjust them.",
+            "Criteria weights are defaults - the user can adjust them.",
             "Options with missing indicators are ranked lower but not excluded.",
             "Correlation does not imply causation.",
         ] + ([

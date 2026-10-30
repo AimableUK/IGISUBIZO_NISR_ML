@@ -1,5 +1,5 @@
 """
-Problem B — Predict district youth NEET rate using panel OLS with year fixed effects.
+Problem B - Predict district youth NEET rate using panel OLS with year fixed effects.
 
 Uses all district×year observations (not latest year only), ridge-stabilized OLS,
 and leave-one-district-out cross-validation for out-of-sample Q².
@@ -108,7 +108,7 @@ def _year_dummies(
 def _lodo_cv(
     X: list[list[float]], y: list[float], districts: list[str]
 ) -> tuple[list[float], float, float, float]:
-    """Leave-One-District-Out CV — all years for a held-out district."""
+    """Leave-One-District-Out CV - all years for a held-out district."""
     n = len(X)
     y_mean = sum(y) / n
     ss_tot = sum((val - y_mean) ** 2 for val in y)
@@ -198,7 +198,7 @@ def run(question: str) -> dict:
         },
         "datasets": {
             "feature_importance": {
-                "label": f"Panel OLS — predictors of youth NEET rate ({years_all[0]}–{latest_year})",
+                "label": f"Panel OLS - predictors of youth NEET rate ({years_all[0]}–{latest_year})",
                 "columns": [
                     {"key": "feature", "label": "Feature", "kind": "category"},
                     {"key": "coefficient", "label": "Coefficient", "kind": "number"},

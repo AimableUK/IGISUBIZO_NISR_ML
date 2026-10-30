@@ -1,5 +1,5 @@
 """
-Problem C — Employment trend forecasting by sector/occupation.
+Problem C - Employment trend forecasting by sector/occupation.
 Uses linear trend (OLS on time) per sector with 95% prediction intervals and trend significance tests.
 Returns historical trend lines, growth rankings, and a 2-year forward projection with explicit uncertainty bounds.
 """

@@ -76,7 +76,7 @@ export async function analyzeViaModel(
       );
     }
     console.warn(
-      `[model-client] ${env.MODEL_URL} unreachable — falling back to local engine:`,
+      `[model-client] ${env.MODEL_URL} unreachable - falling back to local engine:`,
       (e as Error).message,
     );
     return { result: runAnalysis(question), source: "fallback" };

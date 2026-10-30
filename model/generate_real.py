@@ -67,7 +67,7 @@ NATIONAL_LFS = {
 }
 
 # Provincial LFS employment rates (from LFS district/province tables)
-# Source: NISR LFS 2022 Table 3.1 — employment rate by province
+# Source: NISR LFS 2022 Table 3.1 - employment rate by province
 PROV_EMP_OFFSET = {
     "Kigali City": +12.0,
     "Eastern":     -2.0,
@@ -118,7 +118,7 @@ DIST_EMP_OFFSET = {
     "Rusizi": +2.0, "Rutsiro": -2.5,
 }
 
-# Agriculture share by province (LFS 2022 — % employed in agriculture)
+# Agriculture share by province (LFS 2022 - % employed in agriculture)
 PROV_AGRI = {
     "Kigali City": 8.0,
     "Eastern":     62.0,
@@ -147,19 +147,19 @@ def dist_lfs_row(dist, prov, yr):
     prov_neet  = nat_neet  + PROV_NEET_OFFSET[prov]
     prov_wage  = nat_wage  * PROV_WAGE_MULT[prov]
     d_off = DIST_EMP_OFFSET.get(dist, 0.0)
-    # Independent shocks per series (district×year) — mimics survey sampling error
+    # Independent shocks per series (district×year) - mimics survey sampling error
     emp   = clamp(r1(prov_emp   + d_off + _noise(dist, yr, "emp", 2.2)), 30, 85)
     unemp = clamp(r1(prov_unemp - d_off * 0.3 + _noise(dist, yr, "unemp", 1.8)), 3, 30)
     lfp   = clamp(r1(nat_lfp + PROV_EMP_OFFSET[prov] * 0.3 + d_off * 0.2 + _noise(dist, yr, "lfp", 1.5)), 60, 95)
     formal= clamp(r1(prov_formal+ d_off * 0.5 + _noise(dist, yr, "formal", 2.5)), 3, 65)
     wage  = clamp(round(prov_wage + d_off * 800 + _noise(dist, yr, "wage", 2500)), 15000, 250000)
-    # sector shares — agriculture dominant outside Kigali
+    # sector shares - agriculture dominant outside Kigali
     nat_agri = NATIONAL_AGRI[yr]
     agri_base = PROV_AGRI[prov] + (nat_agri - 65.0)  # shift with national trend
     agri = clamp(r1(agri_base - d_off * 0.5 + _noise(dist, yr, "agri", 3.5)), 3, 82)
     ind  = clamp(r1(12.0 + (1 - agri/100) * 8 + d_off * 0.2 + _noise(dist, yr, "ind", 1.5)), 4, 28)
     svc  = clamp(r1(100 - agri - ind), 10, 80)
-    # education — partially independent of employment offsets
+    # education - partially independent of employment offsets
     sec_plus = clamp(r1(18.0 + PROV_EMP_OFFSET[prov] * 0.8 + d_off * 0.6 + (yr-2019)*0.5 + _noise(dist, yr, "sec", 3.0)), 8, 78)
     tvet_pct = clamp(r1(4.5 + (yr-2019)*0.3 + d_off * 0.1 + _noise(dist, yr, "tvet", 1.2)), 2, 20)
     # underemployment (higher in rural/agri areas)
@@ -225,7 +225,7 @@ with open(out / "district_establishments.csv", "w", newline="") as f:
             w.writerow([dist, prov, yr, dist_est, micro, small, med, large, dom, gr])
 
 # -- 3. sector_employment.csv --------------------------------------------------
-# Source: NISR LFS 2019–2024 Table 4 — employment by industry
+# Source: NISR LFS 2019–2024 Table 4 - employment by industry
 # National employment shares by sector (% of total employed)
 NATIONAL_SECTOR_SHARE = {
     #                  Agri  Mfg   Const Trade  ICT   Edu   Health Finance Other
@@ -266,7 +266,7 @@ with open(out / "sector_employment.csv", "w", newline="") as f:
                 w.writerow([dist, prov, yr, sec, share, gr, wage])
 
 # -- 4. district_health.csv ----------------------------------------------------
-# Source: Rwanda DHS 2019-2020 (NISR) — district tables; DHS 2025 for 2024 values
+# Source: Rwanda DHS 2019-2020 (NISR) - district tables; DHS 2025 for 2024 values
 # National figures: skilled birth attendance 94% (DHS 2020), 96% (DHS 2025)
 # Stunting: 33% (DHS 2020), 28% (DHS 2025 preliminary)
 # HIV prevalence: 3.0% (DHS 2020), 2.5% (DHS 2025)
@@ -320,7 +320,7 @@ with open(out / "district_health.csv", "w", newline="") as f:
 # -- 5. district_poverty.csv ---------------------------------------------------
 # Source: EICV5 2016/17, EICV6 2019/20, EICV7 2023/24 (NISR)
 # National poverty headcount: 38.2% (EICV6 2019/20), 27.4% (EICV7 2023/24)
-# Electricity access: 34% (2019) → 72% (2024) — RURA/REG annual reports
+# Electricity access: 34% (2019) → 72% (2024) - RURA/REG annual reports
 NATIONAL_POVERTY = {
     # year: (pov, ext_pov, mean_cons_rwf, gini, food_ins, elec, water, sanit, momo, socprot)
     2017: (39.1, 16.8, 65500, 0.43, 29.5, 28.0, 72.0, 59.0, 35.0, 33.0),

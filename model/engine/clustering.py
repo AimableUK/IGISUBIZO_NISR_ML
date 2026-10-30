@@ -1,5 +1,5 @@
 """
-Problem A — District-level labour underutilization clustering.
+Problem A - District-level labour underutilization clustering.
 Uses KMeans++ with multiple restarts (n_init=10) on latest-year district features.
 Returns cluster profiles, district assignments, and cluster validation (Silhouette score, inertia).
 """

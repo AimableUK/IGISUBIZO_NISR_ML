@@ -81,7 +81,7 @@ def run(question: str) -> dict:
         "decision": None,
         "datasets": {
             "applied_math_pathways": {
-                "label": f"Potential quantitative-skill pathways — generated {latest} job data",
+                "label": f"Potential quantitative-skill pathways - generated {latest} job data",
                 "columns": [
                     {"key": "sector", "label": "Sector", "kind": "category"},
                     {"key": "related_occupations", "label": "Related occupations to investigate", "kind": "category"},
