@@ -234,6 +234,15 @@ Open https://mboni-app.vercel.app and sign in with the demo account below, or cr
 
 ![Data tables and comparisons](docs/screenshots/04-data-inspection.png)
 
+![Data tables and comparisons](docs/screenshots/04-data-inspection-2.png)
+
+![Data tables and comparisons](docs/screenshots/04-data-inspection-3.png)
+
+![Data tables and comparisons](docs/screenshots/04-data-inspection-4.png)
+
+![Data tables and comparisons](docs/screenshots/04-data-inspection-5.png)
+
+
 ### 7. Geographic analysis
 
 ![Geographic analysis](docs/screenshots/05-geographic-analysis.png)
