@@ -4,8 +4,8 @@ import { useEffect, useRef, useState, type ReactNode } from "react";
 import { Info } from "lucide-react";
 import { useDocumentTitle, useT } from "@/i18n";
 import type { Block, DocPage } from "@/i18n/en";
-import { BambooGrove } from "./Bamboo";
-import RichText from "./RichText";
+import { BambooGrove } from "../marketing/Bamboo";
+import RichText from "../marketing/RichText";
 
 type TocItem = { id: string; h: string };
 
