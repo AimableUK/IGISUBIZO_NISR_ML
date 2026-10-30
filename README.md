@@ -161,6 +161,17 @@ Users should rely on the sources, periods, geographic coverage, and definitions 
 5. Review the source details, time period, geographic coverage, and caveats.
 6. Try another question or comparison.
 
+## Try the app
+
+Open https://mboni-app.vercel.app and sign in with the demo account below, or create your own account.
+
+| Field    | Value                |
+| -------- | -------------------- |
+| Email    | `<demo email>`       |
+| Password | `<demo password>`    |
+
+The demo account is for evaluation only. Please do not change its password or save personal information in it.
+
 ## Screenshots
 
 ### 1. Main workspace
