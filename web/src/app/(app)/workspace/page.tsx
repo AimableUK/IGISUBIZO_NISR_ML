@@ -1,6 +1,7 @@
 "use client";
 import { Suspense, useCallback, useEffect, useRef, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
+import Link from "next/link";
 import { AlertCircle, Check, Circle, Loader2 } from "lucide-react";
 import { ProgressStages, type AnalyticalResult, type ProgressStage } from "@/shared";
 import QuestionBar from "@/components/chat/QuestionBar";
@@ -63,6 +64,9 @@ function Runner() {
     <div className="mx-auto flex min-h-full w-full max-w-3xl flex-col justify-center px-4 pb-16 pt-6 sm:px-6">
       <h1 className="text-3xl font-semibold sm:text-4xl">{t("ws.title")}</h1>
       <p className="mt-2 text-muted">{t("ws.subtitle")}</p>
+      <Link href="/advisor" className="mt-5 inline-flex btn btn-primary">
+        {t("ws.advisorLink" as Key)}
+      </Link>
       <div className="mt-8"><QuestionBar onSubmit={run} busy={state.kind === "running"} initial={q} /></div>
 
       {state.kind === "running" && (

@@ -10,6 +10,7 @@ import { analyses } from "./routes/analyses";
 import { artifacts } from "./routes/artifacts";
 import { misc } from "./routes/misc";
 import { admin } from "./routes/admin";
+import { conversation } from "./routes/conversation";
 
 export function createApp() {
   const app = express();
@@ -24,6 +25,7 @@ export function createApp() {
   app.use(express.json({ limit: "1mb" }));
   app.use("/api", misc);
   app.use("/api/analyses", rateLimit({ windowMs: 15 * 60 * 1000, limit: 40, standardHeaders: true, legacyHeaders: false }), analyses);
+  app.use("/api/conversation", rateLimit({ windowMs: 15 * 60 * 1000, limit: 40, standardHeaders: true, legacyHeaders: false }), conversation);
   app.use("/api/artifacts", artifacts);
   app.use("/api/admin", admin);
 

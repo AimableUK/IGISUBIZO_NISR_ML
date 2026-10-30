@@ -2,7 +2,8 @@ import axios, { AxiosError } from "axios";
 import { z } from "zod";
 import {
   ArtifactPayloadSchema, ArtifactSummarySchema, AskResponseSchema, VersionMetaSchema,
-  type ArtifactPayload, type ArtifactSummary, type Customizations, type PresentationSpec,
+  ConversationResponseSchema, type ArtifactPayload, type ArtifactSummary, type Customizations,
+  type ConversationMessage, type PresentationSpec,
 } from "@/shared";
 
 export const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:4000";
@@ -30,6 +31,10 @@ async function call<T>(p: Promise<{ data: unknown }>, schema: z.ZodType<T, z.Zod
 
 export const api = {
   ask: (question: string, requestId: string) => call(http.post("/analyses", { question, requestId }), AskResponseSchema),
+  converse: (message: string, history: ConversationMessage[], useAi: boolean) => call(
+    http.post("/conversation", { message, history, useAi }),
+    ConversationResponseSchema,
+  ),
   list: (): Promise<ArtifactSummary[]> => call(http.get("/artifacts"), z.array(ArtifactSummarySchema)),
   get: (id: string, version?: number): Promise<ArtifactPayload> => call(http.get(`/artifacts/${id}`, { params: version ? { version } : undefined }), ArtifactPayloadSchema),
   versions: (id: string) => call(http.get(`/artifacts/${id}/versions`), z.array(VersionMetaSchema.pick({ version: true, note: true, createdAt: true, plannerVersion: true }))),

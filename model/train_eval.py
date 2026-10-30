@@ -23,6 +23,7 @@ from engine.clustering import _kmeans_cluster, _silhouette_score
 from engine.clustering import run as run_clustering
 from engine.decision import run as run_decision
 from engine.forecasting import run as run_forecasting
+from engine.intent_model import _all_examples, _holdout_metrics, predict as predict_intent
 from engine.loader import (
     is_real_available,
     load_district_labour,
@@ -235,6 +236,23 @@ def evaluate_decision_and_router():
 
 def evaluate_dataset_queries():
     print_header("5. GENERAL DATASET QUERY COVERAGE")
+    greeting = route("Hi")
+    validate_schema(greeting)
+    assert greeting["status"] == "ambiguous"
+    assert "study programs and career paths" in greeting["message"]
+    student_opening = route("I'm a student")
+    validate_schema(student_opening)
+    assert student_opening["status"] == "ambiguous"
+    assert "study" in student_opening["message"].lower()
+    print("  [OK] Greetings and student introductions open a supportive career conversation.")
+    interest_path = route("I enjoy math and computers—what career paths could fit me?")
+    validate_schema(interest_path)
+    interest_rows = interest_path["datasets"]["applied_math_pathways"]["rows"]
+    interest_sectors = {row["sector"] for row in interest_rows}
+    assert interest_path["status"] == "ok"
+    assert {"ICT", "Finance", "Engineering"}.issubset(interest_sectors)
+    assert interest_path["meta"]["isSample"] is True
+    print("  [OK] Student interests narrow the career-pathway shortlist.")
     cases = [
         ("Compare youth employment across districts over the last five years", "employment_rate", "compare", True),
         ("What are employment trends across districts?", "employment_rate", "trend", True),
@@ -289,6 +307,14 @@ def evaluate_dataset_queries():
     ]
     assert student_decision["meta"]["isSample"] is True
     print("  [OK] Study-choice comparisons use named programs and disclose proxy data.")
+    hotel_choice = route(
+        "What if I took hotel management? Hotel Manager career in Rwanda"
+    )
+    validate_schema(hotel_choice)
+    assert hotel_choice["status"] == "ok", hotel_choice.get("message")
+    assert hotel_choice["decision"]["options"] == ["Hotel Manager"]
+    assert hotel_choice["sources"]["nisr_lmis"]["isSample"] is True
+    print("  [OK] Hotel-management questions return career evidence with proxy-data labeling.")
     applied_math = route("Which sectors hire applied mathematics graduates?")
     validate_schema(applied_math)
     pathway_rows = applied_math["datasets"]["applied_math_pathways"]["rows"]
@@ -336,10 +362,35 @@ def evaluate_dataset_queries():
     districts = {row["district"] for row in compared["datasets"]["query_results"]["rows"]}
     assert districts == {"Huye", "Musanze"}, districts
     print("  [OK] Named-district comparisons retain all requested locations.")
-    unsupported = route("What is the weather in Kigali?")
-    assert unsupported["status"] == "unsupported"
-    print("  [OK] Out-of-dataset questions are declined with supported-topic guidance.")
+    out_of_scope = route("What is the weather in Kigali?")
+    assert out_of_scope["status"] == "ambiguous"
+    assert "Rwanda-focused study and career guidance" in out_of_scope["message"]
+    print("  [OK] Out-of-scope questions are redirected to the assistant's purpose.")
     print("  [PASS] Broad dataset queries route to the requested metric and preserve demo-data labels.")
+
+
+def evaluate_trainable_intent_model():
+    print_header("6. TRAINABLE CONVERSATION INTENT MODEL")
+    examples = _all_examples()
+    metrics = _holdout_metrics(examples)
+    assert len(examples) >= 50
+    assert metrics["test_examples"] >= 10
+    assert metrics["accuracy"] is not None and metrics["accuracy"] >= 0.6, metrics
+    print(
+        f"  [OK] Naive Bayes intent model: {len(examples)} examples, "
+        f"{metrics['test_examples']} held out, accuracy={metrics['accuracy']:.1%}."
+    )
+    expected = [
+        ("I enjoy mathematics, what jobs could fit me?", "career_pathways"),
+        ("How has Software Engineering enrollment changed from 2021 to 2025?", "program_query"),
+        ("Should I study Software Engineering or Finance?", "career_decision"),
+        ("What is the weather tomorrow?", "other"),
+    ]
+    for question, label in expected:
+        prediction = predict_intent(question)
+        assert prediction["label"] == label, (question, prediction)
+        print(f"  [OK] {question} -> {label} ({prediction['confidence']:.1%})")
+    print("  [PASS] The trained intent classifier recognizes supported career conversations.")
 
 
 if __name__ == "__main__":
@@ -350,6 +401,7 @@ if __name__ == "__main__":
     evaluate_forecasting()
     evaluate_decision_and_router()
     evaluate_dataset_queries()
+    evaluate_trainable_intent_model()
     total_time = (time.time() - t_start) * 1000
     print("\n" + "=" * 70)
     print(f"  ALL ANALYSIS ENGINES VALIDATED AND OPERATIONAL IN {total_time:.1f}ms")

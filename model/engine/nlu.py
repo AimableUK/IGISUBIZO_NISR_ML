@@ -3,6 +3,7 @@ Natural Language Understanding - intent parser for the Python model engine.
 Mirrors the logic in api/src/services/nlu.ts so both engines understand the same English.
 """
 import re
+from .intent_model import predict as predict_conversation_intent
 
 # --- synonym expansion --------------------------------------------------------
 # Each entry: (pattern, canonical keywords injected into enriched string)
@@ -96,6 +97,27 @@ def parse_intent(question: str) -> dict:
     q = question.strip()
     words = q.split()
 
+    greeting_only = re.fullmatch(
+        r"(?:hi|hello|hey|good morning|good afternoon|good evening|"
+        r"how are you|how are you doing)[!.?\s]*",
+        q,
+        re.I,
+    )
+    classification = predict_conversation_intent(q)
+    if greeting_only or (
+        classification["label"] == "student_intro"
+        and classification["confidence"] >= 0.8
+    ):
+        return {
+            "engine": "conversation",
+            "understood": (
+                "Hi! I can help you explore study programs and career paths in Rwanda. "
+                "What subjects do you enjoy or do well in, and are you choosing what to "
+                "study, looking for a job path, or exploring both?"
+            ),
+            "enriched": q,
+        }
+
     if len(words) < 2 and len(q) < 3:
         return {
             "engine": "ambiguous",
@@ -118,7 +140,19 @@ def parse_intent(question: str) -> dict:
 
     # Route
     engine = "data_query"
+    model_routes = {
+        "program_query": "data_query",
+        "career_pathways": "career_pathways",
+        "career_decision": "decision",
+    }
+    if classification["label"] == "other" and classification["confidence"] >= 0.9:
+        model_routes["other"] = "conversation"
+    predicted_engine = model_routes.get(classification["label"])
+    if predicted_engine and classification["confidence"] >= 0.65:
+        engine = predicted_engine
     for pattern, eng in ENGINE_RULES:
+        if predicted_engine and classification["confidence"] >= 0.65:
+            break
         if re.search(pattern, eq, re.I):
             engine = eng
             break
@@ -128,6 +162,12 @@ def parse_intent(question: str) -> dict:
 
 
 def _build_understood(engine: str, q: str) -> str:
+    if engine == "conversation":
+        return (
+            "I’m a Rwanda-focused study and career guidance assistant. I can help you "
+            "choose what to study, explore job paths, or look at available Rwanda data. "
+            "What subjects do you enjoy or do well in, and what decision are you trying to make?"
+        )
     if engine == "decision":
         return (
             "Understood: decision comparison. "
@@ -148,9 +188,14 @@ def _build_understood(engine: str, q: str) -> str:
         return "Understood: district labour underutilization profiling. I will cluster districts by underemployment, NEET, agriculture share, and formal employment."
     if engine == "career_pathways":
         return (
-            "Understood: applied-mathematics career exploration. I will map quantitative "
-            "skills to related occupations and show Rwanda sector/location signals from "
-            "the available job dataset, with its source status and limitations."
+            "Understood: career exploration. I will connect the interests or skills you "
+            "mentioned to relevant occupations and show Rwanda sector/location signals "
+            "from the available job dataset, with its source status and limitations."
+        )
+    if engine == "conversation":
+        return (
+            "I focus on study choices, career exploration, and Rwanda data. Tell me "
+            "what subjects you enjoy or what decision you are trying to make."
         )
     if engine == "data_query":
         return (

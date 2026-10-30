@@ -1,215 +1,193 @@
 "use client";
 
-import { useState } from "react";
+import { useCallback, useEffect, useState, type FormEvent } from "react";
 import Link from "next/link";
-import { useDocumentTitle, useT } from "@/i18n";
+import { useDocumentTitle } from "@/i18n";
 
 const API = process.env.NEXT_PUBLIC_API_URL || "http://localhost:4000";
-
-type Action = "generate" | "evaluate";
-type Status = "idle" | "running" | "success" | "error";
-
-const STATUS_STYLE: Record<Status, string> = {
-  idle: "bg-slate-100 text-slate-600 ring-slate-200",
-  running: "bg-amber-50 text-amber-700 ring-amber-200",
-  success: "bg-emerald-50 text-emerald-700 ring-emerald-200",
-  error: "bg-red-50 text-red-700 ring-red-200",
+const INTENTS = [
+  ["greeting", "Greeting"],
+  ["student_intro", "Student introduction"],
+  ["program_query", "Study program data"],
+  ["career_pathways", "Career pathways / interests"],
+  ["career_decision", "Career or program choice"],
+  ["data_query", "Other Rwanda data question"],
+  ["other", "Out of scope"],
+] as const;
+type Intent = (typeof INTENTS)[number][0];
+type TrainingStatus = {
+  model_version: string;
+  trained: boolean;
+  model_current: boolean;
+  trained_at: string | null;
+  example_count: number;
+  label_counts: Record<string, number>;
+  labels: string[];
+  last_training: { accuracy: number | null; test_examples: number; note: string } | null;
 };
 
-const DOT_STYLE: Record<Status, string> = {
-  idle: "bg-slate-400",
-  running: "bg-amber-500 animate-pulse",
-  success: "bg-emerald-500",
-  error: "bg-red-500",
-};
+async function request(path: string, body?: unknown) {
+  const response = await fetch(`${API}/api/admin${path}`, {
+    method: body === undefined ? "GET" : "POST",
+    credentials: "include",
+    headers: body === undefined ? undefined : { "Content-Type": "application/json" },
+    body: body === undefined ? undefined : JSON.stringify(body),
+  });
+  const data = await response.json();
+  if (!response.ok) throw new Error(data.message ?? "The request failed.");
+  return data;
+}
 
 export default function AdminPage() {
-  const t = useT();
-  const a = t.admin;
-  useDocumentTitle(a.title);
+  useDocumentTitle("Career Assistant Training");
+  const [status, setStatus] = useState<TrainingStatus | null>(null);
+  const [example, setExample] = useState("");
+  const [intent, setIntent] = useState<Intent>("career_pathways");
+  const [busy, setBusy] = useState<"refresh" | "save" | "train" | null>(null);
+  const [notice, setNotice] = useState("");
+  const [error, setError] = useState("");
 
-  const [log, setLog] = useState("");
-  const [status, setStatus] = useState<Status>("idle");
-  const [active, setActive] = useState<Action | null>(null);
-  const [meta, setMeta] = useState<{
-    action: Action;
-    secs: string;
-    at: string;
-  } | null>(null);
-  const [copied, setCopied] = useState(false);
-
-  const busy = active !== null;
-
-  async function run(action: Action) {
-    const started = Date.now();
-    setActive(action);
-    setStatus("running");
-    setLog(a.running);
-    setMeta(null);
+  const refresh = useCallback(async () => {
+    setBusy("refresh");
+    setError("");
     try {
-      const res = await fetch(`${API}/api/admin/train`, {
-        method: "POST",
-        credentials: "include",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ action }),
-      });
-      const data = await res.json().catch(() => ({}));
-      if (res.status === 401 || res.status === 403) {
-        setLog(a.denied);
-        setStatus("error");
-        return;
-      }
-      const parts = [
-        data.stdout,
-        data.stderr ? `--- ${a.stderr} ---\n${data.stderr}` : "",
-      ].filter(Boolean);
-      setLog(parts.join("\n\n") || JSON.stringify(data, null, 2));
-      setStatus(res.ok && !data.error ? "success" : "error");
-    } catch (e) {
-      setLog(String(e));
-      setStatus("error");
+      setStatus(await request("/training") as TrainingStatus);
+    } catch (reason) {
+      setError(reason instanceof Error ? reason.message : String(reason));
     } finally {
-      setMeta({
-        action,
-        secs: ((Date.now() - started) / 1000).toFixed(1),
-        at: new Date().toLocaleTimeString(),
-      });
-      setActive(null);
+      setBusy(null);
     }
-  }
+  }, []);
 
-  async function copy() {
+  useEffect(() => { void refresh(); }, [refresh]);
+
+  async function addExample(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    setBusy("save");
+    setError("");
+    setNotice("");
     try {
-      await navigator.clipboard.writeText(log);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 1500);
-    } catch {
-      /* ignore */
+      const result = await request("/training/examples", {
+        examples: [{ text: example, label: intent }],
+      });
+      setExample("");
+      setNotice(`Example saved. The training set now contains ${result.example_count} examples. Train the model to apply it.`);
+      await refresh();
+    } catch (reason) {
+      setError(reason instanceof Error ? reason.message : String(reason));
+    } finally {
+      setBusy(null);
     }
   }
 
-  function clear() {
-    setLog("");
-    setMeta(null);
-    setStatus("idle");
+  async function train() {
+    setBusy("train");
+    setError("");
+    setNotice("");
+    try {
+      const result = await request("/train", { action: "train_intents" });
+      setNotice(
+        `Training complete: ${result.example_count} examples, ${result.test_examples} held-out examples, ` +
+        `${result.accuracy === null ? "no score" : `${(result.accuracy * 100).toFixed(1)}% intent accuracy`}.`,
+      );
+      await refresh();
+    } catch (reason) {
+      setError(reason instanceof Error ? reason.message : String(reason));
+    } finally {
+      setBusy(null);
+    }
   }
 
-  const actions: Action[] = ["generate", "evaluate"];
-
+  const disabled = busy !== null;
   return (
-    <main className="min-h-screen bg-slate-50">
-      <div className="mx-auto max-w-5xl px-4 py-10">
-        {/* Header */}
-        <div className="mb-8 flex flex-wrap items-start justify-between gap-4">
-          <div>
-            <div className="flex items-center gap-3">
-              <h1 className="text-2xl font-semibold tracking-tight text-slate-900">
-                {a.title}
-              </h1>
-              <span className="rounded-full bg-slate-900 px-2.5 py-0.5 text-[11px] font-medium uppercase tracking-wide text-white">
-                {a.badge}
-              </span>
-            </div>
-            <p className="mt-2 max-w-2xl text-sm leading-relaxed text-slate-600">
-              {a.intro}
-            </p>
-          </div>
-          <Link
-            href="/"
-            className="rounded-md border border-slate-200 bg-white px-3 py-1.5 text-sm text-slate-700 shadow-sm transition hover:bg-slate-100"
-          >
-            ← {a.home}
-          </Link>
-        </div>
-
-        {/* Action cards */}
-        <div className="grid gap-4 sm:grid-cols-2">
-          {actions.map((key) => {
-            const s = a.steps[key];
-            const isActive = active === key;
-            const primary =
-              key === "generate"
-                ? "bg-blue-600 hover:bg-blue-700"
-                : "bg-emerald-600 hover:bg-emerald-700";
-            return (
-              <section
-                key={key}
-                className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm"
-              >
-                <p className="text-xs font-medium uppercase tracking-wide text-slate-400">
-                  {s.step}
-                </p>
-                <h2 className="mt-1 text-lg font-semibold text-slate-900">
-                  {s.title}
-                </h2>
-                <p className="mt-1 min-h-[2.5rem] text-sm text-slate-600">
-                  {s.desc}
-                </p>
-                <button
-                  onClick={() => run(key)}
-                  disabled={busy}
-                  className={`mt-4 inline-flex w-full items-center justify-center gap-2 rounded-lg px-4 py-2.5 text-sm font-medium text-white shadow-sm transition disabled:cursor-not-allowed disabled:opacity-50 ${primary}`}
-                >
-                  {isActive && (
-                    <span className="h-4 w-4 animate-spin rounded-full border-2 border-white/40 border-t-white" />
-                  )}
-                  {isActive ? s.busy : s.cta}
-                </button>
-              </section>
-            );
-          })}
-        </div>
-
-        {/* Console */}
-        <section className="mt-6 overflow-hidden rounded-xl border border-slate-800 bg-slate-950 shadow-sm">
-          <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-800 bg-slate-900 px-4 py-2.5">
-            <div className="flex flex-wrap items-center gap-3">
-              <div className="flex gap-1.5">
-                <span className="h-2.5 w-2.5 rounded-full bg-red-400/80" />
-                <span className="h-2.5 w-2.5 rounded-full bg-amber-400/80" />
-                <span className="h-2.5 w-2.5 rounded-full bg-emerald-400/80" />
-              </div>
-              <span className="text-xs font-medium text-slate-300">
-                {a.console}
-              </span>
-              <span
-                className={`inline-flex items-center gap-1.5 rounded-full px-2 py-0.5 text-[11px] font-medium ring-1 ${STATUS_STYLE[status]}`}
-              >
-                <span
-                  className={`h-1.5 w-1.5 rounded-full ${DOT_STYLE[status]}`}
-                />
-                {a.status[status]}
-              </span>
-              {meta && (
-                <span className="text-[11px] text-slate-400">
-                  {a.steps[meta.action].title} · {meta.secs}s · {meta.at}
-                </span>
-              )}
-            </div>
-            <div className="flex gap-2">
-              <button
-                onClick={copy}
-                disabled={!log}
-                className="rounded border border-slate-700 px-2.5 py-1 text-xs text-slate-300 transition hover:bg-slate-800 disabled:opacity-40"
-              >
-                {copied ? a.copied : a.copy}
-              </button>
-              <button
-                onClick={clear}
-                disabled={!log || busy}
-                className="rounded border border-slate-700 px-2.5 py-1 text-xs text-slate-300 transition hover:bg-slate-800 disabled:opacity-40"
-              >
-                {a.clear}
-              </button>
-            </div>
-          </div>
-          <pre className="max-h-[55vh] min-h-[16rem] overflow-auto whitespace-pre-wrap p-4 font-mono text-xs leading-relaxed text-slate-100">
-            {log || <span className="text-slate-500">{a.empty}</span>}
-          </pre>
-        </section>
-
-        <p className="mt-4 text-xs text-slate-500">{a.tip}</p>
+    <main className="mx-auto max-w-4xl px-4 py-8">
+      <div className="mb-6 flex items-center justify-between">
+        <h1 className="text-2xl font-semibold">Career Assistant Training</h1>
+        <Link href="/" className="text-sm text-primary hover:underline">Home</Link>
       </div>
+      <p className="mb-6 text-sm text-muted">
+        Add labeled examples of how students ask questions, then train the intent classifier.
+        This trainable model helps route conversations; analysis results are still computed from
+        datasets and are not generated by a language model. Only admins can use these controls.
+      </p>
+
+      <section className="card mb-6 p-5" aria-labelledby="model-status">
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <div>
+            <h2 id="model-status" className="font-semibold">Intent model</h2>
+            <p className="mt-1 text-sm text-muted">
+              {status
+                ? `${status.model_version} · ${
+                    !status.trained ? "using starter examples" : status.model_current ? "trained model up to date" : "new examples need training"
+                  } · ${status.example_count} examples`
+                : "Loading training status…"}
+            </p>
+            {status?.trained_at && <p className="text-xs text-muted">Last trained: {new Date(status.trained_at).toLocaleString()}</p>}
+          </div>
+          <button type="button" className="btn" onClick={refresh} disabled={disabled}>
+            {busy === "refresh" ? "Refreshing…" : "Refresh"}
+          </button>
+        </div>
+        {status && (
+          <div className="mt-4 flex flex-wrap gap-2">
+            {INTENTS.map(([key, label]) => (
+              <span key={key} className="badge bg-surface">{label}: {status.label_counts[key] ?? 0}</span>
+            ))}
+          </div>
+        )}
+        {status?.last_training && (
+          <p className="mt-3 text-xs text-muted">
+            Hold-out intent accuracy: {status.last_training.accuracy === null ? "not available" : `${(status.last_training.accuracy * 100).toFixed(1)}%`}
+            {" "}on {status.last_training.test_examples} examples. This measures intent routing only, not the accuracy of career or data answers.
+          </p>
+        )}
+      </section>
+
+      <form className="card mb-6 space-y-4 p-5" onSubmit={addExample}>
+        <h2 className="font-semibold">Add a student question example</h2>
+        <label className="block text-sm font-medium" htmlFor="training-example">
+          Example wording
+          <textarea
+            id="training-example"
+            className="field mt-1 min-h-24 w-full"
+            value={example}
+            onChange={(event) => setExample(event.target.value)}
+            maxLength={500}
+            minLength={3}
+            required
+            placeholder="For example: I finished secondary school and enjoy maths. What could I study?"
+          />
+        </label>
+        <label className="block text-sm font-medium" htmlFor="training-intent">
+          Correct intent
+          <select
+            id="training-intent"
+            className="field mt-1 block w-full"
+            value={intent}
+            onChange={(event) => setIntent(event.target.value as Intent)}
+          >
+            {INTENTS.map(([key, label]) => <option key={key} value={key}>{label}</option>)}
+          </select>
+        </label>
+        <button className="btn btn-primary" type="submit" disabled={disabled || example.trim().length < 3}>
+          {busy === "save" ? "Saving example…" : "Save example"}
+        </button>
+      </form>
+
+      <section className="card p-5">
+        <h2 className="font-semibold">Train and evaluate</h2>
+        <p className="mt-1 mb-4 text-sm text-muted">
+          Training uses the starter examples plus examples saved above. Keep adding varied,
+          realistic phrasings for each intent; a high score on this small hold-out set does not
+          prove that career recommendations are correct.
+        </p>
+        <button className="btn btn-primary" type="button" onClick={train} disabled={disabled || !status?.example_count}>
+          {busy === "train" ? "Training…" : "Train intent model"}
+        </button>
+      </section>
+
+      {notice && <p role="status" className="mt-4 rounded-card border border-line bg-surface p-3 text-sm">{notice}</p>}
+      {error && <p role="alert" className="mt-4 rounded-card border border-danger p-3 text-sm text-danger">{error}</p>}
     </main>
   );
 }

@@ -46,6 +46,8 @@ def route(question: str) -> dict:
 
     if engine == "ambiguous":
         return _shell(question, "ambiguous", intent["understood"])
+    if engine == "conversation":
+        return _shell(question, "ambiguous", intent["understood"])
     if engine == "decision":
         return decision_run(question)
     if engine == "regression":

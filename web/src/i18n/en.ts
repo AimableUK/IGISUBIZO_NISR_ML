@@ -735,13 +735,13 @@ export const en = {
       {
         h: "What the automated system does",
         p: [
-          "The Python service uses rule-based question routing and statistical code: K-means, panel OLS, linear trends and weighted decision rules. It is not a trained neural network or chatbot. The optional AI planner may propose a *presentation specification*: which components to show and how to arrange them. It does not calculate the statistics.",
+          "The Python service combines rule-based routing, a small trainable intent classifier, and statistical code such as K-means, panel OLS, linear trends and weighted decision rules. Admin training changes how questions are routed; it does not train a generative model or teach the system new facts. The study-and-career adviser can use an optional AI model to interpret a question and phrase a reply from analysis evidence, but only when you enable AI-assisted replies. The optional workspace planner proposes layouts and does not calculate statistics. Weather questions use Open-Meteo forecasts for Rwanda locations.",
         ],
       },
       {
         h: "Where the data comes from",
         p: [
-          "Analysis inputs come from NISR and other public datasets. Mboni computes results from them and shows each source, so you can check a figure against the original. Results are Mboni’s own calculations and are not official NISR publications.",
+          "Some analysis inputs are generated proxy data shaped around NISR dataset categories, not verified observations from official source tables. The workspace identifies demo/proxy data and shows sources and caveats. One crop-yield query uses a public NISR table, but it does not provide annual trends. Proxy data cannot support reliable career forecasts or real-world decisions. Results are Mboni’s own calculations and are not official NISR publications.",
         ],
       },
       {
@@ -766,7 +766,7 @@ export const en = {
       {
         h: "Architecture notes",
         p: [
-          "The analysis service runs separately (`model/`, FastAPI). The Express API routes questions to it, and production disables its in-process fallback. Sources and data limitations appear in the workspace provenance panel.",
+          "The analysis service runs separately (`model/`, FastAPI). Adviser conversation history stays in the current page session and is not saved as an analysis. If you enable AI-assisted replies, your latest message, recent turns and a compact analysis-evidence summary are sent to the configured AI provider. Weather requests send the requested location to Open-Meteo. Sources and demo/proxy status appear with replies and in the workspace provenance panel.",
         ],
       },
     ],
@@ -838,13 +838,13 @@ export const en = {
       {
         h: "AI processing",
         p: [
-          "If the optional AI planner is enabled, it receives only the structure of an analytical result (dataset and column names, available components) and never your account details. See [AI transparency](/ai-transparency).",
+          "The optional workspace planner receives analysis structure to suggest a layout. In the study-and-career adviser, your latest message and recent conversation are sent to Anthropic only if you enable AI-assisted replies; otherwise the app uses guided rules. Weather requests send the requested location to Open-Meteo whether or not AI replies are enabled. Adviser conversation history stays in the page session and is not saved as an analysis. Do not enter sensitive personal information. See [AI transparency](/ai-transparency).",
         ],
       },
       {
         h: "Service providers",
         p: [
-          "We use providers for email delivery (Brevo), image hosting for profile photos (ImageKit) and hosting. They process data only to provide those services.",
+          "We use providers for email delivery (Brevo), image hosting for profile photos (ImageKit), hosting, weather forecasts (Open-Meteo), and—when you opt in to AI-assisted adviser replies—AI processing (Anthropic). They process data to provide those services.",
         ],
       },
       {
@@ -1092,6 +1092,7 @@ export const en = {
       title: "What would you like to understand?",
       subtitle:
         "Ask in plain language. You will get a saved workspace you can rearrange and revisit.",
+      advisorLink: "Talk with the study and career adviser",
       stage: {
         interpreting: "Reading your question",
         validating: "Checking it against supported analyses",

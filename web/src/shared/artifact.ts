@@ -32,6 +32,25 @@ export const DriftSchema = z.object({
   changed: z.boolean(),
   items: z.array(z.object({ kind: z.enum(["dataset", "engine"]), id: z.string(), saved: z.string(), current: z.string() })),
 });
+export const ConversationMessageSchema = z.object({
+  role: z.enum(["user", "assistant"]),
+  content: z.string().trim().min(1).max(2000),
+});
+export const ConversationRequestSchema = z.object({
+  message: z.string().trim().min(2).max(500),
+  history: z.array(ConversationMessageSchema).max(10).default([]),
+  useAi: z.boolean().default(false),
+});
+export const ConversationResponseSchema = z.object({
+  reply: z.string().min(1).max(6000),
+  mode: z.enum(["ai", "guided"]),
+  sources: z.array(z.object({
+    title: z.string(),
+    period: z.string(),
+    isSample: z.boolean(),
+    url: z.string().url().optional(),
+  })),
+});
 export const VersionMetaSchema = z.object({
   version: z.number().int(),
   note: z.string().nullable(),
@@ -56,3 +75,5 @@ export type ArtifactSummary = z.infer<typeof ArtifactSummarySchema>;
 export type ArtifactPayload = z.infer<typeof ArtifactPayloadSchema>;
 export type VersionMeta = z.infer<typeof VersionMetaSchema>;
 export type Drift = z.infer<typeof DriftSchema>;
+export type ConversationMessage = z.infer<typeof ConversationMessageSchema>;
+export type ConversationResponse = z.infer<typeof ConversationResponseSchema>;

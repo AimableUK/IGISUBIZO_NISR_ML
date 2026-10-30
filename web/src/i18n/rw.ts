@@ -707,13 +707,13 @@ export const rw: Dict = {
       {
         h: "Icyo sisitemu ikora yonyine",
         p: [
-          "Serivisi ya Python ikoresha kohereza ibibazo hakurikijwe amategeko na porogaramu y’ibarurishamibare: K-means, panel OLS, ibyerekezo bigororotse n’amategeko y’ibyemezo afite uburemere. Si neural network yatojwe cyangwa chatbot. Igikoresho cya AI gitegura kiri ku bushake gishobora gutanga *icyifuzo cy’uko bigaragazwa*: ibice byo kwerekana n’uko bitegurwa. Ntikibara ibarurishamibare.",
+          "Serivisi ya Python ihuza amategeko yo kohereza ibibazo, icyitegererezo gito gishobora guhugurwa cyo kumenya intego y’ikibazo, n’imibare nka K-means, panel OLS, ibyerekezo bigororotse n’amategeko y’ibyemezo afite uburemere. Amahugurwa y’abayobozi ahindura uko ibibazo byoherezwa; ntahugura icyitegererezo gitanga ibisubizo bishya cyangwa ngo yigishe sisitemu amakuru mashya. Umujyanama w’amasomo n’imyuga ashobora gukoresha AI iri ku bushake mu gusobanura ikibazo no gutegura igisubizo gishingiye ku bimenyetso, ariko ari uko wahisemo ibisubizo bifashijwe na AI. Igikoresho gitegura umwanya w’akazi ntikibara imibare. Ibibazo by’iteganyagihe bikoresha Open-Meteo ku hantu ho mu Rwanda.",
         ],
       },
       {
         h: "Aho amakuru aturuka",
         p: [
-          "Amakuru ashingirwaho mu mboni ni aya NISR n’andi makuru rusange. Mboni ribara ibisubizo ribishingiye kuri yo kandi rikagaragaza buri soko, kugira ngo ugereranye umubare n’umwimerere. Ibisubizo ni imibare Mboni ryabaze, si ibitangazwa na NISR.",
+          "Amwe mu makuru akoreshwa ni amakuru y’igerageza yakozwe hakurikijwe ibyiciro by’amakuru ya NISR, si indorerezi zemejwe zivuye mu mbonerahamwe zemewe. Umwanya w’akazi werekana amakuru y’igerageza n’imbogamizi zayo. Ikibazo kimwe cy’umusaruro w’imyaka gikoresha imbonerahamwe rusange ya NISR, ariko nta makuru y’imyaka itandukanye itanga. Amakuru y’igerageza ntashobora gushingirwaho mu guhanura imyuga cyangwa gufata ibyemezo nyakuri. Ibisubizo ni imibare Mboni ryabaze, si ibitangazwa na NISR.",
         ],
       },
       {
@@ -738,7 +738,7 @@ export const rw: Dict = {
       {
         h: "Inyandiko ku miterere ya sisitemu",
         p: [
-          "Serivisi y’mboni ikora ukwayo (`model/`, FastAPI). API ya Express yohereza ibibazo kuri yo, kandi muri production uburyo bwo gukorera mu gihe itaboneka burahagarikwa. Aho amakuru yavuye n’aho agarukira bigaragara mu gice cy’aho amakuru yavuye mu mwanya w’mboni.",
+          "Serivisi y’isesengura ikora ukwayo (`model/`, FastAPI). Amateka y’ikiganiro n’umujyanama aguma muri paji iriho kandi ntiyongerwa mu sesengura ribitswe. Wahisemo ibisubizo bifashijwe na AI, ubutumwa bwawe buheruka, ibiganiro biheruka n’incamake y’ibimenyetso by’isesengura byoherezwa ku mutanga serivisi wa AI. Ibibazo by’iteganyagihe byohereza ahantu hasabwe kuri Open-Meteo. Amasoko n’imbogamizi z’amakuru bigaragara mu gisubizo no mu mwanya w’akazi.",
         ],
       },
     ],
@@ -810,13 +810,13 @@ export const rw: Dict = {
       {
         h: "Ibikorwa bya AI",
         p: [
-          "Niba igikoresho cya AI gitegura kiri ku bushake gikoreshwa, cyakira gusa imiterere y’igisubizo cy’mboni (amazina y’amakusanyamakuru n’inkingi, ibice bihari), kandi ntikigera cyakira amakuru ya konti yawe. Reba [ubusobanuro kuri AI](/ai-transparency).",
+          "Igikoresho cya AI gitegura umwanya w’akazi cyakira imiterere y’isesengura kugira ngo gitange igitekerezo cy’uko amakuru agaragazwa. Ku mujyanama w’amasomo n’imyuga, ubutumwa bwawe n’ikiganiro giheruka byoherezwa kuri Anthropic ari uko uhisemo ibisubizo bifashijwe na AI; bitabaye ibyo hakoreshwa amategeko ayobora ibisubizo. Ibibazo by’iteganyagihe byohereza ahantu hasabwe kuri Open-Meteo n’iyo ibisubizo bifashijwe na AI bidahiswemo. Amateka y’ikiganiro n’umujyanama aguma muri paji kandi ntiyongerwa mu sesengura ribitswe. Irinde gutanga amakuru y’ibanga. Reba [ubusobanuro kuri AI](/ai-transparency).",
         ],
       },
       {
         h: "Abatanga serivisi",
         p: [
-          "Dukoresha abatanga serivisi mu kohereza imeri (Brevo), kubika amafoto y’umwirondoro (ImageKit) no kwakira urubuga. Bakoresha amakuru gusa kugira ngo batange izo serivisi.",
+          "Dukoresha abatanga serivisi mu kohereza imeri (Brevo), kubika amafoto y’umwirondoro (ImageKit), kwakira urubuga, gutanga iteganyagihe (Open-Meteo), no gutunganya ibisubizo bifashijwe na AI (Anthropic) igihe ubyemeye. Bakoresha amakuru kugira ngo batange izo serivisi.",
         ],
       },
       {
@@ -1072,6 +1072,7 @@ export const rw: Dict = {
       title: "Wifuza gusobanukirwa iki?",
       subtitle:
         "Baza mu rurimi woroheje. Uzabona umwanya w'akazi ubitswe ushobora gutunganya no kugarukaho igihe cyose.",
+      advisorLink: "Ganira n’umujyanama w’amasomo n’imyuga",
       stage: {
         interpreting: "Turimo gusoma ikibazo cyawe",
         validating: "Turimo kugenzura niba isesengura ryawe rishoboka",

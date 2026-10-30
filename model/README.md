@@ -2,16 +2,19 @@
 
 The Python FastAPI service is the analysis backend used by the Express API. It exposes `GET /health` and `POST /analyze`; the API connects to it with `MODEL_URL`.
 
-The "brain" is ordinary Python code, not a trained neural network:
+The model service combines a small **trainable intent classifier** with ordinary Python analysis code; it is not a generative LLM:
 
-- regex/synonym rules route questions to an engine;
+- a Multinomial Naive Bayes classifier learns to route greetings, student introductions, program questions, career-path questions, decisions, data questions, and out-of-scope requests from labeled examples;
+- regex/synonym rules and domain-specific engines still compute the answers;
 - a dataset query engine answers metric, comparison, ranking, and trend questions across 12 CSV datasets (11 generated proxies and one official NISR table);
 - K-means clusters district profiles;
 - panel OLS estimates associations;
 - linear regression extrapolates sector trends;
 - decision rules calculate weighted crop/career comparisons.
 
-The optional Anthropic integration is a separate presentation planner; it does not calculate the analysis.
+The optional Anthropic presentation planner does not calculate analysis. The web app also has a multi-turn study-and-career adviser: the API retrieves analysis evidence for each message and can use Anthropic to compose a natural-language answer only after the user opts in. Without that option, a visibly labeled guided response is used. Conversation context is held in the current page session and is not saved as an analysis. The intent classifier is trained from `engine/intent_seed.jsonl` and admin-added examples. Admins can add labeled examples and train/save the classifier from `/admin`; production persists its artifact and examples in the `modeltraining` volume. This trains intent routing only, not answer generation or facts. Its hold-out score is not a measure of career advice accuracy. Use reviewed examples and verified data; do not add personal student information.
+
+The adviser routes Rwanda study/career/data questions to the analysis engine, weather requests to Open-Meteo for a Rwanda location forecast, and unsupported topics to an explicit limitation response. Weather is an external forecast, not an NISR statistic; the source and forecast dates are displayed. The AI option can interpret natural-language requests and compose replies, but it does not provide a general-purpose factual search tool.
 
 Career decision support now includes named study-program comparisons using enrollment, graduation, graduate employment, and wage indicators; questions such as “How has Software Engineering enrollment changed from 2021 to 2025?” return a yearly series, and “Should I study Software Engineering or Finance?” compares the programs. Applied-mathematics questions return ten potential sectors, related occupations, and Rwanda locations represented in the job-demand file. These education and job-demand files are generated proxy data: the pathway list is illustrative, and the source does not verify employer eligibility or entry-level hiring. Do not treat the current rankings or vacancy counts as real labor-market advice.
 
