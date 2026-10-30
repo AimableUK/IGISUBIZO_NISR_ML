@@ -11,7 +11,8 @@ const body = Public_Sans({ subsets: ["latin"], variable: "--font-body", display:
 export const metadata: Metadata = {
   title: { default: "Mboni - Rwanda Analytical Workspace", template: "%s · Mboni" },
   description: "Ask a question about Rwanda's public data and get a saved, interactive analytical workspace - not a paragraph.",
-  icons: { icon: "/favicon.ico" },
+  icons: { icon: "/favicon.ico", apple: "/icons/icon-180x180.png" },
+  manifest: "/manifest.json",
 };
 export const viewport: Viewport = { width: "device-width", initialScale: 1, themeColor: [{ media: "(prefers-color-scheme: dark)", color: "#111D15" }, { media: "(prefers-color-scheme: light)", color: "#F6FAF7" }] };
 
@@ -28,6 +29,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <SiteChrome>{children}</SiteChrome>
           </LocaleProvider>
         </Providers>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(()=>{if('serviceWorker' in navigator){window.addEventListener('load',()=>{navigator.serviceWorker.register('/sw.js').catch(()=>{})})}})()`,
+          }}
+        />
       </body>
     </html>
   );

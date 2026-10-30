@@ -22,7 +22,7 @@ export function useReduceMotion() {
 export default function LiveEye({ width = 44 }: { width?: number }) {
   const theme = useAppTheme();
   const reduce = useReduceMotion();
-  const state = useEyeFidget(!reduce);
+  const { state } = useEyeFidget(!reduce);
   return (
     <MboniEye
       state={state}

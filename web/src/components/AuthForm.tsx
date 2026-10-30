@@ -15,7 +15,6 @@ import {
 import { authClient, signIn, signUp } from "@/lib/auth-client";
 import { BambooGrove } from "@/components/marketing/Bamboo";
 import HeroScene from "@/components/marketing/HeroScene";
-import LanguageSwitcher from "@/components/marketing/LanguageSwitcher";
 import AuthEye, { type AuthEyeMode } from "@/components/mboni/AuthEye";
 import { useT } from "@/i18n";
 
@@ -72,7 +71,6 @@ function BrandPanel() {
 }
 
 function Shell({ children }: { children: React.ReactNode }) {
-  const t = useT();
   return (
     // The width is set against the viewport, not the parent: the auth layout wraps children in a
     // narrow column (the old single card fit it), so w-full / max-w would stay ~28rem wide.
@@ -99,15 +97,19 @@ function Form({ mode }: { mode: Mode }) {
   const [error, setError] = useState<string | null>(null);
   const [done, setDone] = useState<string | null>(null);
   const [show, setShow] = useState(false);
-  // True while the cursor is anywhere in the password field (input or its show/hide button).
-  const [pwFocus, setPwFocus] = useState(false);
 
-  // The eye shuts while a hidden password is being typed, scans while submitting, and rests otherwise.
+  // Which kind of field has the cursor: the password field, another text field, or nothing.
+  const [focusField, setFocusField] = useState<"none" | "text" | "pw">("none");
+
+  // Shy while a hidden password is being typed, attentive while typing elsewhere,
+  // scanning while submitting, and fidgeting on its own otherwise.
   const eyeMode: AuthEyeMode = busy
     ? "busy"
-    : pwFocus && !show
+    : focusField === "pw" && !show
       ? "closed"
-      : "rest";
+      : focusField === "text"
+        ? "attentive"
+        : "rest";
 
   async function submit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -183,15 +185,8 @@ function Form({ mode }: { mode: Mode }) {
       <label htmlFor="password" className="mb-1 block text-sm font-medium">
         {mode === "reset" ? a.fields.newPassword : a.fields.password}
       </label>
-      <div
-        className="relative"
-        onFocus={() => setPwFocus(true)}
-        onBlur={(e) => {
-          // Moving between the input and its show/hide button is not leaving the field.
-          if (!e.currentTarget.contains(e.relatedTarget as Node | null))
-            setPwFocus(false);
-        }}
-      >
+      {/* data-pw marks the password area (input + show/hide button) for the eye. */}
+      <div className="relative" data-pw>
         <input
           id="password"
           name="password"
@@ -229,7 +224,26 @@ function Form({ mode }: { mode: Mode }) {
 
   return (
     <Shell>
-      <form onSubmit={submit} className="space-y-4" noValidate={false}>
+      <form
+        onSubmit={submit}
+        className="space-y-4"
+        noValidate={false}
+        onFocus={(e) => {
+          const el = e.target as HTMLElement;
+          setFocusField(
+            el.closest("[data-pw]")
+              ? "pw"
+              : el.tagName === "INPUT"
+                ? "text"
+                : "none",
+          );
+        }}
+        onBlur={(e) => {
+          // Moving between fields inside the form is not leaving it.
+          if (!e.currentTarget.contains(e.relatedTarget as Node | null))
+            setFocusField("none");
+        }}
+      >
         <AuthEye mode={eyeMode} />
         <div>
           <h1 className="text-3xl font-semibold">{m.h}</h1>

@@ -22,13 +22,16 @@ export type MboniEyeProps = {
   className?: string;
 };
 
-// Extra rules for the closed pose. They live inside the static SVG's own <style>, so the SVG markup stays
-// identical between renders and the lids can animate when the wrapper gains or loses `mboni-shut`.
+// Extra rules for the "shy" pose. They live inside the static SVG's own <style>, so the SVG markup stays
+// identical between renders and the eye can ease in and out when the wrapper gains or loses `mboni-shut`.
+// Shy = lids drawn down to a peek, a small tilt, and the gaze slipping away down and to the left.
 const SHUT_CSS =
-  ".mbs-blink{transition:transform .18s ease-in-out}" +
-  ".mboni-shut .mbs-blink{transform:scaleY(.06)}" +
-  ".reduce-motion .mbs-blink{transition:none}" +
-  "@media (prefers-reduced-motion:reduce){.mbs-blink{transition:none}}";
+  ".mbs-blink,.mbs-gaze{transition:transform .3s cubic-bezier(.4,0,.2,1)}" +
+  ".mboni-shut .mbs-blink{transform:scaleY(.3) rotate(-3deg)}" +
+  ".mboni-shut .mbs-gaze{transform:translate(-15px,7px)}" +
+  ".reduce-motion .mbs-blink,.reduce-motion .mbs-gaze{transition:none}" +
+  "@media (prefers-reduced-motion:reduce){.mbs-blink,.mbs-gaze{transition:none}}";
+
 
 export default function MboniEye({
   state = "static",

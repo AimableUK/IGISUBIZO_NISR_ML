@@ -1,16 +1,17 @@
 "use client";
 import { useEffect } from "react";
 import MboniEye from "./MboniEye";
-import { useMboniEye } from "./useMboniEye";
+import { useEyeFidget } from "./useEyeFidget";
 import { useAppTheme } from "./useAppTheme";
 import { useReduceMotion } from "./LiveEye";
 
-export type AuthEyeMode = "rest" | "closed" | "busy";
+// rest      = idle, fidgets on its own
+// attentive = watching you type in name / email
+// closed    = shy, while a hidden password is being typed
+// busy      = scanning, while the form is submitting
+export type AuthEyeMode = "rest" | "attentive" | "closed" | "busy";
 
-/**
- * Wakes up once, then rests. "closed" shuts the lids (password being typed),
- * "busy" scans (form is being submitted). Decorative: hidden from screen readers.
- */
+/** Decorative: hidden from screen readers. */
 export default function AuthEye({
   mode,
   className = "w-[72px] sm:w-[88px]",
@@ -20,13 +21,15 @@ export default function AuthEye({
 }) {
   const theme = useAppTheme();
   const reduce = useReduceMotion();
-  const { state, send } = useMboniEye();
+  const { state, send } = useEyeFidget(mode === "rest" && !reduce, {
+    gap: [4000, 9000],
+  });
 
   useEffect(() => {
     send("wake");
-  }, [send]); // once, when the form appears
+  }, [send]); // wakes up once when the form appears
   useEffect(() => {
-    send(mode === "busy" ? "search" : "idle");
+    send(mode === "busy" ? "search" : mode === "attentive" ? "answer" : "idle");
   }, [mode, send]);
 
   return (

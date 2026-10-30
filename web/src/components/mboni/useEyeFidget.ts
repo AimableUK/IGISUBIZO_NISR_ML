@@ -21,9 +21,13 @@ function pick() {
   return MOVES[0]!;
 }
 
-/** Returns an eye state that rests most of the time and fidgets now and then. */
-export function useEyeFidget(enabled = true) {
+/** An eye that rests most of the time and fidgets now and then. `gap` = pause between moves, in ms. */
+export function useEyeFidget(
+  enabled = true,
+  opts: { gap?: [number, number] } = {},
+) {
   const { state, send } = useMboniEye({ attentiveMs: 3200 });
+  const [gapMin, gapMax] = opts.gap ?? [6000, 15000];
 
   useEffect(() => {
     if (!enabled) {
@@ -44,7 +48,7 @@ export function useEyeFidget(enabled = true) {
             schedule();
           }, move.ms);
         },
-        rand(6000, 15000),
+        rand(gapMin, gapMax),
       );
     };
     schedule();
@@ -53,7 +57,7 @@ export function useEyeFidget(enabled = true) {
       clearTimeout(wait);
       clearTimeout(back);
     };
-  }, [enabled, send]);
+  }, [enabled, send, gapMin, gapMax]);
 
-  return state;
+  return { state, send };
 }
