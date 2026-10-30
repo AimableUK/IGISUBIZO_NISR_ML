@@ -26,13 +26,10 @@ function Runner() {
   const sp = useSearchParams();
   const router = useRouter();
   const { t, examples } = useI18n();
-  const [turns, setTurns] = useState<ConversationTurn[]>([
-    { role: "assistant", content: t("ws.chatWelcome"), mode: "guided", sources: [] },
-  ]);
+  const [turns, setTurns] = useState<ConversationTurn[]>([]);
   const [draft, setDraft] = useState(sp.get("q") ?? "");
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
-  const [useAi, setUseAi] = useState(false);
   const [conversationId, setConversationId] = useState(sp.get("conversation"));
   const [loadingConversation, setLoadingConversation] = useState(Boolean(sp.get("conversation")));
   const [stage, setStage] = useState<ProgressStage | null>(null);
@@ -41,6 +38,7 @@ function Runner() {
   const endRef = useRef<HTMLDivElement>(null);
   const { state: eye, send: sendEye } = useMboniEye();
   const theme = useAppTheme();
+  const hasStarted = turns.length > 0 || loadingConversation;
 
   const send = useCallback(async (value: string) => {
     const message = value.trim();
@@ -61,7 +59,7 @@ function Runner() {
         role,
         content: content.slice(0, 2000),
       }));
-      const response = await api.converse(message, history, useAi, requestId, conversationId ?? undefined);
+      const response = await api.converse(message, history, false, requestId, conversationId ?? undefined);
       skipConversationLoad.current = response.conversationId;
       setConversationId(response.conversationId);
       router.replace(`/workspace?conversation=${encodeURIComponent(response.conversationId)}`, { scroll: false });
@@ -88,11 +86,11 @@ function Runner() {
       setStage(null);
       socket.off("analysis:progress", onProgress);
     }
-  }, [busy, conversationId, loadingConversation, router, t, turns, useAi]);
+  }, [busy, conversationId, loadingConversation, router, t, turns]);
 
   useEffect(() => {
     if (!conversationId) {
-      setTurns([{ role: "assistant", content: t("ws.chatWelcome"), mode: "guided", sources: [] }]);
+      setTurns([]);
       setLoadingConversation(false);
       return;
     }
@@ -108,7 +106,7 @@ function Runner() {
     }).catch((reason) => {
       if (active) {
         setError(reason instanceof ApiError ? reason.message : t("ws.errorBody"));
-        setTurns([{ role: "assistant", content: t("ws.chatWelcome"), mode: "guided", sources: [] }]);
+        setTurns([]);
       }
     }).finally(() => {
       if (active) setLoadingConversation(false);
@@ -137,31 +135,48 @@ function Runner() {
   function newConversation() {
     setConversationId(null);
     router.replace("/workspace", { scroll: false });
-    setTurns([{ role: "assistant", content: t("ws.chatWelcome"), mode: "guided", sources: [] }]);
+    setTurns([]);
     setDraft("");
     setError("");
   }
 
+  const prompt = (
+    <PromptInput
+      value={draft}
+      onChange={setDraft}
+      onSubmit={send}
+      busy={busy || loadingConversation}
+      placeholder={t("q.placeholder")}
+      label={t("q.placeholder")}
+      sendLabel={t("q.send")}
+      minLength={2}
+    />
+  );
+
   return (
-    <main className="mx-auto flex min-h-[calc(100vh-4rem)] max-w-3xl flex-col px-4 py-8 sm:px-6">
-      <header className="mb-6 flex items-start justify-between gap-4">
+    <main className="mx-auto flex h-[calc(100dvh-4rem)] min-h-0 max-w-3xl flex-col px-4 py-8 sm:px-6">
+      <header className="mb-6 flex shrink-0 items-start justify-between gap-4">
         <div>
           <h1 className="text-3xl font-semibold sm:text-4xl">{t("ws.title")}</h1>
           <p className="mt-2 text-sm text-muted">{t("ws.subtitle")}</p>
         </div>
-        <button
-          type="button"
-          className="btn-sm shrink-0"
-          onClick={newConversation}
-          disabled={busy}
-          aria-label={t("ws.newConversation")}
-        >
-          <RotateCcw className="mr-1 inline h-4 w-4" aria-hidden />
-          {t("ws.newConversation")}
-        </button>
+        {turns.length > 0 && (
+          <button
+            type="button"
+            className="btn-sm shrink-0"
+            onClick={newConversation}
+            disabled={busy}
+            aria-label={t("ws.newConversation")}
+          >
+            <RotateCcw className="mr-1 inline h-4 w-4" aria-hidden />
+            {t("ws.newConversation")}
+          </button>
+        )}
       </header>
 
-      <section aria-label={t("ws.conversationLabel")} aria-live="polite" className="flex-1 space-y-4">
+      {hasStarted ? (
+        <>
+      <section aria-label={t("ws.conversationLabel")} aria-live="polite" className="min-h-0 flex-1 space-y-4 overflow-y-auto">
         {loadingConversation && (
           <p role="status" className="flex items-center gap-2 text-sm text-muted">
             <Loader2 className="h-4 w-4 animate-spin" aria-hidden />
@@ -232,49 +247,43 @@ function Runner() {
         <div ref={endRef} />
       </section>
 
-      {turns.length === 1 && (
-        <div className="mb-4">
-          <p className="mb-2 text-sm text-muted">{t("ws.tryOne")}</p>
-          <ul className="flex flex-wrap gap-2">
-            {examples.map((example) => (
-              <li key={example.q}>
-                <button
-                  type="button"
-                  className="btn-sm h-auto whitespace-normal text-left"
-                  onClick={() => void send(example.q)}
-                  disabled={busy || loadingConversation}
-                >
-                  {example.label}
-                </button>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
-
       {error && (
         <p role="alert" className="mb-3 rounded-card border border-danger p-3 text-sm text-danger">
           {error}
         </p>
       )}
-      <PromptInput
-        value={draft}
-        onChange={setDraft}
-        onSubmit={send}
-        busy={busy || loadingConversation}
-        placeholder={t("q.placeholder")}
-        label={t("q.placeholder")}
-        sendLabel={t("q.send")}
-        minLength={2}
-      />
-      <label className="mt-3 flex items-start gap-2 text-xs text-muted">
-        <input type="checkbox" checked={useAi} onChange={(event) => setUseAi(event.target.checked)} disabled={busy} />
-        <span>
-          <span className="font-medium">{t("ws.useAi")}</span>{" "}
-          {t("ws.aiPrivacy")}
-        </span>
-      </label>
-      <p className="mt-2 text-xs text-muted">{t("ws.chatDisclaimer")}</p>
+      <div className="shrink-0 bg-background pt-3">
+        {prompt}
+        {turns.length > 0 && <p className="mt-3 text-xs text-muted">{t("ws.chatDisclaimer")}</p>}
+      </div>
+        </>
+      ) : (
+        <div className="flex flex-1 flex-col justify-center pb-10">
+          {error && (
+            <p role="alert" className="mb-3 rounded-card border border-danger p-3 text-sm text-danger">
+              {error}
+            </p>
+          )}
+          {prompt}
+          <div className="mt-6">
+            <p className="mb-2 text-sm text-muted">{t("ws.tryOne")}</p>
+            <ul className="flex flex-wrap gap-2">
+              {examples.map((example) => (
+                <li key={example.q}>
+                  <button
+                    type="button"
+                    className="btn-sm h-auto whitespace-normal text-left"
+                    onClick={() => void send(example.q)}
+                    disabled={busy || loadingConversation}
+                  >
+                    {example.label}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      )}
     </main>
   );
 }

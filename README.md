@@ -208,11 +208,11 @@ The demo account is for evaluation only. Please do not change its password or sa
 
 ### 1. Create an account
 
-![Mboni create account page](docs/screenshots/create-account.png)
+![Mboni create account page](docs/screenshots/08-create-account.png)
 
 ### 2. Sign in
 
-![Mboni sign-in page](docs/screenshots/sign-in.png)
+![Mboni sign-in page](docs/screenshots/09-sign-in.png)
 
 ### 3. Main workspace
 

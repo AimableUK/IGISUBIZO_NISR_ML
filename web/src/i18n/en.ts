@@ -1092,8 +1092,6 @@ export const en = {
       title: "What would you like to understand?",
       subtitle:
         "Ask about Rwanda’s data, study choices, or careers. Explore the answer here and open full analysis workspaces when data supports one.",
-      chatWelcome:
-        "Hi! I can help you explore study and career options in Rwanda, ask questions about available data, or check a weather forecast for a Rwanda location. What would you like to work through?",
       conversationLabel: "Workspace conversation",
       newConversation: "New conversation",
       chatThinking: "Thinking through your question…",
@@ -1103,11 +1101,7 @@ export const en = {
       demoDataNote: "Includes generated demo data",
       source: "Source",
       openAnalysis: "Open full analysis",
-      useAi: "Use AI-assisted replies.",
-      aiPrivacy:
-        "If enabled, your message and recent conversation are sent to our configured AI provider. Avoid sharing sensitive personal information.",
-      chatDisclaimer:
-        "Your conversation is saved so you can return to it. Data-based analyses are linked to the conversation and saved to History; generated demo data is identified.",
+      chatDisclaimer: "Mboni can make mistakes. Please check important information.",
       stage: {
         interpreting: "Reading your question",
         validating: "Checking it against supported analyses",
