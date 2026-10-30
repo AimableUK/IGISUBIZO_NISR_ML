@@ -15,6 +15,8 @@ import {
 import { authClient, signIn, signUp } from "@/lib/auth-client";
 import { BambooGrove } from "@/components/marketing/Bamboo";
 import HeroScene from "@/components/marketing/HeroScene";
+import LanguageSwitcher from "@/components/marketing/LanguageSwitcher";
+import AuthEye, { type AuthEyeMode } from "@/components/mboni/AuthEye";
 import { useT } from "@/i18n";
 
 type Mode = "login" | "signup" | "forgot" | "reset";
@@ -97,6 +99,15 @@ function Form({ mode }: { mode: Mode }) {
   const [error, setError] = useState<string | null>(null);
   const [done, setDone] = useState<string | null>(null);
   const [show, setShow] = useState(false);
+  // True while the cursor is anywhere in the password field (input or its show/hide button).
+  const [pwFocus, setPwFocus] = useState(false);
+
+  // The eye shuts while a hidden password is being typed, scans while submitting, and rests otherwise.
+  const eyeMode: AuthEyeMode = busy
+    ? "busy"
+    : pwFocus && !show
+      ? "closed"
+      : "rest";
 
   async function submit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -172,7 +183,15 @@ function Form({ mode }: { mode: Mode }) {
       <label htmlFor="password" className="mb-1 block text-sm font-medium">
         {mode === "reset" ? a.fields.newPassword : a.fields.password}
       </label>
-      <div className="relative">
+      <div
+        className="relative"
+        onFocus={() => setPwFocus(true)}
+        onBlur={(e) => {
+          // Moving between the input and its show/hide button is not leaving the field.
+          if (!e.currentTarget.contains(e.relatedTarget as Node | null))
+            setPwFocus(false);
+        }}
+      >
         <input
           id="password"
           name="password"
@@ -211,6 +230,7 @@ function Form({ mode }: { mode: Mode }) {
   return (
     <Shell>
       <form onSubmit={submit} className="space-y-4" noValidate={false}>
+        <AuthEye mode={eyeMode} />
         <div>
           <h1 className="text-3xl font-semibold">{m.h}</h1>
           <p className="mt-2 max-w-[44ch] text-muted">{m.sub}</p>

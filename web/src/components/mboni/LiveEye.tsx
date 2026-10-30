@@ -6,7 +6,7 @@ import { useAppTheme } from "./useAppTheme";
 import { useEyeFidget } from "./useEyeFidget";
 
 /** Follows your own "Reduce motion" setting (the class on <html>), on top of the device setting. */
-function useReduceMotion() {
+export function useReduceMotion() {
   const [reduce, setReduce] = useState(false);
   useEffect(() => {
     const el = document.documentElement;
