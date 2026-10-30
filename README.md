@@ -165,7 +165,7 @@ The presence of a topic in this table does not mean that all of its indicators a
 
 ## How to use Mboni
 
-**Open the deployed application:** https://mboni.vercel.app
+**Open the deployed application:** https://mboni-app.vercel.app
 
 The following is a suggested evaluation path. Exact labels and available interactions may differ depending on the current deployment.
 
