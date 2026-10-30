@@ -15,7 +15,6 @@ import {
 import { authClient, signIn, signUp } from "@/lib/auth-client";
 import { BambooGrove } from "@/components/marketing/Bamboo";
 import HeroScene from "@/components/marketing/HeroScene";
-import LanguageSwitcher from "@/components/marketing/LanguageSwitcher";
 import { useT } from "@/i18n";
 
 type Mode = "login" | "signup" | "forgot" | "reset";
