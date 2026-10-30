@@ -196,6 +196,19 @@ These are areas the application can route or demonstrate, not a promise that eve
 ## Try the app
 
 Open https://mboni-app.vercel.app and create your own account. Evaluators who need a shared demo account should request access credentials directly from the team; passwords are not published in this repository.
+## demo access credentials
+
+Open https://mboni-app.vercel.app and sign in with the demo account below, or create your own account.
+
+| Field    | Value                    |
+| -------- | ------------------------ |
+| Email    | `ukobizaba81@gmail.com`  |
+| Password | `Ukobizaba123`           |
+| Field    | Value                    |
+| -------- | --------------------     |
+| Email    | `enock.27394@auca.ac.rw` |
+| Password | `Mataru@1234`            |
+
 
 ## Screenshots
 
