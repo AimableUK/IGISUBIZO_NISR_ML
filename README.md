@@ -183,9 +183,13 @@ Users should rely on the sources, periods, geographic coverage, and definitions 
 
 ![Geographic analysis](docs/screenshots/05-geographic-analysis.png)
 
-### 6. Analysis history
+### 6. Final Conclusion analysis
 
-![Saved analyses and history](docs/screenshots/06-history.png)
+![Geographic analysis](docs/screenshots/06-final-conclusion.png)
+
+### 7. Analysis history
+
+![Saved analyses and history](docs/screenshots/07-history.png)
 
 ## Dataset inventory
 
