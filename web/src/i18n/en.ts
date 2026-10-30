@@ -635,7 +635,7 @@ export const en = {
         id: "team",
         h: "Team",
         p: [
-          "Team Igisubizo: [Aimable Ukobizaba](https://github.com/aimableuk) and [Humureenock](https://github.com/humureenock).",
+          "Team Igisubizo: [Aimable Ukobizaba](https://github.com/aimableuk) and [EnockHumure](https://github.com/EnockHumure).",
         ],
       },
       {

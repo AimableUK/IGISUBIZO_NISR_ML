@@ -642,7 +642,7 @@ Do not claim that Mboni directly measures the impact of a national policy or pro
 | Team member       | Contribution                                              | GitHub                                         |
 | ----------------- | --------------------------------------------------------- | ---------------------------------------------- |
 | Aimable Ukobizaba | Full-stack application development and system integration | [@AimableUK](https://github.com/AimableUK)     |
-| Humureenock       | Analytical/model development and related project work     | [@EnockHumure](https://github.com/EnockHumure) |
+| EnockHumure       | Analytical/model development and related project work     | [@EnockHumure](https://github.com/EnockHumure) |
 
 Update the contribution descriptions and profile links if the final division of work or account URLs differ. Contributions should accurately reflect the work completed by each team member.
 

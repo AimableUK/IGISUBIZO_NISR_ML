@@ -607,7 +607,7 @@ export const rw: Dict = {
         id: "team",
         h: "Ikipe",
         p: [
-          "Ikipe Igisubizo: [Aimable Ukobizaba](https://github.com/aimableuk) na [Humureenock](https://github.com/humureenock).",
+          "Ikipe Igisubizo: [Aimable Ukobizaba](https://github.com/aimableuk) na [EnockHumure](https://github.com/EnockHumure).",
         ],
       },
       {
