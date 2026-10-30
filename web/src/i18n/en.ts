@@ -348,11 +348,55 @@ export const en = {
     metaTitle: "Documentation",
     title: "Documentation",
     intro:
-      "How to ask questions, read a workspace, and use Mboni for career guidance, starting a business and learning from Rwanda’s data.",
+      "What Mboni is, how to use it for career guidance, starting a business, farming and learning from Rwanda’s data, and how it works underneath.",
     updated: "October 2026",
     ctaTitle: "Ready to try it?",
     ctaBody: "Ask your first question and open the workspace.",
     sections: [
+      {
+        id: "overview",
+        h: "What Mboni is",
+        p: [
+          "Mboni (Kinyarwanda for “analysis”) is an analysis and decision-support tool for Rwanda’s public statistics. You ask a question in plain words. Mboni finds the matching data, calculates the result with statistical code, and shows it as a workspace you can inspect: metrics, charts, tables, maps, a short explanation, and the sources and caveats.",
+          "It is not a general chatbot and it is not a fixed dashboard. Think of three parts working together. The question box helps you say what you want to understand. The analysis engine finds and calculates the evidence. The presentation layer arranges the findings so you can read and check them. You see both the answer and the evidence behind it.",
+          "Mboni is an independent project built by Team Igisubizo for the 2026 NISR Big Data Hackathon. It is not an official NISR service.",
+        ],
+      },
+      {
+        id: "problem",
+        h: "Why it exists",
+        p: [
+          "Public statistics are valuable, but using them takes effort. Datasets are published in different places and formats, a question often needs more than one table, and raw tables are hard to read without training. Understanding change over time means comparing years that were measured in compatible ways. Decisions about study, work, business or farming are rarely settled by a single number.",
+          "A generic AI answer that is not tied to real data can sound confident and still mislead. Mboni takes the opposite approach: every number comes from a calculation on a named dataset, and the workspace shows you how to check it.",
+        ],
+      },
+      {
+        id: "who",
+        h: "Who it is for",
+        ul: [
+          "**Students and school leavers** exploring study and career pathways before they choose a course.",
+          "**Job seekers and career changers** looking at employment conditions and skills.",
+          "**Entrepreneurs and small-business owners** doing a first round of local research before they plan. It comes before market research and does not replace it.",
+          "**Farmers and cooperatives** comparing production patterns across districts and seasons.",
+          "**Researchers, teachers and journalists** exploring public data and explaining it clearly.",
+          "**Development partners, public teams and investors** who want a first look at Rwanda’s economic and demographic picture. This is an initial exploration, not professional due diligence.",
+        ],
+      },
+      {
+        id: "capabilities",
+        h: "What you can do today",
+        p: [
+          "Each of these is explained below. A question Mboni cannot route or answer is declined with an explanation. It is never guessed.",
+        ],
+        ul: [
+          "**Ask in plain words** in English or Kinyarwanda, by typing or by optional voice input.",
+          "**Compare study programmes** and map skills to sectors, occupations and places.",
+          "**Explore labour and district patterns:** group districts by labour underutilisation, see what is associated with youth NEET rates, and follow sector employment trends with a forecast.",
+          "**Ask general dataset questions** across 12 CSV datasets: summarise a topic, compare or rank districts and categories, filter named places and see trends where the years exist. Crop-yield questions use a published NISR table.",
+          "**Check the evidence:** sources, caveats and a data table behind every chart.",
+          "**Customise and keep your work:** resize and reorder panels, switch chart types, and reopen saved analyses with their versions from History.",
+        ],
+      },
       {
         id: "start",
         h: "Getting started",
@@ -392,6 +436,7 @@ export const en = {
           "Use Mboni to look beyond a single headline number. It can compare study programmes using enrolment, graduation, graduate-employment and wage indicators, and map skills such as applied mathematics to sectors, occupations and places.",
           "You can also explore employment and underemployment by age, sex, district and sector, and young people not in education, employment or training, where the data supports it.",
           "**What it will not do:** promise that a career leads to a job, treat advertised vacancies as the whole labour market, or tell you which option is best for you. Rankings show how options compare on the chosen measures. The decision stays yours.",
+          "Skills-to-occupation links come only from the datasets Mboni holds. They are not evidence of what any employer requires, and past employment does not predict a future job.",
         ],
       },
       {
@@ -416,11 +461,15 @@ export const en = {
         p: [
           "Many questions are really about change. Ask for an indicator over time to see its trend, compare districts side by side, or see how several indicators move together.",
           "Two indicators that rise together are reported as an association. Mboni does not say that one caused the other. Sector employment forecasts use a linear trend with 95% prediction intervals, tested on years held back from the model.",
+          "Compare like with like. Two indicators with similar names can be defined differently, and a single survey year cannot show a trend on its own. Mboni tells you when years are missing or definitions differ.",
         ],
       },
       {
         id: "results",
         h: "Reading a result",
+        p: [
+          "A workspace is drawn from a validated presentation specification. The renderer only draws component types the specification schema defines.",
+        ],
         ul: [
           "**Metrics** give the headline numbers for your question.",
           "**Charts** show trends, distributions or comparisons. Every chart has a text summary and a data table with the exact values.",
@@ -448,12 +497,93 @@ export const en = {
         ],
       },
       {
+        id: "pipeline",
+        h: "How a question becomes a workspace",
+        p: [
+          "The analytical result and the presentation are kept apart. The result is immutable. A layout or chart-type change is saved as a new presentation version and never alters a number.",
+        ],
+        ol: [
+          "**Route.** The question is routed by rules to the right engine: decision and career, general dataset, clustering, regression or forecasting.",
+          "**Load.** The Python analysis service loads the prepared datasets built from NISR and other public sources.",
+          "**Calculate.** Statistical and decision-rule code computes the result. The result names its sources, the operations performed and its caveats.",
+          "**Plan the layout.** A planner turns the result into a `PresentationSpec`: which metrics, charts, tables, maps and insights to show, and where.",
+          "**Validate and draw.** The specification is validated against its schema and against the real result, then drawn with Mboni’s own components.",
+          "**Save.** The question, result, sources, specification and versions are saved as one artifact that reopens unchanged.",
+        ],
+      },
+      {
+        id: "engines",
+        h: "The analysis engines",
+        p: [
+          "The full method, with data sources and limits, is on the [methodology](/methodology) page.",
+        ],
+        ul: [
+          "**Career and study decisions.** Compares named study programmes using enrolment, graduation, graduate-employment and wage indicators, and maps skills such as applied mathematics to potential sectors, occupations and places. It shows how options compare. It is not evidence of what any employer requires, and it never makes the final decision.",
+          "**General dataset questions.** Matches supported measures in 12 CSV datasets. It can summarise a topic, compare or rank districts and categories, filter named places and show historical trends when the requested years are available.",
+          "**District labour underutilisation (clustering).** K-means with k=3 on normalised features: underemployment, unemployment, youth NEET, agriculture share, formal employment share and secondary-plus education share. It produces district clusters and profiles.",
+          "**Youth NEET predictors (regression).** Panel OLS on district-by-year observations with year fixed effects, ridge stabilisation and leave-one-district-out cross-validation. It reports coefficients, R² and adjusted R², Q² and RMSE, and feature importance. Coefficients show association, not cause, and the sample is small.",
+          "**Sector employment trends and forecast.** A linear trend per sector with 95% prediction intervals, tested on years held back from the model.",
+        ],
+      },
+      {
+        id: "planner",
+        h: "How the layout is chosen",
+        p: [
+          "A planner turns a finished result into a presentation specification (`PresentationSpec`), a structured description of what to show and where. The planner reads the shape of the result. It cannot calculate or change a statistic.",
+        ],
+        ul: [
+          "**Rule-based planner (always available).** A deterministic planner that picks components from the structure of the result. The same result gives the same layout.",
+          "**Optional AI planner.** When enabled, a language model may propose the specification instead. It receives only the structure of the result (dataset and column names, available components), never your account details.",
+          "**Validation.** An AI proposal must pass the `PresentationSpec` schema and be checked against the actual result. If it references something that does not exist, or fails validation, it is rejected and the rule-based planner is used.",
+          "**Not a dependency.** Mboni works without the AI planner. No generated code runs. The AI is never the source of a number. See [AI transparency](/ai-transparency).",
+        ],
+      },
+      {
+        id: "architecture",
+        h: "Architecture",
+        p: [
+          "In production the API always calls the separate analysis service, and its in-process fallback is turned off.",
+        ],
+        ul: [
+          "**Web app:** Next.js and TypeScript. The question box, workspace, History, settings and this documentation.",
+          "**API service:** Node.js and TypeScript with Express. It routes questions to the analysis service.",
+          "**Analysis service:** Python with FastAPI, in `model/`. It loads the prepared datasets and runs the statistical code.",
+          "**PostgreSQL and Redis** run alongside the services in the Docker Compose stack.",
+          "**Tooling:** pnpm and Docker Compose.",
+        ],
+      },
+      {
+        id: "reliability",
+        h: "Reliability and safeguards",
+        ul: [
+          "**Unsupported or unclear questions** are declined, with what Mboni understood. They are not guessed.",
+          "**Missing observations** are left out of calculations, never treated as zero.",
+          "**AI planner unavailable or invalid:** the rule-based planner takes over.",
+          "**Results are immutable** and saved with sources, operations, caveats and versions, so a workspace can be checked later.",
+          "**Models report associations,** and forecasts are labelled estimates with prediction intervals tested on held-back years.",
+        ],
+      },
+      {
         id: "data",
         h: "Data coverage and status",
         p: [
           "Mboni is built on datasets from NISR and other public sources. Useful starting points: [NISR website](https://www.statistics.gov.rw/), [NISR Microdata Catalog](https://microdatabk.statistics.gov.rw/catalog/), [Rwanda Data Sharing Platform](https://data.gov.rw/datasets), [NISR PxWeb database](https://pxweb.statistics.gov.rw/pxweb/en/) and the [2026 NISR Big Data Hackathon](https://www.statistics.gov.rw/about/hackathon/2026-hackathon-competition).",
           "Every result names the dataset it used, with its reporting period, units and definitions where known. Check the definitions before comparing two datasets.",
           "Rwanda has 30 districts in five provinces, but not every dataset covers all of them. Coverage varies by source, year and indicator.",
+        ],
+      },
+      {
+        id: "knownlimits",
+        h: "Known limits of the current data and methods",
+        ul: [
+          "Coverage varies by source, year and indicator, so a result may not include every district.",
+          "The NISR crop-yield table includes Season A and B observations but does not state a reference year.",
+          "The NEET regression uses a small number of observations and shows association only.",
+          "The sector forecast is a linear trend. It assumes the recent pattern continues and cannot anticipate policy changes, new technology or shocks.",
+          "Question routing is rule-based, so short, specific questions work best.",
+          "The district map is a schematic tile map, not a geographic one.",
+          "Browser speech recognition may not recognise Kinyarwanda.",
+          "The benefits described here are intended benefits. No user numbers or measured impact are claimed.",
         ],
       },
       {
@@ -465,6 +595,47 @@ export const en = {
           "It does not rank communities by worth or decide where funding should go.",
           "It is not a medical service and gives no individual health advice.",
           "It does not claim that a programme caused an outcome unless the study design supports it.",
+        ],
+      },
+      {
+        id: "privacy",
+        h: "Privacy and security",
+        p: [
+          "Your questions, results and layouts are saved with your account so you can reopen them, and you can delete any analysis from History. The optional AI planner never receives account details. Read the [privacy policy](/privacy) and the [terms of service](/terms). This page makes no claims about security certifications or legal compliance.",
+        ],
+      },
+      {
+        id: "developer",
+        h: "For developers",
+        p: [
+          "The repository runs as a Docker Compose stack of PostgreSQL, Redis, the Python analysis service, the API and the web app. The root scripts wrap Docker Compose. They do not start individual services outside Docker.",
+        ],
+        ul: [
+          "`pnpm run dev` starts the full stack from `docker-compose.yml`.",
+          "`pnpm run dev:build` rebuilds the images and starts the stack.",
+          "`pnpm run dev:logs` follows the logs of all services.",
+          "`pnpm run dev:down` stops the stack.",
+        ],
+      },
+      {
+        id: "hackathon",
+        h: "The 2026 NISR Big Data Hackathon",
+        p: [
+          "Mboni was built for the [2026 NISR Big Data Hackathon](https://www.statistics.gov.rw/about/hackathon/2026-hackathon-competition). It addresses one problem: making Rwanda’s public statistics easier to explore, understand and check. It does not claim to address every track equally.",
+        ],
+        ul: [
+          "**Problem understanding and relevance:** public statistics are hard to find, combine and interpret, and decisions on study, work, business and farming need more than one number.",
+          "**Data use and methodology:** NISR and other public datasets, with K-means, panel OLS, linear trends and weighted decision rules, and sources named on every result.",
+          "**Technical innovation:** results and presentation are separate, an AI-proposed layout is validated against the real result, and a rule-based planner is the fallback.",
+          "**Usability and design:** a workspace you can rearrange, a data table behind every chart, English and Kinyarwanda, keyboard use and an accessibility statement. See [accessibility](/accessibility).",
+          "**Tangible impact:** the intended impact is more evidence-informed decisions. It has not been measured.",
+        ],
+      },
+      {
+        id: "team",
+        h: "Team",
+        p: [
+          "Team Igisubizo: [Aimable Ukobizaba](https://github.com/aimableuk) and [Humureenock](https://github.com/humureenock).",
         ],
       },
       {
@@ -494,6 +665,14 @@ export const en = {
           [
             "How do I delete my data?",
             "Delete any analysis from History. To remove your account, ask through the [contact page](/contact).",
+          ],
+          [
+            "Can Mboni tell me which business to start or which career to choose?",
+            "No. It shows what the available evidence says and how options compare, and where the evidence stops. Choosing is up to you, together with current local information.",
+          ],
+          [
+            "Is a forecast a promise?",
+            "No. A forecast is an estimate from a linear trend, shown with a 95% prediction interval and tested on years held back from the model. It cannot know about policy changes, new technology or unexpected events.",
           ],
         ],
       },
