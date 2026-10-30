@@ -249,7 +249,7 @@ function Runner() {
           <section
             aria-label={t("ws.conversationLabel")}
             aria-live="polite"
-            className="flex-1 space-y-4 pb-6"
+            className="flex-1 space-y-4 pb-2"
           >
             {loadingConversation && (
               <p
@@ -375,7 +375,7 @@ function Runner() {
             <div ref={endRef} className="scroll-mb-40" />
           </section>
 
-          <div className="sticky bottom-0 z-10 bg-background pb-4 pt-2">
+          <div className="sticky bottom-0 z-10 -mx-4 bg-background px-4 pb-2 pt-1 sm:-mx-6 sm:px-6 before:pointer-events-none before:absolute before:inset-x-0 before:-top-6 before:h-6 before:bg-gradient-to-t before:from-background before:to-transparent">
             {prompt}
             <p className="mt-1.5 text-xs text-muted">
               {t("ws.chatDisclaimer")}
